@@ -1,0 +1,210 @@
+type: problem
+title: "#13 - CCBC 11"
+content: 
+  - |
+    一位数学家发明的扫雷游戏，每个格子里原本应有的数字代表周围的雷数（**包括该格**）。  
+    数学家删除了几乎所有的数字，不过~~善良的~~他还是留下了足够的信息--给出了每行每列数字的和、积。
+  - |
+    <style type="text/css">
+    .grid13 {
+      border-collapse: collapse;
+      border: 2px solid #ccc;
+    }
+    .grid13 td {
+      background-color: white;
+      height: 40px;
+      width: 40px;
+      text-align: center;
+      color: black;
+      border: 2px solid #eee;
+      font-weight: bold;
+      margin: 0;
+    }
+    .grid13 th {
+      min-width: 30px;
+      min-height: 35px;
+      text-align: center;
+    }
+
+    .grid13 th.rotate-45{
+      height: 70px;
+      width: 40px;
+      min-width: 40px;
+      max-width: 40px;
+      position: relative;
+      vertical-align: bottom;
+      padding: 0;
+      transform:rotate(-45deg);
+    }
+
+    .grid13 th.rotate-45 > div {
+      position: relative;
+      top: 0px;
+      left: -50px; /* 80 * tan(45) / 2 = 40 where 80 is the height on the cell and 45 is the transform angle*/
+      height: 100%;
+      -ms-transform:skew(45deg,0deg);
+      -moz-transform:skew(45deg,0deg);
+      -webkit-transform:skew(45deg,0deg);
+      -o-transform:skew(45deg,0deg);
+      transform:skew(45deg,0deg);
+      /*overflow: hidden;*/
+
+    }
+
+    .grid13 th.rotate-45 span {
+      -ms-transform:skew(-45deg,0deg) rotate(45deg);
+      -moz-transform:skew(-45deg,0deg) rotate(45deg);
+      -webkit-transform:skew(-45deg,0deg) rotate(45deg);
+      -o-transform:skew(-45deg,0deg) rotate(45deg);
+      transform:skew(-45deg,0deg) rotate(45deg);
+      position: absolute;
+      bottom: 108px; /* 40 cos(45) = 28 with an additional 2px margin*/
+      left: -50px; /*Because it looked good, but there is probably a mathematical link here as well*/
+      display: inline-block;
+      width: 100%;
+      width: 85px; /* 80 / cos(45) - 40 cos (45) = 85 where 80 is the height of the cell, 40 the width of the cell and 45 the transform angle*/
+      text-align: left;
+      white-space: nowrap; /*whether to display in one line or not*/
+    }
+    </style>
+    <table class="grid13">
+    <thead><tr><th></th><th class="rotate-45">165888</th><th class="rotate-45">1350000</th><th class="rotate-45">36000</th><th class="rotate-45">28800</th><th class="rotate-45">124416</th><th class="rotate-45">1555200</th><th class="rotate-45">2016000</th><th class="rotate-45">3024000</th><th class="rotate-45">194400</th><th class="rotate-45">8640</th><th class="rotate-45">2160</th><th class="rotate-45">2160</th><th class="rotate-45">24</th><th>&nbsp;</th></tr></thead><tbody>
+    <tr><th>23328</th><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><th>30</th></tr>
+    <tr><th>9720000</th><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><th>47</th></tr>
+    <tr><th>324000000</th><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><th>61</th></tr>
+    <tr><th>4644864</th><td>&nbsp;</td><td>&nbsp;</td><td>1</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><th>47</th></tr>
+    <tr><th>38880</th><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><th>33</th></tr>
+    <tr><th>552960</th><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><th>40</th></tr>
+    <tr><th>972000</th><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><th>41</th></tr>
+    <tr><th>72000000</th><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><th>56</th></tr>
+    <tr><th>2580480</th><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><th>45</th></tr>
+    <tr><th>38880</th><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>3</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><th>33</th></tr>
+    <tr><th>&nbsp;</th><th>34</th><th>42</th><th>33</th><th>30</th><th>33</th><th>43</th><th>46</th><th>47</th><th>35</th><th>27</th><th>24</th><th>24</th><th>15</th><th></th></tr>
+    </tbody></table>
+
+
+    <table class="grid13">
+    <thead><tr><th></th><th class="rotate-45">216000</th><th class="rotate-45">216000</th><th class="rotate-45">51840</th><th class="rotate-45">2160</th><th class="rotate-45">32400</th><th class="rotate-45">864</th><th class="rotate-45">11520</th><th class="rotate-45">648000</th><th class="rotate-45">324000</th><th class="rotate-45">1440000</th><th class="rotate-45">38880</th><th class="rotate-45">1701000</th><th class="rotate-45">17280</th><th class="rotate-45">2116800</th><th class="rotate-45">6912</th><th>&nbsp;</th></tr></thead><tbody>
+    <tr><th>209952</th><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><th>36</th></tr>
+    <tr><th>324000000</th><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><th>58</th></tr>
+    <tr><th>2709504000</th><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><th>66</th></tr>
+    <tr><th>437400000</th><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><th>60</th></tr>
+    <tr><th>373248</th><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><th>38</th></tr>
+    <tr><th>138240</th><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><th>39</th></tr>
+    <tr><th>5598720</th><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>1</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><th>45</th></tr>
+    <tr><th>2700000000</th><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><th>67</th></tr>
+    <tr><th>725760000</th><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><th>61</th></tr>
+    <tr><th>186624</th><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><th>36</th></tr>
+    <tr><th>&nbsp;</th><th>37</th><th>37</th><th>31</th><th>25</th><th>31</th><th>22</th><th>28</th><th>39</th><th>37</th><th>44</th><th>30</th><th>44</th><th>29</th><th>46</th><th>26</th><th></th></tr>
+    </tbody></table>
+answer: MAX TAX EXEMPTION
+tips:
+  -
+    title: 可能用到的逻辑
+    content: 1. 先尝试从“和”与“积”计算出各行、列有哪些数字（有的行列暂时不能唯一确定，这是正常的） 2. 只通过和可以计算出每行/每列的两头和中间各有几个雷
+  -
+    title: 表1补充信息
+    content: 3行3/11/13列=3 1/7行8列=3 3行7列=5
+  -
+    title: 表2补充信息
+    content: 10行1/2列=1 5/10行10列=3
+answer-analysis: |
+  > “本届比赛的难度巅峰，难度竟然不在密码本身”
+
+  两张表的规则相同。上、左方的数字代表表格中数字的乘积，右、下方的数字代表表格中数字的和。将数字1-9填入中间的表，在满足积与和的同时，满足每个数字的周围（包括自身）的雷数与数字相同。（规则类似扫雷）——这些规则在题设中已经善良地给出了。
+  
+  接下来就是推演了，以表一为例的手工计算详细步骤参考如下（长文预警）：
+
+  > 1、首先进行因数分解。如果一行/列中的因数数量少于格子的数量，则表示其中存在数字1，用1将数位占满；
+  >
+  > ![图1-第1步](/ccbc11/images/answer/answer13-1.jpg)
+  >
+  > 2、如图将分解的因数加在一起与目标和进行对比。
+  >
+  > ![图1-第2步](/ccbc11/images/answer/answer13-2.png)
+  >
+  > 在积相等的前提下，数字越大和就越大。以最后一行为例：目标和为33，当前和为32，表示在应填入的数字中，应将两个数字2替换为数字1和4，这样在保持积不变的情况下，和仅增大1符合题设。将所有因数按上述最小增和原则填入，标绿部分是已经确定的需填入数字；
+  >
+  > 3、此时需要用到一个关键的计算方式——通过行/列的和求差，计算出每行/列的雷数（不用此方法也可解，不过复杂程度要上升很多，且需要频繁使用穷举法）。
+  >
+  > 以最左两列为例：和分别为34、42，两列求差得8，8=3*2+2*1，则表示左数第3列有1个在首尾行的雷、2个居中位置的雷。这是因为每增加一个居中位置的雷，都会使每行/列的总和增加3，在边角处的雷则增加2。由此可计算出每行/列的雷数；
+  >
+  > 4、将首尾位置都有雷或都没有雷的区域进行标记，并根据居中位置的雷数进一步确定雷的位置。在之后的操作中也要时刻关注行/列中的总雷数；
+  >
+  > 5、根据扫雷的规则可知，7的周围最小数字为4，（为方便描述，为格子进行编号）故h9位置不是7，则g9位置为7，h4位置为7；
+  >
+  > ![图1-第5步](/ccbc11/images/answer/answer13-3.png)
+  >
+  > 6、将已确定的可能数字填入表中方便计算，易得出b9、b10、l9处位置有雷；
+  >
+  > 7、如果m2处为3，则l2l3均为雷，m3的雷数应大于3，与题设矛盾，则m2不为3，同时可知m3为3，l4不为雷；
+  >
+  > ![图1-第7步](/ccbc11/images/answer/answer13-4.png)
+  >
+  > 8、因为a列只有一个2，所以可进一步缩小数字的可能性；
+  >
+  > 9、因为4行没有5，所以i4为4，4与7相邻，故j345没有雷，g345都是雷；
+  >
+  > ![图1-第9步](/ccbc11/images/answer/answer13-5.png)
+  >
+  > 10、当推理进行不下去的时候可以在关键位置进行穷举，如图假设l5位置数字为5，则k5k6位置均为5，与k列数字不符，故l5位置不为5；假设l8位置是5，则k9l9位置均为3，与第9行只有一个3不符，故l8不为5；
+  >
+  > ![图1-第10步-1](/ccbc11/images/answer/answer13-6.png)
+  >
+  > ![图1-第10步-2](/ccbc11/images/answer/answer13-7.png)
+  >
+  > ![图1-第10步-3](/ccbc11/images/answer/answer13-8.png)
+  >
+  > 11、继续按照行/列的数字范围、行/列的雷数、扫雷的基本规则等规则依次解出全部的区域（注意行/列观察时数字总数应相等）：
+  >
+  > ![图1-第11步-1](/ccbc11/images/answer/answer13-9.png)
+  >
+  > ![图1-第11步-2](/ccbc11/images/answer/answer13-10.png)
+  >
+  > 12、过程中遇到困难可继续使用穷举法（在比赛中因为有时间压力，可更为频繁地使用穷举法并大胆根据象形进行猜测）。此处假设h1位置为3，发现g9位置产生矛盾；
+  >
+  > ![图1-第12步-1](/ccbc11/images/answer/answer13-11.png)
+  >
+  > ![图1-第12步-2](/ccbc11/images/answer/answer13-12.png)
+  >
+  > 13、继续推算，越到后面就越简单，直到解完全部格子。
+  >
+  > ![图1-第13步](/ccbc11/images/answer/answer13-13.png)
+  >
+
+  继续推算，最终得出上图的答案：**MAXTAX**。
+
+  ![图1结果](/ccbc11/images/answer/answer13-14.png)
+
+  题目的下表可按照上文同样的方式解答，难度要比上表简单不少，为节省篇幅就只上过程图了：
+
+  > ![图2-1](/ccbc11/images/answer/answer13-15.jpg)
+  >
+  > ![图2-2](/ccbc11/images/answer/answer13-16.jpg)
+  >
+  > ![图2-3](/ccbc11/images/answer/answer13-17.jpg)
+  >
+  > ![图2-4](/ccbc11/images/answer/answer13-18.jpg)
+  >
+  > ![图2-5](/ccbc11/images/answer/answer13-19.jpg)
+  >
+  > ![图2-6](/ccbc11/images/answer/answer13-20.jpg)
+  >
+  > ![图2-7](/ccbc11/images/answer/answer13-21.jpg)
+
+  解得下表答案：**EXEMPTION**。
+
+  ![图2结果](/ccbc11/images/answer/answer13-22.png)
+
+  连起来就是**MAX TAX EXEMPTION**。
+  
+  （当然如果有编程能力的话，用程序解会大幅提高效率。）
+links:
+  - 
+    title: CCBC11 索引页
+    type: index
+    path: ccbc11/index
+  -
+    title: 返回案情分析板
+    type: page
+    path: ccbc11/pages/analysis-room

@@ -1,0 +1,26 @@
+type: problem
+title: "#28 - CCBC 11"
+content: 
+  - |
+    据说是名家绘制的画作，规则的线条中透露出简单的秩序感。
+problem-image: /ccbc11/images/problems/7265ae266d554752ac5e950161dc4588.jpg
+answer: BATH
+tips:
+  -
+    title: 思路
+    content: 将画作四等分，然后注意颜色
+answer-analysis: |
+  看穿后非常简单的象形题目，按照边角的颜色将图四等分，再提取边角对应的颜色即可。
+
+  ![图示](/ccbc11/images/answer/answer28.jpg)
+
+  答案是**BATH**。
+links:
+  - 
+    title: CCBC11 索引页
+    type: index
+    path: ccbc11/index
+  -
+    title: 返回案情分析板
+    type: page
+    path: ccbc11/pages/analysis-room

@@ -1,0 +1,22 @@
+type: problem
+title: "#8 - CCBC 11"
+content: 
+  - |
+    一张数学草稿纸，可惜某些地方洒上了墨水，原来的数字难以辨认。
+problem-image: /ccbc11/images/problems/f30e58ac2b4244d39991683d038e42d9.jpg
+answer: MIX
+tips:
+  -
+    title: 关于序列的识别
+    content: OEIS是你的好朋友
+answer-analysis: |
+  将图中罗马数字转换为阿拉伯数字，寻找数列规律。（可使用在线找规律工具进行搜索：oeis.org）补出缺失的数字依次为：2，11，101，？，10007，再次找规律为1009，转化成罗马数字即MIX。
+links:
+  - 
+    title: CCBC11 索引页
+    type: index
+    path: ccbc11/index
+  -
+    title: 返回案情分析板
+    type: page
+    path: ccbc11/pages/analysis-room

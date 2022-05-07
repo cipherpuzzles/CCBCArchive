@@ -1,0 +1,25 @@
+type: problem
+title: "#9 - CCBC 11"
+content: 
+  - |
+    好像是给小孩子的手工材料，竟然也能隐藏惊天动地的秘密？
+problem-image: /ccbc11/images/problems/fcb7aca11a664211ba7ca31cf3e69bf9.jpg
+answer: LUNAR CATACLYSM
+tips:
+  -
+    title: 关于这是啥玩意？
+    content: “手工材料”。从一张方形的纸出发，能做什么样的手工呢……？
+  -
+    title: 关于不同线条的区别
+    content: 分别代表了谷折、峰折和裁切
+answer-analysis: |
+  图中每个方块为一个折纸，实线为裁切线，虚线为谷折，虚点线为峰折，按图依次进行折纸并沿裁切线剪开，即可得出结果：**LUNAR CATACLYSM**
+links:
+  - 
+    title: CCBC11 索引页
+    type: index
+    path: ccbc11/index
+  -
+    title: 返回案情分析板
+    type: page
+    path: ccbc11/pages/analysis-room

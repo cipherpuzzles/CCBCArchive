@@ -1,0 +1,146 @@
+type: problem
+title: "#27 - CCBC 11"
+content: 
+  - |
+    这是最近流行的卡通贴纸，被整整齐齐地粘在了一张纸上。
+  - |
+    <style>
+    #pokemons img {
+    width: 50px;
+    height: 50px;
+    }
+    ul {
+    padding-top: 30px;
+    clear: both;
+    }
+    .word {
+    float: left;
+    margin-right: 60px;
+    }
+    </style>
+    <div id="pokemons">
+    <div class="word">
+    <img src='/ccbc11/images/problems/76b806e2e8474daa8656306cddf72b75.png'><img src='/ccbc11/images/problems/0bcffd13552843c7a8f18983866d59e1.png'><img src='/ccbc11/images/problems/4214353ce04342de84005838097b36df.png'>
+    </div>
+    <div class="word">
+    <img src='/ccbc11/images/problems/985dc4a912c44602b9ba794a5a6de64d.png'><img src='/ccbc11/images/problems/a4a424e9be3b43c983d651bb96893a77.png'><img src='/ccbc11/images/problems/930a8f0b4e514537a0d79dc53b7f1e73.png'><img src='/ccbc11/images/problems/f8cfba9a35f446179d0f8bc75e6b2c38.png'><img src='/ccbc11/images/problems/77666dbb5e284ffc9ef620999840003e.png'></div>
+    <div class="word">
+    <img src='/ccbc11/images/problems/1c9462d6bd134dc6ad2ce6fd53463cab.png'><img src='/ccbc11/images/problems/ea3f69fd9b6a42e79e824eb025f5ff14.png'><img src='/ccbc11/images/problems/6b1085cd688042e9875eeda1946faca5.png'><img src='/ccbc11/images/problems/0bc7f00377d140a1bda82cf22d19defb.png'><img src='/ccbc11/images/problems/49df3478d4944c04815568f5da0e4308.png'>
+    </div>
+    <div class="word">
+    <img src='/ccbc11/images/problems/e796ff09289a4fcfae4f6e981711d058.png'><img src='/ccbc11/images/problems/a4a424e9be3b43c983d651bb96893a77.png'><img src='/ccbc11/images/problems/e99ab55e3f424432a69da2ed51caee00.png'><img src='/ccbc11/images/problems/21e7f739f70f429a9c5b620af00757f1.png'><img src='/ccbc11/images/problems/930a8f0b4e514537a0d79dc53b7f1e73.png'><img src='/ccbc11/images/problems/4b5c0c90a551482db5d21f89641c34d5.png'></div>
+    <div class="word">
+    <img src='/ccbc11/images/problems/4692c4d3b01544808453d92d87c19573.png'><img src='/ccbc11/images/problems/a4a424e9be3b43c983d651bb96893a77.png'><img src='/ccbc11/images/problems/77967dac687f44549930c038fe1b18a8.png'><img src='/ccbc11/images/problems/21e7f739f70f429a9c5b620af00757f1.png'><img src='/ccbc11/images/problems/d8dd4d0da3f544bdb34c611d58822193.png'></div>
+    <div class="word">
+    <img src='/ccbc11/images/problems/6b1085cd688042e9875eeda1946faca5.png'><img src='/ccbc11/images/problems/e796ff09289a4fcfae4f6e981711d058.png'><img src='/ccbc11/images/problems/4214353ce04342de84005838097b36df.png'><img src='/ccbc11/images/problems/ea3f69fd9b6a42e79e824eb025f5ff14.png'></div>
+    <div class="word">
+    <img src='/ccbc11/images/problems/76b806e2e8474daa8656306cddf72b75.png'><img src='/ccbc11/images/problems/0bcffd13552843c7a8f18983866d59e1.png'><img src='/ccbc11/images/problems/4214353ce04342de84005838097b36df.png'></div>
+    <div class="word">
+    <img src='/ccbc11/images/problems/e99ab55e3f424432a69da2ed51caee00.png'><img src='/ccbc11/images/problems/a5937121226d412fb0507eeda409a638.png'><img src='/ccbc11/images/problems/50c5ae20f96a4f15ba52beddd08f78d3.png'><img src='/ccbc11/images/problems/7eea807ae9cc429a84bf569c82710cf6.png'></div>
+    <div class="word">
+    <img src='/ccbc11/images/problems/0bcffd13552843c7a8f18983866d59e1.png'><img src='/ccbc11/images/problems/6b1085cd688042e9875eeda1946faca5.png'><img src='/ccbc11/images/problems/a4a424e9be3b43c983d651bb96893a77.png'><img src='/ccbc11/images/problems/49df3478d4944c04815568f5da0e4308.png'><img src='/ccbc11/images/problems/b43cd282040348a593f7c4ed5d47ee45.png'><img src='/ccbc11/images/problems/6b1085cd688042e9875eeda1946faca5.png'><img src='/ccbc11/images/problems/a4a424e9be3b43c983d651bb96893a77.png'><img src='/ccbc11/images/problems/ea3f69fd9b6a42e79e824eb025f5ff14.png'>,</div>
+    <div class="word">
+    <img src='/ccbc11/images/problems/a5937121226d412fb0507eeda409a638.png'><img src='/ccbc11/images/problems/49df3478d4944c04815568f5da0e4308.png'><img src='/ccbc11/images/problems/b43cd282040348a593f7c4ed5d47ee45.png'></div>
+    <div class="word">
+    <img src='/ccbc11/images/problems/7eea807ae9cc429a84bf569c82710cf6.png'><img src='/ccbc11/images/problems/6b1085cd688042e9875eeda1946faca5.png'><img src='/ccbc11/images/problems/a4a424e9be3b43c983d651bb96893a77.png'><img src='/ccbc11/images/problems/ea3f69fd9b6a42e79e824eb025f5ff14.png'></div>
+    <div class="word">
+    <img src='/ccbc11/images/problems/a5937121226d412fb0507eeda409a638.png'><img src='/ccbc11/images/problems/49df3478d4944c04815568f5da0e4308.png'><img src='/ccbc11/images/problems/d8dd4d0da3f544bdb34c611d58822193.png'><img src='/ccbc11/images/problems/0bc7f00377d140a1bda82cf22d19defb.png'><img src='/ccbc11/images/problems/4214353ce04342de84005838097b36df.png'><img src='/ccbc11/images/problems/ea3f69fd9b6a42e79e824eb025f5ff14.png'></div>
+    <div class="word">
+    <img src='/ccbc11/images/problems/930a8f0b4e514537a0d79dc53b7f1e73.png'><img src='/ccbc11/images/problems/d8dd4d0da3f544bdb34c611d58822193.png'>:</div>
+
+    <ul><li><img src='/ccbc11/images/problems/21e7f739f70f429a9c5b620af00757f1.png'>	<img src='/ccbc11/images/problems/930a8f0b4e514537a0d79dc53b7f1e73.png'>	<img src='/ccbc11/images/problems/77666dbb5e284ffc9ef620999840003e.png'>	<img src='/ccbc11/images/problems/a5937121226d412fb0507eeda409a638.png'>	<img src='/ccbc11/images/problems/f8cfba9a35f446179d0f8bc75e6b2c38.png'>	<img src='/ccbc11/images/problems/0bcffd13552843c7a8f18983866d59e1.png'>	<img src='/ccbc11/images/problems/a4a424e9be3b43c983d651bb96893a77.png'></li>
+    <li><img src='/ccbc11/images/problems/21e7f739f70f429a9c5b620af00757f1.png'>	<img src='/ccbc11/images/problems/930a8f0b4e514537a0d79dc53b7f1e73.png'>	<img src='/ccbc11/images/problems/b43cd282040348a593f7c4ed5d47ee45.png'>	<img src='/ccbc11/images/problems/6b1085cd688042e9875eeda1946faca5.png'>	<img src='/ccbc11/images/problems/e796ff09289a4fcfae4f6e981711d058.png'>	<img src='/ccbc11/images/problems/4214353ce04342de84005838097b36df.png'></li>
+    <li><img src='/ccbc11/images/problems/d8dd4d0da3f544bdb34c611d58822193.png'>	<img src='/ccbc11/images/problems/76b806e2e8474daa8656306cddf72b75.png'>	<img src='/ccbc11/images/problems/a5937121226d412fb0507eeda409a638.png'>	<img src='/ccbc11/images/problems/ea3f69fd9b6a42e79e824eb025f5ff14.png'>	<img src='/ccbc11/images/problems/7eea807ae9cc429a84bf569c82710cf6.png'>	<img src='/ccbc11/images/problems/a4a424e9be3b43c983d651bb96893a77.png'></li>
+    <li><img src='/ccbc11/images/problems/e796ff09289a4fcfae4f6e981711d058.png'>	<img src='/ccbc11/images/problems/4214353ce04342de84005838097b36df.png'>	<img src='/ccbc11/images/problems/49df3478d4944c04815568f5da0e4308.png'>	<img src='/ccbc11/images/problems/6b1085cd688042e9875eeda1946faca5.png'>	<img src='/ccbc11/images/problems/77967dac687f44549930c038fe1b18a8.png'>	<img src='/ccbc11/images/problems/6b1085cd688042e9875eeda1946faca5.png'>	<img src='/ccbc11/images/problems/76b806e2e8474daa8656306cddf72b75.png'>	<img src='/ccbc11/images/problems/0bcffd13552843c7a8f18983866d59e1.png'></li>
+    <li><img src='/ccbc11/images/problems/77666dbb5e284ffc9ef620999840003e.png'>	<img src='/ccbc11/images/problems/ea3f69fd9b6a42e79e824eb025f5ff14.png'>	<img src='/ccbc11/images/problems/a5937121226d412fb0507eeda409a638.png'>	<img src='/ccbc11/images/problems/1c9462d6bd134dc6ad2ce6fd53463cab.png'>	<img src='/ccbc11/images/problems/1c9462d6bd134dc6ad2ce6fd53463cab.png'>	<img src='/ccbc11/images/problems/7eea807ae9cc429a84bf569c82710cf6.png'></li>
+    <li><img src='/ccbc11/images/problems/b43cd282040348a593f7c4ed5d47ee45.png'>	<img src='/ccbc11/images/problems/ea3f69fd9b6a42e79e824eb025f5ff14.png'>	<img src='/ccbc11/images/problems/a5937121226d412fb0507eeda409a638.png'>	<img src='/ccbc11/images/problems/824d2b24c7cb424da3e709b154fbd5e0.png'>	<img src='/ccbc11/images/problems/6b1085cd688042e9875eeda1946faca5.png'>	<img src='/ccbc11/images/problems/49df3478d4944c04815568f5da0e4308.png'>	<img src='/ccbc11/images/problems/a5937121226d412fb0507eeda409a638.png'>	<img src='/ccbc11/images/problems/930a8f0b4e514537a0d79dc53b7f1e73.png'>	<img src='/ccbc11/images/problems/ea3f69fd9b6a42e79e824eb025f5ff14.png'></li>
+    <li><img src='/ccbc11/images/problems/0bc7f00377d140a1bda82cf22d19defb.png'>	<img src='/ccbc11/images/problems/930a8f0b4e514537a0d79dc53b7f1e73.png'>	<img src='/ccbc11/images/problems/824d2b24c7cb424da3e709b154fbd5e0.png'>	<img src='/ccbc11/images/problems/824d2b24c7cb424da3e709b154fbd5e0.png'>	<img src='/ccbc11/images/problems/e99ab55e3f424432a69da2ed51caee00.png'>	<img src='/ccbc11/images/problems/7eea807ae9cc429a84bf569c82710cf6.png'>	<img src='/ccbc11/images/problems/76b806e2e8474daa8656306cddf72b75.png'>	<img src='/ccbc11/images/problems/a4a424e9be3b43c983d651bb96893a77.png'>	<img src='/ccbc11/images/problems/212bd905dafe48f0ac5e8af400fd3615.png'>	<img src='/ccbc11/images/problems/212bd905dafe48f0ac5e8af400fd3615.png'></li>
+    <li><img src='/ccbc11/images/problems/b43cd282040348a593f7c4ed5d47ee45.png'>	<img src='/ccbc11/images/problems/ea3f69fd9b6a42e79e824eb025f5ff14.png'>	<img src='/ccbc11/images/problems/6b1085cd688042e9875eeda1946faca5.png'>	<img src='/ccbc11/images/problems/0bc7f00377d140a1bda82cf22d19defb.png'>	<img src='/ccbc11/images/problems/50c5ae20f96a4f15ba52beddd08f78d3.png'>	<img src='/ccbc11/images/problems/4214353ce04342de84005838097b36df.png'>	<img src='/ccbc11/images/problems/4214353ce04342de84005838097b36df.png'></li>
+    <li><img src='/ccbc11/images/problems/d8dd4d0da3f544bdb34c611d58822193.png'>	<img src='/ccbc11/images/problems/985dc4a912c44602b9ba794a5a6de64d.png'>	<img src='/ccbc11/images/problems/a4a424e9be3b43c983d651bb96893a77.png'>	<img src='/ccbc11/images/problems/930a8f0b4e514537a0d79dc53b7f1e73.png'>	<img src='/ccbc11/images/problems/ea3f69fd9b6a42e79e824eb025f5ff14.png'>	<img src='/ccbc11/images/problems/76b806e2e8474daa8656306cddf72b75.png'>	<img src='/ccbc11/images/problems/e99ab55e3f424432a69da2ed51caee00.png'>	<img src='/ccbc11/images/problems/4214353ce04342de84005838097b36df.png'></li>
+    <li><img src='/ccbc11/images/problems/77967dac687f44549930c038fe1b18a8.png'>	<img src='/ccbc11/images/problems/4214353ce04342de84005838097b36df.png'>	<img src='/ccbc11/images/problems/76b806e2e8474daa8656306cddf72b75.png'>	<img src='/ccbc11/images/problems/a5937121226d412fb0507eeda409a638.png'>	<img src='/ccbc11/images/problems/21e7f739f70f429a9c5b620af00757f1.png'>	<img src='/ccbc11/images/problems/6b1085cd688042e9875eeda1946faca5.png'>	<img src='/ccbc11/images/problems/b43cd282040348a593f7c4ed5d47ee45.png'></li>
+    <li><img src='/ccbc11/images/problems/4692c4d3b01544808453d92d87c19573.png'>	<img src='/ccbc11/images/problems/6b1085cd688042e9875eeda1946faca5.png'>	<img src='/ccbc11/images/problems/e99ab55e3f424432a69da2ed51caee00.png'>	<img src='/ccbc11/images/problems/76b806e2e8474daa8656306cddf72b75.png'>	<img src='/ccbc11/images/problems/4214353ce04342de84005838097b36df.png'>	<img src='/ccbc11/images/problems/6b1085cd688042e9875eeda1946faca5.png'>	<img src='/ccbc11/images/problems/49df3478d4944c04815568f5da0e4308.png'></li>
+    <li><img src='/ccbc11/images/problems/d8dd4d0da3f544bdb34c611d58822193.png'>	<img src='/ccbc11/images/problems/0bcffd13552843c7a8f18983866d59e1.png'>	<img src='/ccbc11/images/problems/930a8f0b4e514537a0d79dc53b7f1e73.png'>	<img src='/ccbc11/images/problems/49df3478d4944c04815568f5da0e4308.png'>	<img src='/ccbc11/images/problems/4b5c0c90a551482db5d21f89641c34d5.png'></li>
+    </ul>
+    </div>
+answer: ADAMANT WRATH
+tips:
+  -
+    title: 我解出了一句话和一些别的东西，现在怎么办？
+    content: 注意pokemon和字母的对应关系。
+answer-analysis: |
+  又是一年的宝可梦，最上面的几行很明显可以看出有单表替换密码的特征，先按照宝可梦的名字缩写进行替换方便推理。
+
+
+  ```
+  拉穿伊/ 蜂肯蚊达鲤/ 卡柏喵超火/ 森肯臭呆蚊伦/ 忍肯磁呆妙/ 喵森伊柏/ 拉穿伊/ 臭皮瓦边/ 穿喵肯火草喵肯柏/ 皮火草/ 边喵肯柏/ 皮火妙超伊柏/ 蚊妙/ 
+
+  呆蚊鲤皮达穿肯/ 呆蚊草喵森伊/ 妙拉皮柏边肯/ 森伊火喵磁喵拉穿/ 鲤柏皮卡卡边/ 草柏皮鸟喵火皮蚊柏/ 超蚊鸟鸟臭边拉肯蝶蝶/ 草柏喵超瓦伊伊/ 妙蜂肯蚊柏拉臭伊/ 磁伊拉皮呆喵草/ 忍喵臭拉伊喵火/ 妙穿蚊火伦/ 
+  ```
+
+
+  按照单词频率初步判断**“拉穿伊”代表THE**，最后两个字母**“蚊妙”假设为IS**，带入字母后可得：
+
+
+  ```
+  THE/ 蜂肯I达鲤/ 卡柏喵超火/ 森肯臭呆I伦/ 忍肯磁呆S/ 喵森E柏/ THE/ 臭皮瓦边/ H喵肯火草喵肯柏/ 皮火草/ 边喵肯柏/ 皮火S超E柏/ IS/ 
+
+  呆I鲤皮达H肯/ 呆I草喵森E/ ST皮柏边肯/ 森E火喵磁喵TH/ 鲤柏皮卡卡边/ 草柏皮鸟喵火皮I柏/ 超I鸟鸟臭边T肯蝶蝶/ 草柏喵超瓦EE/ S蜂肯I柏T臭E/ 磁ET皮呆喵草/ 忍喵臭TE喵火/ SHI火伦/ 
+  ```
+
+
+  第一段末尾的“皮火S超E柏/ IS”可以大胆猜测是**ANSWER IS**。如果没有看出来的话，最后一个单词“SHI火伦”也可以判断为**Shinx**（小猫怪）。
+
+
+
+  总之，利用单表替换的各种方法（如果还是解不出来，可以在密码吧的精品区好好学习一下），可以解得原文如下：
+
+  ```
+  The quick brown Vulpix jumps over, the lazy Houndour and your answer is:
+
+  Pikachu / Pidove / Staryu / Venomoth / Krabby / Dragonair / Wigglytuff / Drowzee / Squirtle / Metapod / Jolteon / Shinx
+  ```
+
+
+  前半句改编自经典的包含26个字母的短句，后面的单词全部是宝可梦的英文名。
+
+  替换的字母对照表如下：
+
+  |简称|替换字母|英文名
+  |:---|:---|:---
+  |皮|a|Clefable
+  |卡|b|Cubone
+  |达|c|Raticate
+  |草|d|Oddish
+  |伊|e|Eevee
+  |蝶|f|Butterfree
+  |鸟|g|Pidgeot
+  |穿|h|Sandshrew
+  |蚊|i|Poliwag
+  |忍|j|Ninjask
+  |鲤|k|Magikarp
+  |臭|l|Gloom
+  |磁|m|Magnemite
+  |火|n|Charmander
+  |喵|o|Meowth
+  |呆|p|Slowpoke
+  |蜂|q|Vespiquen
+  |柏|r|Arbok
+  |妙|s|Bulbasaur
+  |拉|t|Rattata
+  |肯|u|Tauros
+  |森|v|Grovyle
+  |超|w|Mewtwo
+  |伦|x|Luxray
+  |边|y|Porygon
+  |瓦|z|Weezing
+
+  找到提取字母的规律：倒数第四个字母。将题目中后半部分的单词倒数第四个字母提取出来，可得答案：**ADAMANT WRATH**。
+links:
+  - 
+    title: CCBC11 索引页
+    type: index
+    path: ccbc11/index
+  -
+    title: 返回案情分析板
+    type: page
+    path: ccbc11/pages/analysis-room

@@ -1,0 +1,22 @@
+type: problem
+title: "#20 - CCBC 11"
+content: 
+  - |
+    一幅美丽的花卉画作，据说出自名家之手。你闭上眼贪婪地嗅了嗅，仿佛能透过画卷闻到迷人的香气。
+problem-image: /ccbc11/images/problems/e3b7c5566a364989a28bc82f5b7d85b6.jpg
+answer: POWER ECONOMY
+tips:
+  -
+    title: 关于首先要做的事
+    content: 打开你的钱包吧（当然，这个时代你的钱包里可能会没有这种东西）
+answer-analysis: |
+  图中的花均为第五套人民币背面的花卉，花卉的颜色也按照对应的面值进行了修改，分别对应了1元-兰花，5元-水仙，10元-月季，20元-荷花。将所有花卉的金额按分组相加，得出的数字转换为字母即可。最终答案是：**POWER ECONOMY**。
+links:
+  - 
+    title: CCBC11 索引页
+    type: index
+    path: ccbc11/index
+  -
+    title: 返回案情分析板
+    type: page
+    path: ccbc11/pages/analysis-room

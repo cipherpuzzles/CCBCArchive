@@ -1,0 +1,124 @@
+type: problem
+title: "#案情总结 - CCBC 11"
+content: 
+  - |
+    <style>
+    #meta {
+    border-collapse: collapse;
+    }
+    #meta td {
+    width: 30px;
+    height: 30px;
+    font-family: monospace;
+    border: 1px solid;
+    text-align: center;
+    }
+    </style>
+
+
+    “辛苦你了！”局长赞赏地对你点了点头，然而又皱起了眉头：“根据你搜集到的脚印、笔记本等线索，我们调查到了他之前的行踪，但是很遗憾的是，这个罪犯所到之处只留下了**假名**，真实身份仍然是个谜。不过……”局长指了指桌子上的一封信，“这是从总局发来的信息，跟你之前总结出来的几条内容对照一下，也许能帮到我们。”
+
+    <table id="meta" cellpadding="0" cellspacing="0">
+    <tr>
+    <td>J</td>
+    <td>N</td>
+    <td>G</td>
+    <td>H</td>
+    <td>Z</td>
+    <td>W</td>
+    </tr>
+    <tr>
+    <td>C</td>
+    <td>C</td>
+    <td>B</td>
+    <td>O</td>
+    <td>C</td>
+    <td>X</td>
+    </tr>
+    <tr>
+    <td>S</td>
+    <td>I</td>
+    <td>F</td>
+    <td>U</td>
+    <td>M</td>
+    <td>A</td>
+    </tr>
+    <tr>
+    <td>W</td>
+    <td>M</td>
+    <td>G</td>
+    <td>Q</td>
+    <td>B</td>
+    <td>R</td>
+    </tr>
+    <tr>
+    <td>B</td>
+    <td>H</td>
+    <td>V</td>
+    <td>C</td>
+    <td>L</td>
+    <td>J</td>
+    </tr>
+    <tr>
+    <td>X</td>
+    <td>S</td>
+    <td>S</td>
+    <td>D</td>
+    <td>W</td>
+    <td>H</td>
+    </tr>
+    </table>
+extend-content:
+  - |
+    “史卡酷，我还皮卡丘呢！这果然还是假名！“你愤愤地说，”这个罪犯太狡猾了！“   
+    局长若有所思地摆了一会儿pose，突然一拍桌子：”我知道了，这些线索里隐藏了五个**神秘的**人物，是**四角**分区派来支援我们的高手。你现在就去跟他们取得联络，跟他们合作破案。这次案件非同小可，我们一定要调查清楚时间、地点、人物、动机、和凶器五大要素，才能抢在案发之前就阻止这次破坏！“
+
+    （如果看不懂以上情节提示，可在【结案】处打开第一个提示）
+
+    -----------
+    【存档版说明】
+
+    在完成了Meta 1-3，也就是“1-11小结”“12-21小结”“22-30小结”三道Meta题后。本题“案情总结”作为**伪**FinalMeta解锁。
+
+    在本题通过后，才会接着解锁剩下的Meta 4-8（即“作案工具”“作案动机”“作案地点”“作案时间”“作案目标”五题）和真FinalMeta“结案”。
+answer: SHIKAKU
+additional-answers:
+  -
+    answer: シカク
+    message: 请提交英文（罗马音）。
+tips:
+  -
+    title: 这题要用到之前的哪些信息？
+    content: 三个meta的答案。准确地说，是三个meta的答案各自包含的“字母集合”。
+  -
+    title: 提取方式
+    content: 涂黑6x6格子里的字母
+answer-analysis: |
+  <div style="color: rgb(55, 55, 55);">
+  答案中隐藏了CCBCX的彩蛋，因为题目本身是作为CCBCX的题目
+
+  后面题目中出现的关于字母X的设计也是因为如此
+  </div>
+
+  将三轮Meta答案出现的字母如图分别标记到表格中：
+
+  ![结果图示](/ccbc11/images/answer/answermm-1.jpg)
+
+  根据题目中“假名”的提示，分别提取三个象形假名シ(shi)、カ(ka)、ク(ku)，答案：**SHIKAKU**。
+
+  --------------
+
+  解答后出现的提示文字提示了**“神秘的”**一词。通过寻找之前出现的所有题目，发现在第6、10、12、15、21题中出现了**“神秘的”**一词。这五个题号及8*8的网格构成了一个Shikaku谜题（数字与方框框起来的格子数相同，每个框里只有一个数字）。
+
+  ![Shikaku](/ccbc11/images/answer/answermm-2.jpg)
+
+  分隔好的五块区域恰好包含了**4、5、6、7、8个小题的数量**，对应了后续**五道新Meta的题目**。
+links:
+  - 
+    title: CCBC11 索引页
+    type: index
+    path: ccbc11/index
+  -
+    title: 返回警官办公室
+    type: page
+    path: ccbc11/pages/commissioner-office

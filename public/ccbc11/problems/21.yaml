@@ -1,0 +1,180 @@
+type: problem
+title: "#21 - CCBC 11"
+content: 
+  - |
+    这是一个神秘的电子游戏，你实在想不明白这样一个游戏内容单调，只有画面精致的游戏为什么会流行起来。
+
+    游戏的外包装上简单地印着操作说明：「点击按钮前后左右移动，刷新迷宫可以复位。」
+  - |
+    <div class="ratio ratio-16x9 e">
+        <div class="d-flex" id="f">
+            <img id="f1" src="/ccbc11/images/assets/p21_lc.jpg">
+            <img id="f2" src="/ccbc11/images/assets/p21_mc.jpg">
+            <img id="f3" src="/ccbc11/images/assets/p21_rc.jpg">
+        </div>
+        <div class="arrow-container" id="g">
+            <div id="g1" class="arrow-up"></div>
+            <div id="g2" class="arrow-left"></div>
+            <div id="g3" class="arrow-right"></div>
+            <div id="g4" class="arrow-down"></div>
+        </div>
+    </div>
+content-css: |
+  .e{overflow:hidden;background-color:black;}
+  .arrow-container{position:absolute}
+  .arrow-up{position:absolute;background-image:url(/ccbc11/images/assets/p21_up_arrow.png);background-size:contain;width:6.5%;height:4.5%;left:46.6%;top:44.5%;cursor:pointer;transition:all .2s linear}
+  .arrow-up:hover{background-image:url(/ccbc11/images/assets/p21_up_arrow_hover.png)}
+  .arrow-left{position:absolute;background-image:url(/ccbc11/images/assets/p21_left_arrow.png);background-size:contain;width:13.7%;height:7.3%;left:9.5%;top:53.5%;cursor:pointer;transition:all .2s linear}
+  .arrow-left:hover{background-image:url(/ccbc11/images/assets/p21_left_arrow_hover.png)}
+  .arrow-right{position:absolute;background-image:url(/ccbc11/images/assets/p21_right_arrow.png);background-size:contain;width:13.7%;height:7.3%;left:77%;top:53.5%;cursor:pointer;transition:all .2s linear}
+  .arrow-right:hover{background-image:url(/ccbc11/images/assets/p21_right_arrow_hover.png)}
+  .arrow-down{position:absolute;background-image:url(/ccbc11/images/assets/p21_down_arrow.png);background-size:contain;width:17.9%;height:19%;left:41%;top:74.5%;cursor:pointer;transition:all .2s linear}
+  .arrow-down:hover{background-image:url(/ccbc11/images/assets/p21_down_arrow_hover.png)}
+  @keyframes a{0%{top:0;opacity:1}50%{top:100%;opacity:0}51%{top:-100%;opacity:0}100%{top:0;opacity:1}}
+  @keyframes b{0%{top:0;opacity:1}50%{top:-100%;opacity:0}51%{top:100%;opacity:0}100%{top:0;opacity:1}}
+  @keyframes c{0%{left:0;opacity:1}50%{left:-100%;opacity:0}51%{left:100%;opacity:0}100%{left:0;opacity:1}}
+  @keyframes d{0%{left:0;opacity:1}50%{left:100%;opacity:0}51%{left:-100%;opacity:0}100%{left:0;opacity:1}}
+  .a-1{animation:c 1s}
+  .a-3{animation:d 1s}
+  .a-2{animation:a 1s}
+  .a-0{animation:b 1s}
+content-js: |
+  (function (){
+      const L = 3;
+      const U = 2;
+      const R = 1;
+      const D = 0;
+      const M = [
+          "00000000000000012B8000000000",
+          "000000003AA90107851000003AA9",
+          "1003ABA9783D3FBF95500003D005",
+          "7905151552ED56FD57F900155004",
+          "550557D57BAEC16D557EB97D5000",
+          "56AFD557D692979455796FD553A9",
+          "53955455516957FBC56D16D57E95",
+          "56ED6AC547957EED2F85794552C5",
+          "6AAEBAAEBFD7C396BFAC7E956BAC",
+          "00007AA857C53C7957A8516F8500",
+          "000053AAD52D516D552AFFAFAD00",
+          "0000552BD6AD7C2FC6A955050500",
+          "000056AED39550050007C5050500",
+          "00006AA857D7C00402AC05040500",
+          "0000000057D40000000004000400",
+          "000000006EE80000000000000000"
+      ];
+      let p = [2, 0];
+      let s3 = function (_i){
+          let _1 = document.getElementById("f1");
+          let _2 = document.getElementById("g2");
+          if (_i) {
+              _1.src = "/ccbc11/images/assets/p21_lo.jpg";
+              _2.style.display = "";
+          } else {
+              _1.src = "/ccbc11/images/assets/p21_lc.jpg"
+              _2.style.display = "none";
+          }
+      }
+      let s2 = function (_i){
+          let _1 = document.getElementById("f2");
+          let _2 = document.getElementById("g1");
+          if (_i) {
+              _1.src = "/ccbc11/images/assets/p21_mo.jpg";
+              _2.style.display = "";
+          } else {
+              _1.src = "/ccbc11/images/assets/p21_mc.jpg"
+              _2.style.display = "none";
+          }
+      }
+      let s1 = function (_i){
+          let _1 = document.getElementById("f3");
+          let _2 = document.getElementById("g3");
+          if (_i) {
+              _1.src = "/ccbc11/images/assets/p21_ro.jpg";
+              _2.style.display = "";
+          } else {
+              _1.src = "/ccbc11/images/assets/p21_rc.jpg"
+              _2.style.display = "none";
+          }
+      }
+      let s0 = function (_i){
+          let _2 = document.getElementById("g4");
+          if (_i) {
+              _2.style.display = "";
+          } else {
+              _2.style.display = "none";
+          }
+      }
+      let o = function (_p) {
+          let s = parseInt(M[_p[0]][_p[1]], 16);
+          s0((s & 1) == 1);
+          s1(((s >> 1) & 1) == 1);
+          s2(((s >> 2) & 1) == 1);
+          s3(((s >> 3) & 1) == 1);
+      }
+      let aE = document.getElementById("g");
+      let bE = document.getElementById("f");
+      let g = function (dir) {
+          aE.style.display = "none";
+
+          switch (dir){
+              case L:
+                  bE.classList.add("a-3");
+                  if (p[1] > 0) p[1] -= 1;
+                  break;
+              case U:
+                  bE.classList.add("a-2");
+                  if (p[0] > 0) p[0] -= 1;
+                  break;
+              case R:
+                  bE.classList.add("a-1");
+                  if (p[1] < 28) p[1] += 1;
+                  break;
+              case D:
+                  bE.classList.add("a-0");
+                  if (p[0] < 16) p[0] += 1;
+                  break;
+          }
+
+          setTimeout(() => {
+              o(p);
+          }, 500);
+      }
+      aE.addEventListener("click", (e) => {
+          e.preventDefault();
+
+          if (e.srcElement.id == "g1") {
+              g(U);
+          } else if (e.srcElement.id == "g2") {
+              g(L);
+          } else if (e.srcElement.id == "g3") {
+              g(R);
+          } else if (e.srcElement.id == "g4") {
+              g(D);
+          }
+      });
+      bE.addEventListener("animationend", (e) => {
+          bE.classList.remove("a-3", "a-2", "a-1", "a-0");
+          aE.style.display = "";
+      })
+      o(p);
+  })();
+answer: BURNING CHASM
+tips:
+  -
+    title: 我需要做什么？
+    content: 画地图
+answer-analysis: |
+  边走迷宫边画地图：
+
+  ![地图](/ccbc11/images/answer/answer21.png)
+
+  根据画好后的地图象形识别出文字即可。答案为：**BURNING CHASM**。
+links:
+  - 
+    title: CCBC11 索引页
+    type: index
+    path: ccbc11/index
+  -
+    title: 返回案情分析板
+    type: page
+    path: ccbc11/pages/analysis-room

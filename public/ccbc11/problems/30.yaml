@@ -1,0 +1,84 @@
+type: problem
+title: "#30 - CCBC 11"
+content: 
+  - |
+    “你知道汉语博大精深，只需要用一个字就能代表一整个英语词，所以我们背起元素来也背得比老外快——”  
+    “我会背我会背，氢氦锂铍……”
+    “什么乱七八糟的，我说的元素是金木水火土懂吗？所有的东西都是依靠这些元素组成的……”
+  - |
+    <style>
+    #grid30 {
+      border-collapse: collapse;
+      margin: auto;
+    }
+    #grid30 td {
+      height: 32px;
+      width: 32px;
+      text-align: center;
+      border: 1px solid #ccc;
+    }
+    .usuimg {
+        width: 100%;
+    }
+    </style>
+    <p><img class="usuimg" src="/ccbc11/images/problems/dc1140196d874ae285910ade005be3cf.jpg"></p>
+    <table id="grid30">
+    <tr><td>A</td><td>C</td><td>U</td><td>P</td><td>M</td><td>C</td><td>I</td><td>B</td><td>B</td><td>Y</td><td>T</td><td>O</td><td>M</td><td>N</td></tr>
+    <tr><td>C</td><td>O</td><td>P</td><td>P</td><td>E</td><td>R</td><td>A</td><td>S</td><td>U</td><td>C</td><td>R</td><td>O</td><td>H</td><td>M</td></tr>
+    <tr><td>E</td><td>L</td><td>O</td><td>H</td><td>T</td><td>O</td><td>P</td><td>S</td><td>E</td><td>B</td><td>D</td><td>U</td><td>F</td><td>U</td></tr>
+    <tr><td>I</td><td>K</td><td>C</td><td>Z</td><td>I</td><td>N</td><td>S</td><td>J</td><td>S</td><td>E</td><td>B</td><td>O</td><td>B</td><td>L</td></tr>
+    <tr><td>I</td><td>C</td><td>D</td><td>I</td><td>E</td><td>Z</td><td>N</td><td>S</td><td>L</td><td>E</td><td>R</td><td>L</td><td>O</td><td>O</td></tr>
+    <tr><td>W</td><td>I</td><td>S</td><td>N</td><td>T</td><td>I</td><td>E</td><td>R</td><td>S</td><td>T</td><td>R</td><td>Z</td><td>E</td><td>C</td></tr>
+    <tr><td>I</td><td>W</td><td>C</td><td>N</td><td>S</td><td>Y</td><td>U</td><td>R</td><td>R</td><td>E</td><td>E</td><td>O</td><td>Z</td><td>S</td></tr>
+    <tr><td>H</td><td>E</td><td>A</td><td>T</td><td>E</td><td>D</td><td>B</td><td>E</td><td>D</td><td>C</td><td>R</td><td>A</td><td>L</td><td>M</td></tr>
+    <tr><td>W</td><td>E</td><td>N</td><td>Z</td><td>D</td><td>O</td><td>S</td><td>N</td><td>O</td><td>A</td><td>T</td><td>P</td><td>Z</td><td>E</td></tr>
+    <tr><td>A</td><td>B</td><td>D</td><td>A</td><td>G</td><td>S</td><td>Z</td><td>N</td><td>O</td><td>N</td><td>Z</td><td>B</td><td>Y</td><td>E</td></tr>
+    <tr><td>V</td><td>C</td><td>I</td><td>T</td><td>O</td><td>M</td><td>B</td><td>O</td><td>M</td><td>N</td><td>E</td><td>Z</td><td>E</td><td>C</td></tr>
+    <tr><td>E</td><td>R</td><td>U</td><td>E</td><td>E</td><td>P</td><td>O</td><td>L</td><td>S</td><td>O</td><td>A</td><td>V</td><td>S</td><td>O</td></tr>
+    <tr><td>N</td><td>Z</td><td>M</td><td>W</td><td>B</td><td>A</td><td>D</td><td>H</td><td>I</td><td>N</td><td>A</td><td>T</td><td>E</td><td>Z</td></tr>
+    <tr><td>S</td><td>E</td><td>K</td><td>O</td><td>M</td><td>S</td><td>K</td><td>I</td><td>N</td><td>C</td><td>M</td><td>O</td><td>O</td><td>R</td></tr>
+    </table>
+    <div style="padding: 30px 0">
+    <p align="center">每个英文单词或词组对应一个汉字。</p>
+    <p align="center">每列单词按字母顺序排列。并且没有复数形式。</p>
+    <p align="center">推荐使用 <a href="https://tools.qhex.org" target="_blank">http://tools.qhex.org</a> 的 Word search 功能（但是注意不是所有返回的词都符合条件）。</p>
+    </div>
+answer: SANCTIFIABLE
+tips:
+  -
+    title: 最终的提取？
+    content: 用“有/无”转换成二进制
+  -
+    title: 排序？
+    content: 看一下字母方阵里还剩下什么，依据字母Z分开，还是跟之前一样，每个词用一个汉字表示。
+answer-analysis: |
+  表中隐藏了许多单词：
+
+  ![单词表](/ccbc11/images/answer/answer30-1.jpg)
+
+  使用题目中提示的工具可以帮助快速找到表中的单词（注意有些单词的阅读顺序是反向的）。
+
+  每个单词或词组均可写作一个汉字，而**每个字都带有五行相关的部首**（题图中的五种颜色分别是五行的五种颜色），并共用了相同的偏旁。如COPPER（铜），属五行中的“金”，与五行属“水”的CAVE（洞），共用偏旁“同”。
+
+  <span style="color: rgb(190, 190, 190);">（题图中的短线提示了单词的字母数）</span>
+
+
+
+  表中未用到的字母以字母**"Z"作为分隔符**可提取若干单词，该单词既表示了要用到的偏旁，也表示了答案字母的顺序。将单词填入到对应的五行中，制成下表：
+
+  ![对照表](/ccbc11/images/answer/answer30-2.jpg)
+
+  以**“金木水火土”**的顺序，将图中每行的内容转换为**二进制**，然后再转换成字母。如第一行“亢”，根据五行是否有对应的单词可转换为二进制10011，10011转换为十进制是19，再转换为字母是S。
+
+
+
+  依次将全部行转换为字母，得出的最终答案是：**SANCTIFIABLE**。
+links:
+  - 
+    title: CCBC11 索引页
+    type: index
+    path: ccbc11/index
+  -
+    title: 返回案情分析板
+    type: page
+    path: ccbc11/pages/analysis-room

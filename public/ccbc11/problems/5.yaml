@@ -1,0 +1,93 @@
+type: problem
+title: "#5 - CCBC 11"
+content: 
+  - |
+    这是一部不知道从哪里拾到上交的手机，内容已经被清空了，只有备忘录里留下了这么一串奇怪的数字……. 
+  - |
+    <div class="alert alert-secondary" role="alert">
+      说明：本题在比赛期间通过解出手机号码并拨打获得答案。拨打手机号码将有电话自动答录机接听并播放一段录音，录音内容如下：
+
+      <audio src="/ccbc11/images/problems/a4b24e3028c6461ca84bf48d9f7c93f1.mp3" controls></audio>
+
+      **你可以将解得的手机号码输入答案框来确认这个号码是否为正确的。**
+    </div>
+  - |
+    <table>
+    <tbody><tr>
+    <td style="width: 500px">226232</td>
+    <td>1</td>
+    </tr>
+    <tr>
+    <td>23442647826</td>
+    <td>1</td>
+    </tr>
+    <tr>
+    <td>528842</td>
+    <td>3</td>
+    </tr>
+    <tr>
+    <td>5893626874</td>
+    <td>3</td>
+    </tr>
+    <tr>
+    <td>46342</td>
+    <td>2</td>
+    </tr>
+    <tr>
+    <td>6443742</td>
+    <td>1</td>
+    </tr>
+    <tr>
+    <td>473323</td>
+    <td>2</td>
+    </tr>
+    <tr>
+    <td>24462</td>
+    <td>1</td>
+    </tr>
+    <tr>
+    <td>6626</td>
+    <td>2</td>
+    </tr>
+    <tr>
+    <td>35426884</td>
+    <td>3</td>
+    </tr>
+    <tr>
+    <td>3782867425 484632</td>
+    <td>2</td>
+    </tr>
+    </tbody></table>
+answer: NEW JOCKEYCAP
+additional-answers:
+  -
+    answer: callingcode
+    message: 思路正确，请继续。
+  -
+    answer: '19121208634'
+    message: 手机号码正确。请播放音频，音频内容即为答案。
+tips:
+  -
+    title: 关于左边的数字
+    content: 单纯的手机键盘密码，不要想得太复杂
+  -
+    title: 关于右边的数字
+    content: 区号的位数
+  -
+    title: 关于最终答案
+    content: 试着打打看
+answer-analysis: |
+  通过题设手机的提示及左侧数字没有数字0和1，可知用到了手机键盘密码，破解后可得若干国家名：
+
+  CANADA / AFGHANISTAN / LATVIA / LUXEMBOURG / INDIA / NIGERIA / GREECE / CHINA / OMAN / DJIBOUTI / EQUATORIAL GUINEA
+
+  这些国家首字母连成Calling Code，即查看电话区号查找这些国家的电话区号，取右侧数字对应位置的区号数字可得：`19121208634`，拨打该电话号码（该电话号码已停用），可获得电话留言的答案：**NEW JOCKEYCAP**。
+links:
+  - 
+    title: CCBC11 索引页
+    type: index
+    path: ccbc11/index
+  -
+    title: 返回案情分析板
+    type: page
+    path: ccbc11/pages/analysis-room

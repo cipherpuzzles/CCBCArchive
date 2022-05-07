@@ -1,0 +1,34 @@
+type: problem
+title: "#7 - CCBC 11"
+content: 
+  - |
+    一堆可爱的图片，似乎是某个mv影片的草图。
+  - |
+    <style>
+    .dimag{
+        width: 100%;
+        max-width: 400px;
+    }
+    </style>
+    <a href="/ccbc11/images/problems/03f61aa10a994a0abf5b84771e29c248.jpg" target="_blank">
+      <img class="dimag" src="/ccbc11/images/problems/03f61aa10a994a0abf5b84771e29c248.jpg">
+    </a>
+answer: CUTTERHEAD
+tips:
+  -
+    title: 关于画面的识别
+    content: 这些图画并不需要了解出处，重要的是歌词
+  -
+    title: 关于字母的提取
+    content: 观察MV找找和给出的图中比较相似的地方
+answer-analysis: |
+  根据图示的关键词甜甜圈，珍珠奶茶，方便面，火锅，米饭……联想到歌曲《卡路里》的歌词，搜索其MV，对照MV画面，找到图中数字处的字母，并按数字排序，得：**CUTTERHEAD**。
+links:
+  - 
+    title: CCBC11 索引页
+    type: index
+    path: ccbc11/index
+  -
+    title: 返回案情分析板
+    type: page
+    path: ccbc11/pages/analysis-room

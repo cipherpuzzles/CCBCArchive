@@ -1,0 +1,81 @@
+type: problem
+title: "#18 - CCBC 11"
+content: 
+  - |
+    *若以下格式无法正确显示，请[下载题目PDF](/ccbc11/images/problems/886df0f8f36c448fa47f8c0065462677.pdf)。
+
+    这是……一份……奥数班的训练题！？它为什么会在这里出现？
+  - |
+    <ul>
+        <li>共有$\alpha$个三位数等于其各位数字的立方和；其中最大的一个是$\beta$。</li>
+        <li>小于$102$的素数共有$\gamma$个。</li>
+        <li>完全平方数的后两位共有$\delta$种可能性。</li>
+        <li>$1/75$写成循环小数后，循环节有$\epsilon$位。</li>
+        <li>$\zeta$是最小的“以两个相同的非零数字结尾”的立方数。</li>
+        <li>$\eta$是Catalan数$C_\theta$；$\eta/\sqrt\theta$是素数。</li>
+        <li>$\iota$是$\pi$的小数展开式里最晚出现的非零数字。</li>
+        <li>$(\kappa,\lambda)$是Pell方程$\kappa^2-23\lambda^2=1$的最小正整数解。</li>
+    </ul>
+
+    <table class="table table-dark table-bordered text-center">
+        <tr>
+            <td>$\eta$</td>
+            <td>$\eta+1$</td>
+            <td>$4\alpha+\iota$</td>
+            <td>$\frac{\gamma}{2}-\theta$</td>
+            <td>$\zeta^\epsilon\mod\gamma$</td>
+        </tr>
+        <tr>
+            <td>$\epsilon^{2/3}+\epsilon^{4/3}$</td>
+            <td>$\epsilon$</td>
+            <td>$\sqrt[3]{\zeta}+\iota-2\epsilon$</td>
+            <td>$(\beta+2)^\alpha\mod\delta$</td>
+            <td>$\kappa-3\epsilon-1$</td>
+        </tr>
+        <tr>
+            <td>$\delta+\epsilon^{2/3}$</td>
+            <td>$\theta-\left\lfloor\delta\sin\delta\right\rfloor$</td>
+            <td>$\left\lceil\frac{\gamma-\eta}{\epsilon}\right\rceil$</td>
+            <td>$\lambda^2-3\epsilon$</td>
+            <td>$\left\lceil\sqrt[\alpha]{\beta}\right\rceil$</td>
+        </tr>
+    </table>
+content-js: |
+  globalThis.MathJax = {
+    tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+    svg: {fontCache: 'global'}
+  };
+  (function () {
+    let a = document.getElementById("contentHtml");
+    let b = document.createElement("script");
+    b.id = "MathJax-script";
+    b.async = true;
+    b.src = "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js";
+    a.appendChild(b);
+  })();
+answer: NONMATHEMATICAL
+additional-answers:
+  -
+    answer: NOW IN BASE TWELVE
+    message: 看来你得到下一步的指示了？那就照做吧~~
+tips:
+  -
+    title: 我解出了一个短语并且尝试着转换了，可是没有任何头绪？
+    content: 这些数学问题在[哔——]下(大部分)都有不同的答案，再算一遍吧（注意所有的数字都要按[哔——]理解）
+answer-analysis: |
+  首先需要解答这些数学问题，解答不出来的题目需善用搜索引擎，这些希腊字母对应的答案分别是：α=4；β=407；γ=26；δ=22；ε=1；ζ=2744；η=14；θ=4；ι=7；κ=24；λ=5。
+  
+  将结果带入下方的表，得出的答案数字转换为字母，可得：NOW IN BASE TWELVE（转换为12进制），意思是将原题目的所有数字都视为12进制。
+  
+  再次解答一遍的答案是α=3；β=A83；γ=34；δ=16；ε=8；ζ=3B77；η=14；θ=4；ι=2；κ=26；λ=5。
+  
+  再次带入表格，得出的数字转换为字母可得出最终答案：**NONMATHEMATICAL**。
+links:
+  - 
+    title: CCBC11 索引页
+    type: index
+    path: ccbc11/index
+  -
+    title: 返回案情分析板
+    type: page
+    path: ccbc11/pages/analysis-room

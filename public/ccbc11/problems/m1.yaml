@@ -1,0 +1,28 @@
+type: problem
+title: "#1-11小结 - CCBC 11"
+content: 
+  - |
+    “这是我对犯罪分子行踪的一点想法，结合之前的线索或许会带来突破。”某位警员这样说道。
+extend-content:
+  - |
+    “听说公园附近有人目击了一个举止可疑的老头，说不定跟这次案情相关……”   
+    “干得好！”局长拍了拍你的肩膀，“我这就派人去公园调查！”
+problem-image: /ccbc11/images/problems/22983bb239ec414391c2a11cfe05f37d.jpg
+answer: OLD STRANGER IN A PARK
+tips:
+  -
+    title: 关于提取顺序
+    content: 按题号顺序
+answer-analysis: |
+  将第一轮全部小题的答案填入表格中，按按照题号顺序取红色格子中的字母可得：**OLD STRANGER IN A PARK**。
+
+  ![结果图示](/ccbc11/images/answer/answerm1.png)
+links:
+  - 
+    title: CCBC11 索引页
+    type: index
+    path: ccbc11/index
+  -
+    title: 返回警官办公室
+    type: page
+    path: ccbc11/pages/commissioner-office

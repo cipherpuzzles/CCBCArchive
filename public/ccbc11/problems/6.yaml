@@ -1,0 +1,29 @@
+type: problem
+title: "#6 - CCBC 11"
+content: 
+  - |
+    这是一个魔方，上面刻着奇怪的图案和一行神秘的小字：
+
+    From lasting disorder unexpected beauty rises...
+problem-image: /ccbc11/images/problems/c40d6be5e64d472aaacf3c5d03d37cef.jpg
+answer: BUDGED
+tips:
+  -
+    title: 关于魔方的复原
+    content: 剧情中的英文首字母提示了复原的方法
+  -
+    title: 关于答案的字母顺序
+    content: 剧情中的英文首字母提示了提取字母的顺序
+answer-analysis: |
+  根据题设提示提取首字母`FLDUBR`，这是魔方的旋转公式，如图所示进行还原，再按照首字母对应的面提取字母即得答案：**BUDGED**。
+
+  ![结果图示](/ccbc11/images/answer/answer6.gif)
+links:
+  - 
+    title: CCBC11 索引页
+    type: index
+    path: ccbc11/index
+  -
+    title: 返回案情分析板
+    type: page
+    path: ccbc11/pages/analysis-room

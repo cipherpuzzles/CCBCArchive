@@ -1,0 +1,34 @@
+type: problem
+title: "#23 - CCBC 11"
+content: 
+  - |
+    一张植物明信片被人胡乱写上了字，这是一棵什么树来着？
+
+    <p style="text-align:center;">
+    __ __ __ __ __ __ __ __ &nbsp;&nbsp; __ __ __ __ __ __<br>
+    </p>
+problem-image: /ccbc11/images/problems/233812cb75f6497f9689c9ddf5ccfeaa.jpg
+answer: COLORADO SPRUCE
+additional-answers:
+  -
+    answer: 科罗拉多云杉
+    message: 请提交英文答案（8 6）。
+tips:
+  -
+    title: 关于第一步要做的事
+    content: 尝试着组词试试看
+answer-analysis: |
+  组词题，需要补充三字词语的中间的字。按照树杈结构逐层向上组词：
+
+  ![结果](/ccbc11/images/answer/answer23.png)
+
+  取树干的字：科罗拉多云杉。根据题目下方单词长度的提示进行翻译，答案是：**COLORADO SPRUCE**。
+links:
+  - 
+    title: CCBC11 索引页
+    type: index
+    path: ccbc11/index
+  -
+    title: 返回案情分析板
+    type: page
+    path: ccbc11/pages/analysis-room

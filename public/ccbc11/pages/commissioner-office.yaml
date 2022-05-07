@@ -1,0 +1,139 @@
+type: page
+title: 警官办公室 - CCBC 11
+content: 
+  - |
+    <div class="ratio ratio-16x9 mainimg">
+      <div class="d-flex flex-wrap flex-row buttonarea">
+        <div class="metarow">
+          <button class="meta-button" onclick="goLink('m1')">1-11小结</button>
+        </div>
+        <div class="metarow">
+          <button class="meta-button" onclick="goLink('m2')">12-21小结</button>
+        </div>
+        <div class="metarow">
+          <button class="meta-button" onclick="goLink('m3')">22-30小结</button>
+        </div>
+        <div class="metarow">
+          <button class="meta-button" onclick="goLink('mm')">案情总结</button>
+        </div>
+        <div class="metarow">
+          <button class="meta-button" onclick="goLink('m4')">作案工具</button>
+        </div>
+        <div class="metarow">
+          <button class="meta-button" onclick="goLink('m5')">作案动机</button>
+        </div>
+        <div class="metarow">
+          <button class="meta-button" onclick="goLink('m6')">作案地点</button>
+        </div>
+        <div class="metarow">
+          <button class="meta-button" onclick="goLink('m7')">作案时间</button>
+        </div>
+        <div class="metarow">
+          <button class="meta-button" onclick="goLink('m8')">作案目标</button>
+        </div>
+        <div class="metarow">
+          <button class="meta-button" onclick="goLink('fm')">结案</button>
+        </div>
+      </div>
+      <img src="/ccbc11/images/assets/board_hover.png" class="boardarea" onclick="goLink('ar')">
+    </div>
+content-css: |
+  .mainimg {
+    background-image: url("/ccbc11/images/assets/cobg.jpg");
+    background-size: 100% 100%;
+  }
+  .boardarea{
+    position: absolute;
+    width: 11.7%;
+    height: 60.2%;
+    top: 19.5%;
+    left: 0;
+    opacity: 0;
+    cursor: pointer;
+    transition: all 0.2s linear;
+  }
+  .boardarea:hover{
+    opacity: 1;
+  }
+  .meta-button{
+    background-color: rgba(204, 195, 187, 0.7);
+    border: #684d2c 2px solid;
+    width: 120px;
+    height: 30px;
+    transition: all 0.2s linear;
+    color: #2a1711;
+  }
+  .meta-button:hover{
+    border-color: #a0643c;
+    background-color: rgb(204, 195, 187);
+  }
+  .buttonarea{
+    position: absolute;
+    width: 30%;
+    height: 20%;
+    top: 53%;
+    left: 35%;
+  }
+  .metarow{
+    flex: 1 0 33%;
+  }
+links:
+  - 
+    title: CCBC11 索引页
+    type: index
+    path: ccbc11/index
+  -
+    title: 案情分析板
+    type: page
+    path: ccbc11/pages/analysis-room
+    id: ar
+  -
+    title: 1-11小结
+    type: problem
+    path: ccbc11/problems/m1
+    id: m1
+  -
+    title: 12-21小结
+    type: problem
+    path: ccbc11/problems/m2
+    id: m2
+  -
+    title: 22-30小结
+    type: problem
+    path: ccbc11/problems/m3
+    id: m3
+  -
+    title: 案情总结
+    type: problem
+    path: ccbc11/problems/mm
+    id: mm
+  -
+    title: 作案工具
+    type: problem
+    path: ccbc11/problems/m4
+    id: m4
+  -
+    title: 作案动机
+    type: problem
+    path: ccbc11/problems/m5
+    id: m5
+  -
+    title: 作案地点
+    type: problem
+    path: ccbc11/problems/m6
+    id: m6
+  -
+    title: 作案时间
+    type: problem
+    path: ccbc11/problems/m7
+    id: m7
+  -
+    title: 作案目标
+    type: problem
+    path: ccbc11/problems/m8
+    id: m8
+  -
+    title: 结案
+    type: problem
+    path: ccbc11/problems/fm
+    id: fm
