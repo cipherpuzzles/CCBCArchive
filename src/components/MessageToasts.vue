@@ -22,7 +22,7 @@
 import type { Ref } from 'vue'
 import { nextTick, ref } from 'vue'
 import gBus from '../globalBus'
-import sleep from '../utils/Sleep'
+import sleep from '../utils/sleep'
 import { Toast } from 'bootstrap'
 
 interface ToastMessage {

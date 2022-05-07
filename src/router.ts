@@ -1,6 +1,6 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
 
-import Index from './views/index.vue'
+import Index from './views/Index.vue'
 import Page from './views/Page.vue'
 import Problem from './views/Problem.vue'
 import Scoreboard from './views/Scoreboard.vue'
