@@ -1,0 +1,173 @@
+type: problem
+title: "#29 - CCBC 11"
+content: 
+  - |
+    一个不受控制的彩灯，把房间照得五颜六色。
+content-js: |
+  (() => {
+    let time = parseInt(new Date().getTime() / 1000);
+    let minuteTag = parseInt(time / 60) % 16;
+    let bodyBgColor = "#1E1E1E";
+
+    switch (minuteTag) {
+      case 0:
+        bodyBgColor = "#FFC0CB";
+        break;
+      case 1:
+        bodyBgColor = "#F0F8FF";
+        break;
+      case 2:
+        bodyBgColor = "#4169E1";
+        break;
+      case 3:
+        bodyBgColor = "#4682B4";
+        break;
+      case 4:
+        bodyBgColor = "#808000";
+        break;
+      case 5:
+        bodyBgColor = "#FFDEAD";
+        break;
+      case 6:
+        bodyBgColor = "#A0522D";
+        break;
+      case 7:
+        bodyBgColor = "#7FFF00";
+        break;
+      case 8:
+        bodyBgColor = "#FF69B4";
+        break;
+      case 9:
+        bodyBgColor = "#F0FFFF";
+        break;
+      case 10:
+        bodyBgColor = "#FFE4E1";
+        break;
+      case 11:
+        bodyBgColor = "#EEEEEE";
+        break;
+      case 12:
+        bodyBgColor = "#7CFC00";
+        break;
+      case 13:
+        bodyBgColor = "#EEEEEE";
+        break;
+      case 14:
+        bodyBgColor = "#FFA500";
+        break;
+      case 15:
+        bodyBgColor = "#000080";
+        break;
+    }
+    
+    let el = document.getElementById("contentHtml");
+    let styleEl = document.createElement("style");
+    styleEl.innerHTML = "body{background-color:" + bodyBgColor + ";}";
+
+    el.appendChild(styleEl);
+  })();
+answer: PARSONS CHAMELEON
+tips:
+  -
+    title: 怎么提取字母？
+    content: 颜色首字母（除了 EEEEEE 代表的就是 E，因为没有 E 开头的颜色）
+answer-analysis: |
+  非常有迷惑性的一题，每一分钟题目的背景颜色都会变化，一共有16种颜色进行循环。将每种颜色的色值提取出来（可截图或按F12键），通过色值辅助搜索颜色对应的英文名。
+
+  <table data-sort="sortDisabled" style="margin-bottom: 0em;color: rgb(0, 0, 0);">
+    <tbody>
+      <tr>
+        <td valign="top" style="border-color: rgb(221, 221, 221);word-break: break-all;background-color: rgb(255, 192, 203);"><span style="font-size: 14px;">P<br></span></td>
+        <td valign="top" style="border-color: rgb(221, 221, 221);word-break: break-all;background-color: rgb(255, 192, 203);"><span style="font-size: 14px;">Pink<br></span></td>
+        <td valign="top" style="border-color: rgb(221, 221, 221);word-break: break-all;background-color: rgb(255, 192, 203);"><span style="font-size: 14px;">#FFC0CB</span></td>
+      </tr>
+      <tr>
+        <td valign="top" style="border-color: rgb(221, 221, 221);background-color: rgb(240, 248, 255);"><span style="font-size: 14px;">A</span></td>
+        <td valign="top" style="border-color: rgb(221, 221, 221);word-break: break-all;background-color: rgb(240, 248, 255);"><span style="font-size: 14px;">Aliceblue</span></td>
+        <td valign="top" style="border-color: rgb(221, 221, 221);word-break: break-all;background-color: rgb(240, 248, 255);"><span style="font-size: 14px;">#F0F8FF</span></td>
+      </tr>
+      <tr>
+        <td valign="top" style="border-color: rgb(221, 221, 221);word-break: break-all;background-color: rgb(65, 105, 225);"><span style="color: rgb(255, 255, 255);font-size: 14px;">R</span></td>
+        <td valign="top" style="word-break: break-all;border-color: rgb(221, 221, 221);background-color: rgb(65, 105, 225);"><span style="color: rgb(255, 255, 255);font-size: 14px;">Royalblue</span></td>
+        <td valign="top" style="border-color: rgb(221, 221, 221);word-break: break-all;background-color: rgb(65, 105, 225);"><span style="color: rgb(255, 255, 255);font-size: 14px;">#4169E1</span></td>
+      </tr>
+      <tr>
+        <td valign="top" style="border-color: rgb(221, 221, 221);word-break: break-all;background-color: rgb(70, 130, 180);"><span style="color: rgb(255, 255, 255);font-size: 14px;">S<br></span></td>
+        <td valign="top" style="border-color: rgb(221, 221, 221);word-break: break-all;background-color: rgb(70, 130, 180);"><span style="color: rgb(255, 255, 255);font-size: 14px;">Steelblue</span></td>
+        <td valign="top" style="border-color: rgb(221, 221, 221);word-break: break-all;background-color: rgb(70, 130, 180);"><span style="color: rgb(255, 255, 255);font-size: 14px;">#4682B4</span></td>
+      </tr>
+      <tr>
+        <td valign="top" style="border-color: rgb(221, 221, 221);word-break: break-all;background-color: rgb(128, 128, 0);"><span style="color: rgb(255, 255, 255);font-size: 14px;">O</span></td>
+        <td valign="top" style="border-color: rgb(221, 221, 221);word-break: break-all;background-color: rgb(128, 128, 0);"><span style="color: rgb(255, 255, 255);font-size: 14px;">Olive</span></td>
+        <td valign="top" style="border-color: rgb(221, 221, 221);word-break: break-all;background-color: rgb(128, 128, 0);"><span style="color: rgb(255, 255, 255);font-size: 14px;">#808000</span></td>
+      </tr>
+      <tr>
+        <td valign="top" style="border-color: rgb(221, 221, 221);word-break: break-all;background-color: rgb(255, 222, 173);"><span style="font-size: 14px;">N</span></td>
+        <td valign="top" style="border-color: rgb(221, 221, 221);word-break: break-all;background-color: rgb(255, 222, 173);"><span style="font-size: 14px;">Navajowhite</span></td>
+        <td valign="top" style="border-color: rgb(221, 221, 221);word-break: break-all;background-color: rgb(255, 222, 173);"><span style="font-size: 14px;">#FFDEAD</span></td>
+      </tr>
+      <tr>
+        <td valign="top" style="border-color: rgb(221, 221, 221);word-break: break-all;background-color: rgb(160, 82, 45);"><span style="color: rgb(255, 255, 255);font-size: 14px;">S<br></span></td>
+        <td valign="top" style="border-color: rgb(221, 221, 221);word-break: break-all;background-color: rgb(160, 82, 45);"><span style="color: rgb(255, 255, 255);font-size: 14px;">Sienna</span></td>
+        <td valign="top" style="border-color: rgb(221, 221, 221);word-break: break-all;background-color: rgb(160, 82, 45);"><span style="color: rgb(255, 255, 255);font-size: 14px;">#A0522D</span></td>
+      </tr>
+      <tr>
+        <td valign="top" style="border-color: rgb(221, 221, 221);word-break: break-all;background-color: rgb(127, 255, 0);"><span style="font-size: 14px;">C<br></span></td>
+        <td valign="top" style="border-color: rgb(221, 221, 221);word-break: break-all;background-color: rgb(127, 255, 0);"><span style="font-size: 14px;">Chartreuse</span></td>
+        <td valign="top" style="border-color: rgb(221, 221, 221);word-break: break-all;background-color: rgb(127, 255, 0);"><span style="font-size: 14px;">#7FFF00</span></td>
+      </tr>
+      <tr>
+        <td valign="top" style="border-color: rgb(221, 221, 221);word-break: break-all;background-color: rgb(255, 105, 180);"><span style="font-size: 14px;">H</span></td>
+        <td valign="top" style="border-color: rgb(221, 221, 221);word-break: break-all;background-color: rgb(255, 105, 180);"><span style="font-size: 14px;">Hot pink</span></td>
+        <td valign="top" style="border-color: rgb(221, 221, 221);word-break: break-all;background-color: rgb(255, 105, 180);"><span style="font-size: 14px;">#FF69B4</span></td>
+      </tr>
+      <tr>
+        <td valign="top" style="border-color: rgb(221, 221, 221);background-color: rgb(240, 255, 255);"><span style="font-size: 14px;">A</span></td>
+        <td valign="top" style="border-color: rgb(221, 221, 221);word-break: break-all;background-color: rgb(240, 255, 255);"><span style="font-size: 14px;">Azure</span></td>
+        <td valign="top" style="border-color: rgb(221, 221, 221);word-break: break-all;background-color: rgb(240, 255, 255);"><span style="font-size: 14px;">#F0FFFF</span></td>
+      </tr>
+      <tr>
+        <td valign="top" colspan="1" rowspan="1" style="border-color: rgb(221, 221, 221);word-break: break-all;background-color: rgb(255, 228, 225);"><span style="font-size: 14px;">M<br></span></td>
+        <td valign="top" colspan="1" rowspan="1" style="border-color: rgb(221, 221, 221);word-break: break-all;background-color: rgb(255, 228, 225);"><span style="font-size: 14px;">Mistyrose</span></td>
+        <td valign="top" colspan="1" rowspan="1" style="border-color: rgb(221, 221, 221);word-break: break-all;background-color: rgb(255, 228, 225);"><span style="font-size: 14px;">#FFE4E1</span></td>
+      </tr>
+      <tr>
+        <td valign="top" style="border-color: rgb(221, 221, 221);word-break: break-all;background-color: rgb(238, 238, 238);"><span style="font-size: 14px;">E</span></td>
+        <td valign="top" style="border-color: rgb(221, 221, 221);word-break: break-all;background-color: rgb(238, 238, 238);"><span style="font-size: 14px;">EEEEEE</span></td>
+        <td valign="top" style="border-color: rgb(221, 221, 221);word-break: break-all;background-color: rgb(238, 238, 238);"><span style="font-size: 14px;">#EEEEEE</span></td>
+      </tr>
+      <tr>
+        <td valign="top" colspan="1" rowspan="1" style="border-color: rgb(221, 221, 221);word-break: break-all;background-color: rgb(124, 252, 0);"><span style="font-size: 14px;">L<br></span></td>
+        <td valign="top" colspan="1" rowspan="1" style="border-color: rgb(221, 221, 221);word-break: break-all;background-color: rgb(124, 252, 0);"><span style="font-size: 14px;">Lawngreen</span></td>
+        <td valign="top" colspan="1" rowspan="1" style="border-color: rgb(221, 221, 221);word-break: break-all;background-color: rgb(124, 252, 0);"><span style="font-size: 14px;">#7CFC00</span></td>
+      </tr>
+      <tr>
+        <td valign="top" colspan="1" rowspan="1" style="border-color: rgb(221, 221, 221);word-break: break-all;background-color: rgb(238, 238, 238);"><span style="font-size: 14px;">E</span></td>
+        <td valign="top" colspan="1" rowspan="1" style="border-color: rgb(221, 221, 221);word-break: break-all;background-color: rgb(238, 238, 238);"><span style="font-size: 14px;">EEEEEE</span></td>
+        <td valign="top" colspan="1" rowspan="1" style="border-color: rgb(221, 221, 221);word-break: break-all;background-color: rgb(238, 238, 238);"><span style="font-size: 14px;">#EEEEEE</span></td>
+      </tr>
+      <tr>
+        <td valign="top" colspan="1" rowspan="1" style="border-color: rgb(221, 221, 221);word-break: break-all;background-color: rgb(255, 165, 0);"><span style="font-size: 14px;">O<br></span></td>
+        <td valign="top" colspan="1" rowspan="1" style="border-color: rgb(221, 221, 221);word-break: break-all;background-color: rgb(255, 165, 0);"><span style="font-size: 14px;">Orange</span></td>
+        <td valign="top" colspan="1" rowspan="1" style="border-color: rgb(221, 221, 221);word-break: break-all;background-color: rgb(255, 165, 0);"><span style="font-size: 14px;">#FFA500</span></td>
+      </tr>
+      <tr>
+        <td valign="top" colspan="1" rowspan="1" style="border-color: rgb(221, 221, 221);word-break: break-all;background-color: rgb(0, 0, 128);"><span style="color: rgb(255, 255, 255);font-size: 14px;">N</span></td>
+        <td valign="top" colspan="1" rowspan="1" style="border-color: rgb(221, 221, 221);word-break: break-all;background-color: rgb(0, 0, 128);"><span style="color: rgb(255, 255, 255);font-size: 14px;">Navy<span style="white-space: pre-wrap;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span></td>
+        <td valign="top" colspan="1" rowspan="1" style="border-color: rgb(221, 221, 221);word-break: break-all;background-color: rgb(0, 0, 128);"><span style="color: rgb(255, 255, 255);font-size: 14px;">#<span style="box-sizing: content-box !important;">000080</span></span></td>
+      </tr>
+    </tbody>
+  </table>
+
+  英文名的首字母提取出来就是最终的答案：**PARSONS CHAMELEON**。
+
+  （p.s.因为没有E开头的颜色，所以用EEEEEE的色值颜色代替。）
+links:
+  - 
+    title: CCBC11 索引页
+    type: index
+    path: ccbc11/index
+  -
+    title: 返回案情分析板
+    type: page
+    path: ccbc11/pages/analysis-room

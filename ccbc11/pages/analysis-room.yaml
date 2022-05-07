@@ -1,0 +1,433 @@
+type: page
+title: 案情分析板 - CCBC 11
+content: 
+  - |
+    <div class="ratio ratio-16x9 main-grid">
+      <div class="container-fluid question-area">
+        <div class="row row-cols-8 main-grid-row">
+          <div class="col p-0"></div>
+          <div class="col p-0">
+            <div class="ratio ratio-4x3 sticker-box" onclick="goLink('p16')">
+              <div class="number-box">16</div>
+            </div>
+          </div>
+          <div class="col p-0"></div>
+          <div class="col p-0">
+            <div class="ratio ratio-4x3 sticker-box" onclick="goLink('p28')">
+              <div class="number-box">28</div>
+            </div>
+          </div>
+          <div class="col p-0"></div>
+          <div class="col p-0">
+            <div class="ratio ratio-4x3 sticker-box" onclick="goLink('p23')">
+              <div class="number-box">23</div>
+            </div>
+          </div>
+          <div class="col p-0">
+            <div class="ratio ratio-4x3 sticker-box" onclick="goLink('p13')">
+              <div class="number-box">13</div>
+            </div>
+          </div>
+          <div class="col p-0"></div>
+        </div>
+        <div class="row row-cols-8 main-grid-row">
+          <div class="col p-0">
+            <div class="ratio ratio-4x3 sticker-box" onclick="goLink('p17')">
+              <div class="number-box">17</div>
+            </div>
+          </div>
+          <div class="col p-0"></div>
+          <div class="col p-0">
+            <div class="ratio ratio-4x3 sticker-box" onclick="goLink('p7')">
+              <div class="number-box">7</div>
+            </div>
+          </div>
+          <div class="col p-0">
+            <div class="ratio ratio-4x3 sticker-box" onclick="goLink('p10')">
+              <div class="number-box">10</div>
+            </div>
+          </div>
+          <div class="col p-0"></div>
+          <div class="col p-0"></div>
+          <div class="col p-0"></div>
+          <div class="col p-0"></div>
+        </div>
+        <div class="row row-cols-8 main-grid-row">
+          <div class="col p-0">
+            <div class="ratio ratio-4x3 sticker-box" onclick="goLink('p6')">
+              <div class="number-box">6</div>
+            </div>
+          </div>
+          <div class="col p-0">
+            <div class="ratio ratio-4x3 sticker-box" onclick="goLink('p26')">
+              <div class="number-box">26</div>
+            </div>
+          </div>
+          <div class="col p-0"></div>
+          <div class="col p-0">
+            <div class="ratio ratio-4x3 sticker-box" onclick="goLink('p30')">
+              <div class="number-box">30</div>
+            </div>
+          </div>
+          <div class="col p-0"></div>
+          <div class="col p-0"></div>
+          <div class="col p-0">
+            <div class="ratio ratio-4x3 sticker-box" onclick="goLink('p4')">
+              <div class="number-box">4</div>
+            </div>
+          </div>
+          <div class="col p-0">
+            <div class="ratio ratio-4x3 sticker-box" onclick="goLink('p15')">
+              <div class="number-box">15</div>
+            </div>
+          </div>
+        </div>
+        <div class="row row-cols-8 main-grid-row">
+          <div class="col p-0">
+            <div class="ratio ratio-4x3 sticker-box" onclick="goLink('p8')">
+              <div class="number-box">8</div>
+            </div>
+          </div>
+          <div class="col p-0"></div>
+          <div class="col p-0">
+            <div class="ratio ratio-4x3 sticker-box" onclick="goLink('p5')">
+              <div class="number-box">5</div>
+            </div>
+          </div>
+          <div class="col p-0"></div>
+          <div class="col p-0">
+            <div class="ratio ratio-4x3 sticker-box" onclick="goLink('p20')">
+              <div class="number-box">20</div>
+            </div>
+          </div>
+          <div class="col p-0">
+            <div class="ratio ratio-4x3 sticker-box" onclick="goLink('p29')">
+              <div class="number-box">29</div>
+            </div>
+          </div>
+          <div class="col p-0">
+            <div class="ratio ratio-4x3 sticker-box" onclick="goLink('p22')">
+              <div class="number-box">22</div>
+            </div>
+          </div>
+          <div class="col p-0"></div>
+        </div>
+        <div class="row row-cols-8 main-grid-row">
+          <div class="col p-0"></div>
+          <div class="col p-0">
+            <div class="ratio ratio-4x3 sticker-box" onclick="goLink('p12')">
+              <div class="number-box">12</div>
+            </div>
+          </div>
+          <div class="col p-0">
+            <div class="ratio ratio-4x3 sticker-box" onclick="goLink('p3')">
+              <div class="number-box">3</div>
+            </div>
+          </div>
+          <div class="col p-0"></div>
+          <div class="col p-0"></div>
+          <div class="col p-0">
+            <div class="ratio ratio-4x3 sticker-box" onclick="goLink('p18')">
+              <div class="number-box">18</div>
+            </div>
+          </div>
+          <div class="col p-0"></div>
+          <div class="col p-0">
+            <div class="ratio ratio-4x3 sticker-box" onclick="goLink('p19')">
+              <div class="number-box">19</div>
+            </div>
+          </div>
+        </div>
+        <div class="row row-cols-8 main-grid-row">
+          <div class="col p-0">
+            <div class="ratio ratio-4x3 sticker-box" onclick="goLink('p1')">
+              <div class="number-box">1</div>
+            </div>
+          </div>
+          <div class="col p-0"></div>
+          <div class="col p-0"></div>
+          <div class="col p-0"></div>
+          <div class="col p-0"></div>
+          <div class="col p-0"></div>
+          <div class="col p-0">
+            <div class="ratio ratio-4x3 sticker-box" onclick="goLink('p27')">
+              <div class="number-box">27</div>
+            </div>
+          </div>
+          <div class="col p-0"></div>
+        </div>
+        <div class="row row-cols-8 main-grid-row">
+          <div class="col p-0"></div>
+          <div class="col p-0">
+            <div class="ratio ratio-4x3 sticker-box" onclick="goLink('p14')">
+              <div class="number-box">14</div>
+            </div>
+          </div>
+          <div class="col p-0"></div>
+          <div class="col p-0"></div>
+          <div class="col p-0">
+            <div class="ratio ratio-4x3 sticker-box" onclick="goLink('p9')">
+              <div class="number-box">9</div>
+            </div>
+          </div>
+          <div class="col p-0"></div>
+          <div class="col p-0">
+            <div class="ratio ratio-4x3 sticker-box" onclick="goLink('p2')">
+              <div class="number-box">2</div>
+            </div>
+          </div>
+          <div class="col p-0"></div>
+        </div>
+        <div class="row row-cols-8 main-grid-row">
+          <div class="col p-0">
+            <div class="ratio ratio-4x3 sticker-box" onclick="goLink('p24')">
+              <div class="number-box">24</div>
+            </div>
+          </div>
+          <div class="col p-0"></div>
+          <div class="col p-0">
+            <div class="ratio ratio-4x3 sticker-box" onclick="goLink('p11')">
+              <div class="number-box">11</div>
+            </div>
+          </div>
+          <div class="col p-0"></div>
+          <div class="col p-0">
+            <div class="ratio ratio-4x3 sticker-box" onclick="goLink('p21')">
+              <div class="number-box">21</div>
+            </div>
+          </div>
+          <div class="col p-0">
+            <div class="ratio ratio-4x3 sticker-box" onclick="goLink('p25')">
+              <div class="number-box">25</div>
+            </div>
+          </div>
+          <div class="col p-0"></div>
+          <div class="col p-0"></div>
+        </div>
+      </div>
+    </div>
+content-css: |
+  .question-area{
+    position: absolute;
+    width: 57%;
+    height: 80%;
+    top: 10%;
+    left: 18.5%;
+  }
+  .main-grid {
+    background-image: url('/ccbc11/images/assets/board.jpg');
+    background-size: 100% 100%;
+  }
+  .main-grid-row {
+    height: 70px;
+  }
+  .sticker-box {
+    background-image: url('/ccbc11/images/assets/question.png');
+    background-size: 100% 100%;
+    cursor: pointer;
+    transition: all 0.2s linear;
+  }
+  .sticker-box:hover{
+    background-image: url('/ccbc11/images/assets/question_hover.png');
+  }
+  .number-box {
+    text-align: center;
+    font-size: 45px;
+    margin-top: 5px;
+    color: #2a1711;
+  }
+  @media (max-width: 1399.98px) { 
+    .number-box {
+      font-size: 40px;
+      margin-top: 3px;
+    }
+    .main-grid-row {
+      height: 62px;
+    }
+  }
+  @media (max-width: 1199.98px) { 
+    .number-box {
+      font-size: 30px;
+      margin-top: 5px;
+    }
+    .main-grid-row {
+      height: 53px;
+    }
+  }
+  @media (max-width: 991.98px) {
+    .number-box {
+      font-size: 25px;
+      margin-top: 2px;
+    }
+    .main-grid-row {
+      height: 39px;
+    }
+  }
+  @media (max-width: 767.98px) {
+    .number-box {
+      font-size: 3vw;
+      margin-top: 0.4vw;
+    }
+    .main-grid-row {
+      height: 5.2vw;
+    }
+  }
+links:
+  - 
+    title: CCBC11 索引页
+    type: index
+    path: ccbc11/index
+  -
+    title: 警官办公室
+    type: page
+    path: ccbc11/pages/commissioner-office
+  -
+    title: 1
+    type: problem
+    path: ccbc11/problems/1
+    id: p1
+  -
+    title: 2
+    type: problem
+    path: ccbc11/problems/2
+    id: p2
+  -
+    title: 3
+    type: problem
+    path: ccbc11/problems/3
+    id: p3
+  -
+    title: 4
+    type: problem
+    path: ccbc11/problems/4
+    id: p4
+  -
+    title: 5
+    type: problem
+    path: ccbc11/problems/5
+    id: p5
+  -
+    title: 6
+    type: problem
+    path: ccbc11/problems/6
+    id: p6
+  -
+    title: 7
+    type: problem
+    path: ccbc11/problems/7
+    id: p7
+  -
+    title: 8
+    type: problem
+    path: ccbc11/problems/8
+    id: p8
+  -
+    title: 9
+    type: problem
+    path: ccbc11/problems/9
+    id: p9
+  -
+    title: 10
+    type: problem
+    path: ccbc11/problems/10
+    id: p10
+  -
+    title: 11
+    type: problem
+    path: ccbc11/problems/11
+    id: p11
+  -
+    title: 12
+    type: problem
+    path: ccbc11/problems/12
+    id: p12
+  -
+    title: 13
+    type: problem
+    path: ccbc11/problems/13
+    id: p13
+  -
+    title: 14
+    type: problem
+    path: ccbc11/problems/14
+    id: p14
+  -
+    title: 15
+    type: problem
+    path: ccbc11/problems/15
+    id: p15
+  -
+    title: 16
+    type: problem
+    path: ccbc11/problems/16
+    id: p16
+  -
+    title: 17
+    type: problem
+    path: ccbc11/problems/17
+    id: p17
+  -
+    title: 18
+    type: problem
+    path: ccbc11/problems/18
+    id: p18
+  -
+    title: 19
+    type: problem
+    path: ccbc11/problems/19
+    id: p19
+  -
+    title: 20
+    type: problem
+    path: ccbc11/problems/20
+    id: p20
+  -
+    title: 21
+    type: problem
+    path: ccbc11/problems/21
+    id: p21
+  -
+    title: 22
+    type: problem
+    path: ccbc11/problems/22
+    id: p22
+  -
+    title: 23
+    type: problem
+    path: ccbc11/problems/23
+    id: p23
+  -
+    title: 24
+    type: problem
+    path: ccbc11/problems/24
+    id: p24
+  -
+    title: 25
+    type: problem
+    path: ccbc11/problems/25
+    id: p25
+  -
+    title: 26
+    type: problem
+    path: ccbc11/problems/26
+    id: p26
+  -
+    title: 27
+    type: problem
+    path: ccbc11/problems/27
+    id: p27
+  -
+    title: 28
+    type: problem
+    path: ccbc11/problems/28
+    id: p28
+  -
+    title: 29
+    type: problem
+    path: ccbc11/problems/29
+    id: p29
+  -
+    title: 30
+    type: problem
+    path: ccbc11/problems/30
+    id: p30

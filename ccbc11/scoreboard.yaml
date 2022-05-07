@@ -1,0 +1,654 @@
+type: scoreboard
+title: 排行榜 - CCBC 11
+content: 
+  - |
+    【存档版说明】
+
+    此处显示的是CCBC 11比赛的最终结果。排名规则不是按照得分排序的。
+scoreboarddata:
+  finished_groups:
+    - gid: 40
+      group_name: 他这破网站登录不了啊
+      group_profile: yyao  yyds
+      total_time: 69.01924206277778
+      score: 1009769.5589098011
+      finished_puzzle_count: 40
+      is_finish: 1
+    - gid: 1
+      group_name: 喵喵喵
+      group_profile: |-
+        芙，呵呵，嘤嘤嘤，嘤嘤嘤嘤；芙，呵呵，嘤嘤嘤，嘤嘤嘤嘤；嘤，喵喵喵喵，嘤嘤嘤，嘤嘤嘤嘤；嘤，呜呜，喵喵喵，嘤嘤嘤；哒，喵喵；嘶，呵，呵呵，嘤嘤嘤！
+
+        喵，喵喵，嘤嘤嘤，嘤嘤嘤嘤；嘤嘤嘤，喵喵，喵喵喵，嘤嘤嘤；啾，喵喵，喵喵喵，嘤嘤嘤！
+      total_time: 79.8200818925
+      score: 982236.2005251483
+      finished_puzzle_count: 40
+      is_finish: 1
+    - gid: 5
+      group_name: Perfectoid space
+      group_profile: ''
+      total_time: 88.7107559575
+      score: 980363.2205506244
+      finished_puzzle_count: 40
+      is_finish: 1
+    - gid: 24
+      group_name: 中铁11局爆破队
+      group_profile: 爆炸就是艺术
+      total_time: 88.91239063027778
+      score: 966768.856280959
+      finished_puzzle_count: 40
+      is_finish: 1
+    - gid: 92
+      group_name: 队长说Ta今年十八
+      group_profile: boom
+      total_time: 89.36633515666666
+      score: 974222.6422179876
+      finished_puzzle_count: 37
+      is_finish: 1
+    - gid: 67
+      group_name: 耗皇
+      group_profile: 完赛成绩太差，凉凉离我而去……
+      total_time: 89.76348626805556
+      score: 957983.8000704846
+      finished_puzzle_count: 40
+      is_finish: 1
+    - gid: 63
+      group_name: wake puzzleD STuck sleeP
+      group_profile: 弃赛了，今年的 CCBC 就到这里为止，毕竟我们不知道买不到提示的提示币还有啥作用~
+      total_time: 90.32996473222222
+      score: 968117.6039507746
+      finished_puzzle_count: 40
+      is_finish: 1
+    - gid: 110
+      group_name: ppppp
+      group_profile: ''
+      total_time: 92.00803729666667
+      score: 960572.0563520095
+      finished_puzzle_count: 38
+      is_finish: 1
+    - gid: 128
+      group_name: Forty-Two
+      group_profile: ''
+      total_time: 99.59013318777778
+      score: 930223.8772454164
+      finished_puzzle_count: 36
+      is_finish: 1
+    - gid: 35
+      group_name: CA汽车杂志2021编辑部
+      group_profile: >-
+        We are from a pulishing house aiming at Canada CAR MAGAZINE. Our magazines
+        have a DUCK LOGO on the cover and some OVERLEAF TAGS inside.
+      total_time: 104.19100168527778
+      score: 923121.9271199668
+      finished_puzzle_count: 40
+      is_finish: 1
+    - gid: 23
+      group_name: 状态异常组
+      group_profile: 目标是成为大师的宝可梦！
+      total_time: 112.7585799
+      score: 906630.0745419735
+      finished_puzzle_count: 40
+      is_finish: 1
+    - gid: 162
+      group_name: 问谛居·CYBER RUN代表队
+      group_profile: 欢迎参加「城市飞奔」旅行竞赛以及线上轻度解谜赛「CYBER RUN」
+      total_time: 112.88310354
+      score: 907206.7622946614
+      finished_puzzle_count: 40
+      is_finish: 1
+    - gid: 60
+      group_name: エンドレスエイト
+      group_profile: 永无止境的八月
+      total_time: 133.5592030475
+      score: 869353.0016582106
+      finished_puzzle_count: 40
+      is_finish: 1
+    - gid: 28
+      group_name: 没想过
+      group_profile: >-
+        98109865173698210410071851117583491179088991038271704890831031057710665121778348119796748119781056512177681111197768111119776773112
+      total_time: 139.442287695
+      score: 840207.6411109343
+      finished_puzzle_count: 40
+      is_finish: 1
+    - gid: 12
+      group_name: 重在参与
+      group_profile: 因为喜欢，所以热爱
+      total_time: 140.3750468536111
+      score: 894838.6936634361
+      finished_puzzle_count: 40
+      is_finish: 1
+    - gid: 58
+      group_name: 中老年摸鱼队
+      group_profile: 做出一题就是胜利
+      total_time: 143.38811026666667
+      score: 840317.97138095
+      finished_puzzle_count: 40
+      is_finish: 1
+    - gid: 154
+      group_name: 一定要取个二次元队名
+      group_profile: 来自 Nazo Game 一队的成员们嘴上说着要弃赛，身体却还是挺诚实的嘛
+      total_time: 144.47314132805556
+      score: 847118.1342236995
+      finished_puzzle_count: 40
+      is_finish: 1
+    - gid: 50
+      group_name: 躺平就队
+      group_profile: 我不是针对谁，我是说在场的各位都是大佬。
+      total_time: 148.99814332388888
+      score: 844013.1094136676
+      finished_puzzle_count: 40
+      is_finish: 1
+    - gid: 13
+      group_name: PR密码部!
+      group_profile: ''
+      total_time: 154.37165392527777
+      score: 817924.8505612885
+      finished_puzzle_count: 40
+      is_finish: 1
+    - gid: 107
+      group_name: 闲着也是闲着
+      group_profile: 闲着也是闲着
+      total_time: 156.76197205638888
+      score: 845154.1778446721
+      finished_puzzle_count: 40
+      is_finish: 1
+    - gid: 166
+      group_name: 人类高质量战队
+      group_profile: |-
+        “队伍是不是可以拉起来了？”  
+        “这次的队名是” 
+        “有道理” 
+        “人类高质量战队，怎么样”
+        “不错”
+        “好，有道理队必胜！”
+        “有道理队必胜！”
+      total_time: 161.0503137411111
+      score: 862609.2523108334
+      finished_puzzle_count: 40
+      is_finish: 1
+    - gid: 98
+      group_name: Akali
+      group_profile: 我们下一届叫Zoe
+      total_time: 161.16411707083333
+      score: 830732.1960778242
+      finished_puzzle_count: 40
+      is_finish: 1
+    - gid: 155
+      group_name: NAZOGAME CCBC11 二队
+      group_profile: NAZOGAME群参加CCBC11的二次元的队伍简称二队（
+      total_time: 165.9837374675
+      score: 806684.8768666626
+      finished_puzzle_count: 40
+      is_finish: 1
+    - gid: 20
+      group_name: DITTo。
+      group_profile: 不要咕咕咕
+      total_time: 173.00020028111112
+      score: 770259.6696442212
+      finished_puzzle_count: 32
+      is_finish: 1
+    - gid: 36
+      group_name: ccbc11居然能如期举办于是来比一比谁的队名更长的刑侦科专案组
+      group_profile: zz快起来填final meta的答案啦！
+      total_time: 185.41459576138888
+      score: 790109.7427132885
+      finished_puzzle_count: 40
+      is_finish: 1
+    - gid: 115
+      group_name: 吃吃吃吃喝喝
+      group_profile: 客官来打尖吗～客官吃好喝好啊～
+      total_time: 189.92382937194444
+      score: 773807.3746766385
+      finished_puzzle_count: 40
+      is_finish: 1
+    - gid: 93
+      group_name: 胶熱
+      group_profile: ''
+      total_time: 191.5242680475
+      score: 801803.0273231853
+      finished_puzzle_count: 40
+      is_finish: 1
+    - gid: 111
+      group_name: 心之怪盗团
+      group_profile: |
+        再来一题~！
+      total_time: 193.45077949416665
+      score: 851619.1635925737
+      finished_puzzle_count: 39
+      is_finish: 1
+    - gid: 123
+      group_name: 群收款未支付
+      group_profile: 还有谁没交钱吗？赶紧交啦！！！
+      total_time: 214.97218635805555
+      score: 794526.5650031511
+      finished_puzzle_count: 40
+      is_finish: 1
+    - gid: 169
+      group_name: TC联盟
+      group_profile: 一支憨憨组成的队伍
+      total_time: 218.29856776777777
+      score: 715355.2770778852
+      finished_puzzle_count: 40
+      is_finish: 1
+    - gid: 82
+      group_name: 天鹏别看了我们还是解不出
+      group_profile: 天鹏队没有天鹏呜呜
+      total_time: 221.23806873944446
+      score: 732956.6457895553
+      finished_puzzle_count: 37
+      is_finish: 1
+    - gid: 184
+      group_name: 898 Caffè Head Store
+      group_profile: |-
+        You may need a cup of coffee from our 898 Caffè!
+        Latte 0.99＄
+        Cappuccino 1.11＄
+        Mocha 0.99＄
+        Americano 0.99＄
+        Nongfu Spring 0.30＄
+        Business Hours：8:00 am ~ 9:00 am Monday ~ Apresunday.
+      total_time: 240.47989705444445
+      score: 707527.3478766859
+      finished_puzzle_count: 33
+      is_finish: 1
+    - gid: 3
+      group_name: '65535'
+      group_profile: ''
+      total_time: 265.88796427666665
+      score: 693958.629458234
+      finished_puzzle_count: 40
+      is_finish: 1
+    - gid: 52
+      group_name: 休闲娱乐划水答题队
+      group_profile: ''
+      total_time: 284.3586389877778
+      score: 671800.7628864499
+      finished_puzzle_count: 37
+      is_finish: 1
+    - gid: 18
+      group_name: RHXJ
+      group_profile: 进行了一个鱼的摸
+      total_time: 292.5682672633333
+      score: 633749.0540291569
+      finished_puzzle_count: 33
+      is_finish: 1
+    - gid: 96
+      group_name: cocvgwt
+      group_profile: 符合水平的队名
+      total_time: 301.17618242333333
+      score: 633910.5058825073
+      finished_puzzle_count: 40
+      is_finish: 1
+    - gid: 129
+      group_name: 月巴月巴
+      group_profile: 月半月半
+      total_time: 314.8265963316667
+      score: 672743.0578515052
+      finished_puzzle_count: 40
+      is_finish: 1
+    - gid: 41
+      group_name: 逻辑回归
+      group_profile: |
+        完赛了，感谢二片云彩同学的副作用。
+      total_time: 328.2928758525
+      score: 644106.843541662
+      finished_puzzle_count: 40
+      is_finish: 1
+    - gid: 191
+      group_name: 勇敢菜狗，不怕困难
+      group_profile: ''
+      total_time: 360.59477079416666
+      score: 614398.120072851
+      finished_puzzle_count: 40
+      is_finish: 1
+  groups:
+    - gid: 109
+      group_name: 观光团吧大概
+      group_profile: 'wei,zaima?'
+      total_time: 0
+      score: 60916.76241800958
+      finished_puzzle_count: 32
+      is_finish: 0
+    - gid: 180
+      group_name: Freedom
+      group_profile: 为自由而战
+      total_time: 0
+      score: 42755.47207501573
+      finished_puzzle_count: 31
+      is_finish: 0
+    - gid: 122
+      group_name: 老年休闲观光团
+      group_profile: ''
+      total_time: 0
+      score: 41269.69347906805
+      finished_puzzle_count: 27
+      is_finish: 0
+    - gid: 45
+      group_name: iciloindumonde
+      group_profile: 诶就是玩儿
+      total_time: 0
+      score: 30586.889044320476
+      finished_puzzle_count: 23
+      is_finish: 0
+    - gid: 168
+      group_name: 你说的都DUI
+      group_profile: 。。。。。。。。
+      total_time: 0
+      score: 29624.202170559165
+      finished_puzzle_count: 31
+      is_finish: 0
+    - gid: 26
+      group_name: ……
+      group_profile: 就这样吧，明年换队友╮（╯＿╰）╭
+      total_time: 0
+      score: 28155.66687583797
+      finished_puzzle_count: 21
+      is_finish: 0
+    - gid: 206
+      group_name: 国际草群划水分队
+      group_profile: 来自数字华容道、扫雷等项目玩家组成的一个组织中想参加CCBC11却又菜又爱玩的几位玩家组成的队伍
+      total_time: 0
+      score: 27590.770519542697
+      finished_puzzle_count: 23
+      is_finish: 0
+    - gid: 81
+      group_name: 石头剪刀布
+      group_profile: 包剪锤
+      total_time: 0
+      score: 23743.570816061496
+      finished_puzzle_count: 23
+      is_finish: 0
+    - gid: 73
+      group_name: 观光小分队
+      group_profile: 后排围观群众
+      total_time: 0
+      score: 22876.42182607175
+      finished_puzzle_count: 18
+      is_finish: 0
+    - gid: 55
+      group_name: 跳伞特种部队
+      group_profile: 快乐比赛快乐游戏
+      total_time: 0
+      score: 21049.235633041582
+      finished_puzzle_count: 17
+      is_finish: 0
+    - gid: 53
+      group_name: 这道题我不会做
+      group_profile: 这道题我真的不会做
+      total_time: 0
+      score: 20987.502957173972
+      finished_puzzle_count: 20
+      is_finish: 0
+    - gid: 75
+      group_name: Twilight
+      group_profile: ：/
+      total_time: 0
+      score: 18441.176243302358
+      finished_puzzle_count: 20
+      is_finish: 0
+    - gid: 89
+      group_name: 真·划水
+      group_profile: 活过第一个meta就算成功
+      total_time: 0
+      score: 17438.63538247753
+      finished_puzzle_count: 14
+      is_finish: 0
+    - gid: 152
+      group_name: The Ark
+      group_profile: 'Like an ark, stand in the storm and advance in doubt ！'
+      total_time: 0
+      score: 17401.682437976273
+      finished_puzzle_count: 19
+      is_finish: 0
+    - gid: 163
+      group_name: 没有队名队
+      group_profile: ''
+      total_time: 0
+      score: 17316.62469685947
+      finished_puzzle_count: 19
+      is_finish: 0
+    - gid: 209
+      group_name: 123demis
+      group_profile: '12333'
+      total_time: 0
+      score: 15371.929629059225
+      finished_puzzle_count: 17
+      is_finish: 0
+    - gid: 71
+      group_name: 如队长姓名
+      group_profile: |
+        摸鱼倒计时
+      total_time: 0
+      score: 13254.58023623825
+      finished_puzzle_count: 13
+      is_finish: 0
+    - gid: 69
+      group_name: 解出一个就是胜利
+      group_profile: 这道题我真的也不会做
+      total_time: 0
+      score: 13061.33755992811
+      finished_puzzle_count: 12
+      is_finish: 0
+    - gid: 195
+      group_name: 48小时核酸阴性
+      group_profile: 世界和平，天下大同
+      total_time: 0
+      score: 12566.01086279628
+      finished_puzzle_count: 15
+      is_finish: 0
+    - gid: 14
+      group_name: 鸽子窝
+      group_profile: 不只是累鸟
+      total_time: 0
+      score: 8912.279847109972
+      finished_puzzle_count: 11
+      is_finish: 0
+    - gid: 33
+      group_name: 观光
+      group_profile: ''
+      total_time: 0
+      score: 7696.731440964917
+      finished_puzzle_count: 9
+      is_finish: 0
+    - gid: 196
+      group_name: 异面三角形
+      group_profile: ''
+      total_time: 0
+      score: 6539.343775951973
+      finished_puzzle_count: 7
+      is_finish: 0
+    - gid: 189
+      group_name: 我答的不队
+      group_profile: 刚刚接触来凑热闹的，可忽略不计那种
+      total_time: 0
+      score: 6359.976064651306
+      finished_puzzle_count: 7
+      is_finish: 0
+    - gid: 65
+      group_name: 七曜
+      group_profile: ''
+      total_time: 0
+      score: 5673.481881559167
+      finished_puzzle_count: 6
+      is_finish: 0
+    - gid: 126
+      group_name: ( ﾟ∀。)
+      group_profile: ( ﾟ∀。)
+      total_time: 0
+      score: 5504.41531700825
+      finished_puzzle_count: 6
+      is_finish: 0
+    - gid: 173
+      group_name: 匀音寺言东耳
+      group_profile: 伞兵一号lbw准备就绪
+      total_time: 0
+      score: 4743.831279757805
+      finished_puzzle_count: 7
+      is_finish: 0
+    - gid: 99
+      group_name: 书鱼观光团
+      group_profile: 真的就是来见见世面的
+      total_time: 0
+      score: 4091.9457444994446
+      finished_puzzle_count: 5
+      is_finish: 0
+    - gid: 86
+      group_name: 脱碳甲醛队
+      group_profile: 划水，划水，划水
+      total_time: 0
+      score: 3984.4097793579444
+      finished_puzzle_count: 4
+      is_finish: 0
+    - gid: 68
+      group_name: 草莓薯片
+      group_profile: 没有
+      total_time: 0
+      score: 3805.0210190551115
+      finished_puzzle_count: 4
+      is_finish: 0
+    - gid: 39
+      group_name: 阿巴阿巴
+      group_profile: ''
+      total_time: 0
+      score: 3539.098891497889
+      finished_puzzle_count: 4
+      is_finish: 0
+    - gid: 87
+      group_name: 'null'
+      group_profile: 'null'
+      total_time: 0
+      score: 2945.726391010278
+      finished_puzzle_count: 3
+      is_finish: 0
+    - gid: 167
+      group_name: Administrator
+      group_profile: =
+      total_time: 0
+      score: 2792.5630903635556
+      finished_puzzle_count: 3
+      is_finish: 0
+    - gid: 22
+      group_name: 坚持观光
+      group_profile: ''
+      total_time: 0
+      score: 2747.9848613123054
+      finished_puzzle_count: 3
+      is_finish: 0
+    - gid: 190
+      group_name: touch fish
+      group_profile: fish-touching
+      total_time: 0
+      score: 2729.7715859038335
+      finished_puzzle_count: 3
+      is_finish: 0
+    - gid: 170
+      group_name: 建立新队伍
+      group_profile: ''
+      total_time: 0
+      score: 2555.3439603355837
+      finished_puzzle_count: 3
+      is_finish: 0
+    - gid: 210
+      group_name: 再不搞马甲了
+      group_profile: ？
+      total_time: 0
+      score: 2400.9194675459166
+      finished_puzzle_count: 3
+      is_finish: 0
+    - gid: 127
+      group_name: EFP.0
+      group_profile: ''
+      total_time: 0
+      score: 2295.8301655141668
+      finished_puzzle_count: 3
+      is_finish: 0
+    - gid: 101
+      group_name: 你知道我们学校连上了三个学期的课吗
+      group_profile: 垃圾暑期学校
+      total_time: 0
+      score: 2258.7326125763057
+      finished_puzzle_count: 3
+      is_finish: 0
+    - gid: 124
+      group_name: cocA
+      group_profile: 可口可乐~~~
+      total_time: 0
+      score: 1916.3150939676666
+      finished_puzzle_count: 2
+      is_finish: 0
+    - gid: 205
+      group_name: 摸鱼
+      group_profile: 摸鱼
+      total_time: 0
+      score: 1779.7345318558332
+      finished_puzzle_count: 3
+      is_finish: 0
+    - gid: 139
+      group_name: 到此一游
+      group_profile: 观摩团
+      total_time: 0
+      score: 1695.133714456361
+      finished_puzzle_count: 2
+      is_finish: 0
+    - gid: 32
+      group_name: 走出新手村就是胜利
+      group_profile: 划水队，欢迎一起划水（
+      total_time: 0
+      score: 953.6598201716112
+      finished_puzzle_count: 1
+      is_finish: 0
+    - gid: 108
+      group_name: 深邃黑暗幻想
+      group_profile: ''
+      total_time: 0
+      score: 950.4366026608611
+      finished_puzzle_count: 1
+      is_finish: 0
+    - gid: 193
+      group_name: 网路摸鱼小猫咪
+      group_profile: 找不到队友所以一个人来摸鱼
+      total_time: 0
+      score: 947.1492719863334
+      finished_puzzle_count: 1
+      is_finish: 0
+    - gid: 157
+      group_name: 无敌小火车
+      group_profile: 无敌小火车
+      total_time: 0
+      score: 930.9625839792222
+      finished_puzzle_count: 1
+      is_finish: 0
+    - gid: 121
+      group_name: 1=2
+      group_profile: 不知道5号位能不能等来中单和Carry
+      total_time: 0
+      score: 888.5230243074723
+      finished_puzzle_count: 1
+      is_finish: 0
+    - gid: 192
+      group_name: ，，
+      group_profile: 就是来打酱油的
+      total_time: 0
+      score: 884.8657290054167
+      finished_puzzle_count: 1
+      is_finish: 0
+    - gid: 199
+      group_name: 正经的摸鱼队
+      group_profile: 摸鱼快乐。
+      total_time: 0
+      score: 837.7316673118055
+      finished_puzzle_count: 1
+      is_finish: 0
+    - gid: 76
+      group_name: ROSE GANG
+      group_profile: 重在参与，拿奖不可能的
+      total_time: 0
+      score: 831.0598439702778
+      finished_puzzle_count: 1
+      is_finish: 0
+links:
+  - 
+    title: CCBC11 索引页
+    type: index
+    path: ccbc11/index

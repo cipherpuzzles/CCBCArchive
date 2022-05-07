@@ -1,0 +1,84 @@
+type: problem
+title: "#作案时间 - CCBC 11"
+content: 
+  - |
+    得尽快查出作案时间，才能及时阻止这场案件。
+
+    时间就是金钱，我的朋友！
+extend-content:
+  - |
+    “犯人打算在午夜行动！”
+
+    局长看了看手表：“留给我们的时间不多了！但是我相信你行的！”
+problem-image: /ccbc11/images/problems/477241a4a086463ca5e9e34289bb1ee4.jpg
+answer: STRIKE MIDNIGHT
+tips:
+  -
+    title: 关于逻辑谜题的解法
+    content: 在空格里填入数字，使得每行每列都有1-7数字，并且所有不等式成立
+  -
+    title: 关于小题答案的排序
+    content: 每个答案其中都有一个词来自某个游戏的不同版本
+  -
+    title: 关于填字的方法
+    content: 按照你补全的数字（注意不包括题目原来给出的数字）位置填入排序后剩下的字母
+answer-analysis: |
+  根据分组取得小题答案：
+
+  **WORLD VOYAGER**
+
+  **LUNAR CATACLYSM***
+
+  **SPARKLY MIST**
+
+  **IRISH LEGION**
+
+  **BURNING CHASM**
+
+  **TIME LORDS**
+
+  **ADAMANT WRATH**
+
+
+
+  题图为**Futoshiki**谜题，类似数独规则的同时满足“大于号>”相邻两格的大小规则，有唯一解。完成谜题解得：
+
+  ![结果图示](/ccbc11/images/answer/answerm7-1.jpg)
+
+  题设中“时间就是金钱，我的朋友”一句，出自《魔兽世界》游戏中地精商人的经典台词："Time is money friend!"
+
+
+  寻找**《魔兽世界》的所有大版本英文名**，按照版本1到版本7顺序找到与题目答案的对应关系：
+
+  1. **World** of Warcraft - **WORLD** VOYAGER
+
+  2. The **Burning** Crusade - **BURNING** CHASM
+
+  3. **Wrath** of the Lich King - ADAMANT **WRATH**
+
+  4. **Cataclysm** - LUNAR **CATACLYSM**
+
+  5. **Mist**s of Pandaria - SPARKLY **MIST**
+
+  6. War**lords** of Draenor - TIME **LORDS**
+
+  7. **Legion** Companion - IRISH **LEGION**
+
+
+
+  找出相同的单词，去掉相同单词后，剩下的词按由上至下填入表格对应的数字上：
+
+  1-VOYAGER, 2-CHASM, 3-ADAMANT, 4-LUNAR, 5-SPARKLY, 6-TIME, 7-IRISH
+
+  ![第二步结果](/ccbc11/images/answer/answerm7-2.jpg)
+
+  斜向取字母，可得答案：**STRIKE MIDNIGHT**。
+links:
+  - 
+    title: CCBC11 索引页
+    type: index
+    path: ccbc11/index
+  -
+    title: 返回警官办公室
+    type: page
+    path: ccbc11/pages/commissioner-office

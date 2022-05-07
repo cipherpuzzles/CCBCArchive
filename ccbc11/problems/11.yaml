@@ -1,0 +1,47 @@
+type: problem
+title: "#11 - CCBC 11"
+content: 
+  - |
+    ### 这似乎是一部小说的手稿，你饶有兴趣地打开，眉头却渐渐皱了起来……这文笔，怎么像小学生一样啊？
+  - |
+    一辆劳斯莱斯停在了圣克里斯丁学园的门前，一身黑色西服的司机兼保镖下了车，毕恭毕敬地拉开后座的车门。  
+    豪车司机的配置在圣克里斯丁并不少见，校门口清一色的名车就是证据。毕竟，能来这个学园上学的学生，没有皇室血统也是名流巨富的子女。  
+    然而，这一切在车里的少女出来的一刹那就变得不一样了。  
+    这位少女名叫<span style="color:#FF0000">曦</span><span style="color:#FF2400">梦</span><span style="color:#FF4900">月</span><span style="color:#FF6D00">·</span><span style="color:#FF9200">琉</span><span style="color:#FFB600">璃</span><span style="color:#FFDB00">舞</span><span style="color:#FFFF00">·</span><span style="color:#DBFF00">璃</span><span style="color:#B6FF00">莹</span><span style="color:#92FF00">殇</span><span style="color:#6DFF00">·</span><span style="color:#49FF00">蕾</span><span style="color:#24FF00">玥</span><span style="color:#00FF00">瑷</span><span style="color:#00FF24">雅</span><span style="color:#00FF49">·</span><span style="color:#00FF6D">蔷</span><span style="color:#00FF92">薇</span><span style="color:#00FFB6">玫</span><span style="color:#00FFDB">瑰</span><span style="color:#00FFFF">泪</span><span style="color:#00DBFF">·</span><span style="color:#00B6FF">羽</span><span style="color:#0092FF">灵</span><span style="color:#006DFF">·</span><span style="color:#0049FF">凤</span><span style="color:#0024FF">·</span><span style="color:#0000FF">邪</span><span style="color:#2400FF">儿</span><span style="color:#4900FF">·</span><span style="color:#6D00FF">伤</span><span style="color:#9200FF">梦</span><span style="color:#B600FF">薰</span><span style="color:#DB00FF">魅</span><span style="color:#FF00FF">·</span><span style="color:#FF00DB">曦</span><span style="color:#FF00B6">梦</span><span style="color:#FF0092">月</span><span style="color:#FF006D">·</span><span style="color:#FF0049">玥</span><span style="color:#FF0024">蓝</span>，来自古老而又鲜有人知的蓝月家族。  
+    虽然很少有人听说过蓝月家族，但是这个家族暗地里控制了全球60%以上的资金。并且每一代都会出一个拥有家族遗传的特殊能力的巫女。  
+    <span style="color:#FF0000">曦</span><span style="color:#FF2400">梦</span><span style="color:#FF4900">月</span><span style="color:#FF6D00">·</span><span style="color:#FF9200">琉</span><span style="color:#FFB600">璃</span><span style="color:#FFDB00">舞</span><span style="color:#FFFF00">·</span><span style="color:#DBFF00">璃</span><span style="color:#B6FF00">莹</span><span style="color:#92FF00">殇</span><span style="color:#6DFF00">·</span><span style="color:#49FF00">蕾</span><span style="color:#24FF00">玥</span><span style="color:#00FF00">瑷</span><span style="color:#00FF24">雅</span><span style="color:#00FF49">·</span><span style="color:#00FF6D">蔷</span><span style="color:#00FF92">薇</span><span style="color:#00FFB6">玫</span><span style="color:#00FFDB">瑰</span><span style="color:#00FFFF">泪</span><span style="color:#00DBFF">·</span><span style="color:#00B6FF">羽</span><span style="color:#0092FF">灵</span><span style="color:#006DFF">·</span><span style="color:#0049FF">凤</span><span style="color:#0024FF">·</span><span style="color:#0000FF">邪</span><span style="color:#2400FF">儿</span><span style="color:#4900FF">·</span><span style="color:#6D00FF">伤</span><span style="color:#9200FF">梦</span><span style="color:#B600FF">薰</span><span style="color:#DB00FF">魅</span><span style="color:#FF00FF">·</span><span style="color:#FF00DB">曦</span><span style="color:#FF00B6">梦</span><span style="color:#FF0092">月</span><span style="color:#FF006D">·</span><span style="color:#FF0049">玥</span><span style="color:#FF0024">蓝</span>就是她这一代的巫女。  
+    只见她容貌清丽脱俗，身姿修长优雅，举手投足之间散发出无比强大的自信。因此，即使她身上穿着跟其他人一样的学园校服，仍然吸引了不少学生的目光。  
+    她似乎习惯了这种注视，微微一笑，伸手摘下了墨镜，露出一双紫水晶般的双眸，更是美得摄人心魄，令周围的人惊叹不已。  
+    而与她冰肌雪肤的脸相配的，则是一头及腰长发，散发着七彩的光芒，仿佛将她笼罩在梦境中一般。  
+    “这就是圣克里斯丁学院吗？虽然这些课程本小姐早在五岁的时候就学完了，不过，偶尔放松一下似乎也不错呢。”少女轻笑着走进了学园。  
+    而在她身后则是许多学生的窃窃私语。  
+    “我想起来了！”一个学生突然叫了起来，“她就是那个传说中的智商330的天才，<span style="color:#FF0000">曦</span><span style="color:#FF2400">梦</span><span style="color:#FF4900">月</span><span style="color:#FF6D00">·</span><span style="color:#FF9200">琉</span><span style="color:#FFB600">璃</span><span style="color:#FFDB00">舞</span><span style="color:#FFFF00">·</span><span style="color:#DBFF00">璃</span><span style="color:#B6FF00">莹</span><span style="color:#92FF00">殇</span><span style="color:#6DFF00">·</span><span style="color:#49FF00">蕾</span><span style="color:#24FF00">玥</span><span style="color:#00FF00">瑷</span><span style="color:#00FF24">雅</span><span style="color:#00FF49">·</span><span style="color:#00FF6D">蔷</span><span style="color:#00FF92">薇</span><span style="color:#00FFB6">玫</span><span style="color:#00FFDB">瑰</span><span style="color:#00FFFF">泪</span><span style="color:#00DBFF">·</span><span style="color:#00B6FF">羽</span><span style="color:#0092FF">灵</span><span style="color:#006DFF">·</span><span style="color:#0049FF">凤</span><span style="color:#0024FF">·</span><span style="color:#0000FF">邪</span><span style="color:#2400FF">儿</span><span style="color:#4900FF">·</span><span style="color:#6D00FF">伤</span><span style="color:#9200FF">梦</span><span style="color:#B600FF">薰</span><span style="color:#DB00FF">魅</span><span style="color:#FF00FF">·</span><span style="color:#FF00DB">曦</span><span style="color:#FF00B6">梦</span><span style="color:#FF0092">月</span><span style="color:#FF006D">·</span><span style="color:#FF0049">玥</span><span style="color:#FF0024">蓝</span>！”  
+    另一个学生附和着：“没错，那样的七彩长发，听说这是那个传奇家族独有的特征！”  
+    “天哪，据说她从小精通十门外语，七种乐器，十岁的时候哈佛毕业，十六岁的时候将微积分和抽象代数融入复调乐理，靠一首独创的交响曲同时拿下诺贝尔数学奖和音乐奖！“  
+    “她也太厉害了吧，那样的人来我们学园做什么？”  
+    ……  
+    而此时，他们口中的<span style="color:#FF0000">曦</span><span style="color:#FF2400">梦</span><span style="color:#FF4900">月</span><span style="color:#FF6D00">·</span><span style="color:#FF9200">琉</span><span style="color:#FFB600">璃</span><span style="color:#FFDB00">舞</span><span style="color:#FFFF00">·</span><span style="color:#DBFF00">璃</span><span style="color:#B6FF00">莹</span><span style="color:#92FF00">殇</span><span style="color:#6DFF00">·</span><span style="color:#49FF00">蕾</span><span style="color:#24FF00">玥</span><span style="color:#00FF00">瑷</span><span style="color:#00FF24">雅</span><span style="color:#00FF49">·</span><span style="color:#00FF6D">蔷</span><span style="color:#00FF92">薇</span><span style="color:#00FFB6">玫</span><span style="color:#00FFDB">瑰</span><span style="color:#00FFFF">泪</span><span style="color:#00DBFF">·</span><span style="color:#00B6FF">羽</span><span style="color:#0092FF">灵</span><span style="color:#006DFF">·</span><span style="color:#0049FF">凤</span><span style="color:#0024FF">·</span><span style="color:#0000FF">邪</span><span style="color:#2400FF">儿</span><span style="color:#4900FF">·</span><span style="color:#6D00FF">伤</span><span style="color:#9200FF">梦</span><span style="color:#B600FF">薰</span><span style="color:#DB00FF">魅</span><span style="color:#FF00FF">·</span><span style="color:#FF00DB">曦</span><span style="color:#FF00B6">梦</span><span style="color:#FF0092">月</span><span style="color:#FF006D">·</span><span style="color:#FF0049">玥</span><span style="color:#FF0024">蓝</span>还不知道，自己无聊时做出的一个决定将会改变无数人的一生。  
+    命运的齿轮开始缓缓转动……
+
+
+    <sub>补丁：如无法确定版本，以 6=J，7=Q, 17=一个字, 25=一个字 为准。</sub>
+answer: SPARKLY MIST
+tips:
+  -
+    title: 关于首先要做的事
+    content: 长长的名字是有范本的，找出标准版本
+answer-analysis: |
+  观察文中重复出现的长串彩虹色名字，将该名字进行搜索，可发现这是一条固定名字串，根据提示7=J，8=Q等可固定唯一一条名字：
+  
+  璃莹殇·安洁莉娜·樱雪羽晗灵·血丽魑·魅·J·Q·安塔利亚·伤梦薰魅·海瑟薇·蔷薇玫瑰泪·羽灵·邪儿·凡多姆海威恩·夏影·琉璃舞·雅·蕾玥瑷雅·曦梦月·玥蓝·岚樱·紫蝶·丽馨·蕾琦洛·凤·颜鸢……
+
+  将原文名字中的内容带入其中的位置进行单表替换，可得答案：**SPARKLY MIST**。
+links:
+  - 
+    title: CCBC11 索引页
+    type: index
+    path: ccbc11/index
+  -
+    title: 返回案情分析板
+    type: page
+    path: ccbc11/pages/analysis-room

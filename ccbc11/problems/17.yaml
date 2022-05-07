@@ -1,0 +1,63 @@
+type: problem
+title: "#17 - CCBC 11"
+content: 
+  - |
+    这是一张来自安德罗伊德酒吧的陈旧的酒水单，奇怪的是上面却只点甜品，真是个甜食爱好者啊。
+
+    <style>
+    .dimag{
+        width: 100%;
+        max-width: 400px;
+    }
+    </style>
+    <a href="/ccbc11/images/problems/192d6011320d4d52a7de59d7a349a312.png" target="_blank">
+      <img class="dimag" src="/ccbc11/images/problems/192d6011320d4d52a7de59d7a349a312.png">
+    </a>
+answer: CALLS BARMAN
+additional-answers:
+  -
+    answer: android vers
+    message: 思路正确，请继续。
+tips:
+  -
+    title: 关于第一步要做的事
+    content: 将价格按照整数部分排序，再看小数部分的提示。
+answer-analysis: |
+  将右侧价格按照整数部分进行排序，得出：
+
+  1. 01
+
+  2. 14
+
+  3. 04
+
+  4. 18
+
+  5. 15
+
+  6. 09
+
+  7. 04
+
+  8. 22
+
+  9. 05
+
+  10. 18
+
+  11. 19
+
+
+
+  整数部分是1-11的数列，提取小数部分的数字转换为字母为：Android Ver，即安卓系统版本名之意（题设中的安德罗伊德同样提示了Android）。
+  
+  搜索可知图中的甜食均为安卓系统的版本名，根据对应关系将甜食替换为数字再转换为英文即可得出答案：**CALLS BARMAN**。
+links:
+  - 
+    title: CCBC11 索引页
+    type: index
+    path: ccbc11/index
+  -
+    title: 返回案情分析板
+    type: page
+    path: ccbc11/pages/analysis-room

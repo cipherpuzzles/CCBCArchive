@@ -1,0 +1,53 @@
+type: problem
+title: "#22-30小结 - CCBC 11"
+content: 
+  - |
+    一位侦察组的警员：“我们把犯罪分子的去**向**相关的信息整理到了这个棋盘上。我思**量**着，或许需要把现有的线索汇总一下？”
+extend-content:
+  - |
+    你把照片交给赛文警官：“我们在会场附近发现了一个满是泥泞的脚印，已经排除工作人员和嘉宾的可能性，应该就是嫌疑犯留下的了。”   
+
+    “很好，继续努力！破案的曙光就在前方了！”
+
+    -----------
+    【存档版说明】
+
+    在完成了三个分区的Meta 1-3后，接下来“案情提示”将解锁。此时，在警官办公室，你只能看到原有的Meta 1-3以及新解锁的“案情总结”一题。你必须解出“案情总结”才能继续解锁后面的剧情。
+problem-image: /ccbc11/images/problems/e320f040a55f4f2d87e8e0800f00eb2e.jpg
+answer: LEFT A MUDDY FOOTMARK
+tips:
+  -
+    title: 关于提取
+    content: 每个小题答案可以用某种方式计算出两个数字
+answer-analysis: |
+  题目中加粗了“向量”两字，将所有小题答案的字母根据图中的坐标进行叠加。
+
+
+  如答案WHIPS，通过图中的坐标替换为：(-2,-5)(3,2)(-2,6)(-4,5)(6,5)，叠加后的向量为(1,13)，替换为字母是A，M。
+
+
+
+  22-30题的答案替换结果如下：
+
+  |答案|结果向量X|结果向量Y|字母1|字母2
+  |:---|:---|:---|:---|:---
+  |PRIX FIXE LUXURIES|12|5|L|E
+  |COLORADO SPRUCE|6|20|F|T
+  |WHIPS|1|13|A|M
+  |TIME LOADS|21|4|U|D
+  |ICY BETRAYALS|4|25|D|Y
+  |ADAMANT WRATH|6|15|F|O
+  |BATH|15|20|O|T
+  |PARSONS CHAMELEON|13|1|M|A
+  |SANCTIFIABLE|18|11|R|K
+
+  连起来的结果就是最终的答案是：**LEFT A MUDDY FOOTMARK**。
+links:
+  - 
+    title: CCBC11 索引页
+    type: index
+    path: ccbc11/index
+  -
+    title: 返回警官办公室
+    type: page
+    path: ccbc11/pages/commissioner-office

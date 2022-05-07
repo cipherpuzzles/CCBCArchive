@@ -1,0 +1,75 @@
+type: index
+title: CCBC 11 存档站
+content: 
+  - |
+    这里是CCBC 11的静态存档。
+    
+    CCBC 11从2021年8月6日20:00开始，到2021年8月22日20:00结束，共16天。在本届比赛中共有422位选手组成了178个队伍报名参与，共有39个队伍完赛。
+
+    * 冠军队伍：他这破网站登录不了啊
+    
+      队员：piggy2503糳、morian、yyao、Sonic、woclass
+
+      用时：2天21时
+
+    * 亚军队伍：喵喵喵
+
+      队员：NightCat、雪儿、秋水仙素、TheCelestialForce、Bryant_F
+
+      用时：3天6时
+
+    * 季军队伍：Perfectoid space
+
+      队员：Aka、Rabbit、lf、落葉子、sevenkplus
+
+      用时：3天16时
+
+    <a href="https://mp.weixin.qq.com/s/cqUxviJA1LTLx8aMuYb9SA" target="_blank">点击查看CCBC 11完赛总结</a>
+
+    -----------
+    
+    CCBC 11的故事展开于一个正在发生的案件现场。选手通过解题获得线索，最终推测出事件发生的时间地点动机以及预计作案的对象和方法，成功在事件发生前前往阻止。
+
+    选手首先看到的就是<a href="javascript:;" onclick="goLink('co')">警官办公室</a>。当然不像存档版一样直接解锁了所有题目，一开始只有一个按钮“1-11小结”。
+    点击旁边的<a href="javascript:;" onclick="goLink('ar')">案情分析板</a>，打开小题界面，错落有致地排列着11道小题。这就是初始的第一部分内容。
+
+    当有第一位选手解出Meta“1-11小结”后，全体选手都会解锁第二部分。12-21的小题和对应的Meta。同样的，当第一位选手解出Meta“12-21小结”后，剩下的小题和对应的Meta作为第三部分向全体选手解锁了。
+
+    再之后的进度就不再全体同步。当一个队伍完成了三道小Meta后，将解锁“案情总结”。完成案情总结后将解锁剩余的5道Meta和最终的FinalMeta。
+
+    -----------
+
+    你可以点击<a href="javascript:;" onclick="goLink('pro')" class="btn btn-primary">前往序章</a>按钮开始回顾CCBC 11中的全部题目。也可以使用下面的导航按钮在不同题目之间跳转。任何一个页面都将会有一个按钮来回到本页。
+
+    在题目页，右下角将显示悬浮工具条。你可以尝试自己解决问题，然后可以点击“输入答案”按钮，验证一下答案是否正确。点击“显示提示”按钮，你可能会看到一条或多条提示，点击右边的“显示”按钮查看提示的内容。
+    当然在比赛时，选手无法自由的看到提示内容，而是只能看到提示的标题，通过消耗“提示币”来解锁提示。提示币在开赛24小时后每小时自动增加一个。在初期，需要消耗5提示币来解锁一道小题的提示，而Meta是15提示币。当有选手完赛后，提示币就会开始降价。
+
+    如果对题目毫无头绪或者就是想看看题目的解法，也可以直接点击“答案解析”按钮，将会直接显示本题的解析。看了解析再去做一遍题目也许会有新感受。
+links:
+  - 
+    title: 公告
+    type: announcements
+    path: ccbc11/announcements
+  -
+    title: 排行榜
+    type: scoreboard
+    path: ccbc11/scoreboard
+  -
+    title: 序章
+    type: page
+    path: ccbc11/pages/prologue
+    id: pro
+  -
+    title: 警官办公室（Meta页面）
+    type: page
+    path: ccbc11/pages/commissioner-office
+    id: co
+  -
+    title: 案情分析板（小题页面）
+    type: page
+    path: ccbc11/pages/analysis-room
+    id: ar
+  -
+    title: 结局
+    type: page
+    path: ccbc11/pages/finalend

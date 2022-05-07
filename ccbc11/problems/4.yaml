@@ -1,0 +1,114 @@
+type: problem
+title: "#4 - CCBC 11"
+content: 
+  - |
+    这是某个生物实验室的数据，里面是一些DNA的资料，  
+    但是经过某种辐射，DNA的片段几乎都产生了一些变异。  
+    你找到了科学家对这些变异的观测手记，试图弄清楚到底发生了什么：
+
+
+    每种变异都有许多不同的表达，在此我们摘录了其中的一些例子：  
+    变异A：松树变成粉红色，猫咪变成一顶鸭舌帽，权力变成高塔，贪婪变成绿色……  
+    变异B：葡萄变成了坟墓，蝙蝠变成了一个包，烤箱打开了，治疗者变成了加热器……  
+    变异C：鹳鸟变成了故事，数学变成了伴侣，质量变成了二元性，面包碎了……  
+    变异D：鱼变成了愿望，爪子变成了粘土，电线起火了，住院病人也不耐烦起来……  
+    变异E：叉子变成了木塞，教授变成了处理器，你的变成了四个……  
+    变异F：蛋糕变成了拐杖，红酒变成了风，汽车变成了战争……  
+    变异G：母马变成了野兔，珊瑚变成了道德，马蹄变成了钩子……
+  - |
+    <style type="text/css">
+    .grid4 {
+      border-collapse: collapse;
+    }
+    .grid4 tr.spacer td {
+        border: none;
+    }
+    .grid4 td {
+      height: 30px;
+      min-width: 30px;
+      text-align: center;
+      border: 1px solid #eee;
+      font-weight: bold;
+      margin: 0;
+    }
+    .grid4 td.white {
+      background-color: transparent;
+    }
+    .grid4 td.black {
+      background-color: white;
+    }
+    .grid4 td.head {
+        border: none;
+    }
+    </style>
+    <table class="grid4">
+      <tr><td class="head">A</td><td class="white"></td><td class="black"></td><td class="black"></td><td class="head">A</td><td class="black"></td><td class="black"></td><td class="black"></td><td class="head">C</td><td class="white"></td><td class="white"></td><td class="white"></td></tr>
+      <tr><td class="head">B</td><td class="black"></td><td class="white"></td><td class="white"></td><td class="head">C</td><td class="white"></td><td class="white"></td><td class="white"></td><td class="head">F</td><td class="black"></td><td class="white"></td><td class="white"></td></tr>
+      <tr><td class="head">C</td><td class="black"></td><td class="black"></td><td class="black"></td><td class="head">E</td><td class="black"></td><td class="black"></td><td class="black"></td><td class="head">A</td><td class="black"></td><td class="black"></td><td class="white"></td></tr>
+      <tr><td class="head">&nbsp;</td><td class="white"></td><td class="black"></td><td class="white"></td><td class="head">C</td><td class="white"></td><td class="white"></td><td class="white"></td><td class="head">A</td><td class="white"></td><td class="white"></td><td class="black"></td></tr>
+      <tr><td class="head">D</td><td class="white"></td><td class="white"></td><td class="black"></td><td class="head">F</td><td class="black"></td><td class="black"></td><td class="black"></td><td class="head">E</td><td class="black"></td><td class="black"></td><td class="black"></td></tr>
+      <tr class="spacer"><td colspan="12">&nbsp;</td></tr>
+      <tr><td class="head">E</td><td class="white"></td><td class="white"></td><td class="white"></td><td class="head">D</td><td class="black"></td><td class="white"></td><td class="white"></td><td class="head">A</td><td class="white"></td><td class="white"></td><td class="black"></td></tr>
+      <tr><td class="head">&nbsp;</td><td class="white"></td><td class="white"></td><td class="white"></td><td class="head">B</td><td class="white"></td><td class="black"></td><td class="black"></td><td class="head">D</td><td class="black"></td><td class="black"></td><td class="white"></td></tr>
+      <tr><td class="head">B</td><td class="white"></td><td class="white"></td><td class="white"></td><td class="head">C</td><td class="white"></td><td class="white"></td><td class="black"></td><td class="head">B</td><td class="black"></td><td class="white"></td><td class="white"></td></tr>
+      <tr><td class="head">E</td><td class="white"></td><td class="white"></td><td class="white"></td><td class="head">G</td><td class="white"></td><td class="black"></td><td class="white"></td><td class="head">G</td><td class="white"></td><td class="black"></td><td class="white"></td></tr>
+      <tr><td class="head">G</td><td class="white"></td><td class="white"></td><td class="white"></td><td class="head">&nbsp;</td><td class="black"></td><td class="black"></td><td class="black"></td><td class="head">E</td><td class="black"></td><td class="black"></td><td class="black"></td></tr>
+      <tr class="spacer"><td colspan="12">&nbsp;</td></tr>
+      <tr><td class="head">B</td><td class="white"></td><td class="white"></td><td class="black"></td><td class="head">G</td><td class="white"></td><td class="white"></td><td class="white"></td><td class="head">A</td><td class="white"></td><td class="white"></td><td class="black"></td></tr>
+      <tr><td class="head">B</td><td class="white"></td><td class="black"></td><td class="black"></td><td class="head">E</td><td class="black"></td><td class="black"></td><td class="black"></td><td class="head">E</td><td class="black"></td><td class="black"></td><td class="black"></td></tr>
+      <tr><td class="head">D</td><td class="black"></td><td class="white"></td><td class="white"></td><td class="head">G</td><td class="white"></td><td class="white"></td><td class="white"></td><td class="head">&nbsp;</td><td class="white"></td><td class="black"></td><td class="white"></td></tr>
+      <tr><td class="head">F</td><td class="black"></td><td class="black"></td><td class="black"></td><td class="head">E</td><td class="black"></td><td class="black"></td><td class="black"></td><td class="head">B</td><td class="black"></td><td class="white"></td><td class="white"></td></tr>
+      <tr><td class="head">F</td><td class="black"></td><td class="white"></td><td class="white"></td><td class="head">A</td><td class="white"></td><td class="white"></td><td class="black"></td><td class="head">E</td><td class="white"></td><td class="white"></td><td class="white"></td></tr>
+      <tr class="spacer"><td colspan="12">&nbsp;</td></tr>
+      <tr><td class="head">A</td><td class="white"></td><td class="black"></td><td class="black"></td><td class="head">D</td><td class="black"></td><td class="black"></td><td class="white"></td><td class="head">G</td><td class="white"></td><td class="white"></td><td class="white"></td></tr>
+      <tr><td class="head">C</td><td class="white"></td><td class="white"></td><td class="black"></td><td class="head">F</td><td class="black"></td><td class="white"></td><td class="white"></td><td class="head">C</td><td class="white"></td><td class="white"></td><td class="white"></td></tr>
+      <tr><td class="head">A</td><td class="white"></td><td class="black"></td><td class="white"></td><td class="head">&nbsp;</td><td class="white"></td><td class="black"></td><td class="white"></td><td class="head">G</td><td class="white"></td><td class="white"></td><td class="white"></td></tr>
+      <tr><td class="head">D</td><td class="black"></td><td class="black"></td><td class="black"></td><td class="head">E</td><td class="black"></td><td class="black"></td><td class="black"></td><td class="head">A</td><td class="white"></td><td class="white"></td><td class="white"></td></tr>
+      <tr><td class="head">D</td><td class="black"></td><td class="white"></td><td class="white"></td><td class="head">C</td><td class="white"></td><td class="white"></td><td class="white"></td><td class="head">&nbsp;</td><td class="black"></td><td class="white"></td><td class="white"></td></tr>
+      <tr class="spacer"><td colspan="12">&nbsp;</td></tr>
+      <tr><td class="head">A</td><td class="black"></td><td class="black"></td><td class="black"></td><td class="head">A</td><td class="black"></td><td class="black"></td><td class="black"></td><td class="head">D</td><td class="black"></td><td class="black"></td><td class="white"></td></tr>
+      <tr><td class="head">G</td><td class="white"></td><td class="black"></td><td class="white"></td><td class="head">A</td><td class="white"></td><td class="white"></td><td class="white"></td><td class="head">A</td><td class="white"></td><td class="white"></td><td class="black"></td></tr>
+      <tr><td class="head">A</td><td class="white"></td><td class="white"></td><td class="black"></td><td class="head">C</td><td class="black"></td><td class="black"></td><td class="black"></td><td class="head">E</td><td class="black"></td><td class="black"></td><td class="black"></td></tr>
+      <tr><td class="head">C</td><td class="white"></td><td class="white"></td><td class="white"></td><td class="head">C</td><td class="black"></td><td class="white"></td><td class="white"></td><td class="head">A</td><td class="white"></td><td class="white"></td><td class="black"></td></tr>
+      <tr><td class="head">B</td><td class="white"></td><td class="white"></td><td class="white"></td><td class="head">C</td><td class="white"></td><td class="black"></td><td class="black"></td><td class="head">F</td><td class="black"></td><td class="black"></td><td class="white"></td></tr>
+      <tr class="spacer"><td colspan="12">&nbsp;</td></tr>
+      <tr><td class="head">G</td><td class="white"></td><td class="white"></td><td class="white"></td><td class="head">B</td><td class="white"></td><td class="white"></td><td class="black"></td><td class="head">A</td><td class="black"></td><td class="white"></td><td class="white"></td></tr>
+      <tr><td class="head">C</td><td class="white"></td><td class="white"></td><td class="white"></td><td class="head">B</td><td class="white"></td><td class="black"></td><td class="white"></td><td class="head">E</td><td class="white"></td><td class="black"></td><td class="white"></td></tr>
+      <tr><td class="head">G</td><td class="white"></td><td class="white"></td><td class="white"></td><td class="head">F</td><td class="black"></td><td class="black"></td><td class="black"></td><td class="head">G</td><td class="black"></td><td class="black"></td><td class="black"></td></tr>
+      <tr><td class="head">G</td><td class="white"></td><td class="white"></td><td class="black"></td><td class="head">A</td><td class="white"></td><td class="white"></td><td class="white"></td><td class="head">F</td><td class="white"></td><td class="white"></td><td class="black"></td></tr>
+      <tr><td class="head">B</td><td class="white"></td><td class="black"></td><td class="black"></td><td class="head">&nbsp;</td><td class="black"></td><td class="black"></td><td class="black"></td><td class="head">B</td><td class="black"></td><td class="black"></td><td></td></tr>
+    </table>
+answer: TOXIC XRAY EXPOSURE
+tips:
+  -
+    title: 这些变异的是什么？
+    content: 变异的是字母，也是氨基酸和碱基对
+  -
+    title: 每行的规律是什么？
+    content: 每行的不同变异可以得出同一条规则，该规则只与位置相关
+  -
+    title: 下面的图是什么？
+    content: 通过文字得出的结果对图进行异或操作
+answer-analysis: |
+  将中文翻译为英文单词后，找出所有改变的字母，如松树(PINE)变异为粉红色(PINK)，即为`E` -> `K`。
+  
+  联系题设中的变异及DNA提示，找到氨基酸密码子对照表，如图所示：
+
+  ![密码子对照表](/ccbc11/images/answer/answer4-1.jpg)
+
+  每一个不同种类的氨基酸均有一个字母简称，根据简称找到每一行的变异规律，`E` -> `K`对应的碱基对是：`GAA`/`GAG` -> `AAA`/`AAG`，即为变异第1位的碱基。
+
+  总结每一行的规律，如第一行的为第1位，第二行为第1、2位……
+
+  将变异的碱基记作1，没有变异的碱基记作0，按照规律对DNA表进行异或操作可得答案：**TOXIC XRAY EXPOSURE**。
+
+  ![结果](/ccbc11/images/answer/answer4-2.png)
+links:
+  - 
+    title: CCBC11 索引页
+    type: index
+    path: ccbc11/index
+  -
+    title: 返回案情分析板
+    type: page
+    path: ccbc11/pages/analysis-room

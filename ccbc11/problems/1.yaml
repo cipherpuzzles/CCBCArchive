@@ -1,0 +1,36 @@
+type: problem
+title: "#1 - CCBC 11"
+content: 
+  - |
+    这是今天《西西比西日报》每日数独栏目上剪下来的一小块。你不禁在想，这为什么会和案情相关？
+problem-image: /ccbc11/images/problems/5361c32d09fb4b3bb4cbcde24ffd9cd3.jpg
+answer: CONFLUXES
+additional-answers:
+  -
+    answer: SEMAPHORE
+    message: 你解出了第一步（的一部分）。加油！
+  -
+    answer: LIMEPRIME
+    message: 你解出了第一步（的一部分）。加油！
+tips:
+  -
+    title: 关于左上角符号的含义
+    content: 首先完成数独，然后对每行、列的红色部分分别求和
+  -
+    title: 关于最后一步
+    content: 两个单词提示了需要看的数字，一个单词提示了如何把这些数字转换成答案
+answer-analysis: |
+  首先完成数独：
+
+  ![answer1](/ccbc11/images/answer/answer1.jpg)
+
+  左上角符号提示了求和操作，即对每行、列的红色格子分别求和，得出的数字转换成提示单词：LIME PRIME / SEMAPHORE，意为绿黄色、质数、旗语。根据提示找出黄绿色质数格子的位置，得出答案：CONFLUXES。
+links:
+  - 
+    title: CCBC11 索引页
+    type: index
+    path: ccbc11/index
+  -
+    title: 返回案情分析板
+    type: page
+    path: ccbc11/pages/analysis-room

@@ -1,0 +1,90 @@
+type: problem
+title: "#24 - CCBC 11"
+content: 
+  - |
+    你拿下一个档案夹，里面一张小纸片飘了出来。“是谁这么丢三落四的？”你嘀咕着捡了起来，只见上面七零八落地画着许多奇怪的符号。  
+  - |
+    <style>
+    #emojis {
+        font-family: Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+    }
+    #emojis td {
+        padding: 10px;
+    }
+    #emojis tr:nth-child(2) td {
+        background-color: #ccff99;
+    }
+    </style>
+    <table id="emojis">
+    <tbody><tr>
+    <td></td>
+    <td></td>
+    <td>🙅</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>🗣</td>
+    </tr>
+    <tr>
+    <td>🐮</td>
+    <td>🌊</td>
+    <td>🙅</td>
+    <td>🎭</td>
+    <td>🎭</td>
+    <td>👦</td>
+    <td>🔺</td>
+    <td>🏹️</td>
+    <td>👄</td>
+    <td>☯️</td>
+    </tr>
+    <tr>
+    <td>🐯</td>
+    <td>〽️</td>
+    <td></td>
+    <td>🔪</td>
+    <td>🔲</td>
+    <td>💪</td>
+    <td>🔻</td>
+    <td>🦅</td>
+    <td>👅</td>
+    <td></td>
+    </tr>
+    </tbody></table>
+answer: WHIPS
+tips:
+  -
+    title: 关于表情的含义
+    content: 你花了九牛二虎之力，经历了一波三折，终于……
+  -
+    title: 如何提取答案
+    content: 手机键盘密码，例如21代表2键第1个字母也就是A
+answer-analysis: |
+  从左至右每一列表情都代表了一个蕴含数字的成语，分别是：
+
+  <p style="margin-bottom: 0em;">
+    <strong><span style="background-color: rgb(212, 250, 0);font-size: 15px;color: rgb(0, 0, 0);">九牛</span></strong><span style="font-size: 15px;">二虎/</span>
+    <strong><span style="background-color: rgb(212, 250, 0);font-size: 15px;color: rgb(0, 0, 0);">一波</span></strong><span style="font-size: 15px;">三折/
+    不三</span><strong><span style="background-color: rgb(212, 250, 0);font-size: 15px;color: rgb(0, 0, 0);">不四</span></strong><span style="font-size: 15px;">/</span>
+    <strong><span style="background-color: rgb(212, 250, 0);font-size: 15px;color: rgb(0, 0, 0);">两面</span></strong><span style="font-size: 15px;">三刀/</span>
+    <strong><span style="background-color: rgb(212, 250, 0);font-size: 15px;color: rgb(0, 0, 0);">四面</span></strong><span style="font-size: 15px;">八方/</span>
+    <span style="background-color: rgb(212, 250, 0);font-size: 15px;color: rgb(0, 0, 0);"><strong>三头</strong></span><span style="font-size: 15px;">六臂/</span>
+    <span style="background-color: rgb(212, 250, 0);font-size: 15px;color: rgb(0, 0, 0);"><strong>七上</strong></span><span style="font-size: 15px;">八下/</span>
+    <span style="background-color: rgb(212, 250, 0);font-size: 15px;color: rgb(0, 0, 0);"><strong>一箭</strong></span><span style="font-size: 15px;">双雕/</span>
+    <span style="background-color: rgb(212, 250, 0);font-size: 15px;color: rgb(0, 0, 0);"><strong>七嘴</strong></span><span style="font-size: 15px;">八舌/
+    说三</span><span style="background-color: rgb(212, 250, 0);font-size: 15px;color: rgb(0, 0, 0);"><strong>道四</strong></span><span style="font-size: 15px;"></span>
+  </p>
+
+
+  将绿色行对应的数字提取出来，结果是：**9142437174**，两两分组对照手机键盘密码可解出答案：**WHIPS**。
+links:
+  - 
+    title: CCBC11 索引页
+    type: index
+    path: ccbc11/index
+  -
+    title: 返回案情分析板
+    type: page
+    path: ccbc11/pages/analysis-room
