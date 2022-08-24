@@ -10,85 +10,65 @@
                 <div v-html="contentHtml" id="contentHtml"></div>
             </div>
         </div>
-        <div class="row">
+        <div class="row" v-if="finishedGroups && finishedGroups.length > 0">
             <div class="col">
                 <h3>完赛队伍</h3>
                 <p>恭喜以下队伍完成了全部赛程并取得名次。</p>
                 <table class="table table-dark table-hover">
                     <colgroup>
-                        <col width="48">
-                        <col>
-                        <col width="110">
-                        <col width="100">
-                        <col width="130">
+                        <col v-for="col in tableColumns" :width="col.width" />
                     </colgroup>
                     <thead>
                         <tr>
-                            <th scope="col">排名</th>
-                            <th scope="col">队伍</th>
-                            <th scope="col">得分</th>
-                            <th scope="col">解答题目数</th>
-                            <th scope="col">总用时（小时）</th>
+                            <th v-for="col in tableColumns" scope="col">{{ col.name }}</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr v-for="(g, idx) in finishedGroups">
-                            <th scope="row">{{ idx + 1 }}</th>
-                            <td>
-                                <div class="table-cell">
+                            <template v-for="col in tableColumns">
+                                <th scope="row" v-if="col.type === 'index'">{{ idx + 1}}</th>
+                                <td v-else-if="col.type === 'group_name'" class="table-cell">
                                     <div class="group-title">{{ g.group_name }}</div>
                                     <div class="group-profile">{{ g.group_profile }}</div>
-                                </div>
-                            </td>
-                            <td>{{ g.score.toFixed(2) }}</td>
-                            <td>{{ g.finished_puzzle_count }}</td>
-                            <td>{{ g.total_time.toFixed(2) }}</td>
+                                </td>
+                                <td v-else-if="col.type === 'double'">{{ (g[col.prop] as number).toFixed(2) }}</td>
+                                <td v-else-if="col.type === 'int'">{{ g[col.prop] }}</td>
+                                <td v-else>{{ g[col.prop] }}</td>
+                            </template>
                         </tr>
                     </tbody>
                 </table>
             </div>  
         </div>
-        <div class="row">
+        <div class="row" v-if="groups && groups.length > 0">
             <div class="col">
                 <h3>未完赛队伍</h3>
                 <p>以下队伍虽然未能完赛，但也在本次比赛中成功参与并取得成绩。</p>
                 <table class="table table-dark table-hover">
                     <colgroup>
-                        <col>
-                        <col width="110">
-                        <col width="100">
+                        <col v-for="col in tableColumns" :width="col.width" />
                     </colgroup>
                     <thead>
                         <tr>
-                            <th scope="col">队伍</th>
-                            <th scope="col">得分</th>
-                            <th scope="col">解答题目数</th>
+                            <th v-for="col in tableColumns" scope="col">{{ col.name }}</th>
                         </tr>
                     </thead>
                     <tbody>
-                        <tr v-for="g in groups">
-                            <td>
-                                <div class="table-cell">
+                        <tr v-for="(g, idx) in groups">
+                            <template v-for="col in tableColumns">
+                                <th scope="row" v-if="col.type === 'index'">{{ idx + 1 + (finishedGroups ? finishedGroups.length : 0)}}</th>
+                                <td v-else-if="col.type === 'group_name'" class="table-cell">
                                     <div class="group-title">{{ g.group_name }}</div>
                                     <div class="group-profile">{{ g.group_profile }}</div>
-                                </div>
-                            </td>
-                            <td>{{ g.score.toFixed(2) }}</td>
-                            <td>{{ g.finished_puzzle_count }}</td>
+                                </td>
+                                <td v-else-if="col.type === 'double'">{{ (g[col.prop] as number).toFixed(2) }}</td>
+                                <td v-else-if="col.type === 'int'">{{ g[col.prop] }}</td>
+                                <td v-else>{{ g[col.prop] }}</td>
+                            </template>
                         </tr>
                     </tbody>
                 </table>
             </div>  
-        </div>
-        <div class="row">
-            <div class="col">
-                <p>得分说明</p>
-                <ul>
-                    <li>成功解出题目会获得得分，请注意得分并非最终排名依据，仅供未完赛时排行榜临时排名时使用。</li>
-                    <li>更快解答出题目会获得更高得分，此外，Meta题目的得分比普通题目更多。</li>
-                    <li>如果你的队伍已经完赛，你仍然可以继续解题并获得得分，这不会影响你的（和/或其他人的）队伍排名</li>
-                </ul>
-            </div>
         </div>
         <div class="row header-line">
             <div class="col link-button-wrapper">
@@ -114,7 +94,7 @@
 </style>
 
 <script setup lang="ts">
-import { goLinkButton, GroupInfo, PageConfigLink, YamlConfig } from '../utils/PageConfig'
+import { goLinkButton, GroupColumn, PageConfigLink, YamlConfig } from '../utils/PageConfig'
 import { nextTick, Ref } from 'vue';
 import { onMounted, ref } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
@@ -130,8 +110,9 @@ const title = ref("CCBC Archive");
 const pageHtml: Ref<string[]> = ref([]);
 const pageButton: Ref<PageConfigLink[]> = ref([]);
 
-const finishedGroups: Ref<GroupInfo[]> = ref([]);
-const groups: Ref<GroupInfo[]> = ref([]);
+const tableColumns: Ref<GroupColumn[]> = ref([]);
+const finishedGroups: Ref<Record<string, string | number>[]> = ref([]);
+const groups: Ref<Record<string, string | number>[]> = ref([]);
 
 onMounted(async () => {
     const confPath = route.query.c;
@@ -162,6 +143,9 @@ function initConf(conf: YamlConfig) {
     }
     if (conf.scoreboarddata.groups) {
         groups.value = conf.scoreboarddata.groups;
+    }
+    if (conf.scoreboarddata.table_columns) {
+        tableColumns.value = conf.scoreboarddata.table_columns;
     }
 
     //加载附加的css和js

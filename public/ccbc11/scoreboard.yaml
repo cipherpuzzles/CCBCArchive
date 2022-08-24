@@ -5,7 +5,31 @@ content:
     【存档版说明】
 
     此处显示的是CCBC 11比赛的最终结果。排名规则不是按照得分排序的。
+
+    #### **得分说明**
+
+    * 成功解出题目会获得得分，请注意得分并非最终排名依据，仅供未完赛时排行榜临时排名时使用。
+    * 更快解答出题目会获得更高得分，此外，Meta题目的得分比普通题目更多。
+    * 如果你的队伍已经完赛，你仍然可以继续解题并获得得分，这不会影响你的（和/或其他人的）队伍排名
 scoreboarddata:
+  table_columns:
+    - name: 排名
+      width: 48
+      type: index
+    - name: 队伍
+      type: group_name
+    - name: 得分
+      width: 110
+      type: double
+      prop: score
+    - name: 解答题目数
+      width: 100
+      type: int
+      prop: finished_puzzle_count
+    - name: 总用时（小时）
+      width: 130
+      type: double
+      prop: total_time
   finished_groups:
     - gid: 40
       group_name: 他这破网站登录不了啊

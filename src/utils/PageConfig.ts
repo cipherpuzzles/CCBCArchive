@@ -54,18 +54,16 @@ export interface ScoreboardConfig extends BaseConfig {
 }
 
 export interface ScoreboardData {
-    finished_groups?: GroupInfo[];
-    groups?: GroupInfo[];
+    table_columns?: GroupColumn[];
+    finished_groups?: Record<string, string | number>[];
+    groups?: Record<string, string | number>[];
 }
 
-export interface GroupInfo {
-    gid: number;
-    group_name: string;
-    group_profile: string;
-    total_time: number;
-    score: number;
-    finished_puzzle_count: number;
-    is_finish: number;
+export interface GroupColumn {
+    name: string;
+    width: number;
+    type: string;
+    prop: string;
 }
 
 export interface AnnouncementsConfig extends BaseConfig {
