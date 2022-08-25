@@ -11,13 +11,19 @@ export interface PageConfigLink {
     id?: string;
 }
 
+export interface PageComponents {
+    name: string;
+    content?: string;
+}
+
 export interface BaseConfig {
     type: PageConfigType;
     title: string;
     content: string[];
     'content-css'?: string;
     'content-js'?: string;
-    links?: PageConfigLink[]
+    components?: PageComponents[];
+    links?: PageConfigLink[];
 }
 
 export interface IndexConfig extends BaseConfig {

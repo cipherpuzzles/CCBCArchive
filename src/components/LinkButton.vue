@@ -1,5 +1,5 @@
 <template>
-    <button class="btn btn-primary" @click="doLinkButton(props.link)">{{ props.link?.title }}</button>
+    <button class="btn btn-primary" @click="doLinkButton(props.link!)">{{ props.link?.title }}</button>
 </template>
 
 <script setup lang="ts">

@@ -10,6 +10,11 @@
                 <div v-html="contentHtml" id="contentHtml"></div>
             </div>
         </div>
+        <div class="row" v-for="component in usedComponents">
+            <div class="col">
+                <PrologueScriptRenderVue v-if="component.name === 'PrologueScript'" :script="component.content" @next="goLink('next')"></PrologueScriptRenderVue>
+            </div>
+        </div> 
         <div class="row header-line">
             <div class="col link-button-wrapper">
                 <link-button v-for="link in pageButton" :link="link"></link-button>
@@ -19,7 +24,7 @@
 </template>
 
 <script setup lang="ts">
-import { goLinkButton, PageConfigLink, YamlConfig } from '../utils/PageConfig'
+import { goLinkButton, PageConfigLink, YamlConfig, PageComponents } from '../utils/PageConfig'
 import { nextTick, Ref } from 'vue';
 import { onMounted, ref } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
@@ -27,6 +32,7 @@ import message from '../utils/message'
 import GetPageConfig from '../utils/PageConfig'
 import { marked } from 'marked'
 import LinkButton from '../components/LinkButton.vue'
+import PrologueScriptRenderVue from '../components/PrologueScriptRender.vue';
 
 const route = useRoute();
 const router = useRouter();
@@ -34,6 +40,7 @@ const router = useRouter();
 const title = ref("CCBC Archive");
 const pageHtml: Ref<string[]> = ref([]);
 const pageButton: Ref<PageConfigLink[]> = ref([]);
+const usedComponents: Ref<PageComponents[]> = ref([]);
 
 onMounted(async () => {
     const confPath = route.query.c;
@@ -57,6 +64,9 @@ function initConf(conf: YamlConfig) {
     pageHtml.value = conf.content.map(content => marked(content));
     if (conf.links) {
         pageButton.value = conf.links;
+    }
+    if (conf.components) {
+        usedComponents.value = conf.components;
     }
 
     //加载附加的css和js

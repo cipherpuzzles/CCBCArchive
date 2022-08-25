@@ -19,7 +19,7 @@ gBus.on("reload", () => {
   </div>
   <div class="nav-footer">
     <div class="container-md">
-      Powered by CCBC Archive Viewer | <a href="https://cipherpuzzles.com/" target="_blank">密码菌主页</a> | <a href="http://beian.miit.gov.cn/" target="_blank">京ICP备2021017804号</a>
+      Copyright ©2022 密码菌 All rights reserved. &nbsp;&nbsp; Powered by CCBC Archive Viewer | <a href="https://cipherpuzzles.com/" target="_blank">密码菌主页</a> | <a href="http://beian.miit.gov.cn/" target="_blank">京ICP备2021017804号</a>
     </div>
   </div>
 </template>
