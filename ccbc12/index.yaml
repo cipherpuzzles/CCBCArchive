@@ -83,3 +83,11 @@ links:
     title: 排行榜
     type: scoreboard
     path: ccbc12/scoreboard
+  - 
+    title: 序章前言
+    type: page
+    path: ccbc12/pages/loopstage_prologue
+  - 
+    title: 正篇前言
+    type: page
+    path: ccbc12/pages/prologue

@@ -1,0 +1,28 @@
+type: page
+title: 序章 - CCBC 12
+content: 
+  - |+
+components:
+  - name: PrologueScript
+    content: |-
+      # 序章开始之前的剧情，请不要修改分区名称。
+      # 请注意！本章使用特殊语法的脚本，不是Markdown。
+      # 以“#”开头的为注释行
+      # 以“P|”开头的行会被标注为紫色，表示主角（参赛者自己）说的话。以“C|”开头的行会被标记为粉色，表示出题组说的话。以“D|”开头的行会被标注为默认字色，表示普通的注释性文字。
+      # 以“R|”开头的行会被解释成换页。以“J|”开头的行会显示为跳转到下一步的按钮，后面的文字为按钮上的字(“JM|”为进入主界面前的特殊形状按钮）。
+      P|“开始了！”
+      D|……
+      P|“怎么这么卡……他这破网站登录不了啊……”
+      P|“啊，终于连上了！”
+      R|
+      J|欢迎来到 CCBC 12！
+links:
+  - 
+    title: CCBC12 索引页
+    type: index
+    path: ccbc12/index
+  - 
+    title: 序章题目页
+    type: page
+    path: ccbc12/pages/loopstage_main
+    id: next
