@@ -23,6 +23,6 @@ links:
     path: ccbc12/index
   - 
     title: 序章题目页
-    type: page
+    type: problem
     path: ccbc12/pages/loopstage_main
     id: next
