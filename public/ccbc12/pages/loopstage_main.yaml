@@ -1,0 +1,258 @@
+type: problem
+title: 序章 - CCBC12
+content: 
+  - 注：原版通过随机程序在6000个词的题库中自动出题，可以无限进行下去。由于存档版系统原因此处只保留前24道题。
+  - |
+    <div class="row header-line center">
+        <div class="col">
+            <div class="mt-5">
+                <h4 class="title-line" id="pl-number"># 15</h4>
+            </div>
+        </div>
+    </div>
+  - |
+    <div class="row puzzle-content-line center">
+        <div class="col" id="pl-content">
+            {{puzzleContent}}
+        </div>
+    </div>
+  - |
+    <div class="row answer-input-line justify-content-center">
+        <div class="col-lg-9">
+            <div class="input-group input-group-lg">
+                <input id="problemInputEl" type="text" class="form-control" placeholder="填写答案">
+                <button class="btn btn-lg btn-primary" type="button" onclick="submit();">提 交</button>
+            </div>
+        </div>
+    </div>
+extend-content:
+  - |
+    <button class="btn btn-primary btn-lg" onclick="goLink('mainp')">恭喜你成功完成循环区，请继续前进→</button>
+content-js: |
+  let problemList = [
+    {
+      content: "ぁ げ こ ご い が が ぐ ぉ げ ご",
+      type: 1,
+      answer: "INSTALLMENT"
+    },
+    {
+      content: "⠝ ⠑ ⠺ ⠎ ⠏ ⠑ ⠁ ⠅",
+      type: 0,
+      answer: "NEWSPEAK"
+    },
+    {
+      content: "DEIRF",
+      type: 0,
+      answer: "FRIED"
+    },
+    {
+      content: "43 62 63 73 41 21 62 43 23",
+      type: 0,
+      answer: "INORGANIC"
+    },
+    {
+      content: "QHAWRINLQ",
+      type: 0,
+      answer: "NEXT OF KIN"
+    },
+    {
+      content: "../.../---/-/...././.-./--/.-/.-..",
+      type: 0,
+      answer: "ISOTHERMAL"
+    },
+    {
+      content: "20 9 13 5 18",
+      type: 0,
+      answer: "TIMER"
+    },
+    {
+      content: "ぉ が ぉ ぃ ご お く が す ご ぉ",
+      type: 1,
+      answer: "ELECTROLYTE"
+    },
+    {
+      content: "53 63 82 74 32",
+      type: 0,
+      answer: "LOUSE"
+    },
+    {
+      content: "---/.--./.--./---/.-./-/..-/-./../.../-/../-.-.",
+      type: 0,
+      answer: "OPPORTUNISTIC"
+    },
+    {
+      content: "34 45 44 31 11 52 42 54",
+      type: 0,
+      answer: "OUTLAWRY"
+    },
+    {
+      content: "ぢ ぴ ぱ ど ぷ ね で",
+      type: 1,
+      answer: "PLACEBO"
+    },
+    {
+      content: "⠊ ⠍ ⠍ ⠁ ⠉ ⠥ ⠇ ⠁ ⠞ ⠑",
+      type: 0,
+      answer: "IMMACULATE"
+    },
+    {
+      content: "MVXILNZMXVI",
+      type: 0,
+      answer: "NECROMANCER"
+    },
+    {
+      content: "00110 01100 00001 01110 01110 00101 01100",
+      type: 0,
+      answer: "FLANNEL"
+    },
+    {
+      content: "9 14 6 12 21 5 14 26 1",
+      type: 0,
+      answer: "INFLUENZA"
+    },
+    {
+      content: "DIEREN",
+      type: 0,
+      answer: "NEREID"
+    },
+    {
+      content: "ITRAAENECLT",
+      type: 0,
+      answer: "INTERCALATE"
+    },
+    {
+      content: "WULSWBFK",
+      type: 0,
+      answer: "TRIPTYCH"
+    },
+    {
+      content: "NOITULOVE",
+      type: 0,
+      answer: "EVOLUTION"
+    },
+    {
+      content: "が ぉ ご ご さ ぃ ぉ",
+      type: 1,
+      answer: "LETTUCE"
+    },
+    {
+      content: "LXFOFH",
+      type: 0,
+      answer: "OCULUS"
+    },
+    {
+      content: "OYSUDSES",
+      type: 0,
+      answer: "ODYSSEUS"
+    },
+    {
+      content: "10000 01111 01001 01110 10100",
+      type: 0,
+      answer: "POINT"
+    },
+  ];
+
+  let initNumber = 0;
+  let currentProblem = problemList[initNumber];
+
+  function render() {
+    let numberEl = document.getElementById("pl-number");
+    let contentEl = document.getElementById("pl-content");
+
+    currentProblem = problemList[initNumber];
+
+    numberEl.innerHTML = "# " + (initNumber + 1).toString();
+
+    if (currentProblem.type == 0) {
+      contentEl.innerHTML = `<div class="problem-content problem-big">${currentProblem.content}</div>`;
+    } else {
+      contentEl.innerHTML = `<div class="problem-content problem-symbol">${currentProblem.content}</div>`;
+    }
+  }
+  function submit() {
+    let inputEl = document.getElementById("problemInputEl");
+
+    let userInput = inputEl.value.toLocaleLowerCase().replace(/\s+/g, "");
+    let problemAnswer = currentProblem.answer.toLocaleLowerCase().replace(/\s+/g, "");
+
+    if (userInput == problemAnswer) {
+      initNumber++;
+      if (initNumber > 23) initNumber = 0;
+      render();
+    } else {
+      alert("答案错误");
+    }
+
+    inputEl.value = "";
+  }
+  (function(){
+    render();
+  })();
+content-css: |
+  @font-face {
+    font-family: 'ccbc12symbols';
+    src: url('/ccbc12/assets/ccbc12symbols-Regular-SVG.woff2') format('woff2'), /* Modern Browsers */
+          url('/ccbc12/assets/ccbc12symbols-Regular-SVG.otf') format('opentype'); /* Safari, Android, iOS */
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+  }
+  .center{
+    text-align: center;
+  }
+  .puzzle-content-line {
+      margin-bottom: 40px;
+  }
+  .answer-input-line {
+      margin-top: 300px;
+  }
+  .answer-input-line .input-group-lg > input {
+      height: 64px;
+  }
+  .answer-input-line .input-group-lg > button {
+      height: 64px;
+      width: 120px;
+  }
+  .answer-input-line .btn-group {
+      width: 100%;
+  }
+  .answer-input-line .btn-group > .btn {
+      height: 64px;
+      margin-bottom: 10px;
+  }
+  .problem-content {
+    font-size: 2.5em;
+  }
+  .problem-big {
+      font-size: 6em;
+  }
+  .problem-symbol {
+      font-family: 'ccbc12symbols';
+      font-size: 8em;
+  }
+answer: infinite loop
+tips:
+  -
+    title: 关于加密方法
+    content: 使用到的加密方法为：字母顺序替换（即A=1，Z=26）、凯撒移位、摩尔斯电码、二进制、盲文、猪圈密码、旗语、倒序、九键键盘替换、5*5棋盘密码、Atbash、栅栏密码（2栏）
+  -
+    title: 关于答案
+    content: 看看每道小题的首字母？
+answer-analysis: |
+  每一题使用一种常见密码，做出足够题后会提示循环，做出更多的题后会直接告知跳出循环的答案。
+
+  其中使用了12种不同的常见加密方法，分别是：字母顺序替换（即A=1，Z=26）、凯撒移位、摩尔斯电码、二进制、盲文、猪圈密码、旗语、倒序、九键键盘替换、5*5棋盘密码、Atbash、栅栏密码（2栏），
+  其中每12题都会分别使用一次。
+
+  可以发现每十二题答案的首字母可以拼出：INFINITE LOOP，提示我们正被困在一个无穷循环里。在答案框里输入并提交：INFINITE LOOP即可完成序章。
+links:
+  - 
+    title: CCBC12 索引页
+    type: index
+    path: ccbc12/index
+  -
+    title: 正篇前言
+    type: page
+    path: ccbc12/pages/prologue
+    id: mainp
+
