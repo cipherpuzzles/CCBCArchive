@@ -1,0 +1,27 @@
+answer: STAR STRUCK
+answer_analysis: ''
+content:
+- '在深蓝色的背景下，一场战争即将上演……
+
+
+  <img src="/ccbc12/images/d/214d5c12608a42cd99e55f95d341e9ec.webp" width="800px"/>'
+links:
+- path: ccbc12/index
+  title: CCBC12 索引页
+  type: index
+- path: ccbc12/pages/main
+  title: 时光机
+  type: page
+tips:
+- content: Star Battle和Battleship是两种逻辑谜题的类型，而这道题是这两种类型的混合。其他几行字母也解释了混合后的附加规则。
+  title: 我毫无头绪
+- content: '这里是一张简化后的图片。
+
+
+    <img src="https://static.cipherpuzzles.com/static/images/4d83da2bceb6407a976fa48ec3f1f406.webp"
+    width="400px"/>'
+  title: 能简化一下吗
+- content: 把所有重合的地方的字母从上到下排列。
+  title: 该如何提取
+title: '#1963 星际战舰 - CCBC 12'
+type: problem

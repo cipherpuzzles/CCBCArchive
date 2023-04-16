@@ -1,0 +1,25 @@
+answer: CONTEXT
+answer_analysis: ''
+content:
+- '你的队伍走进一间休息室，看到桌子上留有一张特殊的纸条，其中一部分沾上了墨水看不清。这个不是 CCBC12 的 checklist 吗？明明有这么多×，怎么还是上线了！你们左顾右盼想找到写纸条的人，但很显然，放字条的人已经出了这间屋子了。
+
+
+  <img src="/ccbc12/images/f/b6485505344c4291accd902b4c906260.webp" width="600px"/>
+
+  '
+links:
+- path: ccbc12/index
+  title: CCBC12 索引页
+  type: index
+- path: ccbc12/pages/main
+  title: 时光机
+  type: page
+tips:
+- content: 每一列的勾和叉表示对应的汉字有无某个性质，需要推测出这些性质是什么然后把被墨水盖住的格子填上。
+  title: 我毫无头绪
+- content: 这道题和“笔画”、“结构”、“词性”、“拼音”、“剧情”有关。
+  title: 能简化一下吗
+- content: 把×√分别用01表示然后二进制转成字母。
+  title: 该如何提取
+title: '#1995 沾染墨水的清单 - CCBC 12'
+type: problem

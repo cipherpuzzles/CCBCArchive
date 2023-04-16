@@ -1,0 +1,54 @@
+answer: OPPOSITE EFFECT
+answer_analysis: ''
+content:
+- '报纸上的谜题专栏刊登的谜题，总觉得有点眼熟……
+
+  '
+- "<img src=\"/ccbc12/images/f/dddb3de0d8f849329582803e3a3c0254.webp\" width=\"800px\"\
+  />\n<br><br>\n<table id=\"pz-table\" width=\"900px\">\n</table>\n<script>\n    (function\
+  \ () {\n        let index1 = [\n            \"a.\",\n            \"b.\",\n     \
+  \       \"c.\",\n            \"d.\",\n            \"e.\",\n            \"f.\",\n\
+  \            \"g.\",\n            \"h.\",\n            \"i.\",\n            \"j.\"\
+  ,\n        ];\n        let data1 = [\n            \"英超球队，获得过九次英国顶级联赛冠军\",\n    \
+  \        \"经常与凉并用\",\n            \"收入最高的运动员之一\",\n            \"第一位荷裔美国总统\",\n\
+  \            \"为911事件特别修建的监狱\",\n            \"一种气鸣乐器\",\n            \"动物园常见动物，尾巴展开后非常好看\"\
+  ,\n            \"双臂和双腿的统称\",\n            \" 一周中的一天\",\n            \"“小球转动大球”的运动\"\
+  ,\n        ];\n        let index2 = [\n            \"一、\",\n            \"二、\",\n\
+  \            \"三、\",\n            \"四、\",\n            \"五、\",\n            \"六、\"\
+  ,\n            \"七、\",\n            \"八、\",\n            \"九、\",\n            \"\
+  十、\",\n            \"十一、\",\n            \"十二、\",\n        ]\n        let data2\
+  \ = [\n            \"日本最著名的山\",\n            \"一种黑白相间的马\",\n            \"斯德哥尔摩省内的一个城市，有一支参加瑞典乙级联赛的足球队\"\
+  ,\n            \"北京地铁的一个站，从珠市口站不用换乘坐几站就能到达\",\n            \"十二星座之一\",\n       \
+  \     \"位于北半球的一个大洲\",\n            \"显像管玻璃制造时的催化澄清剂中的某种元素\",\n            \"英雄联盟中的一名英雄\"\
+  ,\n            \"不下雨的某种天气\",\n            \"本题所用到的一种逻辑计算\",\n            \"人类赖以生存的家园\"\
+  ,\n            \"与瘦相对\",\n        ];\n        if (data1.length > data2.length) {\n\
+  \            let temp = data1;\n            data1 = data2\n            data2 = temp;\n\
+  \        }\n\n        const pz_table = document.getElementById(\"pz-table\");\n\
+  \        //清除原有的内容：\n        while (pz_table.firstChild) pz_table.removeChild(pz_table.firstChild);\n\
+  \        data2.forEach((o, i) => {\n            let row = document.createElement(\"\
+  tr\");\n            let td_1 = document.createElement(\"td\");\n            td_1.style.textAlign\
+  \ = \"center\";\n            let td_2 = document.createElement(\"td\");\n      \
+  \      let td_3 = document.createElement(\"td\");\n            td_3.style.textAlign\
+  \ = \"right\";\n            let td_4 = document.createElement(\"td\");\n       \
+  \     if (index1[i]) {\n                td_1.innerHTML = index1[i];\n          \
+  \      td_2.innerHTML = data1[i];\n            }\n            td_3.innerHTML = index2[i];\n\
+  \            td_4.innerHTML = data2[i];\n            row.appendChild(td_1);\n  \
+  \          row.appendChild(td_2);\n            row.appendChild(td_3);\n        \
+  \    row.appendChild(td_4);\n            pz_table.appendChild(row);\n        });\n\
+  \    })();\n</script>"
+links:
+- path: ccbc12/index
+  title: CCBC12 索引页
+  type: index
+- path: ccbc12/pages/main
+  title: 时光机
+  type: page
+tips:
+- content: 这个是crossword，也叫横纵字谜，需要根据下面的条件来找到对应的东西，然后填到上面对应的格子中。e对应的答案是GUANTANAMO（关塔那摩）。
+  title: 我毫无头绪
+- content: 这道题用拼音和英文都能做，所以换个语言试试？
+  title: 我基本填完了，但不知道接下来怎么做
+- content: 提取方法是二进制下的“或计算”（bitwise or），每个标数字的格子提取一个字母。
+  title: 该如何提取
+title: '#1726 旧报纸 - CCBC 12'
+type: problem

@@ -1,0 +1,20 @@
+answer: MANDATORY REPORTING
+answer_analysis: ''
+content:
+- '这个瓶子拥有着不符合时代的审美和工艺。
+
+
+
+  <img src="/ccbc12/images/a/3b14829320784666a3b2403c12c179ca.webp" width="300px"/>'
+links:
+- path: ccbc12/index
+  title: CCBC12 索引页
+  type: index
+- path: ccbc12/pages/main
+  title: 时光机
+  type: page
+tips:
+- content: 从瓶口向瓶中倒水，水流会根据隔断的形状逐个填满字母对应的凹槽直至灌满瓶子。按凹槽灌满顺序读取字母可得答案（第一个字母是M，最后一个字母是G）
+  title: 我毫无头绪
+title: '#1709 奇怪的瓶子 - CCBC 12'
+type: problem

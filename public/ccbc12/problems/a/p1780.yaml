@@ -1,0 +1,19 @@
+answer: COFFEE SHOP
+answer_analysis: ''
+content:
+- 这些咖啡味道醇香，回味悠长。
+links:
+- path: ccbc12/index
+  title: CCBC12 索引页
+  type: index
+- path: ccbc12/pages/main
+  title: 时光机
+  type: page
+problem_image: /ccbc12/images/a/1e2b17b0afa24aa2a4a0379dfa650a71.webp
+tips:
+- content: 不同种类的咖啡配方不同，根据咖啡杯内的成分猜测一下这些咖啡的种类吧（例如第一杯是cappuccino，第三杯是flat white，其他咖啡你可以在搜索引擎检索“咖啡配方”获得）。
+  title: 我毫无头绪
+- content: 根据杯垫的颜色在彩虹中的顺序提取字母，例如蓝色杯垫就取第六个字母。
+  title: 该如何提取
+title: '#1780 咖啡店 - CCBC 12'
+type: problem

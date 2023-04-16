@@ -1,0 +1,28 @@
+answer: SEEKING ASYLUM
+answer_analysis: ''
+content:
+- '一张魔术大会贩卖的魔术教程。
+
+
+  <img src="/ccbc12/images/e/6cfe7c1704fe49c3b9ce39fd2a649f6f.webp" width="600px"/>'
+extend_content:
+- 你得到了一个神秘的数字：56.17
+links:
+- path: ccbc12/index
+  title: CCBC12 索引页
+  type: index
+- path: ccbc12/pages/main
+  title: 时光机
+  type: page
+tips:
+- content: 第一行的字母Faro Shuffles提示了完美洗牌，下面的两个O和I的箭头表示了两种完美洗牌的方式。x5代表洗牌的次数。
+  title: 我毫无头绪
+- content: '这里是一张简化后的图片。
+
+    <img src="https://static.cipherpuzzles.com/static/images/b5de539b8553411e9ff0efa9a8b882bc.webp"
+    width="600px"/>'
+  title: 能简化一下吗？
+- content: 把O看作0，I看作1之后二进制转成字母。
+  title: 该如何提取
+title: '#1830 魔术指南 - CCBC 12'
+type: problem

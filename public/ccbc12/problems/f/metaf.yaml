@@ -1,0 +1,52 @@
+answer: WHEELCHAIR
+answer_analysis: ''
+content:
+- '<span style="color: #9F9F9F;">时间线F在这里终结了，请回顾这一轮的穿越并尝试解开这条时间线上的缠结。</span>
+
+
+  <br><br>
+
+
+  你来到了一个连时间都不存在的地方，在一片虚无之中穿行。
+
+
+  过了不知道多久，你赫然发现前方是一座大楼。外墙一片斑驳，似乎已经经过了许多岁月的冲刷。你看到有一间实验室还亮着灯，于是走了进去。
+
+
+  <hr>
+
+
+  一位中年人坐在工作台前，对着面前的一堆零件发愁。
+
+
+  <span style="color: #F561A4">“我是Nano，是一位工程师。我忘了这堆东西是用来干什么的了，只有这一点猜想……”</span>
+
+
+  说着，他指向了墙上的一张图纸。也许你们能用这些零件合成什么有用的东西？
+
+
+  <img src="/ccbc12/images/f/e8dd3071d0c94eb3a4abf4240195036a.webp" width="800px"/>
+
+
+  <br><br>'
+extend_content:
+- '“我明明是编程系出身的，怎么变成了工程师呢……”Nano对自己在幻境中的人物设定十分不解，“这螺丝刀也没用了，干脆送你得了。”
+
+
+  于是，你接过了一把看上去饱经历史风霜的一字螺丝刀。可是我要这个螺丝刀又有什么用呢？一定是可以把哪里的螺丝拆掉。'
+links:
+- path: ccbc12/index
+  title: CCBC12 索引页
+  type: index
+- path: ccbc12/pages/main
+  title: 时光机
+  type: page
+tips:
+- content: 每个小题答案提示一个单词（长度都在8到10之间），有些单词之间有相同之处。
+  title: 我没有头绪
+- content: 每一条线组合了线头和线尾的两个单词。
+  title: 图纸怎么理解
+- content: 盒子上填完字母后从最上面开始按照顺时针顺序取按钮按下处对应的字母。
+  title: 该如何提取
+title: 终结点F - CCBC 13
+type: problem

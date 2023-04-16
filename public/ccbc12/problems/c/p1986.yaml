@@ -1,0 +1,21 @@
+answer: BACKGAMMON
+answer_analysis: ''
+content:
+- '没有了讨厌的章鱼怪，吃豆人可以一次吃个够了吧。
+
+
+  <img src="/ccbc12/images/c/16e02c837a234f33addba63c76528320.webp" width="800px"/>'
+links:
+- path: ccbc12/index
+  title: CCBC12 索引页
+  type: index
+- path: ccbc12/pages/main
+  title: 时光机
+  type: page
+tips:
+- content: 把吃豆人和虚线框一起放进右侧迷宫中，让吃豆人吃到豆子（位置与豆子重合）。
+  title: 我毫无头绪
+- content: 把象形得到的字母按照电阻色环顺序，由黑至白排序（比如第一个字母是B）。
+  title: 该如何提取
+title: '#1986 吃豆人 - CCBC 12'
+type: problem

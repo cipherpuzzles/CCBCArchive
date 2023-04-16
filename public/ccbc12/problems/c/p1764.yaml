@@ -1,0 +1,19 @@
+answer: DOUBLE ELIMINATION
+answer_analysis: ''
+content:
+- 经典游戏祖玛，目标是尽量消除珠子，但这局好像有些不同。
+links:
+- path: ccbc12/index
+  title: CCBC12 索引页
+  type: index
+- path: ccbc12/pages/main
+  title: 时光机
+  type: page
+problem_image: /ccbc12/images/c/436de4f1659441b88691995569660141.webp
+tips:
+- content: 每一组字母可以通过添加两个相同字母得到一个常见单词。
+  title: 我毫无头绪
+- content: 把添加的字母按照顺序排列，然后按照和第一步相同的方式再连续添加两次字母得到最终答案。（最终答案有两个单词，分别有6个字母和11个字母。）
+  title: 该如何提取
+title: '#1764 祖玛 - CCBC 12'
+type: problem

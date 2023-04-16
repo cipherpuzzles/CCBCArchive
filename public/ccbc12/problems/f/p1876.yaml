@@ -1,0 +1,25 @@
+answer: CELEBRATORY EXPLOSIVE
+answer_analysis: ''
+content:
+- '<!--use lightgame-->
+
+  这房间怎么这么多灯，亮瞎眼了，快都关掉！'
+- "<script>\n(function(){\nconst lightInitData =\n//请将从Excel复制来的内容粘贴在下面↓↓↓\n[\t333\t\
+  ,\n\t787\t,\n\t652\t,\n\t500\t,\n\t114\t,\n\t994\t,\n\t637\t,\n\t1023\t,\n\t963\t\
+  ,\n\t336\t,\n\t761\t,\n\t891\t]\n//请将从Excel复制来的内容粘贴在上面↑↑↑\n;(function (e){\nif(!window.lightGameInit)\
+  \ {console.log(\"Warning: no game wrapper.\"); return;}\nwindow.lightGameInit(e,\
+  \ 10);\n})(lightInitData);\n})();\n</script>"
+links:
+- path: ccbc12/index
+  title: CCBC12 索引页
+  type: index
+- path: ccbc12/pages/main
+  title: 时光机
+  type: page
+tips:
+- content: 你应该按照指示把灯都关了。第一行中需要按的按钮是第1、2、3、5、7、9个。
+  title: 我毫无头绪
+- content: 把矩阵分成若干个3x2的小长方形，然后把按过的按钮位置按盲文转成字母。
+  title: 该如何提取
+title: '#1876 灯泡矩阵 - CCBC 12'
+type: problem

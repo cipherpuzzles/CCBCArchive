@@ -1,0 +1,21 @@
+answer: DECADE
+answer_analysis: ''
+content:
+- '一盘还没有下完的棋，但结局也许已经注定……
+
+
+  <img src="/ccbc12/images/c/47dd40b380c44a10b00ec364dd35f96a.webp" width="600px"/>'
+links:
+- path: ccbc12/index
+  title: CCBC12 索引页
+  type: index
+- path: ccbc12/pages/main
+  title: 时光机
+  type: page
+tips:
+- content: 这是一盘五子棋。现在是黑方行动，有最优（步数最少）的必胜策略。
+  title: 我毫无头绪
+- content: 棋盘每个点都有横纵坐标，可以把获胜方每一步下的位置变成字母（不包括最后一步）。
+  title: 该如何提取
+title: '#1799 棋盘一角 - CCBC 12'
+type: problem

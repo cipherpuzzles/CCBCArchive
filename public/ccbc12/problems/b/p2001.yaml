@@ -1,0 +1,24 @@
+answer: ISAAC NEWTON
+answer_analysis: ''
+content:
+- "一块精致的黑色方碑，上面刻着许多奇怪的符号。\n\n<style>\n.pz-img-wrapper {\n    width: 400px;\n    height:\
+  \ 772px;\n    position: relative;\n}\n.pz-img-wrapper > img {\n    position: absolute;\n\
+  \    top: 0;\n    left: 0;\n    user-select: none;\n}\n.pz-inner-text {\n    position:\
+  \ absolute;\n    top: 230px;\n    left: 54px;\n    font-size: 32px;\n    color:\
+  \ transparent;\n}\n.pz-inner-text::selection {\n    background: rgba(30, 30, 57,\
+  \ 0.3);\n}\n</style>\n<div class=\"pz-img-wrapper\">\n    <img src=\"/ccbc12/images/b/82c8ea3d4a824b50b4abe9b154f2b7fc.webp\"\
+  \ width=\"100%\" />\n    <div class=\"pz-inner-text\">☉</div>\n</div>"
+links:
+- path: ccbc12/index
+  title: CCBC12 索引页
+  type: index
+- path: ccbc12/pages/main
+  title: 时光机
+  type: page
+tips:
+- content: 上方的图片既可以看作电子轨道图，也可以看作太阳系示意图。右侧的六个符号是炼金符号。（顺带一提，左侧的那个符号也是炼金符号，而且可以复制。）
+  title: 我毫无头绪
+- content: 把点之前的罗马数字按照元素周期表转换成元素，再用点之后的罗马数字取该元素（根据某规则）对应天体的字母。注意有一个字母需要上下翻转一下。
+  title: 该如何提取
+title: '#2001 黑色方碑 - CCBC 12'
+type: problem

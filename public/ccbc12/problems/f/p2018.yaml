@@ -1,0 +1,82 @@
+answer: SOUND REPRODUCTION
+answer_analysis: ''
+content:
+- '桌子上放着一张封面有点前卫艺术风格的CD。
+
+
+  <img src="/ccbc12/images/f/23918310b9de4e1aa2a7bff462ec206c.webp" style="width:
+  600px"/>
+
+
+  你把光盘从盒子中取出来，插入了CD机，浏览着曲目列表：“这个歌名是不是都乱码了？就和这个封面一样乱？”
+
+
+  <a href="https://static.cipherpuzzles.com/static/images/f477698a11004fdc953aac0386d0a09a.zip"
+  download>打包下载全部音频文件</a>
+
+
+  （注意：本题需要的信息均以比赛期间（2022年8月12日至21日）为准。）'
+- "<link rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.css\"\
+  >\n<style>\n.aplayer {\n    color: black;\n    width: 100%;\n    max-width: 400px;\n\
+  }\n</style>\n<div id=\"aplayer\"></div>\n<script>\n(function () {\n    //inject\
+  \ js\n    let a = document.getElementById(\"puzzleHtml\");\n    let b = document.createElement(\"\
+  script\");\n    b.id = \"APlayer\";\n    b.src = \"https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.js\"\
+  ;\n    a.appendChild(b);\n    //init aplayer\n    b.onload = () => {\n    const\
+  \ coverLogo = \"https://puzzle.cipherpuzzles.com/assets/logo.3d341510.svg\";\n \
+  \   const ap = new APlayer({\n        container: document.getElementById('aplayer'),\n\
+  \        theme: \"#0046FF\",\n        audio: [\n            {\n                name:\
+  \ '(10)',\n                artist: \"CCBC 12\",\n                url: 'https://static.cipherpuzzles.com/static/images/ef6401384dee4fc09f93e48690fc1c33.m4a',\n\
+  \                cover: coverLogo\n            },\n            {\n             \
+  \   name: '(5 8)',\n                artist: \"CCBC 12\",\n                url: 'https://static.cipherpuzzles.com/static/images/cfbf5df15f044218a15abdf396685e3a.m4a',\n\
+  \                cover: coverLogo\n            },\n            {\n             \
+  \   name: '(6 6)',\n                artist: \"CCBC 12\",\n                url: 'https://static.cipherpuzzles.com/static/images/f53005334c56403a9bc4f76cbb894810.m4a',\n\
+  \                cover: coverLogo\n            },\n            {\n             \
+  \   name: '(7)',\n                artist: \"CCBC 12\",\n                url: 'https://static.cipherpuzzles.com/static/images/c9036f5889764f4fa8abacca75fcffbc.m4a',\n\
+  \                cover: coverLogo\n            },\n            {\n             \
+  \   name: '(7 4)',\n                artist: \"CCBC 12\",\n                url: 'https://static.cipherpuzzles.com/static/images/ae29d04ae18e4633bf5789147ee859ee.m4a',\n\
+  \                cover: coverLogo\n            },\n            {\n             \
+  \   name: '(5 6)',\n                artist: \"CCBC 12\",\n                url: 'https://static.cipherpuzzles.com/static/images/ef73859019dc44118fe2a28be6b31e1b.m4a',\n\
+  \                cover: coverLogo\n            },\n            {\n             \
+  \   name: '(10)',\n                artist: \"CCBC 12\",\n                url: 'https://static.cipherpuzzles.com/static/images/ad88127d3d6c4661aa291b067416879a.m4a',\n\
+  \                cover: coverLogo\n            },\n            {\n             \
+  \   name: '(5 5)',\n                artist: \"CCBC 12\",\n                url: 'https://static.cipherpuzzles.com/static/images/4a41db4eac2149569f730eb04ee0129b.m4a',\n\
+  \                cover: coverLogo\n            },\n            {\n             \
+  \   name: '(6 7 6)',\n                artist: \"CCBC 12\",\n                url:\
+  \ 'https://static.cipherpuzzles.com/static/images/672a9d7a6ffb40bd990fc4426fbe8281.m4a',\n\
+  \                cover: coverLogo\n            },\n            {\n             \
+  \   name: '(8 8)',\n                artist: \"CCBC 12\",\n                url: 'https://static.cipherpuzzles.com/static/images/2963ea4aadc848848c9b912005345672.m4a',\n\
+  \                cover: coverLogo\n            },\n            {\n             \
+  \   name: '(7)',\n                artist: \"CCBC 12\",\n                url: 'https://static.cipherpuzzles.com/static/images/d391ee45a56f4f95958f8ab2d43941ce.m4a',\n\
+  \                cover: coverLogo\n            },\n            {\n             \
+  \   name: '(5 4)',\n                artist: \"CCBC 12\",\n                url: 'https://static.cipherpuzzles.com/static/images/a81a7ae5859e434d934ad57a1bd686b7.m4a',\n\
+  \                cover: coverLogo\n            },\n            {\n             \
+  \   name: '(8)',\n                artist: \"CCBC 12\",\n                url: 'https://static.cipherpuzzles.com/static/images/b468c05a3733458290970e465e329c0b.m4a',\n\
+  \                cover: coverLogo\n            },\n            {\n             \
+  \   name: '(7)',\n                artist: \"CCBC 12\",\n                url: 'https://static.cipherpuzzles.com/static/images/a5997efffba843aa8301801fedac9330.m4a',\n\
+  \                cover: coverLogo\n            },\n            {\n             \
+  \   name: '(5 4)',\n                artist: \"CCBC 12\",\n                url: 'https://static.cipherpuzzles.com/static/images/cc9cbcad405d487e832f991944b5e5ba.m4a',\n\
+  \                cover: coverLogo\n            },\n            {\n             \
+  \   name: '(8 5)',\n                artist: \"CCBC 12\",\n                url: 'https://static.cipherpuzzles.com/static/images/4722931d570646c8a29ff5cb0d5115eb.m4a',\n\
+  \                cover: coverLogo\n            },\n            {\n             \
+  \   name: '(4)',\n                artist: \"CCBC 12\",\n                url: 'https://static.cipherpuzzles.com/static/images/9cd648673c5343efa471da5adbd87de5.m4a',\n\
+  \                cover: coverLogo\n            },\n        ]\n    });\n    window.destroyAction(function()\
+  \ {\n        ap.destroy();\n    });\n    }\n})();\n</script>"
+links:
+- path: ccbc12/index
+  title: CCBC12 索引页
+  type: index
+- path: ccbc12/pages/main
+  title: 时光机
+  type: page
+tips:
+- content: '这些音乐都被收录在一些移动端音游中。其中一些相对难找的曲目有Unshakable, Palescreen, Äventyr, CROSSING
+    DELTA, XING。
+
+    '
+  title: 我毫无头绪
+- content: 六个圈代表六个不同的移动端游戏，它们的首字母分别是A, C, D, L, M, P。
+  title: CD封面怎么理解
+- content: 用每首音乐对应的数字取歌名里的字母，按照CD里的歌单顺序排列。
+  title: 该如何提取
+title: '#2018 音乐CD - CCBC 12'
+type: problem

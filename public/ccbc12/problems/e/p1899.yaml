@@ -1,0 +1,21 @@
+answer: SOUNDTRACK ALBUM
+answer_analysis: ''
+content:
+- 你的分析仪告诉你，这些都是周期为2π的奇函数。
+extend_content:
+- 你得到了一个神秘的数字：5.91
+links:
+- path: ccbc12/index
+  title: CCBC12 索引页
+  type: index
+- path: ccbc12/pages/main
+  title: 时光机
+  type: page
+problem_image: /ccbc12/images/e/e8bc2f8a39f64b9bbeb79d6118faba95.webp
+tips:
+- content: 三个有颜色的函数都是形如A\*sin(x)+B\*sin(2x)+C\*sin(3x)+D\*sin(4x)+E\*sin(5x)的形式。
+  title: 我毫无头绪
+- content: 把三个颜色分别对应的五个系数转成字母按1\~5的顺序排列，然后按红绿蓝的顺序连在一起。每个系数都是1\~26之间的整数。
+  title: 该如何提取
+title: '#1899 函数 - CCBC 12'
+type: problem

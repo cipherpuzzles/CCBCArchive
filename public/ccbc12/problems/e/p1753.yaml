@@ -1,0 +1,26 @@
+answer: ELECTROPHORESIS
+answer_analysis: ''
+content:
+- '这个时代的文人对古代经典的拙劣模仿，难怪没有流传至今。
+
+
+  <br>
+
+
+  <font size="+2">氼毟乭，辻逧迠，囘凪唟，夼畠吂，橻沊硳，怾忨惃，笹㭐芘，椙欌榊，寽㐇巭，糀㐿奵，侤抇厷，栨杤橵，厼玊匁，枩柋臬，㸴怸梺。</font>'
+extend_content:
+- 你得到了一个神秘的数字：261.77
+links:
+- path: ccbc12/index
+  title: CCBC12 索引页
+  type: index
+- path: ccbc12/pages/main
+  title: 时光机
+  type: page
+tips:
+- content: 有大约三分之二的字不会在中国使用。
+  title: 我毫无头绪
+- content: 使用三进制，比如 中日韩=5。
+  title: 该如何提取
+title: '#1753 新·三字经 - CCBC 12'
+type: problem

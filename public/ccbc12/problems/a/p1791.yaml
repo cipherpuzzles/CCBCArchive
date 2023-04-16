@@ -1,0 +1,19 @@
+answer: UNFORTUNATE STORY
+answer_analysis: ''
+content:
+- 样式极简的电子钟，上面刻有许多色块。
+links:
+- path: ccbc12/index
+  title: CCBC12 索引页
+  type: index
+- path: ccbc12/pages/main
+  title: 时光机
+  type: page
+problem_image: /ccbc12/images/a/609633afd4914ca697d38936c39e71e6.webp
+tips:
+- content: 每个颜色分别对应八段数码管的亮起的某个部分，比如白色对应右下角的点。下方的每一个小格子都是相互分开的。
+  title: 我毫无头绪
+- content: 座钟上显示的是<a target="_blank" href="https://www.gerenjianli.com/Mingren/05/sdec3bk7l4ibs57.html">萨缪尔·摩尔斯</a>的生日。八种颜色对应了三种不同的符号，其中一种是分隔符。
+  title: 该如何提取
+title: '#1791 多彩座钟 - CCBC 12'
+type: problem

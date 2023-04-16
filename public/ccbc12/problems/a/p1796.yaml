@@ -1,0 +1,21 @@
+answer: AMBIGUOUS PROSPECTS
+answer_analysis: ''
+content:
+- '看似普通的春联上却写着十分前卫的文字。
+
+
+  <img src="/ccbc12/images/a/2464381605b24f1cad680c5102c505a3.webp" width="600px"/>'
+links:
+- path: ccbc12/index
+  title: CCBC12 索引页
+  type: index
+- path: ccbc12/pages/main
+  title: 时光机
+  type: page
+tips:
+- content: 除了横批之外，其他的字都不是由汉字组成的，而且每个字貌似还混进去了什么东西。上下联的原文可以在网上搜到（其中上联的第一个字是EAT）。
+  title: 我毫无头绪
+- content: 春联的阅读顺序一般是从上到下、从右到左。横批的内容是“凯撒”+“十三”。最终答案是18个字母。
+  title: 该如何提取
+title: '#1796 春联 - CCBC 12'
+type: problem

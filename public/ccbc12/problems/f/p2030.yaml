@@ -1,0 +1,58 @@
+answer: AGE INCREMENT
+answer_analysis: ''
+content:
+- '你走在2030年的街头，随手拍下一些图片准备发朋友圈。
+
+
+  <img src="/ccbc12/images/f/35a8d598adca4762860e51b8bafe8129.webp" width="800px"/>
+
+  <br><br>
+
+  <img src="/ccbc12/images/f/4b7d63895ccd4671bb3bfdd7e4bedfcc.webp" width="800px"/>
+
+  <br><br>
+
+  <img src="/ccbc12/images/f/9df792578efc4ddc83b0e9d4b945700e.webp" width="800px"/>
+
+  <br><br>
+
+  <img src="/ccbc12/images/f/c00519f676044eacbee8c472c316b88e.webp" width="800px"/>
+
+  <br><br>
+
+  <img src="/ccbc12/images/f/998637a1e2a64c6b84640cea8a6214f2.webp" width="800px"/>
+
+  <br><br>
+
+  <img src="/ccbc12/images/f/5adf8f6ec5bd4ac18370c42855777d91.webp" width="800px"/>
+
+  <br><br>
+
+  <img src="/ccbc12/images/f/b897107d1b8c4115ab83b60442962740.webp" width="800px"/>
+
+  <br><br>
+
+  <img src="/ccbc12/images/f/a0ee9caee4014293ab2f08258ce6d360.webp" width="800px"/>
+
+  <br><br>
+
+  <img src="/ccbc12/images/f/a24140523372470998f161c2a8cb9f94.webp" width="800px"/>'
+links:
+- path: ccbc12/index
+  title: CCBC12 索引页
+  type: index
+- path: ccbc12/pages/main
+  title: 时光机
+  type: page
+tips:
+- content: 这是2030年的街景，和现在的街景基本相同。所有的街景都能在百度地图中找到。
+  title: 我毫无头绪
+- content: 九张街景所在的城市分别为上海、广州、天津、深圳、厦门、重庆、杭州、长沙、北京。
+  title: 能简化一下吗
+- content: '找找和现实版有什么不一样的？不一样的中又有什么是一样的？
+
+
+    顺带一提，这道题的答案不止九个字母。'
+  title: 该如何提取
+title: '#2030 虚拟现实 - CCBC 12'
+type: problem

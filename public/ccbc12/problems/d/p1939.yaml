@@ -1,0 +1,23 @@
+answer: CURSE WORDS
+answer_analysis: ''
+content:
+- '<!--LOGO居中图片链接：/ccbc12/images/d/1a94b077fbe64ee1891db4257aec3bc7.webp-->
+
+  人难我难，我不畏难。人易我易，我不大意。'
+links:
+- path: ccbc12/index
+  title: CCBC12 索引页
+  type: index
+- path: ccbc12/pages/main
+  title: 时光机
+  type: page
+problem_image: /ccbc12/images/d/199f2449138c4eebbccf579f2eb9520f.webp
+tips:
+- content: 字下面的字母和数字分别是汉字的五笔编码和四角号码。
+  title: 我毫无头绪
+- content: 将五行和四象与对应位置给出的汉字结合得到新的汉字。
+  title: 该如何填字
+- content: 根据表格中加粗字的指示得到一个20个字的信息。把加粗字按行号由小到大顺序排列取对应的坐标字母得到密文。
+  title: 该如何提取
+title: '#1939 五年高考四年模拟 - CCBC 12'
+type: problem

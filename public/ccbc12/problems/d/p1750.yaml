@@ -1,0 +1,21 @@
+answer: ANXIETY
+answer_analysis: ''
+content:
+- '又到了吃菌子的季节，当地人用七种鲜美的可食用菌（不含密码菌）热情招待了你，此时你却发现盘子的纹饰不太寻常。
+
+
+  <img src="/ccbc12/images/d/873d339cff224aba8f6c7b6c737c3295.webp" width="800px"/>'
+links:
+- path: ccbc12/index
+  title: CCBC12 索引页
+  type: index
+- path: ccbc12/pages/main
+  title: 时光机
+  type: page
+tips:
+- content: 最左边的蘑菇是黑**虎掌**菌，最右边的蘑菇是**龙爪**菇。（请善用网上各种识图功能。）
+  title: 我毫无头绪
+- content: 把蘑菇对应的7个字母按照中间黑圈周围的顺序顺时针排列。
+  title: 该如何提取
+title: '#1750 蘑菇图鉴 - CCBC 12'
+type: problem

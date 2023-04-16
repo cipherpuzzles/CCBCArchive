@@ -1,0 +1,21 @@
+answer: RED CHILI
+answer_analysis: ''
+content:
+- '桌面上刻画着几根彩色的线条，美得如此蜿蜒。
+
+
+  <img src="/ccbc12/images/b/53b25749522a4431bb5d0af97a0bba50.webp" width="600px"/>'
+links:
+- path: ccbc12/index
+  title: CCBC12 索引页
+  type: index
+- path: ccbc12/pages/main
+  title: 时光机
+  type: page
+tips:
+- content: 每条线是除了南极洲外，每个大洲最长河流的形状。
+  title: 我毫无头绪
+- content: 每个点是一座城市（注意：绿色的点是米尔杜拉）。根据点的颜色在彩虹中的顺序，提取对应城市名中的字母，再按线的颜色在彩虹中的顺序排序。
+  title: 该如何提取
+title: '#2063 蜿蜒曲线 - CCBC 12'
+type: problem

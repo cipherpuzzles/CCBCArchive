@@ -1,0 +1,27 @@
+answer: FIELD GOAL
+answer_analysis: ''
+content:
+- '十分高端的显示器，能够做到每个数独立控制颜色。
+
+
+  <img src="/ccbc12/images/c/2937569377a3420e96ca46be61895584.webp" width="600px"/>'
+links:
+- path: ccbc12/index
+  title: CCBC12 索引页
+  type: index
+- path: ccbc12/pages/main
+  title: 时光机
+  type: page
+tips:
+- content: 这不是一个数独，而是三个数独。注意到红绿蓝三原色的数字都在1\~9之间，而三个混合色的数字都在2\~18之间。
+  title: 我毫无头绪
+- content: '这里是一张简化后的图片。
+
+
+    <img src="https://static.cipherpuzzles.com/static/images/b558d0ee227f4dcc967ff1a18da547fa.webp"
+    width="300px"/>'
+  title: 能简化一下吗
+- content: 如果要在每个涂色的格子里填这个颜色的数字，那么应该填什么呢？把这些数字转成字母就可以了。
+  title: 该如何提取
+title: '#1984 霓虹显示屏 - CCBC 12'
+type: problem

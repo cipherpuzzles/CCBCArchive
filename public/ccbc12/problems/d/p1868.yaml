@@ -1,0 +1,24 @@
+answer: TOTAL NEUTRALITY
+answer_analysis: ''
+content:
+- '我的天！怎么全部混到一起了……
+
+
+  <img src="/ccbc12/images/d/b45b5221c5b64a99beeeeca2ac66473b.webp" width="500px"
+  />'
+links:
+- path: ccbc12/index
+  title: CCBC12 索引页
+  type: index
+- path: ccbc12/pages/main
+  title: 时光机
+  type: page
+tips:
+- content: 注意到这些都是垃圾，而圆圈分为灰红蓝绿四类。有哪些圆圈是垃圾的正确分类呢？
+  title: 我毫无头绪
+- content: 把正确的圆圈按照盲文转成字母，得到的信息提示了每一行的某一个物品。
+  title: 做完第一步后该怎么办
+- content: 注意到每一行的关键物品的单词长度和其所在行的长度相同，所以每行可以提取出一个字母。
+  title: 该如何提取
+title: '#1868 灰红蓝绿 - CCBC 12'
+type: problem

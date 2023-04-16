@@ -1,0 +1,17 @@
+answer: FRANCHISE
+answer_analysis: ''
+content:
+- 谁刷墙这么不小心，都把便签纸刷红了，还撕下来了一些。
+links:
+- path: ccbc12/index
+  title: CCBC12 索引页
+  type: index
+- path: ccbc12/pages/main
+  title: 时光机
+  type: page
+problem_image: /ccbc12/images/c/95ef365a81b746568ffc8df75048f372.webp
+tips:
+- content: 三个被撕下来的单词分别是Tango, Juliette, Delta。试着把这三个词一起搜一下？
+  title: 我毫无头绪
+title: '#1893 红色便签纸 - CCBC 12'
+type: problem

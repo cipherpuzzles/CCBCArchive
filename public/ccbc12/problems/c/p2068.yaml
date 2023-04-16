@@ -1,0 +1,17 @@
+answer: ENSUED
+answer_analysis: ''
+content:
+- 一张撕得还算整齐的纸，很多内容只能看到一半了。
+links:
+- path: ccbc12/index
+  title: CCBC12 索引页
+  type: index
+- path: ccbc12/pages/main
+  title: 时光机
+  type: page
+problem_image: /ccbc12/images/c/8b2322f5b63b410789539de21ba7bf11.webp
+tips:
+- content: 这些单词是FORTNIGHT, HEXAGRAM, SCHOOL YEAR, HALF, OCTAVE, DIAMETER。每个单词被撕了一半，那么把每个单词的含义也减半会怎么样呢？
+  title: 我毫无头绪
+title: '#2068 残缺纸张 - CCBC 12'
+type: problem

@@ -1,0 +1,72 @@
+answer: COMPUTER PROGRAM
+answer_analysis: ''
+content:
+- '屏幕上好像显示着一个CTF（Capture The Flag）比赛的简介：
+
+
+  <br><br>
+
+
+  ## 《CCBC CTF参加者公告》
+
+
+  欢迎参加CCBC CTF！这是CCBC的首届CTF，题目面向初学者非常简单。
+
+
+  在比赛之前请注意：
+
+
+  1、请遵守比赛须知，不要泄露比赛题目和答案；
+
+
+  2、所有的flag都是 <span style="color: #E511B2">ccbc{your_flag}</span> 的形式。例如，你发现了网站中隐藏的
+  <span style="color: #E511B2">ccbc{answer}</span> ，你应该提交 <span style="color: #E511B2">answer</span>
+  作为答案；
+
+
+  3、严禁攻击比赛网站和平台！违者直接取消成绩并禁赛！
+
+
+  <br><br>
+
+
+  <div style="color:gray; font-size:14px">
+
+
+  在你没注意的角落有一个writeUp.pdf，比赛还没开始就出现了write up，大概是这里时间扭曲的说明？
+
+
+  第一题： welcome_to_ccbc_ctf (Web)
+
+
+  这题我都不想写WriteUp——flag就直接写在控制台里面，这题也太水了╮（╯▽╰）╭
+
+
+  但是刚看到还是把我们都蒙了一下，毕竟网页里啥都没有。还是 piggy 有经验，马上就去看控制台了。
+
+
+  </div>'
+- '<script>
+
+  (function(){
+
+  console.log("%cYour flag is: ccbc{cbccbc{cbccbc{cbcccbc{cbbbbcc}bbccbc{cbbcccc}bb}cbccbc{cbcccbc{cbbccbc}bccbc{cbcbbbb}bcb}bcb}bccccbc{cbbccbc{cbbccbc{cbcbcbc}cccbc{cbcbcbb}ccc}bbccbc{cbccbc{cbbbcbc}bbccbc{cbcbbcb}ccc}bc}bc}",
+  "color: #E511B2; font-size: 28px;")
+
+  })();
+
+  </script>'
+links:
+- path: ccbc12/index
+  title: CCBC12 索引页
+  type: index
+- path: ccbc12/pages/main
+  title: 时光机
+  type: page
+tips:
+- content: 可以网上搜索一下如何打开浏览器的控制台。在控制台里你能找到一段以"Your flag is:"开头的信息。
+  title: 我毫无头绪
+- content: 好长的字串，里面还藏了八个flag！试着把这八个flag完整地拿出来再看看有没有别的flag吧。每个flag通过ASCII编码方式对应答案中的一个字母。
+  title: 该如何提取
+title: '#1853 welcome_to_ccbc_ctf (Web) - CCBC 12'
+type: problem

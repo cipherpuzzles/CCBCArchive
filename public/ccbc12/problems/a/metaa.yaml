@@ -1,0 +1,45 @@
+answer: SIX CIRCLES
+answer_analysis: ''
+content:
+- '<span style="color: #9F9F9F;">时间线A在这里终结了，请回顾这一轮的穿越并尝试解开这条时间线上的缠结。</span>
+
+
+  <br><br>
+
+
+  你来到了一个连时间都不存在的地方，在一片虚无之中穿行。
+
+
+  过了不知道多久，你赫然发现前方是一片森林，森林之中有座小木屋。屋里的灯点亮着，让你感到了些许温暖。
+
+
+  <hr>
+
+
+  在屋内，一位文质彬彬的老人引起了你的注意。他正拨弄着手里的一台老式手机，看上去有些焦急。
+
+
+  <span style="color: #F561A4">“我是piggy，是一位收藏家。不知为何，我这台手机好像死机了，不管怎么动都没反应。”</span>
+
+
+  他的手机屏幕上只有两个圆圈闪烁着。
+
+
+  <img src="https://static.cipherpuzzles.com/static/images/9f1a4b2a1b864f3181b115b9ff71ba11.png"
+  style="width: 250px;"/>'
+extend_content:
+- “谢谢你救我出来，我好像在这里已经困了……诶，多少年呢？”piggy喃喃地念叨着，“早知道我也提前跑路了……”
+links:
+- path: ccbc12/index
+  title: CCBC12 索引页
+  type: index
+- path: ccbc12/pages/main
+  title: 时光机
+  type: page
+tips:
+- content: 找一下小题答案里有没有两个像圆圈的东西？
+  title: 我毫无头绪
+- content: 加密方式和按键手机的键盘有关（也许你的触屏手机打开拨号键盘或者某些输入法也能看到那个界面）。一对数字将会转成一个字母。
+  title: 该如何提取
+title: 终结点A - CCBC 13
+type: problem

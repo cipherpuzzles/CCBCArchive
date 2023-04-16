@@ -1,0 +1,17 @@
+answer: GENERAL ASSEMBLY
+answer_analysis: ''
+content:
+- "一些混杂了数字和汉字的词语，感觉熟悉而又陌生。\n\n<br>\n\n<p style=\"text-align:center\">\n4采烈 有2来 生无5\
+  \ 6偕老 半4废 倾5雨 3载物 3皆空 贪生3 5妙想 4谁手 似懂7 1思议 深藏2 4鸡群 \n</p>"
+links:
+- path: ccbc12/index
+  title: CCBC12 索引页
+  type: index
+- path: ccbc12/pages/main
+  title: 时光机
+  type: page
+tips:
+- content: 把每个四字成语补全，然后把补上的两个字读出来听听像什么。
+  title: 我毫无头绪
+title: '#2005 数字与字 - CCBC 12'
+type: problem

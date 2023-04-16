@@ -22,3 +22,8 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# python script
+venv
+__pycache__
+scripts/mysql_const.py
