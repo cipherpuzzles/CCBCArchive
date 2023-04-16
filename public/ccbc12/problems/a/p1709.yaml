@@ -1,5 +1,9 @@
 answer: MANDATORY REPORTING
-answer_analysis: ''
+answer-analysis: |
+  从瓶口向瓶中倒水，水流会根据隔断的形状逐个填满字母对应的凹槽直至灌满瓶子。按凹槽灌满顺序读取字母可得答案：MANDATORY REPORTING。
+  ![答案参考](/ccbc12/images/answer/a-1709.png)
+
+  [动态答案参考](https://www.bilibili.com/video/BV1zB4y1L7wE)
 content:
 - '这个瓶子拥有着不符合时代的审美和工艺。
 

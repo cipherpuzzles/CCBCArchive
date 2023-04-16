@@ -1,5 +1,16 @@
 answer: EDITOR
-answer_analysis: ''
+answer-analysis: |
+  这是一道字符版的裸眼3D题，可以通过以下方式之一得到答案：
+
+  - 仔细看这一堆文字，使用平行眼的观察方式，看麻了就看出裸眼3D了……
+  - 使用在线工具，例如 https://piellardj.github.io/stereogram-solver/
+  - 找到循环节（长度为14~15个字符），然后观察每行去掉一个循环节之后和原来的区别，比如把两个版本分别截图然后来回切换；
+  - 标记出循环节之间增减的字母……
+  
+  最终的答案是：**EDITOR**。（本题获全场作答最短用时：7秒）
+
+  ![答案参考](/ccbc12/images/answer/b-1834.png)
+  
 content:
 - "这是一份从某个研究中心泄露的绝密文件，上面只有一些密密麻麻的看似乱码的字母，但仿佛有什么东西跃然纸上。\n<style>\n.code-area pre code\
   \ {\n    font-family: 'Cascadia Mono', Consolas, 'Lucida Console', 'Courier New',\

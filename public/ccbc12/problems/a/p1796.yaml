@@ -1,5 +1,10 @@
 answer: AMBIGUOUS PROSPECTS
-answer_analysis: ''
+answer-analysis: |
+  春联的上下联都是由看上去像是汉字的英文字母组成，而且每个字都有一个多余的字母：
+
+  ![答案参考](/ccbc12/images/answer/a-1796.png)
+
+  把多余的字母从上到下、从右到左排列得到NZOVTHBHF CEBFCRPGF。横批两个字分别是“凯+十”和“撒+三”，所以我们把之前得到的字母凯撒移位13位（也就是rot13）得到答案：**AMBIGUOUS PROSPECTS**。
 content:
 - '看似普通的春联上却写着十分前卫的文字。
 

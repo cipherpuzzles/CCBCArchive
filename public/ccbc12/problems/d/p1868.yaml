@@ -1,5 +1,12 @@
 answer: TOTAL NEUTRALITY
-answer_analysis: ''
+answer-analysis: |
+  先根据剧情和圆圈颜色联想到垃圾分类（灰红蓝绿分别对应干垃圾、有害垃圾、可回收物、湿垃圾），然后把正确分类的圆圈标出来，通过盲文得到信息：**PERISHABLE WASTE**，也就是湿垃圾。
+
+  ![答案参考](/ccbc12/images/answer/d-1868-1.jpg)
+
+  根据提示寻找图中的湿垃圾，发现每行恰有一个，而且其英文名和其所在行的长度相同，将英文填入每行的空格内，根据湿垃圾所在的位置取字母得到答案：**TOTAL NEUTRALITY**。
+
+  ![答案参考](/ccbc12/images/answer/d-1868-2.jpg)
 content:
 - '我的天！怎么全部混到一起了……
 

@@ -1,11 +1,14 @@
 answer: SEEKING ASYLUM
-answer_analysis: ''
+answer-analysis: |
+  初始的FARO SHUFFLES提示了完美洗牌，其中分为两种：Out-shuffle和In-shuffle，在题目中分别用I和O表示（两种洗牌都是先把牌堆上下分成相等的两部分，然后交替合并在一起，不过Out-shuffle从前半的第一张开始交替，In-shuffle从后半的第一张开始交替）。之后的每一步都是连续五次洗牌后的结果，但只显示其中三张。根据显示的牌可以唯一确定每五次洗牌的洗法，然后把洗法中的O和I分别换成0和1，用二进制转字母得到答案：**SEEKING ASYLUM**。
+
+  ![答案参考](/ccbc12/images/answer/e-1830.jpg)
 content:
 - '一张魔术大会贩卖的魔术教程。
 
 
   <img src="/ccbc12/images/e/6cfe7c1704fe49c3b9ce39fd2a649f6f.webp" width="600px"/>'
-extend_content:
+extend-content:
 - 你得到了一个神秘的数字：56.17
 links:
 - path: ccbc12/index
@@ -19,7 +22,7 @@ tips:
   title: 我毫无头绪
 - content: '这里是一张简化后的图片。
 
-    <img src="https://static.cipherpuzzles.com/static/images/b5de539b8553411e9ff0efa9a8b882bc.webp"
+    <img src="/ccbc12/images/e/b5de539b8553411e9ff0efa9a8b882bc.webp"
     width="600px"/>'
   title: 能简化一下吗？
 - content: 把O看作0，I看作1之后二进制转成字母。

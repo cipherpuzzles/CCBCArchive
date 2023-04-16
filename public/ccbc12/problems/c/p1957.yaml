@@ -1,11 +1,27 @@
 answer: CONAN DOYLE
-answer_analysis: ''
+answer-analysis: |
+  把视频中31-44秒以及59-74秒钟的动作，按照《福尔摩斯》里的跳舞的人密码转成字母：
+  
+  ![答案参考](/ccbc12/images/answer/c-1957-1.png)
+
+  虚线为未在原著中出现的字母
+  
+  ![答案参考](/ccbc12/images/answer/c-1957-2.png)
+
+  原著中字母N的左臂是伸直的
+  但是网上能搜到的大部分对照表都是弯曲的
+  好在不影响识别
+
+
+
+  转换后可得到答案：**CONAN DOYLE**。
 content:
 - '哇，这个年代就有真人翻拍的动画了吗？
 
 
-  <video src="https://static.cipherpuzzles.com/static/images/aee436760cb14702b53786b4a7fca705.mp4"
+  <video src="/ccbc12/images/c/aee436760cb14702b53786b4a7fca705.mp4"
   controls style="width: 100%"></video>'
+- （你也可以在Bilibili观看此视频：https://www.bilibili.com/video/BV1oa4y1f7Gp ）
 links:
 - path: ccbc12/index
   title: CCBC12 索引页

@@ -1,5 +1,8 @@
 answer: BACKGAMMON
-answer_analysis: ''
+answer-analysis: |
+  按照左上角提示，根据电阻色环顺序，依次以每个颜色的点为锚点，绘制虚线大小的方框，将方框套入右侧的图形中。方框内空白部分象形得到答案：**BACKGAMMON**。
+
+  ![答案参考](/ccbc12/images/answer/c-1986.jpg)
 content:
 - '没有了讨厌的章鱼怪，吃豆人可以一次吃个够了吧。
 

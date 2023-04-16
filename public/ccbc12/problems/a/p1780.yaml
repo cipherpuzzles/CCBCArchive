@@ -1,5 +1,21 @@
 answer: COFFEE SHOP
-answer_analysis: ''
+answer-analysis: |
+  按照每杯咖啡的不同成分推测出咖啡的种类，根据彩虹色提取种类的英文字母：
+
+  |咖啡种类|颜色|提取字母
+  |-------|----|-----
+  |卡布奇诺|紫色（7）|cappuc**C**ino
+  |摩卡|橙色（2）|m**O**cha
+  |白咖啡|红色（1）|**F**lat white
+  |白咖啡|红色（1）|**F**lat white
+  |拿铁|青色（5）|latt**E**
+  |美式|黄色（3）|am**E**ricano
+  |浓缩咖啡|蓝色（6）|espre**S**so
+  |玛奇朵|青色（5）|macc**H**iato
+  |摩卡|橙色（2）|m**O**cha
+  |卡布奇诺|绿色（4）|cap**P**uccino
+
+  可得答案：**COFFEE SHOP**。
 content:
 - 这些咖啡味道醇香，回味悠长。
 links:
@@ -9,7 +25,7 @@ links:
 - path: ccbc12/pages/main
   title: 时光机
   type: page
-problem_image: /ccbc12/images/a/1e2b17b0afa24aa2a4a0379dfa650a71.webp
+problem-image: /ccbc12/images/a/1e2b17b0afa24aa2a4a0379dfa650a71.webp
 tips:
 - content: 不同种类的咖啡配方不同，根据咖啡杯内的成分猜测一下这些咖啡的种类吧（例如第一杯是cappuccino，第三杯是flat white，其他咖啡你可以在搜索引擎检索“咖啡配方”获得）。
   title: 我毫无头绪

@@ -1,5 +1,8 @@
 answer: SUBMISSIVENESS
-answer_analysis: ''
+answer-analysis: |
+  通过搜索可以发现这是莎士比亚的第18号十四行诗，但是意思和原文有所出入。通过和英文原版比对可以发现，不同的地方都可以通过篡改一个字母达到（题目中每一行也有+1, -1, ~1的提示，分别对应增加一个字母，减少一个字母，和更改一个字母）。把这些增加/减少/更改后的字母连起来得到答案：**SUBMISSIVENESS**。
+
+  ![答案参考](/ccbc12/images/answer/e-1992.png)
 content:
 - '诗集上一首未署名的诗，可能出自于名家之手。
 
@@ -47,7 +50,7 @@ content:
 
 
   这诗将长存，并且赐给这些生命。（+1）'
-extend_content:
+extend-content:
 - 你得到了一个神秘的数字：10.82
 links:
 - path: ccbc12/index

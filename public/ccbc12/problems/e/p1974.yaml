@@ -1,11 +1,14 @@
 answer: THREE STRIKES
-answer_analysis: ''
+answer-analysis: |
+  这是一个“伤脑筋十二块”谜题，但是每一块覆盖的字母必须从左到右、从上到下形成一个英语单词。（作为额外的提示，每一块覆盖的单词都包含这一块对应的字母。）把每一块中高亮格覆盖的字母按照给出的顺序可以排列成答案：**THREE STRIKES**。
+
+  <img src="/ccbc12/images/answer/e-1974.jpg" style="width: 400px" />
 content:
 - '地上摆着一些积木，似乎是从盒子里散落出来的。
 
 
   <img src="/ccbc12/images/e/6d8f712c11064bd6b60502d8a5abdd61.webp" width="800px"/>'
-extend_content:
+extend-content:
 - 你得到了一个神秘的数字：15.41
 links:
 - path: ccbc12/index

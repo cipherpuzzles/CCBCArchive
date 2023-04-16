@@ -17,6 +17,12 @@
                 </a>
             </div>
         </div>
+        <div class="row" v-for="component in usedComponents">
+            <div class="col">
+                <light-game v-if="component.name === 'LightGame'"></light-game>
+                <c12-calc v-if="component.name === 'C12Calc'"></c12-calc>
+            </div>
+        </div> 
         <div class="row text-dark" v-if="extendContentHtml.length > 0">
             <div class="accordion mt-4" id="ecacc">
                 <div class="accordion-item">
@@ -130,7 +136,7 @@
 </template>
 
 <script setup lang="ts">
-import { AdditionalAnswer, goLinkButton, PageConfigLink, ProblemTips, YamlConfig } from '../utils/PageConfig'
+import { AdditionalAnswer, goLinkButton, PageConfigLink, ProblemTips, YamlConfig, PageComponents } from '../utils/PageConfig'
 import { nextTick, Ref } from 'vue';
 import { onMounted, ref } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
@@ -139,6 +145,8 @@ import GetPageConfig from '../utils/PageConfig'
 import { marked } from 'marked'
 import LinkButton from '../components/LinkButton.vue'
 import { Collapse, Modal } from 'bootstrap';
+import LightGame from '../components/LightGame.vue';
+import C12Calc from '../components/C12Calc.vue';
 
 const route = useRoute();
 const router = useRouter();
@@ -146,6 +154,7 @@ const router = useRouter();
 const title = ref("CCBC Archive");
 const pageHtml: Ref<string[]> = ref([]);
 const pageButton: Ref<PageConfigLink[]> = ref([]);
+const usedComponents: Ref<PageComponents[]> = ref([]);
 
 const problemImage: Ref<string | null> = ref(null);
 
@@ -196,6 +205,9 @@ function initConf(conf: YamlConfig) {
     }
     if (conf.links) {
         pageButton.value = conf.links;
+    }
+    if (conf.components) {
+        usedComponents.value = conf.components;
     }
     if (conf.tips) {
         answerTips.value = conf.tips.map(tip => {

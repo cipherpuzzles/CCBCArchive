@@ -1,5 +1,8 @@
 answer: DECADE
-answer_analysis: ''
+answer-analysis: |
+  执黑下五子棋，黑棋想获胜只有唯一最优解（遵循禁手规则）。黑棋落子的坐标依次为：(D,0)、 (E,0)、 (E,-2)、 (D,-3)、 (G,-3)、 (G,-2)，下到活四为止。将横坐标用纵坐标凯撒移位得到答案：**DECADE**。
+
+  ![答案参考](/ccbc12/images/answer/c-1799.jpg)
 content:
 - '一盘还没有下完的棋，但结局也许已经注定……
 

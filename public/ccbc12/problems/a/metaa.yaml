@@ -1,5 +1,23 @@
 answer: SIX CIRCLES
-answer_analysis: ''
+answer-analysis: |
+  本区每道题的答案都是两个单词，而且每个词里分别恰有一个O，对应Meta剧情和图片里的“两个圆圈”。把这两个O的在单词中的位置转换成数字，然后根据剧情提示的“老式手机”，使用九字键盘密码转换成答案：**SIX CIRCLES**。
+  
+  （答案的排列顺序和主界面的排序相同，即年份顺序）
+  
+  |题目编号（年份）|答案|提取“**O**”位置的数字|转字母
+  |--------------|----|---------------------|-----
+  |1709|MANDATORY REPORTING|74|S
+  |1727|PRIOR KNOWLEDGE|43|I
+  |1760|VEGETATION ZONE|92|X
+  |1780|COFFEE SHOP|23|C
+  |1791|UNFORTUNATE STORY|43|I
+  |1796|AMBIGUOUS PROSPECTS|73|R
+  |1853|COMPUTER PROGRAM|23|C
+  |1947|RATIONAL THOUGHT|53|L
+  |2024|GLOBAL COMMUNITY|32|E
+  |2085|ADDITIONAL INCOME|74|S
+  
+  （这道题的答案也提示了每个meta都和某个圆有关，一共有六个圆）
 content:
 - '<span style="color: #9F9F9F;">时间线A在这里终结了，请回顾这一轮的穿越并尝试解开这条时间线上的缠结。</span>
 
@@ -27,7 +45,7 @@ content:
 
   <img src="https://static.cipherpuzzles.com/static/images/9f1a4b2a1b864f3181b115b9ff71ba11.png"
   style="width: 250px;"/>'
-extend_content:
+extend-content:
 - “谢谢你救我出来，我好像在这里已经困了……诶，多少年呢？”piggy喃喃地念叨着，“早知道我也提前跑路了……”
 links:
 - path: ccbc12/index

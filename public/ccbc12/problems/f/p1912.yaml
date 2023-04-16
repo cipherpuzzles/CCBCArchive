@@ -1,5 +1,18 @@
 answer: OCEAN BEACON
-answer_analysis: ''
+answer-analysis: |
+  图中的车票都是地铁票，而出发和到达站都是某条地铁的首尾两站：
+
+  <img src="/ccbc12/images/answer/f-1912-1.png" style="width: 400px" />
+
+  除了成都2号线之外，其他的线路都出现了两次
+
+  剧情中提示“缠绕导线”，而车票上也有两条缠绕着的导线。通过网上可以搜索和成对缠绕导线相关的密码可以得到“25对色码”。
+
+  https://www.so.studiodahu.com/baike-25对色码
+
+  将地铁线路的颜色和已经给出的黑/白导线合在一起可以得到字母，然后按照背景颜色，同样按照25对色码排序得到答案：**OCEAN BEACON**。
+
+  <img src="/ccbc12/images/answer/f-1912-2.png" style="width: 450px" />
 content:
 - 看着散落在地上的一堆车票，你的脑内就像25对缠在一起的电线一样混乱不堪。
 links:
@@ -9,7 +22,7 @@ links:
 - path: ccbc12/pages/main
   title: 时光机
   type: page
-problem_image: /ccbc12/images/f/630eb7276bcf476da5b748b81ecca0f9.webp
+problem-image: /ccbc12/images/f/630eb7276bcf476da5b748b81ecca0f9.webp
 tips:
 - content: 每一张车票对应一条地铁线路。一共有六条不同的地铁线路，我们只需要这些线路在地铁线路图里的颜色。
   title: 我毫无头绪

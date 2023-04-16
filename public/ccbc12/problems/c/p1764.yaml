@@ -1,5 +1,12 @@
 answer: DOUBLE ELIMINATION
-answer_analysis: ''
+answer-analysis: |
+  每组字母都是去掉了连续两个相同字母的英文单词：
+
+  ```
+  aDDict prOOf vacUUm raBBit hawaII coMMent taxIIng tuNNel bazAAr seTTle radIIcOOkie teNNis
+  ```
+
+  被去掉的字母按顺序拼出DOUBIMINATION，这里我们需要再“还原”两次，在DOUB和IMINATION之间插入LEEL，得到答案：**DOUBLE ELIMINATION**。
 content:
 - 经典游戏祖玛，目标是尽量消除珠子，但这局好像有些不同。
 links:
@@ -9,7 +16,7 @@ links:
 - path: ccbc12/pages/main
   title: 时光机
   type: page
-problem_image: /ccbc12/images/c/436de4f1659441b88691995569660141.webp
+problem-image: /ccbc12/images/c/436de4f1659441b88691995569660141.webp
 tips:
 - content: 每一组字母可以通过添加两个相同字母得到一个常见单词。
   title: 我毫无头绪

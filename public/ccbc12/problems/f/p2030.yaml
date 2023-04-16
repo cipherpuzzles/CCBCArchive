@@ -1,5 +1,26 @@
 answer: AGE INCREMENT
-answer_analysis: ''
+answer-analysis: |
+  简易版“网络迷踪”。可以根据地上的方向箭头、拼合的照片等常见特征推测，所有街景图片均来自于百度实景地图，需要根据街景图片中的线索寻找到这些实景的位置：
+
+  <img src="/ccbc12/images/answer/f-2030-1.png" style="width: 400px" />
+
+  <img src="/ccbc12/images/answer/f-2030-2.png" style="width: 400px" />
+
+  <img src="/ccbc12/images/answer/f-2030-3.png" style="width: 400px" />
+
+  <img src="/ccbc12/images/answer/f-2030-4.png" style="width: 400px" />
+
+  <img src="/ccbc12/images/answer/f-2030-5.png" style="width: 400px" />
+
+  <img src="/ccbc12/images/answer/f-2030-6.png" style="width: 400px" />
+
+  <img src="/ccbc12/images/answer/f-2030-7.png" style="width: 400px" />
+
+  <img src="/ccbc12/images/answer/f-2030-8.png" style="width: 400px" />
+
+  <img src="/ccbc12/images/answer/f-2030-9.png" style="width: 400px" />
+
+  对比所有建筑上的原字母与图片中的字母，发现每组字母均有1-2个字母没有变动，提取这些字母后按图片顺序连起来可得答案：**AGE INCREMENT**。
 content:
 - '你走在2030年的街头，随手拍下一些图片准备发朋友圈。
 

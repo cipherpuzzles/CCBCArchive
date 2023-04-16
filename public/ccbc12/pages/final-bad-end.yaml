@@ -1,0 +1,118 @@
+type: page
+title: 另一个结局 - CCBC 12
+content: 
+- |
+  <div style="background-color: rgb(220, 220, 220); color: black; padding: 25px;">
+  CCBC 12的题目结构并不需要解出所有题和所有Meta。如果能敏锐的发现所有的年份刚好是一个六十甲子，甚至只需要时间线A的答案就足以推出Final meta的解。
+
+  如果有人没有解出所有的时间线终结点的题目，就直接解出了Final meta，即他没有成功救出所有被困的出题组成员，那么他将看到这个结局。
+
+  这是非常困难的，实际上在CCBC 12的比赛中并没有任何一位选手达成此结局。
+
+  </div>
+  <br><br><br>
+- |
+  <span style="color: #326CFF">**“Include a break statement……”**</span>
+
+  <span style="color: #F561A4">“这是什么意思？”</span>
+
+  正当大家思考着AI的暗示到底有何含义的时候，突然爆炸般的响声传了进来。
+
+  你转过头看向门口，发现进来的地方的墙面已经出现了巨大的裂缝。
+
+  <span style="color: #F561A4">“糟了，这怕不是AI启动了最终自毁程序，快走，先乘时光机回到我们的时代。”</span>
+
+  <span style="color: #326CFF">“可是，还有出题组成员没有救出来……”</span>
+
+  <span style="color: #F561A4">“先从这里离开再说！”</span>
+
+  你们在千钧一发之际从AI的机房逃了出来，刚刚走进时光机固定的穿越点，就看到原来是AI机房的大楼已经倒塌了。下一个瞬间——
+
+  穿越已经自动启动了，你们回到了2022年。
+
+  <br>
+
+  你们还没有时间从死里逃生的经历恢复过来，就发现了2022年也开始了时空异变。
+
+  很快你发现自己根本不是在地球上，而是在太阳系某处，因为天空中赫然悬挂着蓝蓝的地球！
+
+  然后你发现身边的一切都在快速发生着变化，就好像在时光机中不停地进行着穿越。最终你发现，是有一个巨大的东西在把所有时间都拖向它，就像是一个时间的黑洞。
+
+  <br>
+
+  就在你们被黑洞吸入的前一瞬间，牛牛突然恍然大悟：<span style="color: #F561A4">“原来AI是进入了一个双重的死循环！”</span>
+
+  虽然你没有能听到他说的话。
+
+  <br>
+
+  <span style="color: #FF0000"><tt>ERROR: Stack overflow</tt></span>
+
+  由于积累了太多时间上的运行错误，AI终于把自己拖崩溃了，形成了一个时间的黑洞，吸收了附近几百年的时间线。
+
+  这个宇宙毁灭了。
+
+  <br>
+
+  <div style="text-align: center; font-weight: bold;">【BAD END】</div>
+
+  <br>
+
+  ================
+
+  恭喜你完成了CCBC 12的全部赛程！
+
+  虽然是BAD END，但是也算是完整通关了。顺便一提，被毁灭的只是幻境中的宇宙哦，没有任何真实的宇宙受到伤害（笑）。
+
+  欢迎加入 CCBC 12 完赛交流群：【488377800】
+
+  <br><br><br><br><br>
+
+
+  CCBC 12 出题组
+
+  总策划：yyao SEVENKING
+
+  题目设计：yyao piggy Fivero sonic nano wilsey zyzsdy
+
+  美术：SEVENKING piggy
+
+  网站建设：zyzsdy
+
+  文案 & 剧情人物：
+
+  * &nbsp;&nbsp; zyzsdy（牛牛） 饰演 AI程序员
+  * &nbsp;&nbsp; piggy 饰演 收藏家（时间线A）
+  * &nbsp;&nbsp; sonic 饰演 动物学家（时间线B）
+  * &nbsp;&nbsp; wilsey 饰演 音乐家（时间线C）
+  * &nbsp;&nbsp; Fivero 饰演 天文学家（时间线D）
+  * &nbsp;&nbsp; SEVENKING 饰演 男子运动员（时间线E）
+  * &nbsp;&nbsp; nano 饰演 工程师（时间线F）
+
+  测试组：JP_Jalapeno HighStrike300 真爱的天青子弹 子吟
+
+  <br>
+
+  友情出演：冰糖雪梨的桃桃子
+
+  特别鸣谢：我是怪异君 GM的秘密基地 小黑探App
+
+  <br><br>
+
+  出品： 密码菌
+
+  <br><br><br><br><br>
+
+  我们明年 CCBC 13 再相见！
+
+      
+
+links:
+- title: CCBC12 索引页
+  type: index
+  path: ccbc12/index
+- title: 真结局
+  type: page
+  path: ccbc12/pages/finalend
+
+

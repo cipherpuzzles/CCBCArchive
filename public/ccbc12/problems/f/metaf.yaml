@@ -1,5 +1,12 @@
 answer: WHEELCHAIR
-answer_analysis: ''
+answer-analysis: |
+  每一道小题的答案都提示一个复合词(compound word)，也就是由两个单词组合而成的单词（剧情中也提到了“合成”这个关键字）：
+
+  <img src="/ccbc12/images/answer/f-meta-1.png" style="width: 400px" />
+
+  按钮个数表示长度，按下去表示提取的字母位置。答案对应的复合词的两半可以填在答案对应的箭头头尾的两个方框里，然后从最上方开始顺时针提取字母，得到答案：**WHEELCHAIR**（注意这个答案本身也是个复合词）。
+
+  <img src="/ccbc12/images/answer/f-meta-2.png" style="width: 400px" />
 content:
 - '<span style="color: #9F9F9F;">时间线F在这里终结了，请回顾这一轮的穿越并尝试解开这条时间线上的缠结。</span>
 
@@ -29,11 +36,12 @@ content:
 
 
   <br><br>'
-extend_content:
+extend-content:
 - '“我明明是编程系出身的，怎么变成了工程师呢……”Nano对自己在幻境中的人物设定十分不解，“这螺丝刀也没用了，干脆送你得了。”
 
 
   于是，你接过了一把看上去饱经历史风霜的一字螺丝刀。可是我要这个螺丝刀又有什么用呢？一定是可以把哪里的螺丝拆掉。'
+- "（某个地方的螺丝松了。）（比赛中此信息在选手第一次全部解完6个meta时弹框提示）"
 links:
 - path: ccbc12/index
   title: CCBC12 索引页

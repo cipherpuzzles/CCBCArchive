@@ -1,16 +1,32 @@
 answer: MUSIC MEDIA
-answer_analysis: ''
+answer-analysis: |
+  图中像素化的icon对应2016年期间ios9或ios10（秋季发布）系统中的原生应用图标（由上至下，由左至右）：Camera、Reminders、Music、Notes、Settings、App Store。
+  
+  将六个图标视作一个骰子展开图，其中App Store、Music、Reminders上面的黑边方块提示这三面分别对应骰子的1、2、4点，所以他们的对面分别是6、5、3点。根据左侧数字取应用英文名全部或第x个字母，得到答案：**MUSIC MEDIA**。
+  
+  ![答案参考](/ccbc12/images/answer/b-2016.jpg)
 content:
 - 2016年某场发布会的幻灯片文件副本，只是图像质量有所压缩。
-- "<div>\n  <img width=\"512px\" id=\"logo\" src=\"/ccbc12/images/b/6d9d3760ea8844988caadc6eab74c5e1.webp\"\
-  \ alt=\"LOGO\" />\n  <img width=\"512px\" id=\"puzzle\" src=\"/ccbc12/images/b/1603d42e8b4d42a7922fbe491b95405b.webp\"\
-  \ alt=\"Puzzle\" />\n</div>\n<script>\n    (function (){\n        const logo= document.getElementById(\"\
-  logo\");\n        const puzzle= document.getElementById(\"puzzle\");\n        logo.style.display\
-  \ = \"block\";\n        puzzle.style.display = \"none\";\n        logo.onclick =\
-  \ function(){\n            logo.style.display = \"none\";\n            puzzle.style.display\
-  \ = \"block\"\n        }\n        puzzle.onclick = function(){\n            puzzle.style.display\
-  \ = \"none\";\n            logo.style.display = \"block\"\n        }\n    })();\n\
-  </script>"
+- |
+  <div>
+    <img width="512px" id="logo" src="/ccbc12/images/b/6d9d3760ea8844988caadc6eab74c5e1.webp" alt="LOGO" />
+    <img width="512px" id="puzzle" src="/ccbc12/images/b/1603d42e8b4d42a7922fbe491b95405b.webp" alt="Puzzle" />
+  </div>
+content-js: |
+  (function (){
+    const logo= document.getElementById("logo");
+    const puzzle= document.getElementById("puzzle");
+    logo.style.display = "block";
+    puzzle.style.display = "none";
+    logo.onclick = function(){
+      logo.style.display = "none";
+      puzzle.style.display = "block"
+    }
+    puzzle.onclick = function(){
+      puzzle.style.display = "none";
+      logo.style.display = "block"
+    }
+  })();
 links:
 - path: ccbc12/index
   title: CCBC12 索引页
