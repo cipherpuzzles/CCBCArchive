@@ -1,5 +1,8 @@
 answer: DOUBTING
-answer_analysis: ''
+answer-analysis: |
+  根据经典红白机超级玛丽1-1至8-1每关中隐藏奖命蘑菇的位置，解棋盘密码后，按照关卡顺序排序得到答案：**DOUBTING**。
+
+  ![答案参考](/ccbc12/images/answer/d-2012.png)
 content:
 - 这些看似随手截取的图片里，仿佛隐藏着什么？
 links:
@@ -9,7 +12,7 @@ links:
 - path: ccbc12/pages/main
   title: 时光机
   type: page
-problem_image: /ccbc12/images/d/2ef113b9bd5f45b78c6c2f3a137a1256.webp
+problem-image: /ccbc12/images/d/2ef113b9bd5f45b78c6c2f3a137a1256.webp
 tips:
 - content: 这些图片均来自经典的红白机超级玛丽关卡，并且都是各自关卡中隐藏了命菇的位置。
   title: 我毫无头绪

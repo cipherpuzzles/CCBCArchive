@@ -1,8 +1,17 @@
 answer: SOUNDTRACK ALBUM
-answer_analysis: ''
+answer-analysis: |
+  一般来说，周期为2π的奇函数可以表示成形如`a1*sin(x)+a2*sin(2x)+...`的傅里叶级数。通过取图像里的一些特殊点解方程，我们可以发现每一个图像都是五项的傅里叶级数（图中用灰色细线表示了`26*sin(x)`到`26*sin(5x)`的图像），而且系数都是1\~26之间的正整数。
+  
+  - 红色：`y=19*sin(x)+15*sin(2x)+21*sin(3x)+14*sin(4x)+4*sin(5x)`
+
+  - 绿色：`y=20*sin(x)+18*sin(2x)+1*sin(3x)+3*sin(4x)+11*sin(5x)`
+
+  - 蓝色：`y=1*sin(x)+12*sin(2x)+2*sin(3x)+21*sin(4x)+13*sin(5x)`
+
+  把傅里叶级数的系数转换成英文字母，然后按照RGB顺序得到答案：**SOUNDTRACK ALBUM**。
 content:
 - 你的分析仪告诉你，这些都是周期为2π的奇函数。
-extend_content:
+extend-content:
 - 你得到了一个神秘的数字：5.91
 links:
 - path: ccbc12/index
@@ -11,7 +20,7 @@ links:
 - path: ccbc12/pages/main
   title: 时光机
   type: page
-problem_image: /ccbc12/images/e/e8bc2f8a39f64b9bbeb79d6118faba95.webp
+problem-image: /ccbc12/images/e/e8bc2f8a39f64b9bbeb79d6118faba95.webp
 tips:
 - content: 三个有颜色的函数都是形如A\*sin(x)+B\*sin(2x)+C\*sin(3x)+D\*sin(4x)+E\*sin(5x)的形式。
   title: 我毫无头绪

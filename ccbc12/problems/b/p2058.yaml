@@ -1,5 +1,8 @@
 answer: THE DUKE
-answer_analysis: ''
+answer-analysis: |
+  观察可以发现，每一个图标是某个欧洲足球球队队徽的一部分，而且每行球队均来自同一个足球联赛（从上至下分别为：英超、西甲、意甲、德甲、法甲）并都取得过联赛冠军。找出21世纪每列球队同时在各自联赛夺冠的年份（打叉处为空缺），把年份后两位转字母得到答案：**THE DUKE**。
+
+  ![答案参考](/ccbc12/images/answer/b-2058.jpg)
 content:
 - 哇，这些都是冠军的徽章吗，可是那两个叉是什么意思呢？
 links:
@@ -9,7 +12,7 @@ links:
 - path: ccbc12/pages/main
   title: 时光机
   type: page
-problem_image: /ccbc12/images/b/7e795e49d5b8438d98083dcbcd406b5e.webp
+problem-image: /ccbc12/images/b/7e795e49d5b8438d98083dcbcd406b5e.webp
 tips:
 - content: 这些图案都出自欧洲足球五大联赛球队的队徽，而且这些球队都得过联赛冠军。
   title: 我毫无头绪

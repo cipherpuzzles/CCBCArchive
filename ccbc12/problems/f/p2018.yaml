@@ -1,5 +1,32 @@
 answer: SOUND REPRODUCTION
-answer_analysis: ''
+answer-analysis: |
+  首先根据音频和字母数提示找到音游曲：
+
+  1. Unshakable
+  1. Class Memories
+  1. Sakura Fubuki
+  1. Halcyon
+  1. Freedom Dive
+  1. FUJIN Rumble
+  1. Palescreen
+  1. Brain Power
+  1. ENERGY SYNERGY MATRIX
+  1. INTERNET OVERDOSE
+  1. GOODTEK
+  1. CROSS†SOUL
+  1. Conflict
+  1. Äventyr
+  1. Final Step!
+  1. CROSSING DELTA
+  1. XING
+
+  通过搜索可以发现这些曲目都在至少两个移动端音游内出现过，所以猜想它们对应给出的封面韦恩图里的数字。可以推理出六个圈分别对应Arcaea, Dynamix, Lanota, Cytus II, Phigros, Muse Dash。
+
+  <img src="/ccbc12/images/answer/f-2018-1.png" style="width: 600px" />
+
+  <img src="/ccbc12/images/answer/f-2018-2.png" style="width: 600px" />
+
+  通过数字取对应曲目的字母，按照原来的顺序得到答案：**SOUND REPRODUCTION**。
 content:
 - '桌子上放着一张封面有点前卫艺术风格的CD。
 
@@ -11,56 +38,144 @@ content:
   你把光盘从盒子中取出来，插入了CD机，浏览着曲目列表：“这个歌名是不是都乱码了？就和这个封面一样乱？”
 
 
-  <a href="https://static.cipherpuzzles.com/static/images/f477698a11004fdc953aac0386d0a09a.zip"
+  <a href="/ccbc12/images/f/f477698a11004fdc953aac0386d0a09a.zip"
   download>打包下载全部音频文件</a>
 
 
   （注意：本题需要的信息均以比赛期间（2022年8月12日至21日）为准。）'
-- "<link rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.css\"\
-  >\n<style>\n.aplayer {\n    color: black;\n    width: 100%;\n    max-width: 400px;\n\
-  }\n</style>\n<div id=\"aplayer\"></div>\n<script>\n(function () {\n    //inject\
-  \ js\n    let a = document.getElementById(\"puzzleHtml\");\n    let b = document.createElement(\"\
-  script\");\n    b.id = \"APlayer\";\n    b.src = \"https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.js\"\
-  ;\n    a.appendChild(b);\n    //init aplayer\n    b.onload = () => {\n    const\
-  \ coverLogo = \"https://puzzle.cipherpuzzles.com/assets/logo.3d341510.svg\";\n \
-  \   const ap = new APlayer({\n        container: document.getElementById('aplayer'),\n\
-  \        theme: \"#0046FF\",\n        audio: [\n            {\n                name:\
-  \ '(10)',\n                artist: \"CCBC 12\",\n                url: 'https://static.cipherpuzzles.com/static/images/ef6401384dee4fc09f93e48690fc1c33.m4a',\n\
-  \                cover: coverLogo\n            },\n            {\n             \
-  \   name: '(5 8)',\n                artist: \"CCBC 12\",\n                url: 'https://static.cipherpuzzles.com/static/images/cfbf5df15f044218a15abdf396685e3a.m4a',\n\
-  \                cover: coverLogo\n            },\n            {\n             \
-  \   name: '(6 6)',\n                artist: \"CCBC 12\",\n                url: 'https://static.cipherpuzzles.com/static/images/f53005334c56403a9bc4f76cbb894810.m4a',\n\
-  \                cover: coverLogo\n            },\n            {\n             \
-  \   name: '(7)',\n                artist: \"CCBC 12\",\n                url: 'https://static.cipherpuzzles.com/static/images/c9036f5889764f4fa8abacca75fcffbc.m4a',\n\
-  \                cover: coverLogo\n            },\n            {\n             \
-  \   name: '(7 4)',\n                artist: \"CCBC 12\",\n                url: 'https://static.cipherpuzzles.com/static/images/ae29d04ae18e4633bf5789147ee859ee.m4a',\n\
-  \                cover: coverLogo\n            },\n            {\n             \
-  \   name: '(5 6)',\n                artist: \"CCBC 12\",\n                url: 'https://static.cipherpuzzles.com/static/images/ef73859019dc44118fe2a28be6b31e1b.m4a',\n\
-  \                cover: coverLogo\n            },\n            {\n             \
-  \   name: '(10)',\n                artist: \"CCBC 12\",\n                url: 'https://static.cipherpuzzles.com/static/images/ad88127d3d6c4661aa291b067416879a.m4a',\n\
-  \                cover: coverLogo\n            },\n            {\n             \
-  \   name: '(5 5)',\n                artist: \"CCBC 12\",\n                url: 'https://static.cipherpuzzles.com/static/images/4a41db4eac2149569f730eb04ee0129b.m4a',\n\
-  \                cover: coverLogo\n            },\n            {\n             \
-  \   name: '(6 7 6)',\n                artist: \"CCBC 12\",\n                url:\
-  \ 'https://static.cipherpuzzles.com/static/images/672a9d7a6ffb40bd990fc4426fbe8281.m4a',\n\
-  \                cover: coverLogo\n            },\n            {\n             \
-  \   name: '(8 8)',\n                artist: \"CCBC 12\",\n                url: 'https://static.cipherpuzzles.com/static/images/2963ea4aadc848848c9b912005345672.m4a',\n\
-  \                cover: coverLogo\n            },\n            {\n             \
-  \   name: '(7)',\n                artist: \"CCBC 12\",\n                url: 'https://static.cipherpuzzles.com/static/images/d391ee45a56f4f95958f8ab2d43941ce.m4a',\n\
-  \                cover: coverLogo\n            },\n            {\n             \
-  \   name: '(5 4)',\n                artist: \"CCBC 12\",\n                url: 'https://static.cipherpuzzles.com/static/images/a81a7ae5859e434d934ad57a1bd686b7.m4a',\n\
-  \                cover: coverLogo\n            },\n            {\n             \
-  \   name: '(8)',\n                artist: \"CCBC 12\",\n                url: 'https://static.cipherpuzzles.com/static/images/b468c05a3733458290970e465e329c0b.m4a',\n\
-  \                cover: coverLogo\n            },\n            {\n             \
-  \   name: '(7)',\n                artist: \"CCBC 12\",\n                url: 'https://static.cipherpuzzles.com/static/images/a5997efffba843aa8301801fedac9330.m4a',\n\
-  \                cover: coverLogo\n            },\n            {\n             \
-  \   name: '(5 4)',\n                artist: \"CCBC 12\",\n                url: 'https://static.cipherpuzzles.com/static/images/cc9cbcad405d487e832f991944b5e5ba.m4a',\n\
-  \                cover: coverLogo\n            },\n            {\n             \
-  \   name: '(8 5)',\n                artist: \"CCBC 12\",\n                url: 'https://static.cipherpuzzles.com/static/images/4722931d570646c8a29ff5cb0d5115eb.m4a',\n\
-  \                cover: coverLogo\n            },\n            {\n             \
-  \   name: '(4)',\n                artist: \"CCBC 12\",\n                url: 'https://static.cipherpuzzles.com/static/images/9cd648673c5343efa471da5adbd87de5.m4a',\n\
-  \                cover: coverLogo\n            },\n        ]\n    });\n    window.destroyAction(function()\
-  \ {\n        ap.destroy();\n    });\n    }\n})();\n</script>"
+- |
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.css">
+  <div id="aplayer"></div>
+content-css: |
+  .aplayer {
+      color: black;
+      width: 100%;
+      max-width: 400px;
+  }
+content-js: |
+  (function () {
+      //inject js
+      let a = document.getElementById("contentHtml");
+      let b = document.createElement("script");
+      b.id = "APlayer";
+      b.src = "https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.js";
+      a.appendChild(b);
+      //init aplayer
+      b.onload = () => {
+      const coverLogo = "/ccbc12/assets/icon/logo.svg";
+      const ap = new APlayer({
+          container: document.getElementById('aplayer'),
+          theme: "#0046FF",
+          audio: [
+              {
+                  name: '(10)',
+                  artist: "CCBC 12",
+                  url: '/ccbc12/images/f/ef6401384dee4fc09f93e48690fc1c33.m4a',
+                  cover: coverLogo
+              },
+              {
+                  name: '(5 8)',
+                  artist: "CCBC 12",
+                  url: '/ccbc12/images/f/cfbf5df15f044218a15abdf396685e3a.m4a',
+                  cover: coverLogo
+              },
+              {
+                  name: '(6 6)',
+                  artist: "CCBC 12",
+                  url: '/ccbc12/images/f/f53005334c56403a9bc4f76cbb894810.m4a',
+                  cover: coverLogo
+              },
+              {
+                  name: '(7)',
+                  artist: "CCBC 12",
+                  url: '/ccbc12/images/f/c9036f5889764f4fa8abacca75fcffbc.m4a',
+                  cover: coverLogo
+              },
+              {
+                  name: '(7 4)',
+                  artist: "CCBC 12",
+                  url: '/ccbc12/images/f/ae29d04ae18e4633bf5789147ee859ee.m4a',
+                  cover: coverLogo
+              },
+              {
+                  name: '(5 6)',
+                  artist: "CCBC 12",
+                  url: '/ccbc12/images/f/ef73859019dc44118fe2a28be6b31e1b.m4a',
+                  cover: coverLogo
+              },
+              {
+                  name: '(10)',
+                  artist: "CCBC 12",
+                  url: '/ccbc12/images/f/ad88127d3d6c4661aa291b067416879a.m4a',
+                  cover: coverLogo
+              },
+              {
+                  name: '(5 5)',
+                  artist: "CCBC 12",
+                  url: '/ccbc12/images/f/4a41db4eac2149569f730eb04ee0129b.m4a',
+                  cover: coverLogo
+              },
+              {
+                  name: '(6 7 6)',
+                  artist: "CCBC 12",
+                  url: '/ccbc12/images/f/672a9d7a6ffb40bd990fc4426fbe8281.m4a',
+                  cover: coverLogo
+              },
+              {
+                  name: '(8 8)',
+                  artist: "CCBC 12",
+                  url: '/ccbc12/images/f/2963ea4aadc848848c9b912005345672.m4a',
+                  cover: coverLogo
+              },
+              {
+                  name: '(7)',
+                  artist: "CCBC 12",
+                  url: '/ccbc12/images/f/d391ee45a56f4f95958f8ab2d43941ce.m4a',
+                  cover: coverLogo
+              },
+              {
+                  name: '(5 4)',
+                  artist: "CCBC 12",
+                  url: '/ccbc12/images/f/a81a7ae5859e434d934ad57a1bd686b7.m4a',
+                  cover: coverLogo
+              },
+              {
+                  name: '(8)',
+                  artist: "CCBC 12",
+                  url: '/ccbc12/images/f/b468c05a3733458290970e465e329c0b.m4a',
+                  cover: coverLogo
+              },
+              {
+                  name: '(7)',
+                  artist: "CCBC 12",
+                  url: '/ccbc12/images/f/a5997efffba843aa8301801fedac9330.m4a',
+                  cover: coverLogo
+              },
+              {
+                  name: '(5 4)',
+                  artist: "CCBC 12",
+                  url: '/ccbc12/images/f/cc9cbcad405d487e832f991944b5e5ba.m4a',
+                  cover: coverLogo
+              },
+              {
+                  name: '(8 5)',
+                  artist: "CCBC 12",
+                  url: '/ccbc12/images/f/4722931d570646c8a29ff5cb0d5115eb.m4a',
+                  cover: coverLogo
+              },
+              {
+                  name: '(4)',
+                  artist: "CCBC 12",
+                  url: '/ccbc12/images/f/9cd648673c5343efa471da5adbd87de5.m4a',
+                  cover: coverLogo
+              },
+          ]
+      });
+      window.destroyAction(function() {
+          ap.destroy();
+      });
+      }
+  })();
 links:
 - path: ccbc12/index
   title: CCBC12 索引页

@@ -1,5 +1,10 @@
 answer: GRAPHIC NOVELS
-answer_analysis: ''
+answer-analysis: |
+  找出所有缺少笔画的“糳”，数出缺少的是第n笔后，数字转字母得到中间提示“Twenty-five Polybius Squares"（注意糳刚好有26画）。
+
+  根据提示，将25×25个”糳“分割成25个棋盘密码，根据缺笔画字的位置解出字母，形成一个新的棋盘密码。从被圈出的字作为起点，依次读取当前字母在棋盘密码中对应位置的字母，直至回到起点，可得答案：**GRAPHIC NOVELS**。（其他的字母都在原来的位置）
+
+  ![答案参考](/ccbc12/images/answer/e-2066.png)
 content:
 - '<span style="color: #AFAFAF;">来自某出题组成员的留言：“当年CCBC X的时候输入了三百多个‘糳’，结果搞崩了服务器，之后他们就不让我写‘糳’了。终于等到了我能够报仇的一天，我要让‘糳’铺满这个世界！！！哈哈哈哈哈哈哈哈哈哈！！！”</span>
 
@@ -8,7 +13,7 @@ content:
 
 
   <img src="/ccbc12/images/e/c626220ee50241538731d91426b3c560.webp" width="800px"/>'
-extend_content:
+extend-content:
 - 你得到了一个神秘的数字：48.19
 links:
 - path: ccbc12/index

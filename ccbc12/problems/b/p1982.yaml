@@ -1,14 +1,19 @@
 answer: ABNORMALITIES
-answer_analysis: ''
+answer-analysis: |
+  将音乐转化为简谱的形式（其中高音1对应8），得到3 777 88 6 6 666 777 7777 33 222 666 3 33，解手机密码得到drum morse code。
+  
+  根据提示将鼓点变成* 和-，其中底鼓为点，军鼓为划，解摩斯密码得到答案：**ABNORMALITIES**。
+
+  ![答案参考](/ccbc12/images/answer/b-1982.png)
 content:
 - '一支街头乐队正在排练他们的新作品。
 
 
-  <audio src="https://static.cipherpuzzles.com/static/images/dc30d21042674eec98ed99ac760e7d7d.m4a"
+  <audio src="/ccbc12/images/b/dc30d21042674eec98ed99ac760e7d7d.m4a"
   controls></audio>
 
 
-  <a href="https://static.cipherpuzzles.com/static/images/072704d717f74fc882ab0ae32bd0bb66.mid"
+  <a href="/ccbc12/images/b/072704d717f74fc882ab0ae32bd0bb66.mid"
   download>下载音频(MIDI格式)</a>'
 links:
 - path: ccbc12/index

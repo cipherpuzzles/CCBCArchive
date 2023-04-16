@@ -1,5 +1,10 @@
 answer: AMERICAN BEAUTY
-answer_analysis: ''
+answer-analysis: |
+  不难看出图片由若干字母叠加而成，通过搜索可以得知这是光栅动画的底片。在没有遮盖的光栅板时，我们依然可以通过仔细观察得到一些字母，比如有不少竖栏对应字母A，而且对应A的竖栏是以14列为一周期（每个周期里有三个），所以判断一共有14个字母（其中有三个A）。通过自行制作光栅板或者观察每隔14列的竖栏拼出来的字母，可以按照顺序得到最终答案：**AMERICAN BEAUTY**。
+
+  ![答案参考](/ccbc12/images/answer/c-1738.gif)
+
+  视频版：https://www.bilibili.com/video/BV1XD4y1z7Pd
 content:
 - '形状十分不规则的剪影，就像是出了故障的电脑显示屏一般。
 

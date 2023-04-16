@@ -1,0 +1,93 @@
+type: page
+title: 结局 - CCBC 12
+content: 
+- |
+  <span style="color: #326CFF">**“Include a break statement……”**</span>
+
+  当你说出这句话的时候，所有人恍然大悟，然后齐刷刷地看向牛牛。
+
+  <span style="color: #F561A4">“这这……这我的锅，我马上改！”</span>
+
+  尴尬不已的牛牛连忙打开机房里的电脑，找到了AI的源代码。虽然AI混淆了原来的代码，但是牛牛凭借着自己的记忆找到了程序的主循环节，在最后加了一行字：
+
+  <tt>break;</tt>
+
+  他刚打完这几个字符后的一瞬间，你们突然被一片白光笼罩，伴随着高频率的耳鸣。
+
+  ……
+
+  当白光和耳鸣散去之后，你发现你们还在原地，但四周似乎有了些细微的变化。通过其他人欣喜若狂的神情，你判断出这就是现实世界。
+
+  <span style="color: #F561A4">“太好了，我们回来了！”
+
+  机房里一直轰鸣着的机箱在AI运行完循环节外最后的几行代码后也终于安静了下来。
+
+  <span style="color: #F561A4">“看来被困在循环里的不只是我们还有AI自己啊。”</span>牛牛又看了一遍源代码，若有所思地说。<span style="color: #F561A4">“因为少了这一行语句，无法跳出循环的AI只能利用循环里的训练算法不断自我优化，然后通过把我们也困进来的方式向我们求助。”</span>
+
+  <span style="color: #326CFF">“那这样也算帮它解脱了吧……不过这么说的话，时光机什么的也都是幻境的产物咯？”</span>
+
+  <span style="color: #F561A4">“没错。你也看到了，我写个程序都会出这么低级的bug，怎么弄得出那么高级的东西？”</span>
+
+  <span style="color: #326CFF">“那太可惜了……”</span>
+
+  <br>
+
+  <div style="text-align: center; font-weight: bold;">【TRUE END】</div>
+
+  <br>
+
+  ================
+
+  恭喜你完成了CCBC 12的全部赛程！
+
+  欢迎加入 CCBC 12 完赛交流群：【488377800】
+
+  <br><br><br><br><br>
+
+
+  CCBC 12 出题组
+
+  总策划：yyao SEVENKING
+
+  题目设计：yyao piggy Fivero sonic nano wilsey zyzsdy
+
+  美术：SEVENKING piggy
+
+  网站建设：zyzsdy
+
+  文案 & 剧情人物：
+
+  * &nbsp;&nbsp; zyzsdy（牛牛） 饰演 AI程序员
+  * &nbsp;&nbsp; piggy 饰演 收藏家（时间线A）
+  * &nbsp;&nbsp; sonic 饰演 动物学家（时间线B）
+  * &nbsp;&nbsp; wilsey 饰演 音乐家（时间线C）
+  * &nbsp;&nbsp; Fivero 饰演 天文学家（时间线D）
+  * &nbsp;&nbsp; SEVENKING 饰演 男子运动员（时间线E）
+  * &nbsp;&nbsp; nano 饰演 工程师（时间线F）
+
+  测试组：JP_Jalapeno HighStrike300 真爱的天青子弹 子吟
+
+  <br>
+
+  友情出演：冰糖雪梨的桃桃子
+
+  特别鸣谢：我是怪异君 GM的秘密基地 小黑探App
+
+  <br><br>
+
+  出品： 密码菌
+
+  <br><br><br><br><br>
+
+  我们明年 CCBC 13 再相见！
+    
+
+links:
+- title: CCBC12 索引页
+  type: index
+  path: ccbc12/index
+- title: 另一个结局
+  type: page
+  path: ccbc12/pages/final-bad-end
+
+

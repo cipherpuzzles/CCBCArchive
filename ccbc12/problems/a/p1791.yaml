@@ -1,5 +1,10 @@
 answer: UNFORTUNATE STORY
-answer_analysis: ''
+answer-analysis: |
+  搜索1791年4月27日，可知这是摩斯电码发明人萨缪尔·摩尔斯的生日。根据数码管下方的颜色可以确认每个数码管与颜色的对应关系，其中白色对应点，黄/蓝/紫对应3个横向数码管，红/橙/绿/青对应4个纵向数码管。
+
+  <img src="/ccbc12/images/answer/a-1780.jpg" style="width: 150px" />
+
+  根据摩斯电码的提示可知，白色代表“.”，黄/蓝/紫色代表“-”，红/橙/绿/青代表分隔符。按此方式进行替换可得：..-/-./..-./---/.-./-/..-/-./.-/-/./.../-/---/.-./-.--，转换为字母得：**UNFORTUNATE STORY**。
 content:
 - 样式极简的电子钟，上面刻有许多色块。
 links:
@@ -9,7 +14,7 @@ links:
 - path: ccbc12/pages/main
   title: 时光机
   type: page
-problem_image: /ccbc12/images/a/609633afd4914ca697d38936c39e71e6.webp
+problem-image: /ccbc12/images/a/609633afd4914ca697d38936c39e71e6.webp
 tips:
 - content: 每个颜色分别对应八段数码管的亮起的某个部分，比如白色对应右下角的点。下方的每一个小格子都是相互分开的。
   title: 我毫无头绪

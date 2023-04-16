@@ -1,11 +1,14 @@
 answer: HONEYCOMB KINGDOM
-answer_analysis: ''
+answer-analysis: |
+  根据例题可以看出，这是一个变种nonogram：每一行的提示转成莫斯密码后对应这一行的格子分布：一格的深色格子对应“点”，两格以上的深色对应“划”，一格浅色对应点划之间的分割，两格以上的浅色对应字符之间的分割。根据推导出的规则可以解出谜题（一个合适的入手点是第二行的5E），深色格子象形得出答案：**HONEYCOMB KINGDOM**。
+
+  ![答案参考](/ccbc12/images/answer/e-1722.jpg)
 content:
 - '这是一个被保存得非常完整的巨型蜂巢，里面的蜂蜜都淌了出来。
 
 
   <img src="/ccbc12/images/e/380c4f29c31848068c0510f178393634.webp" width="800px"/>'
-extend_content:
+extend-content:
 - 你得到了一个神秘的数字：8.16
 links:
 - path: ccbc12/index
@@ -20,7 +23,7 @@ tips:
 - content: '这里是一张简化后的图片。
 
 
-    <img src="https://static.cipherpuzzles.com/static/images/a0639e63b34a4705a1a8006b1eb4df33.webp"
+    <img src="/ccbc12/images/e/a0639e63b34a4705a1a8006b1eb4df33.webp"
     width="600px"/>'
   title: 能简化一下吗
 title: '#1722 巨型蜂巢 - CCBC 12'

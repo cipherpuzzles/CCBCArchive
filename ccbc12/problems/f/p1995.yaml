@@ -1,5 +1,16 @@
 answer: CONTEXT
-answer_analysis: ''
+answer-analysis: |
+  通过观察，可以推理出纸上的每一列勾叉对应汉字是否有一个性质：
+
+  1. 笔画数大于等于9
+  1. 单一结构
+  1. 动词
+  1. 韵母只有一个字母（a，e，i，o，u，ü）
+  1. 出现在剧情文字中
+
+  推测出被墨水覆盖的勾叉，然后通过二进制（√=1，×=0）转化成字母得到：**THE ANSWER IS CONTEXT**。
+
+  <img src="/ccbc12/images/answer/f-1995.png" style="width: 600px" />
 content:
 - '你的队伍走进一间休息室，看到桌子上留有一张特殊的纸条，其中一部分沾上了墨水看不清。这个不是 CCBC12 的 checklist 吗？明明有这么多×，怎么还是上线了！你们左顾右盼想找到写纸条的人，但很显然，放字条的人已经出了这间屋子了。
 

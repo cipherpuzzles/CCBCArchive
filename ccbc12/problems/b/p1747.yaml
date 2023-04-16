@@ -1,5 +1,16 @@
 answer: NATIONAL SONG
-answer_analysis: ''
+answer-analysis: |
+  每个字的拼音都是四个字母，而且最后四个字的拼音字母相同但声调不同，所以考虑按一二三四声取拼音字母：
+
+  ```
+  卞          徬          烃          眠          窖          鼎
+  biaN        pAng        Ting        mIan        jiaO        diNg
+
+  谄          蹽          淞          㞞          竦          颂
+  chAn        Liao        Song        sOng        soNg        sonG
+  ```
+
+  可得答案：**NATIONAL SONG**。
 content:
 - '一段已经失传的咒语，据说能带来好运。
 

@@ -1,7 +1,43 @@
 answer: COMPUTER PROGRAM
-answer_analysis: ''
+answer-analysis: |
+  根据WriteUp中的提示打开控制台，发现字符串里含有多层嵌套的符合格式的flag，先把最内层的flag取出来：
+  
+  ```
+  ccbc{cbccbc{cbccbc{cbcccbc{cbbbbcc}bbccbc{cbbcccc}bb}cbccbc{cbcccbc{cbbccbc}bccbc{cbcbbbb}bcb}bcb}bccccbc{cbbccbc{cbbccbc{cbcbcbc}cccbc{cbcbcbb}ccc}bbccbc{cbccbc{cbbbcbc}bbccbc{cbcbbcb}ccc}bc}bc}
+  ```
+
+  ->
+
+  ```
+  ccbc{cbccbc{cbccbc{cbcbbbb}cbccbc{cbcbbcb}bcb}bccccbc{cbbccbc{cbbcccc}bbccbc{cbbbccc}bc}bc}
+  ```
+
+  然后发现剩下的字符串里还有四个内层的符合格式的flag，再取出来后还有两个，再取出来后还有一个，一共15个flag。
+  
+  ```
+  ccbc{cbccbc{cbccbc{cbcbbbb}cbccbc{cbcbbcb}bcb}bccccbc{cbbccbc{cbbcccc}bbccbc{cbbbccc}bc}bc}
+  ```
+
+  ->
+
+  ```
+  ccbc{cbccbc{cbcbbcb}bccccbc{cbbbbbc}bc}
+  ```
+
+  ->
+
+  ```
+  ccbc{cbbccbc}
+  ```
+
+
+  <img src="/ccbc12/images/answer/a-1853.png" style="width: 250px" />
+
+
+  每一个flag里面恰好有七个字符，而且只有b和c两种字母，所以可把b和c分别看作0和1，然后用ASCII编码转换成答案：**COMPUTER PROGRAM**。
 content:
-- '屏幕上好像显示着一个CTF（Capture The Flag）比赛的简介：
+- |
+  屏幕上好像显示着一个CTF（Capture The Flag）比赛的简介：
 
 
   <br><br>
@@ -45,17 +81,14 @@ content:
   但是刚看到还是把我们都蒙了一下，毕竟网页里啥都没有。还是 piggy 有经验，马上就去看控制台了。
 
 
-  </div>'
-- '<script>
-
+  </div>
+content-js: |
   (function(){
 
   console.log("%cYour flag is: ccbc{cbccbc{cbccbc{cbcccbc{cbbbbcc}bbccbc{cbbcccc}bb}cbccbc{cbcccbc{cbbccbc}bccbc{cbcbbbb}bcb}bcb}bccccbc{cbbccbc{cbbccbc{cbcbcbc}cccbc{cbcbcbb}ccc}bbccbc{cbccbc{cbbbcbc}bbccbc{cbcbbcb}ccc}bc}bc}",
   "color: #E511B2; font-size: 28px;")
 
   })();
-
-  </script>'
 links:
 - path: ccbc12/index
   title: CCBC12 索引页

@@ -1,5 +1,20 @@
 answer: LIQUID CRYSTAL DISPLAY
-answer_analysis: ''
+answer-analysis: |
+  题面图片被分成七行，每行又被均匀分割成若干块色块。通过提取RGB值，发现每一个色块的颜色变化都是线性的，于是考虑将所有色块的RGB值画在三个坐标系上（每一个色块对应一条线段）。
+
+  ![答案参考](/ccbc12/images/answer/f-1817-1.png)
+
+  通过三视图象形得到三个词，连起来得到答案：**LIQUID CRYSTAL DISPLAY**。
+
+  <img src="/ccbc12/images/answer/f-1817-2.gif" style="width: 650px" />
+
+  每一行颜色在三个词里分别对应一个字母
+  
+  除了第一个词中有两个U叠在一起
+
+  ![答案参考](/ccbc12/images/answer/f-1817-3.png)
+
+  你还可以查看视频题解： https://www.bilibili.com/video/BV1fg411e7hM
 content:
 - '一面五颜六色的旗帜，色彩比想象中还要丰富。
 

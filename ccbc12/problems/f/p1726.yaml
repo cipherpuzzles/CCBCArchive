@@ -1,41 +1,107 @@
 answer: OPPOSITE EFFECT
-answer_analysis: ''
+answer-analysis: |
+  这道crossword题能用拼音和英文两种方式解，而且有些答案是不同的东西。
+
+  ![答案参考](/ccbc12/images/answer/f-1726-1.png)
+
+  ![答案参考](/ccbc12/images/answer/f-1726-2.png)
+
+  ![答案参考](/ccbc12/images/answer/f-1726-3.png)
+
+  根据纵向第十条提示，本题的提取方式是bitwiseor或huojisuan，所以对两个答案中用数字标注的格子的ascii值（或二进制值）进行或计算，按顺序转成字母后得到结果：**OPPOSITE EFFECT**。
 content:
 - '报纸上的谜题专栏刊登的谜题，总觉得有点眼熟……
 
   '
-- "<img src=\"/ccbc12/images/f/dddb3de0d8f849329582803e3a3c0254.webp\" width=\"800px\"\
-  />\n<br><br>\n<table id=\"pz-table\" width=\"900px\">\n</table>\n<script>\n    (function\
-  \ () {\n        let index1 = [\n            \"a.\",\n            \"b.\",\n     \
-  \       \"c.\",\n            \"d.\",\n            \"e.\",\n            \"f.\",\n\
-  \            \"g.\",\n            \"h.\",\n            \"i.\",\n            \"j.\"\
-  ,\n        ];\n        let data1 = [\n            \"英超球队，获得过九次英国顶级联赛冠军\",\n    \
-  \        \"经常与凉并用\",\n            \"收入最高的运动员之一\",\n            \"第一位荷裔美国总统\",\n\
-  \            \"为911事件特别修建的监狱\",\n            \"一种气鸣乐器\",\n            \"动物园常见动物，尾巴展开后非常好看\"\
-  ,\n            \"双臂和双腿的统称\",\n            \" 一周中的一天\",\n            \"“小球转动大球”的运动\"\
-  ,\n        ];\n        let index2 = [\n            \"一、\",\n            \"二、\",\n\
-  \            \"三、\",\n            \"四、\",\n            \"五、\",\n            \"六、\"\
-  ,\n            \"七、\",\n            \"八、\",\n            \"九、\",\n            \"\
-  十、\",\n            \"十一、\",\n            \"十二、\",\n        ]\n        let data2\
-  \ = [\n            \"日本最著名的山\",\n            \"一种黑白相间的马\",\n            \"斯德哥尔摩省内的一个城市，有一支参加瑞典乙级联赛的足球队\"\
-  ,\n            \"北京地铁的一个站，从珠市口站不用换乘坐几站就能到达\",\n            \"十二星座之一\",\n       \
-  \     \"位于北半球的一个大洲\",\n            \"显像管玻璃制造时的催化澄清剂中的某种元素\",\n            \"英雄联盟中的一名英雄\"\
-  ,\n            \"不下雨的某种天气\",\n            \"本题所用到的一种逻辑计算\",\n            \"人类赖以生存的家园\"\
-  ,\n            \"与瘦相对\",\n        ];\n        if (data1.length > data2.length) {\n\
-  \            let temp = data1;\n            data1 = data2\n            data2 = temp;\n\
-  \        }\n\n        const pz_table = document.getElementById(\"pz-table\");\n\
-  \        //清除原有的内容：\n        while (pz_table.firstChild) pz_table.removeChild(pz_table.firstChild);\n\
-  \        data2.forEach((o, i) => {\n            let row = document.createElement(\"\
-  tr\");\n            let td_1 = document.createElement(\"td\");\n            td_1.style.textAlign\
-  \ = \"center\";\n            let td_2 = document.createElement(\"td\");\n      \
-  \      let td_3 = document.createElement(\"td\");\n            td_3.style.textAlign\
-  \ = \"right\";\n            let td_4 = document.createElement(\"td\");\n       \
-  \     if (index1[i]) {\n                td_1.innerHTML = index1[i];\n          \
-  \      td_2.innerHTML = data1[i];\n            }\n            td_3.innerHTML = index2[i];\n\
-  \            td_4.innerHTML = data2[i];\n            row.appendChild(td_1);\n  \
-  \          row.appendChild(td_2);\n            row.appendChild(td_3);\n        \
-  \    row.appendChild(td_4);\n            pz_table.appendChild(row);\n        });\n\
-  \    })();\n</script>"
+- |
+  <img src="/ccbc12/images/f/dddb3de0d8f849329582803e3a3c0254.webp" width="800px"/>
+  <br><br>
+  <table id="pz-table" width="900px">
+  </table>
+content-js: |
+      (function () {
+          let index1 = [
+              "a.",
+              "b.",
+              "c.",
+              "d.",
+              "e.",
+              "f.",
+              "g.",
+              "h.",
+              "i.",
+              "j.",
+          ];
+          let data1 = [
+              "英超球队，获得过九次英国顶级联赛冠军",
+              "经常与凉并用",
+              "收入最高的运动员之一",
+              "第一位荷裔美国总统",
+              "为911事件特别修建的监狱",
+              "一种气鸣乐器",
+              "动物园常见动物，尾巴展开后非常好看",
+              "双臂和双腿的统称",
+              " 一周中的一天",
+              "“小球转动大球”的运动",
+          ];
+          let index2 = [
+              "一、",
+              "二、",
+              "三、",
+              "四、",
+              "五、",
+              "六、",
+              "七、",
+              "八、",
+              "九、",
+              "十、",
+              "十一、",
+              "十二、",
+          ]
+          let data2 = [
+              "日本最著名的山",
+              "一种黑白相间的马",
+              "斯德哥尔摩省内的一个城市，有一支参加瑞典乙级联赛的足球队",
+              "北京地铁的一个站，从珠市口站不用换乘坐几站就能到达",
+              "十二星座之一",
+              "位于北半球的一个大洲",
+              "显像管玻璃制造时的催化澄清剂中的某种元素",
+              "英雄联盟中的一名英雄",
+              "不下雨的某种天气",
+              "本题所用到的一种逻辑计算",
+              "人类赖以生存的家园",
+              "与瘦相对",
+          ];
+          if (data1.length > data2.length) {
+              let temp = data1;
+              data1 = data2
+              data2 = temp;
+          }
+
+          const pz_table = document.getElementById("pz-table");
+          //清除原有的内容：
+          while (pz_table.firstChild) pz_table.removeChild(pz_table.firstChild);
+          data2.forEach((o, i) => {
+              let row = document.createElement("tr");
+              let td_1 = document.createElement("td");
+              td_1.style.textAlign = "center";
+              let td_2 = document.createElement("td");
+              let td_3 = document.createElement("td");
+              td_3.style.textAlign = "right";
+              let td_4 = document.createElement("td");
+              if (index1[i]) {
+                  td_1.innerHTML = index1[i];
+                  td_2.innerHTML = data1[i];
+              }
+              td_3.innerHTML = index2[i];
+              td_4.innerHTML = data2[i];
+              row.appendChild(td_1);
+              row.appendChild(td_2);
+              row.appendChild(td_3);
+              row.appendChild(td_4);
+              pz_table.appendChild(row);
+          });
+      })();
 links:
 - path: ccbc12/index
   title: CCBC12 索引页
