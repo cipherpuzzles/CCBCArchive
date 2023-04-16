@@ -1,0 +1,22 @@
+answer: NATIONAL SONG
+answer_analysis: ''
+content:
+- '一段已经失传的咒语，据说能带来好运。
+
+
+  <br>
+
+
+  <font size="+2">卞徬烃眠窖鼎谄蹽淞㞞竦颂</font>'
+links:
+- path: ccbc12/index
+  title: CCBC12 索引页
+  type: index
+- path: ccbc12/pages/main
+  title: 时光机
+  type: page
+tips:
+- content: 最后四个字的拼音是相同的但声调不同（分别是一二三四声），也许拼音和声调都有用？
+  title: 我毫无头绪
+title: '#1747 十二字真言 - CCBC 12'
+type: problem

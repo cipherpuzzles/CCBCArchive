@@ -1,0 +1,38 @@
+answer: STUDY ORBIT
+answer_analysis: ''
+content:
+- "<span style=\"color: #9F9F9F;\">时间线D在这里终结了，请回顾这一轮的穿越并尝试解开这条时间线上的缠结。</span>\n\n\
+  <br><br>\n\n你来到了一个连时间都不存在的地方，在一片虚无之中穿行。\n\n过了不知道多久，你赫然发现前方是一座小山，从山顶射出一道橙色的激光，射向无穷的远方……\n\
+  \n<hr>\n\n你爬上山顶，发现那里是一座天文台。刚才的观测似乎已经结束了，一位男子从建筑中走出来，在空无一物的山坡上散步。\n\n<span style=\"\
+  color: #F561A4\">“我是Fivero，是一位天文学家。俗话说‘人有悲欢离合，月有阴晴圆缺’，可人的感情和月亮到底有什么联系……”</span>\n\
+  \n他给你看了他手上的平板电脑，上面显示着的是一些emoji——\n\n<p style=\"text-align:center\">\n<img src=\"\
+  /ccbc12/images/d/0d321d5eccb24d24a56d4f3dcd7b3553.webp\" width=\"100px\"/>\n<img\
+  \ src=\"/ccbc12/images/d/d534d9d8c6194aa18b1e8fe597dc2437.webp\" width=\"100px\"\
+  />\n<img src=\"/ccbc12/images/d/67858d670da8489790e45dbb30e6b961.webp\" width=\"\
+  100px\"/>\n<img src=\"/ccbc12/images/d/a307b4803cb74ce8a2c90b57e3fb9f99.webp\" width=\"\
+  100px\"/>\n<img src=\"/ccbc12/images/d/ea25faaf668d4685bd804535a8767f55.webp\" width=\"\
+  100px\"/>\n<br><br>\n<img src=\"/ccbc12/images/d/b0b28166ddb44511947e214314de9d9d.webp\"\
+  \ width=\"100px\"/>\n<img src=\"/ccbc12/images/d/94d60548319b4a5c8aca63c74b3d29d8.webp\"\
+  \ width=\"100px\"/>\n<img src=\"/ccbc12/images/d/6ca9bbcb32114abcbc5621d0a8c776ca.webp\"\
+  \ width=\"100px\"/>\n<img src=\"/ccbc12/images/d/cecc0a214f6144a08b3a0a6336f6d0a8.webp\"\
+  \ width=\"100px\"/>\n<img src=\"/ccbc12/images/d/60a3ee2b46b446a89e18419bf3987560.webp\"\
+  \ width=\"100px\"/>\n<br><br>\n <font size=\"7\">\U0001F30F&nbsp;&nbsp;&nbsp;&nbsp;⬅&nbsp;&nbsp;&nbsp;&nbsp;☀️</font>\n\
+  </p>\n\n<br><br>"
+extend_content:
+- “感谢相救🙏，当初就不该支持牛牛用AI出题😔。”Fivero无奈地摇了摇头，“出题组的人都找到了吗😟？快中秋节了🌕，我们出题组必须整整齐齐👨‍👦👨‍👨‍👦‍👦，我先来口月饼🥮，这几天给我饿坏了😣，你吃五仁的吗🥜？……”
+links:
+- path: ccbc12/index
+  title: CCBC12 索引页
+  type: index
+- path: ccbc12/pages/main
+  title: 时光机
+  type: page
+tips:
+- content: 每道小题的答案对应一个表情符号；题面中的每个表情混合了两个表情符号。
+  title: 我毫无头绪
+- content: 每道小题里藏有一个不同的月相。
+  title: 月亮在哪
+- content: 每个表情对应一个旗语字母。最下面的几个emoji能帮你确定方向。
+  title: 该如何提取
+title: 终结点D - CCBC 13
+type: problem

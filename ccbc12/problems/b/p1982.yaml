@@ -1,0 +1,26 @@
+answer: ABNORMALITIES
+answer_analysis: ''
+content:
+- '一支街头乐队正在排练他们的新作品。
+
+
+  <audio src="https://static.cipherpuzzles.com/static/images/dc30d21042674eec98ed99ac760e7d7d.m4a"
+  controls></audio>
+
+
+  <a href="https://static.cipherpuzzles.com/static/images/072704d717f74fc882ab0ae32bd0bb66.mid"
+  download>下载音频(MIDI格式)</a>'
+links:
+- path: ccbc12/index
+  title: CCBC12 索引页
+  type: index
+- path: ccbc12/pages/main
+  title: 时光机
+  type: page
+tips:
+- content: 这段音乐好像每小节的音调都一样呢，还都是重复1-4遍，要不把简谱写出来看看？（这里把高音1看作8。）
+  title: 我毫无头绪
+- content: 根据第一步的答案找到需要的两种声音，分别对应两种不同的符号。和第一步一样，每个小节可以转成一个字母。
+  title: 该如何提取
+title: '#1982 乐队排练 - CCBC 12'
+type: problem

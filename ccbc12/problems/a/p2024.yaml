@@ -1,0 +1,38 @@
+answer: GLOBAL COMMUNITY
+answer_analysis: ''
+content:
+- "一段似乎是网络上常见的微信聊天记录截图。\n\n\n<style>\n.pz-img-wrapper {\n    width: 400px;\n    height:\
+  \ 460px;\n    position: relative;\n}\n.pz-img-wrapper > img {\n    position: absolute;\n\
+  \    top: 0;\n    left: 0;\n    user-select: none;\n}\n.pz-inner-text-a {\n    position:\
+  \ absolute;\n    font-size: 17px;\n    line-height: 20px;\n    letter-spacing: 1.4px;\n\
+  \    left: 158px;\n    top: 6px;\n    color: transparent;\n}\n.pz-inner-text-b {\n\
+  \    position: absolute;\n    font-size: 14px;\n    line-height: 20px;\n    letter-spacing:\
+  \ 0;\n    color: transparent;\n}\n.pz-inner-text-c {\n    position: absolute;\n\
+  \    font-size: 12px;\n    line-height: 20px;\n    letter-spacing: -0.5px;\n   \
+  \ color: transparent;\n}\n.pz-img-wrapper *::selection {\n    background: rgba(30,\
+  \ 30, 57, 0.3);\n}\n.pz-sp {\n    margin-top: 39px;\n}\n</style>\n<div class=\"\
+  pz-img-wrapper\">\n    <img src=\"/ccbc12/images/a/ad22a83d8df7453e8b19ed3a421660e3.webp\"\
+  \ width=\"100%\"/>\n    <div class=\"pz-inner-text-a\">CCBC(12)</div>\n    <div\
+  \ class=\"pz-inner-text-b\" style=\"left: 164px; top: 66px;\">Just bought a new\
+  \ iPad</div>\n    <div class=\"pz-inner-text-b\" style=\"left: 206px; top: 123px;\"\
+  >*\"9/@\" +9::7;856</div>\n    <div class=\"pz-inner-text-c\" style=\"left: 73px;\
+  \ top: 164px;\">HAL9000</div>\n    <div class=\"pz-inner-text-b\" style=\"left:\
+  \ 78px; top: 198px;\">?</div>\n    <div class=\"pz-inner-text-c\" style=\"left:\
+  \ 73px; top: 238px;\">EVE</div>\n    <div class=\"pz-inner-text-b\" style=\"left:\
+  \ 78px; top: 270px;\">?</div>\n    <div class=\"pz-inner-text-c\" style=\"left:\
+  \ 73px; top: 310px;\">Sonny</div>\n    <div class=\"pz-inner-text-b\" style=\"left:\
+  \ 78px; top: 344px;\">?</div>\n    <div class=\"pz-inner-text-c\" style=\"left:\
+  \ 73px; top: 385px;\">T-800</div>\n    <div class=\"pz-inner-text-b\" style=\"left:\
+  \ 78px; top: 418px;\">?</div>\n</div>"
+links:
+- path: ccbc12/index
+  title: CCBC12 索引页
+  type: index
+- path: ccbc12/pages/main
+  title: 时光机
+  type: page
+tips:
+- content: 既然是买了新iPad之后再打出来的字，那研究一下iPad默认（英文）键盘上有什么符号和字母的对应吧。
+  title: 我毫无头绪
+title: '#2024 微信截图 - CCBC 12'
+type: problem

@@ -1,0 +1,21 @@
+answer: CRUDE
+answer_analysis: ''
+content:
+- '这些古老的文字看起来似乎是熟悉的密码，但到底是哪一种呢？
+
+
+  <img src="/ccbc12/images/c/7848e37066db401d9c242096f44d416b.webp" width="600px"/>'
+links:
+- path: ccbc12/index
+  title: CCBC12 索引页
+  type: index
+- path: ccbc12/pages/main
+  title: 时光机
+  type: page
+tips:
+- content: 每一行五个符号都是一个单词，而且每个符号是用两种古典密码中的一种加密的。这两种加密方式都在序章里出现过。（每一行内的加密方式也不统一。）
+  title: 我毫无头绪
+- content: 最上面的两个符号分别对应0和1，下面用二进制提取得到五个字母的答案。
+  title: 该如何提取
+title: '#1909 楔形文字 - CCBC 12'
+type: problem

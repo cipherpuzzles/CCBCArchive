@@ -1,0 +1,58 @@
+answer: CLASSICISM
+answer_analysis: ''
+content:
+- '这个年代的几何题这么硬核的吗？
+
+
+  若以下格式无法正确显示，请<a href="https://static.cipherpuzzles.com/static/images/9b80087287144d85aaca0e691779178b.pdf"
+  download>下载PDF文件</a>'
+- "<style>\n.pz-write-paper {\n  background-color: white;\n  box-shadow: 5px 8px 6px\
+  \ 2px #777777;\n}\n.pz-paper-content {\n  color: black;\n  padding: 6.5em;\n  font-family:\
+  \ STSong, STZhongSong, SimSun, \"宋体\", Georgia, Cambria, \"Times New Roman\", Times,\
+  \ serif;\n}\n.pz-paper-content em {\n  font-family: STKaiti, \"楷体\",\"楷体_GB2312\"\
+  , Georgia, Cambria, \"Times New Roman\", Times, serif;\n  font-style: normal;\n\
+  }\n.pz-paper-content ul li {\n  margin: 0.7rem;\n}\n.pz-paper-content ol {\n  list-style-type:\
+  \ none;\n}\n.pz-paper-content ol li {\n  margin: 0.7rem;\n}\n.pz-paper-content ol\
+  \ li::marker {\n  content: \"(\" counter(list-item, lower-roman) \")  \";\n}\n</style>\n\
+  <div class=\"pz-write-paper\">\n  <div class=\"pz-paper-content\">\n    <p><em>注</em>:\
+  \ 本题中, <em>每一个用若干点表示的多边形均默认为这些点的凸包, 其中每个点均为凸包的顶点之一.</em> (例如: $ABCD$和$ACBD$表示同一个四边形.)\
+  \ 所有的多边形均为非退化图形. 等腰三角形包括等边三角形, 梯形不包括平行四边形, 平行四边形包括长方形, 长方形包括正方形. </p>\n    <p>已知:\
+  \ $A = (0, 0), B = (1, 0), C = (1, 1), D = (0, 1), E = (\\frac{1}{2}, \\frac{\\\
+  sqrt{3}}{2}), F = (0.1, 0.8)$. 点$P_1, P_2, \\dots, P_{23}$为平面上的$23$个点 (这些点不一定两两不同，且可能与$A,B,C,D,E,F$相同),\
+  \ 满足以下条件:</p>\n    <ul>\n      <li>三角形$P_1AB$是等腰直角三角形.</li>\n      <li>三角形$P_2P_3A$和$P_2P_3B$都是等腰直角三角形.</li>\n\
+  \      <li>三角形$P_4AB, P_4BE, P_4EA$都是等腰三角形.</li>\n      <li>三角形$P_5AB, P_5BC, P_5CD,\
+  \ P_5DA$都是等腰三角形.</li>\n      <li>三角形$P_6AB, P_6BC, P_6CA$中至少有两个直角三角形.</li>\n   \
+  \   <li>三角形$P_7AB, P_7BE, P_7EA$中至少有两个直角三角形.</li>\n      <li>三角形$ABP_8, BP_8P_9,\
+  \ P_8P_9P_{10}, P_9P_{10}P_{11}, P_{10}P_{11}P_{12}, P_{11}P_{12}P_{13}$都是等边三角形.</li>\n\
+  \      <li>四边形$P_{14}ABC$是平行四边形.</li>\n      <li>四边形$P_{15}ABF$是等腰梯形.</li>\n   \
+  \   <li>四边形$P_{16}ABC, P_{16}ABF, P_{16}ACF, P_{16}BCF$中至少有两个梯形.</li>\n      <li>五边形$P_{17}P_{18}ABE$是等角五边形.</li>\n\
+  \      <li>五边形$P_{19}P_{20}P_{21}AB$是正五边形.</li>\n      <li>点$P_{22}$和直线$AB, BC,\
+  \ CA$的距离相等.</li>\n      <li>点$P_{23}$和$A,B,C,F$中的两个点以及一条经过另外两个点的直线的距离相等.</li>\n\
+  \    </ul>\n    <p>令$a, b, c, d, e, f, p_1, p_2, \\dots, p_{23}$为某些非负整数, 其中$a=b=c=d=e=f=1$.\
+  \ 求以下表达式的值：</p>\n    <ol>\n      <li>$p_{6}+p_{14}-p_{10}$;</li>\n      <li>$p_{13}+p_{1}-p_{22}$;</li>\n\
+  \      <li>$p_{1}+p_{22}-p_{5}$;</li>\n      <li>$p_{16}+p_{23}-p_{2}$;</li>\n \
+  \     <li>$p_{4}+p_{7}-p_{18}$;</li>\n      <li>$p_{17}+p_{11}-p_{9}$;</li>\n  \
+  \    <li>$p_{21}+p_{23}-p_{3}$;</li>\n      <li>$p_{14}+p_{5}-p_{15}$;</li>\n  \
+  \    <li>$p_{16}+p_{1}-p_{7}$;</li>\n      <li>$p_{15}+p_{19}-p_{8}$.</li>\n   \
+  \ </ol>\n  </div>\n</div>\n<script>\n  globalThis.MathJax = {\n    tex: {inlineMath:\
+  \ [['$', '$'], ['\\\\(', '\\\\)']]},\n    svg: {fontCache: 'global'}\n  };\n  (function\
+  \ () {\n    let a = document.getElementById(\"puzzleHtml\");\n    let b = document.createElement(\"\
+  script\");\n    b.id = \"MathJax-script\";\n    b.async = true;\n    b.src = \"\
+  https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js\";\n    a.appendChild(b);\n\
+  \  })();\n</script>"
+extend_content:
+- 你得到了一个神秘的数字：13.53
+links:
+- path: ccbc12/index
+  title: CCBC12 索引页
+  type: index
+- path: ccbc12/pages/main
+  title: 时光机
+  type: page
+tips:
+- content: 每一个小写字母变量的值代表对应的大写字母点所在的可能位置的个数。顺带一提，题中提到的所有图形都必须是非退化的凸多边形，即便没有任何特殊性质。
+  title: 我毫无头绪
+- content: p2=17, p6=5, p7=15, p13=10, p16=28, p23=8.
+  title: 能简化一下吗
+title: '#1917 几何 - CCBC 12'
+type: problem

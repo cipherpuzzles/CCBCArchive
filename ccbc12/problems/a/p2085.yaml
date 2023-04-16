@@ -1,0 +1,19 @@
+answer: ADDITIONAL INCOME
+answer_analysis: ''
+content:
+- '名叫I Wanna的系列游戏，难度极高。
+
+
+  <img src="/ccbc12/images/a/54034e9da52242f49e1c9e5f0fb0cc65.webp" width="800px"/>'
+links:
+- path: ccbc12/index
+  title: CCBC12 索引页
+  type: index
+- path: ccbc12/pages/main
+  title: 时光机
+  type: page
+tips:
+- content: 把所有图形（三角形、正方形）之间的缝隙描一遍，看看都像些什么字母？
+  title: 我毫无头绪
+title: '#2085 I Wanna - CCBC 12'
+type: problem

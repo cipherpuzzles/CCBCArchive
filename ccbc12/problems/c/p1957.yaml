@@ -1,0 +1,22 @@
+answer: CONAN DOYLE
+answer_analysis: ''
+content:
+- '哇，这个年代就有真人翻拍的动画了吗？
+
+
+  <video src="https://static.cipherpuzzles.com/static/images/aee436760cb14702b53786b4a7fca705.mp4"
+  controls style="width: 100%"></video>'
+links:
+- path: ccbc12/index
+  title: CCBC12 索引页
+  type: index
+- path: ccbc12/pages/main
+  title: 时光机
+  type: page
+tips:
+- content: 视频31秒后每个动作代表一个字母。加密方式可以参见福尔摩斯探案集。
+  title: 我毫无头绪
+- content: 有的！
+  title: 有小姐姐的联系方式吗
+title: '#1957 舞蹈MV - CCBC 12'
+type: problem

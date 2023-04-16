@@ -1,0 +1,34 @@
+answer: DAR ES SALAAM
+answer_analysis: ''
+content:
+- '你好像置身于中国大陆的某处。你发现郁郁葱葱的树林中有一座造型奇特的建筑，走近一看，原来是一座天文馆。
+
+
+  <br>'
+- "<script>\n(async () => {\n    let backendApi = window[\"backendApi\"];\n    let\
+  \ result = await backendApi(\"/puzzle-backend/2021\", {});\n\n    let content =\
+  \ result[\"content\"];\n\n    //将content中代码部分提取出来单独注入执行器\n    content = content.replace(/<script.*?>([\\\
+  s\\S]+?)<\\/script>/, (_, js) => {\n        setTimeout(() => {\n            let\
+  \ htmlContainer = document.getElementById(\"puzzleHtml\");\n            if (!htmlContainer)\
+  \ return;\n            let ele = document.createElement(\"script\");\n         \
+  \   ele.innerHTML = js;\n            htmlContainer.appendChild(ele);\n        },\
+  \ 100);\n        return \"\";\n    });\n\n    let el = document.getElementById(\"\
+  puzzleHtml\");\n    let contentEl = document.createElement(\"div\");\n    contentEl.innerHTML\
+  \ = content;\n\n\n    //清除原有的puzzleHtml内容：\n    while (el.firstChild) el.removeChild(el.firstChild);\n\
+  \    el.appendChild(contentEl);\n})();\n</script>"
+extend_content:
+- 你得到了一个神秘的数字：77.19
+links:
+- path: ccbc12/index
+  title: CCBC12 索引页
+  type: index
+- path: ccbc12/pages/main
+  title: 时光机
+  type: page
+tips:
+- content: 根据预告函解出时间再来这里试试？（午夜算作“第一次”。）顺带一提，时间是根据你的系统时间判定的。
+  title: 我毫无头绪
+- content: 这是慢扫描电视的声音，需要下载个软件解析一下。（预告函里提示了解析的模式。）
+  title: 参加活动后该怎么做
+title: '#2021 神秘活动 - CCBC 12'
+type: problem

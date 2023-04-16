@@ -1,0 +1,17 @@
+answer: PRIOR KNOWLEDGE
+answer_analysis: ''
+content:
+- 墙上整齐地镶嵌了许多带图案的瓷砖，其中的一些瓷砖不翼而飞了，漏出了下面泛黄的墙面。
+links:
+- path: ccbc12/index
+  title: CCBC12 索引页
+  type: index
+- path: ccbc12/pages/main
+  title: 时光机
+  type: page
+problem_image: /ccbc12/images/a/ee01588251584335aa62630e8b21ebed.webp
+tips:
+- content: 逐行按从左到右的顺序，有内容的的格子分别对应：自动挡、手动挡、轴对称、数字、氨基酸、扑克、中心对称、元音字母、星期、罗马数字、方向、月份、文件大小、键盘。每个格子的答案都是一个字母。
+  title: 我毫无头绪
+title: '#1727 丢失的瓷砖 - CCBC 12'
+type: problem

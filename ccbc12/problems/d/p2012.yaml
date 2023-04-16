@@ -1,0 +1,19 @@
+answer: DOUBTING
+answer_analysis: ''
+content:
+- 这些看似随手截取的图片里，仿佛隐藏着什么？
+links:
+- path: ccbc12/index
+  title: CCBC12 索引页
+  type: index
+- path: ccbc12/pages/main
+  title: 时光机
+  type: page
+problem_image: /ccbc12/images/d/2ef113b9bd5f45b78c6c2f3a137a1256.webp
+tips:
+- content: 这些图片均来自经典的红白机超级玛丽关卡，并且都是各自关卡中隐藏了命菇的位置。
+  title: 我毫无头绪
+- content: 每张图片都是由5*5的方格构成，解棋盘密码，然后根据关卡1-1、2-1、...8-1排序。
+  title: 该如何提取
+title: '#2012 经典游戏 - CCBC 12'
+type: problem

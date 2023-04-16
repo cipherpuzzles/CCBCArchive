@@ -1,0 +1,48 @@
+answer: RINGMASTER
+answer_analysis: ''
+content:
+- '<span style="color: #9F9F9F;">时间线B在这里终结了，请回顾这一轮的穿越并尝试解开这条时间线上的缠结。</span>
+
+
+  <br><br>
+
+
+  你来到了一个连时间都不存在的地方，在一片虚无之中穿行。
+
+
+  过了不知道多久，你赫然发现前方是一片茂密的雨林。阳光从遮天蔽日的树叶缝隙中射下来，只有一点点到达地面，照亮了你的眼睛。不过这也要比一片虚无亮很多了。
+
+
+  <hr>
+
+
+  你走进雨林，不一会儿就看到了一个正在地上观察一条蛇的学者。
+
+
+  <span style="color: #F561A4">“我是sonic，是一位动物学家。听说过衔尾蛇吗？它始终首尾相连，没有尽头。”</span>
+
+
+  你看向他指给你看的地面，那里赫然有一条你从未见过的蛇——
+
+
+  <img src="/ccbc12/images/b/8b307bb5d4f0497aaa2a8de8016917e4.webp" style="width:
+  600px" />
+
+
+  <br><br>'
+extend_content:
+- “谢谢你救我出来！”sonic挠了挠头，“今年是哪一年了？我被困在幻境的时间太长了……关键这个幻境只有蛇啊！对了，我的其他队友是不是也被困住了，事不宜迟，我们休息9天就去救他们吧！”
+links:
+- path: ccbc12/index
+  title: CCBC12 索引页
+  type: index
+- path: ccbc12/pages/main
+  title: 时光机
+  type: page
+tips:
+- content: 观察小题答案的首尾字母。
+  title: 我毫无头绪
+- content: 注意蛇身上的黑色部分，尤其注意蛇头和蛇尾都有黑色。
+  title: 该如何提取
+title: 终结点B - CCBC 13
+type: problem

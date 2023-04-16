@@ -1,0 +1,19 @@
+answer: OCEAN BEACON
+answer_analysis: ''
+content:
+- 看着散落在地上的一堆车票，你的脑内就像25对缠在一起的电线一样混乱不堪。
+links:
+- path: ccbc12/index
+  title: CCBC12 索引页
+  type: index
+- path: ccbc12/pages/main
+  title: 时光机
+  type: page
+problem_image: /ccbc12/images/f/630eb7276bcf476da5b748b81ecca0f9.webp
+tips:
+- content: 每一张车票对应一条地铁线路。一共有六条不同的地铁线路，我们只需要这些线路在地铁线路图里的颜色。
+  title: 我毫无头绪
+- content: 可以搜索25-pair color code（用于识别不同电线的色码）。这个编码既用于提取字母又用于排序。顺带一提，答案一共11个字母，但只有6个不同的字母。
+  title: 该如何提取
+title: '#1912 车票 - CCBC 12'
+type: problem

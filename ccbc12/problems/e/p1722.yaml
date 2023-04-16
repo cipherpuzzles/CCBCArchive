@@ -1,0 +1,27 @@
+answer: HONEYCOMB KINGDOM
+answer_analysis: ''
+content:
+- '这是一个被保存得非常完整的巨型蜂巢，里面的蜂蜜都淌了出来。
+
+
+  <img src="/ccbc12/images/e/380c4f29c31848068c0510f178393634.webp" width="800px"/>'
+extend_content:
+- 你得到了一个神秘的数字：8.16
+links:
+- path: ccbc12/index
+  title: CCBC12 索引页
+  type: index
+- path: ccbc12/pages/main
+  title: 时光机
+  type: page
+tips:
+- content: 这是一道Nonogram题，但是每一行的提示是摩尔斯密码。右上角的例题可以帮助你确定转换方式。
+  title: 我毫无头绪
+- content: '这里是一张简化后的图片。
+
+
+    <img src="https://static.cipherpuzzles.com/static/images/a0639e63b34a4705a1a8006b1eb4df33.webp"
+    width="600px"/>'
+  title: 能简化一下吗
+title: '#1722 巨型蜂巢 - CCBC 12'
+type: problem

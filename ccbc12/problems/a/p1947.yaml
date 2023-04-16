@@ -1,0 +1,34 @@
+answer: RATIONAL THOUGHT
+answer_analysis: ''
+content:
+- "这不知是哪位书法大家的作品，但内容却似乎只是些幼儿启蒙读物。\n<style>\n.pz-img-wrapper {\n    width: 400px;\n\
+  \    height: 803px;\n    position: relative;\n}\n.pz-img-wrapper > img {\n    position:\
+  \ absolute;\n    top: 0;\n    left: 0;\n}\n.pz-inner-text {\n    position: absolute;\n\
+  \    writing-mode: vertical-rl;\n    font-size: 30px;\n    top: 107px;\n    right:\
+  \ 71px;\n    letter-spacing: 13px;\n    line-height: 16px;\n    color: transparent;\n\
+  }\n.pz-inner-text *::selection {\n    background: rgba(30, 30, 57, 0.3);\n}\n.pz-sp\
+  \ {\n    margin-top: 39px;\n}\n</style>\n<div class=\"pz-img-wrapper\">\n    <img\
+  \ src=\"/ccbc12/images/a/45fecf20a8ce4174892776c849eef5d5.webp\" width=\"100%\"\
+  />\n    <div class=\"pz-inner-text\">\n        <p><span>南北混</span><span class=\"\
+  pz-sp\">美人挾趙瑟</span><span class=\"pz-sp\">黄天玄地</span></p>\n        <p><span>能溫席</span><span\
+  \ class=\"pz-sp\">亦蘊韓娥音</span><span class=\"pz-sp\">洪宇荒宙</span></p>\n        <p><span>我教子</span><span\
+  \ class=\"pz-sp\">統衛吏兵軍</span><span class=\"pz-sp\">昃日盈月</span></p>\n        <p><span>絲與竹</span><span\
+  \ class=\"pz-sp\">漢主追韓信</span><span class=\"pz-sp\">張宿辰列</span></p>\n        <p><span>孟子者</span><span\
+  \ class=\"pz-sp\">試涉霸王略</span><span class=\"pz-sp\">往寒暑來</span></p>\n    </div>\n\
+  </div>"
+links:
+- path: ccbc12/index
+  title: CCBC12 索引页
+  type: index
+- path: ccbc12/pages/main
+  title: 时光机
+  type: page
+tips:
+- content: 每段文字右上角的篆体印章“三”、“百”、“千”，都是该段所对应的原文标题的第一个字，也可以把这三个篆体印章中的文字连起来，得到这三段文字的统称。这三段文字分别是独立的小谜题，分别可以得到五个字母。
+  title: 我毫无头绪
+- content: 有些文字需要【去上下文中寻找数字】；有些文字需要【提取某个关键字的序号】；有些文字需要【对应原顺序（将原顺序视为1234），再把所有文字组合的顺序从小到大排序，并确定题中文字排列方式的序号】，然后把得到的所有数字/序号按字母表顺序转换成字母。
+  title: 这些文字怎么处理
+- content: 按照古文书写习惯，从上到下，从右至左排序所有字母。
+  title: 该如何提取
+title: '#1947 书法 - CCBC 12'
+type: problem

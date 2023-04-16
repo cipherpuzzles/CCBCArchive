@@ -1,0 +1,45 @@
+answer: ROUND DANCE
+answer_analysis: ''
+content:
+- '<span style="color: #9F9F9F;">时间线C在这里终结了，请回顾这一轮的穿越并尝试解开这条时间线上的缠结。</span>
+
+
+  <br><br>
+
+
+  你来到了一个连时间都不存在的地方，在一片虚无之中穿行。
+
+
+  过了不知道多久，你赫然发现前方是一座富丽堂皇的音乐厅。
+
+
+  <hr>
+
+
+  你在音乐厅的练习室中找到了一位年轻人。
+
+
+  <span style="color: #F561A4">“我是wilsey，是一位音乐家。最近有一段诡异的和弦旋律在我脑内挥之不去，但不知道这段旋律能用来做什么？”</span>
+
+
+  <audio src="https://static.cipherpuzzles.com/static/images/ff861faa9b90408b8cbdfa0285d6f363.m4a"
+  controls></audio>'
+extend_content:
+- 救出wilsey后，这个人一直在开心地哼着歌，说实话有点吵。
+links:
+- path: ccbc12/index
+  title: CCBC12 索引页
+  type: index
+- path: ccbc12/pages/main
+  title: 时光机
+  type: page
+tips:
+- content: 观察小题答案的首字母。注意有些答案是两个单词，它们有两个首字母。
+  title: 我毫无头绪
+- content: 这里有一个<a href="https://static.cipherpuzzles.com/static/images/521e07138edd48748ad55fbef575b49e.mid"
+    download>midi文件</a>。可以使用Audacity或者MuseScore打开来看到五线谱。
+  title: 听不出音高怎么办？
+- content: 每个和弦里对应两个答案唯一重合的字母（忽略空格）。
+  title: 该如何提取
+title: 终结点C - CCBC 13
+type: problem

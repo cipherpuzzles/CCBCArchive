@@ -1,0 +1,21 @@
+answer: ANAEROBIC
+answer_analysis: ''
+content:
+- 彩色的屏幕似乎已经损坏，两个部分显示着凌乱的像素块，不过为什么会有两个第一部分？
+links:
+- path: ccbc12/index
+  title: CCBC12 索引页
+  type: index
+- path: ccbc12/pages/main
+  title: 时光机
+  type: page
+problem_image: /ccbc12/images/c/4da20dc310604b00afeec0d6f36665a6.webp
+tips:
+- content: CCBC的LOGO里12其实是翻转的SI。另外，右下角的纯数字对应26个字母的顺序，2nd则是序数词second。
+  title: 我毫无头绪
+- content: 单行方块为连续相乘；两行方块为同行相乘，上行除以下行。
+  title: 如何理解方块的排布
+- content: 在Part.A中取最终结果对应的物理单位字母，在Part.I中取最终结果单位对应的物理量字母。O就是O。
+  title: 该如何提取
+title: '#1921 A/I - CCBC 12'
+type: problem

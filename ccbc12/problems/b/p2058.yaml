@@ -1,0 +1,19 @@
+answer: THE DUKE
+answer_analysis: ''
+content:
+- 哇，这些都是冠军的徽章吗，可是那两个叉是什么意思呢？
+links:
+- path: ccbc12/index
+  title: CCBC12 索引页
+  type: index
+- path: ccbc12/pages/main
+  title: 时光机
+  type: page
+problem_image: /ccbc12/images/b/7e795e49d5b8438d98083dcbcd406b5e.webp
+tips:
+- content: 这些图案都出自欧洲足球五大联赛球队的队徽，而且这些球队都得过联赛冠军。
+  title: 我毫无头绪
+- content: 每列都可以根据内容确定一个21世纪的年份（打叉处则为空缺），把年份的后两位转化成字母。
+  title: 该如何提取
+title: '#2058 徽章收纳盒 - CCBC 12'
+type: problem

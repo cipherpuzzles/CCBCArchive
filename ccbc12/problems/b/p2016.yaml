@@ -1,0 +1,27 @@
+answer: MUSIC MEDIA
+answer_analysis: ''
+content:
+- 2016年某场发布会的幻灯片文件副本，只是图像质量有所压缩。
+- "<div>\n  <img width=\"512px\" id=\"logo\" src=\"/ccbc12/images/b/6d9d3760ea8844988caadc6eab74c5e1.webp\"\
+  \ alt=\"LOGO\" />\n  <img width=\"512px\" id=\"puzzle\" src=\"/ccbc12/images/b/1603d42e8b4d42a7922fbe491b95405b.webp\"\
+  \ alt=\"Puzzle\" />\n</div>\n<script>\n    (function (){\n        const logo= document.getElementById(\"\
+  logo\");\n        const puzzle= document.getElementById(\"puzzle\");\n        logo.style.display\
+  \ = \"block\";\n        puzzle.style.display = \"none\";\n        logo.onclick =\
+  \ function(){\n            logo.style.display = \"none\";\n            puzzle.style.display\
+  \ = \"block\"\n        }\n        puzzle.onclick = function(){\n            puzzle.style.display\
+  \ = \"none\";\n            logo.style.display = \"block\"\n        }\n    })();\n\
+  </script>"
+links:
+- path: ccbc12/index
+  title: CCBC12 索引页
+  type: index
+- path: ccbc12/pages/main
+  title: 时光机
+  type: page
+tips:
+- content: 可以点击鼠标左键查看下一张幻灯片，第二张幻灯片中的图标是2016年iOS系统（iOS9/10）中的原生应用图标。
+  title: 我毫无头绪
+- content: 六个图标构成了一个六面骰的平面展开图，其中有三个图标已经标出对应几点了。左边数字中没有横线就取全名，有横线就根据横线后面的数字取字母。
+  title: 该如何提取
+title: '#2016 幻灯片 - CCBC 12'
+type: problem

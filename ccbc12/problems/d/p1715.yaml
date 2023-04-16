@@ -1,0 +1,93 @@
+answer: QUARANTINE
+answer_analysis: ''
+content:
+- 桌子上整齐地摆放着一盘涂好油墨的活字版。
+- "<style>\n.content-table {\n  font-size: 24px;\n  text-align: center;\n  width:\
+  \ 532px;\n  transform: rotateY(180deg);\n}\n.content-table tr td{\n  height: 38px;\n\
+  \  width: 38px;\n  position: relative;\n}\n.content-table tr td:not(:empty){\n \
+  \ cursor: crosshair;\n  border: 2px #5a5a5a solid;\n}\n.content-table tr td:not(:empty):hover::before{\n\
+  \  content: ' ';\n  position: absolute;\n  text-align: center;\n  width: 8px;\n\
+  \  height: 8px;\n  left: 0;\n  right: 0;\n  top: 0;\n  bottom: 0;\n  margin: auto;\n\
+  \  background-color: #999999;\n  border-radius: 8px;\n}\n</style>\n\n<table class=\"\
+  content-table\">\n    <tr>\n        <td></td>\n        <td></td>\n        <td></td>\n\
+  \        <td>以</td>\n        <td>顺</td>\n        <td>时</td>\n        <td>针</td>\n\
+  \        <td></td>\n        <td></td>\n        <td></td>\n        <td></td>\n  \
+  \      <td></td>\n        <td></td>\n        <td></td>\n    </tr>\n    <tr>\n  \
+  \      <td></td>\n        <td></td>\n        <td>找</td>\n        <td>四</td>\n  \
+  \      <td>字</td>\n        <td>方</td>\n        <td>形</td>\n        <td>成</td>\n\
+  \        <td>语</td>\n        <td></td>\n        <td></td>\n        <td></td>\n \
+  \       <td></td>\n        <td></td>\n    </tr>\n    <tr>\n        <td></td>\n \
+  \       <td></td>\n        <td>工</td>\n        <td>坏</td>\n        <td>物</td>\n\
+  \        <td>位</td>\n        <td>龙</td>\n        <td>恰</td>\n        <td>朱</td>\n\
+  \        <td>过</td>\n        <td>面</td>\n        <td></td>\n        <td></td>\n\
+  \        <td></td>\n    </tr>\n    <tr>\n        <td></td>\n        <td>节</td>\n\
+  \        <td>恶</td>\n        <td>米</td>\n        <td>阿</td>\n        <td>它</td>\n\
+  \        <td>日</td>\n        <td>蓝</td>\n        <td>柒</td>\n        <td>想</td>\n\
+  \        <td>根</td>\n        <td>美</td>\n        <td></td>\n        <td></td>\n\
+  \    </tr>\n    <tr>\n        <td></td>\n        <td>满</td>\n        <td>央</td>\n\
+  \        <td>情</td>\n        <td>不</td>\n        <td>唐</td>\n        <td>仙</td>\n\
+  \        <td>果</td>\n        <td>描</td>\n        <td>揽</td>\n        <td>说</td>\n\
+  \        <td>川</td>\n        <td></td>\n        <td></td>\n    </tr>\n    <tr>\n\
+  \        <td></td>\n        <td>十</td>\n        <td>律</td>\n        <td>伍</td>\n\
+  \        <td>氧</td>\n        <td>陆</td>\n        <td>温</td>\n        <td>迁</td>\n\
+  \        <td>丝</td>\n        <td>烟</td>\n        <td>贰</td>\n        <td>海</td>\n\
+  \        <td>功</td>\n        <td></td>\n    </tr>\n    <tr>\n        <td>玉</td>\n\
+  \        <td>生</td>\n        <td>计</td>\n        <td>赦</td>\n        <td>凭</td>\n\
+  \        <td>吕</td>\n        <td>红</td>\n        <td>豆</td>\n        <td>围</td>\n\
+  \        <td>竖</td>\n        <td>上</td>\n        <td>染</td>\n        <td>铁</td>\n\
+  \        <td></td>\n    </tr>\n    <tr>\n        <td>二</td>\n        <td>皇</td>\n\
+  \        <td>捂</td>\n        <td>别</td>\n        <td>一</td>\n        <td>月</td>\n\
+  \        <td>令</td>\n        <td>圆</td>\n        <td>八</td>\n        <td>步</td>\n\
+  \        <td>平</td>\n        <td>丸</td>\n        <td>请</td>\n        <td>化</td>\n\
+  \    </tr>\n    <tr>\n        <td>秋</td>\n        <td>亏</td>\n        <td>歌</td>\n\
+  \        <td>柴</td>\n        <td>埋</td>\n        <td>神</td>\n        <td>梦</td>\n\
+  \        <td>都</td>\n        <td>登</td>\n        <td>群</td>\n        <td>便</td>\n\
+  \        <td>戏</td>\n        <td>除</td>\n        <td>岸</td>\n    </tr>\n    <tr>\n\
+  \        <td>常</td>\n        <td>才</td>\n        <td>冰</td>\n        <td>又</td>\n\
+  \        <td>玖</td>\n        <td>丰</td>\n        <td>人</td>\n        <td>三</td>\n\
+  \        <td>改</td>\n        <td>楚</td>\n        <td>翻</td>\n        <td>无</td>\n\
+  \        <td>或</td>\n        <td>放</td>\n    </tr>\n    <tr>\n        <td>麦</td>\n\
+  \        <td>捌</td>\n        <td>下</td>\n        <td>缺</td>\n        <td>付</td>\n\
+  \        <td>霄</td>\n        <td>立</td>\n        <td>壹</td>\n        <td>足</td>\n\
+  \        <td>扶</td>\n        <td>明</td>\n        <td>远</td>\n        <td>样</td>\n\
+  \        <td>目</td>\n    </tr>\n    <tr>\n        <td>迁</td>\n        <td>波</td>\n\
+  \        <td>点</td>\n        <td>优</td>\n        <td>多</td>\n        <td>叶</td>\n\
+  \        <td>年</td>\n        <td>鼎</td>\n        <td>善</td>\n        <td>五</td>\n\
+  \        <td>江</td>\n        <td>快</td>\n        <td>失</td>\n        <td></td>\n\
+  \    </tr>\n    <tr>\n        <td></td>\n        <td>知</td>\n        <td>世</td>\n\
+  \        <td>参</td>\n        <td>甲</td>\n        <td>降</td>\n        <td>谷</td>\n\
+  \        <td>车</td>\n        <td>前</td>\n        <td>李</td>\n        <td>马</td>\n\
+  \        <td>条</td>\n        <td>森</td>\n        <td></td>\n    </tr>\n    <tr>\n\
+  \        <td></td>\n        <td>九</td>\n        <td>名</td>\n        <td>之</td>\n\
+  \        <td>坡</td>\n        <td>珠</td>\n        <td>拾</td>\n        <td>只</td>\n\
+  \        <td>产</td>\n        <td>金</td>\n        <td>七</td>\n        <td>刮</td>\n\
+  \        <td></td>\n        <td></td>\n    </tr>\n    <tr>\n        <td></td>\n\
+  \        <td>间</td>\n        <td>窍</td>\n        <td>区</td>\n        <td>六</td>\n\
+  \        <td>关</td>\n        <td>牛</td>\n        <td>全</td>\n        <td>云</td>\n\
+  \        <td>叁</td>\n        <td>土</td>\n        <td>互</td>\n        <td></td>\n\
+  \        <td></td>\n    </tr>\n    <tr>\n        <td></td>\n        <td></td>\n\
+  \        <td>英</td>\n        <td>内</td>\n        <td>部</td>\n        <td>大</td>\n\
+  \        <td>写</td>\n        <td>求</td>\n        <td>和</td>\n        <td>仇</td>\n\
+  \        <td>主</td>\n        <td></td>\n        <td></td>\n        <td></td>\n \
+  \   </tr>\n    <tr>\n        <td></td>\n        <td></td>\n        <td>偶</td>\n\
+  \        <td>完</td>\n        <td>灵</td>\n        <td>肆</td>\n        <td>在</td>\n\
+  \        <td>路</td>\n        <td>季</td>\n        <td></td>\n        <td></td>\n\
+  \        <td></td>\n        <td></td>\n        <td></td>\n    </tr>\n    <tr>\n\
+  \        <td></td>\n        <td></td>\n        <td></td>\n        <td>喝</td>\n \
+  \       <td>外</td>\n        <td>彩</td>\n        <td>惊</td>\n        <td></td>\n\
+  \        <td></td>\n        <td></td>\n        <td></td>\n        <td></td>\n  \
+  \      <td></td>\n        <td></td>\n    </tr>\n</table>"
+links:
+- path: ccbc12/index
+  title: CCBC12 索引页
+  type: index
+- path: ccbc12/pages/main
+  title: 时光机
+  type: page
+tips:
+- content: 先左右翻转整个字阵，然后根据前两行提示找四字成语。一共需要找十个成语，其中第一个成语是“一叶知秋”。
+  title: 我毫无头绪
+- content: 根据倒数第三行提示，寻找字阵里的十个大写数字，然后把每个方形里面的大写数字求和转字母。
+  title: 该如何提取
+title: '#1715 活字印刷版 - CCBC 12'
+type: problem

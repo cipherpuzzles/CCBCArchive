@@ -1,0 +1,22 @@
+answer: GUNDAM
+answer_analysis: ''
+content:
+- '1989年某本挂历上的海报，但是谁把海报撕碎了呢？
+
+
+  <img src="/ccbc12/images/b/372a75bdec5c447699b54ecf355f1e71.webp" width="600px"
+  />'
+links:
+- path: ccbc12/index
+  title: CCBC12 索引页
+  type: index
+- path: ccbc12/pages/main
+  title: 时光机
+  type: page
+tips:
+- content: 先滑动残片，用最短的步数（6步）把图片拼好吧。每一步滑动的残片上的数字之后会用。
+  title: 我毫无头绪
+- content: 图片结合年份指代了某个月份。某一块残片上的六个字母结合第一步得到的六个数字是某种和日历有关的加密方式。
+  title: 该如何提取
+title: '#1989 破碎的海报 - CCBC 12'
+type: problem

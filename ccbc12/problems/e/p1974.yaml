@@ -1,0 +1,23 @@
+answer: THREE STRIKES
+answer_analysis: ''
+content:
+- '地上摆着一些积木，似乎是从盒子里散落出来的。
+
+
+  <img src="/ccbc12/images/e/6d8f712c11064bd6b60502d8a5abdd61.webp" width="800px"/>'
+extend_content:
+- 你得到了一个神秘的数字：15.41
+links:
+- path: ccbc12/index
+  title: CCBC12 索引页
+  type: index
+- path: ccbc12/pages/main
+  title: 时光机
+  type: page
+tips:
+- content: 这是一道伤脑筋十二块谜题，要把所有积木放进中心镂空的盒子里。每个积木覆盖的格子需要是一个英语单词。
+  title: 我毫无头绪
+- content: 每一个积木中间都有一个比较亮的格子，把这些格子盖住的字母按照积木排列的顺序提取。
+  title: 该如何提取
+title: '#1974 积木 - CCBC 12'
+type: problem

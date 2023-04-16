@@ -1,0 +1,40 @@
+answer: VICTORY LAP
+answer_analysis: ''
+content:
+- '<span style="color: #9F9F9F;">时间线E在这里终结了，请回顾这一轮的穿越并尝试解开这条时间线上的缠结。</span>
+
+
+  <br><br>
+
+
+  你来到了一个连时间都不存在的地方，在一片虚无之中穿行。
+
+
+  过了不知道多久，你赫然发现前方是一座体育场。从场内照射出粗壮的光束，看上去很有热闹的气氛，似乎刚刚还在进行一场激烈的比赛。
+
+
+  <hr>
+
+
+  在体育场上有一位穿着田径服的运动员，似乎刚刚完成了自己的训练。
+
+
+  <span style="color: #F561A4">“我是Seven，是一位男子运动员。经过大量训练，我在各个单项得到了不错的分数。应该找个方式庆祝一下！”</span>'
+extend_content:
+- “哦，是你啊。”Seven向你挥了挥手，“来到这里不容易，那么开始今天的训练——100个俯卧撑、100个仰卧起坐、100个上下蹲、10公里长跑……”
+links:
+- path: ccbc12/index
+  title: CCBC12 索引页
+  type: index
+- path: ccbc12/pages/main
+  title: 时光机
+  type: page
+tips:
+- content: 一共有十个不同的田径项目，合起来也是一个田径项目。顺带一提，Seven没有打破任何单项的世界纪录。
+  title: 我没有头绪
+- content: 每个数字的单位是米或秒，可以转化成一个分数。转化表或公式可以在网上找到。
+  title: 神秘的数字怎么用
+- content: 把分数除以100后取对应小题答案的字母（有时需要四舍五入，但误差很小）。
+  title: 该如何提取
+title: 终结点E - CCBC 13
+type: problem
