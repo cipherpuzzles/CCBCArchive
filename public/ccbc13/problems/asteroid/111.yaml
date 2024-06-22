@@ -1,0 +1,18 @@
+answer: CAMEL
+content: []
+content-type: 0
+desc: Cam
+extend-data: null
+links:
+- path: ccbc13/index
+  title: 索引页
+  type: index
+- path: ccbc13/pages/asteroid
+  title: 小行星
+  type: page
+problem-image: /ccbc13/images/asteroid/1928dc52036344559a5f6be14be367e1.webp
+tips:
+- content: FOOT, FEET, BOARD, BEARD, MOAT, CLOVER
+  title: 题目里的图片分别对应什么单词？
+title: ⭐
+type: problem

@@ -1,0 +1,18 @@
+answer: DESPERADOES
+content: []
+content-type: 0
+desc: Per
+extend-data: null
+links:
+- path: ccbc13/index
+  title: 索引页
+  type: index
+- path: ccbc13/pages/asteroid
+  title: 小行星
+  type: page
+problem-image: /ccbc13/images/asteroid/1d8f3c683c1f4426aa004c8c09c85be1.webp
+tips:
+- content: 与 LOCK 相对的是 KEY，所以第一行是 KEYBOARD，需要在键盘上找三个 LOCK。
+  title: 我毫无头绪
+title: ⭐
+type: problem

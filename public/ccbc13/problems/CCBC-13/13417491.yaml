@@ -1,0 +1,140 @@
+answer: DOUBLE PLANET
+answer-analysis: '四个中心的答案是 `EXTENT`、`SOVIET`、`WATER`、和 `NOODLE`，刚好首字母对应东（E）南（S）西（W）北（N）。题目提示了“在4个中心的引导下，12股气流往对应方向而去”，也就是说每个面的三个非中心答案是要往该中心方向而去的。举例，`EXTENT`是白色面的中心，该面其它三个答案是
+  `UPPER BODY`、`SPECULATING`、以及`DIPLOMACY`，这三个词填入方框的顺序需要向东，也就是从左到右。加上题目里说到的”形成逆时针漩涡“，我们可以确定这三个答案须是填入每个方框的下沿。
+
+
+  正确填入方框的方法为：
+
+
+  <img src="/ccbc13/images/CCBC-13/a5d6807fa45c42779336db91507e81b0.webp" style="width:100%">
+
+  <br><br>
+
+
+  从箭头所示的地方将三个框展开填入蓝色格则，将碎片置于上下形成一些符合中文描述的单词，最后再由数字提取每个单词里的字母，得到最后答案 `DOUBLE PLANET`。
+
+
+  <style>
+
+  .ak {
+
+  border-spacing: 0;
+
+  border-collapse: separate;
+
+  }
+
+  .ak td {
+
+  text-align: center;
+
+  width: 50px;
+
+  height: 50px;
+
+  }
+
+  .ak td.indexed {
+
+  color: Chartreuse;
+
+  font-weight: bold;
+
+  }
+
+  </style>
+
+
+  <table class="ak">
+
+  <tr><td> </td><td> </td><td> </td><td> </td><td> </td><td> </td><td> </td><td> </td><td>V</td><td>
+  </td><td> </td><td> </td><td> </td><td> </td></tr>
+
+  <tr><td> </td><td> </td><td> </td><td> </td><td> </td><td> </td><td> </td><td> </td><td>A</td><td>P</td><td>
+  </td><td> </td></tr>
+
+  <tr><td class="indexed">D</td><td> </td><td>C</td><td> </td><td class="indexed">L</td><td
+  class="indexed">E</td><td> </td><td> </td><td class="indexed">L</td><td class="indexed">A</td><td>
+  </td><td>L</td><td> </td></tr>
+
+  <tr><td>E</td><td>W</td><td class="indexed">U</td><td>D</td><td>Y</td><td>A</td><td></td><td
+  class="indexed">P</td><td>E</td><td>S</td><td> </td><td>I</td><td> </td><td> </td></tr>
+
+  <tr class="row1"><td>C</td><td>A</td><td>P</td><td>O</td><td>R</td><td>G</td><td>E</td><td>A</td><td>N</td><td>T</td><td>I</td><td>N</td><td>D</td><td>S</td></tr>
+
+  <tr class="row2"><td>E</td><td>R</td><td>B</td><td>O</td><td>I</td><td>L</td><td>I</td><td>N</td><td>T</td><td>E</td><td>R</td><td
+  class="indexed">E</td><td>E</td><td>Z</td></tr>
+
+  <tr class="row3"><td>P</td><td>L</td><td>O</td><td>R</td><td>C</td><td>E</td><td>N</td><td>T</td><td>I</td><td>L</td><td>A</td><td>N</td><td>D</td><td>I</td></tr>
+
+  <tr><td>T</td><td class="indexed">O</td><td>A</td><td class="indexed">B</td><td>S</td><td>
+  </td><td> </td><td>H</td><td>N</td><td>  </td><td class="indexed">N</td><td> </td><td>U</td><td>
+  </td></tr>
+
+  <tr><td>I</td><td>C</td><td>R</td><td>E</td><td></td><td> </td><td> </td><td>E</td><td>E</td><td>
+  </td><td> </td><td> </td><td>C</td><td> </td></tr>
+
+  <tr><td>C</td><td>K</td><td>D</td><td>L</td><td> </td><td></td><td> </td><td>R</td><td>
+  </td><td></td><td></td><td></td><td class="indexed">T</td><td> </td></tr>
+
+  <tr><td>O</td><td> </td><td> </td><td>L</td></tr>
+
+  <tr><td>N</td><td> </td><td> </td><td> </td><td> </td><td> </td><td> </td></tr>
+
+  <tr><td>1</td><td>5</td><td>2</td><td>5</td><td>1</td><td>1</td><td> </td><td>1</td><td>3</td><td>2</td><td>4</td><td>4</td><td>6</td></tr>
+
+  <tr><td>反派</td><td>职业</td><td>家具</td><td>电器</td><td>文本</td><td>飞禽</td><td> </td><td>走兽</td><td>节日</td><td>颜料</td><td>国家</td><td>布料</td><td>动词</td></tr>
+
+  </table>'
+content:
+- "<style>\n    #rows {\n        margin: 20px;\n        clear: both;\n        border-spacing:\
+  \ 0;\n        border-collapse: separate;\n    }\n    \n    #rows td {\n        width:\
+  \ 50px;\n        height: 50px;\n        text-align: center;\n    }\n    .row1 td\
+  \ {\n        border: 2px solid #003eb8;\n    }\n    .row2 td {\n        border:\
+  \ 2px solid #00aae6;\n    }\n    .row3 td {\n        border: 2px solid #00e7ff;\n\
+  \    }\n    #brokenpieces li {\n        float: left;\n        list-style: none;\n\
+  \        padding-right: 30px;\n        writing-mode: vertical-lr;\n        text-orientation:\
+  \ upright;\n    }\n</style>\n\n<p>在4个中心的引导下，12股气流往对应方向而去，彼此垂直交织，形成了3个逆时针漩涡，将碎片卷入其上下，成为下一步的指引。</p>\n\
+  <p>下一步应该前往何处？</p>\n\n<div>\n<p><b>气流</b></p>\n<img src=\"/ccbc13/images/CCBC-13/f04724d1fde74a3d8832df85a3b2a197.webp\"\
+  \ style=\"width:500px\">\n</div>\n\n\n<table id=\"rows\">\n    <tr class=\"row1\"\
+  >\n        <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>\n\
+  \    </tr>\n    <tr class=\"row2\">\n        <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>\n\
+  \    </tr>\n    <tr class=\"row3\">\n        <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>\n\
+  \    </tr>\n    <tr>\n        <td>1</td>\n        <td>5</td>\n        <td>2</td>\n\
+  \        <td>5</td>\n        <td>1</td>\n        <td>1</td>\n        <td></td>\n\
+  \        <td>1</td>\n        <td>3</td>\n        <td>2</td>\n        <td>4</td>\n\
+  \        <td>4</td>\n        <td>6</td>\n        <td></td>\n    </tr>\n</table>\n\
+  \n<div>\n<p><b>碎片</b></p>\n<ul id=\"brokenpieces\">\n    <li>ARD</li>\n    <li>BELL</li>\n\
+  \    <li>CU</li>\n    <li>D</li>\n    <li>DE</li>\n    <li>EA</li>\n    <li>HER</li>\n\
+  \    <li>UCT</li>\n    <li>LI</li>\n    <li>LY</li>\n    <li>N</li>\n    <li>NE</li>\n\
+  \    <li>OCK</li>\n    <li>P</li>\n    <li>PAS</li>\n    <li>S</li>\n    <li>TICON</li>\n\
+  \    <li>VALE</li>\n    <li>W</li>\n</ul>\n</div>\n\n<ul style=\"clear:both;display:grid;grid-template-columns:\
+  \ auto auto auto auto\">\n    <li>家具</li>\n    <li>反派</li>\n    <li>动词</li>\n  \
+  \  <li>电器</li>\n    <li>飞禽</li>\n    <li>国家</li>\n    <li>布料</li>\n    <li>文本</li>\n\
+  \    <li>走兽</li>\n    <li>颜料</li>\n    <li>节日</li>\n    <li>职业</li>\n</ul>"
+content-type: 1
+desc: Meta 1
+extend-content:
+- <a class="btn btn-lg btn-primary" href="/article/ccbc13end">前往 CCBC 13 结局 →</a>
+extend-data: null
+links:
+- path: ccbc13/index
+  title: 索引页
+  type: index
+- path: ccbc13/pages/ccbc13
+  title: CCBC-13
+  type: page
+tips:
+- content: '四个面的中心首字母分别指示了一个方向，需要将其它三个角的答案向那个方向填入，形成三个逆时针的环。
+
+
+    另外注意三个环周围的细节，有些格子伸展到环外面代表该单词尚未结束，反之则表示该单词开头结尾在此处。'
+  title: 如何填这三个环？
+- content: 上面三个环填完以后，以箭头为起点，展开后填入对应颜色的横条格子。
+  title: 三条横着的格子是什么？
+- content: 填完三条横着的格子以后，将碎片放在格子上下方组成单词。下面的中文给出了单词的范围，帮助你确认你找到了正确的单词。
+  title: 字母碎片以及中文有什么用
+- content: 将横条和字母组成单词后，用数字提取每一列单词里的第 n 个字母。
+  title: 数字有什么用？
+title: 'Meta: CCBC-13'
+type: problem

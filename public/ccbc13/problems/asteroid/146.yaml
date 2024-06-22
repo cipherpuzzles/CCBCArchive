@@ -1,0 +1,32 @@
+answer: MONKEY
+content:
+- "<div class=\"ccbcstylewrapper\">\n    <style>\n        #wordsearch td {\n     \
+  \       width: 40px;\n            height: 40px;\n        }\n    </style>\n    <table\
+  \ id=\"wordsearch\">\n        <tr><td>D</td><td>U</td><td>B</td><td>O</td><td>L</td><td>T</td><td>W</td></tr>\n\
+  \        <tr><td>O</td><td>P</td><td>A</td><td>T</td><td>H</td><td>F</td><td>O</td></tr>\n\
+  \        <tr><td>C</td><td>R</td><td>O</td><td>R</td><td>F</td><td>U</td><td>L</td></tr>\n\
+  \        <tr><td>I</td><td>T</td><td>O</td><td>H</td><td>M</td><td>L</td><td>L</td></tr>\n\
+  \        <tr><td>W</td><td>L</td><td>E</td><td>K</td><td>E</td><td>Y</td><td>O</td></tr>\n\
+  \        <tr><td>N</td><td>P</td><td>R</td><td>E</td><td>V</td><td>O</td><td>F</td></tr>\n\
+  \    </table>\n    <ul style=\"margin-top: 30px\">\n        <li>BROKEN DOWN</li>\n\
+  \        <li>FOLLOW UP</li>\n        <li>FRIGHTFUL</li>\n        <li>LEFTOVER</li>\n\
+  \        <li>PARHELIC CIRCLE</li>\n        <li>SPLIT UP</li>\n        <li>SQUARE\
+  \ ROOT</li>\n        <li>THUNDERBOLT</li>\n    </ul>\n</div>"
+content-type: 1
+desc: Mon
+extend-data: null
+links:
+- path: ccbc13/index
+  title: 索引页
+  type: index
+- path: ccbc13/pages/asteroid
+  title: 小行星
+  type: page
+tips:
+- content: 这是一个word search，但是每个词/词组中有一些部分形容了其他部分的排列方式。
+  title: 我毫无思路
+- content: 最后没有用到的四个字母是一个画谜，答案长度是(1 2 3) -> (6)。其中 1 和 3 是还剩下的字母，用一个 2 字母的单词把它们连起来，最终形成一个
+    6 字母的单词。
+  title: 该如何提取
+title: ⭐
+type: problem

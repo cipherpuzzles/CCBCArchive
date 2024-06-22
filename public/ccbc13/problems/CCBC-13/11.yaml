@@ -1,0 +1,297 @@
+answer: AIRPORTS
+answer-analysis: '将每组 2n 个词按照某种规则分成数量相同的两组后，曲线会画出 `PVGLHRICNJFKetc8`。根据OOO OOO OOO
+  OOO ooo (0)提示的分段，分为 `PVG LHR ICN JFK etc (8)`。前面若干三字母都是机场代号，所以本题答案是 8 个字母的 `AIRPORTS`。
+
+
+  <style>
+
+  #ak td, #ak th {
+
+  padding: 10px;
+
+  }
+
+  </style>
+
+
+  <table id="ak">
+
+  <tr><th>#</th><th>左</th><th>右</th><th>分类规则</th></tr>
+
+  <tr><td>1</td><td>冯锡范（一剑无血），扈三娘（一丈青），蜀葵（一丈红），詹姆斯·麦卡沃伊（一美），《洛丽塔》（《一树梨花压海棠》）</td><td>包龙星（九品芝麻官），罗勒（九层塔），魏忠贤（九千岁），大灵猫（九节狸），洪七公（九指神丐）</td><td>别名里含有“九”或“一”</td></tr>
+
+  <tr><td>2</td><td>乒乓球，足球，网球，排球，篮球，棒球</td><td>毽球，悠悠球，羽毛球，冰球，橄榄球，美式足球</td><td>是否是球形</td></tr>
+
+  <tr><td>3</td><td>命令，大厅，嫦娥，精灵，茶色，规定，鼻科，阿哥</td><td>二本，忐忑，暗访，林肯，葛根，别人，蛋壳，飞鸽</td><td>拼音构成英文或德文单词</td></tr>
+
+  <tr><td>4</td><td>极坐标系，明斯特天文钟，大红斑，赛跑，利奇马台风</td><td>桥牌，转经筒，大本钟，“上图”，气压计</td><td>顺时针或逆时针</td></tr>
+
+  <tr><td>5</td><td>河流，导航，单位向量，视线，时间，箭矢</td><td>烟花，喷泉，霰弹，漫反射，冲击波，声音</td><td>方向是否单一</td></tr>
+
+  <tr><td>6</td><td>半规管，地基，独木桥，飞机，可乐，硝化甘油，油箱</td><td>鸡尾酒，节拍器，沙锤，扇子，骰盅，雪花球，荧光棒</td><td>是否应该摇动</td></tr>
+
+  <tr><td>7</td><td>丑，贩，品，孩，心，资，说，抄</td><td>款，驾，赦，圣，蒜，意，堂，约</td><td>可以跟“大”或者“小”组成常见词</td></tr>
+
+  <tr><td>8</td><td>环境保护，家用电器，风险投资，电子竞技，邮政编码，高原反应，北京大学，国有企业</td><td>电影明星，第三医院，支援西藏，汽车保险，中央银行，香港总督，水果拼盘，天干地支</td><td>ABCD的四字简称是AC还是BD</td></tr>
+
+  </table>'
+content:
+- 'OOO OOO OOO OOO ooo (0)
+
+
+  注意：这道题建议在电脑端进行操作。'
+content-type: 2
+desc: 机场
+extend-data: 4,3,1,1
+links:
+- path: ccbc13/index
+  title: 索引页
+  type: index
+- path: ccbc13/pages/ccbc13
+  title: CCBC-13
+  type: page
+tips:
+- content: 每个词都有一个含有数字一或者九的别名。
+  title: 1不会做
+- content: 按照“是否是球形”区分。
+  title: 2不会做
+- content: 每个词拼音都是英文词或者德文词。
+  title: 3不会做
+- content: 每个东西都跟顺时针或者逆时针有关。
+  title: 4不会做
+- content: 有些东西只有一个方向，有些东西没有一个明确方向（或者说有无数个方向）。
+  title: 5不会做
+- content: 有些需要摇晃，有些则恰恰不应摇晃。
+  title: 6不会做
+- content: 每个字可以跟“大”或者“小”组成常见词汇。
+  title: 7不会做
+- content: 每个ABCD的词都可以缩写成AC或者BD。
+  title: 8不会做
+- content: 看题目开头的文字，分段后不一定是单词，但是前四个都是属于同一类型的东西，回答该类型即可（注意多于一个，所以答案是复数）。数字代表答案的长度。
+  title: 解出来了一些字母，不知道如何理解
+title: 圈圈圆圆圈圈
+type: problem
+vue_script: "const { ref, onMounted, h, nextTick } = Vue;\r\nconst VECTORS = [\r\n\
+  \t[\r\n\t\t{i: 1, 'speed': -2, 'radius': 2.35456, 'offset': -154.954, 'label': '冯锡范'},\r\
+  \n\t\t{i: 2, 'speed': -1, 'radius': 2.61461, 'offset': -115.714, 'label': '包龙星'},\r\
+  \n\t\t{i: 3, 'speed': 5, 'radius': 0.367846, 'offset': -141.429, 'label': '罗勒'},\r\
+  \n\t\t{i: 4, 'speed': 2, 'radius': 1.21855, 'offset': -66.7174, 'label': '扈三娘'},\r\
+  \n\t\t{i: 5, 'speed': -3, 'radius': 0.336246, 'offset': 12.8571, 'label': '魏忠贤'},\r\
+  \n\t\t{i: 6, 'speed': -2, 'radius': 2.29904, 'offset': -141.429, 'label': '大灵猫'},\r\
+  \n\t\t{i: 7, 'speed': -1, 'radius': 0.92609, 'offset': -177.025, 'label': '蜀葵'},\r\
+  \n\t\t{i: 8, 'speed': 2, 'radius': 2.02977, 'offset': -38.5714, 'label': '洪七公'},\r\
+  \n\t\t{i: 9, 'speed': 1, 'radius': 0.845863, 'offset': -116.922, 'label': '詹姆斯·\
+  \ 麦卡沃伊'},\r\n\t\t{i: 10, 'speed': -3, 'radius': 1.44035, 'offset': -115.046, 'label':\
+  \ '《洛丽塔》'}\r\n\t],\r\n\t[\r\n\t\t{i: 11, 'speed': -2, 'radius': 2.07333, 'offset':\
+  \ -130.979, 'label': '乒乓球'},\r\n\t\t{i: 12, 'speed': 2, 'radius': 0.90834, 'offset':\
+  \ -114.211, 'label': '毽球'},\r\n\t\t{i: 13, 'speed': 4, 'radius': 0.361016, 'offset':\
+  \ -122.099, 'label': '悠悠球'},\r\n\t\t{i: 14, 'speed': -2, 'radius': 1.44407, 'offset':\
+  \ -122.099, 'label': '羽毛球'},\r\n\t\t{i: 15, 'speed': -1, 'radius': 1.1014, 'offset':\
+  \ 173.213, 'label': '足球'},\r\n\t\t{i: 16, 'speed': -3, 'radius': 1.62395, 'offset':\
+  \ -135.0, 'label': '网球'},\r\n\t\t{i: 17, 'speed': 1, 'radius': 2.09772, 'offset':\
+  \ 24.2105, 'label': '冰球'},\r\n\t\t{i: 18, 'speed': -1, 'radius': 3.33493, 'offset':\
+  \ -147.901, 'label': '橄榄球'},\r\n\t\t{i: 19, 'speed': 1, 'radius': 1.1014, 'offset':\
+  \ 23.2132, 'label': '排球'},\r\n\t\t{i: 20, 'speed': -4, 'radius': 0.227085, 'offset':\
+  \ -114.211, 'label': '美式足球'},\r\n\t\t{i: 21, 'speed': 2, 'radius': 1.19086, 'offset':\
+  \ -79.3644, 'label': '篮球'},\r\n\t\t{i: 22, 'speed': -4, 'radius': 0.89778, 'offset':\
+  \ -139.021, 'label': '棒球'}\r\n\t],\r\n\t[\r\n\t\t{i: 23, 'speed': -1, 'radius':\
+  \ 3.14686, 'offset': -165.0, 'label': '命令'},\r\n\t\t{i: 24, 'speed': 3, 'radius':\
+  \ 1.52842, 'offset': -45.0, 'label': '嫦娥'},\r\n\t\t{i: 25, 'speed': 7, 'radius':\
+  \ 0.239679, 'offset': -105.0, 'label': '规定'},\r\n\t\t{i: 26, 'speed': 4, 'radius':\
+  \ 0.636103, 'offset': -3.45036, 'label': '蛋壳'},\r\n\t\t{i: 27, 'speed': -3, 'radius':\
+  \ 0.957574, 'offset': -140.132, 'label': '林肯'},\r\n\t\t{i: 28, 'speed': 3, 'radius':\
+  \ 0.865881, 'offset': -74.7038, 'label': '飞鸽'},\r\n\t\t{i: 29, 'speed': 9, 'radius':\
+  \ 0.212281, 'offset': -135.0, 'label': '阿哥'},\r\n\t\t{i: 30, 'speed': -2, 'radius':\
+  \ 2.44823, 'offset': -148.668, 'label': '二本'},\r\n\t\t{i: 31, 'speed': -1, 'radius':\
+  \ 1.22967, 'offset': 99.3423, 'label': '忐忑'},\r\n\t\t{i: 32, 'speed': 1, 'radius':\
+  \ 0.629372, 'offset': -15.0, 'label': '精灵'},\r\n\t\t{i: 33, 'speed': -3, 'radius':\
+  \ 1.91053, 'offset': -135.0, 'label': '大厅'},\r\n\t\t{i: 34, 'speed': -4, 'radius':\
+  \ 1.21434, 'offset': -129.533, 'label': '别人'},\r\n\t\t{i: 35, 'speed': 2, 'radius':\
+  \ 1.07093, 'offset': -61.5977, 'label': '暗访'},\r\n\t\t{i: 36, 'speed': -9, 'radius':\
+  \ 0.169825, 'offset': -45.0, 'label': '鼻科'},\r\n\t\t{i: 37, 'speed': 1, 'radius':\
+  \ 0.880197, 'offset': 174.461, 'label': '葛根'},\r\n\t\t{i: 38, 'speed': -5, 'radius':\
+  \ 0.46977, 'offset': -105.0, 'label': '茶色'}\r\n\t],\r\n\t[\r\n\t\t{i: 39, 'speed':\
+  \ -1, 'radius': 3.77623, 'offset': -105.0, 'label': '极坐标系'},\r\n\t\t{i: 40, 'speed':\
+  \ 2, 'radius': 0.859739, 'offset': 135.0, 'label': '气压计'},\r\n\t\t{i: 41, 'speed':\
+  \ -3, 'radius': 0.764212, 'offset': -135.0, 'label': '赛跑'},\r\n\t\t{i: 42, 'speed':\
+  \ 3, 'radius': 1.14632, 'offset': 135.0, 'label': '大红斑'},\r\n\t\t{i: 43, 'speed':\
+  \ 1, 'radius': 2.04286, 'offset': -22.5, 'label': '转经筒'},\r\n\t\t{i: 44, 'speed':\
+  \ -5, 'radius': 0.563724, 'offset': -165.0, 'label': '利奇马台风'},\r\n\t\t{i: 45, 'speed':\
+  \ 1, 'radius': 1.25874, 'offset': -75.0, 'label': '明斯特天文钟'},\r\n\t\t{i: 46, 'speed':\
+  \ -1, 'radius': 2.92021, 'offset': -157.5, 'label': '桥牌'},\r\n\t\t{i: 47, 'speed':\
+  \ -2, 'radius': 2.00606, 'offset': -135.0, 'label': '大本钟'},\r\n\t\t{i: 48, 'speed':\
+  \ -3, 'radius': 0.783334, 'offset': -112.5, 'label': '上图'}\r\n\t],\r\n\t[\r\n\t\t\
+  {i: 40, 'speed': -1, 'radius': 3.30732, 'offset': -165.354, 'label': '河流'},\r\n\t\
+  \t{i: 50, 'speed': 2, 'radius': 1.14632, 'offset': -45.0, 'label': '漫反射'},\r\n\t\
+  \t{i: 51, 'speed': -7, 'radius': 0.286998, 'offset': -48.5882, 'label': '箭矢'},\r\
+  \n\t\t{i: 52, 'speed': 3, 'radius': 1.56254, 'offset': -48.5882, 'label': '单位向量'},\r\
+  \n\t\t{i: 53, 'speed': -2, 'radius': 2.29264, 'offset': -135.0, 'label': '烟花'},\r\
+  \n\t\t{i: 54, 'speed': -1, 'radius': 2.13365, 'offset': -74.4173, 'label': '喷泉'},\r\
+  \n\t\t{i: 55, 'speed': -3, 'radius': 2.03974, 'offset': -121.857, 'label': '导航'},\r\
+  \n\t\t{i: 56, 'speed': 1, 'radius': 1.5412, 'offset': 171.139, 'label': '霰弹'},\r\
+  \n\t\t{i: 57, 'speed': 3, 'radius': 0.41342, 'offset': 98.8613, 'label': '声音'},\r\
+  \n\t\t{i: 58, 'speed': 1, 'radius': 0.666955, 'offset': -34.866, 'label': '视线'},\r\
+  \n\t\t{i: 59, 'speed': 7, 'radius': 0.374645, 'offset': -121.857, 'label': '时间'},\r\
+  \n\t\t{i: 60, 'speed': -3, 'radius': 0.572343, 'offset': 164.417, 'label': '冲击波'}\r\
+  \n\t],\r\n\t[\r\n\t\t{i: 61, 'speed': -1, 'radius': 2.51817, 'offset': -161.309,\
+  \ 'label': '半规管'},\r\n\t\t{i: 62, 'speed': 2, 'radius': 1.05833, 'offset': -100.994,\
+  \ 'label': '可乐'},\r\n\t\t{i: 63, 'speed': -8, 'radius': 0.189804, 'offset': -49.0909,\
+  \ 'label': '荧光棒'},\r\n\t\t{i: 64, 'speed': 1, 'radius': 1.18867, 'offset': -46.3909,\
+  \ 'label': '独木桥'},\r\n\t\t{i: 65, 'speed': 3, 'radius': 1.34972, 'offset': -49.0909,\
+  \ 'label': '节拍器'},\r\n\t\t{i: 66, 'speed': -3, 'radius': 1.0791, 'offset': -99.6093,\
+  \ 'label': '飞机'},\r\n\t\t{i: 67, 'speed': -2, 'radius': 1.76402, 'offset': -170.391,\
+  \ 'label': '地基'},\r\n\t\t{i: 68, 'speed': 7, 'radius': 0.25423, 'offset': -114.545,\
+  \ 'label': '雪花球'},\r\n\t\t{i: 69, 'speed': -4, 'radius': 0.484383, 'offset': -108.691,\
+  \ 'label': '油箱'},\r\n\t\t{i: 70, 'speed': -1, 'radius': 3.59048, 'offset': -163.636,\
+  \ 'label': '鸡尾酒'},\r\n\t\t{i: 71, 'speed': -3, 'radius': 1.22848, 'offset': -130.909,\
+  \ 'label': '沙锤'},\r\n\t\t{i: 72, 'speed': 3, 'radius': 0.647405, 'offset': 10.9935,\
+  \ 'label': '硝化甘油'},\r\n\t\t{i: 73, 'speed': 1, 'radius': 1.16132, 'offset': -16.3636,\
+  \ 'label': '扇子'},\r\n\t\t{i: 74, 'speed': -4, 'radius': 0.77858, 'offset': -114.545,\
+  \ 'label': '骰盅'}\r\n\t],\r\n\t[\r\n\t\t{i: 75, 'speed': -3, 'radius': 1.71948, 'offset':\
+  \ -135.0, 'label': '丑'},\r\n\t\t{i: 76, 'speed': -2, 'radius': 1.22223, 'offset':\
+  \ -173.818, 'label': '贩'},\r\n\t\t{i: 77, 'speed': 4, 'radius': 0.262819, 'offset':\
+  \ -130.996, 'label': '堂'},\r\n\t\t{i: 78, 'speed': 2, 'radius': 0.415097, 'offset':\
+  \ 7.81568, 'label': '赦'},\r\n\t\t{i: 79, 'speed': -3, 'radius': 0.286603, 'offset':\
+  \ -121.752, 'label': '意'},\r\n\t\t{i: 80, 'speed': -1, 'radius': 0.681316, 'offset':\
+  \ -135.0, 'label': '心'},\r\n\t\t{i: 81, 'speed': 3, 'radius': 0.372606, 'offset':\
+  \ 40.9961, 'label': '圣'},\r\n\t\t{i: 82, 'speed': 3, 'radius': 1.14632, 'offset':\
+  \ 135.0, 'label': '品'},\r\n\t\t{i: 83, 'speed': -1, 'radius': 1.98231, 'offset':\
+  \ -118.891, 'label': '款'},\r\n\t\t{i: 84, 'speed': 1, 'radius': 0.593073, 'offset':\
+  \ -30.227, 'label': '驾'},\r\n\t\t{i: 85, 'speed': -4, 'radius': 0.529242, 'offset':\
+  \ -96.1821, 'label': '说'},\r\n\t\t{i: 86, 'speed': -6, 'radius': 0.241251, 'offset':\
+  \ -151.109, 'label': '约'},\r\n\t\t{i: 87, 'speed': 4, 'radius': 0.333638, 'offset':\
+  \ -99.8357, 'label': '抄'},\r\n\t\t{i: 88, 'speed': -2, 'radius': 0.335091, 'offset':\
+  \ -80.0967, 'label': '蒜'},\r\n\t\t{i: 89, 'speed': 2, 'radius': 0.770503, 'offset':\
+  \ 9.83571, 'label': '孩'},\r\n\t\t{i: 90, 'speed': 1, 'radius': 0.681316, 'offset':\
+  \ -45.0, 'label': '资'}\r\n\t],\r\n\t[\r\n\t\t{i: 91, 'speed': -1, 'radius': 2.14934,\
+  \ 'offset': -126.0, 'label': '环境保护'},\r\n\t\t{i: 92, 'speed': -3, 'radius': 1.11635,\
+  \ 'offset': -85.9349, 'label': '电影明星'},\r\n\t\t{i: 93, 'speed': 4, 'radius': 0.117957,\
+  \ 'offset': -36.0, 'label': '家用电器'},\r\n\t\t{i: 94, 'speed': -1, 'radius': 0.850091,\
+  \ 'offset': -84.5567, 'label': '第三医院'},\r\n\t\t{i: 95, 'speed': -2, 'radius': 1.6202,\
+  \ 'offset': -119.614, 'label': '水果拼盘'},\r\n\t\t{i: 96, 'speed': -4, 'radius': 0.151384,\
+  \ 'offset': -144.0, 'label': '风险投资'},\r\n\t\t{i: 97, 'speed': 3, 'radius': 0.365879,\
+  \ 'offset': -162.0, 'label': '电子竞技'},\r\n\t\t{i: 98, 'speed': 1, 'radius': 0.850091,\
+  \ 'offset': -129.557, 'label': '中央银行'},\r\n\t\t{i: 99, 'speed': -2, 'radius': 1.53258,\
+  \ 'offset': -72.0, 'label': '高原反应'},\r\n\t\t{i: 100, 'speed': 5, 'radius': 0.51321,\
+  \ 'offset': 18.3053, 'label': '香港总督'},\r\n\t\t{i: 101, 'speed': -3, 'radius': 0.40888,\
+  \ 'offset': 162.0, 'label': '邮政编码'},\r\n\t\t{i: 102, 'speed': 2, 'radius': 0.866737,\
+  \ 'offset': 72.0, 'label': '北京大学'},\r\n\t\t{i: 103, 'speed': -5, 'radius': 0.51321,\
+  \ 'offset': -116.695, 'label': '支援西藏'},\r\n\t\t{i: 104, 'speed': 3, 'radius': 1.11635,\
+  \ 'offset': 139.065, 'label': '汽车保险'},\r\n\t\t{i: 105, 'speed': 1, 'radius': 0.50328,\
+  \ 'offset': -54.0, 'label': '国有企业'},\r\n\t\t{i: 106, 'speed': 2, 'radius': 1.6202,\
+  \ 'offset': -29.6141, 'label': '天干地支'}\r\n\t],\r\n];\r\nconst SCALE_FACTOR = 20;\r\
+  \nconst LOCAL_STORAGE_SAVE_KEY = \"oooooo-savedata\";\r\n\r\nexport default {\r\n\
+  \    setup() {\r\n\t\tconst pages = ref(Array.from({length: VECTORS.length}).map((_,\
+  \ i) => i));\r\n\t\tconst currentPage = ref(0);\r\n\t\tconst leftCadiates = ref([]);\r\
+  \n\t\tconst rightCadiates = ref([]);\r\n\r\n\t\tonMounted(() => {\r\n\t\t\trenderPage(0);\r\
+  \n\t\t\tnextTick(() => {\r\n\t\t\t\tdrawNext();\r\n\t\t\t});\r\n\t\t});\r\n\r\n\t\
+  \tlet lastDrawTime = new Date();\r\n\t\tlet newPath = true;\r\n\t\tfunction drawNext()\
+  \ {\r\n\t\t\tlet time = new Date();\r\n\r\n\t\t\t//绘制所有的候选项\r\n\t\t\tfor (let item\
+  \ of leftCadiates.value) {\r\n\t\t\t\tlet ctx = document.getElementById(`sw-p-${item.i}`).getContext(\"\
+  2d\");\r\n\t\t\t\tlet radius = item.radius * SCALE_FACTOR;\r\n\t\t\t\tdraw(time,\
+  \ ctx, null, [item], radius + 5, radius + 5);\r\n\t\t\t}\r\n\t\t\tfor (let item\
+  \ of rightCadiates.value) {\r\n\t\t\t\tlet ctx = document.getElementById(`sw-p-${item.i}`).getContext(\"\
+  2d\");\r\n\t\t\t\tlet radius = item.radius * SCALE_FACTOR;\r\n\t\t\t\tdraw(time,\
+  \ ctx, null, [item], radius + 5, radius + 5);\r\n\t\t\t}\r\n\r\n\t\t\t//绘制左右两边的数据\r\
+  \n\t\t\tlet lCtx = document.getElementById('left-frame').getContext(\"2d\");\r\n\
+  \t\t\tlet lCtx2 = document.getElementById('left-frame-path').getContext(\"2d\");\r\
+  \n\t\t\tdraw(time, lCtx, lCtx2, leftCadiates.value, 150, 150, newPath);\r\n\t\t\t\
+  let rCtx = document.getElementById('right-frame').getContext(\"2d\");\r\n\t\t\t\
+  let rCtx2 = document.getElementById('right-frame-path').getContext(\"2d\");\r\n\t\
+  \t\tdraw(time, rCtx, rCtx2, rightCadiates.value, 150, 150, newPath);\r\n\t\t\tnewPath\
+  \ = false;\r\n\r\n\t\t\twindow.requestAnimationFrame(drawNext);\r\n\t\t}\r\n\r\n\
+  \t\tfunction draw(time, ctx, ctx2, drawItems, x, y, clearCtx2 = false) {\r\n\t\t\
+  \tctx.save();\r\n\t\t\tctx.clearRect(0, 0, ctx.canvas.width, ctx.canvas.height);\
+  \ //clear canvas\r\n\t\t\tctx.strokeStyle = \"rgba(0, 120, 0, 1)\";\r\n\t\t\tif\
+  \ (ctx2) ctx2.strokeStyle = \"rgba(180, 255, 180, 1)\";\r\n\t\t\tctx.lineWidth =\
+  \ 1;\r\n\t\t\t// move to center\r\n\t\t\tctx.translate(x, y);\r\n\t\t\tctx.beginPath();\r\
+  \n\t\t\tctx.arc(0, 0, 2, 0, 2 * Math.PI);\r\n\t\t\tctx.fillStyle = \"red\";\r\n\t\
+  \t\tctx.fill();\r\n\r\n\t\t\tif (ctx2) {\r\n\t\t\t\tctx2.save();\r\n\t\t\t\tif (clearCtx2)\
+  \ {\r\n\t\t\t\t\tctx2.clearRect(0, 0, 300, 300); // clear canvas\r\n\t\t\t\t\tctx2.beginPath();\r\
+  \n\t\t\t\t}\r\n\t\t\t\tctx2.translate(x, y);\r\n\t\t\t}\r\n\r\n\t\t\tfor (let i\
+  \ in drawItems) {\r\n\t\t\t\tdrawVectorAndTranslate(ctx, ctx2, drawItems[i], time,\
+  \  i == drawItems.length - 1);\r\n\t\t\t}\r\n\t\t\tctx.restore();\r\n\t\t\tif (ctx2)\
+  \ ctx2.restore();\r\n\t\t}\r\n\r\n\t\tfunction drawVectorAndTranslate(ctx, ctx2,\
+  \ vector, time, lastOne) {\r\n\t\t\tlet radius = vector.radius * SCALE_FACTOR;\r\
+  \n\t\t\t//console.log(vector);\r\n\t\t\tlet angle = 10 * vector.speed * (((2 * Math.PI)\
+  \ / 60) * time.getSeconds() + ((2 * Math.PI) / 60000) * time.getMilliseconds())\
+  \ + vector.offset * Math.PI / 180;\r\n\t\t\tctx.rotate(-angle);\r\n\t\t\t//console.log(angle);\r\
+  \n\t\t\tctx.beginPath();\r\n\t\t\tctx.moveTo(0, 0);\r\n\t\t\tctx.lineTo(radius,\
+  \ 0);\r\n\t\t\tctx.stroke();\r\n\t\t\t//ctx.save();\r\n\t\t\t//ctx.strokeStyle =\
+  \ \"rgba(0, 120, 0, 0.5)\";\r\n\t\t\tctx.beginPath();\r\n\t\t\tctx.arc(0, 0, radius,\
+  \ 0, 2 * Math.PI);\r\n\t\t\tctx.stroke();\r\n\t\t\t//ctx.restore();\r\n\t\t\tctx.translate(radius,\
+  \ 0);\r\n\t\t\tctx.rotate(angle);\r\n\r\n\t\t\tif (ctx2) {\r\n\t\t\t\t//console.log(time);\r\
+  \n\t\t\t\t//console.log('time is  ' + time + \" last draw is \" + lastDraw);\r\n\
+  \t\t\t\tctx2.rotate(-angle);\r\n\t\t\t\tctx2.translate(radius, 0);\r\n\t\t\t\tctx2.rotate(angle);\r\
+  \n\t\t\t\tif (lastOne) {\r\n\t\t\t\t\tif (time - lastDrawTime > 50)\r\n\t\t\t\t\t\
+  {\r\n\t\t\t\t\t\tctx2.beginPath();\r\n\t\t\t\t\t}\r\n\t\t\t\t\tctx2.lineTo(0, 0);\r\
+  \n\t\t\t\t\tctx2.stroke();\r\n\t\t\t\t\tlastDrawTime = time;\r\n\t\t\t\t}\r\n\t\t\
+  \t}\r\n\t\t}\r\n\r\n\t\tconst renderPage = (page) => {\r\n\t\t\t//载入本地存档\r\n\t\t\
+  \tlet saveData = {};\r\n\t\t\tlet saveDataString = localStorage.getItem(LOCAL_STORAGE_SAVE_KEY);\r\
+  \n\t\t\tif (saveDataString) {\r\n\t\t\t\tsaveData = JSON.parse(saveDataString);\r\
+  \n\t\t\t}\r\n\r\n\t\t\t//筛选本题数据\r\n\t\t\tlet rightSave = [];\r\n\t\t\tif (saveData[page])\
+  \ {\r\n\t\t\t\trightSave = saveData[page];\r\n\t\t\t}\r\n\t\t\tlet problem = VECTORS[page];\r\
+  \n\t\t\tleftCadiates.value = problem.filter(x => rightSave.indexOf(x.label) ===\
+  \ -1);\r\n\t\t\trightCadiates.value = problem.filter(x => rightSave.indexOf(x.label)\
+  \ !== -1);\r\n\r\n\t\t\tcurrentPage.value = page;\r\n\t\t\tnewPath = true;\r\n\t\
+  \t}\r\n\r\n\t\tlet dragging = null;\r\n\t\tlet dragDir = -1;\r\n\t\tconst drag =\
+  \ (item, dir) => {\r\n\t\t\tif (dir === 0 && leftCadiates.value.indexOf(item) ===\
+  \ 0) {\r\n\t\t\t\treturn false;\r\n\t\t\t}\r\n\r\n\t\t\tdragging = item;\r\n\t\t\
+  \tdragDir = dir;\r\n\t\t}\r\n\t\tconst drop = (target) => {\r\n\t\t\tif (dragging\
+  \ && dragDir !== target) {\r\n\t\t\t\t//从原来的框中删掉该元素\r\n\t\t\t\tconst removeItem\
+  \ = (c, i) => c.value.splice(c.value.indexOf(i), 1);\r\n\t\t\t\tif (dragDir ===\
+  \ 0) {\r\n\t\t\t\t\tremoveItem(leftCadiates, dragging);\r\n\t\t\t\t} else if (dragDir\
+  \ === 1) {\r\n\t\t\t\t\tremoveItem(rightCadiates, dragging);\r\n\t\t\t\t}\r\n\r\n\
+  \t\t\t\t//插入目标一侧\r\n\t\t\t\tif (target === 0) {\r\n\t\t\t\t\tleftCadiates.value.push(dragging);\r\
+  \n\t\t\t\t} else {\r\n\t\t\t\t\trightCadiates.value.push(dragging);\r\n\t\t\t\t\
+  }\r\n\r\n\t\t\t\t//保存到本地存档中\r\n\t\t\t\tlet saveData = {};\r\n\t\t\t\tlet saveDataString\
+  \ = localStorage.getItem(LOCAL_STORAGE_SAVE_KEY);\r\n\t\t\t\tif (saveDataString)\
+  \ {\r\n\t\t\t\t\tsaveData = JSON.parse(saveDataString);\r\n\t\t\t\t}\r\n\t\t\t\t\
+  if (target == 0) {\r\n\t\t\t\t\tif (saveData[currentPage.value]) {\r\n\t\t\t\t\t\
+  \tlet ii = saveData[currentPage.value].indexOf(dragging.label);\r\n\t\t\t\t\t\t\
+  if (ii !== -1) {\r\n\t\t\t\t\t\t\tsaveData[currentPage.value].splice(ii, 1);\r\n\
+  \t\t\t\t\t\t}\r\n\t\t\t\t\t}\r\n\t\t\t\t} else {\r\n\t\t\t\t\tif (!saveData[currentPage.value])\
+  \ {\r\n\t\t\t\t\t\tsaveData[currentPage.value] = [];\r\n\t\t\t\t\t}\r\n\t\t\t\t\t\
+  saveData[currentPage.value].push(dragging.label);\r\n\t\t\t\t}\r\n\t\t\t\tlocalStorage.setItem(LOCAL_STORAGE_SAVE_KEY,\
+  \ JSON.stringify(saveData));\r\n\t\t\t}\r\n\r\n\t\t\tdragging = null;\r\n\t\t\t\
+  dragDir = -1;\r\n\t\t\tnewPath = true;\r\n\t\t}\r\n\r\n        return {\r\n    \
+  \        pages,\r\n            currentPage,\r\n\t\t\trenderPage,\r\n\t\t\tleftCadiates,\r\
+  \n\t\t\trightCadiates,\r\n\t\t\tdrag,\r\n\t\t\tdrop\r\n        };\r\n    },\r\n\t\
+  components: {\r\n\t\tSingleWord: (props) => {\r\n\t\t\tconst item = props.item;\r\
+  \n\t\t\tconst radius = item.radius * SCALE_FACTOR;\r\n\t\t\tconst width = radius\
+  \ * 2 + 10;\r\n\r\n\t\t\tlet canvas = h('canvas', { width: width, height: width,\
+  \ draggable: false, id: `sw-p-${item.i}` });\r\n\t\t\treturn canvas;\r\n\t\t}\r\n\
+  \t}\r\n}"
+vue_template: "<template>\n\t<div class=\"puzzle-main-container\">\n\t\t<div class=\"\
+  problem-list\">\n\t\t\t<button v-for=\"i in pages\" class=\"btn\" :class=\"{'btn-success':\
+  \ currentPage == i, 'btn-secondary': currentPage != i}\"\n\t\t\t\t@click=\"renderPage(i)\"\
+  >{{ i + 1 }}</button>\n\t\t</div>\n\t\t<div class=\"problem-frame\">\n\t\t\t<div\
+  \ class=\"frame\">\n\t\t\t\t<canvas class=\"bottom\" id=\"left-frame\" width=\"\
+  300\" height=\"300\"></canvas>\n\t\t\t\t<canvas class=\"top\" id=\"left-frame-path\"\
+  \ width=\"300\" height=\"300\"></canvas>\n\t\t\t</div>\n\t\t\t<div class=\"frame\"\
+  >\n\t\t\t\t<canvas class=\"bottom\" id=\"right-frame\" width=\"300\" height=\"300\"\
+  ></canvas>\n\t\t\t\t<canvas class=\"top\" id=\"right-frame-path\" width=\"300\"\
+  \ height=\"300\"></canvas>\n\t\t\t</div>\n\t\t</div>\n\t\t<div class=\"problem-cadidates\"\
+  >\n\t\t\t<div class=\"cadidates\" @dragover.prevent @drop=\"drop(0)\">\n\t\t\t\t\
+  <div class=\"choice-item first-column\" v-for=\"x in leftCadiates\" draggable=\"\
+  true\" @dragstart=\"drag(x, 0)\">\n\t\t\t\t\t<single-word :item=\"x\" ></single-word>\n\
+  \t\t\t\t\t<label>{{ x.label }}</label>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t\t<div\
+  \ class=\"cadidates\" @dragover.prevent @drop=\"drop(1)\">\n\t\t\t\t<div class=\"\
+  choice-item\" v-for=\"x in rightCadiates\" draggable=\"true\" @dragstart=\"drag(x,\
+  \ 1)\">\n\t\t\t\t\t<single-word :item=\"x\"></single-word>\n\t\t\t\t\t<label>{{\
+  \ x.label }}</label>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</template>\n\
+  \n<style>\n.puzzle-main-container {\n\tuser-select: none;\n}\n.problem-frame {\n\
+  \tdisplay: grid;\n\tgrid-template-columns: 300px 300px;\n}\n.problem-frame .frame\
+  \ {\n\theight: 300px;\n\twidth: 300px;\n\tposition: relative;\n}\n.problem-frame\
+  \ .frame canvas {\n\tposition: absolute;\n}\n.problem-frame .frame .bottom {\n\t\
+  z-index: 1;\n}\n.problem-frame .frame .top {\n\tz-index: 2;\n}\n.problem-cadidates\
+  \ {\n\tdisplay: grid;\n\tgrid-template-columns: 300px 300px;\n}\n.problem-cadidates\
+  \ .cadidates {\n\tdisplay: flex;\n\tflex-wrap: wrap;\n\talign-content: flex-start;\n\
+  \tborder: solid 1px #ffffff;\n\tpadding: 20px;\n}\n.problem-cadidates .cadidates\
+  \ .choice-item {\n\ttext-align: center;\n\tmargin: 5px;\n\tcursor: grab;\n\ttransition:\
+  \ all 0.3s ease-in-out;\n\tborder-radius: 4px;\n}\n.problem-cadidates .cadidates\
+  \ .choice-item:hover  {\n\tbackground-color: #1e1d1f;\n}\n.problem-cadidates .cadidates\
+  \ .first-column:nth-child(1) {\n\tcursor: not-allowed;\n}\n.problem-cadidates .cadidates\
+  \ .first-column:hover:nth-child(1) {\n\tbackground-color: transparent;\n}\n.problem-cadidates\
+  \ .cadidates .choice-item label {\n\ttext-align: center;\n\tmargin: 5px;\n\tdisplay:\
+  \ block;\n}\n</style>"

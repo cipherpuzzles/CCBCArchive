@@ -1,0 +1,266 @@
+additional-answers:
+- answer: 漏网之鱼
+  extra: ''
+  message: 这是本题小题答案之一。
+- answer: 挨家挨户
+  extra: ''
+  message: 这是本题小题答案之一。
+- answer: 微言大义
+  extra: ''
+  message: 这是本题小题答案之一。
+- answer: 体无完肤
+  extra: ''
+  message: 这是本题小题答案之一。
+- answer: 恩重如山
+  extra: ''
+  message: 这是本题小题答案之一。
+- answer: 此言差矣
+  extra: ''
+  message: 这是本题小题答案之一。
+- answer: 绨袍之义
+  extra: ''
+  message: 这是本题小题答案之一。
+answer: VENTILATE
+answer-analysis: "<style>\n#answerkey tr:nth-child(even) td {\n    background-color:\
+  \ #444;\n}\n#answerkey th {\n    font-weight: bold;\n    vertical-align: middle;\n\
+  \    padding: 3px 10px;\n}\n#answerkey td {\n    vertical-align: middle;\n    padding:\
+  \ 3px 10px;\n}\n</style>\n\n## 表里如一\n\n填入成语使得中间两字是对应词语，且含义相近。本小题答案为`挨家挨户`。\n\n<table\
+  \ id = \"answerkey\">\n<tr><th>词语</th><th>成语</th><th>提取/长度</th><th>拼音</th><th>提取字母</th></tr>\n\
+  <tr><td>反常</td><td>一<font color=yellow>反常</font>态</td><td>(12/13)</td><td>YIFANCHANGT<font\
+  \ color=yellow>A</font>I</td><td>A</td></tr>\n<tr><td>真意</td><td>情<font color=yellow>真意</font>切</td><td>(2/13)</td><td>Q<font\
+  \ color=yellow>I</font>NGZHENYIQIE</td><td>I</td></tr>\n<tr><td>成名</td><td>功<font\
+  \ color=yellow>成名</font>就</td><td>(14/16)</td><td>GONGCHENGMING<font color=yellow>J</font>IU</td><td>J</td></tr>\n\
+  <tr><td>向往</td><td>心<font color=yellow>向往</font>之</td><td>(2/15)</td><td>X<font\
+  \ color=yellow>I</font>NXIANGWANGZHI</td><td>I</td></tr>\n<tr><td>无聊</td><td>百<font\
+  \ color=yellow>无聊</font>赖</td><td>(11/12)</td><td>BAIWULIAOL<font color=yellow>A</font>I</td><td>A</td></tr>\n\
+  <tr><td>风暴</td><td>狂<font color=yellow>风暴</font>雨</td><td>(3/14)</td><td>KU<font\
+  \ color=yellow>A</font>NGFENGBAOYU</td><td>A</td></tr>\n<tr><td>心诚</td><td>诚<font\
+  \ color=yellow>心诚</font>意</td><td>(15/15)</td><td>CHENGXINCHENGY<font color=yellow>I</font></td><td>I</td></tr>\n\
+  <tr><td>得意</td><td>志<font color=yellow>得意</font>满</td><td>(2/10)</td><td>Z<font\
+  \ color=yellow>H</font>IDEYIMAN</td><td>H</td></tr>\n<tr><td>满意</td><td>心<font color=yellow>满意</font>足</td><td>(10/10)</td><td>XINMANYIZ<font\
+  \ color=yellow>U</font></td><td>U</td></tr>\n</table>\n\n---\n## 望文生义\n\n所有成语均为字谜。本小题答案为`漏网之鱼`。\n\
+  \n<table id = \"answerkey\">\n<tr><th>成语字谜</th><th>解释</th><th>答案</th><th>提取/长度</th><th>拼音</th><th>提取字母</th></tr>\n\
+  <tr><td>引火自焚</td><td>加上(引)　火　自然(自)是　焚</td><td>林</td><td>(1/3)</td><td><font color=yellow>L</font>IN</td><td>L</td></tr>\n\
+  <tr><td>门庭若市</td><td>门　内(庭)　是(若)　市</td><td>闹</td><td>(3/3)</td><td>NA<font color=yellow>O</font></td><td>O</td></tr>\n\
+  <tr><td>食古不化</td><td>用口包围(食)　古；不化(定义，顽固)</td><td>固</td><td>(2/2)</td><td>G<font\
+  \ color=yellow>U</font></td><td>U</td></tr>\n<tr><td>死心塌地</td><td>亡(死)　心　在下方(塌地)</td><td>忘</td><td>(1/4)</td><td><font\
+  \ color=yellow>W</font>ANG</td><td>W</td></tr>\n<tr><td>交头接耳</td><td>交　在前侧(头)　加上(接)　阝(耳)</td><td>郊</td><td>(3/4)</td><td>JI<font\
+  \ color=yellow>A</font>O</td><td>A</td></tr>\n<tr><td>白玉无瑕</td><td>白＋玉　减去(无)　丶(瑕)</td><td>皇</td><td>(4/5)</td><td>HUA<font\
+  \ color=yellow>N</font>G</td><td>N</td></tr>\n<tr><td>水落石出</td><td>水　在下方(落)　石　出现在上方(出)</td><td>泵</td><td>(4/4)</td><td>BEN<font\
+  \ color=yellow>G</font></td><td>G</td></tr>\n<tr><td>一叶障目</td><td>丿(一叶)　盖住(障)　目</td><td>自</td><td>(1/2)</td><td><font\
+  \ color=yellow>Z</font>I</td><td>Z</td></tr>\n<tr><td>格外大方</td><td>口(格)　外侧是(外)　大的(大)　口(方)</td><td>回</td><td>(1/3)</td><td><font\
+  \ color=yellow>H</font>UI</td><td>H</td></tr>\n<tr><td>西装革履</td><td>在左侧(西)　加上(装)　革　(是)　鞋(履)</td><td>圭</td><td>(3/3)</td><td>GU<font\
+  \ color=yellow>I</font></td><td>I</td></tr>\n<tr><td>有口难言</td><td>加上(有)　口　(是)　哑(难言)</td><td>亚</td><td>(1/2)</td><td><font\
+  \ color=yellow>Y</font>A</td><td>Y</td></tr>\n<tr><td>单刀赴会</td><td>刂(单刀)　加上(赴)　会</td><td>刽</td><td>(2/3)</td><td>G<font\
+  \ color=yellow>U</font>I</td><td>U</td></tr>\n</table>\n\n---\n## 重三叠四\n\n每个图均为某一成语将一字替换为壹至拾后各取四分之一。将缺少字填入后按对应象限象形得到本小题答案为`绨袍之义`。\n\
+  \n<table id = \"answerkey\">\n<tr><th>编号</th><th>成语</th><th>缺字</th><th>象限</th><th>象形字母</th></tr>\n\
+  <tr><td>壹</td><td>歌功颂德</td><td>功</td><td>↖</td><td>T</td></tr>\n<tr><td>贰</td><td>缺斤少两</td><td>斤</td><td>↘</td><td>I</td></tr>\n\
+  <tr><td>叁</td><td>一命呜呼</td><td>命</td><td>↘</td><td>P</td></tr>\n<tr><td>肆</td><td>前程似锦</td><td>前</td><td>↙</td><td>A</td></tr>\n\
+  <tr><td>伍</td><td>沧海桑田</td><td>田</td><td>↖</td><td>O</td></tr>\n<tr><td>陆</td><td>子虚乌有</td><td>子</td><td>↗</td><td>Z</td></tr>\n\
+  <tr><td>柒</td><td>酣畅淋漓</td><td>酣</td><td>↗</td><td>H</td></tr>\n<tr><td>捌</td><td>饮鸩止渴</td><td>止</td><td>↖</td><td>I</td></tr>\n\
+  <tr><td>玖</td><td>拍案叫绝</td><td>叫</td><td>↘</td><td>Y</td></tr>\n<tr><td>拾</td><td>落叶归根</td><td>叶</td><td>↘</td><td>I</td></tr>\n\
+  </table>\n\n---\n## 相辅相成\n\n将两个成语反切，取前者的声母加后者的韵母组成新成语。本小题答案为`微言大义`。\n\n<table id\
+  \ = \"answerkey\">\n<tr><th>声母</th><th>韵母</th><th>答案</th><th>提取/长度</th><th>拼音</th><th>提取字母</th></tr>\n\
+  <tr><td>物极必反</td><td>半截入土</td><td>万劫不复</td><td>(1/10)</td><td><font color=yellow>W</font>ANJIEBUFU</td><td>W</td></tr>\n\
+  <tr><td>间不容发</td><td>怨入骨髓</td><td>健步如飞</td><td>(10/11)</td><td>JIANBURUF<font color=yellow>E</font>I</td><td>E</td></tr>\n\
+  <tr><td>一丁不识</td><td>闪烁其辞</td><td>言多必失</td><td>(8/11)</td><td>YANDUOB<font color=yellow>I</font>SHI</td><td>I</td></tr>\n\
+  <tr><td>隐隐约约</td><td>七擒七纵</td><td>一吟一咏</td><td>(6/11)</td><td>YIYIN<font color=yellow>Y</font>IYONG</td><td>Y</td></tr>\n\
+  <tr><td>香消玉殒</td><td>标新立异</td><td>小心翼翼</td><td>(3/11)</td><td>XI<font color=yellow>A</font>OXINYIYI</td><td>A</td></tr>\n\
+  <tr><td>伶牙俐齿</td><td>比翼连枝</td><td>礼义廉耻</td><td>(8/11)</td><td>LIYILIA<font color=yellow>N</font>CHI</td><td>N</td></tr>\n\
+  <tr><td>胡说八道</td><td>入不敷出</td><td>户枢不蠹</td><td>(8/9)</td><td>HUSHUBU<font color=yellow>D</font>U</td><td>D</td></tr>\n\
+  <tr><td>虚有其表</td><td>拳打脚踢</td><td>悬崖峭壁</td><td>(6/12)</td><td>XUANY<font color=yellow>A</font>QIAOBI</td><td>A</td></tr>\n\
+  <tr><td>小器易盈</td><td>熙熙攘攘</td><td>喜气洋洋</td><td>(5/12)</td><td>XIQI<font color=yellow>Y</font>ANGYANG</td><td>Y</td></tr>\n\
+  <tr><td>钩章棘句</td><td>不值一钱</td><td>固执己见</td><td>(7/11)</td><td>GUZHIJ<font color=yellow>I</font>JIAN</td><td>I</td></tr>\n\
+  </table>\n\n---\n## 合二为一\n\n对于每一个形如`ＡＢ为Ｃ`的成语，将Ａ和Ｂ连起来，用经过的数字提取Ｃ的拼音，得到本小题答案为`恩重如山`。\n\
+  \n<table id = \"answerkey\">\n<tr><th>ＡＢ为Ｃ</th><th>提取</th><th>拼音</th><th>提取字母</th></tr>\n\
+  <tr><td>助人为乐</td><td>2</td><td>L<font color=yellow>E</font></td><td>E</td></tr>\n\
+  <tr><td>左右为难</td><td>3</td><td>NA<font color=yellow>N</font></td><td>N</td></tr>\n\
+  <tr><td>好自为之</td><td>1</td><td><font color=yellow>Z</font>HI</td><td>Z</td></tr>\n\
+  <tr><td>习以为常</td><td>2</td><td>C<font color=yellow>H</font>ANG</td><td>H</td></tr>\n\
+  <tr><td>画地为牢</td><td>3</td><td>LA<font color=yellow>O</font></td><td>O</td></tr>\n\
+  <tr><td>一言为定</td><td>3</td><td>DI<font color=yellow>N</font>G</td><td>N</td></tr>\n\
+  <tr><td>相依为命</td><td>4</td><td>MIN<font color=yellow>G</font></td><td>G</td></tr>\n\
+  <tr><td>舍己为人</td><td>1</td><td><font color=yellow>R</font>EN</td><td>R</td></tr>\n\
+  <tr><td>先入为主</td><td>3</td><td>ZH<font color=yellow>U</font></td><td>U</td></tr>\n\
+  <tr><td>反败为胜</td><td>1</td><td><font color=yellow>S</font>HENG</td><td>S</td></tr>\n\
+  <tr><td>以邻为壑</td><td>1</td><td><font color=yellow>H</font>E</td><td>H</td></tr>\n\
+  <tr><td>四海为家</td><td>3</td><td>JI<font color=yellow>A</font></td><td>A</td></tr>\n\
+  <tr><td>步步为营</td><td>3</td><td>YI<font color=yellow>N</font>G</td><td>N</td></tr>\n\
+  </table>\n\n---\n## 无中生有\n\n每两个字都对应`有〇无〇`，`无〇有〇`，`有〇有〇`，`无〇无〇`中的一种成语，按五位二进制对应A1Z26转换，可以得到本小题答案为`此言差矣`。\
+  \ \n\n<table id = \"answerkey\">\n<tr><th>第一位</th><th>第二位</th><th>第三位</th><th>第四位</th><th>第五位</th><th>二进制</th><th>提取字母</th></tr>\n\
+  <tr><td><font color=gray>有名</font><font color=red>无实</font></td><td><font color=gray>有口</font><font\
+  \ color=red>无心</font></td><td><font color=red>无影</font><font color=gray>无踪</font></td><td><font\
+  \ color=gray>有血</font><font color=lime>有肉</font></td><td><font color=gray>有声</font><font\
+  \ color=lime>有色</font></td><td>00011</td><td>C\n<tr><td><font color=gray>无法</font><font\
+  \ color=red>无天</font></td><td><font color=lime>有才</font><font color=gray>无命</font></td><td><font\
+  \ color=gray>有眼</font><font color=red>无珠</font></td><td><font color=gray>有才</font><font\
+  \ color=red>无命</font></td><td><font color=lime>有名</font><font color=gray>无实</font></td><td>01001</td><td>I</td></tr>\n\
+  <tr><td><font color=gray>有钱</font><font color=lime>有势</font></td><td><font color=lime>有头</font><font\
+  \ color=gray>有脸</font></td><td><font color=red>无缘</font><font color=gray>无故</font></td><td><font\
+  \ color=red>无怨</font><font color=gray>无悔</font></td><td><font color=lime>有气</font><font\
+  \ color=gray>无力</font></td><td>11001</td><td>Y</td></tr>\n<tr><td><font color=red>无忧</font><font\
+  \ color=gray>无虑</font></td><td><font color=gray>有备</font><font color=red>无患</font></td><td><font\
+  \ color=red>无拘</font><font color=gray>无束</font></td><td><font color=red>无独</font><font\
+  \ color=gray>有偶</font></td><td><font color=lime>有眼</font><font color=gray>无珠</font></td><td>00001</td><td>A</td></tr>\n\
+  <tr><td><font color=red>无法</font><font color=gray>无天</font></td><td><font color=gray>有条</font><font\
+  \ color=lime>有理</font></td><td><font color=lime>有血</font><font color=gray>有肉</font></td><td><font\
+  \ color=lime>有钱</font><font color=gray>有势</font></td><td><font color=gray>无边</font><font\
+  \ color=red>无际</font></td><td>01110</td><td>N</td></tr>\n<tr><td><font color=gray>无穷</font><font\
+  \ color=red>无尽</font></td><td><font color=gray>有气</font><font color=red>无力</font></td><td><font\
+  \ color=gray>无拘</font><font color=red>无束</font></td><td><font color=lime>有教</font><font\
+  \ color=gray>无类</font></td><td><font color=lime>有条</font><font color=gray>有理</font></td><td>00011</td><td>C</td></tr>\n\
+  <tr><td><font color=gray>有恃</font><font color=red>无恐</font></td><td><font color=lime>有恃</font><font\
+  \ color=gray>无恐</font></td><td><font color=red>无依</font><font color=gray>无靠</font></td><td><font\
+  \ color=gray>无怨</font><font color=red>无悔</font></td><td><font color=red>无边</font><font\
+  \ color=gray>无际</font></td><td>01000</td><td>H</td></tr>\n<tr><td><font color=red>无穷</font><font\
+  \ color=gray>无尽</font></td><td><font color=red>无时</font><font color=gray>无刻</font></td><td><font\
+  \ color=gray>无缘</font><font color=red>无故</font></td><td><font color=gray>无依</font><font\
+  \ color=red>无靠</font></td><td><font color=gray>有头</font><font color=lime>有脸</font></td><td>00001</td><td>A</td></tr>\n\
+  <tr><td><font color=lime>有口</font><font color=gray>无心</font></td><td><font color=lime>有声</font><font\
+  \ color=gray>有色</font></td><td><font color=gray>无影</font><font color=red>无踪</font></td><td><font\
+  \ color=gray>无忧</font><font color=red>无虑</font></td><td><font color=lime>有备</font><font\
+  \ color=gray>无患</font></td><td>11001</td><td>Y</td></tr>\n<tr><td><font color=gray>有去</font><font\
+  \ color=red>无回</font></td><td><font color=lime>有去</font><font color=gray>无回</font></td><td><font\
+  \ color=gray>无时</font><font color=red>无刻</font></td><td><font color=gray>有教</font><font\
+  \ color=red>无类</font></td><td><font color=gray>无独</font><font color=lime>有偶</font></td><td>01001</td><td>I</td></tr>\n\
+  </table>\n\n---\n## 颠三倒四\n\n在右边的四栏中各挑选一项，组成左边的成语。计算康托展开顺序后可以得到本小题答案为`体无完肤`。\n\n\
+  <table id = \"answerkey\">\n<tr><th>拼音长度</th><th>成语</th><th>1</th><th>2</th><th>3</th><th>4</th><th>排序</th><th>提取字母</th></tr>\n\
+  <tr><td>(4 2 3 3)</td><td>柴米油盐</td><td>MI</td><td>YAN</td><td>YOU</td><td>CHAI</td><td>4132</td><td>T</td></tr>\n\
+  <tr><td>(4 2 3 5)</td><td>吹拉弹唱</td><td>TAN</td><td>CHUI</td><td>LA</td><td>CHANG</td><td>2314</td><td>I</td></tr>\n\
+  <tr><td>(4 3 3 3)</td><td>风花雪月</td><td>XUE</td><td>YUE</td><td>HUA</td><td>FENG</td><td>4312</td><td>W</td></tr>\n\
+  <tr><td>(2 2 3 2)</td><td>摸爬滚打</td><td>GUN</td><td>PA</td><td>DA</td><td>MO</td><td>4213</td><td>U</td></tr>\n\
+  <tr><td>(2 5 5 2)</td><td>起承转合</td><td>ZHUAN</td><td>HE</td><td>CHENG</td><td>QI</td><td>4312</td><td>W</td></tr>\n\
+  <tr><td>(5 3 4 2)</td><td>生老病死</td><td>SHENG</td><td>LAO</td><td>BING</td><td>SI</td><td>1234</td><td>A</td></tr>\n\
+  <tr><td>(2 2 2 2)</td><td>喜怒哀乐</td><td>NU</td><td>LE</td><td>XI</td><td>AI</td><td>3142</td><td>N</td></tr>\n\
+  <tr><td>(2 3 3 4)</td><td>衣食住行</td><td>YI</td><td>XING</td><td>ZHU</td><td>SHI</td><td>1432</td><td>F</td></tr>\n\
+  <tr><td>(3 2 3 2)</td><td>之乎者也</td><td>ZHE</td><td>HU</td><td>YE</td><td>ZHI</td><td>4213</td><td>U</td></tr>\n\
+  </table>\n\n---\n## 最终答案\n\n将每部分的答案填入与题目机制相关的词所在框，按数字提取，再按读音谐音可得到最终答案： `VENTILATE`\
+  \ 。\n\n<table id = \"answerkey\">\n<tr><th>小题标题</th><th>相关词</th><th>关系解释</th><th>答案</th><th>提取</th><th>提取汉字</th><th>谐音字母</th></tr>\n\
+  <tr><td>相辅相成</td><td>遗音余韵</td><td>组合声母韵母</td><td><font color=yellow>微</font>言大<font\
+  \ color=yellow>义</font></td><td>一〇〇二</td><td>微，义</td><td>VE</td></tr>\n<tr><td>合二为一</td><td>下不为例</td><td>ＡＢ为Ｃ</td><td><font\
+  \ color=yellow>恩</font>重如山</td><td>三〇〇〇</td><td>恩</td><td>N</td></tr>\n<tr><td>颠三倒四</td><td>分崩离析</td><td>四字并列</td><td><font\
+  \ color=yellow>体</font>无完肤</td><td>四〇〇〇</td><td>体</td><td>T</td></tr>\n<tr><td>表里如一</td><td>诸如此类</td><td>中心词近义</td><td><font\
+  \ color=yellow>挨</font>家<font color=yellow>挨</font>户</td><td>五〇六〇</td><td>挨，挨</td><td>I</td></tr>\n\
+  <tr><td>望文生义</td><td>一字之师</td><td>字谜</td><td><font color=yellow>漏</font>网之鱼</td><td>七〇〇〇</td><td>漏</td><td>L</td></tr>\n\
+  <tr><td>无中生有</td><td>有无相生</td><td>有和无</td><td>此<font color=yellow>言</font>差<font\
+  \ color=yellow>矣</font></td><td>〇八〇八</td><td>誒</td><td>A</td></tr>\n<tr><td>重三叠四</td><td>可见一斑</td><td>只可见一部分</td><td><font\
+  \ color=yellow>绨</font>袍之<font color=yellow>义</font></td><td>九〇〇十</td><td>绨，义</td><td>TE</td></tr>"
+content:
+- "<style>\n\t#test {\n\t\tbackground-color: white;\n\t\tcolor: black;\n\t\tdisplay:\
+  \ grid;\n\t\tgrid-template-columns: 6% 46% 2% 46%;\n\t}\n\t#test_a {\n\t\twriting-mode:\
+  \ vertical-lr;\n\t\ttext-orientation: sideways;\n\t\ttransform: rotate(180deg);\n\
+  \t\t -webkit-transform: rotate(180deg); /* Safari/Chrome */\n\t\t -moz-transform:\
+  \ rotate(180deg); /* Firefox */\n\t\t -o-transform: rotate(180deg); /* Opera */\n\
+  \t\t -ms-transform: rotate(180deg); \n\n\t\t text-align: center;\n\t\t padding:\
+  \ 0 20px 0;\n\t\t border-left: 1px dotted;\n\t}\n\t.testcontent {\n\t\tpadding:\
+  \ 5%;\n\t}\n\n\t.testcontent pre {\n\t\tfont-size: 18px;\n\t}\n\n\th2 {\n\t\tpadding-top:\
+  \ 40px;\n\t\tclear: both;\n\t}\n\n\t#score {\n\t\tfont-size: 16px;\n\t\tborder-collapse:\
+  \ collapse;\n\t}\n\t#score td {\n\t\twidth: 25px;\n\t\theight: 25px;\n\t\ttext-align:\
+  \ center;\n\t\tcolor: black;\n\t}\n\t#score tr.light td {\n\t\tcolor: #ccc;\n\t\
+  }\n\t#score tr.grid td {\n\t\tborder: 1px solid #ccc;\n\t}\n\t#score tr td.a {\n\
+  \t\tborder-left: 2px solid black;\n\t\tborder-top: 2px solid black;\n\t\tborder-bottom:\
+  \ 2px solid black;\n\t}\n\t#score tr td.b {\n\t\tborder-top: 2px solid black;\n\t\
+  \tborder-bottom: 2px solid black;\n\t}\n\t#score tr td.c {\n\t\tborder-right: 2px\
+  \ solid black;\n\t\tborder-top: 2px solid black;\n\t\tborder-bottom: 2px solid black;\n\
+  \t}\n\t#score tr td.d {\n\t\tborder: 2px solid black;\n\t}\n\n\t#wzsy {\n\t\tdisplay:\
+  \ grid;\n\t\tgrid-template-columns: repeat(5, 40px);\n\t}\n\t#wzsy div {\n\t\twidth:\
+  \ 40px;\n\t\theight: 40px;\n\t\tfloat: left;\n\t\tfont-size: 25px;\n\t\ttext-align:\
+  \ center;\n\t\tborder: 1px solid black;\n\t}\n\t#dsds {\n\t\tborder-collapse: collapse;\n\
+  \t}\n\t#dsds td {\n\t\tpadding: 5px 10px;\n\t\tcolor: black;\n\t\tfont-size: 20px;\n\
+  \t}\n\t#dsds td:not(:first-child) {\n\t\tborder-left: 1px solid #888;\n\t\tborder-right:\
+  \ 1px solid #888;\n\t}\n</style>\n\n<div id=\"test\">\n\t<div id=\"test_a\">姓名_________________　　　　　　班级________________</div>\n\
+  \t<div class=\"testcontent\">\n\t\t<h1 style=\"text-align: center\">成语考试</h1>\n\
+  \        <table id=\"score\">\n                <tr class='light grid'><td class=\"\
+  a\">遗</td><td class=\"b\">音</td><td class=\"b\">余</td><td class=\"b\">韵</td><td\
+  \ class=\"a\">下</td><td class=\"b\">不</td><td class=\"b\">为</td><td class=\"b\"\
+  >例</td><td class=\"a\">分</td><td class=\"b\">崩</td><td class=\"b\">离</td><td class=\"\
+  b\">析</td><td class=\"a\">诸</td><td class=\"b\">如</td><td class=\"b\">此</td><td\
+  \ class=\"c\">类</td></tr>\n                <tr><td>一</td><td></td><td></td><td>二</td><td>三</td><td></td><td></td><td></td><td>四</td><td></td><td></td><td></td><td>五</td><td></td><td>六</td><td></td><td></td><td></td><td></td></tr>\n\
+  \                <tr class='light grid'><td class=\"a\">一</td><td class=\"b\">字</td><td\
+  \ class=\"b\">之</td><td class=\"b\">师</td><td class=\"a\">有</td><td class=\"b\"\
+  >无</td><td class=\"b\">相</td><td class=\"b\">生</td><td class=\"a\">可</td><td class=\"\
+  b\">见</td><td class=\"b\">一</td><td class=\"c\">斑</td></tr>\n                <tr><td>七</td><td></td><td></td><td></td><td></td><td>八</td><td></td><td>八</td><td>九</td><td></td><td></td><td>十</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>\n\
+  \                <tr class='light grid2'><td class=\"d\">一</td><td></td><td class=\"\
+  d\">二</td><td></td><td class=\"d\">三</td><td></td><td class=\"d\">四</td><td></td><td\
+  \ class=\"d\">五</td><td></td><td class=\"a\" style=\"border-right: 1px solid #ccc\"\
+  >六</td><td class=\"d\">七</td><td></td><td class=\"a\" style=\"border-right: 1px\
+  \ solid #ccc\">八</td><td class=\"c\">八</td><td></td><td class=\"d\">九</td><td></td><td\
+  \ class=\"d\">十</td></tr>\n        </table>\n        <div style=\"display: grid;\
+  \ grid-template-columns: 50% 50%; padding-top: 60px\">\n        \t<div>\n\t\t\t\t\
+  <h2 style=\"padding-top: 0\">表里如一</h2>\n\t\t\t\t<pre>1.反常：<span style=\"letter-spacing:\
+  \ 2px\">＿＿＿＿</span> (12/13)\n2.真意：<span style=\"letter-spacing: 2px\">＿＿＿＿</span>\
+  \ (2/13)\n3.成名：<span style=\"letter-spacing: 2px\">＿＿＿＿</span> (14/16)\n4.向往：<span\
+  \ style=\"letter-spacing: 2px\">＿＿＿＿</span> (2/15)\n5.无聊：<span style=\"letter-spacing:\
+  \ 2px\">＿＿＿＿</span> (11/12)\n6.风暴：<span style=\"letter-spacing: 2px\">＿＿＿＿</span>\
+  \ (3/14)\n7.心诚：<span style=\"letter-spacing: 2px\">＿＿＿＿</span> (15/15)\n8.得意：<span\
+  \ style=\"letter-spacing: 2px\">＿＿＿＿</span> (2/10)\n9.满意：<span style=\"letter-spacing:\
+  \ 2px\">＿＿＿＿</span> (10/10)</pre>\n\t\t\t</div>\n\t\t\t<div style=\"border-left:\
+  \ 1px solid black; padding-left: 20px\">\n\t\t\t\t<h2 style=\"padding-top: 0\">望文生义</h2>\n\
+  \t\t\t\t<pre>1.引火自焚：＿ (1/3)\n2.门庭若市：＿ (3/3)\n3.食古不化：＿ (2/2)\n4.死心塌地：＿ (1/4)\n5.交头接耳：＿\
+  \ (3/4)\n6.白玉无瑕：＿ (4/5)\n7.水落石出：＿ (4/4)\n8.一叶障目：＿ (1/2)\n9.格外大方：＿ (1/3)\n10.西装革履：＿\
+  \ (3/3)\n11.有口难言：＿ (1/2)\n12.单刀赴会：＿ (2/3)</pre>\n\t\t\t</div>\n</div>\n\t\t<h2>重三叠四</h2>\n\
+  \t\t<img src=\"/ccbc13/images/CCBC-13/2fdca49de9a64f6297e32edd4f14aac7.webp\" style=\"\
+  width:100%\">\n\t\t<h2>相辅相成</h2>\n<pre>1.物极必反——<span style=\"letter-spacing: 2px\"\
+  >＿＿＿＿</span>——半截入土 (1/10)\n2.间不容发——<span style=\"letter-spacing: 2px\">＿＿＿＿</span>——怨入骨髓\
+  \ (10/11)\n3.一丁不识——<span style=\"letter-spacing: 2px\">＿＿＿＿</span>——闪烁其辞 (8/11)\n\
+  4.隐隐约约——<span style=\"letter-spacing: 2px\">＿＿＿＿</span>——七擒七纵 (6/11)\n5.香消玉殒——<span\
+  \ style=\"letter-spacing: 2px\">＿＿＿＿</span>——标新立异 (3/11)\n6.伶牙俐齿——<span style=\"\
+  letter-spacing: 2px\">＿＿＿＿</span>——比翼连枝 (8/11)\n7.胡说八道——<span style=\"letter-spacing:\
+  \ 2px\">＿＿＿＿</span>——入不敷出 (8/9)\n8.虚有其表——<span style=\"letter-spacing: 2px\">＿＿＿＿</span>——拳打脚踢\
+  \ (6/12)\n9.小器易盈——<span style=\"letter-spacing: 2px\">＿＿＿＿</span>——熙熙攘攘 (5/12)\n\
+  10.钩章棘句——<span style=\"letter-spacing: 2px\">＿＿＿＿</span>——不值一钱 (7/11)</pre>\n\t\
+  </div>\n\t<div>\n\t\t<div style=\"width:1px; background-color: #333; height: 90%;\
+  \ top: 5%; position: relative\"></div>\n\t</div>\n\t<div class=\"testcontent\">\n\
+  \t\t<h2>合二为一</h2>\n\t\t<p><img src=\"/ccbc13/images/CCBC-13/aec3183ddfc74662b1d0db6d20634735.webp\"\
+  \ style=\"width:300px\"></p>\n\t\t<h2>无中生有</h2>\n\t\t<div id=\"wzsy\" style=\"padding-left:\
+  \ 50px\">\n\t\t\t<div>实</div><div>心</div><div>影</div><div>肉</div><div>色</div>\n\t\
+  \t\t<div>天</div><div>才</div><div>珠</div><div>命</div><div>名</div>\n\t\t\t<div>势</div><div>头</div><div>缘</div><div>怨</div><div>气</div>\n\
+  \t\t\t<div>忧</div><div>患</div><div>拘</div><div>独</div><div>眼</div>\n\t\t\t<div>法</div><div>理</div><div>血</div><div>钱</div><div>际</div>\n\
+  \t\t\t<div>尽</div><div>力</div><div>束</div><div>教</div><div>条</div>\n\t\t\t<div>恐</div><div>恃</div><div>依</div><div>悔</div><div>边</div>\n\
+  \t\t\t<div>穷</div><div>时</div><div>故</div><div>靠</div><div>脸</div>\n\t\t\t<div>口</div><div>声</div><div>踪</div><div>虑</div><div>备</div>\n\
+  \t\t\t<div>回</div><div>去</div><div>刻</div><div>类</div><div>偶</div>\n\t\t</div>\n\
+  \t\t<h2>颠三倒四</h2>\n\t\t<table id=\"dsds\">\n\t\t\t<tr>\n\t\t\t<td>1. (4 2 3 3)</td>\n\
+  \t\t\t<td>GUN</td>\n\t\t\t<td>CHUI</td>\n\t\t\t<td>BING</td>\n\t\t\t<td>AI</td>\n\
+  \t\t\t</tr>\n\t\t\t<tr>\n\t\t\t<td>2. (4 2 3 5)</td>\n\t\t\t<td>MI</td>\n\t\t\t\
+  <td>HE</td>\n\t\t\t<td>CHENG</td>\n\t\t\t<td>CHAI</td>\n\t\t\t</tr>\n\t\t\t<tr>\n\
+  \t\t\t<td>3. (4 3 3 3)</td>\n\t\t\t<td>NU</td>\n\t\t\t<td>HU</td>\n\t\t\t<td>DA</td>\n\
+  \t\t\t<td>CHANG</td>\n\t\t\t</tr>\n\t\t\t<tr>\n\t\t\t<td>4. (2 2 3 2)</td>\n\t\t\
+  \t<td>SHENG</td>\n\t\t\t<td>LAO</td>\n\t\t\t<td>HUA</td>\n\t\t\t<td>FENG</td>\n\t\
+  \t\t</tr>\n\t\t\t<tr>\n\t\t\t<td>5. (2 5 5 2)</td>\n\t\t\t<td>TAN</td>\n\t\t\t<td>LE</td>\n\
+  \t\t\t<td>LA</td>\n\t\t\t<td>MO</td>\n\t\t\t</tr>\n\t\t\t<tr>\n\t\t\t<td>6. (5 3\
+  \ 4 2)</td>\n\t\t\t<td>XUE</td>\n\t\t\t<td>PA</td>\n\t\t\t<td>XI</td>\n\t\t\t<td>QI</td>\n\
+  \t\t\t</tr>\n\t\t\t<tr>\n\t\t\t<td>7. (2 2 2 2)</td>\n\t\t\t<td>YI</td>\n\t\t\t\
+  <td>XING</td>\n\t\t\t<td>YE</td>\n\t\t\t<td>SHI</td>\n\t\t\t</tr>\n\t\t\t<tr>\n\t\
+  \t\t<td>8. (2 3 3 4)</td>\n\t\t\t<td>ZHE</td>\n\t\t\t<td>YAN</td>\n\t\t\t<td>YOU</td>\n\
+  \t\t\t<td>SI</td>\n\t\t\t</tr>\n\t\t\t<tr>\n\t\t\t<td>9. (3 2 3 2)</td>\n\t\t\t\
+  <td>ZHUAN</td>\n\t\t\t<td>YUE</td>\n\t\t\t<td>ZHU</td>\n\t\t\t<td>ZHI</td>\n\t\t\
+  \t</tr>\n\t\t</table>\n\t</div>\n</div>"
+content-type: 1
+desc: 通风
+extend-data: 2,4,1,1
+links:
+- path: ccbc13/index
+  title: 索引页
+  type: index
+- path: ccbc13/pages/ccbc13
+  title: CCBC-13
+  type: page
+tips:
+- content: 在词语前后各加一字，形成一个四字成语，意义仍和原来的二字词语一样。
+  title: 表里如一怎么做？
+- content: 把每个成语当成字谜理解，各打一字。
+  title: 望文生义怎么做？
+- content: 每个田字格中是某个成语的三个字和一个大写数字的组合。将成语中缺失的字写入田字格，看缺少的象限里的形状像什么字母。
+  title: 重三叠四怎么做？
+- content: 将两边成语反切（也就是一边的声母加上另一边的韵母），结果仍然是一个成语。
+  title: 相辅相成怎么做？
+- content: 如果左边字A和右边字B合起来能形成“AB为C”格式的成语，则将AB连线，用连线穿过的数字提取C的拼音字母。
+  title: 合二为一怎么做？
+- content: 将字两两配对，形成“？A？B”的成语，？处可以是”有“也可以是”无“。在原方阵里标注每个字用到的是”有“还是”无“。
+  title: 无中生有怎么做？
+- content: 四列每列各取一字，可以形成一个成语，其拼音长度对应左侧的数字。成语的类型都是枚举四种同一类型的字，例如“青红皂白“、“鳏寡孤独“这种。解出每个成语后，每行按照取1234列的顺序，计算康托展开再换成字母。
+  title: 颠三倒四怎么做？
+- content: 把每道小题的答案按照小题的主题填进考卷开头的空格，然后把用数字标记的字取出来，考虑每个字的读音像什么。（有两组是两个字，要放在一起看。）
+  title: 该如何提取？
+title: 成语考试
+type: problem

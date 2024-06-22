@@ -1,0 +1,18 @@
+answer: MOUNTAINS
+content: []
+content-type: 0
+desc: Mus
+extend-data: null
+links:
+- path: ccbc13/index
+  title: 索引页
+  type: index
+- path: ccbc13/pages/asteroid
+  title: 小行星
+  type: page
+problem-image: /ccbc13/images/asteroid/de4e557d1f374338809ce024e5fff1d5.webp
+tips:
+- content: 根据斜线走势上下，翻译五位一组的二进制。
+  title: 我毫无头绪
+title: ⭐
+type: problem

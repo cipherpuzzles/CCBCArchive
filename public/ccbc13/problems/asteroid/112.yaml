@@ -1,0 +1,18 @@
+answer: ESCAPE
+content: []
+content-type: 0
+desc: Cap
+extend-data: null
+links:
+- path: ccbc13/index
+  title: 索引页
+  type: index
+- path: ccbc13/pages/asteroid
+  title: 小行星
+  type: page
+problem-image: /ccbc13/images/asteroid/955907c3053e4cb3b55adb6c8ba46305.webp
+tips:
+- content: LOG, LOGARITHM, TAN, TANGENT, WED, OZ
+  title: 题目里的图片分别对应什么单词？
+title: ⭐
+type: problem

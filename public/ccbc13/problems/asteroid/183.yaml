@@ -1,0 +1,18 @@
+answer: SUPREMACY
+content: []
+content-type: 0
+desc: UMa
+extend-data: null
+links:
+- path: ccbc13/index
+  title: 索引页
+  type: index
+- path: ccbc13/pages/asteroid
+  title: 小行星
+  type: page
+problem-image: /ccbc13/images/asteroid/7d8ce8d331a54214b43be683ae3ef0b2.webp
+tips:
+- content: 八串圆圈代表太阳系的八大行星
+  title: 我毫无头绪
+title: ⭐
+type: problem

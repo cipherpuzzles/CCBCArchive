@@ -1,0 +1,20 @@
+answer: SCEPTER
+content:
+- "<div class=\"ccbcstylewrapper\">\n    <img src=\"/ccbc13/images/asteroid/f75d57aed7784032acf130f95c122906.webp\"\
+  \ style=\"width:100%\">\n</div>"
+content-type: 0
+desc: Cep
+extend-data: null
+links:
+- path: ccbc13/index
+  title: 索引页
+  type: index
+- path: ccbc13/pages/asteroid
+  title: 小行星
+  type: page
+problem-image: /ccbc13/images/asteroid/e50dede2816a48e3839483704cad3177.webp
+tips:
+- content: 题目里的图片是由字母拼成的。
+  title: 我毫无思路
+title: ⭐
+type: problem

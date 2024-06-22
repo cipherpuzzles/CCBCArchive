@@ -1,0 +1,37 @@
+answer: DOWNWARD
+content:
+- "<div class=\"ccbcstylewrapper\">\n    <style>\n        .mytable1, .mytable2 {\n\
+  \            border-collapse: collapse;\n            margin: 10px;\n           \
+  \ position: absolute;\n        }\n        .mytable2 {\n            border: 3px solid\
+  \ #888;\n            left: 30px;\n            top: 30px;\n            transform:\
+  \ rotate(10deg);\n        }\n        .mytable1 td {\n            border: 1px solid\
+  \ #888;\n        }\n        .mytable1 td, .mytable2 td {\n            width: 50px;\n\
+  \            height: 50px;\n\n            text-align: center;\n            font-size:\
+  \ 32px;\n        }\n        .mytable2 td:not(.black) {\n            background-color:\
+  \ rgba(0, 0, 0, 0.8);\n        }\n    </style>\n    <div style=\"position: relative;height:\
+  \ 250px\">\n    <table class=\"mytable1\">\n        <tr>\n        <td>E</td>\n \
+  \       <td>D</td>\n        <td>G</td>\n        <td>E</td>\n        </tr>\n    \
+  \    <tr>\n        <td>G</td>\n        <td>N</td>\n        <td>A</td>\n        <td>W</td>\n\
+  \        </tr>\n        <tr>\n        <td>R</td>\n        <td>O</td>\n        <td>D</td>\n\
+  \        <td>E</td>\n        </tr>\n        <tr>\n        <td>H</td>\n        <td>A</td>\n\
+  \        <td>W</td>\n        <td>K</td>\n        </tr>\n    </table>\n\n    <table\
+  \ class=\"mytable2\">\n        <tr>\n    <td></td>\n    <td class=\"black\"></td>\n\
+  \    <td></td>\n    <td></td>\n    </tr>\n    <tr>\n    <td></td>\n    <td></td>\n\
+  \    <td></td>\n    <td></td>\n    </tr>\n    <tr>\n    <td></td>\n    <td class=\"\
+  black\"></td>\n    <td></td>\n    <td></td>\n    </tr>\n    <tr>\n    <td></td>\n\
+  \    <td></td>\n    <td></td>\n    <td></td>\n    </tr></table>\n    </div>\n</div>"
+content-type: 1
+desc: Dor
+extend-data: null
+links:
+- path: ccbc13/index
+  title: 索引页
+  type: index
+- path: ccbc13/pages/asteroid
+  title: 小行星
+  type: page
+tips:
+- content: 本题为天窗密码。需要将天窗旋转并提取多次。
+  title: 我毫无思路
+title: ⭐
+type: problem

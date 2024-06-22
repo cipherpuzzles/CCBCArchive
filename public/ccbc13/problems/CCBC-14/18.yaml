@@ -1,0 +1,78 @@
+answer: LIVING EXPENSES
+answer-analysis: '根据范例“今天不是户外烧烤的好日子，刚点起**小火马**上就被风吹灭了。”，可以得知下面每句话都需要插入一个宝可梦的名字后才能变得通顺好理解。用数字在宝可梦的英文名字里提取字母可以得到答案
+  `LIVING EXPENSES`。
+
+
+  <style>
+
+  #ak b {
+
+  color: yellow;
+
+  }
+
+
+  #ak td {
+
+  padding: 10px;
+
+  }
+
+  </style>
+
+
+  <table id="ak">
+
+  <tr><th>填完的句子</th><th>宝可梦</th><th>宝可梦英文名</th><th>题目给的数字</th><th>提取字母</th></tr>
+
+  <tr><td>中国人喜欢吃鸡<b>皮可西</b>方人觉得这很奇怪。</td><td>皮可西</td><td>Clefable</td><td>2</td><td>L</td></tr>
+
+  <tr><td>三年前的两岸<b>三地鼠</b>年春节联欢会举办得很成功。</td><td>三地鼠</td><td>Dugtrio</td><td>6</td><td>I</td></tr>
+
+  <tr><td>西楚<b>霸王花</b>了三个月才到达函谷关，被先到的刘邦拒于关外。</td><td>霸王花</td><td>Vileplume</td><td>1</td><td>V</td></tr>
+
+  <tr><td>这个问题让小明目瞪<b>口呆花</b>了好久才反应过来。</td><td>口呆花</td><td>Weepinbell</td><td>5</td><td>I</td></tr>
+
+  <tr><td>蔡某某是一个一头黄<b>毛球</b>技高超的人气偶像。</td><td>毛球</td><td>Venonat</td><td>5</td><td>N</td></tr>
+
+  <tr><td>弟弟说他捡到了一颗比豌豆<b>大比鸟</b>蛋小的夜明珠，拿出来的却只是一颗玻璃弹子。</td><td>大比鸟</td><td>Pidgeot</td><td>4</td><td>G</td></tr>
+
+  <tr><td>猫妈妈生了三只小<b>猫，老大</b>是黑色的，老二是黄色的，还有一只最小的是花的。</td><td>猫老大</td><td>Persian</td><td>2</td><td>E</td></tr>
+
+  <tr><td>咸鸭<b>蛋蛋</b>白因为太咸根本没有人吃，因此扔掉并不是浪费食物。</td><td>蛋蛋</td><td>Exeggcute</td><td>2</td><td>X</td></tr>
+
+  <tr><td>子不语<b>怪力</b>乱神。</td><td>怪力</td><td>Machamp</td><td>7</td><td>P</td></tr>
+
+  <tr><td>他脾气<b>火暴猴</b>急的样子让女朋友很讨厌。</td><td>火暴猴</td><td>Primeape</td><td>5</td><td>E</td></tr>
+
+  <tr><td>为了讨个<b>吉利蛋</b>糕上插满了用来许愿的蜡烛。</td><td>吉利蛋</td><td>Chansey</td><td>4</td><td>N</td></tr>
+
+  <tr><td>从日本桥本出发，海老名车站坐相模线<b>可达，鸭</b>居车站则是坐横滨线。</td><td>可达鸭</td><td>Psyduck</td><td>2</td><td>S</td></tr>
+
+  <tr><td>一个神秘土<b>豪力</b>挺这位新人主播，在她直播间刷了好多礼物。</td><td>豪力</td><td>Machoke</td><td>7</td><td>E</td></tr>
+
+  <tr><td>这次老板会<b>派拉斯</b>维加斯的一名高手前去挑战赌王。</td><td>派拉斯</td><td>Paras</td><td>5</td><td>S</td></tr>
+
+  </table>'
+content:
+- "范例：今天不是户外烧烤的好日子，刚点起<img src=\"/ccbc13/images/CCBC-14/886326a795d8404385185f085c0292e2.webp\"\
+  \ style=\"width:100px\">上就被风吹灭了。\n\n（第一世代）\t\n\n中国人喜欢吃鸡方人觉得这很奇怪。(2)\n\n三年前的两岸年春节联欢会举办得很成功。(6)\n\
+  \n西楚了三个月才到达函谷关，被先到的刘邦拒于关外。(1)\n\n这个问题让小明目瞪了好久才反应过来。(5)\n\n蔡某某是一个一头黄技高超的人气偶像。(5)\n\
+  \n弟弟说他捡到了一颗比豌豆蛋小的夜明珠，拿出来的却只是一颗玻璃弹子。(4)\n\n猫妈妈生了三只小是黑色的，老二是黄色的，还有一只最小的是花的。(2)\n\n\
+  咸鸭白因为太咸根本没有人吃，因此扔掉并不是浪费食物。(2)\n\n子不语乱神。(7)\n\n他脾气急的样子让女朋友很讨厌。(5)\n\n为了讨个糕上插满了用来许愿的蜡烛。(4)\n\
+  \n从日本桥本出发，海老名车站坐相模线居车站则是坐横滨线。(2)\n\n一个神秘土挺这位新人主播，在她直播间刷了好多礼物。(7)\n\n这次老板会维加斯的一名高手前去挑战赌王。(5)"
+content-type: 0
+desc: 用度
+extend-data: 8,7,6,6
+links:
+- path: ccbc13/index
+  title: 索引页
+  type: index
+- path: ccbc13/pages/ccbc14
+  title: CCBC-14
+  type: page
+tips:
+- content: 给出的范例是“今天不是户外烧烤的好日子，刚点起**小火马**上就被风吹灭了。”（英文名Ponyta）
+  title: 我毫无头绪
+title: 神奇宝贝在哪里
+type: problem

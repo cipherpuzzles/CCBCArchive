@@ -1,0 +1,22 @@
+additional-answers:
+- answer: '84'
+  extra: ''
+  message: 正确，请输入 EIGHTY FOUR 作为答案。
+answer: EIGHTY FOUR
+content: []
+content-type: 0
+desc: For
+extend-data: null
+links:
+- path: ccbc13/index
+  title: 索引页
+  type: index
+- path: ccbc13/pages/asteroid
+  title: 小行星
+  type: page
+problem-image: /ccbc13/images/asteroid/174e073861c04071a95da465ef0c7b24.webp
+tips:
+- content: 每个点对应一个常见品牌，求出a到h之后计算最后的式子
+  title: 我毫无思路
+title: ⭐
+type: problem

@@ -1,0 +1,18 @@
+answer: GENOME
+content: []
+content-type: 0
+desc: Gem
+extend-data: null
+links:
+- path: ccbc13/index
+  title: 索引页
+  type: index
+- path: ccbc13/pages/asteroid
+  title: 小行星
+  type: page
+problem-image: /ccbc13/images/asteroid/81ebfe2fd655423797752e4ef314ede0.webp
+tips:
+- content: KNIGHT, NIGHT, FLOUR, FLOWER, G, GNOME
+  title: 每个图案代表什么英文单词？
+title: ⭐
+type: problem

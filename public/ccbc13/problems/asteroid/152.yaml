@@ -1,0 +1,52 @@
+answer: PLAYERS
+content:
+- "<div class=\"ccbcstylewrapper\">\n    <style>\n        .board, .grid {\n      \
+  \      margin: 20px 20px 20px 0;\n            float: left;\n            position:\
+  \ absolute;\n            display: grid;\n\n        }\n        .board div, .grid\
+  \ div {\n            text-align: center;\n            width: 50px;\n           \
+  \ height: 50px;\n            font-size: 32px;\n        }\n        .grid {\n    \
+  \        grid-template-columns: repeat(6, 50px);\n        }\n        .board {\n\
+  \            left: 25px;\n            top: 25px;\n            grid-template-columns:\
+  \ repeat(5, 50px);\n        }\n        .grid div {\n            border: 1px solid\
+  \ #aaa;\n        }\n        .grid div:nth-child(-n+6) {\n            border-top:\
+  \ 0px;\n        }\n        .grid div:nth-child(6n+1) {\n            border-left:\
+  \ 0px;\n        }\n        .grid div:nth-last-child(-n+6) {\n            border-bottom:\
+  \ 0px;\n        }\n        .grid div:nth-child(6n) {\n            border-right:\
+  \ 0px;\n        }\n    </style>\n    \n    <div style=\"position: relative; height:\
+  \ 400px; width: 400px; float: left\">\n        <div class=\"grid\">\n        <div></div><div></div><div></div><div></div><div></div><div></div>\n\
+  \        <div></div><div></div><div></div><div></div><div></div><div></div>\n  \
+  \      <div></div><div></div><div></div><div></div><div></div><div></div>\n    \
+  \    <div></div><div></div><div></div><div></div><div></div><div></div>\n      \
+  \  <div></div><div></div><div></div><div></div><div></div><div></div>\n        <div></div><div></div><div></div><div></div><div></div><div></div>\n\
+  \        </div>\n        <div class=\"board\"><div>⭐</div><div>?</div><div>⭐</div><div>?</div><div>⭐</div>\n\
+  \        <div>?</div><div>?</div><div>?</div><div>?</div><div>?</div>\n        <div>⭐</div><div>⚪</div><div>⚫</div><div>?</div><div>⭐</div>\n\
+  \        <div>?</div><div>?</div><div>?</div><div>?</div><div>?</div>\n        <div>⭐</div><div>?</div><div>⭐</div><div>?</div><div>⭐</div>\n\
+  \        </div>\n    </div>\n    <div style=\"position: relative; height: 400px;\
+  \ width: 400px; left: 400px;\">\n        <div class=\"grid\">\n        <div></div><div></div><div></div><div></div><div></div><div></div>\n\
+  \        <div></div><div></div><div></div><div></div><div></div><div></div>\n  \
+  \      <div></div><div></div><div></div><div></div><div></div><div></div>\n    \
+  \    <div></div><div></div><div></div><div></div><div></div><div></div>\n      \
+  \  <div></div><div></div><div></div><div></div><div></div><div></div>\n        <div></div><div></div><div></div><div></div><div></div><div></div>\n\
+  \        </div>\n        <div class=\"board\">\n        <div>⭐</div><div>?</div><div>⭐</div><div>?</div><div>⭐</div>\n\
+  \        <div>?</div><div>?</div><div>?</div><div>⚪</div><div>?</div>\n        <div>⭐</div><div>?</div><div>⚫</div><div>?</div><div>⭐</div>\n\
+  \        <div>?</div><div>?</div><div>?</div><div>?</div><div>?</div>\n        <div>⭐</div><div>?</div><div>⭐</div><div>?</div><div>⭐</div>\n\
+  \        </div>\n    </div>\n\n    <p style=\"clear:both\">\n        一弯瑞月照西州，<br>\n\
+  \        寒星幽，<br>\n        疏光流。<br>\n        雾起岚生、散暑洗新秋。<br>\n        夜静长闻雷隐隐，<br>\n\
+  \        斜瀑里，<br>\n        银雨稠。\n    </p>\n</div>"
+content-type: 1
+desc: Lyr
+extend-data: null
+links:
+- path: ccbc13/index
+  title: 索引页
+  type: index
+- path: ccbc13/pages/asteroid
+  title: 小行星
+  type: page
+tips:
+- content: 棋盘分别展示的是五子棋的开局两步，根据第三步落子的位置不同，每个开局有不同的名字，都跟“星”或“月”有关。根据这个将每行诗对应到棋盘的位置上。
+  title: 我毫无头绪
+- content: 搜索棋盘密码（注意因为棋盘是25格而英文有26个字母，IJ两个字母往往并为一格）。每一行诗对应一个字母，所以答案一共有7个字母。
+  title: 如何提取
+title: ⭐
+type: problem

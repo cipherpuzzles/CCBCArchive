@@ -1,0 +1,18 @@
+answer: SARCOPHAGUS
+content:
+- <div class="ccbcstylewrapper">㐬亚古粦巠艮由㐬</div>
+content-type: 1
+desc: Aps
+extend-data: null
+links:
+- path: ccbc13/index
+  title: 索引页
+  type: index
+- path: ccbc13/pages/asteroid
+  title: 小行星
+  type: page
+tips:
+- content: 这些汉字都是化学元素名称的一部分
+  title: 我毫无思路
+title: ⭐
+type: problem

@@ -1,0 +1,26 @@
+answer: HOLE IN GROUND
+content:
+- "<div class=\"ccbcstylewrapper\">\r\n  <div class=\"text\">\r\n  <p>6-5+4=</p>\r\
+  \n  <p>8-3+(9-4)+1=</p>\r\n  <p>0-7=</p>\r\n  <p>8-1=</p>\r\n  <hr>\r\n  <p>8-3=</p>\r\
+  \n  <p>8-(3-7)=</p>\r\n  <hr>\r\n  <p>8-6+5=</p>\r\n  <p>6-5+(8-0)=</p>\r\n  <p>6-(9-3)-(7-1)=</p>\r\
+  \n  <p>2-(8-4)+(9-3)=</p>\r\n  <p>6-(9-1)+(8-0)=</p>\r\n  <p>3-7+1+(8-9)=</p>\r\n\
+  \  </div>\r\n\r\n  <style>\r\n  .text {\r\n      /* font-size: 72px; */\r\n    \
+  \  font-family: 'ccbc13seg7';\r\n  }\r\n  @font-face {\r\n    font-family: 'ccbc13seg7';\r\
+  \n    src: url('https://static.cipherpuzzles.com/static/images/ea33d62a71e8400ea55519b9e5e05f98.woff2')\
+  \ format('woff2'); /* Modern Browsers */\r\n    font-style: italic;\r\n    font-weight:\
+  \ bold;\r\n    text-rendering: optimizeLegibility;\r\n  }\r\n  </style>\r\n</div>"
+content-type: 1
+desc: Gru
+extend-data: null
+links:
+- path: ccbc13/index
+  title: 索引页
+  type: index
+- path: ccbc13/pages/asteroid
+  title: 小行星
+  type: page
+tips:
+- content: 加减的不是数字，而是七根数码管，例如 8 - 0 只剩下中间的一横。
+  title: 我毫无头绪
+title: ⭐
+type: problem

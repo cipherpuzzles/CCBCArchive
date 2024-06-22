@@ -1,0 +1,29 @@
+answer: EASTER
+content:
+- "<div class=\"ccbcstylewrapper\">\n    <style>\n        #star td {\n           \
+  \ width: 50px;\n            height: 50px;\n            text-align: center;\n   \
+  \         font-size: 36px;\n        }\n        .h {\n            background-color:\
+  \ #9c9;\n        }\n    </style>\n    <table id=\"star\">\n    <tr><td>?</td><td>?</td><td>?</td><td></td><td>?</td><td\
+  \ class='h'>?</td><td>?</td><td>?</td><td></td><td></td><td></td><td></td><td></td></tr>\n\
+  \    <tr><td>?</td><td class='h'>?</td><td>?</td><td>?</td><td>?</td><td>?</td><td>?</td><td>?</td><td>?</td><td></td><td></td><td></td><td></td></tr>\n\
+  \    <tr><td>?</td><td>?</td><td>?</td><td>?</td><td>-</td><td class='h'>?</td><td>?</td><td>?</td><td>?</td><td>?</td><td>?</td><td>?</td><td>?</td></tr>\n\
+  \    <tr><td>?</td><td>?</td><td>?</td><td>?</td><td>?</td><td class='h'>?</td><td>?</td><td>?</td><td>?</td><td></td><td></td><td></td><td></td></tr>\n\
+  \    <tr><td>?</td><td>?</td><td>?</td><td>?</td><td>?</td><td>?</td><td class='h'>?</td><td>?</td><td>?</td><td></td><td></td><td></td><td></td></tr>\n\
+  \    <tr><td>?</td><td>?</td><td class='h'>?</td><td>?</td><td>?</td><td>?</td><td>?</td><td>?</td><td>?</td><td></td><td></td><td></td><td></td></tr>\n\
+  \    </table>\n</div>"
+content-type: 0
+desc: Ser
+extend-data: null
+links:
+- path: ccbc13/index
+  title: 索引页
+  type: index
+- path: ccbc13/pages/asteroid
+  title: 小行星
+  type: page
+problem-image: /ccbc13/images/asteroid/6cc85102e0b147e0beaab054bc396ede.webp
+tips:
+- content: 每行emoji都提示了某个中国或西方的传统节日
+  title: 我毫无思路
+title: ⭐
+type: problem

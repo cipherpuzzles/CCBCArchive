@@ -1,0 +1,28 @@
+answer: MICE
+content:
+- "<div class=\"ccbcstylewrapper\">\n    <style>\n        .a {\n            color:\
+  \ red;\n        }\n        .b {\n            color: blue;\n        }\n    </style>\n\
+  \    <div style=\"font-size: 48px\">\n        <p><span class=\"a\">1</span><span\
+  \ class=\"b\">5</span> → ?</p>\n        <p><span class=\"b\">4</span><span class=\"\
+  a\">6</span><span class=\"b\">5</span> → ?</p>\n        <p><span class=\"b\">7</span><span\
+  \ class=\"a\">2</span><span class=\"b\">6</span><span class=\"b\">2</span> → ?</p>\n\
+  \        <p><span class=\"a\">3</span><span class=\"b\">1</span><span class=\"b\"\
+  >3</span> → ？</p>\n    </div>\n</div>"
+content-type: 0
+desc: Mic
+extend-data: null
+links:
+- path: ccbc13/index
+  title: 索引页
+  type: index
+- path: ccbc13/pages/asteroid
+  title: 小行星
+  type: page
+problem-image: /ccbc13/images/asteroid/f02ceb2149c846f1a9be5647a57b3c8b.webp
+tips:
+- content: DOG, FLAG, BREAD
+  title: 题目里的图片分别对应什么单词？
+- content: 红蓝两种数字分别代表了七个音符的两种写法。
+  title: 我还是不懂数字什么意思
+title: ⭐
+type: problem

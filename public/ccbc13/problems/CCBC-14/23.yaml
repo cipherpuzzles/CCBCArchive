@@ -1,0 +1,581 @@
+additional-answers:
+- answer: READ BITS ON MAIN DIAGONAL
+  extra: ''
+  message: 这是本题的中间答案。
+answer: WINDS
+answer-analysis: '首先解出纸笔谜题。
+
+
+  <img src="/ccbc13/images/CCBC-14/b51080c66304464f887ebc1e1cba2501.webp" style="width:100%;
+  max-width:800px">
+
+
+  <img src="/ccbc13/images/CCBC-14/529e09c27fb148a889f0004944301ca5.webp" style="width:100%;
+  max-width:800px">
+
+
+  <img src="/ccbc13/images/CCBC-14/8ad70408fb4b4671a147207b5ce4997b.webp" style="width:100%;
+  max-width:800px">
+
+
+  <img src="/ccbc13/images/CCBC-14/367e3f9e5b234d269cce4b6edfd51abc.webp" style="width:100%;
+  max-width:800px">
+
+
+  <img src="/ccbc13/images/CCBC-14/85d15e478b9343faadeec1a2e918d3f7.webp" style="width:100%;
+  max-width:800px">
+
+
+  提取涂黑格位置字母，得到 ```ANUNSPEAKABLEHORRORREEZEDMETHEAEWASDDARKNBSSTHENAIIZZYSTCKENINGSSNSAOIONOFNIGHTTMATWASNOALIKESEIINGISNWALINDTHATWASIOLINESPAAETHATWASGOTSPOCENWASMYSALFANDNOTMYLEL```。
+
+
+  搜索后发现这段话出自《平面国》，但部分字母有修改。原文为 ```ANUNSPEAKABLEHORRORSEIZEDMETHEREWASADARKNESSTHENADIZZYSICKENINGSENSATIONOFSIGHTTHATWASNOTLIKESEEINGISAWALINETHATWASNOLINESPACETHATWASNOTSPACEIWASMYSELFANDNOTMYSEL```。
+
+
+  提取修改后的字母，得到 ```READ BITS ON MAIN DIAGONAL```。
+
+
+  对于每个纸笔谜题，提取对角线上的五个bit，然后按照二进制转换，得到答案 ```WINDS```。'
+content: []
+content-type: 2
+desc: 风
+extend-data: 5,5,5,5
+links:
+- path: ccbc13/index
+  title: 索引页
+  type: index
+- path: ccbc13/pages/ccbc14
+  title: CCBC-14
+  type: page
+tips:
+- content: <img src="/ccbc13/images/CCBC-14/b51080c66304464f887ebc1e1cba2501.webp"
+    style="width:100%; max-width:800px">
+  title: Kurodoko 的答案
+- content: <img src="/ccbc13/images/CCBC-14/529e09c27fb148a889f0004944301ca5.webp"
+    style="width:100%; max-width:800px">
+  title: Hitori 的答案
+- content: <img src="/ccbc13/images/CCBC-14/8ad70408fb4b4671a147207b5ce4997b.webp"
+    style="width:100%; max-width:800px">
+  title: Kurochute 的答案
+- content: <img src="/ccbc13/images/CCBC-14/367e3f9e5b234d269cce4b6edfd51abc.webp"
+    style="width:100%; max-width:800px">
+  title: Yajisan-Kazusan 的答案
+- content: <img src="/ccbc13/images/CCBC-14/85d15e478b9343faadeec1a2e918d3f7.webp"
+    style="width:100%; max-width:800px">
+  title: Context 的答案
+- content: 按照从左到右，从上到下，从z小到z大的顺序读出涂黑格的字母。这是一段著名文本，但是某些字母被修改了。
+  title: 我做完了纸笔部分，该如何提取
+title: 三维国
+type: problem
+vue_script: "const { ref } = Vue; //由于网页中无法import，Vue所有组件都已预先导出至Vue对象中。\n\nexport\
+  \ default {\n    setup() {\n        let nowShowPage = ref(1);\n\n        return\
+  \ {\n            nowShowPage\n        }\n    }\n}"
+vue_template: "<template>\n    <div>\n        <div><a href=\"https://docs.qq.com/sheet/DS29ucGNCVGJsVE1Z?tab=BB08J2\"\
+  \ target=\"_blank\">腾讯文档</a></div>\n        <div>\n            <p><i>在三维国，我感受到了什么？</i></p>\n\
+  \        </div>\n        <div>\n            <p>共通规则：</p>\n            <p>涂黑一些1x1x1的格子。\n\
+  \            <br>若两格共有一个面，则不可都涂黑。\n            <br>所有未涂黑的格子（白格）通过面邻接连通（即：可以从任意白格出发，通过面邻接，只经过白格，到达任意白格）。</p>\n\
+  \            <img src=\"/ccbc13/images/CCBC-14/8443594d2c5240f8a17cff73e0b22982.webp\"\
+  />\n        </div>\n        <div style=\"padding-bottom: 40px\">\n            <img\
+  \ src=\"/ccbc13/images/CCBC-14/d2ab7cfb8cd3489d9d9b62c00709c2ca.webp\" @click=\"\
+  nowShowPage = 1\" class=\"cube\" :class=\"{selectedPage: nowShowPage == 1}\">\n\
+  \            <img src=\"/ccbc13/images/CCBC-14/d2ab7cfb8cd3489d9d9b62c00709c2ca.webp\"\
+  \ @click=\"nowShowPage = 2\" class=\"cube\" :class=\"{selectedPage: nowShowPage\
+  \ == 2}\">\n            <img src=\"/ccbc13/images/CCBC-14/d2ab7cfb8cd3489d9d9b62c00709c2ca.webp\"\
+  \ @click=\"nowShowPage = 3\" class=\"cube\" :class=\"{selectedPage: nowShowPage\
+  \ == 3}\">\n            <img src=\"/ccbc13/images/CCBC-14/d2ab7cfb8cd3489d9d9b62c00709c2ca.webp\"\
+  \ @click=\"nowShowPage = 4\" class=\"cube\" :class=\"{selectedPage: nowShowPage\
+  \ == 4}\">\n            <img src=\"/ccbc13/images/CCBC-14/d2ab7cfb8cd3489d9d9b62c00709c2ca.webp\"\
+  \ @click=\"nowShowPage = 5\" class=\"cube\" :class=\"{selectedPage: nowShowPage\
+  \ == 5}\">\n        </div>\n        <div v-if=\"nowShowPage == 1\">\n          \
+  \  <p>Kurodoko</p>\n            <p>有线索的格子不可涂黑。\n            <br>线索数字表示在六个方向上能够看到的白格数量（包含自身）。视线被黑格遮挡。</p>\n\
+  \            <p><a href=\"https://ikp.yt/0B1YPV\" target=\"_blank\">在线做题链接（无答案检查）</a></p>\n\
+  <div class='threed'>\n<div>z = 1</div>\n<div>z = 2</div>\n<div>z = 3</div>\n<div>z\
+  \ = 4</div>\n<div>z = 5</div>\n<table>\n<tr>\n<td><span class='clue'></span><span\
+  \ class='letter'>A</span></td>\n<td><span class='clue'></span><span class='letter'>O</span></td>\n\
+  <td><span class='clue'></span><span class='letter'>I</span></td>\n<td><span class='clue'></span><span\
+  \ class='letter'>B</span></td>\n<td><span class='clue'></span><span class='letter'>N</span></td>\n\
+  </tr>\n<tr>\n<td><span class='clue'>2</span><span class='letter'>R</span></td>\n\
+  <td><span class='clue'></span><span class='letter'>U</span></td>\n<td><span class='clue'></span><span\
+  \ class='letter'>I</span></td>\n<td><span class='clue'></span><span class='letter'>N</span></td>\n\
+  <td><span class='clue'>2</span><span class='letter'>F</span></td>\n</tr>\n<tr>\n\
+  <td><span class='clue'></span><span class='letter'>L</span></td>\n<td><span class='clue'>3</span><span\
+  \ class='letter'>R</span></td>\n<td><span class='clue'></span><span class='letter'>S</span></td>\n\
+  <td><span class='clue'>3</span><span class='letter'>H</span></td>\n<td><span class='clue'></span><span\
+  \ class='letter'>I</span></td>\n</tr>\n<tr>\n<td><span class='clue'></span><span\
+  \ class='letter'>P</span></td>\n<td><span class='clue'></span><span class='letter'>O</span></td>\n\
+  <td><span class='clue'></span><span class='letter'>H</span></td>\n<td><span class='clue'></span><span\
+  \ class='letter'>E</span></td>\n<td><span class='clue'></span><span class='letter'>E</span></td>\n\
+  </tr>\n<tr>\n<td><span class='clue'></span><span class='letter'>Y</span></td>\n\
+  <td><span class='clue'></span><span class='letter'>A</span></td>\n<td><span class='clue'>2</span><span\
+  \ class='letter'>S</span></td>\n<td><span class='clue'></span><span class='letter'>K</span></td>\n\
+  <td><span class='clue'></span><span class='letter'>S</span></td>\n</tr>\n</table>\n\
+  <table>\n<tr>\n<td><span class='clue'></span><span class='letter'>A</span></td>\n\
+  <td><span class='clue'></span><span class='letter'>E</span></td>\n<td><span class='clue'></span><span\
+  \ class='letter'>D</span></td>\n<td><span class='clue'></span><span class='letter'>A</span></td>\n\
+  <td><span class='clue'></span><span class='letter'>T</span></td>\n</tr>\n<tr>\n\
+  <td><span class='clue'></span><span class='letter'>A</span></td>\n<td><span class='clue'></span><span\
+  \ class='letter'>R</span></td>\n<td><span class='clue'></span><span class='letter'>B</span></td>\n\
+  <td><span class='clue'></span><span class='letter'>P</span></td>\n<td><span class='clue'></span><span\
+  \ class='letter'>L</span></td>\n</tr>\n<tr>\n<td><span class='clue'></span><span\
+  \ class='letter'>L</span></td>\n<td><span class='clue'></span><span class='letter'>E</span></td>\n\
+  <td><span class='clue'></span><span class='letter'>I</span></td>\n<td><span class='clue'></span><span\
+  \ class='letter'>H</span></td>\n<td><span class='clue'></span><span class='letter'>N</span></td>\n\
+  </tr>\n<tr>\n<td><span class='clue'></span><span class='letter'>F</span></td>\n\
+  <td><span class='clue'></span><span class='letter'>L</span></td>\n<td><span class='clue'></span><span\
+  \ class='letter'>P</span></td>\n<td><span class='clue'></span><span class='letter'>T</span></td>\n\
+  <td><span class='clue'></span><span class='letter'>C</span></td>\n</tr>\n<tr>\n\
+  <td><span class='clue'></span><span class='letter'>L</span></td>\n<td><span class='clue'></span><span\
+  \ class='letter'>E</span></td>\n<td><span class='clue'></span><span class='letter'>O</span></td>\n\
+  <td><span class='clue'></span><span class='letter'>I</span></td>\n<td><span class='clue'></span><span\
+  \ class='letter'>R</span></td>\n</tr>\n</table>\n<table>\n<tr>\n<td><span class='clue'></span><span\
+  \ class='letter'>L</span></td>\n<td><span class='clue'></span><span class='letter'>S</span></td>\n\
+  <td><span class='clue'></span><span class='letter'>E</span></td>\n<td><span class='clue'></span><span\
+  \ class='letter'>I</span></td>\n<td><span class='clue'></span><span class='letter'>R</span></td>\n\
+  </tr>\n<tr>\n<td><span class='clue'></span><span class='letter'>A</span></td>\n\
+  <td><span class='clue'></span><span class='letter'>R</span></td>\n<td><span class='clue'>3</span><span\
+  \ class='letter'>H</span></td>\n<td><span class='clue'></span><span class='letter'>O</span></td>\n\
+  <td><span class='clue'></span><span class='letter'>P</span></td>\n</tr>\n<tr>\n\
+  <td><span class='clue'></span><span class='letter'>R</span></td>\n<td><span class='clue'></span><span\
+  \ class='letter'>T</span></td>\n<td><span class='clue'></span><span class='letter'>R</span></td>\n\
+  <td><span class='clue'></span><span class='letter'>E</span></td>\n<td><span class='clue'></span><span\
+  \ class='letter'>I</span></td>\n</tr>\n<tr>\n<td><span class='clue'></span><span\
+  \ class='letter'>E</span></td>\n<td><span class='clue'></span><span class='letter'>T</span></td>\n\
+  <td><span class='clue'></span><span class='letter'>E</span></td>\n<td><span class='clue'></span><span\
+  \ class='letter'>M</span></td>\n<td><span class='clue'></span><span class='letter'>E</span></td>\n\
+  </tr>\n<tr>\n<td><span class='clue'></span><span class='letter'>E</span></td>\n\
+  <td><span class='clue'></span><span class='letter'>F</span></td>\n<td><span class='clue'></span><span\
+  \ class='letter'>T</span></td>\n<td><span class='clue'></span><span class='letter'>E</span></td>\n\
+  <td><span class='clue'></span><span class='letter'>E</span></td>\n</tr>\n</table>\n\
+  <table>\n<tr>\n<td><span class='clue'>3</span><span class='letter'>L</span></td>\n\
+  <td><span class='clue'></span><span class='letter'>Z</span></td>\n<td><span class='clue'></span><span\
+  \ class='letter'>E</span></td>\n<td><span class='clue'></span><span class='letter'>E</span></td>\n\
+  <td><span class='clue'>3</span><span class='letter'>M</span></td>\n</tr>\n<tr>\n\
+  <td><span class='clue'></span><span class='letter'>D</span></td>\n<td><span class='clue'></span><span\
+  \ class='letter'>D</span></td>\n<td><span class='clue'></span><span class='letter'>U</span></td>\n\
+  <td><span class='clue'></span><span class='letter'>Y</span></td>\n<td><span class='clue'></span><span\
+  \ class='letter'>L</span></td>\n</tr>\n<tr>\n<td><span class='clue'>2</span><span\
+  \ class='letter'>F</span></td>\n<td><span class='clue'></span><span class='letter'>M</span></td>\n\
+  <td><span class='clue'></span><span class='letter'>L</span></td>\n<td><span class='clue'></span><span\
+  \ class='letter'>E</span></td>\n<td><span class='clue'></span><span class='letter'>E</span></td>\n\
+  </tr>\n<tr>\n<td><span class='clue'></span><span class='letter'>T</span></td>\n\
+  <td><span class='clue'></span><span class='letter'>S</span></td>\n<td><span class='clue'></span><span\
+  \ class='letter'>C</span></td>\n<td><span class='clue'></span><span class='letter'>H</span></td>\n\
+  <td><span class='clue'></span><span class='letter'>L</span></td>\n</tr>\n<tr>\n\
+  <td><span class='clue'>2</span><span class='letter'>T</span></td>\n<td><span class='clue'></span><span\
+  \ class='letter'>E</span></td>\n<td><span class='clue'></span><span class='letter'>E</span></td>\n\
+  <td><span class='clue'></span><span class='letter'>H</span></td>\n<td><span class='clue'>3</span><span\
+  \ class='letter'>T</span></td>\n</tr>\n</table>\n<table>\n<tr>\n<td><span class='clue'></span><span\
+  \ class='letter'>A</span></td>\n<td><span class='clue'></span><span class='letter'>R</span></td>\n\
+  <td><span class='clue'></span><span class='letter'>H</span></td>\n<td><span class='clue'></span><span\
+  \ class='letter'>E</span></td>\n<td><span class='clue'></span><span class='letter'>H</span></td>\n\
+  </tr>\n<tr>\n<td><span class='clue'></span><span class='letter'>N</span></td>\n\
+  <td><span class='clue'></span><span class='letter'>N</span></td>\n<td><span class='clue'></span><span\
+  \ class='letter'>E</span></td>\n<td><span class='clue'>3</span><span class='letter'>A</span></td>\n\
+  <td><span class='clue'></span><span class='letter'>W</span></td>\n</tr>\n<tr>\n\
+  <td><span class='clue'></span><span class='letter'>O</span></td>\n<td><span class='clue'></span><span\
+  \ class='letter'>A</span></td>\n<td><span class='clue'></span><span class='letter'>A</span></td>\n\
+  <td><span class='clue'></span><span class='letter'>A</span></td>\n<td><span class='clue'></span><span\
+  \ class='letter'>T</span></td>\n</tr>\n<tr>\n<td><span class='clue'></span><span\
+  \ class='letter'>E</span></td>\n<td><span class='clue'></span><span class='letter'>R</span></td>\n\
+  <td><span class='clue'></span><span class='letter'>S</span></td>\n<td><span class='clue'>3</span><span\
+  \ class='letter'>H</span></td>\n<td><span class='clue'></span><span class='letter'>T</span></td>\n\
+  </tr>\n<tr>\n<td><span class='clue'></span><span class='letter'>D</span></td>\n\
+  <td><span class='clue'></span><span class='letter'>A</span></td>\n<td><span class='clue'></span><span\
+  \ class='letter'>N</span></td>\n<td><span class='clue'></span><span class='letter'>E</span></td>\n\
+  <td><span class='clue'></span><span class='letter'>D</span></td>\n</tr>\n</table>\n\
+  </div>\n        </div>\n        <div v-if=\"nowShowPage == 2\">\n            <p>Hitori</p>\n\
+  \            <p>不存在两个白格，数字相同，且三个坐标xyz中有两个相同。</p>\n            <p><a href=\"https://ikp.yt/3wNa4R\"\
+  \ target=\"_blank\">在线做题链接（无答案检查）</a></p>\n<div class='threed'>\n<div>z = 1</div>\n\
+  <div>z = 2</div>\n<div>z = 3</div>\n<div>z = 4</div>\n<div>z = 5</div>\n<table>\n\
+  <tr>\n<td><span class='clue'>0</span><span class='letter'>T</span></td>\n<td><span\
+  \ class='clue'>1</span><span class='letter'>I</span></td>\n<td><span class='clue'>3</span><span\
+  \ class='letter'>E</span></td>\n<td><span class='clue'>0</span><span class='letter'>A</span></td>\n\
+  <td><span class='clue'>4</span><span class='letter'>E</span></td>\n</tr>\n<tr>\n\
+  <td><span class='clue'>5</span><span class='letter'>R</span></td>\n<td><span class='clue'>2</span><span\
+  \ class='letter'>S</span></td>\n<td><span class='clue'>3</span><span class='letter'>K</span></td>\n\
+  <td><span class='clue'>8</span><span class='letter'>N</span></td>\n<td><span class='clue'>5</span><span\
+  \ class='letter'>O</span></td>\n</tr>\n<tr>\n<td><span class='clue'>2</span><span\
+  \ class='letter'>S</span></td>\n<td><span class='clue'>6</span><span class='letter'>N</span></td>\n\
+  <td><span class='clue'>4</span><span class='letter'>T</span></td>\n<td><span class='clue'>5</span><span\
+  \ class='letter'>I</span></td>\n<td><span class='clue'>4</span><span class='letter'>B</span></td>\n\
+  </tr>\n<tr>\n<td><span class='clue'>3</span><span class='letter'>A</span></td>\n\
+  <td><span class='clue'>4</span><span class='letter'>L</span></td>\n<td><span class='clue'>6</span><span\
+  \ class='letter'>S</span></td>\n<td><span class='clue'>6</span><span class='letter'>M</span></td>\n\
+  <td><span class='clue'>8</span><span class='letter'>N</span></td>\n</tr>\n<tr>\n\
+  <td><span class='clue'>4</span><span class='letter'>F</span></td>\n<td><span class='clue'>4</span><span\
+  \ class='letter'>S</span></td>\n<td><span class='clue'>6</span><span class='letter'>U</span></td>\n\
+  <td><span class='clue'>7</span><span class='letter'>O</span></td>\n<td><span class='clue'>9</span><span\
+  \ class='letter'>T</span></td>\n</tr>\n</table>\n<table>\n<tr>\n<td><span class='clue'>9</span><span\
+  \ class='letter'>H</span></td>\n<td><span class='clue'>2</span><span class='letter'>N</span></td>\n\
+  <td><span class='clue'>3</span><span class='letter'>H</span></td>\n<td><span class='clue'>4</span><span\
+  \ class='letter'>I</span></td>\n<td><span class='clue'>5</span><span class='letter'>E</span></td>\n\
+  </tr>\n<tr>\n<td><span class='clue'>2</span><span class='letter'>F</span></td>\n\
+  <td><span class='clue'>9</span><span class='letter'>E</span></td>\n<td><span class='clue'>4</span><span\
+  \ class='letter'>N</span></td>\n<td><span class='clue'>9</span><span class='letter'>R</span></td>\n\
+  <td><span class='clue'>9</span><span class='letter'>N</span></td>\n</tr>\n<tr>\n\
+  <td><span class='clue'>4</span><span class='letter'>A</span></td>\n<td><span class='clue'>1</span><span\
+  \ class='letter'>M</span></td>\n<td><span class='clue'>8</span><span class='letter'>I</span></td>\n\
+  <td><span class='clue'>3</span><span class='letter'>H</span></td>\n<td><span class='clue'>7</span><span\
+  \ class='letter'>O</span></td>\n</tr>\n<tr>\n<td><span class='clue'>4</span><span\
+  \ class='letter'>T</span></td>\n<td><span class='clue'>5</span><span class='letter'>E</span></td>\n\
+  <td><span class='clue'>6</span><span class='letter'>Y</span></td>\n<td><span class='clue'>7</span><span\
+  \ class='letter'>H</span></td>\n<td><span class='clue'>8</span><span class='letter'>I</span></td>\n\
+  </tr>\n<tr>\n<td><span class='clue'>8</span><span class='letter'>Z</span></td>\n\
+  <td><span class='clue'>6</span><span class='letter'>S</span></td>\n<td><span class='clue'>4</span><span\
+  \ class='letter'>Z</span></td>\n<td><span class='clue'>8</span><span class='letter'>A</span></td>\n\
+  <td><span class='clue'>9</span><span class='letter'>A</span></td>\n</tr>\n</table>\n\
+  <table>\n<tr>\n<td><span class='clue'>2</span><span class='letter'>T</span></td>\n\
+  <td><span class='clue'>3</span><span class='letter'>T</span></td>\n<td><span class='clue'>4</span><span\
+  \ class='letter'>E</span></td>\n<td><span class='clue'>5</span><span class='letter'>A</span></td>\n\
+  <td><span class='clue'>1</span><span class='letter'>S</span></td>\n</tr>\n<tr>\n\
+  <td><span class='clue'>3</span><span class='letter'>Y</span></td>\n<td><span class='clue'>1</span><span\
+  \ class='letter'>E</span></td>\n<td><span class='clue'>5</span><span class='letter'>A</span></td>\n\
+  <td><span class='clue'>7</span><span class='letter'>S</span></td>\n<td><span class='clue'>7</span><span\
+  \ class='letter'>A</span></td>\n</tr>\n<tr>\n<td><span class='clue'>4</span><span\
+  \ class='letter'>K</span></td>\n<td><span class='clue'>5</span><span class='letter'>L</span></td>\n\
+  <td><span class='clue'>6</span><span class='letter'>I</span></td>\n<td><span class='clue'>2</span><span\
+  \ class='letter'>E</span></td>\n<td><span class='clue'>7</span><span class='letter'>T</span></td>\n\
+  </tr>\n<tr>\n<td><span class='clue'>4</span><span class='letter'>C</span></td>\n\
+  <td><span class='clue'>6</span><span class='letter'>H</span></td>\n<td><span class='clue'>9</span><span\
+  \ class='letter'>K</span></td>\n<td><span class='clue'>8</span><span class='letter'>S</span></td>\n\
+  <td><span class='clue'>9</span><span class='letter'>S</span></td>\n</tr>\n<tr>\n\
+  <td><span class='clue'>3</span><span class='letter'>P</span></td>\n<td><span class='clue'>7</span><span\
+  \ class='letter'>E</span></td>\n<td><span class='clue'>7</span><span class='letter'>Y</span></td>\n\
+  <td><span class='clue'>9</span><span class='letter'>I</span></td>\n<td><span class='clue'>0</span><span\
+  \ class='letter'>E</span></td>\n</tr>\n</table>\n<table>\n<tr>\n<td><span class='clue'>4</span><span\
+  \ class='letter'>N</span></td>\n<td><span class='clue'>4</span><span class='letter'>L</span></td>\n\
+  <td><span class='clue'>5</span><span class='letter'>L</span></td>\n<td><span class='clue'>6</span><span\
+  \ class='letter'>I</span></td>\n<td><span class='clue'>5</span><span class='letter'>I</span></td>\n\
+  </tr>\n<tr>\n<td><span class='clue'>4</span><span class='letter'>E</span></td>\n\
+  <td><span class='clue'>5</span><span class='letter'>A</span></td>\n<td><span class='clue'>6</span><span\
+  \ class='letter'>N</span></td>\n<td><span class='clue'>7</span><span class='letter'>E</span></td>\n\
+  <td><span class='clue'>8</span><span class='letter'>T</span></td>\n</tr>\n<tr>\n\
+  <td><span class='clue'>2</span><span class='letter'>N</span></td>\n<td><span class='clue'>6</span><span\
+  \ class='letter'>N</span></td>\n<td><span class='clue'>6</span><span class='letter'>G</span></td>\n\
+  <td><span class='clue'>8</span><span class='letter'>L</span></td>\n<td><span class='clue'>4</span><span\
+  \ class='letter'>E</span></td>\n</tr>\n<tr>\n<td><span class='clue'>6</span><span\
+  \ class='letter'>A</span></td>\n<td><span class='clue'>6</span><span class='letter'>S</span></td>\n\
+  <td><span class='clue'>8</span><span class='letter'>D</span></td>\n<td><span class='clue'>1</span><span\
+  \ class='letter'>H</span></td>\n<td><span class='clue'>7</span><span class='letter'>S</span></td>\n\
+  </tr>\n<tr>\n<td><span class='clue'>7</span><span class='letter'>I</span></td>\n\
+  <td><span class='clue'>8</span><span class='letter'>P</span></td>\n<td><span class='clue'>9</span><span\
+  \ class='letter'>E</span></td>\n<td><span class='clue'>1</span><span class='letter'>N</span></td>\n\
+  <td><span class='clue'>5</span><span class='letter'>O</span></td>\n</tr>\n</table>\n\
+  <table>\n<tr>\n<td><span class='clue'>4</span><span class='letter'>U</span></td>\n\
+  <td><span class='clue'>5</span><span class='letter'>A</span></td>\n<td><span class='clue'>3</span><span\
+  \ class='letter'>S</span></td>\n<td><span class='clue'>7</span><span class='letter'>L</span></td>\n\
+  <td><span class='clue'>8</span><span class='letter'>P</span></td>\n</tr>\n<tr>\n\
+  <td><span class='clue'>5</span><span class='letter'>A</span></td>\n<td><span class='clue'>7</span><span\
+  \ class='letter'>A</span></td>\n<td><span class='clue'>7</span><span class='letter'>T</span></td>\n\
+  <td><span class='clue'>8</span><span class='letter'>O</span></td>\n<td><span class='clue'>9</span><span\
+  \ class='letter'>I</span></td>\n</tr>\n<tr>\n<td><span class='clue'>6</span><span\
+  \ class='letter'>L</span></td>\n<td><span class='clue'>2</span><span class='letter'>L</span></td>\n\
+  <td><span class='clue'>8</span><span class='letter'>H</span></td>\n<td><span class='clue'>9</span><span\
+  \ class='letter'>U</span></td>\n<td><span class='clue'>6</span><span class='letter'>I</span></td>\n\
+  </tr>\n<tr>\n<td><span class='clue'>0</span><span class='letter'>O</span></td>\n\
+  <td><span class='clue'>8</span><span class='letter'>T</span></td>\n<td><span class='clue'>8</span><span\
+  \ class='letter'>N</span></td>\n<td><span class='clue'>0</span><span class='letter'>O</span></td>\n\
+  <td><span class='clue'>7</span><span class='letter'>I</span></td>\n</tr>\n<tr>\n\
+  <td><span class='clue'>8</span><span class='letter'>N</span></td>\n<td><span class='clue'>0</span><span\
+  \ class='letter'>O</span></td>\n<td><span class='clue'>0</span><span class='letter'>I</span></td>\n\
+  <td><span class='clue'>1</span><span class='letter'>E</span></td>\n<td><span class='clue'>1</span><span\
+  \ class='letter'>F</span></td>\n</tr>\n</table>\n</div>\n\n        </div>\n    \
+  \    <div v-if=\"nowShowPage == 3\">\n            <p>Kurochute</p>\n           \
+  \ <p>有线索的格子不可涂黑。\n            <br>线索数字表示有且仅有一个黑格满足以下条件：到当前格的距离等于线索数字，且与当前格在三个坐标xyz中有两个相同。</p>\n\
+  \            <p><a href=\"https://ikp.yt/3dsr5s\" target=\"_blank\">在线做题链接（无答案检查）</a></p>\n\
+  <div class='threed'>\n<div>z = 1</div>\n<div>z = 2</div>\n<div>z = 3</div>\n<div>z\
+  \ = 4</div>\n<div>z = 5</div>\n<table>\n<tr>\n<td><span class='clue'></span><span\
+  \ class='letter'>E</span></td>\n<td><span class='clue'></span><span class='letter'>P</span></td>\n\
+  <td><span class='clue'>2</span><span class='letter'>T</span></td>\n<td><span class='clue'></span><span\
+  \ class='letter'>N</span></td>\n<td><span class='clue'></span><span class='letter'>I</span></td>\n\
+  </tr>\n<tr>\n<td><span class='clue'></span><span class='letter'>N</span></td>\n\
+  <td><span class='clue'></span><span class='letter'>O</span></td>\n<td><span class='clue'></span><span\
+  \ class='letter'>H</span></td>\n<td><span class='clue'></span><span class='letter'>I</span></td>\n\
+  <td><span class='clue'></span><span class='letter'>P</span></td>\n</tr>\n<tr>\n\
+  <td><span class='clue'></span><span class='letter'>W</span></td>\n<td><span class='clue'>1</span><span\
+  \ class='letter'>B</span></td>\n<td><span class='clue'></span><span class='letter'>G</span></td>\n\
+  <td><span class='clue'></span><span class='letter'>A</span></td>\n<td><span class='clue'>3</span><span\
+  \ class='letter'>N</span></td>\n</tr>\n<tr>\n<td><span class='clue'></span><span\
+  \ class='letter'>R</span></td>\n<td><span class='clue'></span><span class='letter'>L</span></td>\n\
+  <td><span class='clue'></span><span class='letter'>U</span></td>\n<td><span class='clue'>2</span><span\
+  \ class='letter'>F</span></td>\n<td><span class='clue'></span><span class='letter'>L</span></td>\n\
+  </tr>\n<tr>\n<td><span class='clue'>2</span><span class='letter'>X</span></td>\n\
+  <td><span class='clue'></span><span class='letter'>G</span></td>\n<td><span class='clue'>1</span><span\
+  \ class='letter'>E</span></td>\n<td><span class='clue'></span><span class='letter'>H</span></td>\n\
+  <td><span class='clue'></span><span class='letter'>F</span></td>\n</tr>\n</table>\n\
+  <table>\n<tr>\n<td><span class='clue'></span><span class='letter'>T</span></td>\n\
+  <td><span class='clue'></span><span class='letter'>H</span></td>\n<td><span class='clue'>2</span><span\
+  \ class='letter'>O</span></td>\n<td><span class='clue'>2</span><span class='letter'>A</span></td>\n\
+  <td><span class='clue'></span><span class='letter'>S</span></td>\n</tr>\n<tr>\n\
+  <td><span class='clue'>2</span><span class='letter'>N</span></td>\n<td><span class='clue'></span><span\
+  \ class='letter'>T</span></td>\n<td><span class='clue'>1</span><span class='letter'>O</span></td>\n\
+  <td><span class='clue'></span><span class='letter'>R</span></td>\n<td><span class='clue'></span><span\
+  \ class='letter'>M</span></td>\n</tr>\n<tr>\n<td><span class='clue'></span><span\
+  \ class='letter'>M</span></td>\n<td><span class='clue'></span><span class='letter'>C</span></td>\n\
+  <td><span class='clue'></span><span class='letter'>L</span></td>\n<td><span class='clue'></span><span\
+  \ class='letter'>A</span></td>\n<td><span class='clue'></span><span class='letter'>E</span></td>\n\
+  </tr>\n<tr>\n<td><span class='clue'></span><span class='letter'>T</span></td>\n\
+  <td><span class='clue'></span><span class='letter'>P</span></td>\n<td><span class='clue'></span><span\
+  \ class='letter'>M</span></td>\n<td><span class='clue'></span><span class='letter'>O</span></td>\n\
+  <td><span class='clue'>3</span><span class='letter'>F</span></td>\n</tr>\n<tr>\n\
+  <td><span class='clue'></span><span class='letter'>L</span></td>\n<td><span class='clue'></span><span\
+  \ class='letter'>W</span></td>\n<td><span class='clue'>1</span><span class='letter'>S</span></td>\n\
+  <td><span class='clue'>1</span><span class='letter'>D</span></td>\n<td><span class='clue'></span><span\
+  \ class='letter'>C</span></td>\n</tr>\n</table>\n<table>\n<tr>\n<td><span class='clue'></span><span\
+  \ class='letter'>I</span></td>\n<td><span class='clue'>3</span><span class='letter'>A</span></td>\n\
+  <td><span class='clue'>1</span><span class='letter'>F</span></td>\n<td><span class='clue'></span><span\
+  \ class='letter'>A</span></td>\n<td><span class='clue'></span><span class='letter'>I</span></td>\n\
+  </tr>\n<tr>\n<td><span class='clue'></span><span class='letter'>H</span></td>\n\
+  <td><span class='clue'></span><span class='letter'>H</span></td>\n<td><span class='clue'></span><span\
+  \ class='letter'>S</span></td>\n<td><span class='clue'></span><span class='letter'>M</span></td>\n\
+  <td><span class='clue'></span><span class='letter'>N</span></td>\n</tr>\n<tr>\n\
+  <td><span class='clue'>1</span><span class='letter'>C</span></td>\n<td><span class='clue'></span><span\
+  \ class='letter'>S</span></td>\n<td><span class='clue'></span><span class='letter'>S</span></td>\n\
+  <td><span class='clue'></span><span class='letter'>I</span></td>\n<td><span class='clue'>2</span><span\
+  \ class='letter'>A</span></td>\n</tr>\n<tr>\n<td><span class='clue'></span><span\
+  \ class='letter'>E</span></td>\n<td><span class='clue'></span><span class='letter'>N</span></td>\n\
+  <td><span class='clue'></span><span class='letter'>M</span></td>\n<td><span class='clue'></span><span\
+  \ class='letter'>L</span></td>\n<td><span class='clue'>2</span><span class='letter'>F</span></td>\n\
+  </tr>\n<tr>\n<td><span class='clue'></span><span class='letter'>O</span></td>\n\
+  <td><span class='clue'></span><span class='letter'>C</span></td>\n<td><span class='clue'></span><span\
+  \ class='letter'>N</span></td>\n<td><span class='clue'></span><span class='letter'>E</span></td>\n\
+  <td><span class='clue'></span><span class='letter'>N</span></td>\n</tr>\n</table>\n\
+  <table>\n<tr>\n<td><span class='clue'>1</span><span class='letter'>F</span></td>\n\
+  <td><span class='clue'></span><span class='letter'>A</span></td>\n<td><span class='clue'>2</span><span\
+  \ class='letter'>T</span></td>\n<td><span class='clue'>3</span><span class='letter'>N</span></td>\n\
+  <td><span class='clue'></span><span class='letter'>L</span></td>\n</tr>\n<tr>\n\
+  <td><span class='clue'>3</span><span class='letter'>R</span></td>\n<td><span class='clue'></span><span\
+  \ class='letter'>P</span></td>\n<td><span class='clue'></span><span class='letter'>V</span></td>\n\
+  <td><span class='clue'>3</span><span class='letter'>T</span></td>\n<td><span class='clue'>3</span><span\
+  \ class='letter'>A</span></td>\n</tr>\n<tr>\n<td><span class='clue'></span><span\
+  \ class='letter'>I</span></td>\n<td><span class='clue'></span><span class='letter'>H</span></td>\n\
+  <td><span class='clue'>1</span><span class='letter'>N</span></td>\n<td><span class='clue'>3</span><span\
+  \ class='letter'>D</span></td>\n<td><span class='clue'></span><span class='letter'>K</span></td>\n\
+  </tr>\n<tr>\n<td><span class='clue'></span><span class='letter'>N</span></td>\n\
+  <td><span class='clue'></span><span class='letter'>G</span></td>\n<td><span class='clue'></span><span\
+  \ class='letter'>Y</span></td>\n<td><span class='clue'></span><span class='letter'>E</span></td>\n\
+  <td><span class='clue'></span><span class='letter'>N</span></td>\n</tr>\n<tr>\n\
+  <td><span class='clue'></span><span class='letter'>O</span></td>\n<td><span class='clue'></span><span\
+  \ class='letter'>S</span></td>\n<td><span class='clue'>1</span><span class='letter'>I</span></td>\n\
+  <td><span class='clue'>2</span><span class='letter'>R</span></td>\n<td><span class='clue'></span><span\
+  \ class='letter'>E</span></td>\n</tr>\n</table>\n<table>\n<tr>\n<td><span class='clue'></span><span\
+  \ class='letter'>I</span></td>\n<td><span class='clue'></span><span class='letter'>S</span></td>\n\
+  <td><span class='clue'></span><span class='letter'>I</span></td>\n<td><span class='clue'></span><span\
+  \ class='letter'>Y</span></td>\n<td><span class='clue'>2</span><span class='letter'>E</span></td>\n\
+  </tr>\n<tr>\n<td><span class='clue'></span><span class='letter'>K</span></td>\n\
+  <td><span class='clue'>1</span><span class='letter'>N</span></td>\n<td><span class='clue'></span><span\
+  \ class='letter'>I</span></td>\n<td><span class='clue'></span><span class='letter'>I</span></td>\n\
+  <td><span class='clue'>3</span><span class='letter'>F</span></td>\n</tr>\n<tr>\n\
+  <td><span class='clue'>2</span><span class='letter'>H</span></td>\n<td><span class='clue'></span><span\
+  \ class='letter'>N</span></td>\n<td><span class='clue'>1</span><span class='letter'>T</span></td>\n\
+  <td><span class='clue'>1</span><span class='letter'>O</span></td>\n<td><span class='clue'></span><span\
+  \ class='letter'>V</span></td>\n</tr>\n<tr>\n<td><span class='clue'></span><span\
+  \ class='letter'>L</span></td>\n<td><span class='clue'></span><span class='letter'>T</span></td>\n\
+  <td><span class='clue'>3</span><span class='letter'>S</span></td>\n<td><span class='clue'></span><span\
+  \ class='letter'>E</span></td>\n<td><span class='clue'></span><span class='letter'>G</span></td>\n\
+  </tr>\n<tr>\n<td><span class='clue'></span><span class='letter'>I</span></td>\n\
+  <td><span class='clue'></span><span class='letter'>R</span></td>\n<td><span class='clue'>2</span><span\
+  \ class='letter'>S</span></td>\n<td><span class='clue'></span><span class='letter'>H</span></td>\n\
+  <td><span class='clue'></span><span class='letter'>W</span></td>\n</tr>\n</table>\n\
+  </div>\n        </div>\n        <div v-if=\"nowShowPage == 4\">\n            <p>Yajisan-Kazusan</p>\n\
+  \            <p>白格的线索表示在箭头方向上恰有数字个黑格。↗表示z增加方向，↙表示z减小方向。\n            <br>黑格的线索不包含任何信息。</p>\n\
+  \            <p><a href=\"https://ikp.yt/0S80hs\" target=\"_blank\">在线做题链接（无答案检查）</a></p>\n\
+  <div class='threed'>\n<div>z = 1</div>\n<div>z = 2</div>\n<div>z = 3</div>\n<div>z\
+  \ = 4</div>\n<div>z = 5</div>\n<table>\n<tr>\n<td><span class='clue'></span><span\
+  \ class='letter'>O</span></td>\n<td><span class='clue'>0→</span><span class='letter'>P</span></td>\n\
+  <td><span class='clue'></span><span class='letter'>I</span></td>\n<td><span class='clue'></span><span\
+  \ class='letter'>A</span></td>\n<td><span class='clue'>2↓</span><span class='letter'>Y</span></td>\n\
+  </tr>\n<tr>\n<td><span class='clue'></span><span class='letter'>S</span></td>\n\
+  <td><span class='clue'></span><span class='letter'>O</span></td>\n<td><span class='clue'></span><span\
+  \ class='letter'>A</span></td>\n<td><span class='clue'></span><span class='letter'>N</span></td>\n\
+  <td><span class='clue'></span><span class='letter'>D</span></td>\n</tr>\n<tr>\n\
+  <td><span class='clue'>1↑</span><span class='letter'>T</span></td>\n<td><span class='clue'></span><span\
+  \ class='letter'>E</span></td>\n<td><span class='clue'></span><span class='letter'>M</span></td>\n\
+  <td><span class='clue'></span><span class='letter'>A</span></td>\n<td><span class='clue'></span><span\
+  \ class='letter'>W</span></td>\n</tr>\n<tr>\n<td><span class='clue'>1↓</span><span\
+  \ class='letter'>N</span></td>\n<td><span class='clue'></span><span class='letter'>A</span></td>\n\
+  <td><span class='clue'></span><span class='letter'>H</span></td>\n<td><span class='clue'></span><span\
+  \ class='letter'>L</span></td>\n<td><span class='clue'>2←</span><span class='letter'>G</span></td>\n\
+  </tr>\n<tr>\n<td><span class='clue'>1↑</span><span class='letter'>I</span></td>\n\
+  <td><span class='clue'></span><span class='letter'>O</span></td>\n<td><span class='clue'></span><span\
+  \ class='letter'>H</span></td>\n<td><span class='clue'>2↑</span><span class='letter'>R</span></td>\n\
+  <td><span class='clue'></span><span class='letter'>N</span></td>\n</tr>\n</table>\n\
+  <table>\n<tr>\n<td><span class='clue'></span><span class='letter'>D</span></td>\n\
+  <td><span class='clue'>1→</span><span class='letter'>O</span></td>\n<td><span class='clue'></span><span\
+  \ class='letter'>W</span></td>\n<td><span class='clue'></span><span class='letter'>E</span></td>\n\
+  <td><span class='clue'></span><span class='letter'>T</span></td>\n</tr>\n<tr>\n\
+  <td><span class='clue'>0→</span><span class='letter'>E</span></td>\n<td><span class='clue'></span><span\
+  \ class='letter'>A</span></td>\n<td><span class='clue'></span><span class='letter'>T</span></td>\n\
+  <td><span class='clue'></span><span class='letter'>A</span></td>\n<td><span class='clue'></span><span\
+  \ class='letter'>L</span></td>\n</tr>\n<tr>\n<td><span class='clue'></span><span\
+  \ class='letter'>H</span></td>\n<td><span class='clue'></span><span class='letter'>A</span></td>\n\
+  <td><span class='clue'></span><span class='letter'>T</span></td>\n<td><span class='clue'>1↑</span><span\
+  \ class='letter'>A</span></td>\n<td><span class='clue'>1↑</span><span class='letter'>H</span></td>\n\
+  </tr>\n<tr>\n<td><span class='clue'>2↑</span><span class='letter'>O</span></td>\n\
+  <td><span class='clue'>0←</span><span class='letter'>G</span></td>\n<td><span class='clue'></span><span\
+  \ class='letter'>T</span></td>\n<td><span class='clue'></span><span class='letter'>R</span></td>\n\
+  <td><span class='clue'></span><span class='letter'>B</span></td>\n</tr>\n<tr>\n\
+  <td><span class='clue'></span><span class='letter'>R</span></td>\n<td><span class='clue'></span><span\
+  \ class='letter'>T</span></td>\n<td><span class='clue'>1←</span><span class='letter'>T</span></td>\n\
+  <td><span class='clue'></span><span class='letter'>M</span></td>\n<td><span class='clue'>1↗</span><span\
+  \ class='letter'>W</span></td>\n</tr>\n</table>\n<table>\n<tr>\n<td><span class='clue'></span><span\
+  \ class='letter'>K</span></td>\n<td><span class='clue'></span><span class='letter'>W</span></td>\n\
+  <td><span class='clue'></span><span class='letter'>A</span></td>\n<td><span class='clue'></span><span\
+  \ class='letter'>L</span></td>\n<td><span class='clue'></span><span class='letter'>M</span></td>\n\
+  </tr>\n<tr>\n<td><span class='clue'>1↗</span><span class='letter'>A</span></td>\n\
+  <td><span class='clue'>0→</span><span class='letter'>N</span></td>\n<td><span class='clue'></span><span\
+  \ class='letter'>T</span></td>\n<td><span class='clue'></span><span class='letter'>H</span></td>\n\
+  <td><span class='clue'></span><span class='letter'>T</span></td>\n</tr>\n<tr>\n\
+  <td><span class='clue'></span><span class='letter'>I</span></td>\n<td><span class='clue'></span><span\
+  \ class='letter'>H</span></td>\n<td><span class='clue'></span><span class='letter'>S</span></td>\n\
+  <td><span class='clue'>1←</span><span class='letter'>I</span></td>\n<td><span class='clue'></span><span\
+  \ class='letter'>C</span></td>\n</tr>\n<tr>\n<td><span class='clue'></span><span\
+  \ class='letter'>I</span></td>\n<td><span class='clue'></span><span class='letter'>I</span></td>\n\
+  <td><span class='clue'></span><span class='letter'>O</span></td>\n<td><span class='clue'></span><span\
+  \ class='letter'>O</span></td>\n<td><span class='clue'>2←</span><span class='letter'>F</span></td>\n\
+  </tr>\n<tr>\n<td><span class='clue'></span><span class='letter'>T</span></td>\n\
+  <td><span class='clue'></span><span class='letter'>L</span></td>\n<td><span class='clue'></span><span\
+  \ class='letter'>E</span></td>\n<td><span class='clue'>0↙</span><span class='letter'>I</span></td>\n\
+  <td><span class='clue'>2←</span><span class='letter'>L</span></td>\n</tr>\n</table>\n\
+  <table>\n<tr>\n<td><span class='clue'></span><span class='letter'>I</span></td>\n\
+  <td><span class='clue'></span><span class='letter'>S</span></td>\n<td><span class='clue'></span><span\
+  \ class='letter'>R</span></td>\n<td><span class='clue'></span><span class='letter'>I</span></td>\n\
+  <td><span class='clue'>1←</span><span class='letter'>K</span></td>\n</tr>\n<tr>\n\
+  <td><span class='clue'></span><span class='letter'>L</span></td>\n<td><span class='clue'>0←</span><span\
+  \ class='letter'>T</span></td>\n<td><span class='clue'>1↙</span><span class='letter'>N</span></td>\n\
+  <td><span class='clue'></span><span class='letter'>R</span></td>\n<td><span class='clue'></span><span\
+  \ class='letter'>E</span></td>\n</tr>\n<tr>\n<td><span class='clue'>1→</span><span\
+  \ class='letter'>L</span></td>\n<td><span class='clue'></span><span class='letter'>R</span></td>\n\
+  <td><span class='clue'></span><span class='letter'>G</span></td>\n<td><span class='clue'></span><span\
+  \ class='letter'>S</span></td>\n<td><span class='clue'></span><span class='letter'>N</span></td>\n\
+  </tr>\n<tr>\n<td><span class='clue'></span><span class='letter'>P</span></td>\n\
+  <td><span class='clue'>1↗</span><span class='letter'>N</span></td>\n<td><span class='clue'></span><span\
+  \ class='letter'>A</span></td>\n<td><span class='clue'>2←</span><span class='letter'>A</span></td>\n\
+  <td><span class='clue'>1↗</span><span class='letter'>A</span></td>\n</tr>\n<tr>\n\
+  <td><span class='clue'>1↗</span><span class='letter'>O</span></td>\n<td><span class='clue'>2↙</span><span\
+  \ class='letter'>E</span></td>\n<td><span class='clue'></span><span class='letter'>R</span></td>\n\
+  <td><span class='clue'></span><span class='letter'>N</span></td>\n<td><span class='clue'></span><span\
+  \ class='letter'>L</span></td>\n</tr>\n</table>\n<table>\n<tr>\n<td><span class='clue'></span><span\
+  \ class='letter'>T</span></td>\n<td><span class='clue'>1↙</span><span class='letter'>B</span></td>\n\
+  <td><span class='clue'></span><span class='letter'>H</span></td>\n<td><span class='clue'></span><span\
+  \ class='letter'>N</span></td>\n<td><span class='clue'></span><span class='letter'>A</span></td>\n\
+  </tr>\n<tr>\n<td><span class='clue'></span><span class='letter'>O</span></td>\n\
+  <td><span class='clue'>1↑</span><span class='letter'>T</span></td>\n<td><span class='clue'></span><span\
+  \ class='letter'>N</span></td>\n<td><span class='clue'></span><span class='letter'>R</span></td>\n\
+  <td><span class='clue'>1↙</span><span class='letter'>B</span></td>\n</tr>\n<tr>\n\
+  <td><span class='clue'></span><span class='letter'>Y</span></td>\n<td><span class='clue'></span><span\
+  \ class='letter'>C</span></td>\n<td><span class='clue'></span><span class='letter'>W</span></td>\n\
+  <td><span class='clue'></span><span class='letter'>C</span></td>\n<td><span class='clue'>0↑</span><span\
+  \ class='letter'>A</span></td>\n</tr>\n<tr>\n<td><span class='clue'>1↑</span><span\
+  \ class='letter'>L</span></td>\n<td><span class='clue'></span><span class='letter'>S</span></td>\n\
+  <td><span class='clue'>1→</span><span class='letter'>I</span></td>\n<td><span class='clue'></span><span\
+  \ class='letter'>G</span></td>\n<td><span class='clue'></span><span class='letter'>E</span></td>\n\
+  </tr>\n<tr>\n<td><span class='clue'></span><span class='letter'>O</span></td>\n\
+  <td><span class='clue'>1↙</span><span class='letter'>I</span></td>\n<td><span class='clue'>2↑</span><span\
+  \ class='letter'>T</span></td>\n<td><span class='clue'></span><span class='letter'>R</span></td>\n\
+  <td><span class='clue'>2↑</span><span class='letter'>D</span></td>\n</tr>\n</table>\n\
+  </div>\n        </div>\n        <div v-if=\"nowShowPage == 5\">\n            <p>Context</p>\n\
+  \            <p>黑格的线索表示恰有数字个黑格与当前格共有顶点且不共有边或面（不包含自身）。\n            <br>白格的线索表示恰有数字个黑格与当前格共有面。</p>\n\
+  \            <p><a href=\"https://ikp.yt/4sJ0jK\" target=\"_blank\">在线做题链接（无答案检查）</a></p>\n\
+  <div class='threed'>\n<div>z = 1</div>\n<div>z = 2</div>\n<div>z = 3</div>\n<div>z\
+  \ = 4</div>\n<div>z = 5</div>\n<table>\n<tr>\n<td><span class='clue'></span><span\
+  \ class='letter'>T</span></td>\n<td><span class='clue'>2</span><span class='letter'>E</span></td>\n\
+  <td><span class='clue'></span><span class='letter'>N</span></td>\n<td><span class='clue'>1</span><span\
+  \ class='letter'>N</span></td>\n<td><span class='clue'></span><span class='letter'>I</span></td>\n\
+  </tr>\n<tr>\n<td><span class='clue'></span><span class='letter'>H</span></td>\n\
+  <td><span class='clue'></span><span class='letter'>M</span></td>\n<td><span class='clue'></span><span\
+  \ class='letter'>I</span></td>\n<td><span class='clue'></span><span class='letter'>A</span></td>\n\
+  <td><span class='clue'>2</span><span class='letter'>S</span></td>\n</tr>\n<tr>\n\
+  <td><span class='clue'></span><span class='letter'>P</span></td>\n<td><span class='clue'>1</span><span\
+  \ class='letter'>A</span></td>\n<td><span class='clue'></span><span class='letter'>C</span></td>\n\
+  <td><span class='clue'></span><span class='letter'>O</span></td>\n<td><span class='clue'></span><span\
+  \ class='letter'>I</span></td>\n</tr>\n<tr>\n<td><span class='clue'>2</span><span\
+  \ class='letter'>D</span></td>\n<td><span class='clue'></span><span class='letter'>H</span></td>\n\
+  <td><span class='clue'></span><span class='letter'>O</span></td>\n<td><span class='clue'></span><span\
+  \ class='letter'>S</span></td>\n<td><span class='clue'>0</span><span class='letter'>R</span></td>\n\
+  </tr>\n<tr>\n<td><span class='clue'></span><span class='letter'>C</span></td>\n\
+  <td><span class='clue'></span><span class='letter'>A</span></td>\n<td><span class='clue'>2</span><span\
+  \ class='letter'>R</span></td>\n<td><span class='clue'></span><span class='letter'>E</span></td>\n\
+  <td><span class='clue'></span><span class='letter'>G</span></td>\n</tr>\n</table>\n\
+  <table>\n<tr>\n<td><span class='clue'></span><span class='letter'>Y</span></td>\n\
+  <td><span class='clue'></span><span class='letter'>N</span></td>\n<td><span class='clue'></span><span\
+  \ class='letter'>D</span></td>\n<td><span class='clue'></span><span class='letter'>W</span></td>\n\
+  <td><span class='clue'></span><span class='letter'>E</span></td>\n</tr>\n<tr>\n\
+  <td><span class='clue'></span><span class='letter'>L</span></td>\n<td><span class='clue'></span><span\
+  \ class='letter'>L</span></td>\n<td><span class='clue'></span><span class='letter'>A</span></td>\n\
+  <td><span class='clue'></span><span class='letter'>M</span></td>\n<td><span class='clue'></span><span\
+  \ class='letter'>S</span></td>\n</tr>\n<tr>\n<td><span class='clue'></span><span\
+  \ class='letter'>I</span></td>\n<td><span class='clue'></span><span class='letter'>N</span></td>\n\
+  <td><span class='clue'></span><span class='letter'>R</span></td>\n<td><span class='clue'>4</span><span\
+  \ class='letter'>A</span></td>\n<td><span class='clue'></span><span class='letter'>H</span></td>\n\
+  </tr>\n<tr>\n<td><span class='clue'></span><span class='letter'>I</span></td>\n\
+  <td><span class='clue'></span><span class='letter'>S</span></td>\n<td><span class='clue'></span><span\
+  \ class='letter'>S</span></td>\n<td><span class='clue'></span><span class='letter'>D</span></td>\n\
+  <td><span class='clue'></span><span class='letter'>S</span></td>\n</tr>\n<tr>\n\
+  <td><span class='clue'>2</span><span class='letter'>K</span></td>\n<td><span class='clue'></span><span\
+  \ class='letter'>S</span></td>\n<td><span class='clue'></span><span class='letter'>U</span></td>\n\
+  <td><span class='clue'></span><span class='letter'>G</span></td>\n<td><span class='clue'></span><span\
+  \ class='letter'>M</span></td>\n</tr>\n</table>\n<table>\n<tr>\n<td><span class='clue'></span><span\
+  \ class='letter'>F</span></td>\n<td><span class='clue'></span><span class='letter'>L</span></td>\n\
+  <td><span class='clue'></span><span class='letter'>U</span></td>\n<td><span class='clue'></span><span\
+  \ class='letter'>D</span></td>\n<td><span class='clue'></span><span class='letter'>O</span></td>\n\
+  </tr>\n<tr>\n<td><span class='clue'></span><span class='letter'>Y</span></td>\n\
+  <td><span class='clue'></span><span class='letter'>S</span></td>\n<td><span class='clue'></span><span\
+  \ class='letter'>S</span></td>\n<td><span class='clue'></span><span class='letter'>T</span></td>\n\
+  <td><span class='clue'>0</span><span class='letter'>B</span></td>\n</tr>\n<tr>\n\
+  <td><span class='clue'></span><span class='letter'>O</span></td>\n<td><span class='clue'></span><span\
+  \ class='letter'>O</span></td>\n<td><span class='clue'></span><span class='letter'>O</span></td>\n\
+  <td><span class='clue'></span><span class='letter'>A</span></td>\n<td><span class='clue'></span><span\
+  \ class='letter'>H</span></td>\n</tr>\n<tr>\n<td><span class='clue'></span><span\
+  \ class='letter'>A</span></td>\n<td><span class='clue'></span><span class='letter'>R</span></td>\n\
+  <td><span class='clue'></span><span class='letter'>L</span></td>\n<td><span class='clue'></span><span\
+  \ class='letter'>D</span></td>\n<td><span class='clue'></span><span class='letter'>N</span></td>\n\
+  </tr>\n<tr>\n<td><span class='clue'></span><span class='letter'>A</span></td>\n\
+  <td><span class='clue'></span><span class='letter'>A</span></td>\n<td><span class='clue'>3</span><span\
+  \ class='letter'>K</span></td>\n<td><span class='clue'></span><span class='letter'>F</span></td>\n\
+  <td><span class='clue'>2</span><span class='letter'>T</span></td>\n</tr>\n</table>\n\
+  <table>\n<tr>\n<td><span class='clue'></span><span class='letter'>T</span></td>\n\
+  <td><span class='clue'></span><span class='letter'>A</span></td>\n<td><span class='clue'></span><span\
+  \ class='letter'>F</span></td>\n<td><span class='clue'></span><span class='letter'>U</span></td>\n\
+  <td><span class='clue'></span><span class='letter'>N</span></td>\n</tr>\n<tr>\n\
+  <td><span class='clue'></span><span class='letter'>C</span></td>\n<td><span class='clue'></span><span\
+  \ class='letter'>B</span></td>\n<td><span class='clue'></span><span class='letter'>N</span></td>\n\
+  <td><span class='clue'></span><span class='letter'>N</span></td>\n<td><span class='clue'>1</span><span\
+  \ class='letter'>R</span></td>\n</tr>\n<tr>\n<td><span class='clue'></span><span\
+  \ class='letter'>D</span></td>\n<td><span class='clue'>7</span><span class='letter'>D</span></td>\n\
+  <td><span class='clue'></span><span class='letter'>H</span></td>\n<td><span class='clue'>2</span><span\
+  \ class='letter'>Y</span></td>\n<td><span class='clue'></span><span class='letter'>T</span></td>\n\
+  </tr>\n<tr>\n<td><span class='clue'>3</span><span class='letter'>H</span></td>\n\
+  <td><span class='clue'></span><span class='letter'>L</span></td>\n<td><span class='clue'></span><span\
+  \ class='letter'>N</span></td>\n<td><span class='clue'></span><span class='letter'>N</span></td>\n\
+  <td><span class='clue'></span><span class='letter'>A</span></td>\n</tr>\n<tr>\n\
+  <td><span class='clue'></span><span class='letter'>O</span></td>\n<td><span class='clue'></span><span\
+  \ class='letter'>A</span></td>\n<td><span class='clue'></span><span class='letter'>T</span></td>\n\
+  <td><span class='clue'>3</span><span class='letter'>O</span></td>\n<td><span class='clue'></span><span\
+  \ class='letter'>D</span></td>\n</tr>\n</table>\n<table>\n<tr>\n<td><span class='clue'></span><span\
+  \ class='letter'>T</span></td>\n<td><span class='clue'></span><span class='letter'>H</span></td>\n\
+  <td><span class='clue'></span><span class='letter'>K</span></td>\n<td><span class='clue'></span><span\
+  \ class='letter'>M</span></td>\n<td><span class='clue'></span><span class='letter'>O</span></td>\n\
+  </tr>\n<tr>\n<td><span class='clue'></span><span class='letter'>Y</span></td>\n\
+  <td><span class='clue'></span><span class='letter'>S</span></td>\n<td><span class='clue'>2</span><span\
+  \ class='letter'>L</span></td>\n<td><span class='clue'>3</span><span class='letter'>L</span></td>\n\
+  <td><span class='clue'></span><span class='letter'>E</span></td>\n</tr>\n<tr>\n\
+  <td><span class='clue'></span><span class='letter'>I</span></td>\n<td><span class='clue'></span><span\
+  \ class='letter'>E</span></td>\n<td><span class='clue'></span><span class='letter'>S</span></td>\n\
+  <td><span class='clue'></span><span class='letter'>C</span></td>\n<td><span class='clue'>0</span><span\
+  \ class='letter'>Y</span></td>\n</tr>\n<tr>\n<td><span class='clue'></span><span\
+  \ class='letter'>E</span></td>\n<td><span class='clue'></span><span class='letter'>E</span></td>\n\
+  <td><span class='clue'>0</span><span class='letter'>H</span></td>\n<td><span class='clue'></span><span\
+  \ class='letter'>O</span></td>\n<td><span class='clue'></span><span class='letter'>N</span></td>\n\
+  </tr>\n<tr>\n<td><span class='clue'></span><span class='letter'>T</span></td>\n\
+  <td><span class='clue'></span><span class='letter'>W</span></td>\n<td><span class='clue'></span><span\
+  \ class='letter'>N</span></td>\n<td><span class='clue'></span><span class='letter'>H</span></td>\n\
+  <td><span class='clue'>1</span><span class='letter'>L</span></td>\n</tr>\n</table>\n\
+  </div>\n        </div>\n    </div>\n</template>\n\n<style>\n.cube {\n    cursor:\
+  \ pointer;\n    width: 100px;\n}\n.selectedPage {\n    background-color: #444;\n\
+  }\n\n.threed {\n    display: grid;\n    grid-template-columns: repeat(5, 220px)\n\
+  }\n.threed table {\n    border-collapse: collapse;\n    margin: 5px;\n    table-layout:\
+  \ fixed\n}\n.threed td {\n    padding: 0;\n    height: 40px;\n    width: 40px;\n\
+  \    border: 1px solid;\n    position: relative;\n    text-align: center;\n}\n.threed\
+  \ .letter {\n    font-size: 11px;\n    color: #888;\n    position: absolute;\n \
+  \   right: 3px;\n    bottom: 3px;\n}\n</style>\n"

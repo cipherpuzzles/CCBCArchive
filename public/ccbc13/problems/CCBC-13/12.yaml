@@ -1,0 +1,436 @@
+additional-answers:
+- answer: PLAYSTATION
+  extra: null
+  message: 这是本题小题答案之一。
+- answer: BYPUBLIC
+  extra: null
+  message: 这是本题小题答案之一。
+- answer: HOCKEYCLUB
+  extra: null
+  message: 这是本题小题答案之一。
+- answer: DECIDUOUS
+  extra: null
+  message: 这是本题小题答案之一。
+- answer: PROCEDURE
+  extra: null
+  message: 这是本题小题答案之一。
+- answer: FILE FORMAT
+  extra: null
+  message: 这是本题小题答案之一。
+- answer: LONGRANGE
+  extra: null
+  message: 这是本题小题答案之一。
+- answer: WHITEHALL
+  extra: null
+  message: 这是本题小题答案之一。
+- answer: INITIAL
+  extra: null
+  message: 这是本题小题答案之一。
+- answer: JUNEJULY
+  extra: null
+  message: 这是本题小题答案之一。
+- answer: KAGAKUCHOP
+  extra: null
+  message: 这是本题小题答案之一。
+answer: SPECULATING
+answer-analysis: "<style>\n#answerkey th {\n    font-weight: bold;\n    vertical-align:\
+  \ middle;\n    padding: 3px 5px;\n}\n#answerkey td {\n    min-width:22px;\n    height:22px;\n\
+  \    text-align:center;\n    vertical-align: middle;\n    padding: 3px 7px;\n  \
+  \  border: 1px solid #444;\n}\n</style>\n\n本题展示了66次提交记录，需要将其分配到11个小题，并且根据每题的提交记录推理出这道小题的答案。\n\
+  \n## 双星之战\n\n本题标题暗示了这是一道填两星的星战题(Starbattle)，在提交记录中也能找到 `SIXTEENSTARS` 的记录加以证实。通过两个分别从横纵方向读的错误提取，可以选出8个8字母单词组出原题用于提取的题面。再把错误解法换成正确解法，提取可以得到\
+  \ `ANSWER IS JUNEJULY` 。\n\n错误提取：`EICAUROYASYITUIA` , `COYIAYIAEUATIRSU`\n\n<table\
+  \ id = \"answerkey\">\n<tr><td>M</td><td bgcolor=green>A</td><td>G</td><td bgcolor=green>N</td><td\
+  \ bgcolor=darkred>E</td><td>T</td><td bgcolor=darkred>I</td><td>C</td></tr>\n<tr><td\
+  \ bgcolor=darkred>C</td><td>H</td><td bgcolor=darkred>A</td><td>I</td><td>N</td><td\
+  \ bgcolor=green>S</td><td>A</td><td bgcolor=green>W</td></tr>\n<tr><td>F</td><td\
+  \ bgcolor=green>E</td><td>B</td><td bgcolor=green>R</td><td bgcolor=darkred>U</td><td>A</td><td\
+  \ bgcolor=darkred>R</td><td>Y</td></tr>\n<tr><td bgcolor=darkred>O</td><td>L</td><td\
+  \ bgcolor=darkred>Y</td><td>M</td><td>P</td><td bgcolor=green>I</td><td>C</td><td\
+  \ bgcolor=green>S</td></tr>\n<tr><td bgcolor=green>J</td><td>O</td><td bgcolor=green>U</td><td>R</td><td>N</td><td\
+  \ bgcolor=darkred>A</td><td>L</td><td bgcolor=darkred>S</td></tr>\n<tr><td>C</td><td\
+  \ bgcolor=darkred>Y</td><td>L</td><td bgcolor=darkred>I</td><td bgcolor=green>N</td><td>D</td><td\
+  \ bgcolor=green>E</td><td>R</td></tr>\n<tr><td bgcolor=green>J</td><td>I</td><td\
+  \ bgcolor=green>U</td><td>J</td><td>I</td><td bgcolor=darkred>T</td><td>S</td><td\
+  \ bgcolor=darkred>U</td></tr>\n<tr><td>H</td><td bgcolor=darkred>I</td><td>M</td><td\
+  \ bgcolor=darkred>A</td><td bgcolor=green>L</td><td>A</td><td bgcolor=green>Y</td><td>A</td></tr>\n\
+  </table>\n\n---\n\n## QUOTEDROP\n\n本小题题目明示 `DROPQUOTE` ，可以在网上找到相关题型说明。在此题中，可以找到两组5条记录，是将上方字母按顺序和倒序填入下侧的结果。根据两组记录相互比对，可以还原出原题并完成，得到答案的定义。本小题答案为\
+  \ `LONGRANGE` 。\n\n顺序：\n<table id = \"answerkey\">\n<tr><td bgcolor=lightgray><font\
+  \ color=black>⑴</font></td><td>E</td><td>D</td><td>E</td><td>A</td><td>D</td><td>F</td><td>A</td><td>E</td><td\
+  \ bgcolor=lightgray></td><td>E</td><td>C</td><td bgcolor=lightgray></td><td>A</td><td\
+  \ bgcolor=lightgray></td><td>D</td><td>E</td><td>R</td><td>E</td><td>A</td><td>D</td><td\
+  \ bgcolor=lightgray></td><td>E</td><td>E</td><td bgcolor=lightgray></td></tr>\n\
+  <tr><td>L</td><td>I</td><td>E</td><td>G</td><td bgcolor=lightgray></td><td>R</td><td>H</td><td>B</td><td>G</td><td\
+  \ bgcolor=lightgray></td><td>E</td><td>E</td><td>E</td><td>A</td><td>B</td><td>F</td><td>E</td><td\
+  \ bgcolor=lightgray></td><td>F</td><td>O</td><td>F</td><td bgcolor=lightgray></td><td>E</td><td>F</td><td>T</td></tr>\n\
+  <tr><td>O</td><td bgcolor=lightgray></td><td>M</td><td>H</td><td>E</td><td bgcolor=lightgray></td><td>I</td><td>N</td><td>T</td><td>A</td><td>N</td><td>F</td><td\
+  \ bgcolor=lightgray><font color=black>⑵</font></td><td>E</td><td>C</td><td>L</td><td>I</td><td\
+  \ bgcolor=lightgray></td><td>I</td><td>O</td><td bgcolor=lightgray></td><td>B</td><td>I</td><td\
+  \ bgcolor=lightgray></td><td>U</td></tr>\n<tr><td>S</td><td>O</td><td>N</td><td\
+  \ bgcolor=lightgray></td><td>O</td><td>T</td><td bgcolor=lightgray></td><td>S</td><td>T</td><td\
+  \ bgcolor=lightgray></td><td>R</td><td>O</td><td>F</td><td>E</td><td>N</td><td>P</td><td>O</td><td>U</td><td>R</td><td\
+  \ bgcolor=lightgray></td><td>O</td><td>I</td><td>O</td><td>N</td><td bgcolor=lightgray></td></tr>\n\
+  <tr><td>T</td><td>R</td><td>T</td><td>L</td><td bgcolor=lightgray></td><td>T</td><td>I</td><td>U</td><td>T</td><td>U</td><td>T</td><td>X</td><td>T</td><td>S</td><td\
+  \ bgcolor=lightgray><font color=black>(</font></td><td>T</td><td>S</td><td>V</td><td>T</td><td\
+  \ bgcolor=lightgray><font color=black>-</font></td><td>R</td><td>V</td><td>V</td><td>R</td><td\
+  \ bgcolor=lightgray><font color=black>)</font></td></tr>\n<tr></tr>\n</table>\n\n\
+  倒序：\n<table id = \"answerkey\">\n<tr><td bgcolor=lightgray><font color=black>⑴</font></td><td>R</td><td>T</td><td>L</td><td>O</td><td>T</td><td>I</td><td>U</td><td>T</td><td\
+  \ bgcolor=lightgray></td><td>T</td><td>X</td><td bgcolor=lightgray></td><td>S</td><td\
+  \ bgcolor=lightgray></td><td>T</td><td>S</td><td>V</td><td>T</td><td>O</td><td>R</td><td\
+  \ bgcolor=lightgray></td><td>V</td><td>R</td><td bgcolor=lightgray></td></tr>\n\
+  <tr><td>T</td><td>O</td><td>N</td><td>H</td><td bgcolor=lightgray></td><td>T</td><td>I</td><td>S</td><td>T</td><td\
+  \ bgcolor=lightgray></td><td>R</td><td>O</td><td>T</td><td>E</td><td>N</td><td>P</td><td>O</td><td\
+  \ bgcolor=lightgray></td><td>R</td><td>O</td><td>O</td><td bgcolor=lightgray></td><td>O</td><td>N</td><td>U</td></tr>\n\
+  <tr><td>S</td><td bgcolor=lightgray></td><td>M</td><td>G</td><td>E</td><td bgcolor=lightgray></td><td>H</td><td>N</td><td>T</td><td>U</td><td>N</td><td>F</td><td\
+  \ bgcolor=lightgray><font color=black>⑵</font></td><td>E</td><td>C</td><td>L</td><td>I</td><td\
+  \ bgcolor=lightgray></td><td>I</td><td>A</td><td bgcolor=lightgray></td><td>V</td><td>I</td><td\
+  \ bgcolor=lightgray></td><td>T</td></tr>\n<tr><td>O</td><td>I</td><td>E</td><td\
+  \ bgcolor=lightgray></td><td>A</td><td>R</td><td bgcolor=lightgray></td><td>B</td><td>G</td><td\
+  \ bgcolor=lightgray></td><td>E</td><td>E</td><td>F</td><td>A</td><td>B</td><td>F</td><td>E</td><td>U</td><td>F</td><td\
+  \ bgcolor=lightgray></td><td>F</td><td>I</td><td>E</td><td>F</td><td bgcolor=lightgray></td></tr>\n\
+  <tr><td>L</td><td>E</td><td>D</td><td>E</td><td bgcolor=lightgray></td><td>D</td><td>F</td><td>A</td><td>E</td><td>A</td><td>E</td><td>C</td><td>E</td><td>A</td><td\
+  \ bgcolor=lightgray><font color=black>(</font></td><td>D</td><td>E</td><td>R</td><td>E</td><td\
+  \ bgcolor=lightgray><font color=black>-</font></td><td>D</td><td>B</td><td>E</td><td>E</td><td\
+  \ bgcolor=lightgray><font color=black>)</font></td></tr>\n</table>\n\n正确答案：\n<table\
+  \ id = \"answerkey\">\n<tr><td bgcolor=lightgray><font color=black>⑴</font></td><td>R</td><td>E</td><td>L</td><td>A</td><td>T</td><td>I</td><td>N</td><td>G</td><td\
+  \ bgcolor=lightgray></td><td>T</td><td>O</td><td bgcolor=lightgray></td><td>A</td><td\
+  \ bgcolor=lightgray></td><td>P</td><td>E</td><td>R</td><td>I</td><td>O</td><td>D</td><td\
+  \ bgcolor=lightgray></td><td>O</td><td>F</td><td bgcolor=lightgray></td></tr>\n\
+  <tr><td>T</td><td>I</td><td>M</td><td>E</td><td bgcolor=lightgray></td><td>T</td><td>H</td><td>A</td><td>T</td><td\
+  \ bgcolor=lightgray></td><td>E</td><td>X</td><td>T</td><td>E</td><td>N</td><td>D</td><td>S</td><td\
+  \ bgcolor=lightgray></td><td>F</td><td>A</td><td>R</td><td bgcolor=lightgray></td><td>I</td><td>N</td><td>T</td></tr>\n\
+  <tr><td>O</td><td bgcolor=lightgray></td><td>T</td><td>H</td><td>E</td><td bgcolor=lightgray></td><td>F</td><td>U</td><td>T</td><td>U</td><td>R</td><td>E</td><td\
+  \ bgcolor=lightgray><font color=black>⑵</font></td><td>A</td><td>B</td><td>L</td><td>E</td><td\
+  \ bgcolor=lightgray></td><td>T</td><td>O</td><td bgcolor=lightgray></td><td>B</td><td>E</td><td\
+  \ bgcolor=lightgray></td><td>U</td></tr>\n<tr><td>S</td><td>E</td><td>D</td><td\
+  \ bgcolor=lightgray></td><td>O</td><td>R</td><td bgcolor=lightgray></td><td>B</td><td>E</td><td\
+  \ bgcolor=lightgray></td><td>E</td><td>F</td><td>F</td><td>E</td><td>C</td><td>T</td><td>I</td><td>V</td><td>E</td><td\
+  \ bgcolor=lightgray></td><td>O</td><td>V</td><td>E</td><td>R</td><td bgcolor=lightgray></td></tr>\n\
+  <tr><td>L</td><td>O</td><td>N</td><td>G</td><td bgcolor=lightgray></td><td>D</td><td>I</td><td>S</td><td>T</td><td>A</td><td>N</td><td>C</td><td>E</td><td>S</td><td\
+  \ bgcolor=lightgray><font color=black>(</font></td><td>F</td><td>O</td><td>U</td><td>R</td><td\
+  \ bgcolor=lightgray><font color=black>-</font></td><td>F</td><td>I</td><td>V</td><td>E</td><td\
+  \ bgcolor=lightgray><font color=black>)</font></td></tr>\n</table>\n\n---\n\n##\
+  \ 熵增\n\n本小题标题暗示乱序，即ANAGRAM。可以在记录中找到互为ANAGRAM的9个答案，进行ANAGRAM可以得到 `ANSWER INITIAL`。\n\
+  ```\nITALIAWINNERS\nWINNERSITALIA\nIWANTAIRLINES\nANEWTRAILISIN\nWINATAIRLINES\n\
+  TWINANISRAELI\nASIANWINTERLI\nWARIILASTNINE\nSAWININERTIAL\n```\n\n---\n\n## 密文破译\n\
+  \n本小题将原本应该用盲文破译的密码用了其他几种方式转换。反向转换验证后用盲文破译后即可得到本小题的答案为 `KAGAKUCHOP` 。\n\n```\n盲文：KAGAKUCHOP\n\
+  10 10 11 10 10 10 11 10 10 11\n00 00 11 00 00 00 00 11 01 10\n10 00 00 00 10 11\
+  \ 00 00 10 10\n\n五位二进制：UZWKAPAVPBXJ, UAPZPBWAXKVJ\n10101 11010 10111 01011  U Z\
+  \ W K\n00001 10000 00001 10110  A P A V\n10000 00010 11000 01010  P B X J\n\n十六进制：AEAEB0C03680B0A,\
+  \ A08EC0A0BE30B6A\n1010 1110 1010 1110 1011  A E A E B\n0000 1100 0000 0011 0110\
+  \  0 C 0 3 6\n1000 0000 1011 0000 1010  8 0 B 0 A\n\n二进制转十进制：715499, 49206, 527114\n\
+  10101110101011101011  715499\n00001100000000110110  49206\n10000000101100001010\
+  \  527114\n\n每列三位二进制：50406640505144625274\n1 0 1 0 1 1 1 0 1 0 1 0 1 1 1 0 1 0 1\
+  \ 1\n0 0 0 0 1 1 0 0 0 0 0 0 0 0 1 1 0 1 1 0\n1 0 0 0 0 0 0 0 1 0 1 1 0 0 0 0 1\
+  \ 0 1 0\n```\n\n---\n\n## 假名电报\n\n本小题标题暗示用日语的电报转换。将几段乱码转为电码再用日文转换可得本小题答案为 `HOCKEYCLUB`\
+  \ 。\n\n<table id = \"answerkey\">\n<tr><td>LNLR </td><td>.-.. -. .-.. .-. </td><td>かたかな</td><td>片假名</td></tr>\n\
+  <tr><td>RR/+FI </td><td>.-. .-. -..-. .-.-. ..-. .. </td><td>ななもんじ</td><td>七个字</td></tr>\n\
+  <tr><td>LNLRRR/+FI </td><td>.-.. -. .-.. .-. .-. .-. -..-. .-.-. ..-. .. </td><td>かたかなななもんじ</td><td>片假名七个字</td></tr>\n\
+  <tr><td>)ÄVM+\" </td><td>-.--.- .-.- ...- -- .-.-. .-..-. </td><td>（ろく　よん）</td><td>(6\
+  \ 4)</td></tr>\n<tr><td>)ÄV </td><td>-.--.- .-.- ...- </td><td>（ろく</td><td>(6</td></tr>\n\
+  <tr><td>M+\" </td><td>-- .-.-. .-..-. </td><td>よん）</td><td>4)</td></tr>\n<tr><td>DPYÅVSZI\
+  \ </td><td>-.. .--. -.-- .--.- ...- ... --.. .. </td><td>ホッケークラブ</td><td>HOCKEY\
+  \ CLUB</td></tr>\n</table>\n\n---\n\n## 一叶知秋\n\n能够找到6个相似的词在对应位置有相同字母 `D..I..O.S`\
+  \ 。搜索有相同字母的单词，结合标题，可以得到本小题答案为 `DECIDUOUS` 。\n\n```\nDAVIDSONS\nDECISIONS\nDELICIOUS\n\
+  DELIRIOUS\nDIVISIONS\nDOMINIONS\n```\n\n---\n\n## 交叉验证\n\n能够找到5个提交记录全都指向同一个答案，符合题目，可以得到本小题答案为\
+  \ `WHITEHALL`。\n\n```\nLONDONSTREET\nCOMEDIANJACK\nBRITISHGOVERNMENT\nNONBLACKLARGEROOM\n\
+  DESTROYEDPALACE\n```\n\n---\n\n## 问答游戏\n\n能够找到4个提交记录有相同的缩写 `PS` 。结合题目可以得到本小题答案为\
+  \ `PLAYSTATION`。\n\n```\nPOSTSCRIPT\nPHOTOSHOP\nPOWERSHELL\nPALESTINE\n```\n\n---\n\
+  \n## 九九乘法表\n\n能够找到3个数独，分别还原后按照题目提示和 `X MARK SPOT` ，将X重叠处的两个字母相乘，用A1Z26得到答案为 `PROCEDURE`。\n\
+  \n<div style=\"display:inline-block\">\n<div style=\"display:inline-block;margin-right:20px;float:left;\"\
+  >\n<table id=\"answerkey\">\n<tr><td bgcolor=green>8</td><td>2</td><td>1</td><td>5</td><td>3</td><td>6</td><td>4</td><td>7</td><td>9</td></tr>\n\
+  <tr><td>3</td><td>7</td><td>4</td><td bgcolor=green>2</td><td>1</td><td>9</td><td>5</td><td>6</td><td>8</td></tr>\n\
+  <tr><td>5</td><td>6</td><td>9</td><td>4</td><td>7</td><td>8</td><td bgcolor=green>3</td><td>1</td><td>2</td></tr>\n\
+  <tr><td>7</td><td bgcolor=green>1</td><td>5</td><td>6</td><td>9</td><td>2</td><td>8</td><td>3</td><td>4</td></tr>\n\
+  <tr><td>2</td><td>4</td><td>3</td><td>8</td><td bgcolor=green>5</td><td>1</td><td>7</td><td>9</td><td>6</td></tr>\n\
+  <tr><td>6</td><td>9</td><td>8</td><td>3</td><td>4</td><td>7</td><td>1</td><td bgcolor=green>2</td><td>5</td></tr>\n\
+  <tr><td>1</td><td>8</td><td bgcolor=green>7</td><td>9</td><td>2</td><td>5</td><td>6</td><td>4</td><td>3</td></tr>\n\
+  <tr><td>4</td><td>5</td><td>2</td><td>1</td><td>6</td><td bgcolor=green>3</td><td>9</td><td>8</td><td>7</td></tr>\n\
+  <tr><td>9</td><td>3</td><td>6</td><td>7</td><td>8</td><td>4</td><td>2</td><td>5</td><td\
+  \ bgcolor=green>1</td></tr>\n</table>\n</div>\n<div style=\"display:inline-block;margin-right:20px;float:left;\"\
+  >\n<table id=\"answerkey\">\n<tr><td bgcolor=green>X</td><td>O</td><td>P</td><td>T</td><td>S</td><td>M</td><td>K</td><td>R</td><td>A</td></tr>\n\
+  <tr><td>M</td><td>R</td><td>K</td><td bgcolor=green>X</td><td>A</td><td>O</td><td>P</td><td>S</td><td>T</td></tr>\n\
+  <tr><td>A</td><td>S</td><td>T</td><td>R</td><td>K</td><td>P</td><td bgcolor=green>X</td><td>M</td><td>O</td></tr>\n\
+  <tr><td>R</td><td bgcolor=green>X</td><td>M</td><td>O</td><td>T</td><td>S</td><td>A</td><td>P</td><td>K</td></tr>\n\
+  <tr><td>K</td><td>P</td><td>A</td><td>M</td><td bgcolor=green>X</td><td>R</td><td>T</td><td>O</td><td>S</td></tr>\n\
+  <tr><td>S</td><td>T</td><td>O</td><td>K</td><td>P</td><td>A</td><td>M</td><td bgcolor=green>X</td><td>R</td></tr>\n\
+  <tr><td>P</td><td>A</td><td bgcolor=green>X</td><td>S</td><td>R</td><td>T</td><td>O</td><td>K</td><td>M</td></tr>\n\
+  <tr><td>O</td><td>K</td><td>R</td><td>A</td><td>M</td><td bgcolor=green>X</td><td>S</td><td>T</td><td>P</td></tr>\n\
+  <tr><td>T</td><td>M</td><td>S</td><td>P</td><td>O</td><td>K</td><td>R</td><td>A</td><td\
+  \ bgcolor=green>X</td></tr>\n</table>\n</div>\n<div style=\"display:inline-block;margin-right:20px;float:left;\"\
+  >\n<table id=\"answerkey\">\n<tr><td bgcolor=green>2</td><td>5</td><td>8</td><td>4</td><td>3</td><td>1</td><td>7</td><td>6</td><td>9</td></tr>\n\
+  <tr><td>3</td><td>6</td><td>7</td><td bgcolor=green>9</td><td>5</td><td>2</td><td>1</td><td>4</td><td>8</td></tr>\n\
+  <tr><td>4</td><td>1</td><td>9</td><td>7</td><td>6</td><td>8</td><td bgcolor=green>5</td><td>3</td><td>2</td></tr>\n\
+  <tr><td>9</td><td bgcolor=green>3</td><td>1</td><td>8</td><td>2</td><td>4</td><td>6</td><td>5</td><td>7</td></tr>\n\
+  <tr><td>6</td><td>2</td><td>5</td><td>3</td><td bgcolor=green>1</td><td>7</td><td>9</td><td>8</td><td>4</td></tr>\n\
+  <tr><td>8</td><td>7</td><td>4</td><td>6</td><td>9</td><td>5</td><td>3</td><td bgcolor=green>2</td><td>1</td></tr>\n\
+  <tr><td>5</td><td>8</td><td bgcolor=green>3</td><td>1</td><td>4</td><td>9</td><td>2</td><td>7</td><td>6</td></tr>\n\
+  <tr><td>7</td><td>9</td><td>2</td><td>5</td><td>8</td><td bgcolor=green>6</td><td>4</td><td>1</td><td>3</td></tr>\n\
+  <tr><td>1</td><td>4</td><td>6</td><td>2</td><td>7</td><td>3</td><td>8</td><td>9</td><td\
+  \ bgcolor=green>5</td></tr>\n</table>\n</div>\n</div>\n\n---\n\n## 纵横家\n\n本小题对应两个由单词组成的提交记录，按照题目暗示可以还原成一个纵横字谜，读取对角线可以得到本小题的答案\
+  \ `BYPUBLIC` 。\n\n<table id = \"answerkey\">\n<tr><td bgcolor=green>B</td><td>A</td><td>R</td><td\
+  \ bgcolor=lightgray></td><td bgcolor=lightgray></td><td>R</td><td>N</td><td>A</td></tr>\n\
+  <tr><td>E</td><td bgcolor=green>Y</td><td>E</td><td bgcolor=lightgray></td><td>L</td><td>E</td><td>A</td><td>N</td></tr>\n\
+  <tr><td>D</td><td>E</td><td bgcolor=green>P</td><td bgcolor=lightgray></td><td>A</td><td>S</td><td>I</td><td>N</td></tr>\n\
+  <tr><td bgcolor=lightgray></td><td bgcolor=lightgray></td><td>R</td><td bgcolor=green>U</td><td>M</td><td>P</td><td>L</td><td>E</td></tr>\n\
+  <tr><td>T</td><td>H</td><td>I</td><td>S</td><td bgcolor=green>B</td><td>E</td><td\
+  \ bgcolor=lightgray></td><td bgcolor=lightgray></td></tr>\n<tr><td>A</td><td>O</td><td>N</td><td>E</td><td\
+  \ bgcolor=lightgray></td><td bgcolor=green>L</td><td>S</td><td>D</td></tr>\n<tr><td>P</td><td>O</td><td>T</td><td>S</td><td\
+  \ bgcolor=lightgray></td><td>L</td><td bgcolor=green>I</td><td>E</td></tr>\n<tr><td>A</td><td>D</td><td>S</td><td\
+  \ bgcolor=lightgray></td><td bgcolor=lightgray></td><td>S</td><td>E</td><td bgcolor=green>C</td></tr>\n\
+  </table>\n\n---\n\n## 左右不分\n\n左右不分暗示将L和R交换，对 `FIREFOLMAT` 进行交换得到本小题的答案 `FILEFORMAT`\
+  \ 。\n\n---\n\n## 馍夹肉夹馍\n\n每一个小题答案都有形如 `AxxxA` 的部分，按照相同字母排序再取中心字母可以得到最终答案是 `SPECULATING`\
+  \ 。\n\nPL<font color=red>A</font>Y<font color=yellow>S</font>T<font color=red>A</font>TION\
+  \  \n<font color=red>B</font>Y<font color=yellow>P</font>U<font color=red>B</font>LIC\
+  \  \nHO<font color=red>C</font>K<font color=yellow>E</font>Y<font color=red>C</font>LUB\
+  \  \n<font color=red>D</font>E<font color=yellow>C</font>I<font color=red>D</font>UOUS\
+  \  \nPROC<font color=red>E</font>D<font color=yellow>U</font>R<font color=red>E</font>\
+  \  \n<font color=red>F</font>I<font color=yellow>L</font>E<font color=red>F</font>ORMAT\
+  \  \nLON<font color=red>G</font>R<font color=yellow>A</font>N<font color=red>G</font>E\
+  \  \nW<font color=red>H</font>I<font color=yellow>T</font>E<font color=red>H</font>ALL\
+  \  \n<font color=red>I</font>N<font color=yellow>I</font>T<font color=red>I</font>AL\
+  \  \n<font color=red>J</font>U<font color=yellow>N</font>E<font color=red>J</font>ULY\
+  \  \n<font color=red>K</font>A<font color=yellow>G</font>A<font color=red>K</font>UCHOP\
+  \  \n\n"
+content:
+- "<p>这是一位选手参加puzzlehunt的记录，看来可能是第一次接触这样的比赛。</p>\r\n<style>\r\n#history_of_submitted_answers\
+  \ tr:not(:last-child) td:nth-child(2) {\r\n    color: rgb(255, 193, 7);\r\n}\r\n\
+  \r\n#history_of_submitted_answers td {\r\nborder: 1px solid white;\r\npadding: 5px;\r\
+  \n}\r\n#history_of_submitted_answers {\r\nmargin: 20px;\r\n}\r\n</style>\r\n<table\
+  \ id='history_of_submitted_answers'><tr><td>UNSOLVED</td><td>双星之战</td><td>提交次数：11</td><td>答案：</td></tr>\r\
+  \n<tr><td>UNSOLVED</td><td>QUOTEDROP</td><td>提交次数：10</td><td>答案：</td></tr>\r\n<tr><td>UNSOLVED</td><td>熵增</td><td>提交次数：9</td><td>答案：</td></tr>\r\
+  \n<tr><td>UNSOLVED</td><td>密文破译</td><td>提交次数：8</td><td>答案：</td></tr>\r\n<tr><td>UNSOLVED</td><td>假名电报</td><td>提交次数：7</td><td>答案：</td></tr>\r\
+  \n<tr><td>UNSOLVED</td><td>一叶知秋</td><td>提交次数：6</td><td>答案：</td></tr>\r\n<tr><td>UNSOLVED</td><td>交叉验证</td><td>提交次数：5</td><td>答案：</td></tr>\r\
+  \n<tr><td>UNSOLVED</td><td>问答游戏</td><td>提交次数：4</td><td>答案：</td></tr>\r\n<tr><td>UNSOLVED</td><td>九九乘法表</td><td>提交次数：3</td><td>答案：</td></tr>\r\
+  \n<tr><td>UNSOLVED</td><td>纵横家</td><td>提交次数：2</td><td>答案：</td></tr>\r\n<tr><td>UNSOLVED</td><td>左右不分</td><td>提交次数：1</td><td>答案：</td></tr>\r\
+  \n<tr><td>UNSOLVED</td><td>META:馍夹肉夹馍</td><td>提交次数：0</td><td>答案：</td></tr>\r\n</table>\r\
+  \n<p>提交记录（已转大写、去除空格）：</p>\r\n<pre>\r\n⑴EDEADFAEECADEREADEE\r\n⑴RTLOTIUTTXSTSVTORVR\r\
+  \n)ÄV\r\n)ÄVM+\"\r\n258431769367952148419768532931824657625317984874695321583149276792586413146273895\r\
+  \n49206\r\n50406640505144625274\r\n527114\r\n715499\r\n821536479374219568569478312715692834243851796698347125187925643452163987936784251\r\
+  \nA08EC0A0BE30B6A\r\nAEAEB0C03680B0A\r\nANEWTRAILISIN\r\nASIANWINTERLI\r\nBARRNAEYELEANDEPASINRUMPLETHISBEAONELSDPOTSLIEADSSEC\r\
+  \nBEDTAPAAYEHOODREPRINTSUSESLAMBRESPELLSNAILSIEANNEDEC\r\nBRITISHGOVERNMENT\r\n\
+  CHAINSAW\r\nCOMEDIANJACK\r\nCOYIAYIAEUATIRSU\r\nCYLINDER\r\nDAVIDSONS\r\nDECISIONS\r\
+  \nDELICIOUS\r\nDELIRIOUS\r\nDESTROYEDPALACE\r\nDIVISIONS\r\nDOMINIONS\r\nDPYÅVSZI\r\
+  \nEICAUROYASYITUIA\r\nFEBRUARY\r\nFIREFOLMAT\r\nHIMALAYA\r\nITALIAWINNERS\r\nIWANTAIRLINES\r\
+  \nJIUJITSU\r\nJOURNALS\r\nLEDEDFAEAECEA(DERE-DBEE)\r\nLIEGRHBGEEEABFEFOFEFT\r\n\
+  LNLR\r\nLNLRRR/+FI\r\nLONDONSTREET\r\nM+\"\r\nMAGNETIC\r\nNONBLACKLARGEROOM\r\n\
+  OIEARBGEEFABFEUFFIEF\r\nOLYMPICS\r\nOMHEINTANF⑵ECLIIOBIU\r\nPALESTINE\r\nPHOTOSHOP\r\
+  \nPOSTSCRIPT\r\nPOWERSHELL\r\nRR/+FI\r\nSAWININERTIAL\r\nSIXTEENSTARS\r\nSMGEHNTUNF⑵ECLIIAVIT\r\
+  \nSONOTSTROFENPOUROION\r\nTONHTISTROTENPOROOONU\r\nTRTLTIUTUTXTS(TSVT-RVVR)\r\n\
+  TWINANISRAELI\r\nUAPZPBWAXKVJ\r\nUZWKAPAVPBXJ\r\nWARIILASTNINE\r\nWINATAIRLINES\r\
+  \nWINNERSITALIA\r\nXOPTSMKRAMRKXAOPSTASTRKPXMORXMOTSAPKKPAMXRTOSSTOKPAMXRPAXSRTOKMOKRAMXSTPTMSPOKRAX\r\
+  \n</pre>"
+content-type: 1
+desc: 投机
+extend-data: 1,4,3,3
+links:
+- path: ccbc13/index
+  title: 索引页
+  type: index
+- path: ccbc13/pages/ccbc13
+  title: CCBC-13
+  type: page
+tips:
+- content: 这道题下面有11+10+9+...+2+1=66次提交记录，需要分配到11个小题下面，再根据每题的提交记录推理出这道小题的答案。
+  title: 我毫无头绪
+- content: 选手注意到了星星数目，以及题目里用来提取的单词，但可惜地得到了错误解法，并提交了两个错误答案。需要将解法改成正确的再提取。
+  title: 双星之战怎么做？
+- content: 我们的选手真是太大意了，完全没有意识到DROPQUOTE需要自行确定字母位置，直接将上面的字母正序倒序各填了一次。
+  title: QUOTEDROP怎么做？
+- content: 可能是没有注意到这题最后的排序，选手直接把得到的字母随机重排了，但是并没有成功。
+  title: 熵增怎么做？
+- content: 选手显然熟知5位二进制A1Z26、二进制转十进制、3位二进制转八进制、和4位二进制转十六进制。可惜他漏了一种显然可以用于三行二进制的解密方法。
+  title: 密文破译怎么做？
+- content: 选手显然没有注意到标题中的“假名”提示，把这题当成了普通的莫尔斯电码来做了，只能得到一些乱码。
+  title: 假名电报怎么做？
+- content: 看来选手得到了部分字母后就开始暴力了，可惜他不知道标题和答案其实是有联系的。
+  title: 一叶知秋怎么做？
+- content: 选手得到了一些提示，它们都指向同一个答案，但选手并没能注意。
+  title: 交叉验证怎么做？
+- content: 选手没能注意到题目最后的说明和标题的提示，只试了几个其他可能的全称。
+  title: 问答游戏怎么做？
+- content: 选手出色地完成了三个数独，却没能注意到标题中的提示：需要将第二个数独标出的格子所对应的另外两个数独中的两个数相乘。
+  title: 九九乘法表怎么做？
+- content: 选手完成了这道Cryptic Crossword，但却没能注意到简单的提取，把所有填入的单词分纵横答了两遍。
+  title: 纵横家怎么做？
+- content: 实在太可惜了，选手居然没注意到最后的答案也要把L和R交换。
+  title: 左右不分怎么做？
+- content: 每个答案都有形如AxxxA的部分，按照馍的字母顺序(A~K)排序，取分别取中心字母连接即为答案。
+  title: 馍夹肉夹馍怎么做？
+- content: '```
+
+    CHAINSAW
+
+    COYIAYIAEUATIRSU
+
+    CYLINDER
+
+    EICAUROYASYITUIA
+
+    FEBRUARY
+
+    HIMALAYA
+
+    JIUJITSU
+
+    JOURNALS
+
+    MAGNETIC
+
+    OLYMPICS
+
+    SIXTEENSTARS
+
+    ```'
+  title: 双星之战的提交记录是？
+- content: '```
+
+    ⑴EDEADFAEECADEREADEE
+
+    ⑴RTLOTIUTTXSTSVTORVR
+
+    LEDEDFAEAECEA(DERE-DBEE)
+
+    LIEGRHBGEEEABFEFOFEFT
+
+    OIEARBGEEFABFEUFFIEF
+
+    OMHEINTANF⑵ECLIIOBIU
+
+    SMGEHNTUNF⑵ECLIIAVIT
+
+    SONOTSTROFENPOUROION
+
+    TONHTISTROTENPOROOONU
+
+    TRTLTIUTUTXTS(TSVT-RVVR)
+
+    ```'
+  title: QUOTEDROP的提交记录是？
+- content: '```
+
+    ANEWTRAILISIN
+
+    ASIANWINTERLI
+
+    ITALIAWINNERS
+
+    IWANTAIRLINES
+
+    SAWININERTIAL
+
+    TWINANISRAELI
+
+    WARIILASTNINE
+
+    WINATAIRLINES
+
+    WINNERSITALIA
+
+    ```'
+  title: 熵增的提交记录是？
+- content: '```
+
+    49206
+
+    50406640505144625274
+
+    527114
+
+    715499
+
+    A08EC0A0BE30B6A
+
+    AEAEB0C03680B0A
+
+    UAPZPBWAXKVJ
+
+    UZWKAPAVPBXJ
+
+    ```'
+  title: 密文破译的提交记录是？
+- content: '```
+
+    )ÄV
+
+    )ÄVM+"
+
+    DPYÅVSZI
+
+    LNLR
+
+    LNLRRR/+FI
+
+    M+"
+
+    RR/+FI
+
+    ```'
+  title: 假名电报的提交记录是？
+- content: '```
+
+    DAVIDSONS
+
+    DECISIONS
+
+    DELICIOUS
+
+    DELIRIOUS
+
+    DIVISIONS
+
+    DOMINIONS
+
+    ```'
+  title: 一叶知秋的提交记录是？
+- content: '```
+
+    BRITISHGOVERNMENT
+
+    COMEDIANJACK
+
+    DESTROYEDPALACE
+
+    LONDONSTREET
+
+    NONBLACKLARGEROOM
+
+    ```'
+  title: 交叉验证的提交记录是？
+- content: '```
+
+    PALESTINE
+
+    PHOTOSHOP
+
+    POSTSCRIPT
+
+    POWERSHELL
+
+    ```'
+  title: 问答游戏的提交记录是？
+- content: '```
+
+    258431769367952148419768532931824657625317984874695321583149276792586413146273895
+
+    821536479374219568569478312715692834243851796698347125187925643452163987936784251
+
+    XOPTSMKRAMRKXAOPSTASTRKPXMORXMOTSAPKKPAMXRTOSSTOKPAMXRPAXSRTOKMOKRAMXSTPTMSPOKRAX
+
+    ```'
+  title: 九九乘法表的提交记录是？
+- content: '```
+
+    BARRNAEYELEANDEPASINRUMPLETHISBEAONELSDPOTSLIEADSSEC
+
+    BEDTAPAAYEHOODREPRINTSUSESLAMBRESPELLSNAILSIEANNEDEC
+
+    ```'
+  title: 纵横家的提交记录是？
+- content: '```
+
+    FIREFOLMAT
+
+    ```'
+  title: 左右不分的提交记录是？
+title: 提交记录
+type: problem

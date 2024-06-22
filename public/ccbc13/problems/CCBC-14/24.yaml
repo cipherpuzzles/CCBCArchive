@@ -1,0 +1,1177 @@
+answer: PLANES
+answer-analysis: '首先通过浏览器开发者工具可以查看格子代码，会看到每个格子的背景色是用 HSL 格式写的。
+
+
+  其中亮度（L）要么 10%，要么 95%，就是为了画出题目中的鱼，所以可知应该没有多余的信息了。
+
+
+  色相（H）分布比较均匀，几乎 0-360 都有，所以暂时也看不出什么。
+
+
+  剩下中间的饱和度（S）的分布比较特殊，最低值为 32，最高值为 86。这是 ASCII 代码，翻译成字符后可以得到一句不断重复的提示：`USE HUE AS THE
+  ANGLE, PLOT 1820 POINTS ON UNIT CIRCLE, THEN CONNECT THEM IN THE GIVEN ORDER`.
+
+
+  也就是说，我们要把色相的数字当成角度，按顺序在一个圆上连线。这里可以用各种工具，最终连完的结果如图：
+
+
+  <img src="/ccbc13/images/CCBC-14/f92be7a466094c27acba3ffc500590f8.webp" style="width:700px">
+
+
+  <p> </p>
+
+
+  可以看出答案是 `PLANES`。'
+content:
+- "<style>  .fish td { height:10px; width:10px; padding:0;} </style>\r\n<table cellpadding='0'\
+  \ cellspacing='0' class='fish'><tr>\r\n<td style=\"background-color:hsl(0,85%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(138,83%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(1,69%,95%)\"></td>\r\n<td style=\"background-color:hsl(219,32%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(5,72%,95%)\"></td>\r\n<td style=\"background-color:hsl(221,85%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(7,69%,95%)\"></td>\r\n<td style=\"background-color:hsl(222,32%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(8,65%,95%)\"></td>\r\n<td style=\"background-color:hsl(223,83%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(9,32%,95%)\"></td>\r\n<td style=\"background-color:hsl(224,84%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(51,72%,95%)\"></td>\r\n<td style=\"background-color:hsl(237,69%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(115,32%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(238,65%,95%)\"></td>\r\n<td style=\"background-color:hsl(116,78%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(239,71%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(117,76%,95%)\"></td>\r\n<td style=\"background-color:hsl(240,69%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(118,44%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(241,32%,95%)\"></td>\r\n<td style=\"background-color:hsl(120,80%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(242,76%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(119,79%,95%)\"></td>\r\n<td style=\"background-color:hsl(243,84%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(121,32%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(244,49%,95%)\"></td>\r\n<td style=\"background-color:hsl(87,56%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(245,50%,10%)\"></td>\r\n<td style=\"\
+  background-color:hsl(89,48%,10%)\"></td>\r\n<td style=\"background-color:hsl(246,32%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(90,80%,10%)\"></td>\r\n<td style=\"background-color:hsl(247,79%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(91,73%,95%)\"></td>\r\n<td style=\"background-color:hsl(248,78%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(59,84%,95%)\"></td>\r\n<td style=\"background-color:hsl(250,83%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(60,32%,95%)\"></td>\r\n<td style=\"background-color:hsl(251,79%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(61,78%,95%)\"></td>\r\n<td style=\"background-color:hsl(252,32%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(105,85%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(253,78%,95%)\"></td>\r\n<td style=\"background-color:hsl(106,73%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(254,84%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(107,32%,95%)\"></td>\r\n<td style=\"background-color:hsl(256,67%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(62,73%,95%)\"></td>\r\n<td style=\"background-color:hsl(257,82%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(63,67%,95%)\"></td>\r\n<td style=\"background-color:hsl(258,76%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(64,69%,95%)\"></td>\r\n<td style=\"background-color:hsl(259,44%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(94,32%,95%)\"></td>\r\n<td style=\"background-color:hsl(260,84%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(95,72%,95%)\"></td>\r\n<td style=\"background-color:hsl(261,69%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(96,78%,95%)\"></td>\r\n<td style=\"background-color:hsl(262,32%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(97,67%,95%)\"></td>\r\n<td style=\"background-color:hsl(263,79%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(98,78%,95%)\"></td>\r\n<td style=\"background-color:hsl(264,78%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(99,69%,95%)\"></td>\r\n</tr>\r\n<tr>\r\
+  \n<td style=\"background-color:hsl(265,67%,95%)\"></td>\r\n<td style=\"background-color:hsl(100,84%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(266,32%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(101,84%,95%)\"></td>\r\n<td style=\"background-color:hsl(272,72%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(102,69%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(274,77%,95%)\"></td>\r\n<td style=\"background-color:hsl(156,32%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(11,73%,95%)\"></td>\r\n<td style=\"background-color:hsl(157,78%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(12,32%,95%)\"></td>\r\n<td style=\"background-color:hsl(158,84%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(13,72%,95%)\"></td>\r\n<td style=\"background-color:hsl(159,69%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(14,32%,95%)\"></td>\r\n<td style=\"background-color:hsl(160,71%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(15,73%,95%)\"></td>\r\n<td style=\"background-color:hsl(143,86%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(316,69%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(141,78%,95%)\"></td>\r\n<td style=\"background-color:hsl(262,32%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(98,79%,95%)\"></td>\r\n<td style=\"background-color:hsl(261,82%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(97,68%,95%)\"></td>\r\n<td style=\"background-color:hsl(264,69%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(96,82%,95%)\"></td>\r\n<td style=\"background-color:hsl(263,46%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(95,32%,95%)\"></td>\r\n<td style=\"background-color:hsl(260,85%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(94,83%,95%)\"></td>\r\n<td style=\"background-color:hsl(259,69%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(62,32%,10%)\"></td>\r\n<td style=\"background-color:hsl(258,72%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(64,85%,10%)\"></td>\r\n<td style=\"background-color:hsl(257,69%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(61,32%,95%)\"></td>\r\n<td style=\"background-color:hsl(253,65%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(107,83%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(255,32%,95%)\"></td>\r\n<td style=\"background-color:hsl(106,84%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(256,72%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(108,69%,10%)\"></td>\r\n<td style=\"background-color:hsl(254,32%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(105,65%,10%)\"></td>\r\n<td style=\"\
+  background-color:hsl(252,78%,10%)\"></td>\r\n<td style=\"background-color:hsl(60,71%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(251,76%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(59,69%,95%)\"></td>\r\n<td style=\"background-color:hsl(249,44%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(122,32%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(307,80%,95%)\"></td>\r\n<td style=\"background-color:hsl(123,76%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(308,79%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(124,84%,95%)\"></td>\r\n<td style=\"background-color:hsl(311,32%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(125,49%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(312,56%,95%)\"></td>\r\n<td style=\"background-color:hsl(126,50%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(310,48%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(127,32%,95%)\"></td>\r\n<td style=\"background-color:hsl(323,80%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(207,79%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(324,73%,95%)\"></td>\r\n<td style=\"background-color:hsl(209,78%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(325,84%,95%)\"></td>\r\n</tr>\r\n<tr>\r\
+  \n<td style=\"background-color:hsl(210,83%,95%)\"></td>\r\n<td style=\"background-color:hsl(326,32%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(212,79%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(328,78%,10%)\"></td>\r\n<td style=\"background-color:hsl(213,32%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(329,85%,10%)\"></td>\r\n<td style=\"\
+  background-color:hsl(214,78%,10%)\"></td>\r\n<td style=\"background-color:hsl(327,73%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(211,84%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(351,32%,95%)\"></td>\r\n<td style=\"background-color:hsl(192,67%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(350,73%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(191,82%,95%)\"></td>\r\n<td style=\"background-color:hsl(349,67%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(190,76%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(348,69%,95%)\"></td>\r\n<td style=\"background-color:hsl(188,44%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(347,32%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(187,84%,95%)\"></td>\r\n<td style=\"background-color:hsl(346,72%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(207,69%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(345,78%,95%)\"></td>\r\n<td style=\"background-color:hsl(205,32%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(342,67%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(203,79%,95%)\"></td>\r\n<td style=\"background-color:hsl(340,78%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(200,78%,10%)\"></td>\r\n<td style=\"\
+  background-color:hsl(339,69%,10%)\"></td>\r\n<td style=\"background-color:hsl(201,67%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(338,84%,10%)\"></td>\r\n<td style=\"\
+  background-color:hsl(197,32%,10%)\"></td>\r\n<td style=\"background-color:hsl(337,84%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(196,72%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(336,69%,10%)\"></td>\r\n<td style=\"background-color:hsl(195,77%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(353,32%,10%)\"></td>\r\n<td style=\"\
+  background-color:hsl(194,73%,10%)\"></td>\r\n<td style=\"background-color:hsl(352,78%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(192,32%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(333,84%,95%)\"></td>\r\n<td style=\"background-color:hsl(193,72%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(334,69%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(191,32%,95%)\"></td>\r\n<td style=\"background-color:hsl(351,71%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(190,73%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(350,86%,10%)\"></td>\r\n<td style=\"background-color:hsl(189,69%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(349,78%,10%)\"></td>\r\n<td style=\"\
+  background-color:hsl(188,32%,95%)\"></td>\r\n<td style=\"background-color:hsl(348,79%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(187,82%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(318,68%,95%)\"></td>\r\n<td style=\"background-color:hsl(149,69%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(266,82%,10%)\"></td>\r\n<td style=\"\
+  background-color:hsl(99,46%,10%)\"></td>\r\n<td style=\"background-color:hsl(263,32%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(98,85%,95%)\"></td>\r\n<td style=\"background-color:hsl(265,83%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(97,69%,95%)\"></td>\r\n<td style=\"background-color:hsl(262,32%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(95,72%,95%)\"></td>\r\n<td style=\"background-color:hsl(261,85%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(96,69%,95%)\"></td>\r\n<td style=\"background-color:hsl(264,32%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(66,65%,95%)\"></td>\r\n</tr>\r\n<tr>\r\
+  \n<td style=\"background-color:hsl(295,83%,95%)\"></td>\r\n<td style=\"background-color:hsl(65,32%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(259,84%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(63,72%,95%)\"></td>\r\n<td style=\"background-color:hsl(256,69%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(107,32%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(254,65%,95%)\"></td>\r\n<td style=\"background-color:hsl(104,78%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(252,71%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(106,76%,95%)\"></td>\r\n<td style=\"background-color:hsl(253,69%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(123,44%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(311,32%,95%)\"></td>\r\n<td style=\"background-color:hsl(124,80%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(312,76%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(127,79%,95%)\"></td>\r\n<td style=\"background-color:hsl(313,84%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(125,32%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(309,49%,95%)\"></td>\r\n<td style=\"background-color:hsl(122,56%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(243,50%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(120,48%,95%)\"></td>\r\n<td style=\"background-color:hsl(240,32%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(119,80%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(239,79%,95%)\"></td>\r\n<td style=\"background-color:hsl(118,73%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(242,78%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(121,84%,95%)\"></td>\r\n<td style=\"background-color:hsl(241,83%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(117,32%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(238,79%,10%)\"></td>\r\n<td style=\"background-color:hsl(116,78%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(237,32%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(115,85%,95%)\"></td>\r\n<td style=\"background-color:hsl(236,78%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(114,73%,10%)\"></td>\r\n<td style=\"\
+  background-color:hsl(258,84%,10%)\"></td>\r\n<td style=\"background-color:hsl(62,32%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(257,67%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(63,73%,95%)\"></td>\r\n<td style=\"background-color:hsl(262,82%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(95,67%,95%)\"></td>\r\n<td style=\"background-color:hsl(263,76%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(96,69%,95%)\"></td>\r\n<td style=\"background-color:hsl(261,44%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(98,32%,95%)\"></td>\r\n<td style=\"background-color:hsl(264,84%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(99,72%,95%)\"></td>\r\n<td style=\"background-color:hsl(265,69%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(100,78%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(266,32%,95%)\"></td>\r\n<td style=\"background-color:hsl(145,67%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(267,79%,10%)\"></td>\r\n<td style=\"\
+  background-color:hsl(97,78%,10%)\"></td>\r\n<td style=\"background-color:hsl(260,78%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(65,69%,95%)\"></td>\r\n<td style=\"background-color:hsl(259,67%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(64,84%,95%)\"></td>\r\n<td style=\"background-color:hsl(295,32%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(67,84%,95%)\"></td>\r\n<td style=\"background-color:hsl(296,72%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(70,69%,95%)\"></td>\r\n<td style=\"background-color:hsl(297,77%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(71,32%,95%)\"></td>\r\n<td style=\"background-color:hsl(298,73%,95%)\"\
+  ></td>\r\n</tr>\r\n<tr>\r\n<td style=\"background-color:hsl(72,78%,95%)\"></td>\r\
+  \n<td style=\"background-color:hsl(299,32%,95%)\"></td>\r\n<td style=\"background-color:hsl(69,84%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(280,72%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(73,69%,95%)\"></td>\r\n<td style=\"background-color:hsl(300,32%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(74,71%,95%)\"></td>\r\n<td style=\"background-color:hsl(308,73%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(123,86%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(252,69%,95%)\"></td>\r\n<td style=\"background-color:hsl(106,78%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(256,32%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(107,79%,95%)\"></td>\r\n<td style=\"background-color:hsl(255,82%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(108,68%,10%)\"></td>\r\n<td style=\"\
+  background-color:hsl(253,69%,10%)\"></td>\r\n<td style=\"background-color:hsl(104,82%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(251,46%,10%)\"></td>\r\n<td style=\"\
+  background-color:hsl(122,32%,95%)\"></td>\r\n<td style=\"background-color:hsl(250,85%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(59,83%,95%)\"></td>\r\n<td style=\"background-color:hsl(249,69%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(58,32%,95%)\"></td>\r\n<td style=\"background-color:hsl(248,72%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(121,85%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(243,69%,95%)\"></td>\r\n<td style=\"background-color:hsl(120,32%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(242,65%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(117,83%,95%)\"></td>\r\n<td style=\"background-color:hsl(238,32%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(118,84%,10%)\"></td>\r\n<td style=\"\
+  background-color:hsl(240,72%,10%)\"></td>\r\n<td style=\"background-color:hsl(116,69%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(239,32%,10%)\"></td>\r\n<td style=\"\
+  background-color:hsl(119,65%,95%)\"></td>\r\n<td style=\"background-color:hsl(241,78%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(57,71%,95%)\"></td>\r\n<td style=\"background-color:hsl(247,76%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(89,69%,10%)\"></td>\r\n<td style=\"background-color:hsl(246,44%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(91,32%,95%)\"></td>\r\n<td style=\"background-color:hsl(245,80%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(90,76%,95%)\"></td>\r\n<td style=\"background-color:hsl(249,79%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(60,84%,10%)\"></td>\r\n<td style=\"background-color:hsl(253,32%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(105,49%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(255,56%,95%)\"></td>\r\n<td style=\"background-color:hsl(104,50%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(252,48%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(59,32%,95%)\"></td>\r\n<td style=\"background-color:hsl(251,80%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(103,79%,10%)\"></td>\r\n<td style=\"\
+  background-color:hsl(254,73%,95%)\"></td>\r\n<td style=\"background-color:hsl(106,78%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(236,84%,10%)\"></td>\r\n<td style=\"\
+  background-color:hsl(116,83%,95%)\"></td>\r\n<td style=\"background-color:hsl(241,32%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(117,79%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(239,78%,95%)\"></td>\r\n<td style=\"background-color:hsl(120,32%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(240,85%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(119,78%,95%)\"></td>\r\n<td style=\"background-color:hsl(238,73%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(118,84%,95%)\"></td>\r\n</tr>\r\n<tr>\r\
+  \n<td style=\"background-color:hsl(242,32%,95%)\"></td>\r\n<td style=\"background-color:hsl(121,67%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(243,73%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(122,82%,95%)\"></td>\r\n<td style=\"background-color:hsl(311,67%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(126,76%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(313,69%,95%)\"></td>\r\n<td style=\"background-color:hsl(124,44%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(310,32%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(123,84%,10%)\"></td>\r\n<td style=\"background-color:hsl(312,72%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(125,69%,10%)\"></td>\r\n<td style=\"\
+  background-color:hsl(308,78%,10%)\"></td>\r\n<td style=\"background-color:hsl(127,32%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(322,67%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(82,79%,95%)\"></td>\r\n<td style=\"background-color:hsl(321,78%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(81,78%,95%)\"></td>\r\n<td style=\"background-color:hsl(317,69%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(78,67%,95%)\"></td>\r\n<td style=\"background-color:hsl(318,84%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(186,32%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(347,84%,95%)\"></td>\r\n<td style=\"background-color:hsl(209,72%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(326,69%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(213,77%,95%)\"></td>\r\n<td style=\"background-color:hsl(327,32%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(212,73%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(328,78%,95%)\"></td>\r\n<td style=\"background-color:hsl(215,32%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(329,84%,10%)\"></td>\r\n<td style=\"\
+  background-color:hsl(214,72%,95%)\"></td>\r\n<td style=\"background-color:hsl(330,69%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(216,32%,10%)\"></td>\r\n<td style=\"\
+  background-color:hsl(357,71%,10%)\"></td>\r\n<td style=\"background-color:hsl(217,73%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(331,86%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(191,69%,95%)\"></td>\r\n<td style=\"background-color:hsl(350,78%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(188,32%,10%)\"></td>\r\n<td style=\"\
+  background-color:hsl(349,79%,95%)\"></td>\r\n<td style=\"background-color:hsl(190,82%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(352,68%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(211,69%,95%)\"></td>\r\n<td style=\"background-color:hsl(325,82%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(208,46%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(324,32%,95%)\"></td>\r\n<td style=\"background-color:hsl(128,85%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(313,83%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(123,69%,95%)\"></td>\r\n<td style=\"background-color:hsl(306,32%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(122,72%,10%)\"></td>\r\n<td style=\"\
+  background-color:hsl(308,85%,10%)\"></td>\r\n<td style=\"background-color:hsl(121,69%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(242,32%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(117,65%,10%)\"></td>\r\n<td style=\"background-color:hsl(240,83%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(116,32%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(238,84%,95%)\"></td>\r\n<td style=\"background-color:hsl(119,72%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(239,69%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(118,32%,95%)\"></td>\r\n<td style=\"background-color:hsl(241,65%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(120,78%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(243,71%,95%)\"></td>\r\n</tr>\r\n<tr>\r\n<td style=\"background-color:hsl(57,76%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(248,69%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(90,44%,95%)\"></td>\r\n<td style=\"background-color:hsl(247,32%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(58,80%,95%)\"></td>\r\n<td style=\"background-color:hsl(250,76%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(61,79%,95%)\"></td>\r\n<td style=\"background-color:hsl(252,84%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(103,32%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(253,49%,95%)\"></td>\r\n<td style=\"background-color:hsl(62,56%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(259,50%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(93,48%,95%)\"></td>\r\n<td style=\"background-color:hsl(260,32%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(96,80%,95%)\"></td>\r\n<td style=\"background-color:hsl(262,79%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(98,73%,95%)\"></td>\r\n<td style=\"background-color:hsl(265,78%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(99,84%,95%)\"></td>\r\n<td style=\"background-color:hsl(264,83%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(97,32%,95%)\"></td>\r\n<td style=\"background-color:hsl(261,79%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(94,78%,95%)\"></td>\r\n<td style=\"background-color:hsl(249,32%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(57,85%,95%)\"></td>\r\n<td style=\"background-color:hsl(240,78%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(117,73%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(241,84%,95%)\"></td>\r\n<td style=\"background-color:hsl(116,32%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(239,67%,10%)\"></td>\r\n<td style=\"\
+  background-color:hsl(120,73%,10%)\"></td>\r\n<td style=\"background-color:hsl(248,82%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(92,67%,95%)\"></td>\r\n<td style=\"background-color:hsl(247,76%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(56,69%,95%)\"></td>\r\n<td style=\"background-color:hsl(238,44%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(114,32%,10%)\"></td>\r\n<td style=\"\
+  background-color:hsl(237,84%,95%)\"></td>\r\n<td style=\"background-color:hsl(50,72%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(236,69%,10%)\"></td>\r\n<td style=\"\
+  background-color:hsl(49,78%,10%)\"></td>\r\n<td style=\"background-color:hsl(235,32%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(48,67%,95%)\"></td>\r\n<td style=\"background-color:hsl(234,79%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(47,78%,95%)\"></td>\r\n<td style=\"background-color:hsl(233,78%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(46,69%,95%)\"></td>\r\n<td style=\"background-color:hsl(232,67%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(45,84%,95%)\"></td>\r\n<td style=\"background-color:hsl(231,32%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(44,84%,10%)\"></td>\r\n<td style=\"background-color:hsl(227,72%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(43,69%,10%)\"></td>\r\n<td style=\"background-color:hsl(229,77%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(55,32%,95%)\"></td>\r\n<td style=\"background-color:hsl(240,73%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(118,78%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(239,32%,95%)\"></td>\r\n<td style=\"background-color:hsl(117,84%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(238,72%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(119,69%,95%)\"></td>\r\n<td style=\"background-color:hsl(242,32%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(120,71%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(241,73%,95%)\"></td>\r\n<td style=\"background-color:hsl(116,86%,95%)\"\
+  ></td>\r\n</tr>\r\n<tr>\r\n<td style=\"background-color:hsl(237,69%,10%)\"></td>\r\
+  \n<td style=\"background-color:hsl(49,78%,10%)\"></td>\r\n<td style=\"background-color:hsl(234,32%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(98,79%,95%)\"></td>\r\n<td style=\"background-color:hsl(261,82%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(95,68%,95%)\"></td>\r\n<td style=\"background-color:hsl(262,69%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(96,82%,95%)\"></td>\r\n<td style=\"background-color:hsl(264,46%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(97,32%,95%)\"></td>\r\n<td style=\"background-color:hsl(263,85%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(99,83%,95%)\"></td>\r\n<td style=\"background-color:hsl(266,69%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(146,32%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(268,72%,95%)\"></td>\r\n<td style=\"background-color:hsl(147,85%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(318,69%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(81,32%,95%)\"></td>\r\n<td style=\"background-color:hsl(320,65%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(82,83%,95%)\"></td>\r\n<td style=\"background-color:hsl(319,32%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(79,84%,95%)\"></td>\r\n<td style=\"background-color:hsl(317,72%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(80,69%,95%)\"></td>\r\n<td style=\"background-color:hsl(315,32%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(139,65%,10%)\"></td>\r\n<td style=\"\
+  background-color:hsl(2,78%,10%)\"></td>\r\n<td style=\"background-color:hsl(138,71%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(3,76%,10%)\"></td>\r\n<td style=\"background-color:hsl(140,69%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(316,44%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(78,32%,10%)\"></td>\r\n<td style=\"background-color:hsl(314,80%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(125,76%,10%)\"></td>\r\n<td style=\"\
+  background-color:hsl(310,79%,95%)\"></td>\r\n<td style=\"background-color:hsl(128,84%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(312,32%,10%)\"></td>\r\n<td style=\"\
+  background-color:hsl(122,49%,10%)\"></td>\r\n<td style=\"background-color:hsl(305,56%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(123,50%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(311,48%,10%)\"></td>\r\n<td style=\"background-color:hsl(127,32%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(324,80%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(210,79%,95%)\"></td>\r\n<td style=\"background-color:hsl(326,73%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(214,78%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(328,84%,95%)\"></td>\r\n<td style=\"background-color:hsl(215,83%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(327,32%,10%)\"></td>\r\n<td style=\"\
+  background-color:hsl(211,79%,10%)\"></td>\r\n<td style=\"background-color:hsl(351,78%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(189,32%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(348,85%,95%)\"></td>\r\n<td style=\"background-color:hsl(190,78%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(332,73%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(193,84%,10%)\"></td>\r\n<td style=\"background-color:hsl(353,32%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(212,67%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(329,73%,95%)\"></td>\r\n<td style=\"background-color:hsl(216,82%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(356,67%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(197,76%,10%)\"></td>\r\n<td style=\"background-color:hsl(336,69%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(198,44%,10%)\"></td>\r\n<td style=\"\
+  background-color:hsl(338,32%,95%)\"></td>\r\n</tr>\r\n<tr>\r\n<td style=\"background-color:hsl(200,84%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(341,72%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(203,69%,10%)\"></td>\r\n<td style=\"background-color:hsl(343,78%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(205,32%,10%)\"></td>\r\n<td style=\"\
+  background-color:hsl(323,67%,95%)\"></td>\r\n<td style=\"background-color:hsl(128,79%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(311,78%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(122,78%,95%)\"></td>\r\n<td style=\"background-color:hsl(310,69%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(123,67%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(307,84%,95%)\"></td>\r\n<td style=\"background-color:hsl(124,32%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(309,84%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(126,72%,95%)\"></td>\r\n<td style=\"background-color:hsl(322,69%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(125,77%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(313,32%,95%)\"></td>\r\n<td style=\"background-color:hsl(76,73%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(314,78%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(79,32%,10%)\"></td>\r\n<td style=\"background-color:hsl(318,84%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(78,72%,10%)\"></td>\r\n<td style=\"background-color:hsl(315,69%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(177,32%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(316,71%,95%)\"></td>\r\n<td style=\"background-color:hsl(81,73%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(319,86%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(151,69%,10%)\"></td>\r\n<td style=\"background-color:hsl(268,78%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(67,32%,95%)\"></td>\r\n<td style=\"background-color:hsl(297,79%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(69,82%,95%)\"></td>\r\n<td style=\"background-color:hsl(296,68%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(66,69%,10%)\"></td>\r\n<td style=\"background-color:hsl(262,82%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(97,46%,95%)\"></td>\r\n<td style=\"background-color:hsl(261,32%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(65,85%,10%)\"></td>\r\n<td style=\"background-color:hsl(263,83%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(95,69%,95%)\"></td>\r\n<td style=\"background-color:hsl(260,32%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(64,72%,10%)\"></td>\r\n<td style=\"background-color:hsl(257,85%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(109,69%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(256,32%,95%)\"></td>\r\n<td style=\"background-color:hsl(105,65%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(255,83%,10%)\"></td>\r\n<td style=\"\
+  background-color:hsl(62,32%,10%)\"></td>\r\n<td style=\"background-color:hsl(254,84%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(61,72%,95%)\"></td>\r\n<td style=\"background-color:hsl(258,69%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(115,32%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(240,65%,10%)\"></td>\r\n<td style=\"background-color:hsl(119,78%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(246,71%,10%)\"></td>\r\n<td style=\"\
+  background-color:hsl(92,76%,95%)\"></td>\r\n<td style=\"background-color:hsl(249,69%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(121,44%,10%)\"></td>\r\n<td style=\"\
+  background-color:hsl(307,32%,10%)\"></td>\r\n<td style=\"background-color:hsl(122,80%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(313,76%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(129,79%,95%)\"></td>\r\n<td style=\"background-color:hsl(324,84%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(211,32%,95%)\"></td>\r\n</tr>\r\n<tr>\r\
+  \n<td style=\"background-color:hsl(328,49%,95%)\"></td>\r\n<td style=\"background-color:hsl(216,56%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(332,50%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(191,48%,10%)\"></td>\r\n<td style=\"background-color:hsl(333,32%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(195,80%,10%)\"></td>\r\n<td style=\"\
+  background-color:hsl(335,79%,10%)\"></td>\r\n<td style=\"background-color:hsl(198,73%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(337,78%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(200,84%,95%)\"></td>\r\n<td style=\"background-color:hsl(323,83%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(126,32%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(308,79%,95%)\"></td>\r\n<td style=\"background-color:hsl(124,78%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(312,32%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(123,85%,95%)\"></td>\r\n<td style=\"background-color:hsl(309,78%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(125,73%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(307,84%,95%)\"></td>\r\n<td style=\"background-color:hsl(120,32%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(239,67%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(115,73%,95%)\"></td>\r\n<td style=\"background-color:hsl(238,82%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(119,67%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(245,76%,95%)\"></td>\r\n<td style=\"background-color:hsl(118,69%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(237,44%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(117,32%,95%)\"></td>\r\n<td style=\"background-color:hsl(240,84%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(116,72%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(259,69%,95%)\"></td>\r\n<td style=\"background-color:hsl(65,78%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(278,32%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(70,67%,95%)\"></td>\r\n<td style=\"background-color:hsl(280,79%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(71,78%,95%)\"></td>\r\n<td style=\"background-color:hsl(281,78%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(72,69%,95%)\"></td>\r\n<td style=\"background-color:hsl(282,67%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(73,84%,10%)\"></td>\r\n<td style=\"background-color:hsl(283,32%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(74,84%,10%)\"></td>\r\n<td style=\"background-color:hsl(301,72%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(77,69%,10%)\"></td>\r\n<td style=\"background-color:hsl(316,77%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(80,32%,10%)\"></td>\r\n<td style=\"background-color:hsl(320,73%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(192,78%,10%)\"></td>\r\n<td style=\"\
+  background-color:hsl(350,32%,10%)\"></td>\r\n<td style=\"background-color:hsl(188,84%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(26,72%,10%)\"></td>\r\n<td style=\"background-color:hsl(187,69%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(349,32%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(189,71%,10%)\"></td>\r\n<td style=\"background-color:hsl(351,73%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(210,86%,10%)\"></td>\r\n<td style=\"\
+  background-color:hsl(327,69%,95%)\"></td>\r\n<td style=\"background-color:hsl(214,78%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(326,32%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(211,79%,95%)\"></td>\r\n<td style=\"background-color:hsl(328,82%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(141,68%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(263,69%,95%)\"></td>\r\n<td style=\"background-color:hsl(96,82%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(261,46%,95%)\"></td>\r\n</tr>\r\n<tr>\r\
+  \n<td style=\"background-color:hsl(98,32%,95%)\"></td>\r\n<td style=\"background-color:hsl(264,85%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(144,83%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(265,69%,10%)\"></td>\r\n<td style=\"background-color:hsl(97,32%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(266,72%,10%)\"></td>\r\n<td style=\"\
+  background-color:hsl(147,85%,10%)\"></td>\r\n<td style=\"background-color:hsl(269,69%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(148,32%,10%)\"></td>\r\n<td style=\"\
+  background-color:hsl(268,65%,10%)\"></td>\r\n<td style=\"background-color:hsl(152,83%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(270,32%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(153,84%,95%)\"></td>\r\n<td style=\"background-color:hsl(319,72%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(150,69%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(271,32%,95%)\"></td>\r\n<td style=\"background-color:hsl(151,65%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(320,78%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(83,71%,95%)\"></td>\r\n<td style=\"background-color:hsl(321,76%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(80,69%,95%)\"></td>\r\n<td style=\"background-color:hsl(318,44%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(185,32%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(25,80%,95%)\"></td>\r\n<td style=\"background-color:hsl(187,76%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(27,79%,95%)\"></td>\r\n<td style=\"background-color:hsl(188,84%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(349,32%,10%)\"></td>\r\n<td style=\"\
+  background-color:hsl(191,49%,95%)\"></td>\r\n<td style=\"background-color:hsl(352,56%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(193,50%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(29,48%,10%)\"></td>\r\n<td style=\"background-color:hsl(163,32%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(28,80%,95%)\"></td>\r\n<td style=\"background-color:hsl(192,79%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(332,73%,10%)\"></td>\r\n<td style=\"\
+  background-color:hsl(217,78%,10%)\"></td>\r\n<td style=\"background-color:hsl(330,84%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(218,83%,10%)\"></td>\r\n<td style=\"\
+  background-color:hsl(5,32%,10%)\"></td>\r\n<td style=\"background-color:hsl(140,79%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(2,78%,10%)\"></td>\r\n<td style=\"background-color:hsl(138,32%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(1,85%,10%)\"></td>\r\n<td style=\"background-color:hsl(139,78%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(3,73%,95%)\"></td>\r\n<td style=\"background-color:hsl(141,84%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(329,32%,10%)\"></td>\r\n<td style=\"\
+  background-color:hsl(142,67%,10%)\"></td>\r\n<td style=\"background-color:hsl(263,73%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(64,82%,10%)\"></td>\r\n<td style=\"background-color:hsl(262,67%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(65,76%,10%)\"></td>\r\n<td style=\"background-color:hsl(296,69%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(69,44%,10%)\"></td>\r\n<td style=\"background-color:hsl(298,32%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(70,84%,10%)\"></td>\r\n<td style=\"background-color:hsl(279,72%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(71,69%,95%)\"></td>\r\n<td style=\"background-color:hsl(299,78%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(68,32%,95%)\"></td>\r\n<td style=\"background-color:hsl(295,67%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(67,79%,95%)\"></td>\r\n<td style=\"background-color:hsl(269,78%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(152,78%,95%)\"></td>\r\n</tr>\r\n<tr>\r\
+  \n<td style=\"background-color:hsl(271,69%,95%)\"></td>\r\n<td style=\"background-color:hsl(153,67%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(321,84%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(124,32%,95%)\"></td>\r\n<td style=\"background-color:hsl(306,84%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(121,72%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(305,69%,95%)\"></td>\r\n<td style=\"background-color:hsl(120,77%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(240,32%,10%)\"></td>\r\n<td style=\"\
+  background-color:hsl(115,73%,10%)\"></td>\r\n<td style=\"background-color:hsl(238,78%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(117,32%,10%)\"></td>\r\n<td style=\"\
+  background-color:hsl(242,84%,95%)\"></td>\r\n<td style=\"background-color:hsl(118,72%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(239,69%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(51,32%,95%)\"></td>\r\n<td style=\"background-color:hsl(225,71%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(52,73%,95%)\"></td>\r\n<td style=\"background-color:hsl(226,86%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(44,69%,95%)\"></td>\r\n<td style=\"background-color:hsl(230,78%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(45,32%,95%)\"></td>\r\n<td style=\"background-color:hsl(228,79%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(54,82%,95%)\"></td>\r\n<td style=\"background-color:hsl(227,68%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(53,69%,95%)\"></td>\r\n<td style=\"background-color:hsl(237,82%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(58,46%,10%)\"></td>\r\n<td style=\"background-color:hsl(249,32%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(61,85%,10%)\"></td>\r\n<td style=\"background-color:hsl(255,83%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(108,69%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(256,32%,10%)\"></td>\r\n<td style=\"background-color:hsl(112,72%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(257,85%,10%)\"></td>\r\n<td style=\"\
+  background-color:hsl(113,69%,10%)\"></td>\r\n<td style=\"background-color:hsl(258,32%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(65,65%,10%)\"></td>\r\n<td style=\"background-color:hsl(279,83%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(69,32%,10%)\"></td>\r\n<td style=\"background-color:hsl(295,84%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(70,72%,10%)\"></td>\r\n<td style=\"background-color:hsl(281,69%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(71,32%,95%)\"></td>\r\n<td style=\"background-color:hsl(300,65%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(72,78%,95%)\"></td>\r\n<td style=\"background-color:hsl(280,71%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(74,76%,10%)\"></td>\r\n<td style=\"background-color:hsl(282,69%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(76,44%,95%)\"></td>\r\n<td style=\"background-color:hsl(312,32%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(129,80%,10%)\"></td>\r\n<td style=\"\
+  background-color:hsl(323,76%,10%)\"></td>\r\n<td style=\"background-color:hsl(208,79%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(346,84%,10%)\"></td>\r\n<td style=\"\
+  background-color:hsl(209,32%,10%)\"></td>\r\n<td style=\"background-color:hsl(350,49%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(190,56%,10%)\"></td>\r\n<td style=\"\
+  background-color:hsl(333,50%,95%)\"></td>\r\n<td style=\"background-color:hsl(194,48%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(336,32%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(199,80%,95%)\"></td>\r\n<td style=\"background-color:hsl(340,79%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(201,73%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(324,78%,95%)\"></td>\r\n</tr>\r\n<tr>\r\n<td style=\"background-color:hsl(130,84%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(325,83%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(213,32%,95%)\"></td>\r\n<td style=\"background-color:hsl(326,79%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(136,78%,10%)\"></td>\r\n<td style=\"\
+  background-color:hsl(359,32%,10%)\"></td>\r\n<td style=\"background-color:hsl(137,85%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(1,78%,95%)\"></td>\r\n<td style=\"background-color:hsl(139,73%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(3,84%,95%)\"></td>\r\n<td style=\"background-color:hsl(138,32%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(327,67%,10%)\"></td>\r\n<td style=\"\
+  background-color:hsl(216,73%,10%)\"></td>\r\n<td style=\"background-color:hsl(331,82%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(215,67%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(356,76%,95%)\"></td>\r\n<td style=\"background-color:hsl(198,69%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(339,44%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(202,32%,95%)\"></td>\r\n<td style=\"background-color:hsl(341,84%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(204,72%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(322,69%,95%)\"></td>\r\n<td style=\"background-color:hsl(205,78%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(346,32%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(185,67%,10%)\"></td>\r\n<td style=\"background-color:hsl(317,79%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(183,78%,10%)\"></td>\r\n<td style=\"\
+  background-color:hsl(316,78%,95%)\"></td>\r\n<td style=\"background-color:hsl(179,69%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(18,67%,10%)\"></td>\r\n<td style=\"background-color:hsl(159,84%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(15,32%,10%)\"></td>\r\n<td style=\"background-color:hsl(160,84%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(21,72%,95%)\"></td>\r\n<td style=\"background-color:hsl(161,69%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(22,77%,95%)\"></td>\r\n<td style=\"background-color:hsl(182,32%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(23,73%,10%)\"></td>\r\n<td style=\"background-color:hsl(184,78%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(25,32%,10%)\"></td>\r\n<td style=\"background-color:hsl(188,84%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(318,72%,10%)\"></td>\r\n<td style=\"\
+  background-color:hsl(150,69%,10%)\"></td>\r\n<td style=\"background-color:hsl(268,32%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(149,71%,10%)\"></td>\r\n<td style=\"\
+  background-color:hsl(269,73%,10%)\"></td>\r\n<td style=\"background-color:hsl(153,86%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(320,69%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(154,78%,95%)\"></td>\r\n<td style=\"background-color:hsl(319,32%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(80,79%,10%)\"></td>\r\n<td style=\"background-color:hsl(315,82%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(140,68%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(262,69%,95%)\"></td>\r\n<td style=\"background-color:hsl(95,82%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(261,46%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(64,32%,95%)\"></td>\r\n<td style=\"background-color:hsl(264,85%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(145,83%,10%)\"></td>\r\n<td style=\"\
+  background-color:hsl(265,69%,95%)\"></td>\r\n<td style=\"background-color:hsl(98,32%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(263,72%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(99,85%,95%)\"></td>\r\n<td style=\"background-color:hsl(271,69%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(100,32%,95%)\"></td>\r\n</tr>\r\n<tr>\r\
+  \n<td style=\"background-color:hsl(267,65%,95%)\"></td>\r\n<td style=\"background-color:hsl(150,83%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(349,32%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(187,84%,95%)\"></td>\r\n<td style=\"background-color:hsl(326,72%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(132,69%,10%)\"></td>\r\n<td style=\"\
+  background-color:hsl(324,32%,10%)\"></td>\r\n<td style=\"background-color:hsl(126,65%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(312,78%,10%)\"></td>\r\n<td style=\"\
+  background-color:hsl(168,71%,95%)\"></td>\r\n<td style=\"background-color:hsl(7,76%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(167,69%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(34,44%,95%)\"></td>\r\n<td style=\"background-color:hsl(166,32%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(6,80%,10%)\"></td>\r\n<td style=\"background-color:hsl(220,76%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(332,79%,10%)\"></td>\r\n<td style=\"\
+  background-color:hsl(219,84%,10%)\"></td>\r\n<td style=\"background-color:hsl(39,32%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(170,49%,10%)\"></td>\r\n<td style=\"\
+  background-color:hsl(8,56%,10%)\"></td>\r\n<td style=\"background-color:hsl(171,50%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(11,48%,10%)\"></td>\r\n<td style=\"background-color:hsl(158,32%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(14,80%,10%)\"></td>\r\n<td style=\"background-color:hsl(157,79%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(13,73%,10%)\"></td>\r\n<td style=\"background-color:hsl(173,78%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(12,84%,10%)\"></td>\r\n<td style=\"background-color:hsl(159,83%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(15,32%,10%)\"></td>\r\n<td style=\"background-color:hsl(177,79%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(317,78%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(77,32%,95%)\"></td>\r\n<td style=\"background-color:hsl(315,85%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(79,78%,95%)\"></td>\r\n<td style=\"background-color:hsl(313,73%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(124,84%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(322,32%,95%)\"></td>\r\n<td style=\"background-color:hsl(206,67%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(323,73%,10%)\"></td>\r\n<td style=\"\
+  background-color:hsl(125,82%,10%)\"></td>\r\n<td style=\"background-color:hsl(310,67%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(121,76%,10%)\"></td>\r\n<td style=\"\
+  background-color:hsl(242,69%,10%)\"></td>\r\n<td style=\"background-color:hsl(119,44%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(297,32%,10%)\"></td>\r\n<td style=\"\
+  background-color:hsl(66,84%,95%)\"></td>\r\n<td style=\"background-color:hsl(263,72%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(144,69%,10%)\"></td>\r\n<td style=\"\
+  background-color:hsl(266,78%,10%)\"></td>\r\n<td style=\"background-color:hsl(148,32%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(265,67%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(143,79%,10%)\"></td>\r\n<td style=\"background-color:hsl(329,78%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(217,78%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(356,69%,95%)\"></td>\r\n<td style=\"background-color:hsl(197,67%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(355,84%,10%)\"></td>\r\n<td style=\"\
+  background-color:hsl(196,32%,10%)\"></td>\r\n<td style=\"background-color:hsl(322,84%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(156,72%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(10,69%,95%)\"></td>\r\n<td style=\"background-color:hsl(155,77%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(320,32%,95%)\"></td>\r\n</tr>\r\n<tr>\r\
+  \n<td style=\"background-color:hsl(152,73%,95%)\"></td>\r\n<td style=\"background-color:hsl(272,78%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(153,32%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(273,84%,95%)\"></td>\r\n<td style=\"background-color:hsl(157,72%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(12,69%,10%)\"></td>\r\n<td style=\"background-color:hsl(171,32%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(313,71%,10%)\"></td>\r\n<td style=\"\
+  background-color:hsl(170,73%,10%)\"></td>\r\n<td style=\"background-color:hsl(38,86%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(168,69%,10%)\"></td>\r\n<td style=\"\
+  background-color:hsl(9,78%,10%)\"></td>\r\n<td style=\"background-color:hsl(169,32%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(312,79%,10%)\"></td>\r\n<td style=\"\
+  background-color:hsl(121,82%,10%)\"></td>\r\n<td style=\"background-color:hsl(247,68%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(120,69%,10%)\"></td>\r\n<td style=\"\
+  background-color:hsl(239,82%,10%)\"></td>\r\n<td style=\"background-color:hsl(52,46%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(227,32%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(51,85%,10%)\"></td>\r\n<td style=\"background-color:hsl(238,83%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(118,69%,10%)\"></td>\r\n<td style=\"\
+  background-color:hsl(237,32%,95%)\"></td>\r\n<td style=\"background-color:hsl(107,72%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(253,85%,10%)\"></td>\r\n<td style=\"\
+  background-color:hsl(108,69%,10%)\"></td>\r\n<td style=\"background-color:hsl(257,32%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(110,65%,10%)\"></td>\r\n<td style=\"\
+  background-color:hsl(254,83%,10%)\"></td>\r\n<td style=\"background-color:hsl(109,32%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(256,84%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(105,72%,10%)\"></td>\r\n<td style=\"background-color:hsl(251,69%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(104,32%,10%)\"></td>\r\n<td style=\"\
+  background-color:hsl(255,65%,10%)\"></td>\r\n<td style=\"background-color:hsl(63,78%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(260,71%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(62,76%,95%)\"></td>\r\n<td style=\"background-color:hsl(277,69%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(64,44%,95%)\"></td>\r\n<td style=\"background-color:hsl(279,32%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(70,80%,10%)\"></td>\r\n<td style=\"background-color:hsl(300,76%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(69,79%,10%)\"></td>\r\n<td style=\"background-color:hsl(278,84%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(103,32%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(280,49%,95%)\"></td>\r\n<td style=\"background-color:hsl(71,56%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(298,50%,10%)\"></td>\r\n<td style=\"\
+  background-color:hsl(67,48%,95%)\"></td>\r\n<td style=\"background-color:hsl(299,32%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(72,80%,95%)\"></td>\r\n<td style=\"background-color:hsl(297,79%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(65,73%,10%)\"></td>\r\n<td style=\"background-color:hsl(296,78%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(68,84%,95%)\"></td>\r\n<td style=\"background-color:hsl(294,83%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(63,32%,10%)\"></td>\r\n<td style=\"background-color:hsl(261,79%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(98,78%,95%)\"></td>\r\n<td style=\"background-color:hsl(233,32%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(48,85%,95%)\"></td>\r\n<td style=\"background-color:hsl(236,78%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(99,73%,95%)\"></td>\r\n</tr>\r\n<tr>\r\
+  \n<td style=\"background-color:hsl(265,84%,95%)\"></td>\r\n<td style=\"background-color:hsl(96,32%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(262,67%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(66,73%,95%)\"></td>\r\n<td style=\"background-color:hsl(279,82%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(71,67%,95%)\"></td>\r\n<td style=\"background-color:hsl(282,76%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(70,69%,95%)\"></td>\r\n<td style=\"background-color:hsl(280,44%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(64,32%,95%)\"></td>\r\n<td style=\"background-color:hsl(278,84%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(62,72%,95%)\"></td>\r\n<td style=\"background-color:hsl(252,69%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(104,78%,10%)\"></td>\r\n<td style=\"\
+  background-color:hsl(253,32%,95%)\"></td>\r\n<td style=\"background-color:hsl(122,67%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(312,79%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(128,78%,10%)\"></td>\r\n<td style=\"background-color:hsl(325,78%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(131,69%,10%)\"></td>\r\n<td style=\"\
+  background-color:hsl(324,67%,95%)\"></td>\r\n<td style=\"background-color:hsl(213,84%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(352,32%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(194,84%,10%)\"></td>\r\n<td style=\"background-color:hsl(354,72%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(193,69%,10%)\"></td>\r\n<td style=\"\
+  background-color:hsl(321,77%,95%)\"></td>\r\n<td style=\"background-color:hsl(197,32%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(335,73%,10%)\"></td>\r\n<td style=\"\
+  background-color:hsl(196,78%,10%)\"></td>\r\n<td style=\"background-color:hsl(313,32%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(137,84%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(326,72%,10%)\"></td>\r\n<td style=\"background-color:hsl(130,69%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(323,32%,10%)\"></td>\r\n<td style=\"\
+  background-color:hsl(209,71%,10%)\"></td>\r\n<td style=\"background-color:hsl(351,73%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(190,86%,10%)\"></td>\r\n<td style=\"\
+  background-color:hsl(28,69%,95%)\"></td>\r\n<td style=\"background-color:hsl(147,78%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(265,32%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(146,79%,95%)\"></td>\r\n<td style=\"background-color:hsl(268,82%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(108,68%,10%)\"></td>\r\n<td style=\"\
+  background-color:hsl(257,69%,10%)\"></td>\r\n<td style=\"background-color:hsl(109,82%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(255,46%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(110,32%,10%)\"></td>\r\n<td style=\"background-color:hsl(256,85%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(105,83%,10%)\"></td>\r\n<td style=\"\
+  background-color:hsl(236,69%,95%)\"></td>\r\n<td style=\"background-color:hsl(51,32%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(226,72%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(43,85%,10%)\"></td>\r\n<td style=\"background-color:hsl(228,69%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(42,32%,10%)\"></td>\r\n<td style=\"background-color:hsl(171,65%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(9,83%,10%)\"></td>\r\n<td style=\"background-color:hsl(172,32%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(10,84%,10%)\"></td>\r\n<td style=\"background-color:hsl(157,72%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(13,69%,95%)\"></td>\r\n<td style=\"background-color:hsl(158,32%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(322,65%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(197,78%,95%)\"></td>\r\n</tr>\r\n<tr>\r\n<td style=\"background-color:hsl(337,71%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(199,76%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(324,69%,95%)\"></td>\r\n<td style=\"background-color:hsl(212,44%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(325,32%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(129,80%,95%)\"></td>\r\n<td style=\"background-color:hsl(311,76%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(121,79%,10%)\"></td>\r\n<td style=\"\
+  background-color:hsl(240,84%,10%)\"></td>\r\n<td style=\"background-color:hsl(118,32%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(245,49%,10%)\"></td>\r\n<td style=\"\
+  background-color:hsl(120,56%,10%)\"></td>\r\n<td style=\"background-color:hsl(297,50%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(70,48%,10%)\"></td>\r\n<td style=\"background-color:hsl(299,32%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(69,80%,10%)\"></td>\r\n<td style=\"background-color:hsl(300,79%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(133,73%,10%)\"></td>\r\n<td style=\"\
+  background-color:hsl(301,78%,95%)\"></td>\r\n<td style=\"background-color:hsl(135,84%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(302,83%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(134,32%,10%)\"></td>\r\n<td style=\"background-color:hsl(327,79%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(216,78%,10%)\"></td>\r\n<td style=\"\
+  background-color:hsl(358,32%,95%)\"></td>\r\n<td style=\"background-color:hsl(137,85%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(0,78%,95%)\"></td>\r\n<td style=\"background-color:hsl(139,73%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(4,84%,10%)\"></td>\r\n<td style=\"background-color:hsl(140,32%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(314,67%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(127,73%,95%)\"></td>\r\n<td style=\"background-color:hsl(309,82%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(128,67%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(322,76%,95%)\"></td>\r\n<td style=\"background-color:hsl(83,69%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(323,44%,10%)\"></td>\r\n<td style=\"\
+  background-color:hsl(201,32%,10%)\"></td>\r\n<td style=\"background-color:hsl(320,84%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(150,72%,10%)\"></td>\r\n<td style=\"\
+  background-color:hsl(266,69%,95%)\"></td>\r\n<td style=\"background-color:hsl(144,78%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(329,32%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(213,67%,95%)\"></td>\r\n<td style=\"background-color:hsl(325,79%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(132,78%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(301,78%,95%)\"></td>\r\n<td style=\"background-color:hsl(73,69%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(279,67%,10%)\"></td>\r\n<td style=\"\
+  background-color:hsl(72,84%,10%)\"></td>\r\n<td style=\"background-color:hsl(282,32%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(75,84%,95%)\"></td>\r\n<td style=\"background-color:hsl(281,72%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(69,69%,95%)\"></td>\r\n<td style=\"background-color:hsl(295,77%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(63,32%,10%)\"></td>\r\n<td style=\"background-color:hsl(262,73%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(99,78%,95%)\"></td>\r\n<td style=\"background-color:hsl(264,32%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(146,84%,10%)\"></td>\r\n<td style=\"\
+  background-color:hsl(25,72%,10%)\"></td>\r\n<td style=\"background-color:hsl(164,69%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(311,32%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(165,71%,95%)\"></td>\r\n<td style=\"background-color:hsl(31,73%,95%)\"\
+  ></td>\r\n</tr>\r\n<tr>\r\n<td style=\"background-color:hsl(166,86%,95%)\"></td>\r\
+  \n<td style=\"background-color:hsl(7,69%,95%)\"></td>\r\n<td style=\"background-color:hsl(168,78%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(8,32%,95%)\"></td>\r\n<td style=\"background-color:hsl(169,79%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(36,82%,95%)\"></td>\r\n<td style=\"background-color:hsl(167,68%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(312,69%,10%)\"></td>\r\n<td style=\"\
+  background-color:hsl(127,82%,10%)\"></td>\r\n<td style=\"background-color:hsl(325,46%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(214,32%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(328,85%,95%)\"></td>\r\n<td style=\"background-color:hsl(142,83%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(262,69%,10%)\"></td>\r\n<td style=\"\
+  background-color:hsl(98,32%,10%)\"></td>\r\n<td style=\"background-color:hsl(269,72%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(150,85%,10%)\"></td>\r\n<td style=\"\
+  background-color:hsl(350,69%,10%)\"></td>\r\n<td style=\"background-color:hsl(189,32%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(318,65%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(183,83%,10%)\"></td>\r\n<td style=\"background-color:hsl(319,32%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(152,84%,10%)\"></td>\r\n<td style=\"\
+  background-color:hsl(321,72%,95%)\"></td>\r\n<td style=\"background-color:hsl(202,69%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(340,32%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(203,65%,10%)\"></td>\r\n<td style=\"background-color:hsl(356,78%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(199,71%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(341,76%,10%)\"></td>\r\n<td style=\"background-color:hsl(200,69%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(324,44%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(128,32%,95%)\"></td>\r\n<td style=\"background-color:hsl(307,80%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(110,76%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(254,79%,95%)\"></td>\r\n<td style=\"background-color:hsl(103,84%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(277,32%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(69,49%,95%)\"></td>\r\n<td style=\"background-color:hsl(297,56%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(71,50%,10%)\"></td>\r\n<td style=\"background-color:hsl(296,48%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(66,32%,95%)\"></td>\r\n<td style=\"background-color:hsl(298,80%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(68,79%,10%)\"></td>\r\n<td style=\"background-color:hsl(300,73%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(134,78%,10%)\"></td>\r\n<td style=\"\
+  background-color:hsl(301,84%,10%)\"></td>\r\n<td style=\"background-color:hsl(136,83%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(0,32%,10%)\"></td>\r\n<td style=\"background-color:hsl(210,79%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(350,78%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(187,32%,95%)\"></td>\r\n<td style=\"background-color:hsl(65,85%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(260,78%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(96,73%,95%)\"></td>\r\n<td style=\"background-color:hsl(261,84%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(97,32%,95%)\"></td>\r\n<td style=\"background-color:hsl(265,67%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(67,73%,10%)\"></td>\r\n<td style=\"background-color:hsl(294,82%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(69,67%,10%)\"></td>\r\n<td style=\"background-color:hsl(279,76%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(63,69%,95%)\"></td>\r\n<td style=\"background-color:hsl(278,44%,95%)\"\
+  ></td>\r\n</tr>\r\n<tr>\r\n<td style=\"background-color:hsl(71,32%,95%)\"></td>\r\
+  \n<td style=\"background-color:hsl(283,84%,95%)\"></td>\r\n<td style=\"background-color:hsl(72,72%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(301,69%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(131,78%,95%)\"></td>\r\n<td style=\"background-color:hsl(326,32%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(133,67%,10%)\"></td>\r\n<td style=\"\
+  background-color:hsl(302,79%,95%)\"></td>\r\n<td style=\"background-color:hsl(136,78%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(1,78%,95%)\"></td>\r\n<td style=\"background-color:hsl(140,69%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(317,67%,10%)\"></td>\r\n<td style=\"\
+  background-color:hsl(186,84%,10%)\"></td>\r\n<td style=\"background-color:hsl(348,32%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(149,84%,10%)\"></td>\r\n<td style=\"\
+  background-color:hsl(270,72%,10%)\"></td>\r\n<td style=\"background-color:hsl(154,69%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(272,77%,10%)\"></td>\r\n<td style=\"\
+  background-color:hsl(155,32%,10%)\"></td>\r\n<td style=\"background-color:hsl(9,73%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(170,78%,10%)\"></td>\r\n<td style=\"\
+  background-color:hsl(7,32%,95%)\"></td>\r\n<td style=\"background-color:hsl(169,84%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(10,72%,10%)\"></td>\r\n<td style=\"background-color:hsl(171,69%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(312,32%,10%)\"></td>\r\n<td style=\"\
+  background-color:hsl(130,71%,10%)\"></td>\r\n<td style=\"background-color:hsl(311,73%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(112,86%,10%)\"></td>\r\n<td style=\"\
+  background-color:hsl(310,69%,10%)\"></td>\r\n<td style=\"background-color:hsl(126,78%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(314,32%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(129,79%,95%)\"></td>\r\n<td style=\"background-color:hsl(326,82%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(211,68%,10%)\"></td>\r\n<td style=\"\
+  background-color:hsl(349,69%,10%)\"></td>\r\n<td style=\"background-color:hsl(149,82%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(319,46%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(182,32%,95%)\"></td>\r\n<td style=\"background-color:hsl(59,85%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(240,83%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(120,69%,10%)\"></td>\r\n<td style=\"background-color:hsl(249,32%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(93,72%,10%)\"></td>\r\n<td style=\"background-color:hsl(250,85%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(121,69%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(254,32%,10%)\"></td>\r\n<td style=\"background-color:hsl(109,65%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(268,83%,10%)\"></td>\r\n<td style=\"\
+  background-color:hsl(98,32%,10%)\"></td>\r\n<td style=\"background-color:hsl(235,84%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(50,72%,10%)\"></td>\r\n<td style=\"background-color:hsl(238,69%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(114,32%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(257,65%,95%)\"></td>\r\n<td style=\"background-color:hsl(111,78%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(255,71%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(106,76%,95%)\"></td>\r\n<td style=\"background-color:hsl(237,69%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(117,44%,10%)\"></td>\r\n<td style=\"\
+  background-color:hsl(239,32%,10%)\"></td>\r\n<td style=\"background-color:hsl(113,80%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(240,76%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(123,79%,95%)\"></td>\r\n<td style=\"background-color:hsl(251,84%,95%)\"\
+  ></td>\r\n</tr>\r\n<tr>\r\n<td style=\"background-color:hsl(62,32%,95%)\"></td>\r\
+  \n<td style=\"background-color:hsl(294,49%,95%)\"></td>\r\n<td style=\"background-color:hsl(64,56%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(296,50%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(120,48%,95%)\"></td>\r\n<td style=\"background-color:hsl(304,32%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(121,80%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(309,79%,95%)\"></td>\r\n<td style=\"background-color:hsl(112,73%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(258,78%,10%)\"></td>\r\n<td style=\"\
+  background-color:hsl(87,84%,10%)\"></td>\r\n<td style=\"background-color:hsl(327,83%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(214,32%,10%)\"></td>\r\n<td style=\"\
+  background-color:hsl(326,79%,10%)\"></td>\r\n<td style=\"background-color:hsl(166,78%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(29,32%,10%)\"></td>\r\n<td style=\"background-color:hsl(192,85%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(27,78%,10%)\"></td>\r\n<td style=\"background-color:hsl(191,73%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(28,84%,10%)\"></td>\r\n<td style=\"background-color:hsl(189,32%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(348,67%,10%)\"></td>\r\n<td style=\"\
+  background-color:hsl(211,73%,10%)\"></td>\r\n<td style=\"background-color:hsl(350,82%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(188,67%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(351,76%,10%)\"></td>\r\n<td style=\"background-color:hsl(193,69%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(335,44%,10%)\"></td>\r\n<td style=\"\
+  background-color:hsl(194,32%,10%)\"></td>\r\n<td style=\"background-color:hsl(353,84%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(215,72%,10%)\"></td>\r\n<td style=\"\
+  background-color:hsl(330,69%,10%)\"></td>\r\n<td style=\"background-color:hsl(218,78%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(332,32%,10%)\"></td>\r\n<td style=\"\
+  background-color:hsl(190,67%,10%)\"></td>\r\n<td style=\"background-color:hsl(26,79%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(162,78%,10%)\"></td>\r\n<td style=\"\
+  background-color:hsl(21,78%,10%)\"></td>\r\n<td style=\"background-color:hsl(143,69%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(264,67%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(142,84%,95%)\"></td>\r\n<td style=\"background-color:hsl(17,32%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(178,84%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(54,72%,10%)\"></td>\r\n<td style=\"background-color:hsl(225,69%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(49,77%,95%)\"></td>\r\n<td style=\"background-color:hsl(223,32%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(52,73%,10%)\"></td>\r\n<td style=\"background-color:hsl(228,78%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(53,32%,10%)\"></td>\r\n<td style=\"background-color:hsl(238,84%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(57,72%,10%)\"></td>\r\n<td style=\"background-color:hsl(251,69%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(120,32%,10%)\"></td>\r\n<td style=\"\
+  background-color:hsl(306,71%,10%)\"></td>\r\n<td style=\"background-color:hsl(125,73%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(311,86%,10%)\"></td>\r\n<td style=\"\
+  background-color:hsl(194,69%,10%)\"></td>\r\n<td style=\"background-color:hsl(321,78%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(204,32%,10%)\"></td>\r\n<td style=\"\
+  background-color:hsl(323,79%,10%)\"></td>\r\n<td style=\"background-color:hsl(163,82%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(27,68%,10%)\"></td>\r\n<td style=\"background-color:hsl(190,69%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(335,82%,95%)\"></td>\r\n</tr>\r\n<tr>\r\
+  \n<td style=\"background-color:hsl(189,46%,95%)\"></td>\r\n<td style=\"background-color:hsl(351,32%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(192,85%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(70,83%,95%)\"></td>\r\n<td style=\"background-color:hsl(298,69%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(65,32%,10%)\"></td>\r\n<td style=\"background-color:hsl(277,72%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(160,85%,10%)\"></td>\r\n<td style=\"\
+  background-color:hsl(13,69%,10%)\"></td>\r\n<td style=\"background-color:hsl(176,32%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(316,65%,10%)\"></td>\r\n<td style=\"\
+  background-color:hsl(77,83%,95%)\"></td>\r\n<td style=\"background-color:hsl(317,32%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(202,84%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(355,72%,95%)\"></td>\r\n<td style=\"background-color:hsl(198,69%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(325,32%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(128,65%,95%)\"></td>\r\n<td style=\"background-color:hsl(308,78%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(111,71%,10%)\"></td>\r\n<td style=\"\
+  background-color:hsl(256,76%,10%)\"></td>\r\n<td style=\"background-color:hsl(64,69%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(297,44%,10%)\"></td>\r\n<td style=\"\
+  background-color:hsl(117,32%,95%)\"></td>\r\n<td style=\"background-color:hsl(238,80%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(119,76%,10%)\"></td>\r\n<td style=\"\
+  background-color:hsl(237,79%,95%)\"></td>\r\n<td style=\"background-color:hsl(48,84%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(174,32%,10%)\"></td>\r\n<td style=\"\
+  background-color:hsl(11,49%,95%)\"></td>\r\n<td style=\"background-color:hsl(170,56%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(312,50%,10%)\"></td>\r\n<td style=\"\
+  background-color:hsl(137,48%,95%)\"></td>\r\n<td style=\"background-color:hsl(2,32%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(139,80%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(328,79%,95%)\"></td>\r\n<td style=\"background-color:hsl(143,73%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(263,78%,10%)\"></td>\r\n<td style=\"\
+  background-color:hsl(101,84%,10%)\"></td>\r\n<td style=\"background-color:hsl(275,83%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(156,32%,10%)\"></td>\r\n<td style=\"\
+  background-color:hsl(12,79%,95%)\"></td>\r\n<td style=\"background-color:hsl(172,78%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(43,32%,10%)\"></td>\r\n<td style=\"background-color:hsl(230,85%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(13,78%,95%)\"></td>\r\n<td style=\"background-color:hsl(175,73%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(49,84%,10%)\"></td>\r\n<td style=\"background-color:hsl(224,32%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(10,67%,10%)\"></td>\r\n<td style=\"background-color:hsl(173,73%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(314,82%,10%)\"></td>\r\n<td style=\"\
+  background-color:hsl(124,67%,10%)\"></td>\r\n<td style=\"background-color:hsl(254,76%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(123,69%,10%)\"></td>\r\n<td style=\"\
+  background-color:hsl(249,44%,10%)\"></td>\r\n<td style=\"background-color:hsl(62,32%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(250,84%,10%)\"></td>\r\n<td style=\"\
+  background-color:hsl(57,72%,10%)\"></td>\r\n<td style=\"background-color:hsl(237,69%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(114,78%,10%)\"></td>\r\n<td style=\"\
+  background-color:hsl(302,32%,10%)\"></td>\r\n<td style=\"background-color:hsl(109,67%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(299,79%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(68,78%,95%)\"></td>\r\n</tr>\r\n<tr>\r\n<td style=\"background-color:hsl(295,78%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(71,69%,10%)\"></td>\r\n<td style=\"background-color:hsl(294,67%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(63,84%,10%)\"></td>\r\n<td style=\"background-color:hsl(296,32%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(121,84%,10%)\"></td>\r\n<td style=\"\
+  background-color:hsl(306,72%,10%)\"></td>\r\n<td style=\"background-color:hsl(127,69%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(310,77%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(129,32%,95%)\"></td>\r\n<td style=\"background-color:hsl(322,73%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(207,78%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(325,32%,95%)\"></td>\r\n<td style=\"background-color:hsl(199,84%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(357,72%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(198,69%,95%)\"></td>\r\n<td style=\"background-color:hsl(314,32%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(197,71%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(352,73%,95%)\"></td>\r\n<td style=\"background-color:hsl(209,86%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(345,69%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(187,78%,95%)\"></td>\r\n<td style=\"background-color:hsl(317,32%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(189,79%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(334,82%,95%)\"></td>\r\n<td style=\"background-color:hsl(220,68%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(333,69%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(218,82%,95%)\"></td>\r\n<td style=\"background-color:hsl(329,46%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(140,32%,10%)\"></td>\r\n<td style=\"\
+  background-color:hsl(0,85%,10%)\"></td>\r\n<td style=\"background-color:hsl(137,83%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(1,69%,10%)\"></td>\r\n<td style=\"background-color:hsl(200,32%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(320,72%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(156,85%,95%)\"></td>\r\n<td style=\"background-color:hsl(11,69%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(171,32%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(39,65%,95%)\"></td>\r\n<td style=\"background-color:hsl(169,83%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(38,32%,10%)\"></td>\r\n<td style=\"background-color:hsl(215,84%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(326,72%,10%)\"></td>\r\n<td style=\"\
+  background-color:hsl(165,69%,10%)\"></td>\r\n<td style=\"background-color:hsl(33,32%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(149,65%,10%)\"></td>\r\n<td style=\"\
+  background-color:hsl(34,78%,10%)\"></td>\r\n<td style=\"background-color:hsl(168,71%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(35,76%,10%)\"></td>\r\n<td style=\"background-color:hsl(166,69%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(28,44%,10%)\"></td>\r\n<td style=\"background-color:hsl(222,32%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(9,80%,10%)\"></td>\r\n<td style=\"background-color:hsl(225,76%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(50,79%,10%)\"></td>\r\n<td style=\"background-color:hsl(224,84%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(42,32%,10%)\"></td>\r\n<td style=\"background-color:hsl(229,49%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(44,56%,10%)\"></td>\r\n<td style=\"background-color:hsl(262,50%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(64,48%,10%)\"></td>\r\n<td style=\"background-color:hsl(298,32%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(66,80%,10%)\"></td>\r\n<td style=\"background-color:hsl(261,79%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(94,73%,95%)\"></td>\r\n</tr>\r\n<tr>\r\
+  \n<td style=\"background-color:hsl(263,78%,95%)\"></td>\r\n<td style=\"background-color:hsl(95,84%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(233,83%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(45,32%,10%)\"></td>\r\n<td style=\"background-color:hsl(218,79%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(331,78%,10%)\"></td>\r\n<td style=\"\
+  background-color:hsl(219,32%,10%)\"></td>\r\n<td style=\"background-color:hsl(359,85%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(138,78%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(312,73%,95%)\"></td>\r\n<td style=\"background-color:hsl(132,84%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(326,32%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(198,67%,95%)\"></td>\r\n<td style=\"background-color:hsl(328,73%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(189,82%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(25,67%,95%)\"></td>\r\n<td style=\"background-color:hsl(144,76%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(21,69%,95%)\"></td>\r\n<td style=\"background-color:hsl(142,44%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(19,32%,95%)\"></td>\r\n<td style=\"background-color:hsl(159,84%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(14,72%,10%)\"></td>\r\n<td style=\"background-color:hsl(173,69%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(296,78%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(68,32%,10%)\"></td>\r\n<td style=\"background-color:hsl(300,67%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(135,79%,10%)\"></td>\r\n<td style=\"\
+  background-color:hsl(315,78%,10%)\"></td>\r\n<td style=\"background-color:hsl(137,78%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(357,69%,10%)\"></td>\r\n<td style=\"\
+  background-color:hsl(201,67%,10%)\"></td>\r\n<td style=\"background-color:hsl(341,84%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(205,32%,10%)\"></td>\r\n<td style=\"\
+  background-color:hsl(6,84%,10%)\"></td>\r\n<td style=\"background-color:hsl(167,72%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(8,69%,95%)\"></td>\r\n<td style=\"background-color:hsl(221,77%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(47,32%,95%)\"></td>\r\n<td style=\"background-color:hsl(232,73%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(96,78%,95%)\"></td>\r\n<td style=\"background-color:hsl(264,32%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(100,84%,10%)\"></td>\r\n<td style=\"\
+  background-color:hsl(274,72%,10%)\"></td>\r\n<td style=\"background-color:hsl(59,69%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(275,32%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(158,71%,10%)\"></td>\r\n<td style=\"background-color:hsl(309,73%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(111,86%,10%)\"></td>\r\n<td style=\"\
+  background-color:hsl(299,69%,10%)\"></td>\r\n<td style=\"background-color:hsl(66,78%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(278,32%,10%)\"></td>\r\n<td style=\"\
+  background-color:hsl(72,79%,10%)\"></td>\r\n<td style=\"background-color:hsl(195,82%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(355,68%,10%)\"></td>\r\n<td style=\"\
+  background-color:hsl(196,69%,10%)\"></td>\r\n<td style=\"background-color:hsl(323,82%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(84,46%,10%)\"></td>\r\n<td style=\"background-color:hsl(322,32%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(204,85%,10%)\"></td>\r\n<td style=\"\
+  background-color:hsl(318,83%,10%)\"></td>\r\n<td style=\"background-color:hsl(180,69%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(316,32%,10%)\"></td>\r\n<td style=\"\
+  background-color:hsl(135,72%,10%)\"></td>\r\n<td style=\"background-color:hsl(359,85%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(139,69%,95%)\"></td>\r\n</tr>\r\n<tr>\r\
+  \n<td style=\"background-color:hsl(313,32%,95%)\"></td>\r\n<td style=\"background-color:hsl(138,65%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(326,83%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(213,32%,10%)\"></td>\r\n<td style=\"background-color:hsl(324,84%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(133,72%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(327,69%,95%)\"></td>\r\n<td style=\"background-color:hsl(216,32%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(332,65%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(215,78%,95%)\"></td>\r\n<td style=\"background-color:hsl(352,71%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(210,76%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(353,69%,95%)\"></td>\r\n<td style=\"background-color:hsl(198,44%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(32,32%,95%)\"></td>\r\n<td style=\"background-color:hsl(166,80%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(30,76%,95%)\"></td>\r\n<td style=\"background-color:hsl(224,79%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(52,84%,95%)\"></td>\r\n<td style=\"background-color:hsl(237,32%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(116,49%,10%)\"></td>\r\n<td style=\"\
+  background-color:hsl(236,56%,10%)\"></td>\r\n<td style=\"background-color:hsl(103,50%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(255,48%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(104,32%,95%)\"></td>\r\n<td style=\"background-color:hsl(279,80%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(74,79%,95%)\"></td>\r\n<td style=\"background-color:hsl(281,73%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(76,78%,95%)\"></td>\r\n<td style=\"background-color:hsl(311,84%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(77,83%,95%)\"></td>\r\n<td style=\"background-color:hsl(284,32%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(78,79%,10%)\"></td>\r\n<td style=\"background-color:hsl(312,78%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(193,32%,10%)\"></td>\r\n<td style=\"\
+  background-color:hsl(355,85%,10%)\"></td>\r\n<td style=\"background-color:hsl(201,78%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(340,73%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(202,84%,95%)\"></td>\r\n<td style=\"background-color:hsl(320,32%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(183,67%,10%)\"></td>\r\n<td style=\"\
+  background-color:hsl(60,73%,10%)\"></td>\r\n<td style=\"background-color:hsl(248,82%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(123,67%,10%)\"></td>\r\n<td style=\"\
+  background-color:hsl(298,76%,95%)\"></td>\r\n<td style=\"background-color:hsl(126,69%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(325,44%,10%)\"></td>\r\n<td style=\"\
+  background-color:hsl(133,32%,10%)\"></td>\r\n<td style=\"background-color:hsl(314,84%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(196,72%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(338,69%,95%)\"></td>\r\n<td style=\"background-color:hsl(199,78%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(1,32%,95%)\"></td>\r\n<td style=\"background-color:hsl(140,67%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(263,79%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(101,78%,95%)\"></td>\r\n<td style=\"background-color:hsl(274,78%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(155,69%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(271,67%,95%)\"></td>\r\n<td style=\"background-color:hsl(156,84%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(13,32%,10%)\"></td>\r\n<td style=\"background-color:hsl(174,84%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(315,72%,10%)\"></td>\r\n<td style=\"\
+  background-color:hsl(127,69%,10%)\"></td>\r\n<td style=\"background-color:hsl(300,77%,10%)\"\
+  ></td>\r\n</tr>\r\n<tr>\r\n<td style=\"background-color:hsl(131,32%,95%)\"></td>\r\
+  \n<td style=\"background-color:hsl(299,73%,95%)\"></td>\r\n<td style=\"background-color:hsl(67,78%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(191,32%,10%)\"></td>\r\n<td style=\"\
+  background-color:hsl(333,84%,95%)\"></td>\r\n<td style=\"background-color:hsl(189,72%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(332,69%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(208,32%,95%)\"></td>\r\n<td style=\"background-color:hsl(323,71%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(82,73%,95%)\"></td>\r\n<td style=\"background-color:hsl(318,86%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(179,69%,10%)\"></td>\r\n<td style=\"\
+  background-color:hsl(302,78%,10%)\"></td>\r\n<td style=\"background-color:hsl(71,32%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(194,79%,10%)\"></td>\r\n<td style=\"\
+  background-color:hsl(28,82%,10%)\"></td>\r\n<td style=\"background-color:hsl(223,68%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(50,69%,95%)\"></td>\r\n<td style=\"background-color:hsl(175,82%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(12,46%,10%)\"></td>\r\n<td style=\"background-color:hsl(159,32%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(13,85%,10%)\"></td>\r\n<td style=\"background-color:hsl(172,83%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(312,69%,10%)\"></td>\r\n<td style=\"\
+  background-color:hsl(139,32%,10%)\"></td>\r\n<td style=\"background-color:hsl(8,72%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(224,85%,10%)\"></td>\r\n<td style=\"\
+  background-color:hsl(40,69%,10%)\"></td>\r\n<td style=\"background-color:hsl(169,32%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(34,65%,10%)\"></td>\r\n<td style=\"background-color:hsl(148,83%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(33,32%,10%)\"></td>\r\n<td style=\"background-color:hsl(168,84%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(37,72%,10%)\"></td>\r\n<td style=\"background-color:hsl(167,69%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(5,32%,10%)\"></td>\r\n<td style=\"background-color:hsl(217,65%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(331,78%,10%)\"></td>\r\n<td style=\"\
+  background-color:hsl(204,71%,10%)\"></td>\r\n<td style=\"background-color:hsl(356,76%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(196,69%,10%)\"></td>\r\n<td style=\"\
+  background-color:hsl(31,44%,95%)\"></td>\r\n<td style=\"background-color:hsl(250,32%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(122,80%,10%)\"></td>\r\n<td style=\"\
+  background-color:hsl(246,76%,10%)\"></td>\r\n<td style=\"background-color:hsl(91,79%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(243,84%,10%)\"></td>\r\n<td style=\"\
+  background-color:hsl(127,32%,10%)\"></td>\r\n<td style=\"background-color:hsl(321,49%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(192,56%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(30,50%,95%)\"></td>\r\n<td style=\"background-color:hsl(225,48%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(53,32%,95%)\"></td>\r\n<td style=\"background-color:hsl(229,80%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(45,79%,95%)\"></td>\r\n<td style=\"background-color:hsl(219,73%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(335,78%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(188,84%,95%)\"></td>\r\n<td style=\"background-color:hsl(307,83%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(129,32%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(315,79%,95%)\"></td>\r\n<td style=\"background-color:hsl(76,78%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(280,32%,10%)\"></td>\r\n<td style=\"\
+  background-color:hsl(75,85%,10%)\"></td>\r\n<td style=\"background-color:hsl(311,78%,10%)\"\
+  ></td>\r\n</tr>\r\n<tr>\r\n<td style=\"background-color:hsl(193,73%,95%)\"></td>\r\
+  \n<td style=\"background-color:hsl(354,84%,95%)\"></td>\r\n<td style=\"background-color:hsl(214,32%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(352,67%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(190,73%,95%)\"></td>\r\n<td style=\"background-color:hsl(334,82%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(194,67%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(337,76%,95%)\"></td>\r\n<td style=\"background-color:hsl(200,69%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(357,44%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(139,32%,95%)\"></td>\r\n<td style=\"background-color:hsl(5,84%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(168,72%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(327,69%,95%)\"></td>\r\n<td style=\"background-color:hsl(141,78%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(17,32%,95%)\"></td>\r\n<td style=\"background-color:hsl(143,67%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(266,79%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(150,78%,10%)\"></td>\r\n<td style=\"background-color:hsl(35,78%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(167,69%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(32,67%,95%)\"></td>\r\n<td style=\"background-color:hsl(146,84%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(34,32%,95%)\"></td>\r\n<td style=\"background-color:hsl(147,84%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(344,72%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(182,69%,95%)\"></td>\r\n<td style=\"background-color:hsl(345,77%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(186,32%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(346,73%,95%)\"></td>\r\n<td style=\"background-color:hsl(184,78%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(305,32%,10%)\"></td>\r\n<td style=\"\
+  background-color:hsl(145,84%,95%)\"></td>\r\n<td style=\"background-color:hsl(263,72%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(63,69%,10%)\"></td>\r\n<td style=\"background-color:hsl(281,32%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(73,71%,10%)\"></td>\r\n<td style=\"background-color:hsl(195,73%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(322,86%,10%)\"></td>\r\n<td style=\"\
+  background-color:hsl(210,69%,10%)\"></td>\r\n<td style=\"background-color:hsl(36,78%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(170,32%,10%)\"></td>\r\n<td style=\"\
+  background-color:hsl(8,79%,10%)\"></td>\r\n<td style=\"background-color:hsl(171,82%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(314,68%,10%)\"></td>\r\n<td style=\"\
+  background-color:hsl(128,69%,10%)\"></td>\r\n<td style=\"background-color:hsl(326,82%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(199,46%,10%)\"></td>\r\n<td style=\"\
+  background-color:hsl(323,32%,10%)\"></td>\r\n<td style=\"background-color:hsl(202,85%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(356,83%,10%)\"></td>\r\n<td style=\"\
+  background-color:hsl(200,69%,10%)\"></td>\r\n<td style=\"background-color:hsl(315,32%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(126,72%,10%)\"></td>\r\n<td style=\"\
+  background-color:hsl(275,85%,10%)\"></td>\r\n<td style=\"background-color:hsl(155,69%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(319,32%,10%)\"></td>\r\n<td style=\"\
+  background-color:hsl(148,65%,10%)\"></td>\r\n<td style=\"background-color:hsl(32,83%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(196,32%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(312,84%,95%)\"></td>\r\n<td style=\"background-color:hsl(113,72%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(239,69%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(115,32%,10%)\"></td>\r\n<td style=\"background-color:hsl(241,65%,10%)\"\
+  ></td>\r\n</tr>\r\n<tr>\r\n<td style=\"background-color:hsl(60,78%,95%)\"></td>\r\
+  \n<td style=\"background-color:hsl(247,71%,95%)\"></td>\r\n<td style=\"background-color:hsl(120,76%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(298,69%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(64,44%,95%)\"></td>\r\n<td style=\"background-color:hsl(187,32%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(309,80%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(129,76%,95%)\"></td>\r\n<td style=\"background-color:hsl(325,79%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(131,84%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(285,32%,95%)\"></td>\r\n<td style=\"background-color:hsl(130,49%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(322,56%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(162,50%,95%)\"></td>\r\n<td style=\"background-color:hsl(323,48%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(128,32%,10%)\"></td>\r\n<td style=\"\
+  background-color:hsl(281,80%,10%)\"></td>\r\n<td style=\"background-color:hsl(77,79%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(317,73%,10%)\"></td>\r\n<td style=\"\
+  background-color:hsl(181,78%,10%)\"></td>\r\n<td style=\"background-color:hsl(319,84%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(126,83%,10%)\"></td>\r\n<td style=\"\
+  background-color:hsl(256,32%,10%)\"></td>\r\n<td style=\"background-color:hsl(61,79%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(248,78%,10%)\"></td>\r\n<td style=\"\
+  background-color:hsl(120,32%,10%)\"></td>\r\n<td style=\"background-color:hsl(295,85%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(62,78%,10%)\"></td>\r\n<td style=\"background-color:hsl(296,73%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(70,84%,10%)\"></td>\r\n<td style=\"background-color:hsl(294,32%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(66,67%,95%)\"></td>\r\n<td style=\"background-color:hsl(268,73%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(99,82%,95%)\"></td>\r\n<td style=\"background-color:hsl(234,67%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(46,76%,95%)\"></td>\r\n<td style=\"background-color:hsl(230,69%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(43,44%,95%)\"></td>\r\n<td style=\"background-color:hsl(261,32%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(124,84%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(323,72%,95%)\"></td>\r\n<td style=\"background-color:hsl(205,69%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(322,78%,10%)\"></td>\r\n<td style=\"\
+  background-color:hsl(128,32%,10%)\"></td>\r\n<td style=\"background-color:hsl(255,67%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(121,79%,10%)\"></td>\r\n<td style=\"\
+  background-color:hsl(278,78%,10%)\"></td>\r\n<td style=\"background-color:hsl(102,78%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(280,69%,10%)\"></td>\r\n<td style=\"\
+  background-color:hsl(65,67%,10%)\"></td>\r\n<td style=\"background-color:hsl(299,84%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(174,32%,10%)\"></td>\r\n<td style=\"\
+  background-color:hsl(14,84%,10%)\"></td>\r\n<td style=\"background-color:hsl(175,72%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(314,69%,10%)\"></td>\r\n<td style=\"\
+  background-color:hsl(135,77%,10%)\"></td>\r\n<td style=\"background-color:hsl(324,32%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(204,73%,10%)\"></td>\r\n<td style=\"\
+  background-color:hsl(342,78%,10%)\"></td>\r\n<td style=\"background-color:hsl(227,32%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(11,84%,10%)\"></td>\r\n<td style=\"background-color:hsl(141,72%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(315,69%,10%)\"></td>\r\n<td style=\"\
+  background-color:hsl(183,32%,10%)\"></td>\r\n<td style=\"background-color:hsl(323,71%,10%)\"\
+  ></td>\r\n</tr>\r\n<tr>\r\n<td style=\"background-color:hsl(209,73%,95%)\"></td>\r\
+  \n<td style=\"background-color:hsl(35,86%,95%)\"></td>\r\n<td style=\"background-color:hsl(169,69%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(37,78%,95%)\"></td>\r\n<td style=\"background-color:hsl(150,32%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(351,79%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(151,82%,95%)\"></td>\r\n<td style=\"background-color:hsl(267,68%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(108,69%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(269,82%,95%)\"></td>\r\n<td style=\"background-color:hsl(101,46%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(263,32%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(96,85%,95%)\"></td>\r\n<td style=\"background-color:hsl(259,83%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(97,69%,95%)\"></td>\r\n<td style=\"background-color:hsl(232,32%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(44,72%,95%)\"></td>\r\n<td style=\"background-color:hsl(234,85%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(51,69%,95%)\"></td>\r\n<td style=\"background-color:hsl(223,32%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(48,65%,95%)\"></td>\r\n<td style=\"background-color:hsl(222,83%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(27,32%,95%)\"></td>\r\n<td style=\"background-color:hsl(221,84%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(335,72%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(195,69%,95%)\"></td>\r\n<td style=\"background-color:hsl(313,32%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(140,65%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(358,78%,95%)\"></td>\r\n<td style=\"background-color:hsl(139,71%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(327,76%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(132,69%,95%)\"></td>\r\n<td style=\"background-color:hsl(325,44%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(137,32%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(311,80%,95%)\"></td>\r\n<td style=\"background-color:hsl(192,76%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(354,79%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(196,84%,95%)\"></td>\r\n<td style=\"background-color:hsl(30,32%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(193,49%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(336,56%,95%)\"></td>\r\n<td style=\"background-color:hsl(190,50%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(68,48%,95%)\"></td>\r\n<td style=\"background-color:hsl(269,32%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(111,80%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(310,79%,95%)\"></td>\r\n<td style=\"background-color:hsl(165,73%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(26,78%,95%)\"></td>\r\n<td style=\"background-color:hsl(220,84%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(46,83%,95%)\"></td>\r\n<td style=\"background-color:hsl(264,32%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(141,79%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(4,78%,95%)\"></td>\r\n<td style=\"background-color:hsl(138,32%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(316,85%,95%)\"></td>\r\n<td style=\"\
+  background-color:hsl(132,78%,95%)\"></td>\r\n<td style=\"background-color:hsl(314,73%,95%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(172,84%,10%)\"></td>\r\n<td style=\"\
+  background-color:hsl(296,32%,10%)\"></td>\r\n<td style=\"background-color:hsl(72,67%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(279,73%,10%)\"></td>\r\n<td style=\"\
+  background-color:hsl(64,82%,10%)\"></td>\r\n<td style=\"background-color:hsl(295,67%,10%)\"\
+  ></td>\r\n<td style=\"background-color:hsl(121,76%,10%)\"></td>\r\n<td style=\"\
+  background-color:hsl(298,69%,10%)\"></td>\r\n</tr>\r\n<tr>\r\n</tr></table>"
+content-type: 1
+desc: 机
+extend-data: 7,7,7,7
+links:
+- path: ccbc13/index
+  title: 索引页
+  type: index
+- path: ccbc13/pages/ccbc14
+  title: CCBC-14
+  type: page
+tips:
+- content: 用浏览器的开发者工具查看每个格子的底色。（在部分浏览器上可以右键点击色块->检查/inspect来快速定位颜色代码的位置。）颜色是 HSL 格式，其中明度（L）是
+    10% 或者 95% 用来画出黑白的图案，没有其它信息。需要用到的是另外两个，色相（H）和饱和度（S）的值。先看饱和度。
+  title: 不知道从何入手
+- content: 查看 ASCII 代码，将数字翻译成字符。
+  title: 找到了一些全部都是两位数的数字，但是无法理解
+- content: 不需要编程，根据题目里的信息，转换成 x,y 的坐标后在 Excel 或类似工具里绘制散点图连线就可以（但是线要尽可能细，图要尽可能地画得大一点）。
+  title: 虽然知道要干什么，但是这好像需要我不会的专业技术？
+title: 五彩斑斓的黑白
+type: problem

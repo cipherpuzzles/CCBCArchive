@@ -1,0 +1,98 @@
+answer: STAFF SERGEANT
+answer-analysis: '按照要求构造即可。构造时可使用 [Nutrimatic](https://nutrimatic.org/)、 [Qat](https://www.quinapalus.com/cgi-bin/qat)
+  或 [onelook](https://www.onelook.com/) 等搜词网站，也可以写代码（因为词典文件已给出）。
+
+
+  本题分为四个部分：
+
+  * 第一部分：需要满足一到三区的要求。每个小题只属于一个区，因此这非常容易做到。
+
+  * 第二部分（在满足第一部分之后出现）：需要满足A到C区的要求。每个小题属于两个区（一到三区的某一区以及A到C区的某一区），经过一定的规划之后也不难满足。
+
+  * 第三部分（在满足第二部分之后出现）：需要满足最终元谜题的要求，即答案中总共包含26个单词，且首字母分别是A到Z。如果在第二部分运气较好，经过简单修改之后即可满足。
+
+  * 第四部分（在满足第三部分之后出现）：会得到一个长度26的包含大写字母和问号的字符串。经过观察或尝试后可以猜到字符串第i位对应第i个大写字母开头的单词，如果单词包含想要的字母即会显示该字母，否则则显示问号。通过修改小题答案以及进行一定的猜测后可以得到
+  ```FINAL ANSWER IS STAFF SERGEANT```。最终答案即为 ```STAFF SERGEANT```。
+
+
+  以下答案可以满足所有要求（包括第四部分）。
+
+  ```
+
+  YEARNING GNOME
+
+  IOWA USURPER
+
+  AWFUL OPTIMIZATION
+
+  QUALIFY KILOMETER
+
+  HOGWARTS LIQUIDIZERS
+
+  WELCOME REFUGEES
+
+  CUBAN BURRITOS
+
+  ZOOLOGIST XENOPHOBIA
+
+  SUDDEN MUSIC
+
+  FAULTY TROTTER
+
+  ENROLL JELLY
+
+  VOODOOING NAVAJOS
+
+  DAKOTA PACKAGING
+
+  ```'
+content: []
+content-type: 2
+desc: 上士
+extend-data: 2,3,4,4
+links:
+- path: ccbc13/index
+  title: 索引页
+  type: index
+- path: ccbc13/pages/ccbc13
+  title: CCBC-13
+  type: page
+tips:
+- content: '可使用 [Nutrimatic](https://nutrimatic.org/)、 [Qat](https://www.quinapalus.com/cgi-bin/qat)
+    或 [onelook](https://www.onelook.com/) 等搜词网站，也可以写代码（因为词典文件已给出）。
+
+
+    词典文件没有特殊性质，正常的单词都在给出的词典里。'
+  title: 该如何凑词
+- content: 注意到最终元谜题的要求需要小题答案总共有26个单词（并且这些单词有一个自然的顺序），显示的最终线索长度也恰好是26。对于最终线索的每个位置，如果对应的单词包含想要的字母即会显示该字母，否则则显示问号。
+  title: 该如何爆猜（提取）
+title: 凑词爆猜
+type: problem
+vue_script: "const { ref, inject, onMounted } = Vue;\r\nexport default {\r\n    setup()\
+  \ {\r\n        const inputArea = ref(\"\");\r\n        const mainHtml = ref(\"\"\
+  );\r\n        const isHidden = ref(false);\r\n\r\n        const api = inject('api');\r\
+  \n        const defaultApiErrorAction = inject('defaultApiErrorAction');\r\n\r\n\
+  \        const submit = async (skip) => {\r\n            let res = await api('/spfunc/makeyourownpuzzlehunt/13',\
+  \ {\r\n                input: inputArea.value,\r\n                skip: skip\r\n\
+  \            }, \"sp\"); //第三个参数设置为sp时调用node后端\r\n\r\n            let data = await\
+  \ res.json();\r\n            if (data.status !== 1) {\r\n                defaultApiErrorAction(data);\r\
+  \n                return;\r\n            }\r\n\r\n            if (data.data) {\r\
+  \n                mainHtml.value = data.data.content;\r\n                if (data.data.all_success)\
+  \ isHidden.value = true;\r\n            }\r\n        }\r\n\r\n        onMounted(()\
+  \ => {\r\n            submit(true);\r\n        });\r\n\r\n        return {\r\n \
+  \           inputArea,\r\n            mainHtml,\r\n            isHidden,\r\n   \
+  \         submit\r\n        };\r\n    }\r\n}"
+vue_template: "<template>\r\n    <div class=\"main-puzzle-content\">\r\n        <div\
+  \ v-html=\"mainHtml\"></div>\r\n    <div v-if=\"!isHidden\">\r\n        <p>请在以下文本框里输入每个小题的答案，每一行对应一个小题。例如，第一行是第一题的答案。</p>\r\
+  \n        <textarea class=\"input-area mt-3\" id=\"textarea\" cols=\"40\" rows=\"\
+  13\" v-model=\"inputArea\"></textarea>\r\n        <div>\r\n            <button class=\"\
+  btn btn-primary\" @click=\"submit(false)\">提交</button>\r\n        </div>\r\n   \
+  \ </div>\r\n    </div>\r\n</template>\r\n\r\n<style>\r\n.input-area {\r\n    resize:\
+  \ none;\r\n    white-space: nowrap;\r\n    overflow: auto;\r\n    font-family: var(--bs-font-monospace);\r\
+  \n}\r\n\r\n.check_yes {\r\n    color: lime;\r\n}\r\n\r\n.check_no {\r\n    color:\
+  \ red;\r\n}\r\n\r\n#final_answer_box {\r\n    border-style: solid;\r\n    font-size:\
+  \ 36px;\r\n    display: flex;\r\n    justify-content: center;\r\n    align-items:\
+  \ center;\r\n}\r\n\r\n#final_answer_box code {\r\n    line-height: 60px;\r\n   \
+  \ word-break: break-all;\r\n}\r\n\r\n.main-puzzle-content p {\r\n    margin-top:\
+  \ 50px;\r\n}\r\n\r\n.main-puzzle-content code {\r\n    font-size: inherit !important;\r\
+  \n    color: inherit !important;\r\n}\r\n</style>"

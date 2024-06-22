@@ -1,0 +1,60 @@
+answer: ATLAS ROCKET
+content:
+- "<style>\n    #mytable {\n        border-collapse: collapse;\n        border: 3px\
+  \ solid;\n    }\n    #mytable tr:nth-child(2) td {\n        border-bottom: 2px solid;\n\
+  \    }\n    #mytable td {\n        width: 30px;\n        height: 25px;\n       \
+  \ border-radius: 10px;\n    }\n    #mytable td.yblack {\n        background-color:\
+  \ black;\n    }\n</style>\n<div class=\"ccbcstylewrapper\">\n    <table id=\"mytable\"\
+  >\n        <tr><td class='yblack'></td><td class='yblack'></td><td class='yblack'></td><td\
+  \ class='yblack'></td><td class='yblack'></td><td class='yblack'></td><td class='yblack'></td><td\
+  \ class='yblack'></td><td class='yblack'></td><td></td><td class='yblack'></td><td\
+  \ class='yblack'></td><td class='yblack'></td><td></td><td class='yblack'></td><td></td><td\
+  \ class='yblack'></td><td class='yblack'></td><td class='yblack'></td><td class='yblack'></td><td\
+  \ class='yblack'></td><td></td><td class='yblack'></td><td class='yblack'></td></tr>\n\
+  \        <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td\
+  \ class='yblack'></td><td></td><td></td><td></td><td class='yblack'></td><td></td><td\
+  \ class='yblack'></td><td></td><td></td><td></td><td></td><td></td><td class='yblack'></td><td></td><td></td></tr>\n\
+  \        <tr><td></td><td class='yblack'></td><td class='yblack'></td><td></td><td\
+  \ class='yblack'></td><td class='yblack'></td><td></td><td class='yblack'></td><td\
+  \ class='yblack'></td><td class='yblack'></td><td></td><td></td><td class='yblack'></td><td\
+  \ class='yblack'></td><td class='yblack'></td><td></td><td></td><td class='yblack'></td><td\
+  \ class='yblack'></td><td class='yblack'></td><td></td><td></td><td class='yblack'></td><td></td></tr>\n\
+  \        <tr><td class='yblack'></td><td></td><td class='yblack'></td><td class='yblack'></td><td></td><td\
+  \ class='yblack'></td><td class='yblack'></td><td></td><td></td><td class='yblack'></td><td\
+  \ class='yblack'></td><td class='yblack'></td><td></td><td class='yblack'></td><td></td><td\
+  \ class='yblack'></td><td class='yblack'></td><td class='yblack'></td><td></td><td></td><td\
+  \ class='yblack'></td><td class='yblack'></td><td class='yblack'></td><td class='yblack'></td></tr>\n\
+  \        <tr><td class='yblack'></td><td class='yblack'></td><td></td><td class='yblack'></td><td\
+  \ class='yblack'></td><td></td><td class='yblack'></td><td class='yblack'></td><td\
+  \ class='yblack'></td><td class='yblack'></td><td class='yblack'></td><td class='yblack'></td><td\
+  \ class='yblack'></td><td class='yblack'></td><td class='yblack'></td><td class='yblack'></td><td\
+  \ class='yblack'></td><td class='yblack'></td><td class='yblack'></td><td class='yblack'></td><td\
+  \ class='yblack'></td><td class='yblack'></td><td></td><td class='yblack'></td></tr>\n\
+  \        <tr><td class='yblack'></td><td class='yblack'></td><td class='yblack'></td><td\
+  \ class='yblack'></td><td class='yblack'></td><td class='yblack'></td><td class='yblack'></td><td\
+  \ class='yblack'></td><td class='yblack'></td><td class='yblack'></td><td class='yblack'></td><td\
+  \ class='yblack'></td><td class='yblack'></td><td></td><td class='yblack'></td><td\
+  \ class='yblack'></td><td class='yblack'></td><td></td><td class='yblack'></td><td\
+  \ class='yblack'></td><td class='yblack'></td><td class='yblack'></td><td class='yblack'></td><td\
+  \ class='yblack'></td></tr>\n        <tr><td class='yblack'></td><td class='yblack'></td><td\
+  \ class='yblack'></td><td class='yblack'></td><td class='yblack'></td><td class='yblack'></td><td\
+  \ class='yblack'></td><td class='yblack'></td><td class='yblack'></td><td></td><td\
+  \ class='yblack'></td><td class='yblack'></td><td class='yblack'></td><td class='yblack'></td><td\
+  \ class='yblack'></td><td class='yblack'></td><td class='yblack'></td><td class='yblack'></td><td\
+  \ class='yblack'></td><td class='yblack'></td><td class='yblack'></td><td class='yblack'></td><td\
+  \ class='yblack'></td><td class='yblack'></td></tr>\n    </table>\n</div>"
+content-type: 1
+desc: Oct
+extend-data: null
+links:
+- path: ccbc13/index
+  title: 索引页
+  type: index
+- path: ccbc13/pages/asteroid
+  title: 小行星
+  type: page
+tips:
+- content: 这是算盘的构造，转成数字后每两位数转成字母
+  title: 我毫无思路
+title: ⭐
+type: problem

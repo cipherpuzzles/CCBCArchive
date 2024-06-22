@@ -1,0 +1,18 @@
+answer: OVERLOADING
+content:
+- <img src="https://static.cipherpuzzles.com/static/images/734e797f8f0a4bb58b65ab30e0dc16e7.gif">
+content-type: 0
+desc: Vel
+extend-data: null
+links:
+- path: ccbc13/index
+  title: 索引页
+  type: index
+- path: ccbc13/pages/asteroid
+  title: 小行星
+  type: page
+tips:
+- content: 数每个 * 出来花了多少时间（... 部分改动一次算 1）
+  title: 我毫无头绪
+title: ⭐
+type: problem

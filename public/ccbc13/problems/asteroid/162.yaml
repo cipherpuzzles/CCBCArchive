@@ -1,0 +1,18 @@
+answer: PENGUIN
+content: []
+content-type: 0
+desc: Peg
+extend-data: null
+links:
+- path: ccbc13/index
+  title: 索引页
+  type: index
+- path: ccbc13/pages/asteroid
+  title: 小行星
+  type: page
+problem-image: /ccbc13/images/asteroid/f4907ed018b646d2bcc3921a4a13e5c6.webp
+tips:
+- content: 两条虚线代表了地球的两条回归线
+  title: 我毫无思路
+title: ⭐
+type: problem

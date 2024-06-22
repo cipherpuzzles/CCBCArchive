@@ -1,0 +1,82 @@
+answer: COHORTATIVE
+content:
+- "<style>\n    .puzzle {\n        margin: 30px;\n    }\n    .puzzle .line {\n   \
+  \     display: flex;\n        margin: 10px;\n    }\n    .puzzle .line div {\n  \
+  \      height: 10px;\n    }\n    .puzzle .line div:nth-child(odd) {\n        width:\
+  \ 10px;\n    }\n    .puzzle .line div:nth-child(even) {\n        width: 50px;\n\
+  \    }\n    .puzzle .line div.gg {\n        background-color: green;\n    }\n  \
+  \  .puzzle .line div.ww {\n        background-color: white;\n    }\n    .puzzle\
+  \ .line div.rr {\n        background-color: red;\n    }\n    .puzzle .line div.yy\
+  \ {\n        background-color: yellow;\n    }\n    .puzzle .line div.bb {\n    \
+  \    background-color: blue;\n    }\n    .puzzle .line div.kk {\n        background-color:\
+  \ black;\n    }\n    .puzzle .line div.oo {\n        background-color: orange;\n\
+  \    }\n    .puzzle .line div.vv {\n        background-color: violet;\n    }\n</style>\n\
+  <div class=\"ccbcstylewrapper\">\n    <div class=\"d-flex\" style=\"flex-wrap: wrap\"\
+  >\n        <div class='puzzle'>\n        <div class='line'><div class='gg'></div><div\
+  \ class='kk'></div><div class='bb'></div></div>\n        <div class='line'><div\
+  \ class='yy'></div><div class='kk'></div><div class='rr'></div></div>\n        <div\
+  \ class='line'><div class='gg'></div><div class='kk'></div><div class='kk'></div><div\
+  \ class='kk'></div><div class='rr'></div></div>\n        <div class='line'><div\
+  \ class='bb'></div><div class='ww'></div><div class='ww'></div><div class='ww'></div><div\
+  \ class='yy'></div></div>\n        </div>\n        <div class='puzzle'>\n      \
+  \  <div class='line'><div class='gg'></div><div class='kk'></div><div class='bb'></div></div>\n\
+  \        <div class='line'><div class='yy'></div><div class='kk'></div><div class='rr'></div></div>\n\
+  \        <div class='line'><div class='bb'></div><div class='kk'></div><div class='kk'></div><div\
+  \ class='kk'></div><div class='yy'></div></div>\n        <div class='line'><div\
+  \ class='rr'></div><div class='kk'></div><div class='kk'></div><div class='kk'></div><div\
+  \ class='gg'></div></div>\n        </div>\n        <div class='puzzle'>\n      \
+  \  <div class='line'><div class='yy'></div><div class='kk'></div><div class='rr'></div></div>\n\
+  \        <div class='line'><div class=''></div><div class='kk'></div><div class='yy'></div><div\
+  \ class='kk'></div></div>\n        <div class='line'><div class=''></div><div class='kk'></div><div\
+  \ class='rr'></div><div class='kk'></div></div>\n        </div>\n        <div class='puzzle'>\n\
+  \        <div class='line'><div class='gg'></div><div class='kk'></div><div class='bb'></div></div>\n\
+  \        <div class='line'><div class='yy'></div><div class='kk'></div><div class='rr'></div></div>\n\
+  \        <div class='line'><div class='bb'></div><div class='kk'></div><div class='kk'></div><div\
+  \ class='kk'></div><div class='yy'></div></div>\n        <div class='line'><div\
+  \ class='rr'></div><div class='kk'></div><div class='kk'></div><div class='kk'></div><div\
+  \ class='gg'></div></div>\n        </div>\n        <div class='puzzle'>\n      \
+  \  <div class='line'><div class='bb'></div><div class='kk'></div></div>\n      \
+  \  <div class='line'><div class='yy'></div><div class='kk'></div><div class='bb'></div></div>\n\
+  \        <div class='line'><div class='rr'></div><div class='kk'></div><div class='yy'></div></div>\n\
+  \        <div class='line'><div class='rr'></div><div class='kk'></div><div class='bb'></div><div\
+  \ class='kk'></div></div>\n        </div>\n        <div class='puzzle'>\n      \
+  \  <div class='line'><div class='rr'></div><div class='kk'></div><div class='kk'></div><div\
+  \ class='kk'></div></div>\n        <div class='line'><div class=''></div><div class='kk'></div><div\
+  \ class='rr'></div><div class='kk'></div></div>\n        </div>\n        <div class='puzzle'>\n\
+  \        <div class='line'><div class='bb'></div><div class='kk'></div><div class='yy'></div></div>\n\
+  \        <div class='line'><div class='rr'></div><div class='kk'></div><div class='bb'></div><div\
+  \ class='kk'></div></div>\n        <div class='line'><div class='rr'></div><div\
+  \ class='kk'></div><div class='yy'></div><div class='kk'></div></div>\n        </div>\n\
+  \        <div class='puzzle'>\n        <div class='line'><div class='rr'></div><div\
+  \ class='kk'></div><div class='kk'></div><div class='kk'></div></div>\n        <div\
+  \ class='line'><div class=''></div><div class='kk'></div><div class='rr'></div><div\
+  \ class='kk'></div></div>\n        </div>\n        <div class='puzzle'>\n      \
+  \  <div class='line'><div class=''></div><div class='kk'></div><div class='kk'></div><div\
+  \ class='kk'></div></div>\n        </div>\n        <div class='puzzle'>\n      \
+  \  <div class='line'><div class='yy'></div><div class='ww'></div><div class='bb'></div></div>\n\
+  \        <div class='line'><div class='bb'></div><div class='kk'></div><div class='kk'></div><div\
+  \ class='kk'></div><div class='rr'></div></div>\n        <div class='line'><div\
+  \ class='yy'></div><div class='kk'></div><div class='kk'></div><div class='kk'></div><div\
+  \ class='rr'></div></div>\n        </div>\n        <div class='puzzle'>\n      \
+  \  <div class='line'><div class='vv'></div><div class='kk'></div><div class='oo'></div></div>\n\
+  \        <div class='line'><div class='bb'></div><div class='kk'></div><div class='gg'></div></div>\n\
+  \        <div class='line'><div class='rr'></div><div class='kk'></div><div class='yy'></div></div>\n\
+  \        <div class='line'><div class='yy'></div><div class='ww'></div><div class='oo'></div><div\
+  \ class='ww'></div><div class='bb'></div></div>\n        <div class='line'><div\
+  \ class='rr'></div><div class='kk'></div><div class='vv'></div><div class='kk'></div><div\
+  \ class='gg'></div></div>\n        </div>\n    </div>\n</div>"
+content-type: 1
+desc: Crv
+extend-data: null
+links:
+- path: ccbc13/index
+  title: 索引页
+  type: index
+- path: ccbc13/pages/asteroid
+  title: 小行星
+  type: page
+tips:
+- content: 将每组“棍子”颜色相同的位置粘起来。
+  title: 我毫无头绪
+title: ⭐
+type: problem

@@ -1,0 +1,30 @@
+answer: BLACKBIRD
+content:
+- "<div class=\"ccbcstylewrapper\">\n    <style>\n        #pz {\n            border-collapse:\n\
+  \            collapse;\n        }\n        #pz td {\n            width: 50px;\n\
+  \            height: 50px;\n            font-size: 20px;\n            text-align:\
+  \ center;\n            vertical-align: middle;\n            border-style: solid;\n\
+  \        }\n    </style>\n    <table id=\"pz\">\n        <tr>\n            <td style=\"\
+  border-width: 0 10px 5px 5px;\"></td>\n            <td style=\"border-width: 0 0\
+  \ 5px 10px\">●</td>\n            <td style=\"border-width: 0 5px 5px 0\"></td>\n\
+  \        </tr>\n        <tr>\n            <td style=\"border-width: 5px 5px 10px\
+  \ 5px\"></td>\n            <td style=\"border-width: 5px 10px 10px 5px\">●</td>\n\
+  \            <td style=\"border-width: 5px 5px 10px 10px\"></td>\n        </tr>\n\
+  \        <tr>\n            <td style=\"border-width: 10px 5px 0 5px;\"></td>\n \
+  \           <td style=\"border-width: 10px 0 0 5px\">●</td>\n            <td style=\"\
+  border-width: 10px 5px 5px 0\"></td>\n        </tr>\n    </table>\n</div>"
+content-type: 1
+desc: Lac
+extend-data: null
+links:
+- path: ccbc13/index
+  title: 索引页
+  type: index
+- path: ccbc13/pages/asteroid
+  title: 小行星
+  type: page
+tips:
+- content: 这是猪圈密码（Pigpen Cipher），答案是一个9个字母的英文单词。
+  title: 我毫无头绪
+title: ⭐
+type: problem

@@ -1,0 +1,174 @@
+answer: PRECISION
+answer-analysis: '首先填词部份答案如下：
+
+
+  <style>
+
+  #ak td {
+
+  padding: 5px 10px;
+
+  }
+
+  </style>
+
+  <table id="ak">
+
+  <tr><th colspan="3">Across</th><th colspan="3">Down</th></tr>
+
+  <tr><td>1</td><td>本题提取（第一部分）</td><td>EVERY</td><td>1</td><td>在C++里往vector里插入新的元素</td><td>EMPLACE</td></tr>
+
+  <tr><td>5</td><td>27A-边形</td><td>DECAGON</td><td>2</td><td>背景演员</td><td>EXTRA</td></tr>
+
+  <tr><td>9</td><td>铀的主要矿藏来源</td><td>PITCHBLENDE</td><td>3</td><td>弹弓的形状（hyph.）</td><td>Y-SHAPED</td></tr>
+
+  <tr><td>10</td><td>以某位女数学家命名的编程语言</td><td>ADA</td><td>4</td><td>圣诞颂歌（2 wds）</td><td>SILENT
+  NIGHT</td></tr>
+
+  <tr><td>11</td><td>本题机制</td><td>PENTOMINO</td><td>5</td><td>（复数）澳洲野狗</td><td>DINGOES</td></tr>
+
+  <tr><td>12</td><td>（过去式）鼓励、怂恿（2 wds）</td><td>EGGED ON</td><td>6</td><td>法语里的“亲爱的”</td><td>CHERI</td></tr>
+
+  <tr><td>14</td><td>（进行时）筛面粉</td><td>SIFTING</td><td>7</td><td>威尼斯的小船驾驶者</td><td>GONDOLIER</td></tr>
+
+  <tr><td>16</td><td>洗碗布（2 wds）</td><td>DISH RAG</td><td>8</td><td>什么都没有</td><td>NOTHING</td></tr>
+
+  <tr><td>18</td><td>莎士比亚喜剧里的一位伯爵</td><td>BERTRAM</td><td>13</td><td>木星或者土星（2 wds）</td><td>GAS
+  PLANET</td></tr>
+
+  <tr><td>20</td><td>（复数）岛屿</td><td>ISLES</td><td>15</td><td>电学单位</td><td>FARAD</td></tr>
+
+  <tr><td>21</td><td>本题提取（第二部分）</td><td>THIRD</td><td>16</td><td>（复数）奶制品</td><td>DAIRIES</td></tr>
+
+  <tr><td>22</td><td>皮克斯动画短片</td><td>BAO</td><td>17</td><td>重缝</td><td>RESEW</td></tr>
+
+  <tr><td>23</td><td>甘道夫的演员</td><td>IAN</td><td>18</td><td>锅炉</td><td>BOILER</td></tr>
+
+  <tr><td>24</td><td>本题机制</td><td>WITNESS</td><td>19</td><td>雷神之锤</td><td>MJOLNIR</td></tr>
+
+  <tr><td>27</td><td>5A的边数</td><td>TEN</td><td>22</td><td>指挥棒</td><td>BATON</td></tr>
+
+  <tr><td>28</td><td>网站地图（2 wds）</td><td>SITE MAP</td><td>25</td><td>小费</td><td>TIP</td></tr>
+
+  <tr><td>29</td><td>本题提取（第三部分）</td><td>CORNER</td><td>26</td><td>旧金山机场代号</td><td>SFO</td></tr>
+
+  <tr><td>？</td><td>混合</td><td>MIX</td><td>？</td><td>罗马数字7</td><td>VII</td></tr>
+
+  <tr><td>？</td><td>斧子</td><td>AXE</td><td>？</td><td>Windows上文本的扩展名</td><td>TXT</td></tr>
+
+  <tr><td>？</td><td>第一个女人</td><td>EVE</td><td>？</td><td>Windows上视频的扩展名</td><td>AVI</td></tr>
+
+  <tr><td>？</td><td>锥子</td><td>AWL</td><td>？</td><td>敬畏</td><td>AWE</td></tr>
+
+  <tr><td>？</td><td>提供能量的分子</td><td>ATP</td><td>？</td><td>它的</td><td>ITS</td></tr>
+
+  </table>
+
+
+  其中 ？标记的答案位置没有明示，但是通过观察能发现有五个黑格各自隐藏了一个字母，而隐藏字母恰好可以跟其上下左右的字母组成这些 ？里的答案。
+
+
+  填完后的格子如下：
+
+
+  <img src="/ccbc13/images/CCBC-14/6643aee5e17a4405805572da9e204f57.webp">
+
+
+  <br><br>
+
+
+  A-11 PENTOMINO 和 A-24 WITNESS 告诉了我们本题机制，也就是说这个 crossword 格子其实是一个 Witness（见证者游戏）盘面，我们需要从左下起点走到右下的终点。而这里用到的规则则是见证者里的俄罗斯方块规则：先把每个隐藏的字母转换成其对应的五连格（PENTOMINO），然后找到一条路线使得包含隐藏字母的区域能够被对应的五连格拼成。（上图淡黄色路线就是解。）
+
+
+  最后根据 A-1、A-21、A-29 给出的提取方式：EVERY THIRD CORNER，我们从第一个拐弯处 P 开始，每三个拐弯就提取一次字母（上图亮黄色字母），得到答案
+  ``PRECISION``。'
+content:
+- "<style>\r\n.cw { border-collapse: collapse; }\r\n.cw td { background-color: white;\
+  \ color: black; text-align: center; height:30px; width:30px; padding:0; border:\
+  \ 1px solid black;}\r\n.cw td.black { background-color: black;}\r\n.cw td.noborder\
+  \ { border: 0; width: 8px; height: 8px; background-color: black; }\r\n</style>\r\
+  \n<p><a href=\"https://docs.qq.com/sheet/DVkpMYW54aWVSYUdr?tab=BB08J2\" target=\"\
+  _blank\">腾讯文档</a></p>\r\n<table cellpadding='0' cellspacing='0' class='cw'><tr><td\
+  \ class='noborder'></td><td>1</td><td></td><td>2</td><td></td><td>3</td><td class='black'></td><td>4</td><td\
+  \ class='black'></td><td>5</td><td></td><td>6</td><td></td><td>7</td><td></td><td>8</td><td\
+  \ class='noborder'></td></tr>\r\n<tr><td class='noborder'></td><td></td><td class='black'></td><td></td><td\
+  \ class='black'></td><td></td><td class='black'></td><td></td><td class='black'></td><td></td><td\
+  \ class='black'></td><td></td><td class='black'></td><td></td><td class='black'></td><td></td><td\
+  \ class='noborder'></td></tr>\r\n<tr><td class='noborder'></td><td>9</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td\
+  \ class='black'></td><td></td><td class='black'></td><td></td><td class='noborder'></td></tr>\r\
+  \n<tr><td class='noborder'></td><td></td><td class='black'></td><td></td><td class='black'></td><td></td><td\
+  \ class='black'></td><td></td><td class='black'></td><td></td><td class='black'></td><td></td><td\
+  \ class='black'></td><td></td><td class='black'></td><td></td><td class='noborder'></td></tr>\r\
+  \n<tr><td class='noborder'></td><td>10</td><td></td><td></td><td class='black'></td><td>11</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td\
+  \ class='black'></td><td></td><td class='noborder'></td></tr>\r\n<tr><td class='noborder'></td><td></td><td\
+  \ class='black'></td><td class='black'></td><td class='black'></td><td></td><td\
+  \ class='black'></td><td></td><td class='black'></td><td></td><td class='black'></td><td\
+  \ class='black'></td><td class='black'></td><td></td><td class='black'></td><td></td><td\
+  \ class='noborder'></td></tr>\r\n<tr><td class='noborder'></td><td>12</td><td></td><td>13</td><td></td><td></td><td></td><td></td><td\
+  \ class='black'></td><td>14</td><td></td><td>15</td><td></td><td></td><td></td><td></td><td\
+  \ class='noborder'></td></tr>\r\n<tr><td class='noborder'></td><td class='black'></td><td\
+  \ class='black'></td><td></td><td class='black'></td><td class='black'></td><td\
+  \ class='black'></td><td></td><td class='black'></td><td class='black'></td><td\
+  \ class='black'></td><td></td><td class='black'></td><td></td><td class='black'></td><td\
+  \ class='black'></td><td class='noborder'></td></tr>\r\n<tr><td class='noborder'></td><td>16</td><td></td><td></td><td></td><td>17</td><td></td><td></td><td\
+  \ class='black'></td><td>18</td><td></td><td></td><td></td><td></td><td></td><td>19</td><td\
+  \ class='noborder'></td></tr>\r\n<tr><td class='noborder'></td><td></td><td class='black'></td><td></td><td\
+  \ class='black'></td><td></td><td class='black'></td><td></td><td class='black'></td><td></td><td\
+  \ class='black'></td><td></td><td class='black'></td><td class='black'></td><td\
+  \ class='black'></td><td></td><td class='noborder'></td></tr>\r\n<tr><td class='noborder'></td><td>20</td><td></td><td></td><td></td><td></td><td\
+  \ class='black'></td><td>21</td><td></td><td></td><td></td><td></td><td class='black'></td><td>22</td><td></td><td></td><td\
+  \ class='noborder'></td></tr>\r\n<tr><td class='noborder'></td><td></td><td class='black'></td><td></td><td\
+  \ class='black'></td><td></td><td class='black'></td><td class='black'></td><td\
+  \ class='black'></td><td></td><td class='black'></td><td class='black'></td><td\
+  \ class='black'></td><td></td><td class='black'></td><td></td><td class='noborder'></td></tr>\r\
+  \n<tr><td class='noborder'></td><td>23</td><td></td><td></td><td class='black'></td><td>24</td><td></td><td>25</td><td></td><td></td><td></td><td>26</td><td\
+  \ class='black'></td><td>27</td><td></td><td></td><td class='noborder'></td></tr>\r\
+  \n<tr><td class='noborder'></td><td></td><td class='black'></td><td></td><td class='black'></td><td\
+  \ class='black'></td><td class='black'></td><td></td><td class='black'></td><td></td><td\
+  \ class='black'></td><td></td><td class='black'></td><td></td><td class='black'></td><td></td><td\
+  \ class='noborder'></td></tr>\r\n<tr><td colspan='2' rowspan='2'>28</td><td></td><td></td><td></td><td></td><td></td><td></td><td\
+  \ class='black'></td><td class='black'></td><td>29</td><td></td><td></td><td></td><td></td><td\
+  \ colspan='2'></td></tr>\r\n<tr><td class='noborder'></td><td class='noborder'></td><td\
+  \ class='noborder'></td><td class='noborder'></td><td class='noborder'></td><td\
+  \ class='noborder'></td><td class='noborder'></td><td class='noborder'></td><td\
+  \ class='noborder'></td><td class='noborder'></td><td class='noborder'></td><td\
+  \ class='noborder'></td><td class='noborder'></td><td class='noborder'></td><td\
+  \ class='noborder'></td><td class='noborder'></td><td class='noborder'></td></tr>\r\
+  \n</table>\r\n\r\n<table style='margin-top:30px'><tr><th>Across</th><td style='width:\
+  \ 400px'></td><th>Down</th><td></td></tr>\r\n<tr><td>1</td><td>本题提取（第一部分）</td><td>1</td><td>在C++里往vector里插入新的元素</td></tr>\r\
+  \n<tr><td>5</td><td>27A-边形</td><td>2</td><td>背景演员</td></tr>\r\n<tr><td>9</td><td>铀的主要矿藏来源</td><td>3</td><td>像弹弓的形状（hyph.）</td></tr>\r\
+  \n<tr><td>10</td><td>以某位女数学家命名的编程语言</td><td>4</td><td>圣诞颂歌（2 wds）</td></tr>\r\n\
+  <tr><td>11</td><td>本题机制</td><td>5</td><td>（复数）澳洲野狗</td></tr>\r\n<tr><td>12</td><td>（过去式）鼓励、怂恿（2\
+  \ wds）</td><td>6</td><td>法语里的“（男）亲爱的”</td></tr>\r\n<tr><td>14</td><td>（进行时）筛面粉</td><td>7</td><td>威尼斯的小船驾驶者</td></tr>\r\
+  \n<tr><td>16</td><td>洗碗布（2 wds）</td><td>8</td><td>什么都没有</td></tr>\r\n<tr><td>18</td><td>莎士比亚喜剧里的一位伯爵</td><td>13</td><td>木星或者土星（2\
+  \ wds）</td></tr>\r\n<tr><td>20</td><td>（复数）岛屿</td><td>15</td><td>电学单位</td></tr>\r\
+  \n<tr><td>21</td><td>本题提取（第二部分）</td><td>16</td><td>（复数）奶制品</td></tr>\r\n<tr><td>22</td><td>皮克斯动画短片</td><td>17</td><td>重缝</td></tr>\r\
+  \n<tr><td>23</td><td>甘道夫的演员</td><td>18</td><td>锅炉</td></tr>\r\n<tr><td>24</td><td>本题机制</td><td>19</td><td>雷神之锤</td></tr>\r\
+  \n<tr><td>27</td><td>5A的边数</td><td>22</td><td>指挥棒</td></tr>\r\n<tr><td>28</td><td>网站地图（2\
+  \ wds）</td><td>25</td><td>小费</td></tr>\r\n<tr><td>29</td><td>本题提取（第三部分）</td><td>26</td><td>旧金山机场代号</td></tr>\r\
+  \n<tr><td>？</td><td>混合</td><td>？</td><td>罗马数字7</td></tr>\r\n<tr><td>？</td><td>斧子</td><td>？</td><td>Windows上文本的扩展名</td></tr>\r\
+  \n<tr><td>？</td><td>提供能量的分子</td><td>？</td><td>它的</td></tr>\r\n<tr><td>？</td><td>第一个女人</td><td>？</td><td>Windows上视频的扩展名</td></tr>\r\
+  \n<tr><td>？</td><td>锥子</td><td>？</td><td>敬畏</td></tr>\r\n</table>"
+content-type: 1
+desc: 精度
+extend-data: 7,6,8,8
+links:
+- path: ccbc13/index
+  title: 索引页
+  type: index
+- path: ccbc13/pages/ccbc14
+  title: CCBC-14
+  type: page
+tips:
+- content: 某些黑色格子其实是可以填字母的！填了字母后会跟上下左右的白色格子里的字母形成这些？提示的答案。
+  title: 编号为“？”的提示答案填哪里
+- content: 提取方式里并没有说明从哪个开始，可以多试试。（如果还没有理解机制的话请先理解机制。）
+  title: 机制和提取都理解了，但是只提取出了一个8字母的无意义字符串
+- content: 把字母换成 11A 提示的东西（提示：每个东西都有一个字母编号），这会成为 24A 里的 clue。
+  title: 11A 里说的机制怎么理解？
+- content: 参考 https://www.vgtime.com/topic/5434.jhtml 里写的“俄罗斯方块”部分，允许旋转。
+  title: 我没有玩过 24A，可否告知 11A 在 24A 里的规则
+- content: 'Across: MIX, AXE, EVE, AWL, ATP. Down: VII, TXT, AVI, AWE, ITS.'
+  title: 编号为“？”的提示答案是什么
+title: 爬格子
+type: problem

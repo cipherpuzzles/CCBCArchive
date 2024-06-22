@@ -1,0 +1,202 @@
+answer: OILING
+answer-analysis: "<style>\n#answerkey tr:nth-child(even) td {\nbackground-color: #444;\n\
+  }\n#answerkey td {\nvertical-align: top;\npadding: 3px 10px;\n}\n</style>\n<table\
+  \ id=\"answerkey\">\n<thead><tr><th>小题编号</th><th>正确答案</th><th>解释</th><th>序号</th><th>分组转字母</th><th>凯撒（+16位）</th></tr></thead><tbody>\n\
+  \ <tr><td>1</td><td>春夏秋冬</td><td>&nbsp;</td><td>4</td><td>D</td><td>T</td></tr>\n\
+  \ <tr><td>2</td><td>微软图标</td><td>&nbsp;</td><td>18</td><td>R</td><td>H</td></tr>\n\
+  \ <tr><td>3</td><td>5849</td><td>24排列中唯一的一个质数</td><td>15</td><td>O</td><td>E</td></tr>\n\
+  \ <tr><td>4</td><td>yòu, shuāng, ruò, zhuó</td><td>又双叒叕</td><td>11</td><td>K</td><td>A</td></tr>\n\
+  \ <tr><td>5</td><td>÷、×、-、+</td><td>1÷2×3-4+5=2.5</td><td>24</td><td>X</td><td>N</td></tr>\n\
+  \ <tr><td>6</td><td>罪, 唱, 刺, 绳</td><td>SIN, SING, STING, STRING</td><td>3</td><td>C</td><td>S</td></tr>\n\
+  \ <tr><td>7</td><td>ANSWER</td><td>&nbsp;</td><td>715</td><td>GO</td><td>WE</td></tr>\n\
+  \ <tr><td>8</td><td>BLUR</td><td>&nbsp;</td><td>2</td><td>B</td><td>R</td></tr>\n\
+  \ <tr><td>9</td><td>友情, 无常, 分离, 忘却</td><td>《醉鬼的敬酒曲》</td><td>9</td><td>I</td><td>Y</td></tr>\n\
+  \ <tr><td>10</td><td><span style=\"color:blue\">O</span><span style=\"color:yellow\"\
+  >O</span><span style=\"color:black\">O</span><span style=\"color:green\">O</span><span\
+  \ style=\"color:red\">O</span></td><td>奥运五环</td><td>25</td><td>Y</td><td>O</td></tr>\n\
+  \ <tr><td>11</td><td>西湖, 泰山, 三峡, 桂林</td><td>1 5 10 20元人民币图案</td><td>5</td><td>E</td><td>U</td></tr>\n\
+  \ <tr><td>12</td><td>南非, 巴西, 俄罗斯, 卡塔尔</td><td>世界杯举办国</td><td>7</td><td>G</td><td>W</td></tr>\n\
+  \ <tr><td>13</td><td>天琴座α, 天龙座α, 小熊座β, 小熊座α</td><td>历史上的北极星</td><td>11</td><td>K</td><td>A</td></tr>\n\
+  \ <tr><td>14</td><td>正, 隆, 庆, 光</td><td>清朝年号的第二个字</td><td>24</td><td>X</td><td>N</td></tr>\n\
+  \ <tr><td>15</td><td>记事本，软盘，光盘，云存储</td><td>信息储存方式（按时间或容量）</td><td>4</td><td>D</td><td>T</td></tr>\n\
+  \ <tr><td>16</td><td>找到每小题的正确答案序号、每个数字如果多于两位则两两分组、转换成英文字母、凯撒</td><td>本题正确步骤</td><td>19</td><td>S</td><td>I</td></tr>\n\
+  \ <tr><td>17</td><td>Center, Cosmic, Boundary, Cartography</td><td>本届剧情中缩写为CCBC的单位</td><td>3</td><td>C</td><td>S</td></tr>\n\
+  \ <tr><td>18</td><td>天休使圆蟾照客眠人何在桂影自婵娟</td><td>《苍梧谣·天》</td><td>251922192417</td><td>YSVSXQ</td><td>OILING</td></tr>\n\
+  </tbody></table>"
+content: []
+content-type: 2
+desc: 上油
+extend-data: 3,4,2,2
+links:
+- path: ccbc13/index
+  title: 索引页
+  type: index
+- path: ccbc13/pages/ccbc13
+  title: CCBC-13
+  type: page
+tips:
+- content: 搜索学习康托展开以及逆康托展开。
+  title: 怎么算序号？
+- content: 四个字可以翻译成四个英语单词，这四个单词可以重排使得后一个是前一个加一个字母。
+  title: 第6小题是啥？
+- content: 历史上当过北极星的恒星。
+  title: 第13小题是啥？
+- content: 存储方式的历史
+  title: 第15小题是啥？
+- content: 一共有18道。
+  title: 一共有多少小题？
+title: 单选题
+type: problem
+vue_script: "const { ref, inject, onMounted } = Vue;\r\n\r\nexport default {\r\n \
+  \   setup() {\r\n        const api = inject(\"api\");\r\n        const defaultApiErrorAction\
+  \ = inject(\"defaultApiErrorAction\");\r\n        const markdownToHtml = inject(\"\
+  markdownToHtml\");\r\n        const globalBus = inject(\"globalBus\");\r\n\r\n \
+  \       const pages = ref([]);\r\n        const currentPage = ref(1);\r\n      \
+  \  const answer = ref(\"\");\r\n\r\n        onMounted(() => {\r\n            loadPagesFromBackendApi();\r\
+  \n        });\r\n\r\n        const loadPagesFromBackendApi = async () => {\r\n \
+  \           const apiPath = \"/puzzlebackend2023/15/multiplechoice-get-content\"\
+  ;\r\n            let res = await api(apiPath, {});\r\n            let data = await\
+  \ res.json();\r\n\r\n            if (data.status !== 1) {\r\n                defaultApiErrorAction(data);\r\
+  \n                return;\r\n            }\r\n\r\n            let newPages = [];\r\
+  \n            for (let p of data.pages) {\r\n                let html = markdownToHtml(p.html);\r\
+  \n                newPages.push({\r\n                    index: p.index,\r\n   \
+  \                 html: html\r\n                });\r\n            }\r\n       \
+  \     pages.value = newPages;\r\n        }\r\n\r\n        const getPageHtml = (pageIndex)\
+  \ => {\r\n            let idx = pages.value.findIndex(i => i.index == pageIndex);\r\
+  \n            if (idx == -1) return \"\";\r\n\r\n            return pages.value[idx].html;\r\
+  \n        }\r\n\r\n        const checkAnswer = async (pageIndex) => {\r\n      \
+  \      const apiPath = \"/puzzlebackend2023/15/multiplechoice-check-answer\";\r\n\
+  \            let res = await api(apiPath, {\r\n                index: pageIndex,\r\
+  \n                answer: answer.value\r\n            });\r\n            let data\
+  \ = await res.json();\r\n\r\n            if (data.status !== 1) {\r\n          \
+  \      defaultApiErrorAction(data);\r\n                return;\r\n            }\r\
+  \n\r\n            if (data.answer_status == 1) {\r\n                globalBus.emit(\"\
+  message\", {\r\n                    message: \"回答正确\",\r\n                    type:\
+  \ \"success\"\r\n                });\r\n\r\n                await loadPagesFromBackendApi();\r\
+  \n                let lastPage = pages.value.reduce((i, c) => i.index > c ? i.index\
+  \ : c);\r\n                currentPage.value = lastPage.index;\r\n            }\
+  \ else if (data.answer_status == 3){\r\n                globalBus.emit(\"message\"\
+  , {\r\n                    message: \"您的回答提交过快，请稍后再试。\",\r\n                   \
+  \ type: \"info\"\r\n                });\r\n            } else {\r\n            \
+  \    globalBus.emit(\"show-error\", \"回答错误\");\r\n            }\r\n        }\r\n\
+  \r\n        return {\r\n            pages,\r\n            currentPage,\r\n     \
+  \       getPageHtml,\r\n            answer,\r\n            checkAnswer\r\n     \
+  \   }\r\n    }\r\n}"
+vue_template: "<template>\r\n    <div>\r\n        <button class=\"btn\" :class=\"\
+  {'btn-primary': currentPage == p.index, 'btn-secondary': currentPage != p.index}\"\
+  \ type=\"button\" v-for=\"p in pages\" @click=\"currentPage = p.index\">{{ p.index\
+  \ }}</button>\r\n    </div>\r\n    <div>\r\n        <div class=\"question\" v-html=\"\
+  getPageHtml(currentPage)\"></div>\r\n    </div>\r\n    <div>\r\n        <p>回答问题：</p>\r\
+  \n        <form class=\"d-flex\" @submit.prevent=\"checkAnswer(currentPage)\">\r\
+  \n            <input class=\"form-control me-1 bg-light text-black answer-input\"\
+  \ type=\"number\" v-model=\"answer\" placeholder=\"填入正确答案的序号\">\r\n            <button\
+  \ class=\"btn btn-primary\" type=\"submit\">提交</button>\r\n        </form>\r\n \
+  \   </div>\r\n</template>\r\n\r\n<style>\r\n.question {\r\n    margin-top: 20px;\r\
+  \n}\r\n.answer-input {\r\n    width: 200px;\r\n}\r\n\r\n.grid {\r\ndisplay: flex;\r\
+  \nflex-wrap: wrap;\r\ngap: 10px;\r\n}\r\n.logo {\r\ndisplay: grid;\r\ngrid-template-columns:\
+  \ auto auto;\r\n}\r\n.logo div {\r\nwidth: 50px;\r\nheight: 50px;\r\n}\r\n\r\n</style>\r\
+  \n\r\n<data>\r\n    <!--请注意，只有在data数据块里的内容才不会被发到前端去。除此之外所有的内容都将发送到前端。-->\r\n   \
+  \ <page index=\"1\" answer=\"4\">\r\n<pre>一年四季的正确排序是：\r\n    \r\n1. 春冬夏秋\r\n2. 春冬秋夏\r\
+  \n3. 春夏冬秋\r\n4. 春夏秋冬\r\n5. 春秋冬夏\r\n6. 春秋夏冬\r\n7. 冬春夏秋\r\n8. 冬春秋夏\r\n9. 冬夏春秋\r\n\
+  10. 冬夏秋春\r\n11. 冬秋春夏\r\n12. 冬秋夏春\r\n13. 夏春冬秋\r\n14. 夏春秋冬\r\n15. 夏冬春秋\r\n16. 夏冬秋春\r\
+  \n17. 夏秋春冬\r\n18. 夏秋冬春\r\n19. 秋春冬夏\r\n20. 秋春夏冬\r\n21. 秋冬春夏\r\n22. 秋冬夏春\r\n23. 秋夏春冬\r\
+  \n24. 秋夏冬春</pre>\r\n    </page>\r\n    <page index=\"2\" answer=\"18\">\r\n\r\n\
+  <div class='grid'>\r\n\r\n<div class='griditem'>\r\n1\r\n<div class='logo'>\r\n\
+  <div style='background-color:#ffbb00'></div>\r\n<div style='background-color:#00a1f1'></div>\r\
+  \n<div style='background-color:#f65314'></div>\r\n<div style='background-color:#7cbb00'></div>\r\
+  \n</div>\r\n</div>\r\n<div class='griditem'>\r\n2\r\n<div class='logo'>\r\n<div\
+  \ style='background-color:#ffbb00'></div>\r\n<div style='background-color:#00a1f1'></div>\r\
+  \n<div style='background-color:#7cbb00'></div>\r\n<div style='background-color:#f65314'></div>\r\
+  \n</div>\r\n</div>\r\n<div class='griditem'>\r\n3\r\n<div class='logo'>\r\n<div\
+  \ style='background-color:#ffbb00'></div>\r\n<div style='background-color:#f65314'></div>\r\
+  \n<div style='background-color:#00a1f1'></div>\r\n<div style='background-color:#7cbb00'></div>\r\
+  \n</div>\r\n</div>\r\n<div class='griditem'>\r\n4\r\n<div class='logo'>\r\n<div\
+  \ style='background-color:#ffbb00'></div>\r\n<div style='background-color:#f65314'></div>\r\
+  \n<div style='background-color:#7cbb00'></div>\r\n<div style='background-color:#00a1f1'></div>\r\
+  \n</div>\r\n</div>\r\n<div class='griditem'>\r\n5\r\n<div class='logo'>\r\n<div\
+  \ style='background-color:#ffbb00'></div>\r\n<div style='background-color:#7cbb00'></div>\r\
+  \n<div style='background-color:#00a1f1'></div>\r\n<div style='background-color:#f65314'></div>\r\
+  \n</div>\r\n</div>\r\n<div class='griditem'>\r\n6\r\n<div class='logo'>\r\n<div\
+  \ style='background-color:#ffbb00'></div>\r\n<div style='background-color:#7cbb00'></div>\r\
+  \n<div style='background-color:#f65314'></div>\r\n<div style='background-color:#00a1f1'></div>\r\
+  \n</div>\r\n</div>\r\n<div class='griditem'>\r\n7\r\n<div class='logo'>\r\n<div\
+  \ style='background-color:#00a1f1'></div>\r\n<div style='background-color:#ffbb00'></div>\r\
+  \n<div style='background-color:#f65314'></div>\r\n<div style='background-color:#7cbb00'></div>\r\
+  \n</div>\r\n</div>\r\n<div class='griditem'>\r\n8\r\n<div class='logo'>\r\n<div\
+  \ style='background-color:#00a1f1'></div>\r\n<div style='background-color:#ffbb00'></div>\r\
+  \n<div style='background-color:#7cbb00'></div>\r\n<div style='background-color:#f65314'></div>\r\
+  \n</div>\r\n</div>\r\n<div class='griditem'>\r\n9\r\n<div class='logo'>\r\n<div\
+  \ style='background-color:#00a1f1'></div>\r\n<div style='background-color:#f65314'></div>\r\
+  \n<div style='background-color:#ffbb00'></div>\r\n<div style='background-color:#7cbb00'></div>\r\
+  \n</div>\r\n</div>\r\n<div class='griditem'>\r\n10\r\n<div class='logo'>\r\n<div\
+  \ style='background-color:#00a1f1'></div>\r\n<div style='background-color:#f65314'></div>\r\
+  \n<div style='background-color:#7cbb00'></div>\r\n<div style='background-color:#ffbb00'></div>\r\
+  \n</div>\r\n</div>\r\n<div class='griditem'>\r\n11\r\n<div class='logo'>\r\n<div\
+  \ style='background-color:#00a1f1'></div>\r\n<div style='background-color:#7cbb00'></div>\r\
+  \n<div style='background-color:#ffbb00'></div>\r\n<div style='background-color:#f65314'></div>\r\
+  \n</div>\r\n</div>\r\n<div class='griditem'>\r\n12\r\n<div class='logo'>\r\n<div\
+  \ style='background-color:#00a1f1'></div>\r\n<div style='background-color:#7cbb00'></div>\r\
+  \n<div style='background-color:#f65314'></div>\r\n<div style='background-color:#ffbb00'></div>\r\
+  \n</div>\r\n</div>\r\n<div class='griditem'>\r\n13\r\n<div class='logo'>\r\n<div\
+  \ style='background-color:#f65314'></div>\r\n<div style='background-color:#ffbb00'></div>\r\
+  \n<div style='background-color:#00a1f1'></div>\r\n<div style='background-color:#7cbb00'></div>\r\
+  \n</div>\r\n</div>\r\n<div class='griditem'>\r\n14\r\n<div class='logo'>\r\n<div\
+  \ style='background-color:#f65314'></div>\r\n<div style='background-color:#ffbb00'></div>\r\
+  \n<div style='background-color:#7cbb00'></div>\r\n<div style='background-color:#00a1f1'></div>\r\
+  \n</div>\r\n</div>\r\n<div class='griditem'>\r\n15\r\n<div class='logo'>\r\n<div\
+  \ style='background-color:#f65314'></div>\r\n<div style='background-color:#00a1f1'></div>\r\
+  \n<div style='background-color:#ffbb00'></div>\r\n<div style='background-color:#7cbb00'></div>\r\
+  \n</div>\r\n</div>\r\n<div class='griditem'>\r\n16\r\n<div class='logo'>\r\n<div\
+  \ style='background-color:#f65314'></div>\r\n<div style='background-color:#00a1f1'></div>\r\
+  \n<div style='background-color:#7cbb00'></div>\r\n<div style='background-color:#ffbb00'></div>\r\
+  \n</div>\r\n</div>\r\n<div class='griditem'>\r\n17\r\n<div class='logo'>\r\n<div\
+  \ style='background-color:#f65314'></div>\r\n<div style='background-color:#7cbb00'></div>\r\
+  \n<div style='background-color:#ffbb00'></div>\r\n<div style='background-color:#00a1f1'></div>\r\
+  \n</div>\r\n</div>\r\n<div class='griditem'>\r\n18\r\n<div class='logo'>\r\n<div\
+  \ style='background-color:#f65314'></div>\r\n<div style='background-color:#7cbb00'></div>\r\
+  \n<div style='background-color:#00a1f1'></div>\r\n<div style='background-color:#ffbb00'></div>\r\
+  \n</div>\r\n</div>\r\n<div class='griditem'>\r\n19\r\n<div class='logo'>\r\n<div\
+  \ style='background-color:#7cbb00'></div>\r\n<div style='background-color:#ffbb00'></div>\r\
+  \n<div style='background-color:#00a1f1'></div>\r\n<div style='background-color:#f65314'></div>\r\
+  \n</div>\r\n</div>\r\n<div class='griditem'>\r\n20\r\n<div class='logo'>\r\n<div\
+  \ style='background-color:#7cbb00'></div>\r\n<div style='background-color:#ffbb00'></div>\r\
+  \n<div style='background-color:#f65314'></div>\r\n<div style='background-color:#00a1f1'></div>\r\
+  \n</div>\r\n</div>\r\n<div class='griditem'>\r\n21\r\n<div class='logo'>\r\n<div\
+  \ style='background-color:#7cbb00'></div>\r\n<div style='background-color:#00a1f1'></div>\r\
+  \n<div style='background-color:#ffbb00'></div>\r\n<div style='background-color:#f65314'></div>\r\
+  \n</div>\r\n</div>\r\n<div class='griditem'>\r\n22\r\n<div class='logo'>\r\n<div\
+  \ style='background-color:#7cbb00'></div>\r\n<div style='background-color:#00a1f1'></div>\r\
+  \n<div style='background-color:#f65314'></div>\r\n<div style='background-color:#ffbb00'></div>\r\
+  \n</div>\r\n</div>\r\n<div class='griditem'>\r\n23\r\n<div class='logo'>\r\n<div\
+  \ style='background-color:#7cbb00'></div>\r\n<div style='background-color:#f65314'></div>\r\
+  \n<div style='background-color:#ffbb00'></div>\r\n<div style='background-color:#00a1f1'></div>\r\
+  \n</div>\r\n</div>\r\n<div class='griditem'>\r\n24\r\n<div class='logo'>\r\n<div\
+  \ style='background-color:#7cbb00'></div>\r\n<div style='background-color:#f65314'></div>\r\
+  \n<div style='background-color:#00a1f1'></div>\r\n<div style='background-color:#ffbb00'></div>\r\
+  \n</div>\r\n</div>\r\n\r\n\r\n</div>\r\n    </page>\r\n    <page index=\"3\" answer=\"\
+  15\">\r\n以下是质数的选项是：\r\n1. 4859\r\n2. 4895\r\n3. 4589\r\n\r\n...\r\n    </page>\r\
+  \n    <page index=\"4\" answer=\"11\">\r\n从少到多的正确排序是：\r\n1. ruò, yòu, zhuó, shuāng\r\
+  \n\r\n...\r\n    </page>\r\n    <page index=\"5\" answer=\"24\">\r\n满足 1 _ 2  _\
+  \ 3 _ 4 _ 5 = 2.5 的四则运算是：\r\n1. +、-、×、÷\r\n\r\n...\r\n    </page>\r\n    <page index=\"\
+  6\" answer=\"3\">\r\nFrom the shortest to the longest:\r\n1. 罪, 刺, 唱, 绳\r\n\r\n\
+  ...\r\n    </page>\r\n    <page index=\"7\" answer=\"715\">\r\n答案是：\r\n1. WERSNA\r\
+  \n\r\n...\r\n    </page>\r\n    <page index=\"8\" answer=\"2\">\r\n\r\n<img src=\"\
+  /ccbc13/images/CCBC-13/346f784aecbf4b6393a99240380b765d.webp\" style=\"width:500px\"\
+  \ />\r\n\r\n<p><span style=\"color:green\">F</span><span style=\"color:red\">R</span><span\
+  \ style=\"color:white\">U</span><span style=\"color:blue\">B</span><span style=\"\
+  color:orange\">L</span><span style=\"color:yellow\">D</span></p>\r\n\r\n还原这个魔方的正确公式是：\r\
+  \n1. BLRU\r\n\r\n...\r\n    </page>\r\n    <page index=\"9\" answer=\"9\">\r\n1.\
+  \ 分离, 友情, 无常, 忘却\r\n\r\n...\r\n    </page>\r\n    <page index=\"10\" answer=\"25\"\
+  >\r\n\r\n<div>\r\n    1. <span style=\"color:yellow\">O</span><span style=\"color:blue\"\
+  >O</span><span style=\"color:black\">O</span><span style=\"color:green\">O</span><span\
+  \ style=\"color:red\">O</span>\r\n</div>\r\n\r\n...\r\n    </page>\r\n    <page\
+  \ index=\"11\" answer=\"5\">\r\n1. 西湖, 三峡, 桂林, 泰山\r\n\r\n...\r\n    </page>\r\n\
+  \    <page index=\"12\" answer=\"7\">\r\n1. 巴西, 南非, 俄罗斯, 卡塔尔\r\n\r\n...\r\n    </page>\r\
+  \n    <page index=\"13\" answer=\"11\">\r\n1. 小熊座β, 天琴座α, 小熊座α, 天龙座α\r\n\r\n...\r\
+  \n    </page>\r\n    <page index=\"14\" answer=\"24\">\r\n1. 光, 庆, 隆, 正\r\n\r\n\
+  ...\r\n    </page>\r\n    <page index=\"15\" answer=\"4\">\r\n1. <img src=\"/ccbc13/images/CCBC-13/7bac7b79715645bbae8ab0a050d7dc60.webp\"\
+  \ style=\"width:320px\" />\r\n\r\n...\r\n    </page>\r\n    <page index=\"16\" answer=\"\
+  19\">\r\n1. 每个数字如果多于两位则两两分组、转换成英文字母、凯撒、找到每小题的正确答案序号\r\n\r\n...\r\n    </page>\r\n\
+  \    <page index=\"17\" answer=\"3\">\r\n1. Center, Boundary, Cosmic, Cartography\r\
+  \n\r\n...\r\n    </page>\r\n    <page index=\"18\" answer=\"251922192417\">\r\n\
+  1. 天客眠休照婵人圆影桂自娟在何使蟾\r\n\r\n...\r\n    </page>\r\n</data>"

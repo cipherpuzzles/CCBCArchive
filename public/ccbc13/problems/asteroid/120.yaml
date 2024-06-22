@@ -1,0 +1,18 @@
+answer: SLIP UP
+content: []
+content-type: 0
+desc: Lup
+extend-data: null
+links:
+- path: ccbc13/index
+  title: 索引页
+  type: index
+- path: ccbc13/pages/asteroid
+  title: 小行星
+  type: page
+problem-image: /ccbc13/images/asteroid/24a7b6afdea6493da721f6f79e04339e.webp
+tips:
+- content: "DEER REED  \nRADAR  \nPUPILS"
+  title: 题目里的图片分别对应什么单词？
+title: ⭐
+type: problem

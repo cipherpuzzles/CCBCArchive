@@ -42,6 +42,9 @@ export interface ProblemConfig extends BaseConfig {
     'additional-answers'?: AdditionalAnswer[];
     tips?: ProblemTips[];
     'answer-analysis'?: string;
+    'content-type'?: number;
+    vue_script?: string;
+    vue_template?: string;
 }
 
 export interface AdditionalAnswer {

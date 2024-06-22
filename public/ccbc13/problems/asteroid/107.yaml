@@ -1,0 +1,18 @@
+answer: ANTARCTIC
+content: []
+content-type: 0
+desc: Ari
+extend-data: null
+links:
+- path: ccbc13/index
+  title: 索引页
+  type: index
+- path: ccbc13/pages/asteroid
+  title: 小行星
+  type: page
+problem-image: /ccbc13/images/asteroid/e364872e54674690a989f49307c08f03.webp
+tips:
+- content: SLOW, FAST, YOUNG, OLD, ARCTIC
+  title: 题目里的图片分别对应什么单词？
+title: ⭐
+type: problem

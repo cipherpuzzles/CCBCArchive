@@ -1,0 +1,20 @@
+answer: LEOPARD
+content:
+- "<div class=\"ccbcstylewrapper\">\n    <img src=\"/ccbc13/images/asteroid/7668b3b2be0f4bf18bb8f361dc747090.webp\"\
+  \ style=\"width:90%\">\n</div>"
+content-type: 0
+desc: Lep
+extend-data: null
+links:
+- path: ccbc13/index
+  title: 索引页
+  type: index
+- path: ccbc13/pages/asteroid
+  title: 小行星
+  type: page
+problem-image: /ccbc13/images/asteroid/0b0b3686e98449df8d4bc425c93d1315.webp
+tips:
+- content: 每行对应一种动物的表皮
+  title: 我毫无思路
+title: ⭐️
+type: problem

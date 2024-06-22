@@ -1,0 +1,128 @@
+additional-answers:
+- answer: USE ENGLISH TITLE
+  extra: ''
+  message: 这是本小题的中间答案。
+- answer: ANSWER UPPERBODY
+  extra: ''
+  message: 这是本小题的中间答案。
+answer: UPPER BODY
+answer-analysis: "本题的FlavorText源自“如月千早：天上的月亮看起来离自己只有一千早的距离，但是却无法触及”，在本题中也同样能在分号前的部分通过取特定字组成角色名字；同时“幽芳的文字”也暗合“芳文”，即这些角色名字都是出自于芳文社的漫改动画。\
+  \  \n分号后面的成语释义部分均为十五字，按对角线读可以得到“`用出现人物对应发色提取所在之处`”，即使用该角色所在作品的主角团发色对应题目右侧中的某一行，提取该角色发色对应位置字母得到\
+  \ `USE ENGLISH TITLE` 。  \n查得对应作品英文名后，与剩余未使用字母相重叠，仅有上一步对应角色处字母不同，提取得到 `ANSWER UPPERBODY`\
+  \ 。\n\n<style>\n#answerkey tr:nth-child(even) td {\nbackground-color: #444;\n}\n\
+  #answerkey td {\nvertical-align: top;\npadding: 3px 10px;\n}\n</style>\n<table id=\"\
+  answerkey\">\n<tr><td>“成语”解释</td><td>“成语”释义</td><td>角色名</td><td>作品英文名</td><td>对应字母</td></tr>\n\
+  <tr><td>1.上<font color=yellow>百</font>个<font color=yellow>地</font>区各区均宣称有识别<font\
+  \ color=yellow>玉</font>石的能<font color=yellow>手</font>；</td><td><font color=yellow>用</font>于表达某行业浑水摸鱼程度之大</td><td>百地玉手</td><td>Slow\
+  \ S<font color=red>t<font color=yellow>a</font>rt</font></td><td><font color=red>T<font\
+  \ color=yellow>U</font>RT</font></td></tr>\n<tr><td>2.传承<font color=yellow>千</font>秋以至万<font\
+  \ color=yellow>代</font>的<font color=yellow>田</font>舍<font color=yellow>桃</font>林；</td><td>引<font\
+  \ color=yellow>出</font>代代相传、历史悠久深厚之意</td><td>千代田桃</td><td>The Dem<font color=red>o<font\
+  \ color=yellow>n</font> Gi</font>rl Next Door</td><td><font color=red>O<font color=yellow>S</font>GI</font></td></tr>\n\
+  <tr><td>3.无论几<font color=yellow>丈</font>的长<font color=yellow>枪</font>，都需要<font color=yellow>由</font><font\
+  \ color=yellow>纪</font>律对其加以约束；</td><td>比喻<font color=yellow>现</font>实中规则对于管理的重要性</td><td>丈枪由紀</td><td><font\
+  \ color=red><font color=yellow>S</font>cho</font>ol-Live!</td><td><font color=red><font\
+  \ color=yellow>E</font>CHO</font></td></tr>\n<tr><td>4.描写夜间竹林中<font color=yellow>凉</font>爽的微<font\
+  \ color=yellow>风</font>与<font color=yellow>青</font>翠的竹<font color=yellow>叶</font>之景；</td><td>比喻沁<font\
+  \ color=yellow>人</font>心脾而又恬静美好的夜景</td><td>凉风青叶</td><td>NE<font color=red><font\
+  \ color=yellow>W</font> GAM</font>E!</td><td><font color=red><font color=yellow>E</font>GAM</font></td></tr>\n\
+  <tr><td>5.在布满<font color=yellow>藤</font>蔓的山<font color=yellow>川</font>之间载<font color=yellow>歌</font>载舞以至深<font\
+  \ color=yellow>夜</font>；</td><td>比喻置外<font color=yellow>物</font>不顾、保持乐观的心态</td><td>藤川歌夜</td><td>Magic\
+  \ o<font color=red>f St<font color=yellow>e</font>l</font>la</td><td><font color=red>FST<font\
+  \ color=yellow>N</font>L</font></td></tr>\n<tr><td>6.只有在<font color=yellow>森</font>林和田<font\
+  \ color=yellow>野</font>间，才能找到自然的<font color=yellow>真</font><font color=yellow>理</font>；</td><td>以表达实践<font\
+  \ color=yellow>对</font>于理论发展的重要性</td><td>森野真理</td><td><font color=red>Aste<font\
+  \ color=yellow>r</font></font>oid in Love</td><td><font color=red>ASTE<font color=yellow>G</font></font></td></tr>\n\
+  <tr><td>7.漫漫飞<font color=yellow>雪</font>中，只<font color=yellow>见</font>一<font color=yellow>小</font>枝不畏霜雪严寒的<font\
+  \ color=yellow>梅</font>花；</td><td>形容能够勇敢<font color=yellow>应</font>对困难，毫不示弱</td><td>雪见小梅</td><td><font\
+  \ color=red><font color=yellow>U</font>rar</font>a Meirocho</td><td><font color=red><font\
+  \ color=yellow>L</font>RAR</font></td></tr>\n<tr><td>8.如微<font color=yellow>风</font>拂过的声<font\
+  \ color=yellow>色</font>与拨动<font color=yellow>琴</font>弦的乐<font color=yellow>音</font>；</td><td>比喻音乐令人自<font\
+  \ color=yellow>发</font>陶醉，婉转动听</td><td>风色琴音</td><td>R<font color=red><font color=yellow>P</font>G\
+  \ Re</font>al estate</td><td><font color=red><font color=yellow>I</font>GRE</font></td></tr>\n\
+  <tr><td>9.数<font color=yellow>贯</font>之财在市<font color=yellow>井</font>中不如党<font color=yellow>羽</font>朋友更有<font\
+  \ color=yellow>优</font>势；</td><td>用于表达朋友比各<font color=yellow>色</font>外物更为重要</td><td>贯井羽优</td><td>D<font\
+  \ color=red>ro<font color=yellow>p</font>ou</font>t Idol Fruit Tart</td><td><font\
+  \ color=red>RO<font color=yellow>S</font>OU</font></td></tr>\n<tr><td>10.在<font\
+  \ color=yellow>桐</font>树林之<font color=yellow>间</font>，仅有如薄<font color=yellow>纱</font>一般缥缈的道<font\
+  \ color=yellow>路</font>；</td><td>引申为不易被一般人<font color=yellow>提</font>及的新思路</td><td>桐间纱路</td><td>Is\
+  \ th<font color=red>e Ord<font color=yellow>e</font></font>r a Rabbit?</td><td><font\
+  \ color=red>EORD<font color=yellow>H</font></font></td></tr>\n<tr><td>11.值得欢<font\
+  \ color=yellow>喜</font>的事情<font color=yellow>多</font>了，忧<font color=yellow>郁</font>的情绪也就为之取<font\
+  \ color=yellow>代</font>；</td><td>用于表达令心态积极进<font color=yellow>取</font>的重要性</td><td>喜多郁代</td><td>Bocchi\
+  \ <font color=red>the <font color=yellow>r</font></font>ock</td><td><font color=red>THE<font\
+  \ color=yellow>T</font></font></td></tr>\n<tr><td>12.已经<font color=yellow>折</font>损的<font\
+  \ color=yellow>部</font>分，再如何<font color=yellow>安</font>全保存也无可<font color=yellow>奈</font>何；</td><td>说明在事前的未雨绸缪是<font\
+  \ color=yellow>所</font>必要的</td><td>折部安奈</td><td>Kill Me <font color=red><font color=yellow>B</font>a</font>by</td><td><font\
+  \ color=red><font color=yellow>I</font>A</font></td></tr>\n<tr><td>13.<font color=yellow>萌</font>发于<font\
+  \ color=yellow>田</font>野中的花朵，花<font color=yellow>薰</font>使得游<font color=yellow>子</font>陶醉于其中；</td><td>形容环境之宁静优美如同身<font\
+  \ color=yellow>在</font>梦里</td><td>萌田薰子</td><td>C<font color=red><font color=yellow>o</font>mic</font>\
+  \ Girls</td><td><font color=red><font color=yellow>T</font>MIC</font></td></tr>\n\
+  <tr><td>14.普<font color=yellow>天</font>之下的田<font color=yellow>野</font>均会赞<font color=yellow>美</font>恰逢其时的春<font\
+  \ color=yellow>雨</font>；</td><td>比喻感激别人给予的恩惠好处<font color=yellow>之</font>情</td><td>天野美雨</td><td>B<font\
+  \ color=red>len<font color=yellow>d</font>·S</font></td><td><font color=red>LEN<font\
+  \ color=yellow>L</font>S</font></td></tr>\n<tr><td>15.<font color=yellow>江</font>河已十分<font\
+  \ color=yellow>古</font>老，水<font color=yellow>田</font>间的<font color=yellow>莲</font>花却仍然焕发生机；</td><td>比喻在旧的基础上产生新发展之<font\
+  \ color=yellow>处</font></td><td>江古田莲</td><td>Anne <font color=red>Happ<font color=yellow>y</font></font>♪</td><td><font\
+  \ color=red>HAPP<font color=yellow>E</font></font></td></tr>\n</table>"
+content: []
+content-type: 2
+desc: 上身
+extend-data: 4,2,3,3
+links:
+- path: ccbc13/index
+  title: 索引页
+  type: index
+- path: ccbc13/pages/ccbc13
+  title: CCBC-13
+  type: page
+tips:
+- content: 这些“成语”都是芳文社动漫人物的名字。
+  title: 这些成语都是什么？
+- content: 右侧的颜色分别对应了与“成语”同一作品的主人公。（注意右侧需要重新排序才能一一对应上左侧。）另外，注意每个“成语”的释义部分都是十五个字，可以对角线读出一个十五字的提示。
+  title: 右侧的颜色有什么用？
+- content: 将每一个 (7 5) 的一个子串跟给出的字母进行比较，提取唯一的不同处。
+  title: 找到了 (3 7 5) 的内容，但是不知道怎么用
+title: 各色人等
+type: problem
+vue_script: "const { ref, inject } = Vue;\nexport default {\n    setup() {\n     \
+  \   const data = ref([\n            { def: '上百个地区各区均宣称有识别玉石的能手；用于表达某行业浑水摸鱼程度之大',\
+  \ letter: ['A', 'S', 'T', 'E', 'G'], col: ['#E7A884', '#8C6EC6', '#F0D876', '#D4574E',\
+  \ '#DDD2CE'] },\n            { def: '传承千秋以至万代的田舍桃林；引出代代相传、历史悠久深厚之意', letter: ['E',\
+  \ 'C', 'H', 'O'], col: ['#F8ABBF', '#5D446C', '#8F564B', '#F3E7F3'] },\n       \
+  \     { def: '无论几丈的长枪，都需要由纪律对其加以约束；比喻现实中规则对于管理的重要性', letter: ['E', 'G', 'A', 'M'],\
+  \ col: ['#D4C5EA', '#836376', '#8F564B', '#F0D876'] },\n            { def: '描写夜间竹林中凉爽的微风与青翠的竹叶之景；比喻沁人心脾而又恬静美好的夜景',\
+  \ letter: ['E', 'O', 'R', 'D', 'H'], col: ['#E7A884', '#E3E3F8', '#5D446C', '#574445',\
+  \ '#F0D876'] },\n            { def: '在布满藤蔓的山川之间载歌载舞以至深夜；比喻置外物不顾、保持乐观的心态', letter:\
+  \ ['F', 'S', 'T', 'N', 'L'], col: ['#836376', '#496CA6', '#D4574E', '#F0D876', '#855D7A']\
+  \ },\n            { def: '只有在森林和田野间，才能找到自然的真理；以表达实践对于理论发展的重要性', letter: ['H', 'A',\
+  \ 'P', 'P', 'E'], col: ['#E7A884', '#8C6EC6', '#DDD2CE', '#D4574E', '#F3E7F3'] },\n\
+  \            { def: '漫漫飞雪中，只见一小枝不畏霜雪严寒的梅花；形容能够勇敢应对困难，毫不示弱', letter: ['I', 'G', 'R',\
+  \ 'E'], col: ['#F8ABBF', '#B5D8E2', '#F0D876', '#5D446C'] },\n            { def:\
+  \ '如微风拂过的声色与拨动琴弦的乐音；比喻音乐令人自发陶醉，婉转动听', letter: ['I', 'A'], col: ['#8F564B', '#F0D876']\
+  \ },\n            { def: '数贯之财在市井中不如党羽朋友更有优势；用于表达朋友比各色外物更为重要', letter: ['L', 'R',\
+  \ 'A', 'R'], col: ['#5D446C', '#E7A884', '#F3E7F3', '#574445'] },\n            {\
+  \ def: '在桐树林之间，仅有如薄纱一般缥缈的道路；引申为不易被一般人提及的新思路', letter: ['L', 'E', 'N', 'L', 'S'],\
+  \ col: ['#836376', '#F0D876', '#E7A884', '#D4574E', '#F3E7F3'] },\n            {\
+  \ def: '值得欢喜的事情多了，忧郁的情绪也就为之取代；用于表达令心态积极进取的重要性', letter: ['O', 'S', 'G', 'I'], col:\
+  \ ['#D4574E', '#F8ABBF', '#E7A884', '#F0D876'] },\n            { def: '已经折损的部分，再如何安全保存也无可奈何；说明在事前的未雨绸缪是所必要的',\
+  \ letter: ['R', 'O', 'S', 'O', 'U'], col: ['#F8ABBF', '#8C6EC6', '#F0D876', '#E7A884',\
+  \ '#574445'] },\n            { def: '萌发于田野中的花朵，花薰使得游子陶醉于其中；形容环境之宁静优美如同身在梦里', letter:\
+  \ ['T', 'U', 'R', 'T'], col: ['#E7A884', '#A97778', '#E7A884', '#F3E7F3'] },\n \
+  \           { def: '普天之下的田野均会赞美恰逢其时的春雨；比喻感激别人给予的恩惠好处之情', letter: ['T', 'H', 'E',\
+  \ 'T'], col: ['#F8ABBF', '#F0D876', '#496CA6', '#D4574E'] },\n            { def:\
+  \ '江河已十分古老，水田间的莲花却仍然焕发生机；比喻在旧的基础上产生新发展之处', letter: ['T', 'M', 'I', 'C'], col: ['#F8ABBF',\
+  \ '#F0D876', '#8C6EC6', '#B6D9E3'] }\n        ]);\n\n        const adjustTextColor\
+  \ = inject('adjustTextColor');\n\n        return {\n            data,\n        \
+  \    adjustTextColor\n        };\n    }\n}"
+vue_template: "<template>\n    <div>\n        <p><a href=\"https://docs.qq.com/sheet/DVkdXQXlIU2xyWVVp?tab=BB08J2\"\
+  \ target=\"_blank\">腾讯文档</a></p>\n        <p><b>这些幽芳的文字，看起来离自己只有一次元的距离，但是却无法触及。</b></p>\n\
+  \t    <p>（以下以中文版为准）</p>\n        <table>\n            <tr v-for=\"(r, idx) in data\"\
+  >\n                <td class='definition'>{{idx + 1}}. {{ r.def }}</td>\n      \
+  \          <td>\n                    <div class=\"colorletter\" v-for=\"(l, i) in\
+  \ r.letter\" :style=\"{backgroundColor: r.col[i], color: adjustTextColor(r.col[i])}\"\
+  >\n                        {{ l }}\n                    </div>\n               \
+  \ </td>\n            </tr>\n        </table>\n    </div>\n</template>\n<style>\n\
+  \    .colorletter {\n        float: left;\n        text-align: center;\n       \
+  \ height: 40px;\n        width: 40px;\n        font-size: 20px;\n    }\n    .definition\
+  \ {\n        padding-right: 40px;\n    }\n</style>"

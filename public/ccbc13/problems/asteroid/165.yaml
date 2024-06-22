@@ -1,0 +1,18 @@
+answer: CYLINDER ENGINE
+content: []
+content-type: 0
+desc: Cyg
+extend-data: null
+links:
+- path: ccbc13/index
+  title: 索引页
+  type: index
+- path: ccbc13/pages/asteroid
+  title: 小行星
+  type: page
+problem-image: /ccbc13/images/asteroid/8290490d5c364cc486239f795fde2c76.webp
+tips:
+- content: 将给出的两部分按像素异或
+  title: 我毫无思路
+title: ⭐
+type: problem

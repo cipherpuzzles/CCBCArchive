@@ -1,0 +1,18 @@
+answer: SCREECH OWL
+content: []
+content-type: 0
+desc: Scl
+extend-data: null
+links:
+- path: ccbc13/index
+  title: 索引页
+  type: index
+- path: ccbc13/pages/asteroid
+  title: 小行星
+  type: page
+problem-image: /ccbc13/images/asteroid/30aca22f12b74e04a205a05014977f81.webp
+tips:
+- content: 这是哈利波特里的金钱换算
+  title: 我毫无头绪
+title: ⭐
+type: problem

@@ -1,0 +1,20 @@
+answer: PYREX
+content:
+- "<div class=\"ccbcstylewrapper\">\n    <img src=\"/ccbc13/images/asteroid/0cc8957cd08642a399c4c2307215268b.webp\"\
+  \ style=\"width:100%\">\n</div>"
+content-type: 1
+desc: Pyx
+extend-data: null
+links:
+- path: ccbc13/index
+  title: 索引页
+  type: index
+- path: ccbc13/pages/asteroid
+  title: 小行星
+  type: page
+problem-image: /ccbc13/images/asteroid/a75b91a1ebcc4472885e1cd9aa4db252.webp
+tips:
+- content: 每个图标代表了 MS Word 里常用的功能，它们都有相对应的快捷键。
+  title: 我毫无头绪
+title: ⭐
+type: problem

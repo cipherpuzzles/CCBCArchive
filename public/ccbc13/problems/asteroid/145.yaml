@@ -1,0 +1,18 @@
+answer: BOOKKEEPERS
+content:
+- <div class="ccbcstylewrapper">这是是单单表表替表换题</div>
+content-type: 1
+desc: Boo
+extend-data: null
+links:
+- path: ccbc13/index
+  title: 索引页
+  type: index
+- path: ccbc13/pages/asteroid
+  title: 小行星
+  type: page
+tips:
+- content: 将每个汉字替换为一个英文字母，组成一个英文单词
+  title: 我毫无思路
+title: ⭐
+type: problem

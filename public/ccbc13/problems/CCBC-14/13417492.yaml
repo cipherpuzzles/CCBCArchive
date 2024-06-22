@@ -1,0 +1,117 @@
+additional-answers:
+- answer: OIDWORKPERESCHER
+  extra: ''
+  message: 或许要将两颗行星的信息连接起来…… (6 9 4 3 6)
+- answer: '...OIDWORKPERESCHER'
+  extra: ''
+  message: 或许要将两颗行星的信息连接起来…… (6 9 4 3 6)
+answer: DOUBLE PLANETOID WORK PER ESCHER
+answer-analysis: '这道 Meta 标题其实提示了一幅名叫 Metamorphosis III 的版画，作者是 MC Escher（记住这个名字，后面还会见到）。搜索这幅画会发现画里很多元素诸如蜜蜂、鸟、鱼……都出现在了小题里（题目里的打油诗“来路坎坷堪为画”即是指此），所以可以按照从画的左端的填字格（题目里已经给出“爬格子”在开始）开始到右端的填字格（“无字天书”）将小题答案排序。这里需要注意的是题目里出现的鸟可能有些难确认，“奇怪的游戏”里需要在画里找到一只向左飞的鸟，而“何日君再来”需要在画里找到三只不同颜色的鸟，形状和方向与题里类似。另外画里有一处花与蜜蜂对应“花卉培育”，“大蜜蜂”对应的是后面的蜜蜂。
+
+
+  然后题目里打油诗是一首藏头诗，第一个字连起来是“去空格算来文斯坦”，指的是莱文斯坦编辑距离。就像是画中一个东西变成另外一个，我们可以用莱文斯坦编辑距离计算从一个答案到下一个答案要改动多少步，也就是题目里写的“每段路到底走了多少“。最后从字母
+  O 开始，根据题目之间的距离，往上 +，往下 -，进行凯撒。例如第一个答案 `PRECISION` 和第二个答案 `REVIVE` 距离是 6，箭头向下，则从起点
+  O（15）减去 6 得到字母 I（9）也就是答案的第二个字母。
+
+
+  <style>
+
+  .ak th, .ak td {
+
+  padding: 5px 10px;
+
+  font-family: SFMono-Regular, Menlo, Monaco, Consolas;
+
+  }
+
+  </style>
+
+
+  <table class="ak">
+
+  <tr><th>小题答案</th><th>与上一行答案的编辑距离</th><th>方向</th><th>字母</th></tr>
+
+  <tr><td>PRECISION</td><td></td><td></td><td>O</td></tr>
+
+  <tr><td>REVIVE</td><td>6</td><td>-1</td><td>I</td></tr>
+
+  <tr><td>LENGTH</td><td>5</td><td>-1</td><td>D</td></tr>
+
+  <tr><td>SAILORS</td><td>7</td><td>-1</td><td>W</td></tr>
+
+  <tr><td>EXTERNAL</td><td>8</td><td>-1</td><td>O</td></tr>
+
+  <tr><td>LATERAL</td><td>3</td><td>1</td><td>R</td></tr>
+
+  <tr><td>FRINGE</td><td>7</td><td>-1</td><td>K</td></tr>
+
+  <tr><td>PLANES</td><td>5</td><td>1</td><td>P</td></tr>
+
+  <tr><td>LIVINGEXPENSES</td><td>11</td><td>-1</td><td>E</td></tr>
+
+  <tr><td>DEEPDIVING</td><td>13</td><td>-1</td><td>R</td></tr>
+
+  <tr><td>SODIUMCARBONATE</td><td>13</td><td>-1</td><td>E</td></tr>
+
+  <tr><td>COMPLEXION</td><td>12</td><td>-1</td><td>S</td></tr>
+
+  <tr><td>WINDS</td><td>10</td><td>1</td><td>C</td></tr>
+
+  <tr><td>DROWN</td><td>5</td><td>1</td><td>H</td></tr>
+
+  <tr><td>ON</td><td>3</td><td>-1</td><td>E</td></tr>
+
+  <tr><td>JOBINTERVIEWING</td><td>13</td><td>-1</td><td>R</td></tr>
+
+  </table>
+
+  <br><br>
+
+
+  于是我们得到 `OID WORK PER ESCHER`，如果将此输入答题框，会得到提示“或许要将两颗行星的信息连接起来…… (6 9 4 3 6)”。
+
+
+  联想到上一颗行星的答案是 `DOUBLE PLANET`，连起来就是 `DOUBLE PLANETOID WORK PER ESCHER`，也就是这道题的最终答案。'
+content:
+- "你从起点“爬格子”（记作O）出发，一路崎岖不平，终于到达了目的地。\n\n# ↘↘↘↘↗↘↗↘↘↘↘↗↗↘↘\n\n这是你的行程记录，标明了一路是往上走还是往下走，但是每段路到底走了多少呢？有诗为证：\n\
+  \n去处何方常求索，  \n空对箭头人已晕。  \n格题思谜为答解，  \n算程计途断纷纭。  \n来路坎坷堪为画，  \n文字变幻仿若云。  \n斯言暗将天机隐，\
+  \  \n坦途还需从头寻。\n\n\n(...<span style=\"color: orange\">3 4 3 6</span>)"
+content-type: 0
+desc: Meta 2
+extend-content:
+- <a class="btn btn-lg btn-primary" href="/article/ccbc14end">前往 CCBC 14 结局 →</a>
+extend-data: null
+links:
+- path: ccbc13/index
+  title: 索引页
+  type: index
+- path: ccbc13/pages/ccbc14
+  title: CCBC-14
+  type: page
+tips:
+- content: '这个 meta 的标题指向了一幅名叫 Metamorphosis III 的画，画里很多元素都出现在了小题里，按照从画的左端（题目里已经给出“爬格子”在开始）开始到右端（“无字天书”）排序。
+
+
+    需要注意的是题目里出现的鸟可能有些难确认，“奇怪的游戏”里需要在画里找到一只向左飞的鸟，而“何日君再来”需要在画里找到三只不同颜色的鸟，形状和方向与题里类似。
+
+
+    另外画里有一处花与蜜蜂对应“花卉培育”，“大蜜蜂”对应别处。'
+  title: 如何将小题排序？
+- content: '从字母 O 开始，根据【数据删除】给出的数字，往上 +，往下 -，进行凯撒。
+
+
+    举例如果得到的数字是 “2， 5……”
+
+
+    因为题目里的箭头是“↘↘……”
+
+
+    就成为“-2，-5……”
+
+
+    那么开头是 O，-2 到 M，再经过 -5 到 H，答案就是 OMH……'
+  title: 我不理解箭头是什么意思
+- content: 这一部分前面需要加上前一个meta的答案作为这一个meta的最终答案。
+  title: 大致知道(3 4 3 6)是什么了，但是有些部分看起来不太像词？
+title: 'Meta: Morphosis III'
+type: problem

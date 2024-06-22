@@ -1,0 +1,45 @@
+answer: INDUSTRIAL
+content:
+- "<div class=\"ccbcstylewrapper\">\n\t<style>\n\t\t#mypuzzle {\n\t\t\tdisplay: flex;\n\
+  \t\t\tflex-wrap: wrap;\n\t\t}\n\t\t.h, .v {\n\t\t\tmargin: 20px;\n\t\t}\n\t\t.h\
+  \ div, .v div {\n\t\t\twidth: 50px;\n\t\t\theight: 50px;\n\t\t}\n\t\t.v div {\n\t\
+  \t}\n\t\t.h div {\n\t\t}\n\t\t.h {\n\t\t\theight: 80px;\n\t\t\tdisplay: grid;\n\t\
+  \t\tgrid-template-columns: repeat(3, 50px);\n\t\t}\n\t\t.v {\n\t\t\theight: 180px;\n\
+  \t\t}\n\t\t.n1 div:first-child, .n2 div:nth-child(2), .n3 div:nth-child(3) {\n\t\
+  \t\tborder: 3px solid yellow;\n\t\t\tmargin: 0;\n\t\t}\n\t</style>\n\t<div id=\"\
+  mypuzzle\">\n\t<div class='h n1'>\n\t<div style='background-color:#008C45'></div>\n\
+  \t<div style='background-color:#F4F5F0'></div>\n\t<div style='background-color:#CD212A'></div>\n\
+  \t</div>\n\t<div class='v n3'>\n\t<div style='background-color:#CE2939'></div>\n\
+  \t<div style='background-color:#FFFFFF'></div>\n\t<div style='background-color:#477050'></div>\n\
+  \t</div>\n\t<div class='v n1'>\n\t<div style='background-color:#000000'></div>\n\
+  \t<div style='background-color:#FF0000'></div>\n\t<div style='background-color:#FFCC00'></div>\n\
+  \t</div>\n\t<div class='v n3'>\n\t<div style='background-color:#FDB913'></div>\n\
+  \t<div style='background-color:#006A44'></div>\n\t<div style='background-color:#C1272D'></div>\n\
+  \t</div>\n\t<div class='v n2'>\n\t<div style='background-color:#0072CE'></div>\n\
+  \t<div style='background-color:#000000'></div>\n\t<div style='background-color:#FFFFFF'></div>\n\
+  \t</div>\n\t<div class='v n3'>\n\t<div style='background-color:#C8102E'></div>\n\
+  \t<div style='background-color:#FFFFFF'></div>\n\t<div style='background-color:#C8102E'></div>\n\
+  \t</div>\n\t<div class='v n3'>\n\t<div style='background-color:#FFFFFF'></div>\n\
+  \t<div style='background-color:#009B74'></div>\n\t<div style='background-color:#D01C1F'></div>\n\
+  \t</div>\n\t<div class='h n1'>\n\t<div style='background-color:#169B62'></div>\n\
+  \t<div style='background-color:#FFFFFF'></div>\n\t<div style='background-color:#FF883E'></div>\n\
+  \t</div>\n\t<div class='h n3'>\n\t<div style='background-color:#0055A4'></div>\n\
+  \t<div style='background-color:#FFFFFF'></div>\n\t<div style='background-color:#EF4135'></div>\n\
+  \t</div>\n\t<div class='h n3'>\n\t<div style='background-color:#000000'></div>\n\
+  \t<div style='background-color:#FDDA24'></div>\n\t<div style='background-color:#EF3340'></div>\n\
+  \t</div>\n\t​</div>\n</div>"
+content-type: 1
+desc: TrA
+extend-data: null
+links:
+- path: ccbc13/index
+  title: 索引页
+  type: index
+- path: ccbc13/pages/asteroid
+  title: 小行星
+  type: page
+tips:
+- content: 找到国旗对应的国家以及该国家的三字母 ISO 代码。
+  title: 我毫无头绪
+title: ⭐
+type: problem

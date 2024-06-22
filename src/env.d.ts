@@ -9,4 +9,5 @@ declare module '*.vue' {
 
 declare interface Window {
   goLink: (link: PageConfigLink, router: Router) => void
+  Vue: any
 }

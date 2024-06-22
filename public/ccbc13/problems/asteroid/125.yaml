@@ -1,0 +1,20 @@
+answer: ANTIAIRCRAFT
+content: []
+content-type: 0
+desc: CrA
+extend-data: null
+links:
+- path: ccbc13/index
+  title: 索引页
+  type: index
+- path: ccbc13/pages/asteroid
+  title: 小行星
+  type: page
+problem-image: /ccbc13/images/asteroid/8d0a6cde3ea94195b85de0b11738ba86.webp
+tips:
+- content: 将图片平移后与原图片重叠
+  title: 我毫无思路
+- content: 最后的答案形式是(4-8)，第四个字母是I。
+  title: 我大概知道答案了，为什么不对？
+title: ⭐
+type: problem

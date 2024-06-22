@@ -17,6 +17,9 @@
                 </a>
             </div>
         </div>
+        <div v-if="puzzleType === 2" id="puzzleVue">
+            <div id="puzzleVueApp"></div>
+        </div>
         <div class="row" v-for="component in usedComponents">
             <div class="col">
                 <light-game v-if="component.name === 'LightGame'"></light-game>
@@ -123,8 +126,7 @@
                             </div>
                         </form>
                     </div>
-                    <div v-if="showAnswerResult" class="alert mt-4" :class="[ answerTypeClass ]" role="alert">
-                        {{ answerResult }}
+                    <div v-if="showAnswerResult" class="alert mt-4" :class="[ answerTypeClass ]" role="alert" v-html="answerResult">
                     </div>
                 </div>
                 <div class="modal-footer">
@@ -145,8 +147,14 @@ import GetPageConfig from '../utils/PageConfig'
 import { marked } from 'marked'
 import LinkButton from '../components/LinkButton.vue'
 import { Collapse, Modal } from 'bootstrap';
+
+// Import components
 import LightGame from '../components/LightGame.vue';
 import C12Calc from '../components/C12Calc.vue';
+
+// Import Vue
+import puzzleVuePlugin from '../components/puzzleVue/puzzleVuePlugin';
+import * as Vue from 'vue';
 
 const route = useRoute();
 const router = useRouter();
@@ -168,12 +176,14 @@ const answerAnalysisHtml = ref("");
 const answer = ref("");
 const additionalAnswers: Ref<AdditionalAnswer[]> = ref([]);
 const userInputAnswer = ref("");
+const puzzleType = ref(0);
 
 const showAnswerResult = ref(false);
 const answerResult = ref("");
 const answerTypeClass = ref("alert-info");
 
 const extendContentHtml: Ref<string[]> = ref([]);
+let __vue_app__: Vue.App<Element> | undefined = undefined;
 
 onMounted(async () => {
     const confPath = route.query.c;
@@ -199,6 +209,7 @@ function initConf(conf: YamlConfig) {
     title.value = conf.title;
     document.title = `${conf.title} - CCBC Archive`;
     pageHtml.value = conf.content.map(content => marked(content));
+    puzzleType.value = conf['content-type'] ?? 0;
 
     if (conf['problem-image']) {
         problemImage.value = conf['problem-image'];
@@ -229,27 +240,66 @@ function initConf(conf: YamlConfig) {
         extendContentHtml.value = conf['extend-content'].map(content => marked(content));
     }
 
-    //加载附加的css和js
-    nextTick(() => {
-        if (conf['content-css']) {
-            const cssElement = document.createElement("style");
-            cssElement.innerHTML = conf['content-css'];
+    // HTML 模式
+    if (puzzleType.value === 1) {
+        //加载附加的css和js
+        nextTick(() => {
+            if (conf['content-css']) {
+                const cssElement = document.createElement("style");
+                cssElement.innerHTML = conf['content-css'];
 
-            const htmlContainer = document.getElementById("contentHtml");
-            if (htmlContainer) {
-                htmlContainer.appendChild(cssElement);
+                const htmlContainer = document.getElementById("contentHtml");
+                if (htmlContainer) {
+                    htmlContainer.appendChild(cssElement);
+                }
             }
-        }
-        if (conf['content-js']) {
-            const jsElement = document.createElement("script");
-            jsElement.innerHTML = conf['content-js'];
+            if (conf['content-js']) {
+                const jsElement = document.createElement("script");
+                jsElement.innerHTML = conf['content-js'];
 
-            const htmlContainer = document.getElementById("contentHtml");
-            if (htmlContainer) {
-                htmlContainer.appendChild(jsElement);
+                const htmlContainer = document.getElementById("contentHtml");
+                if (htmlContainer) {
+                    htmlContainer.appendChild(jsElement);
+                }
             }
+        });
+    }
+    // VUE 模式 （将script中内容视为vue组件，使用eval解析成object后插入页面中执行
+    else if (puzzleType.value === 2) {
+        let script = conf.vue_script ?? "";
+        let html = conf.vue_template;
+
+        let template = "";
+        let style = "";
+
+        // 从html中提取template和style
+        let templateMatched = html?.match(/<template>([\s\S]+?)<\/template>/);
+        if (templateMatched) {
+            template = templateMatched[1];
         }
-    });
+        //从 html 中提取 <style> 标签内容
+        let styleMatched = html?.match(/<style.*?>([\s\S]+?)<\/style>/);
+        if (styleMatched) {
+            style = styleMatched[1];
+        }
+
+
+        nextTick(() => {
+            script = script?.replace(/export default/, "return ");
+            let __vue_script__ = new Function(script)();
+            __vue_script__.template = template;
+            __vue_app__ = Vue.createApp(__vue_script__);
+            __vue_app__.use(puzzleVuePlugin);
+            __vue_app__.mount("#puzzleVueApp");
+
+            //注入style
+            let puzzleAppContainer = document.getElementById("puzzleVue");
+            if (!puzzleAppContainer) return;
+            let styleElement = document.createElement("style");
+            styleElement.innerHTML = style;
+            puzzleAppContainer.appendChild(styleElement);
+        });
+    }
 }
 
 function showTips() {
@@ -280,8 +330,8 @@ function checkAnswer() {
     } else {
         for (let additionalAnswer of additionalAnswers.value) {
             if (userInput === additionalAnswer.answer.toLocaleLowerCase().replace(/\s+/g, "")) {
-                answerResult.value = "答案错误，但是获得了附加信息：" + additionalAnswer.message;
-                answerTypeClass.value = "alert-danger";
+                answerResult.value = "里程碑：" + additionalAnswer.message;
+                answerTypeClass.value = "alert-warning";
                 showAnswerResult.value = true;
                 return;
             }
@@ -309,6 +359,7 @@ function goLink(linkId: string) {
 }
 
 window['goLink'] = goLink;
+window['Vue'] = Vue;
 </script>
 
 <style lang="scss" scoped>

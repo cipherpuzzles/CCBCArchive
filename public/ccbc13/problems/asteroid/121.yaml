@@ -1,0 +1,18 @@
+answer: STADIUMS
+content: []
+content-type: 0
+desc: Tau
+extend-data: null
+links:
+- path: ccbc13/index
+  title: 索引页
+  type: index
+- path: ccbc13/pages/asteroid
+  title: 小行星
+  type: page
+problem-image: /ccbc13/images/asteroid/27f92394cdc7437ebf612e8b8557678b.webp
+tips:
+- content: DOG, CAT, GTA, DOC, GOLD, STAIN, SATIN,TUNA, MEAT
+  title: 题目里的图片分别对应什么单词？
+title: ⭐
+type: problem

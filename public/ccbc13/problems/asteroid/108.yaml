@@ -1,0 +1,18 @@
+answer: FLAMINGOS
+content: []
+content-type: 0
+desc: LMi
+extend-data: null
+links:
+- path: ccbc13/index
+  title: 索引页
+  type: index
+- path: ccbc13/pages/asteroid
+  title: 小行星
+  type: page
+problem-image: /ccbc13/images/asteroid/2f75557735634d79b083e701b7034ebc.webp
+tips:
+- content: 将给出的点按照顺序连接起来，会得到一种粉红色的生物。
+  title: 这题要做什么？
+title: ⭐
+type: problem

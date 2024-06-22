@@ -1,0 +1,18 @@
+answer: PASCAL
+content: []
+content-type: 0
+desc: Psc
+extend-data: null
+links:
+- path: ccbc13/index
+  title: 索引页
+  type: index
+- path: ccbc13/pages/asteroid
+  title: 小行星
+  type: page
+problem-image: /ccbc13/images/asteroid/034b5deb13cb4d459249b62d2f053d16.webp
+tips:
+- content: 有一种方式可以用两位英文字母来表示一个国家
+  title: 我毫无思路
+title: ⭐
+type: problem

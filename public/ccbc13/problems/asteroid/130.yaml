@@ -1,0 +1,20 @@
+answer: JACQUES CHIRAC
+content: []
+content-type: 0
+desc: Aqr
+extend-data: null
+links:
+- path: ccbc13/index
+  title: 索引页
+  type: index
+- path: ccbc13/pages/asteroid
+  title: 小行星
+  type: page
+problem-image: /ccbc13/images/asteroid/5a4ac8d9f8af4d749f38a5fe37b31a86.webp
+tips:
+- content: WHISKEY, JULIETT, OSCAR, HOTEL, ROMEO, PAPA, XRAY, UNIFORM, VICTOR
+  title: 题目里的图片分别对应什么单词？
+- content: 每一个图案对应一个NATO（北约音标）字母表里的单词，箭头代表在这个字母表里移动某个固定的位数。
+  title: 不懂箭头（飞船）的意义
+title: ⭐
+type: problem

@@ -5,9 +5,9 @@ import pymysql
 import requests
 from mysql_const import MYSQL_CONST
 
-BASE_DIR = 'D:\workspace\ccbc12\CCBCArchive\public\ccbc12'
+BASE_DIR = 'D:\MyWorks\ccbcarchive\ccbcarchive\public\ccbc13'
 
-def read_from_db():
+def read_from_db(sql):
     # 连接数据库
     dbconn = pymysql.connect(host=MYSQL_CONST['host'],
                              port=MYSQL_CONST['post'],
@@ -18,7 +18,6 @@ def read_from_db():
     cursor = dbconn.cursor()
 
     # 读取数据
-    sql = 'select * from puzzle'
     cursor.execute(sql)
     data = cursor.fetchall()
     cursor.close()
@@ -40,22 +39,43 @@ def parse_problem(row):
     problem['answer'] = row[9]
     problem['jump_keyword'] = row[10]
     problem['extend_content'] = row[11]
-    problem['tips1'] = row[12]
-    problem['tips2'] = row[13]
-    problem['tips3'] = row[14]
-    problem['tips1title'] = row[15]
-    problem['tips2title'] = row[16]
-    problem['tips3title'] = row[17]
-    problem['second_key'] = row[18]
+    problem['desc'] = row[12]
+    problem['attempts_count'] = row[13]
+    problem['analysis'] = row[14]
+    problem['script'] = row[15]
+    problem['dt_update'] = row[16]
 
     return problem
+
+def parse_puzzle_tips(row):
+    puzzle_tips = {}
+    puzzle_tips['ptid'] = row[0]
+    puzzle_tips['pid'] = row[1]
+    puzzle_tips['title'] = row[2]
+    puzzle_tips['content'] = row[3]
+    puzzle_tips['desc'] = row[4]
+    puzzle_tips['point_cost'] = row[5]
+    puzzle_tips['unlock_delay'] = row[6]
+    puzzle_tips['order'] = row[7]
+
+    return puzzle_tips
+
+def parse_additional_answers(row):
+    additional_answers = {}
+    additional_answers['aaid'] = row[0]
+    additional_answers['pid'] = row[1]
+    additional_answers['answer'] = row[2]
+    additional_answers['message'] = row[3]
+    additional_answers['extra'] = row[4]
+
+    return additional_answers
 
 def download_image(image_url, image_path):
     # 下载图片到本地
     if not os.path.exists(image_path):
         os.makedirs(image_path)
     image_name = image_url.split('/')[-1]
-    local_url = "/ccbc12/images/%s/%s" % (image_path.split('\\')[-1], image_name)
+    local_url = "/ccbc13/images/%s/%s" % (image_path.split('\\')[-1], image_name)
 
     local_path = os.path.join(image_path, image_name)
 
@@ -68,7 +88,7 @@ def download_image(image_url, image_path):
 
 def get_download_images(content, image_path):
     # 提取所有 https://static.cipherpuzzles.com/static/...webp 的图片链接
-    image_urls = re.findall(r'https://static.cipherpuzzles.com/static/.*?webp', content)
+    image_urls = re.findall(r'https://static.cipherpuzzles.com/static/.*?(?:webp|m4a|mp4)', content)
     for image_url in image_urls:
         # 下载图片到本地
         local_url = download_image(image_url, image_path)
@@ -78,18 +98,12 @@ def get_download_images(content, image_path):
 
 def get_path_area(problem):
     path_area_dict = {
-        1: 'a',
-        2: 'b',
-        3: 'c',
-        4: 'd',
-        5: 'e',
-        6: 'f',
+        1: 'CCBC-13',
+        2: 'CCBC-14',
+        3: 'asteroid',
+        4: 'CCBC-1314',
     }
-    if problem['pgid'] >= 7:
-        path_area = "extra"
-    else:
-        path_area = path_area_dict[problem['pgid']]
-    
+    path_area = path_area_dict[problem['pgid']]
     return path_area
 
 def convert_problem(problem):
@@ -99,51 +113,94 @@ def convert_problem(problem):
 
     content = {}
     content['type'] = 'problem'
+    content['title'] = "%s" % (problem['title'],)
+    content['extend-data'] = problem['extend_data']
+    content['content-type'] = problem['type'] # 0: image, 1: html 2: vue-sfc
 
-    year_key = problem['second_key']
-    if year_key > 10000:
-        content['title'] = "%s - CCBC 13" % (problem['title'],)
-    else:
-        content['title'] = "#%s %s - CCBC 12" % (problem['second_key'], problem['title'])
     content['content'] = []
-    parsed_content = get_download_images(problem['content'], image_path)
-    content['content'].append(parsed_content)
-    if problem['html']:
-        parsed_html = get_download_images(problem['html'], image_path)
-        content['content'].append(parsed_html)
+    if problem['content']:
+        parsed_content = get_download_images(problem['content'], image_path)
+        content['content'].append(parsed_content)
+
+    if problem['type'] != 2:
+        if problem['html']:
+            parsed_html = get_download_images(problem['html'], image_path)
+            content['content'].append(parsed_html)
+    else:
+        if problem['html']:
+            parsed_html = get_download_images(problem['html'], image_path)
+            content['vue_template'] = parsed_html
+        if problem['script']:
+            parsed_vue_script = get_download_images(problem['script'], image_path)
+            content['vue_script'] = parsed_vue_script
 
     if problem['extend_content']:
-        content['extend_content'] = []
-        content['extend_content'].append(problem['extend_content'])
+        content['extend-content'] = []
+        parsed_extend_content = get_download_images(problem['extend_content'], image_path)
+        content['extend-content'].append(parsed_extend_content)
 
     if problem['image']:
         local_url = download_image(problem['image'], image_path)
-        content['problem_image'] = local_url
+        content['problem-image'] = local_url
 
     content['answer'] = problem['answer']
+    content['desc'] = problem['desc']
     
-    content['tips'] = []
-    if problem['tips1']:
-        content['tips'].append({'title': problem['tips1title'], 'content': problem['tips1']})
-    if problem['tips2']:
-        content['tips'].append({'title': problem['tips2title'], 'content': problem['tips2']})
-    if problem['tips3']:
-        content['tips'].append({'title': problem['tips3title'], 'content': problem['tips3']})
+    # 插入提示
+    puzzle_tips = read_from_db('select * from `puzzle_tips` where `pid` = %s order by `order` asc' % problem['pid'])
+
+    if puzzle_tips and len(puzzle_tips) > 0:
+        puzzle_tips_list = []
+        for tip_row in puzzle_tips:
+            puzzle_tip = parse_puzzle_tips(tip_row)
+            parse_tip_content = get_download_images(puzzle_tip['content'], image_path)
+            puzzle_tips_list.append({
+                'title': puzzle_tip['title'],
+                'content': parse_tip_content,
+            })
+        
+        content['tips'] = puzzle_tips_list
+
+    # 插入里程碑
+    additional_answers = read_from_db('select * from `additional_answer` where `pid` = %s' % problem['pid'])
+
+    if additional_answers and len(additional_answers) > 0:
+        additional_answers_list = []
+        for answer_row in additional_answers:
+            additional_answer = parse_additional_answers(answer_row)
+            additional_answers_list.append({
+                'answer': additional_answer['answer'],
+                'message': additional_answer['message'],
+                'extra': additional_answer['extra'],
+            })
+        
+        content['additional-answers'] = additional_answers_list
     
-    content['answer_analysis'] = ''
+    if problem['analysis']:
+        parse_analysis = get_download_images(problem['analysis'], image_path)
+        content['answer-analysis'] = parse_analysis
+
+    # 插入链接
     content['links'] = []
-    content['links'].append({'title': 'CCBC12 索引页', 'type': 'index', 'path': 'ccbc12/index'})
-    content['links'].append({'title': '时光机', 'type': 'page', 'path': 'ccbc12/pages/main'})
+    content['links'].append({'title': '索引页', 'type': 'index', 'path': 'ccbc13/index'})
+    if problem['pgid'] == 1:
+        content['links'].append({'title': 'CCBC-13', 'type': 'page', 'path': 'ccbc13/pages/ccbc13'})
+    elif problem['pgid'] == 2:
+        content['links'].append({'title': 'CCBC-14', 'type': 'page', 'path': 'ccbc13/pages/ccbc14'})
+    elif problem['pgid'] == 3:
+        content['links'].append({'title': '小行星', 'type': 'page', 'path': 'ccbc13/pages/asteroid'})
+    elif problem['pgid'] == 4:
+        content['links'].append({'title': 'CCBC-1314', 'type': 'page', 'path': 'ccbc13/pages/ccbc1314'})
 
     return content
 
 def start():
     # 读取数据库
-    data = read_from_db()
+    data = read_from_db('select * from puzzle')
     # 写入文件
     for row in data:
         problem = parse_problem(row)
-        print("Processing problem %s %s" % (problem['second_key'], problem['title']))
+        print("Processing problem %s %s" % (problem['pid'], problem['title']))
         problem_doc = convert_problem(problem)
 
         path_area = get_path_area(problem)
@@ -151,10 +208,7 @@ def start():
         if not os.path.exists(problem_path):
             os.makedirs(problem_path)
 
-        if (problem['second_key'] > 10000):
-            file_name = "meta%s" % path_area
-        else:
-            file_name = "p%s" % problem['second_key']
+        file_name = "%s" % problem['pid']
         
         problem_file = os.path.join(problem_path, "%s.yaml" % file_name)
 
