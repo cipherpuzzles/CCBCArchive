@@ -1,0 +1,20 @@
+answer: RACQUETBALL
+content: []
+content-type: 0
+desc: Aql
+extend-data: null
+links:
+- path: ccbc13/index
+  title: 索引页
+  type: index
+- path: ccbc13/pages/asteroid
+  title: 小行星
+  type: page
+problem-image: /ccbc13/images/asteroid/0eb4bac243134c76b75c5d34beb39d32.webp
+tips:
+- content: 每个球上的颜色代表了某个运动用球表面的颜色比例
+  title: 我毫无头绪
+- content: 这种球比较少见，奥运会上仅在1900年出现过一次。
+  title: 中间那个是什么
+title: ⭐
+type: problem

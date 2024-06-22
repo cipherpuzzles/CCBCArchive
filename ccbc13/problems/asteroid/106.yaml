@@ -1,0 +1,18 @@
+answer: CARINA
+content: []
+content-type: 0
+desc: Car
+extend-data: null
+links:
+- path: ccbc13/index
+  title: 索引页
+  type: index
+- path: ccbc13/pages/asteroid
+  title: 小行星
+  type: page
+problem-image: /ccbc13/images/asteroid/63a8439ecbfe42599215853cc70d4f61.webp
+tips:
+- content: ANTS, PANTS, OCARINA, RAIN, TRAIN
+  title: 题目里的图片分别对应什么单词？
+title: ⭐
+type: problem

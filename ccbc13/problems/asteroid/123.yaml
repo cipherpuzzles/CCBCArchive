@@ -1,0 +1,20 @@
+answer: ARCHER
+content: []
+content-type: 0
+desc: Her
+extend-data: null
+links:
+- path: ccbc13/index
+  title: 索引页
+  type: index
+- path: ccbc13/pages/asteroid
+  title: 小行星
+  type: page
+problem-image: /ccbc13/images/asteroid/dd41db10a56c402dafc34d052266f6bf.webp
+tips:
+- content: SCALES, CRAB, BULL, LION, FISHES
+  title: 题目里的图片分别对应什么单词？
+- content: 它们各代表十二星座之一
+  title: 我还是不知道这些东西对应什么
+title: ⭐
+type: problem

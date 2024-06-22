@@ -1,0 +1,18 @@
+answer: SEXTET
+content: []
+content-type: 0
+desc: Sex
+extend-data: null
+links:
+- path: ccbc13/index
+  title: 索引页
+  type: index
+- path: ccbc13/pages/asteroid
+  title: 小行星
+  type: page
+problem-image: /ccbc13/images/asteroid/98650af788144d8285798bae63e63b2a.webp
+tips:
+- content: 图中是各种类型的萨克斯管
+  title: 我毫无头绪
+title: ⭐
+type: problem

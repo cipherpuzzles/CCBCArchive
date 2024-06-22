@@ -1,0 +1,18 @@
+answer: CASSINI
+content: []
+content-type: 0
+desc: Cas
+extend-data: null
+links:
+- path: ccbc13/index
+  title: 索引页
+  type: index
+- path: ccbc13/pages/asteroid
+  title: 小行星
+  type: page
+problem-image: /ccbc13/images/asteroid/d85d42a66d484ba7bc8a4d9d91cc1314.webp
+tips:
+- content: 填入不同种类提琴的英文单词
+  title: 我毫无思路
+title: ⭐
+type: problem

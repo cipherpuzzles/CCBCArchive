@@ -1,0 +1,32 @@
+answer: COMMANDER
+content: []
+content-type: 0
+desc: CMa
+extend-data: null
+links:
+- path: ccbc13/index
+  title: 索引页
+  type: index
+- path: ccbc13/pages/asteroid
+  title: 小行星
+  type: page
+problem-image: /ccbc13/images/asteroid/3afc606120ce4bc5a3d4176e62a4c7cb.webp
+tips:
+- content: 'BUICK CONGO DISKS
+
+
+    FILM LOGS RUBY
+
+
+    MARRY PHOTO
+
+
+    CUBA WIFI
+
+
+    PILL ROOM'
+  title: 能否给我题目里图片代表的英文单词
+- content: 中间的单词的第 n 个字母处于左右两边第 n 个字母之间的中点。
+  title: 我还是不懂规律
+title: ⭐️
+type: problem

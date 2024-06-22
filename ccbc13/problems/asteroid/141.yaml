@@ -1,0 +1,29 @@
+answer: SHOULDERED
+content:
+- "<div class=\"ccbcstylewrapper\">\n    <style>\n        .red {\n            color:\
+  \ red;\n        }\n        .poker {\n            font-family: var(--bs-body-font-family);\n\
+  \            font-weight: normal;\n        }\n    </style>\n    <div style=\"font-size:100px\"\
+  >\n    <p><span class=\"poker\">?????</span> <span class=\"red poker\">?????</span>\n\
+  \    <br><span class=\"poker\">?</span><span class=\"red poker\">??</span><span\
+  \ class=\"poker\">?</span> OF <span class=\"red poker\">?</span> <span class=\"\
+  poker\">?</span><span class=\"red poker\">??</span><span class=\"poker\">?</span>\n\
+  \    <br>FULL <span class=\"poker\">?</span><span class=\"red poker\">???</span><span\
+  \ class=\"poker\">?</span></p>\n    <hr>\n    <p><span class=\"red poker\">??</span><span\
+  \ class=\"poker\">?</span><span class=\"red poker\">??</span><span class=\"poker\"\
+  >?????</span></p>\n    </div>\n    如果图片无法显示，点击<a href=\"/ccbc13/images/asteroid/08ff1ab9178d403f87070de55c3b29c0.webp\"\
+  \ target=\"_blank\">此处看图片</a>。\n</div>"
+content-type: 1
+desc: Hor
+extend-data: null
+links:
+- path: ccbc13/index
+  title: 索引页
+  type: index
+- path: ccbc13/pages/asteroid
+  title: 小行星
+  type: page
+tips:
+- content: 用英文描述扑克牌组成的牌型
+  title: 我毫无思路
+title: ⭐
+type: problem

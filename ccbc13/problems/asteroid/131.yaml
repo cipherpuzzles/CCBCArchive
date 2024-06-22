@@ -1,0 +1,18 @@
+answer: PRICE
+content: []
+content-type: 0
+desc: Pic
+extend-data: null
+links:
+- path: ccbc13/index
+  title: 索引页
+  type: index
+- path: ccbc13/pages/asteroid
+  title: 小行星
+  type: page
+problem-image: /ccbc13/images/asteroid/c6c7c39869f048c8b395772c5a07122c.webp
+tips:
+- content: DEER, REED, RADAR, RACECAR, DIAPER
+  title: 题目里的图片分别对应什么单词？
+title: ⭐
+type: problem

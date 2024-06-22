@@ -1,0 +1,24 @@
+answer: THE TURN OF THE CENTURY
+content:
+- '<div class="ccbcstylewrapper">
+
+  <img src="/ccbc13/images/asteroid/0e155d8d1af646378716fb7515da78e7.webp" style="width:100%">
+
+  </div>'
+content-type: 1
+desc: Tuc
+extend-data: null
+links:
+- path: ccbc13/index
+  title: 索引页
+  type: index
+- path: ccbc13/pages/asteroid
+  title: 小行星
+  type: page
+tips:
+- content: 中间三行的单词分别对应三个描述时间跨度的单词
+  title: 我毫无思路
+- content: 直接把整行字提交即可。
+  title: 知道最下面是什么了，然后怎么办？
+title: ⭐
+type: problem

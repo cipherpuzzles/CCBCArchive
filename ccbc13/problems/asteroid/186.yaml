@@ -1,0 +1,22 @@
+answer: PIE IN THE SKY
+content:
+- "<div class=\"ccbcstylewrapper\">\n    <style>\n        .out {\n            color:\
+  \ #87CEEB;\n        }\n        .in {\n            color: tan;\n        }\n    </style>\n\
+  \    <span class=\"out\">S</span><span class=\"in\">PI</span><span class=\"out\"\
+  >K</span><span class=\"in\">E</span><span class=\"out\">Y</span> (<span class=\"\
+  in\">3</span> 2 3 <span class=\"out\">3</span>)\n</div>"
+content-type: 1
+desc: Phe
+extend-data: null
+links:
+- path: ccbc13/index
+  title: 索引页
+  type: index
+- path: ccbc13/pages/asteroid
+  title: 小行星
+  type: page
+tips:
+- content: 中间两个词描述了带颜色两个词的相对关系。
+  title: 我毫无头绪
+title: ⭐
+type: problem

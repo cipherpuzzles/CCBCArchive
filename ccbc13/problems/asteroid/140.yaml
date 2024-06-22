@@ -1,0 +1,18 @@
+answer: CIRCLE
+content: []
+content-type: 0
+desc: Cir
+extend-data: null
+links:
+- path: ccbc13/index
+  title: 索引页
+  type: index
+- path: ccbc13/pages/asteroid
+  title: 小行星
+  type: page
+problem-image: /ccbc13/images/asteroid/688b40a3f4254fe180c3afcff19a7996.webp
+tips:
+- content: 用英文描述上边的图片。有三个是常见Logo，另外三个是常用符号。
+  title: 我毫无思路
+title: ⭐
+type: problem

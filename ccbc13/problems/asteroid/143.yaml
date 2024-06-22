@@ -1,0 +1,18 @@
+answer: EXPLOITATIVE
+content: []
+content-type: 0
+desc: Pav
+extend-data: null
+links:
+- path: ccbc13/index
+  title: 索引页
+  type: index
+- path: ccbc13/pages/asteroid
+  title: 小行星
+  type: page
+problem-image: /ccbc13/images/asteroid/7fde355661a3400085ecf40321e58931.webp
+tips:
+- content: 看图读出字母，每格一个
+  title: 我毫无思路
+title: ⭐️
+type: problem

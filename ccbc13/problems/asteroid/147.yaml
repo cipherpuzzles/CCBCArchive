@@ -1,0 +1,42 @@
+additional-answers:
+- answer: 手术
+  extra: ''
+  message: 正确，请输入 SURGERY 作为答案。
+answer: SURGERY
+content:
+- "<div class=\"ccbcstylewrapper\">\n    <style>\n        #puzzle123 td {\n      \
+  \      width: 50px;\n            height: 50px;\n            font-size: 36px;\n \
+  \           text-align: center;\n            padding: 0;\n        }\n    </style>\n\
+  \    <table id=\"puzzle123\"><tr>\n    <td></td>\n    <td></td>\n    <td>黑</td>\n\
+  \    <td></td>\n    <td>学</td>\n    <td></td>\n    <td></td>\n    </tr>\n    <tr>\n\
+  \    <td></td>\n    <td></td>\n    <td>↓</td>\n    <td></td>\n    <td>↓</td>\n \
+  \   <td></td>\n    <td></td>\n    </tr>\n    <tr>\n    <td>水</td>\n    <td>→</td>\n\
+  \    <td style=\"border: 1px solid black\"></td>\n    <td>→</td>\n    <td style=\"\
+  border: 1px solid black\"></td>\n    <td>→</td>\n    <td>语</td>\n    </tr>\n   \
+  \ <tr>\n    <td></td>\n    <td></td>\n    <td>↓</td>\n    <td></td>\n    <td>↓</td>\n\
+  \    <td></td>\n    <td></td>\n    </tr>\n    <tr>\n    <td></td>\n    <td></td>\n\
+  \    <td>工</td>\n    <td></td>\n    <td>士</td>\n    <td></td>\n    <td></td>\n \
+  \   </tr>\n    </table>\n    <p style=\"font-size:20px\">答案（二） -> （7）</p>\n</div>"
+content-type: 1
+desc: Sge
+extend-data: null
+links:
+- path: ccbc13/index
+  title: 索引页
+  type: index
+- path: ccbc13/pages/asteroid
+  title: 小行星
+  type: page
+tips:
+- content: 两个字的笔画数分别是(四 五)
+  title: 这两个字有额外提示吗？
+- content: '箭头前后的字可以组成常见词语。称第一个框里的字 X，第二个框的字 Y，则
+
+
+    水X、黑X、X工、XY、学Y、Y士、Y语
+
+
+    都是常见词语。'
+  title: 不懂箭头的意义
+title: ⭐
+type: problem

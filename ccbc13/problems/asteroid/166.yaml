@@ -1,0 +1,18 @@
+answer: PRINCIPLES OF FAITH
+content: []
+content-type: 0
+desc: PsA
+extend-data: null
+links:
+- path: ccbc13/index
+  title: 索引页
+  type: index
+- path: ccbc13/pages/asteroid
+  title: 小行星
+  type: page
+problem-image: /ccbc13/images/asteroid/499b3e0a38a442d3a2dfc2e7d3e505f6.webp
+tips:
+- content: 本题为摩斯密码
+  title: 我毫无思路
+title: ⭐
+type: problem

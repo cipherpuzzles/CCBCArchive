@@ -1,0 +1,18 @@
+answer: CHEETAH
+content: []
+content-type: 0
+desc: Cha
+extend-data: null
+links:
+- path: ccbc13/index
+  title: 索引页
+  type: index
+- path: ccbc13/pages/asteroid
+  title: 小行星
+  type: page
+problem-image: /ccbc13/images/asteroid/aaa7e35a868f4075aace84fd2f9065e2.webp
+tips:
+- content: 把这些方格沿画的对角线反转
+  title: 我毫无思路
+title: ⭐️
+type: problem

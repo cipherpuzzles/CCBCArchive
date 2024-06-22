@@ -1,0 +1,419 @@
+answer: EXTERNAL
+answer-analysis: '每幅画里的内容英文字母数正好对应下面的蜜蜂数，认出每幅画后提取粉色蜜蜂代表的字母可得 ``EXTERNAL``。
+
+
+  一、三只蜜蜂的轨迹象征地球围绕太阳公转，月亮围绕地球公转。而月亮在地球和太阳之间时地球会暂时变暗，所以这幅画的重点是日食现象，SOLAR <u>E</u>CLIPSE。
+
+
+  二、这是皮克斯动画片头（就是那个蹦蹦跳跳的小台灯），PI<u>X</u>AR。
+
+
+  三、有丝分裂，MI<u>T</u>OSIS。
+
+
+  四、大蜜蜂追赶小蜜蜂，但是每当大蜜蜂追到小蜜蜂原来的位置，小蜜蜂已经又往前走了一段距离，大蜜蜂还需要追上这新多出来的差距，而这段时间里小蜜蜂又往前走了一段……周而复始，小蜜蜂永远在大蜜蜂的前面。这就是芝诺悖论，Z<u>E</u>NO''S
+  PARADOX。
+
+
+  五、梵高的星空，STA<u>R</u>RY NIGHT。
+
+
+  六、牛顿摆，<u>N</u>EWTON''S CRADLE。
+
+
+  七、两对不同颜色的蜜蜂代表男女两人的脚步，这是华尔兹的基本步法（华尔兹是最有名的三拍子的舞蹈，其它著名的狐步舞、恰恰舞、摇摆舞等都是四拍子），W<u>A</u>LTZ。
+
+
+  八、冒泡排序，BUBB<u>L</u>E SORT。'
+content:
+- "<style>\n\t#beepuzzle {\n\t\tfont-size: 40px;\n\t\ttext-align: center;\n\t}\n\t\
+  #beepuzzle div {\n\t\tmargin-bottom: 100px;\n\t}\n\t#beepuzzle .canvas {\n\t\tborder:\
+  \ 4px solid green;\n\t}\n\t#beepuzzle img {\n\t\twidth: 40px;\n\t\tvertical-align:\
+  \ text-bottom;\n\t\tpadding: 2px;\n\t}\n</style>\n\n\n<div id=\"beepuzzle\">\n\t\
+  <div>\n\t\t<canvas class=\"canvas\" id=\"canvas3\" width=\"800\" height=\"800\"\
+  ></canvas>\n\t\t\t<p><img src=\"https://static.cipherpuzzles.com/static/images/0ac0538daa184b5481d35ac002e85d9c.svg\"\
+  >\n\t\t\t<img src=\"https://static.cipherpuzzles.com/static/images/0ac0538daa184b5481d35ac002e85d9c.svg\"\
+  >\n\t\t\t<img src=\"https://static.cipherpuzzles.com/static/images/0ac0538daa184b5481d35ac002e85d9c.svg\"\
+  >\n\t\t\t<img src=\"https://static.cipherpuzzles.com/static/images/0ac0538daa184b5481d35ac002e85d9c.svg\"\
+  >\n\t\t\t<img src=\"https://static.cipherpuzzles.com/static/images/0ac0538daa184b5481d35ac002e85d9c.svg\"\
+  >\n\t\t\t&nbsp;&nbsp;&nbsp;&nbsp;\n\t\t\t<img src=\"https://static.cipherpuzzles.com/static/images/fdb40c12425c4e609299b8de63a51348.svg\"\
+  >\n\t\t\t<img src=\"https://static.cipherpuzzles.com/static/images/0ac0538daa184b5481d35ac002e85d9c.svg\"\
+  >\n\t\t\t<img src=\"https://static.cipherpuzzles.com/static/images/0ac0538daa184b5481d35ac002e85d9c.svg\"\
+  >\n\t\t\t<img src=\"https://static.cipherpuzzles.com/static/images/0ac0538daa184b5481d35ac002e85d9c.svg\"\
+  >\n\t\t\t<img src=\"https://static.cipherpuzzles.com/static/images/0ac0538daa184b5481d35ac002e85d9c.svg\"\
+  >\n\t\t\t<img src=\"https://static.cipherpuzzles.com/static/images/0ac0538daa184b5481d35ac002e85d9c.svg\"\
+  >\n\t\t\t<img src=\"https://static.cipherpuzzles.com/static/images/0ac0538daa184b5481d35ac002e85d9c.svg\"\
+  >\n\t\t</p>\n\t</div>\n\t<div>\n\t\t<canvas class=\"canvas\" id=\"canvas6\" width=\"\
+  800\" height=\"300\"></canvas>\n\t\t<p><img src=\"https://static.cipherpuzzles.com/static/images/0ac0538daa184b5481d35ac002e85d9c.svg\"\
+  >\n\t\t\t<img src=\"https://static.cipherpuzzles.com/static/images/0ac0538daa184b5481d35ac002e85d9c.svg\"\
+  >\n\t\t\t<img src=\"https://static.cipherpuzzles.com/static/images/fdb40c12425c4e609299b8de63a51348.svg\"\
+  >\n\t\t\t<img src=\"https://static.cipherpuzzles.com/static/images/0ac0538daa184b5481d35ac002e85d9c.svg\"\
+  >\n\t\t\t<img src=\"https://static.cipherpuzzles.com/static/images/0ac0538daa184b5481d35ac002e85d9c.svg\"\
+  >\n\t\t</p>\n\t</div>\n\t<div>\n\t\t<canvas class=\"canvas\" id=\"canvas8\" width=\"\
+  800\" height=\"800\"></canvas>\n\t\t<p>\n\t\t\t<img src=\"https://static.cipherpuzzles.com/static/images/0ac0538daa184b5481d35ac002e85d9c.svg\"\
+  >\n\t\t\t<img src=\"https://static.cipherpuzzles.com/static/images/0ac0538daa184b5481d35ac002e85d9c.svg\"\
+  >\n\t\t\t<img src=\"https://static.cipherpuzzles.com/static/images/fdb40c12425c4e609299b8de63a51348.svg\"\
+  >\n\t\t\t<img src=\"https://static.cipherpuzzles.com/static/images/0ac0538daa184b5481d35ac002e85d9c.svg\"\
+  >\n\t\t\t<img src=\"https://static.cipherpuzzles.com/static/images/0ac0538daa184b5481d35ac002e85d9c.svg\"\
+  >\n\t\t\t<img src=\"https://static.cipherpuzzles.com/static/images/0ac0538daa184b5481d35ac002e85d9c.svg\"\
+  >\n\t\t\t<img src=\"https://static.cipherpuzzles.com/static/images/0ac0538daa184b5481d35ac002e85d9c.svg\"\
+  >\n\t\t</p>\n\t</div>\n\t<div>\n\t\t<canvas class=\"canvas\" id=\"canvas2\" width=\"\
+  800\" height=\"300\"></canvas>\n\t\t<p><img src=\"https://static.cipherpuzzles.com/static/images/0ac0538daa184b5481d35ac002e85d9c.svg\"\
+  >\n\t\t<img src=\"https://static.cipherpuzzles.com/static/images/fdb40c12425c4e609299b8de63a51348.svg\"\
+  >\n\t\t<img src=\"https://static.cipherpuzzles.com/static/images/0ac0538daa184b5481d35ac002e85d9c.svg\"\
+  >\n\t\t<img src=\"https://static.cipherpuzzles.com/static/images/0ac0538daa184b5481d35ac002e85d9c.svg\"\
+  >'\n\t\t<img src=\"https://static.cipherpuzzles.com/static/images/0ac0538daa184b5481d35ac002e85d9c.svg\"\
+  >&nbsp;&nbsp;&nbsp;&nbsp;\n\t\t<img src=\"https://static.cipherpuzzles.com/static/images/0ac0538daa184b5481d35ac002e85d9c.svg\"\
+  >\n\t\t<img src=\"https://static.cipherpuzzles.com/static/images/0ac0538daa184b5481d35ac002e85d9c.svg\"\
+  >\n\t\t<img src=\"https://static.cipherpuzzles.com/static/images/0ac0538daa184b5481d35ac002e85d9c.svg\"\
+  >\n\t\t<img src=\"https://static.cipherpuzzles.com/static/images/0ac0538daa184b5481d35ac002e85d9c.svg\"\
+  >\n\t\t<img src=\"https://static.cipherpuzzles.com/static/images/0ac0538daa184b5481d35ac002e85d9c.svg\"\
+  >\n\t\t<img src=\"https://static.cipherpuzzles.com/static/images/0ac0538daa184b5481d35ac002e85d9c.svg\"\
+  >\n\t\t<img src=\"https://static.cipherpuzzles.com/static/images/0ac0538daa184b5481d35ac002e85d9c.svg\"\
+  >\n\t</p>\n\t</div>\n\t<div>\n\t\t<canvas class=\"canvas\" id=\"canvas7\" width=\"\
+  800\" height=\"500\"></canvas>\n\t\t<p><img src=\"https://static.cipherpuzzles.com/static/images/0ac0538daa184b5481d35ac002e85d9c.svg\"\
+  >\n\t\t<img src=\"https://static.cipherpuzzles.com/static/images/0ac0538daa184b5481d35ac002e85d9c.svg\"\
+  >\n\t\t<img src=\"https://static.cipherpuzzles.com/static/images/0ac0538daa184b5481d35ac002e85d9c.svg\"\
+  >\n\t\t<img src=\"https://static.cipherpuzzles.com/static/images/fdb40c12425c4e609299b8de63a51348.svg\"\
+  >\n\t\t<img src=\"https://static.cipherpuzzles.com/static/images/0ac0538daa184b5481d35ac002e85d9c.svg\"\
+  >\n\t\t<img src=\"https://static.cipherpuzzles.com/static/images/0ac0538daa184b5481d35ac002e85d9c.svg\"\
+  >\n\t\t&nbsp;&nbsp;&nbsp;&nbsp;\n\t\t<img src=\"https://static.cipherpuzzles.com/static/images/0ac0538daa184b5481d35ac002e85d9c.svg\"\
+  >\n\t\t<img src=\"https://static.cipherpuzzles.com/static/images/0ac0538daa184b5481d35ac002e85d9c.svg\"\
+  >\n\t\t<img src=\"https://static.cipherpuzzles.com/static/images/0ac0538daa184b5481d35ac002e85d9c.svg\"\
+  >\n\t\t<img src=\"https://static.cipherpuzzles.com/static/images/0ac0538daa184b5481d35ac002e85d9c.svg\"\
+  >\n\t\t<img src=\"https://static.cipherpuzzles.com/static/images/0ac0538daa184b5481d35ac002e85d9c.svg\"\
+  >\n\t\t</p>\n\t</div>\n\t<div>\n\t\t<canvas class=\"canvas\" id=\"canvas1\" width=\"\
+  700\" height=\"300\"></canvas>\n\t\t<p>\n\t\t\t<img src=\"https://static.cipherpuzzles.com/static/images/fdb40c12425c4e609299b8de63a51348.svg\"\
+  >\n\t\t\t<img src=\"https://static.cipherpuzzles.com/static/images/0ac0538daa184b5481d35ac002e85d9c.svg\"\
+  >\n\t\t\t<img src=\"https://static.cipherpuzzles.com/static/images/0ac0538daa184b5481d35ac002e85d9c.svg\"\
+  >\n\t\t\t<img src=\"https://static.cipherpuzzles.com/static/images/0ac0538daa184b5481d35ac002e85d9c.svg\"\
+  >\n\t\t\t<img src=\"https://static.cipherpuzzles.com/static/images/0ac0538daa184b5481d35ac002e85d9c.svg\"\
+  >\n\t\t\t<img src=\"https://static.cipherpuzzles.com/static/images/0ac0538daa184b5481d35ac002e85d9c.svg\"\
+  >'\n\t\t\t<img src=\"https://static.cipherpuzzles.com/static/images/0ac0538daa184b5481d35ac002e85d9c.svg\"\
+  >&nbsp;&nbsp;&nbsp;&nbsp;\n\t\t\t<img src=\"https://static.cipherpuzzles.com/static/images/0ac0538daa184b5481d35ac002e85d9c.svg\"\
+  >\n\t\t\t<img src=\"https://static.cipherpuzzles.com/static/images/0ac0538daa184b5481d35ac002e85d9c.svg\"\
+  >\n\t\t\t<img src=\"https://static.cipherpuzzles.com/static/images/0ac0538daa184b5481d35ac002e85d9c.svg\"\
+  >\n\t\t\t<img src=\"https://static.cipherpuzzles.com/static/images/0ac0538daa184b5481d35ac002e85d9c.svg\"\
+  >\n\t\t\t<img src=\"https://static.cipherpuzzles.com/static/images/0ac0538daa184b5481d35ac002e85d9c.svg\"\
+  >\n\t\t\t<img src=\"https://static.cipherpuzzles.com/static/images/0ac0538daa184b5481d35ac002e85d9c.svg\"\
+  >\n\t\t</p>\n\t</div>\n\t<div>\n\t\t<canvas class=\"canvas\" id=\"canvas4\" width=\"\
+  650\" height=\"700\"></canvas>\n\t\t<p>\n\t\t\t<img src=\"https://static.cipherpuzzles.com/static/images/0ac0538daa184b5481d35ac002e85d9c.svg\"\
+  >\n\t\t\t<img src=\"https://static.cipherpuzzles.com/static/images/fdb40c12425c4e609299b8de63a51348.svg\"\
+  >\n\t\t\t<img src=\"https://static.cipherpuzzles.com/static/images/0ac0538daa184b5481d35ac002e85d9c.svg\"\
+  >\n\t\t\t<img src=\"https://static.cipherpuzzles.com/static/images/0ac0538daa184b5481d35ac002e85d9c.svg\"\
+  >\n\t\t\t<img src=\"https://static.cipherpuzzles.com/static/images/0ac0538daa184b5481d35ac002e85d9c.svg\"\
+  >\n\t\t</p>\n\t</div>\n\t<div>\n\t\t<canvas class=\"canvas\" id=\"canvas5\" width=\"\
+  800\" height=\"800\"></canvas>\n\t\t<p>\n\t\t\t<img src=\"https://static.cipherpuzzles.com/static/images/0ac0538daa184b5481d35ac002e85d9c.svg\"\
+  >\n\t\t\t<img src=\"https://static.cipherpuzzles.com/static/images/0ac0538daa184b5481d35ac002e85d9c.svg\"\
+  >\n\t\t\t<img src=\"https://static.cipherpuzzles.com/static/images/0ac0538daa184b5481d35ac002e85d9c.svg\"\
+  >\n\t\t\t<img src=\"https://static.cipherpuzzles.com/static/images/0ac0538daa184b5481d35ac002e85d9c.svg\"\
+  >\n\t\t\t<img src=\"https://static.cipherpuzzles.com/static/images/fdb40c12425c4e609299b8de63a51348.svg\"\
+  >\n\t\t\t<img src=\"https://static.cipherpuzzles.com/static/images/0ac0538daa184b5481d35ac002e85d9c.svg\"\
+  >\n\t\t\t&nbsp;&nbsp;&nbsp;&nbsp;\n\t\t\t<img src=\"https://static.cipherpuzzles.com/static/images/0ac0538daa184b5481d35ac002e85d9c.svg\"\
+  >\n\t\t\t<img src=\"https://static.cipherpuzzles.com/static/images/0ac0538daa184b5481d35ac002e85d9c.svg\"\
+  >\n\t\t\t<img src=\"https://static.cipherpuzzles.com/static/images/0ac0538daa184b5481d35ac002e85d9c.svg\"\
+  >\n\t\t\t<img src=\"https://static.cipherpuzzles.com/static/images/0ac0538daa184b5481d35ac002e85d9c.svg\"\
+  >\n\t\t</p>\n\t</div>\n</div>\n\n<script>\n\t( function() {\n\tconst bees = [[new\
+  \ Image(), new Image()], [new Image(), new Image()]];\n\tconst wingspeed = 100;\n\
+  \tvar speed2a = 60;\n\tvar speed2b = 20;\n\tvar start2a = 30;\n\tvar start2b = 500;\n\
+  \tconst lineHeight = 250;\n\tvar size2a = 30;\n\tvar size2b = 10;\n\tvar zoommode\
+  \ = false;\n\tvar zoomedtime = null;\n\tvar zoomtime = null;\n\tvar zoomspeed =\
+  \ 1;\n\tvar zoomed = 0;\n\tconst size3a = 100;\n\tconst size3b = 50;\n\n\tfunction\
+  \ init() {\n\t\tbees[0][0].src = \"https://static.cipherpuzzles.com/static/images/0ac0538daa184b5481d35ac002e85d9c.svg\"\
+  ;\n\t\tbees[1][0].src = \"https://static.cipherpuzzles.com/static/images/fdb40c12425c4e609299b8de63a51348.svg\"\
+  ;\n\t\tbees[0][1].src = \"https://static.cipherpuzzles.com/static/images/cd78dd18b9aa41ee801f9938953296ab.svg\"\
+  ;\n\t\tbees[1][1].src = \"https://static.cipherpuzzles.com/static/images/b1b9109fc0bc49068bdf0ba709af05d8.svg\"\
+  ;\n\t\tzoomedtime = new Date();\n\t\tstepTime = new Date();\n\t\ttime5 = new Date();\n\
+  \t\tstart8 = new Date();\n\t\tinit6();\n\t\twindow.requestAnimationFrame(draw);\n\
+  \t}\n\tfunction drawbee(time, ctx, size=30, color=0, angle=0) {\n\t\tlet x = Math.round((time.getSeconds()\
+  \ * 1000 + time.getMilliseconds()) / wingspeed);\n\t\tlet phase = x % 2;\n\t\tctx.save();\n\
+  \t\tctx.rotate(angle);\n\t\tctx.translate(-size/2, -size/2);\n\t\tctx.drawImage(bees[color][phase],\
+  \ 0, 0, size, size);\n\t\tctx.restore();\n\t}\n\tfunction drawbeeu(time, ctx, size=30,\
+  \ color=0) {\n\t\tdrawbee(time, ctx, size, color, angle=0);\n\t}\n\tfunction drawbeer(time,\
+  \ ctx, size=30, color=0) {\n\t\tdrawbee(time, ctx, size, color, angle=Math.PI/2);\n\
+  \t}\n\tfunction drawbeel(time, ctx, size=30, color=0) {\n\t\tdrawbee(time, ctx,\
+  \ size, color, angle=-Math.PI/2);\n\t}\n\tfunction drawbeed(time, ctx, size=30,\
+  \ color=0) {\n\t\tdrawbee(time, ctx, size, color, angle=Math.PI);\n\t}\n\n\tconst\
+  \ maxangle = Math.PI / 4;\n\tconst height = 250;\n\tconst speed1 = 4;\n\tfunction\
+  \ drawbee11(time, ctx) {\n\t\tvar angle = Math.cos((time.getSeconds() + time.getMilliseconds()\
+  \ / 1000) * speed1) * maxangle;\n\t\tif (angle < 0) {\n\t\t\tangle = 0;\n\t\t}\n\
+  \t\tctx.save();\n\t\tctx.rotate(angle);\n\t\tctx.translate(0, height);\n\t\tdrawbee(time,\
+  \ ctx);\n\t\tctx.restore();\n\t}\n\tfunction drawbee15(time, ctx) {\n\t\tvar angle\
+  \ = Math.cos((time.getSeconds() + time.getMilliseconds() / 1000) * speed1)* maxangle;\n\
+  \t\tif (angle > 0) {\n\t\t\tangle = 0;\n\t\t}\n\t\tctx.save();\n\t\tctx.rotate(angle);\n\
+  \t\tctx.translate(0, height);\n\t\tdrawbee(time, ctx);\n\t\tctx.restore();\n\t}\n\
+  \tfunction draw1(time) {\n\t\tconst canvas = document.getElementById(\"canvas1\"\
+  )\n\t\tconst ctx = canvas.getContext(\"2d\");\n\t\tctx.clearRect(0, 0, canvas1.width,\
+  \ canvas1.height);\n\t\tctx.save();\n\t\tctx.translate(height, 0); \n\t\tdrawbee11(time,\
+  \ ctx);\n\t\tctx.translate(35, height);\n\t\tdrawbee(time, ctx);\n\t\tctx.translate(35,\
+  \ 0);\n\t\tdrawbee(time, ctx);\n\t\tctx.translate(35, 0);\n\t\tdrawbee(time, ctx);\n\
+  \t\tctx.translate(35, -height);\n\t\tdrawbee15(time, ctx);\n\t\tctx.restore();\n\
+  \t}\n\n\tfunction draw2(time) {\n\t\tconst canvas = document.getElementById(\"canvas2\"\
+  )\n\t\tconst ctx = canvas.getContext(\"2d\");\n\t\tctx.clearRect(0, 0, canvas.width,\
+  \ canvas.height);\n\t\tctx.strokeStyle = \"rgba(0, 255, 0, 1.0)\";\n\t\tctx.fillStyle\
+  \ = \"rgba(0, 255, 0, 1.0)\";\n\t\tctx.save();\n\t\t\n\t\tctx.beginPath();\n\t\t\
+  ctx.moveTo(0, lineHeight);\n\t\tctx.lineTo(canvas.width, lineHeight);\n\t\tctx.stroke();\n\
+  \n\t\tif (zoommode) {\n\t\t\tlet elapsedTime = (time - zoomtime) / 1000;\n\t\t\t\
+  let xa = start2b - (start2b - start2a) / zoomspeed * elapsedTime;\n\t\t\tlet endb\
+  \ = start2b + (start2b - start2a) / speed2a * speed2b;\n\t\t\tlet xb = endb - (endb\
+  \ - start2b) / zoomspeed * elapsedTime;\n\t\t\tlet sizemult = 1 + (speed2a/speed2b\
+  \ - 1) / zoomspeed * elapsedTime;\n\t\t\tlet size2a_tmp = size2a * sizemult;\n\t\
+  \t\tlet size2b_tmp = size2b * sizemult;\n\t\t\tctx.fillStyle = \"rgba(255, 0, 0,\
+  \ 1.0)\";\n\t\t\tctx.fillRect(xa - 1,lineHeight - 1,3,3);\n\t\t\tctx.fillRect(xb\
+  \ - 1,lineHeight - 1,3,3);\n\t\t\tif (xa <= start2a) {\n\t\t\t\tzoommode = false;\n\
+  \t\t\t\tzoomedtime = time;\n\t\t\t\tsize2a = size2a_tmp;\n\t\t\t\tsize2b = size2b_tmp;\n\
+  \t\t\t\tspeed2a *= 1.5;\n\t\t\t\tspeed2b *= 1.5;\n\t\t\t\tzoomed += 1;\n\t\t\t\t\
+  // reset\n\t\t\t\tif (zoomed > 4) {\n\t\t\t\t\tsize2a = 30;\n\t\t\t\t\tsize2b =\
+  \ 10;\n\t\t\t\t\tspeed2a = 60;\n\t\t\t\t\tspeed2b = 20;\n\t\t\t\t\tzoomed = 0;\n\
+  \t\t\t\t}\n\t\t\t}\n\n\t\t\tctx.translate(xa, lineHeight - size2a_tmp/2 - 10);\n\
+  \t\t\tdrawbeer(new Date(0), ctx, size2a_tmp);\n\t\t\tctx.restore();\n\t\t\tctx.save();\n\
+  \t\t\tctx.translate(xb, lineHeight - size2b_tmp/2 - 10);\n\t\t\tdrawbeer(new Date(0),\
+  \ ctx, size2b_tmp);\n\t\t} else {\n\t\t\tctx.fillRect(start2a - 1,lineHeight - 1,3,3);\n\
+  \t\t\tctx.fillRect(start2b - 1,lineHeight - 1,3,3);\n\t\t\tvar elapsedTime = (time\
+  \ - zoomedtime) / 1000;\n\t\t\tvar xa = elapsedTime * speed2a + start2a;\n\t\t\t\
+  var xb = elapsedTime * speed2b + start2b;\n\t\t\tctx.fillStyle = \"rgba(255, 0,\
+  \ 0, 1.0)\";\n\t\t\tctx.fillRect(xa - 1,lineHeight - 1,3,3);\n\t\t\tctx.fillRect(xb\
+  \ - 1,lineHeight - 1,3,3);\n\t\t\tctx.translate(xa, lineHeight - size2a/2 - 10);\n\
+  \t\t\tdrawbeer(time, ctx, size2a);\n\t\t\tctx.restore();\n\t\t\tctx.save();\n\t\t\
+  \tctx.translate(xb, lineHeight - size2b/2 - 10);\n\t\t\tdrawbeer(time, ctx, size2b);\n\
+  \n\t\t\tif (xa > start2b) {\n\t\t\t\tzoommode = true;\n\t\t\t\tzoomtime = time;\n\
+  \t\t\t}\n\t\t}\n\t\tctx.restore();\n\t}\n\n\tfunction draw3(time) {\n\t\tconst canvas\
+  \ = document.getElementById(\"canvas3\")\n\t\tconst ctx = canvas.getContext(\"2d\"\
+  );\n\t\tctx.clearRect(0, 0, canvas.width, canvas.height);\n\t\tctx.save();\n\t\t\
+  \n\t\tlet angle1 = -(((2 * Math.PI) / 60) * time.getSeconds() +\n\t\t    ((2 * Math.PI)\
+  \ / 60000) * time.getMilliseconds());\n\t\tlet angle2 = -(((2 * Math.PI) / 6) *\
+  \ time.getSeconds() +\n\t\t    ((2 * Math.PI) / 6000) * time.getMilliseconds());\n\
+  \n\t\tlet dark = Math.abs((angle2 - Math.PI / 2) % (Math.PI * 2)) < Math.PI / 10;\n\
+  \n\t\tctx.translate(canvas.width/2, canvas.height/2);\n\t\tdrawbee(time, ctx, size3a);\n\
+  \t\tctx.rotate(angle1);\n\t\tctx.translate(300, 0);\n\t\tdrawbee(time, ctx, size3b);\n\
+  \t\tctx.fillStyle = \"rgba(10, 10, 10, 0.6)\";\n\t\tif (dark) {\n\t\t\tctx.translate(-size3b/2,\
+  \ -size3b/2);\n\t\t\tctx.fillRect(0, 0, size3b, size3b);\n\t\t\tctx.translate(size3b/2,\
+  \ size3b/2);\n\t\t}\n\n\t\tctx.save();\n\t\tctx.rotate(angle2);\n\t\tctx.translate(0,\
+  \ 50);\n\t\tdrawbeer(time, ctx, 30);\n\t\tctx.restore();\n\n\t\tctx.restore();\n\
+  \t}\n\n\tvar step4 = 0;\n\tconst step4wait = 0.3;\n\tvar stepTime = null;\n\tfunction\
+  \ draw4(time) {\n\t\tconst canvas = document.getElementById(\"canvas4\")\n\t\tconst\
+  \ ctx = canvas.getContext(\"2d\");\n\t\tctx.clearRect(0, 0, canvas.width, canvas.height);\n\
+  \t\tctx.save();\n\t\tlet deltat = ((time - stepTime) / 500);\n\t\tif (deltat > 1\
+  \ + step4wait) {\n\t\t\tstep4 += 1;\n\t\t\tstep4 = step4 % 6;\n\t\t\tstepTime =\
+  \ time;\n\t\t\tdeltat = 0;\n\t\t} else if (deltat > 1) {\n\t\t\tdeltat = 1;\n\t\t\
+  }\n\n\t\tctx.save();\n\t\tif (step4 % 3 == 0) {\n\t\t\tctx.fillStyle = \"rgba(0,\
+  \ 255, 0, 1.0)\";\t\n\t\t} else {\n\t\t\tctx.fillStyle = \"rgba(0, 120, 0, 1.0)\"\
+  ;\t\n\t\t}\n\t\t\n\t\tctx.fillRect(100 + 200 * (step4 % 3), 100, 20, 20);\n\t\t\
+  ctx.restore();\n\n\t\tif (step4 == 0) {\n\t\t\tlet deltay = deltat * 300;\n\t\t\t\
+  ctx.save();\n\n\t\t\tctx.translate(100, 500 - deltay);\n\t\t\tdrawbeed(time, ctx,\
+  \ 50);\n\t\t\tctx.translate(0, 100);\n\t\t\tdrawbeeu(time, ctx, 50, 1);\n\n\t\t\t\
+  ctx.restore();\n\t\t\t\n\t\t\tctx.translate(170, 500);\n\t\t\tdrawbeed(time, ctx,\
+  \ 50);\n\t\t\tctx.translate(0, 100);\n\t\t\tdrawbeeu(time, ctx, 50, 1);\n\t\t} else\
+  \ if (step4 == 1) {\n\t\t\tctx.translate(100, 200);\n\t\t\tdrawbeed(time, ctx, 50);\n\
+  \t\t\tctx.translate(0, 100);\n\t\t\tdrawbeeu(time, ctx, 50, 1);\n\n\t\t\tlet deltay\
+  \ = 0;\n\t\t\tlet deltax = 0;\n\t\t\tlet bp = 0.65;\n\t\t\tlet bpy = 250;\n\t\t\t\
+  let bpx = 50;\n\t\t\tif (deltat < bp) {\n\t\t\t\tdeltat /= bp;\n\t\t\t\tdeltay =\
+  \ bpy * deltat;\n\t\t\t\tdeltax = bpx * deltat;\n\t\t\t} else {\n\t\t\t\tdeltay\
+  \ = bpy + (300-bpy) * (deltat - bp) / (1-bp);\n\t\t\t\tdeltax = bpx + (300-bpx)\
+  \ * (deltat - bp) / (1-bp);\n\t\t\t}\n\n\t\t\tctx.translate(70 + deltax, 200 - deltay);\n\
+  \t\t\tdrawbeed(time, ctx, 50);\n\t\t\tctx.translate(0, 100);\n\t\t\tdrawbeeu(time,\
+  \ ctx, 50, 1);\n\t\t} else if (step4 == 2) {\n\t\t\tctx.save();\n\t\t\tlet deltax\
+  \ = 300 * deltat;\n\t\t\tctx.translate(100 + deltax, 200);\n\t\t\tdrawbeed(time,\
+  \ ctx, 50);\n\t\t\tctx.translate(0, 100);\n\t\t\tdrawbeeu(time, ctx, 50, 1);\n\t\
+  \t\tctx.restore();\n\n\t\t\tctx.translate(470, 200);\n\t\t\tdrawbeed(time, ctx,\
+  \ 50);\n\t\t\tctx.translate(0, 100);\n\t\t\tdrawbeeu(time, ctx, 50, 1);\n\t\t} else\
+  \ if (step4 == 3) {\n\t\t\tctx.translate(400, 200);\n\t\t\tdrawbeed(time, ctx, 50);\n\
+  \t\t\tctx.save();\n\t\t\tctx.translate(0, 100);\n\t\t\tdrawbeeu(time, ctx, 50, 1);\n\
+  \t\t\tctx.restore();\n\t\t\tlet deltay = 300 * deltat;\n\t\t\tctx.translate(70,\
+  \ deltay);\n\t\t\tdrawbeed(time, ctx, 50);\n\t\t\tctx.translate(0, 100);\n\t\t\t\
+  drawbeeu(time, ctx, 50, 1);\n\t\t} else if (step4 == 4) {\n\t\t\tctx.translate(400,\
+  \ 200);\n\t\t\tctx.save();\n\t\t\tctx.translate(70, 300);\n\t\t\tdrawbeed(time,\
+  \ ctx, 50);\n\t\t\tctx.translate(0, 100);\n\t\t\tdrawbeeu(time, ctx, 50, 1);\n\t\
+  \t\tctx.restore();\n\n\t\t\tlet bp = 0.65;\n\t\t\tlet bpy = 250;\n\t\t\tlet bpx\
+  \ = 50;\n\t\t\tif (deltat < bp) {\n\t\t\t\tdeltat /= bp;\n\t\t\t\tdeltay = bpy *\
+  \ deltat;\n\t\t\t\tdeltax = bpx * deltat;\n\t\t\t} else {\n\t\t\t\tdeltay = bpy\
+  \ + (300-bpy) * (deltat - bp) / (1-bp);\n\t\t\t\tdeltax = bpx + (300-bpx) * (deltat\
+  \ - bp) / (1-bp);\n\t\t\t}\n\t\t\tctx.translate(-deltax, deltay);\n\t\t\tdrawbeed(time,\
+  \ ctx, 50);\n\t\t\tctx.translate(0, 100);\n\t\t\tdrawbeeu(time, ctx, 50, 1);\n\t\
+  \t} else if (step4 == 5) {\n\t\t\tctx.save();\n\t\t\tctx.translate(100, 500);\n\t\
+  \t\tdrawbeed(time, ctx, 50);\n\t\t\tctx.translate(0, 100);\n\t\t\tdrawbeeu(time,\
+  \ ctx, 50, 1);\n\t\t\tctx.restore();\n\t\t\tctx.translate(470, 500);\n\t\t\tlet\
+  \ deltax = -300 * deltat;\n\t\t\tctx.translate(deltax, 0);\n\t\t\tdrawbeed(time,\
+  \ ctx, 50);\n\t\t\tctx.translate(0, 100);\n\t\t\tdrawbeeu(time, ctx, 50, 1);\n\t\
+  \t}\n\n\t\tctx.restore();\n\t}\n\n\tconst height5_start = [10, 15, 16, 17, 0, 9,\
+  \ 6, 11, 12, 8, 13, 3, 7, 1, 19, 2, 5, 18, 4, 14];\n\tvar height5 = height5_start.slice();\n\
+  \tvar index5 = 0;\n\tvar bad5 = false;\n\tvar time5 = null;\n\tfunction draw5(time)\
+  \ {\n\t\tconst canvas = document.getElementById(\"canvas5\")\n\t\tconst ctx = canvas.getContext(\"\
+  2d\");\n\t\tctx.clearRect(0, 0, canvas.width, canvas.height);\n\t\tctx.save();\n\
+  \t\tlet deltat = ((time - time5) / 500);\n\t\tif (deltat > 1) {\n\t\t\tdeltat =\
+  \ 0;\n\t\t\tif (height5[index5] < height5[index5 + 1]) {\n\t\t\t\tlet tmp = height5[index5];\n\
+  \t\t\t\theight5[index5] = height5[index5 + 1];\n\t\t\t\theight5[index5 + 1] = tmp;\n\
+  \t\t\t\tbad5 = true;\n\t\t\t}\n\t\t\tindex5 += 1;\n\t\t\tindex5 = index5 % 19;\n\
+  \t\t\tif (index5 == 0) {\n\t\t\t\tif (!bad5) {\n\t\t\t\t\theight5 = height5_start.slice();\n\
+  \t\t\t\t}\n\t\t\t\tbad5 = false;\n\t\t\t}\n\t\t\ttime5 = new Date();\n\t\t}\n\t\t\
+  for (var i in height5) {\n\t\t\tlet deltax = 0;\n\t\t\tif (i == index5 || i == index5\
+  \ + 1) {\n\t\t\t\tif (height5[index5] < height5[index5 + 1]) {\n\t\t\t\t\tif (i\
+  \ == index5) {\n\t\t\t\t\t\tdeltax = deltat * 30;\n\t\t\t\t\t} else {\n\t\t\t\t\t\
+  \tdeltax = -deltat * 30;\n\t\t\t\t\t}\n\t\t\t\t}\n\t\t\t}\n\t\t\tctx.save();\n\t\
+  \t\tctx.translate(30 + i * 35 + deltax, 30 + height5[i] * 35);\n\t\t\tdrawbee(time,\
+  \ ctx);\n\t\t\tctx.restore();\n\t\t}\n\t\tif (height5[index5] < height5[index5 +\
+  \ 1]) {\n\t\t\tctx.fillStyle = \"rgba(255, 0, 0, 1.0)\";\t\n\t\t} else {\n\t\t\t\
+  ctx.fillStyle = \"rgba(0, 255, 0, 1.0)\";\t\n\t\t}\n\t\tctx.fillRect(30 + index5\
+  \ * 35, 750, 20, 20);\n\t\tctx.restore();\n\t}\n\n\tconst lineHeight6 = 220;\n\t\
+  const x6_init = 800;\n\tconst y6_init = 200;\n\tconst vx6_init = -180;\n\tconst\
+  \ vy6_init = -150;\n\tconst a6 = 600;\n\tvar x6 = null, y6 = null;\n\tvar time6\
+  \ = null;\n\tvar vx6 = null;\n\tvar vy6 = null;\n\tvar av6 = 5;\n\tvar av6b = 2;\n\
+  \tvar step6 = null;\n\tvar stoptime6 = null;\n\tvar jumped = false;\n\tvar angle6\
+  \ = -Math.PI/2;\n\tfunction init6() {\n\t\ttime6 = new Date();\n\t\tangle6 = -Math.PI/2;\n\
+  \t\tjumped = false;\n\t\tstep6 = 0;\n\t\tx6 = x6_init;\n\t\ty6 = y6_init;\n\t\t\
+  vx6 = vx6_init;\n\t\tvy6 = vy6_init;\n\t}\n\tfunction draw6(time) {\n\t\tlet elapsedTime\
+  \ = (time - time6) / 1000;\n\n\t\tconst canvas = document.getElementById(\"canvas6\"\
+  )\n\t\tconst ctx = canvas.getContext(\"2d\");\n\t\tctx.clearRect(0, 0, canvas.width,\
+  \ canvas.height);\n\t\tctx.strokeStyle = \"rgba(0, 255, 0, 1.0)\";\n\t\tctx.fillStyle\
+  \ = \"rgba(0, 255, 0, 1.0)\";\n\t\tctx.save();\n\t\t\n\t\tctx.beginPath();\n\t\t\
+  ctx.moveTo(0, lineHeight6);\n\t\tctx.lineTo(canvas.width, lineHeight6);\n\t\tctx.stroke();\n\
+  \n\t\tif (step6 <= 5) {\n\t\t\tx6 += elapsedTime * vx6;\n\t\t\ty6 += elapsedTime\
+  \ * vy6;\n\t\t\tvy6 += elapsedTime * a6;\n\t\t\tif (step6 > 3) {\n\t\t\t\tangle6\
+  \ += (elapsedTime * a6 / 300);\n\t\t\t}\n\t\t\tif (y6 > 200) {\n\t\t\t\tvy6 = vy6_init;\n\
+  \t\t\t\ty6 = 200;\n\t\t\t\tstep6++;\n\t\t\t\tif (step6 == 6) {\n\t\t\t\t\tstoptime6\
+  \ = time;\n\t\t\t\t\tangle6 = Math.PI/2;\n\t\t\t\t}\n\t\t\t}\n\t\t} else if (step6\
+  \ == 6) {\n\t\t\tif (time - stoptime6 > 1000) {\n\t\t\t\tstep6++;\n\t\t\t\tvy6 =\
+  \ -300;\n\t\t\t\tvx6 = 50;\n\t\t\t}\n\t\t} else if (step6 == 7) {\n\t\t\tx6 += elapsedTime\
+  \ * vx6;\n\t\t\ty6 += elapsedTime * vy6;\n\t\t\tvy6 += elapsedTime * a6;\n\t\t\t\
+  if (y6 < 150) {\n\t\t\t\tjumped = true;\n\t\t\t}\n\t\t\tif (jumped && y6 > 150)\
+  \ {\n\t\t\t\tstep6++;\n\t\t\t\tvx6 = 0;\n\t\t\t\tvy6 = -200;\n\t\t\t\tjumped = false;\n\
+  \t\t\t}\n\t\t} else if (step6 <= 10) {\n\t\t\tx6 += elapsedTime * vx6;\n\t\t\ty6\
+  \ += elapsedTime * vy6;\n\t\t\tvy6 += elapsedTime * a6;\n\t\t\tif (y6 < 150) {\n\
+  \t\t\t\tjumped = true;\n\t\t\t}\n\t\t\tif (jumped && y6 > 150 + step6 * 2) {\n\t\
+  \t\t\tstep6++;\n\t\t\t\tvx6 = 0;\n\t\t\t\tvy6 = -200;\n\t\t\t\tjumped = false;\n\
+  \t\t\t\tif (step6 == 11) {\n\t\t\t\t\tvy6 = -400;\n\t\t\t\t}\n\t\t\t}\n\t\t} else\
+  \ if (step6 == 11) {\n\t\t\tx6 += elapsedTime * vx6;\n\t\t\ty6 += elapsedTime *\
+  \ vy6;\n\t\t\tvy6 += elapsedTime * a6;\n\t\t\tif (y6 < 180) {\n\t\t\t\tjumped =\
+  \ true;\n\t\t\t}\n\t\t\tif (jumped && y6 >= 200) {\n\t\t\t\ty6 = 200;\n\t\t\t\t\
+  step6++;\n\t\t\t\tstoptime6 = time;\n\t\t\t}\n\t\t} else if (step6 == 12) {\n\t\t\
+  \tif (time - stoptime6 > 100) {\n\t\t\t\tstep6++;\n\t\t\t\tstoptime6 = time;\n\t\
+  \t\t}\n\t\t} else if (step6 == 13) {\n\t\t\tangle6 += elapsedTime * av6;\n\t\t\t\
+  if (angle6 >= Math.PI) {\n\t\t\t\tstep6++;\n\t\t\t}\n\t\t} else if (step6 == 14)\
+  \ {\n\t\t\tangle6 -= elapsedTime * av6;\n\t\t\tif (angle6 <= Math.PI / 2) {\n\t\t\
+  \t\tstep6++;\n\t\t\t\tstoptime6 = time;\n\t\t\t}\n\t\t} else if (step6 == 15) {\n\
+  \t\t\tif (time - stoptime6 > 300) {\n\t\t\t\tstep6++;\n\t\t\t}\n\t\t} else if (step6\
+  \ == 16) {\n\t\t\tangle6 += elapsedTime * av6b;\n\t\t\tif (angle6 >= Math.PI) {\n\
+  \t\t\t\tstep6++;\n\t\t\t\tstoptime6 = time;\n\t\t\t}\n\t\t}\n\n\t\tctx.translate(x6,\
+  \ y6);\n\t\tdrawbee(time, ctx, 30, 0, angle6);\n\n\t\tctx.restore();\n\n\t\tif (step6\
+  \ == 17) {\n\t\t\tlet opacity = (time - stoptime6) / 2000;\n\t\t\tif (opacity >\
+  \ 1) {\n\t\t\t\tstep6++;\n\t\t\t\tstoptime6 = time;\n\t\t\t}\n\t\t\tctx.fillStyle\
+  \ = \"rgba(0, 0, 0, \" + opacity + \")\";\n\t\t\tctx.fillRect(0, 0, canvas.width,\
+  \ canvas.height);\n\t\t} else if (step6 == 18) {\n\t\t\tctx.fillStyle = \"rgba(0,\
+  \ 0, 0, 1)\";\n\t\t\tctx.fillRect(0, 0, canvas.width, canvas.height);\n\t\t\tif\
+  \ (time - stoptime6 > 3000) {\n\t\t\t\tinit6();\n\t\t\t}\n\t\t}\n\n\t\ttime6 = time;\n\
+  \t}\n\n\n\tconst av7 = 1000;\n\tfunction drawCurve(time, ctx, x, y, r, s, start,\
+  \ end, spacing= 1.2, c=-1, upsidedown = false) {\n\t\tctx.save();\n\t\tctx.translate(x,\
+  \ y);\n\n\t\tlet t = time.getSeconds() * 1000 + time.getMilliseconds();\n\t\tlet\
+  \ n = Math.round(r * (end-start) / (s*spacing));\n\t\tlet ad = (end-start) / n;\n\
+  \t\tlet phase = (t / (av7*c) / r * 50) % ad;\n\t\tctx.rotate(start + phase);\n\t\
+  \tfor (let i = 0; i < n; i++) {\n\t\t\tctx.save();\n\t\t\tctx.translate(r, 0);\n\
+  \t\t\tif (upsidedown) {\n\t\t\t\tdrawbeed(time, ctx, s);\n\t\t\t} else {\n\t\t\t\
+  \tdrawbee(time, ctx, s);\n\t\t\t}\n\t\t\tctx.restore();\n\t\t\tctx.rotate(ad);\n\
+  \t\t}\n\t\tctx.restore();\n\t}\n\n\tfunction draw7(time) {\n\t\tconst canvas = document.getElementById(\"\
+  canvas7\")\n\t\tconst ctx = canvas.getContext(\"2d\");\n\t\tctx.clearRect(0, 0,\
+  \ canvas.width, canvas.height);\n\t\tctx.save();\n\n\t\tdrawCurve(time, ctx, 110,\
+  \ 40, 30, 30, 0, Math.PI * 2);\n\t\tctx.translate(110, 40);\n\t\tdrawbee(time, ctx,\
+  \ 20);\n\t\tctx.restore();\n\t\tctx.save();\n\t\tdrawCurve(time, ctx, 220, 30, 15,\
+  \ 20, 0, Math.PI * 2);\n\t\tdrawCurve(time, ctx, 215, 125, 30, 20, 0, Math.PI *\
+  \ 2);\n\t\tctx.translate(215, 125);\n\t\tdrawbee(time, ctx, 20);\n\t\tctx.restore();\n\
+  \t\tctx.save();\n\t\tdrawCurve(time, ctx, 320, 35, 25, 25, 0, Math.PI * 2);\n\t\t\
+  ctx.translate(320, 35);\n\t\tdrawbee(time, ctx, 20);\n\t\tctx.restore();\n\t\tctx.save();\n\
+  \t\tdrawCurve(time, ctx, 390, 50, 15, 20, 0, Math.PI * 2);\n\t\tdrawCurve(time,\
+  \ ctx, 540, 60, 30, 30, 0, Math.PI * 2);\n\t\tctx.translate(540, 60);\n\t\tdrawbee(time,\
+  \ ctx, 20);\n\t\tctx.restore();\n\t\tctx.save();\n\t\t\n\t\tdrawCurve(time, ctx,\
+  \ 760, 100, 50, 30, 0, Math.PI * 2);\n\t\tdrawCurve(time, ctx, 760, 100, 80, 25,\
+  \ 0, Math.PI * 2);\n\t\tdrawCurve(time, ctx, 760, 100, 110, 25, 0, Math.PI * 2);\n\
+  \t\tctx.translate(760, 100);\n\t\tdrawbeer(time, ctx, 50);\n\t\tctx.restore();\n\
+  \t\tctx.save();\n\n\t\tdrawCurve(time, ctx, 640, 160, 25, 25, 0, Math.PI * 2);\n\
+  \t\tctx.translate(640, 160);\n\t\tdrawbee(time, ctx, 20);\n\t\tctx.restore();\n\t\
+  \tctx.save();\n\n\t\tdrawCurve(time, ctx, 310, 230, 15, 15, 0, Math.PI * 2);\n\t\
+  \tdrawCurve(time, ctx, 20, 330, 15, 15, 0, Math.PI * 2);\n\t\t\n\t\tdrawCurve(time,\
+  \ ctx, 115, 350, 25, 25, 0, Math.PI * 2);\n\t\tctx.translate(115, 350);\n\t\tdrawbee(time,\
+  \ ctx, 20);\n\t\tctx.restore();\n\t\tctx.save();\n\t\tdrawCurve(time, ctx, 330,\
+  \ 330, 20, 30, 0, Math.PI * 2);\n\t\tdrawCurve(time, ctx, 330, 330, 50, 20, 0, Math.PI\
+  \ * 2);\n\n\t\tdrawCurve(time, ctx, 115, 100, 120, 20,  Math.PI * 0.35, Math.PI\
+  \ * 1, 1.7);\n\t\tdrawCurve(time, ctx, 115, 140, 110, 20,  Math.PI * 0.3, Math.PI\
+  \ * 1, 1.7);\n\t\tdrawCurve(time, ctx, 115, 170, 110, 20,  Math.PI / 4, Math.PI\
+  \ * 1, 1.8);\n\t\tdrawCurve(time, ctx, 115, 200, 110, 20,  Math.PI / 4, Math.PI\
+  \ * 1, 1.8);\n\n\t\tdrawCurve(time, ctx, 450, 460, 330, 20,  Math.PI * 1.25, Math.PI\
+  \ * 1.6, 1.9, 1, true)\n\t\tdrawCurve(time, ctx, 450, 440, 330, 20,  Math.PI * 1.25,\
+  \ Math.PI * 1.6, 1.9, 1, true)\n\t\tdrawCurve(time, ctx, 450, 480, 330, 20,  Math.PI\
+  \ * 1.25, Math.PI * 1.6, 1.9, 1, true);\n\n\t\tdrawCurve(time, ctx, 520, 200, 65,\
+  \ 20,  -Math.PI * 0.4, Math.PI * 0.91, 1.5, 1, true);\n\t\tdrawCurve(time, ctx,\
+  \ 520, 200, 45, 20,  -Math.PI * 0.4, Math.PI * 0.85, 1.5, 1, true);\n\n\t\tdrawCurve(time,\
+  \ ctx, 420, 245, 40, 20,  Math.PI * 0.8, Math.PI * 1.98, 1.4);\n\t\tdrawCurve(time,\
+  \ ctx, 420, 245, 20, 20,  Math.PI * 1, Math.PI * 2.2, 1.4);\n\n\t\tdrawCurve(time,\
+  \ ctx, 490, 230, 75, 20,  Math.PI * 0.25, Math.PI * 0.95, 1.4);\n\t\tdrawCurve(time,\
+  \ ctx, 490, 230, 95, 20,  Math.PI * 0.2, Math.PI * 0.95, 1.4);\n\n\t\tdrawCurve(time,\
+  \ ctx, 610, 293, 35, 20,  Math.PI * 0, Math.PI * 2, 1.4, 1, true);\n\t\tdrawCurve(time,\
+  \ ctx, 610, 293, 15, 20,  Math.PI * 0, Math.PI * 2, 1.4, 1, true);\n\n\t\tctx.restore();\n\
+  \t}\n\n\n\tfunction drawline(time, ctx, x, y, angle, color, bend=false) {\n\t\t\
+  ctx.save();\n\t\tctx.translate(x, y);\n\t\tctx.rotate(angle);\n\t\tctx.translate(-140,\
+  \ 0);\n\t\tfor (let i = 0; i < 4; i++) {\n\t\t\tdrawbeer(time, ctx, size=30, color=color);\n\
+  \t\t\tctx.translate(40, 0);\n\t\t}\n\t\tif (bend) {\n\t\t\tctx.restore();\n\t\t\t\
+  ctx.save();\n\t\t\tctx.translate(x, y);\n\t\t\tctx.rotate(-angle);\n\t\t\tctx.translate(20,\
+  \ 0);\n\t\t}\n\n\t\tfor (let i = 0; i < 3; i++) {\n\t\t\tdrawbeer(time, ctx, size=30,\
+  \ color=color);\n\t\t\tctx.translate(40, 0);\n\t\t}\n\t\t\n\t\tctx.restore();\n\n\
+  \t}\n\n\tconst speed8 = 2;\n\tconst numsteps8 = 6;\n\tvar start8 = null;\n\tfunction\
+  \ draw8(time) {\n\t\tconst canvas = document.getElementById(\"canvas8\")\n\t\tconst\
+  \ ctx = canvas.getContext(\"2d\");\n\t\tctx.clearRect(0, 0, canvas.width, canvas.height);\n\
+  \t\tctx.save();\n\n\t\tlet tmp = ((time - start8) / 1000 / 2) % numsteps8;\n\t\t\
+  let step = Math.floor(tmp);\n\t\tlet elapsedTime = tmp - step;\n\n\t\tif (step ==\
+  \ 0) {\n\t\t\tdrawline(time, ctx, 400, 350, 0, 0);\n\t\t\tdrawline(time, ctx, 400,\
+  \ 450, 0, 1);\n\t\t} else if (step == 1) {\n\t\t\tlet angle = Math.PI / 8 * elapsedTime;\n\
+  \t\t\tdrawline(time, ctx, 400, 350, angle, 0);\n\t\t\tdrawline(time, ctx, 400, 450,\
+  \ angle, 1);\n\t\t\tdrawline(time, ctx, 400, 350, -angle, 0);\n\t\t\tdrawline(time,\
+  \ ctx, 400, 450, -angle, 1);\n\t\t} else if (step == 2) {\n\t\t\tlet deltay = 50\
+  \ * elapsedTime;\n\t\t\tlet deltax = 200 * elapsedTime;\n\t\t\tdrawline(time, ctx,\
+  \ 400 + deltax, 350 + deltay, Math.PI / 8, 0);\n\t\t\tdrawline(time, ctx, 400 -\
+  \ deltax, 450 - deltay, Math.PI / 8, 1);\n\t\t\tdrawline(time, ctx, 400 + deltax,\
+  \ 350 + deltay, -Math.PI / 8, 0);\n\t\t\tdrawline(time, ctx, 400 - deltax, 450 -\
+  \ deltay, -Math.PI / 8, 1);\n\t\t} else if (step == 3) {\n\t\t\tlet deltay = 200\
+  \ * elapsedTime;\n\t\t\tlet deltax = 50 * elapsedTime;\n\t\t\tlet angle = Math.PI\
+  \ / 4 * elapsedTime;\n\t\t\tdrawline(time, ctx, 600 - deltax, 400 + deltay, -Math.PI\
+  \ / 8 + angle, 0, true);\n\t\t\tdrawline(time, ctx, 200 + deltax, 400 + deltay,\
+  \ -Math.PI / 8 + angle, 1, true);\n\t\t\tdrawline(time, ctx, 600 - deltax, 400 -\
+  \ deltay, +Math.PI / 8 - angle, 0, true);\n\t\t\tdrawline(time, ctx, 200 + deltax,\
+  \ 400 - deltay, +Math.PI / 8 - angle, 1, true);\n\t\t} else if (step == 4) {\n\t\
+  \t\tlet angle = Math.PI / 8 * (1 - elapsedTime);\n\t\t\tlet deltay1 = 150 * elapsedTime;\n\
+  \t\t\tlet deltay2 = 50 * elapsedTime;\n\t\t\tlet deltax = 150 * elapsedTime;\n\t\
+  \t\tdrawline(time, ctx, 550 - deltax, 600 + deltay2, angle, 0, true);\n\t\t\tdrawline(time,\
+  \ ctx, 250 + deltax, 600 + deltay1, angle, 1, true);\n\t\t\tdrawline(time, ctx,\
+  \ 550 - deltax, 200 - deltay1, -angle, 0, true);\n\t\t\tdrawline(time, ctx, 250\
+  \ + deltax, 200 - deltay2, -angle, 1, true);\n\t\t} else if (step == 5) {\n\t\t\t\
+  let deltay = 300 * elapsedTime;\n\t\t\tdrawline(time, ctx, 400, 650 - deltay, 0,\
+  \ 0);\n\t\t\tdrawline(time, ctx, 400, 750 - deltay, 0, 1);\n\t\t\tdrawline(time,\
+  \ ctx, 400, 50 - deltay, 0, 0);\n\t\t\tdrawline(time, ctx, 400, 150 - deltay, 0,\
+  \ 1);\n\t\t}\n\t\tctx.restore();\n\t}\n\n\tfunction draw() {\n\t\tconst time = new\
+  \ Date();\n\t\tdraw1(time);\n\t\tdraw2(time);\n\t\tdraw3(time);\n\t\tdraw4(time);\n\
+  \t\tdraw5(time);\n\t\tdraw6(time);\n\t\tdraw7(time);\n\t\tdraw8(time);\n\t\twindow.requestAnimationFrame(draw);\n\
+  \t}\n\tinit();\n\t})();\n</script>\n\n"
+content-type: 1
+desc: 外
+extend-data: 8,8,8,8
+links:
+- path: ccbc13/index
+  title: 索引页
+  type: index
+- path: ccbc13/pages/ccbc14
+  title: CCBC-14
+  type: page
+tips:
+- content: 天文
+  title: 第一张图的内容范围
+- content: 动画电影
+  title: 第二张图的内容范围
+- content: 生物
+  title: 第三张图的内容范围
+- content: 哲学/数学
+  title: 第四张图的内容范围
+- content: 美术
+  title: 第五张图的内容范围
+- content: 物理
+  title: 第六张图的内容范围
+- content: 舞蹈
+  title: 第七张图的内容范围
+- content: 编程算法
+  title: 第八张图的内容范围
+title: 大蜜蜂
+type: problem

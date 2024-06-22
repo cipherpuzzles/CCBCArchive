@@ -1,0 +1,18 @@
+answer: COLUMBARIUM
+content:
+- "<div class=\"ccbcstylewrapper\">\n    亡口乚凵从乃闩尺工凵从\n</div>"
+content-type: 1
+desc: UMi
+extend-data: null
+links:
+- path: ccbc13/index
+  title: 索引页
+  type: index
+- path: ccbc13/pages/asteroid
+  title: 小行星
+  type: page
+tips:
+- content: 每个汉字象形一个英文字母
+  title: 我毫无思路
+title: ⭐
+type: problem

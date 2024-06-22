@@ -1,0 +1,118 @@
+additional-answers:
+- answer: 挑选特征相关再三进制转换
+  extra: ''
+  message: 这是本题的中间答案。
+answer: REVIVE
+answer-analysis: "<style>\n#answerkey th {\n    text-align: center;\n    font-weight:\
+  \ bold;\n    vertical-align: middle;\n    padding: 3px 10px;\n}\n#answerkey td {\n\
+  \    border-style: solid none;\n    border-width: thin;\n    text-align: center;\n\
+  \    vertical-align: middle;\n    padding: 3px 9px;\n}\n</style>\n\n示例提示了三种词语变换：读音韵母和声调相同，字形相似，意义相关。在下面每行中自行确认音形义对应，每组词（称之为第一代）得到三个词（称之为第二代）后，可以用每组三个词再做一遍各得到一个词（称之为第三代），六组连起来得到`挑选特征相关再三进制转换`。\n\
+  \n可以看出，第三代的音形义可以追溯到第一代（虽然有时遗传两代后会有些许偏差），例如第一组答案“挑选”的音来自第一代“糕点”，形来自第一代“桃园”，义来自第一代“斟酌”。提取这三个第一代在格子里的位置，从左到右算作\
+  \ 0、1、2 的话，我们可以得到一个三进制数字（“挑选”的例子里是 200），转换成英文字母即可得到最终答案 `REVIVE` 。  \n\n下表用<span\
+  \ style=\"background-color:#844\">红</span><span style=\"background-color:#484\"\
+  >绿</span><span style=\"background-color:#448\">蓝</span>分别表示音形义。\n\n<table id=\"\
+  answerkey\">\n<thead><th>分组</th><th>2</th><th>1</th><th>0</th><th>答案</th><th>答案</th><th>三进制</th><th>提取字母</th></thead>\n\
+  <tr><td rowspan=3>1</td><td bgcolor=#844><font color=yellow>糕点</font></td><td bgcolor=#484>猎食</td><td\
+  \ bgcolor=#448>门镜</td><td bgcolor=#844>猫眼</td><td rowspan=3>挑选</td><td rowspan=3>200</td><td\
+  \ rowspan=3>R</td></tr>\n<tr><td bgcolor=#448>跃进</td><td bgcolor=#844>票选</td><td\
+  \ bgcolor=#484><font color=yellow>桃园</font></td><td bgcolor=#484>跳远</td></tr>\n\
+  <tr><td bgcolor=#844>学舌</td><td bgcolor=#484>摘译</td><td bgcolor=#448><font color=yellow>斟酌</font></td><td\
+  \ bgcolor=#448>抉择</td></tr>\n<tr><td rowspan=3>2</td><td bgcolor=#484>讨打</td><td\
+  \ bgcolor=#448>照明</td><td bgcolor=#844><font color=yellow>册封</font></td><td bgcolor=#844>射灯</td><td\
+  \ rowspan=3>特征</td><td rowspan=3>012</td><td rowspan=3>E</td></tr>\n<tr><td bgcolor=#484>胜负</td><td\
+  \ bgcolor=#448><font color=yellow>特点</font></td><td bgcolor=#844>病逝</td><td bgcolor=#448>性质</td></tr>\n\
+  <tr><td bgcolor=#484><font color=yellow>诗词</font></td><td bgcolor=#448>上岗</td><td\
+  \ bgcolor=#844>石凳</td><td bgcolor=#484>持证</td></tr>\n<tr><td rowspan=3>3</td><td\
+  \ bgcolor=#484><font color=yellow>殂夭</font></td><td bgcolor=#448>翌日</td><td bgcolor=#844>平添</td><td\
+  \ bgcolor=#484>明天</td><td rowspan=3>相关</td><td rowspan=3>211</td><td rowspan=3>V</td></tr>\n\
+  <tr><td bgcolor=#448>疆土</td><td bgcolor=#844><font color=yellow>香干</font></td><td\
+  \ bgcolor=#484>河上</td><td bgcolor=#844>江山</td></tr>\n<tr><td bgcolor=#484>奇迹</td><td\
+  \ bgcolor=#448><font color=yellow>涉及</font></td><td bgcolor=#844>边沿</td><td bgcolor=#448>牵连</td></tr>\n\
+  <tr><td rowspan=3>4</td><td bgcolor=#844>称呼</td><td bgcolor=#484><font color=yellow>吏人</font></td><td\
+  \ bgcolor=#448>巡者</td><td bgcolor=#484>更夫</td><td rowspan=3>再三</td><td rowspan=3>100</td><td\
+  \ rowspan=3>I</td></tr>\n<tr><td bgcolor=#844>感悟</td><td bgcolor=#484>友爱</td><td\
+  \ bgcolor=#448><font color=yellow>屡次</font></td><td bgcolor=#448>反复</td></tr>\n\
+  <tr><td bgcolor=#484>荒草</td><td bgcolor=#448>食谱</td><td bgcolor=#844><font color=yellow>泰山</font></td><td\
+  \ bgcolor=#844>菜单</td></tr>\n<tr><td rowspan=3>5</td><td bgcolor=#448><font color=yellow>结绳</font></td><td\
+  \ bgcolor=#844>庇护</td><td bgcolor=#484>起敬</td><td bgcolor=#448>记数</td><td rowspan=3>进制</td><td\
+  \ rowspan=3>211</td><td rowspan=3>V</td></tr>\n<tr><td bgcolor=#448>这阵</td><td bgcolor=#844><font\
+  \ color=yellow>信士</font></td><td bgcolor=#484>达旦</td><td bgcolor=#844>近日</td></tr>\n\
+  <tr><td bgcolor=#844>想要</td><td bgcolor=#484><font color=yellow>拼刺</font></td><td\
+  \ bgcolor=#448>说至</td><td bgcolor=#484>讲到</td></tr>\n<tr><td rowspan=3>6</td><td\
+  \ bgcolor=#844>海燕</td><td bgcolor=#484>收支</td><td bgcolor=#448><font color=yellow>更替</font></td><td\
+  \ bgcolor=#448>改变</td><td rowspan=3>转换</td><td rowspan=3>012</td><td rowspan=3>E</td></tr>\n\
+  <tr><td bgcolor=#844>完蛋</td><td bgcolor=#484><font color=yellow>作响</font></td><td\
+  \ bgcolor=#448>通知</td><td bgcolor=#484>传唤</td></tr>\n<tr><td bgcolor=#844><font\
+  \ color=yellow>惨淡</font></td><td bgcolor=#484>威权</td><td bgcolor=#448>唏嘘</td><td\
+  \ bgcolor=#844>感叹</td></tr>\n</table>\n"
+content:
+- "<p>在培育两代后，有的花卉成功遗传了母本的某种特征，长得枝繁叶茂。</p>\r\n\r\n<style>\r\n#flowers td {\r\nwidth:50px;\r\
+  \ntext-align:center;\r\n}\r\n</style>\r\n<table id=\"flowers\"><tr><td>质地</td><td>不倒</td><td>譬如</td><td>─</td><td>示例</td><td></td><td></td></tr>\r\
+  \n<tr><td style=\"height: 30px\"></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>\r\
+  \n<tr><td>糕点</td><td>猎食</td><td>门镜</td><td>─</td><td><img src=\"/ccbc13/images/CCBC-14/6e4073f9319245caafaba2696af19f30.webp\"\
+  ></td><td>╲</td><td></td></tr>\r\n<tr><td>跃进</td><td>票选</td><td>桃园</td><td>─</td><td><img\
+  \ src=\"/ccbc13/images/CCBC-14/6e4073f9319245caafaba2696af19f30.webp\"></td><td>─</td><td><img\
+  \ src=\"/ccbc13/images/CCBC-14/6e4073f9319245caafaba2696af19f30.webp\"></td></tr>\r\
+  \n<tr><td>学舌</td><td>摘译</td><td>斟酌</td><td>─</td><td><img src=\"/ccbc13/images/CCBC-14/6e4073f9319245caafaba2696af19f30.webp\"\
+  ></td><td>╱</td><td></td></tr>\r\n<tr><td style=\"height: 30px\"></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>\r\
+  \n<tr><td>讨打</td><td>照明</td><td>册封</td><td>─</td><td><img src=\"/ccbc13/images/CCBC-14/6e4073f9319245caafaba2696af19f30.webp\"\
+  ></td><td>╲</td><td></td></tr>\r\n<tr><td>胜负</td><td>特点</td><td>病逝</td><td>─</td><td><img\
+  \ src=\"/ccbc13/images/CCBC-14/6e4073f9319245caafaba2696af19f30.webp\"></td><td>─</td><td><img\
+  \ src=\"/ccbc13/images/CCBC-14/6e4073f9319245caafaba2696af19f30.webp\"></td></tr>\r\
+  \n<tr><td>诗词</td><td>上岗</td><td>石凳</td><td>─</td><td><img src=\"/ccbc13/images/CCBC-14/6e4073f9319245caafaba2696af19f30.webp\"\
+  ></td><td>╱</td><td></td></tr>\r\n<tr><td style=\"height: 30px\"></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>\r\
+  \n<tr><td>殂夭</td><td>翌日</td><td>平添</td><td>─</td><td><img src=\"/ccbc13/images/CCBC-14/6e4073f9319245caafaba2696af19f30.webp\"\
+  ></td><td>╲</td><td></td></tr>\r\n<tr><td>疆土</td><td>香干</td><td>河上</td><td>─</td><td><img\
+  \ src=\"/ccbc13/images/CCBC-14/6e4073f9319245caafaba2696af19f30.webp\"></td><td>─</td><td><img\
+  \ src=\"/ccbc13/images/CCBC-14/6e4073f9319245caafaba2696af19f30.webp\"></td></tr>\r\
+  \n<tr><td>奇迹</td><td>涉及</td><td>边沿</td><td>─</td><td><img src=\"/ccbc13/images/CCBC-14/6e4073f9319245caafaba2696af19f30.webp\"\
+  ></td><td>╱</td><td></td></tr>\r\n<tr><td style=\"height: 30px\"></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>\r\
+  \n<tr><td>称呼</td><td>吏人</td><td>巡夜</td><td>─</td><td><img src=\"/ccbc13/images/CCBC-14/6e4073f9319245caafaba2696af19f30.webp\"\
+  ></td><td>╲</td><td></td></tr>\r\n<tr><td>感悟</td><td>友爱</td><td>屡次</td><td>─</td><td><img\
+  \ src=\"/ccbc13/images/CCBC-14/6e4073f9319245caafaba2696af19f30.webp\"></td><td>─</td><td><img\
+  \ src=\"/ccbc13/images/CCBC-14/6e4073f9319245caafaba2696af19f30.webp\"></td></tr>\r\
+  \n<tr><td>荒草</td><td>食谱</td><td>泰山</td><td>─</td><td><img src=\"/ccbc13/images/CCBC-14/6e4073f9319245caafaba2696af19f30.webp\"\
+  ></td><td>╱</td><td></td></tr>\r\n<tr><td style=\"height: 30px\"></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>\r\
+  \n<tr><td>结绳</td><td>庇护</td><td>起敬</td><td>─</td><td><img src=\"/ccbc13/images/CCBC-14/6e4073f9319245caafaba2696af19f30.webp\"\
+  ></td><td>╲</td><td></td></tr>\r\n<tr><td>这阵</td><td>信士</td><td>达旦</td><td>─</td><td><img\
+  \ src=\"/ccbc13/images/CCBC-14/6e4073f9319245caafaba2696af19f30.webp\"></td><td>─</td><td><img\
+  \ src=\"/ccbc13/images/CCBC-14/6e4073f9319245caafaba2696af19f30.webp\"></td></tr>\r\
+  \n<tr><td>想要</td><td>拼刺</td><td>说至</td><td>─</td><td><img src=\"/ccbc13/images/CCBC-14/6e4073f9319245caafaba2696af19f30.webp\"\
+  ></td><td>╱</td><td></td></tr>\r\n<tr><td style=\"height: 30px\"></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>\r\
+  \n<tr><td>海燕</td><td>收支</td><td>更替</td><td>─</td><td><img src=\"/ccbc13/images/CCBC-14/6e4073f9319245caafaba2696af19f30.webp\"\
+  ></td><td>╲</td><td></td></tr>\r\n<tr><td>完蛋</td><td>作响</td><td>通知</td><td>─</td><td><img\
+  \ src=\"/ccbc13/images/CCBC-14/6e4073f9319245caafaba2696af19f30.webp\"></td><td>─</td><td><img\
+  \ src=\"/ccbc13/images/CCBC-14/6e4073f9319245caafaba2696af19f30.webp\"></td></tr>\r\
+  \n<tr><td>惨淡</td><td>威权</td><td>唏嘘</td><td>─</td><td><img src=\"/ccbc13/images/CCBC-14/6e4073f9319245caafaba2696af19f30.webp\"\
+  ></td><td>╱</td><td></td></tr>\r\n</table>"
+content-type: 1
+desc: 复苏
+extend-data: 6,7,5,5
+links:
+- path: ccbc13/index
+  title: 索引页
+  type: index
+- path: ccbc13/pages/ccbc14
+  title: CCBC-14
+  type: page
+tips:
+- content: 三个词中，一个读音韵母和声调相同（质地），一个字形相似（不倒），一个意义相关（譬如）。
+  title: 例子是什么意思？
+- content: 最右侧的六朵花连接起来是下一步的提示。
+  title: 每组都做出来了之后呢？
+- content: 标注连续两次选择的变换相同的词，按照三进制得到答案。（从左到右对应2、1、0。）
+  title: 该如何得到最终答案？
+- content: 猫眼、跳远、抉择
+  title: 第一组的三个词是？
+- content: 射灯、性质、持证
+  title: 第二组的三个词是？
+- content: 明天、江山、牵连
+  title: 第三组的三个词是？
+- content: 更夫、反复、菜单
+  title: 第四组的三个词是？
+- content: 记数、近日、讲到
+  title: 第五组的三个词是？
+- content: 改变、传唤、感叹
+  title: 第六组的三个词是？
+title: 花卉培育
+type: problem

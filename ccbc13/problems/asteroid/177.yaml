@@ -1,0 +1,18 @@
+answer: REMINISCENT
+content: []
+content-type: 0
+desc: Men
+extend-data: null
+links:
+- path: ccbc13/index
+  title: 索引页
+  type: index
+- path: ccbc13/pages/asteroid
+  title: 小行星
+  type: page
+problem-image: /ccbc13/images/asteroid/195455f51bd743d8be34f86391d61f72.webp
+tips:
+- content: 两个新月都是同一个单词，中间的是MINION
+  title: 我毫无思路
+title: ⭐
+type: problem

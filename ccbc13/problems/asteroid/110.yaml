@@ -1,0 +1,18 @@
+answer: SCALE
+content: []
+content-type: 0
+desc: Cae
+extend-data: null
+links:
+- path: ccbc13/index
+  title: 索引页
+  type: index
+- path: ccbc13/pages/asteroid
+  title: 小行星
+  type: page
+problem-image: /ccbc13/images/asteroid/537f8a4d3cbe49b5bf2ad6d8a377c12c.webp
+tips:
+- content: PRINCESS, HANDLE, A, PRINCE, ASS, HANDLESS
+  title: 题目里的图片分别对应什么单词？
+title: ⭐
+type: problem

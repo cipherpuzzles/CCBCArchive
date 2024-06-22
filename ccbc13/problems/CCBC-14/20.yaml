@@ -1,0 +1,283 @@
+additional-answers:
+- answer: SGFUNCTION
+  extra: ''
+  message: 这是本题的中间答案。
+answer: DEEP DIVING
+answer-analysis: '# 概要
+
+
+  题目给出了10关，每关都是一个公平组合游戏。赢得一关后会获得一个字母。将字母连接可以得到中间答案 ```SG FUNCTION```。
+
+
+  搜索可以得知SG函数对于游戏的每个局面都给出一个值，定义如下：
+
+  * 考虑一个局面A的所有后继。A的SG值即为最小的非负整数x，满足x不是A的任何后继的SG值。
+
+
+  根据此定义，一个局面为必败局面当且仅当该局面的SG值等于0。
+
+
+  根据定义可以计算出一个局面的SG函数值。此外，一个非常有用的结论是 Sprague–Grundy 定理。定理的叙述如下：
+
+  * 对于两个局面A和B，定义其**和** A⊕B 为这样的一个游戏：起始局面是(A, B)，每次行动是选择其中一个局面进行行动。
+
+  * 则 A⊕B 的SG值等于A的SG值与B的SG值的异或。
+
+
+  利用SG定理可以大大简化部分关卡SG值的计算。
+
+
+  计算每关的SG函数，得到答案 ```DEEP DIVING```。
+
+
+  | 编号 | 规则 | 取胜策略 | 给出字母 | SG值计算方法 | SG值 | 提取 |
+
+  | --- | --- | --- | --- | --- | --- | --- |
+
+  | 1 | 翻一行内的若干格，最左格必须为黑 | 保持每列有偶数个黑格 | S | 取所有行的异或 | 4 | D |
+
+  | 2 | 翻同一行或同一列的两格，右或下的格子必须为黑 | 根据SG函数行动 | G | 取所有坐标的异或 | 5 | E |
+
+  | 3 | 翻长方形的四个顶点，右下格必须为黑 | 根据SG函数行动 | F | 查表或直接计算 | 5 | E |
+
+  | 4 | 翻一行内的若干黑格，或在两行翻同样数量的黑格；每行内必须从右向左翻 | 尝试或查表 | U | 查表或直接计算 | 16 | P |
+
+  | 5 | 翻一黑格或相邻的两黑格 | 第一步取中心格，然后对称操作 | N | 查表或直接计算 | 4 | D |
+
+  | 6 | 翻一黑格以及位于其右下（包括同行以及同列）的所有黑格 | “偷策略” | C | 编程 | 9 | I |
+
+  | 7 | 二进制，每次减1到26 | 计算或“偷策略” | T | 模27 | 22 | V |
+
+  | 8 | 翻马步相邻的两白格 | 尝试或编程 | I | 编程 | 9 | I |
+
+  | 9 | 翻三格，最右格必须为黑 | 根据SG函数行动 | O | 查表或直接计算 | 14 | N |
+
+  | 10 | 翻一个不与黑格邻接的白格 | 尝试或编程 | N | 编程 | 7 | G |
+
+
+  注意表格里的取胜策略以及SG值计算方法仅为推荐方法，实际上通过编程可以轻易得到所有的获胜策略以及计算出SG值。
+
+
+  # 关卡
+
+  ## 第1关
+
+  将每行转成二进制后，实际上是标准nim游戏。一个简单的获胜策略是保持每列有偶数个黑格。SG值计算方法为计算所有数的异或。
+
+
+  ## 第2关
+
+  经过变换后等价于标准nim：将每个黑格变为两堆石子，数量分别是该格上方的格子数量以及左边的格子数量。SG值计算方法为计算所有数的异或。
+
+
+  ## 第3关
+
+  此游戏是nim积的定义。可以查询nim积乘法表。
+
+
+  ## 第4关
+
+  此游戏被称为威佐夫游戏 (Wythoff''s game)。其必胜策略与黄金分割有关。SG值可以在 [oeis](https://oeis.org/A004481)
+  查到。
+
+
+  ## 第5关
+
+  此游戏被称为 Kayles（又称 octal game 0.77）。
+
+
+  由于初始局面所有格子都是黑的，一个简单的获胜策略是第一步取中心格，之后的步骤对称操作。
+
+
+  SG值可以在 [oeis](https://oeis.org/A002186) 查到。
+
+
+  ## 第6关
+
+  此游戏被称为 Chomp。一个简单的获胜策略是“偷策略”：随便翻右下角的一格，如果电脑下一步的操作在此格左上角，那么可以撤回，然后进行电脑选择的行动。
+
+
+  SG值的计算需要根据定义编程计算。
+
+
+  ## 第7关
+
+  转为二进制后，每一步可以减1到26。必败局面为27的倍数，SG值即为局面对应的数模27。可以根据此结论计算行动，也可以“偷策略”。
+
+
+  ## 第8关
+
+  每步翻马步相邻的两白格。本关不编程很难取胜。预期的获胜策略以及SG值计算方法均为编程。
+
+
+  ## 第9关
+
+  此游戏被称为 Triplets。SG值可以利用SG定理进行编程计算。
+
+
+  ## 第10关
+
+  翻一个不与黑格邻接的白格。经过一些尝试后可以获胜（难度比第8关稍低）。预期的SG值计算方法为编程。
+
+  '
+content: []
+content-type: 2
+desc: 潜水
+extend-data: 8,5,7,7
+links:
+- path: ccbc13/index
+  title: 索引页
+  type: index
+- path: ccbc13/pages/ccbc14
+  title: CCBC-14
+  type: page
+tips:
+- content: 每一关都是一个不同的组合游戏，通过点击若干个方格翻转它们的颜色，目标是让对方没有合法的操作。每个游戏里合法的操作可以通过尝试或者多次点击“随机选择”而推理得出。
+  title: 我毫无头绪
+- content: '你需要计算每个游戏初始局面的SG函数值。
+
+    关于SG函数的定义和计算，请参考 [链接](https://oi-wiki.org/math/game-theory/impartial-game/)。有些值可能需要编程计算。此外，SG定理会大大简化某些关卡的SG函数的计算。'
+  title: 我得到了中间答案，该如何提取
+- content: "共通规则：按照指定规则行动，当一方没有合法行动时游戏结束。以下为每个游戏的具体规则。\n\n| 编号 | 规则 |\n| --- | ---\
+    \ | \n| 1 | 翻一行内的若干格，最左格必须为黑 |\n| 2 | 翻同一行或同一列的两格，右或下的格子必须为黑 |\n| 3 | 翻长方形的四个顶点，右下格必须为黑\
+    \ |\n| 4 | 翻一行内的若干黑格，或在两行翻同样数量的黑格；每行内必须从右向左翻 |\n| 5 | 翻一黑格或相邻的两黑格 | 第一步取中心格，然后对称操作\
+    \ |\n| 6 | 翻一黑格以及位于其右下（包括同行以及同列）的所有黑格 |\n| 7 | 二进制，每次减1到26 |\n| 8 | 翻马步相邻的两白格\
+    \ |\n| 9 | 翻三格，最右格必须为黑 |\n| 10 | 翻一个不与黑格邻接的白格 |\n"
+  title: 每个游戏的规则是什么？
+title: 奇怪的游戏
+type: problem
+vue_script: "const { ref, inject, onMounted } = Vue;\r\nexport default {\r\n    setup()\
+  \ {\r\n        const numGames = 10;\r\n        const header = ref(\"\");\r\n\r\n\
+  \        const curGame = ref(-1);\r\n\r\n        const gameInfo = ref([]);\r\n \
+  \       for (let i = 0; i < numGames; i++) {\r\n            const info = {\r\n \
+  \               id: i,\r\n                won: false,\r\n                title:\
+  \ \"第\"+(i+1)+\"关\",\r\n                extra: \"\"\r\n            };\r\n      \
+  \      gameInfo.value.push(info);\r\n        }\r\n\r\n        const curGameInfo\
+  \ = {};\r\n\r\n        const curBoard = ref([[]]);\r\n\r\n        let messages =\
+  \ [];\r\n        let msgId = 0;\r\n\r\n        const message = ref(\"\");\r\n\r\n\
+  \        const addMessage = (msgs) => {\r\n            if (msgs == null) return;\r\
+  \n            function addSingleMessage(msg) {\r\n                messages.unshift(msgId.toString()\
+  \ + \". \" + msg);\r\n                msgId++;\r\n                while (messages.length\
+  \ > 100) {\r\n                  messages.pop();\r\n                }\r\n       \
+  \         message.value = messages.join(\"\\n\");\r\n            };\r\n        \
+  \    if ((typeof msgs) == \"string\") {\r\n                addSingleMessage(msgs);\r\
+  \n            } else {\r\n                for (let msg of msgs) {\r\n          \
+  \          addSingleMessage(msg);\r\n                }\r\n            }\r\n    \
+  \    }\r\n\r\n        const api = inject('api');\r\n        const defaultApiErrorAction\
+  \ = inject('defaultApiErrorAction');\r\n\r\n        const submit = async (query)\
+  \ => {\r\n            let res = await api('/spfunc/impartialgame/20', query, \"\
+  sp\"); //第三个参数设置为sp时调用node后端\r\n\r\n            let data = await res.json();\r\n\
+  \            if (data.status !== 1) {\r\n                defaultApiErrorAction(data);\r\
+  \n                return;\r\n            }\r\n\r\n            return data.data;\r\
+  \n        };\r\n\r\n        const selectGameScreen = async () => {\r\n         \
+  \   let data = await submit({\r\n                func: \"getWonStatus\"\r\n    \
+  \        });\r\n            curGame.value = -1;\r\n\r\n            let wons = data.wons;\r\
+  \n            let extras = data.extras;\r\n\r\n            for (let i = 0; i < numGames;\
+  \ i++) {\r\n                gameInfo.value[i].won = wons[i];\r\n               \
+  \ gameInfo.value[i].extra = extras[i];\r\n            }\r\n\r\n            header.value\
+  \ = \"选择关卡\";\r\n        };\r\n\r\n        const buildBoard = () => {\r\n      \
+  \      const nR = curGameInfo.nRow;\r\n            const nC = curGameInfo.nCol;\r\
+  \n            const isReverse = curGameInfo.isReverse;\r\n            let board\
+  \ = [];\r\n            for (let i = 0; i < nR; i++) {\r\n                let row\
+  \ = [];\r\n                for (let j = 0; j < nC; j++) {\r\n                  \
+  \  const id = i*nC + (isReverse?(nC-1-j):j);\r\n                    let cell = {one:\
+  \ false, selected: false, com_selected: false, id: id};\r\n                    row.push(cell);\r\
+  \n                }\r\n                board.push(row);\r\n            }\r\n   \
+  \         curBoard.value = board;\r\n        };\r\n\r\n        const updateState\
+  \ = (state) => {\r\n            for (let row of curBoard.value) {\r\n          \
+  \      for (let cell of row) {\r\n                    cell.one = (state>>cell.id)&1;\r\
+  \n                }\r\n            }\r\n        };\r\n\r\n        const updateMove\
+  \ = (move) => {\r\n            for (let row of curBoard.value) {\r\n           \
+  \     for (let cell of row) {\r\n                    cell.selected = (move>>cell.id)&1;\r\
+  \n                }\r\n            }\r\n        };\r\n\r\n        const updateComMove\
+  \ = (move) => {\r\n            for (let row of curBoard.value) {\r\n           \
+  \     for (let cell of row) {\r\n                    cell.com_selected = (move>>cell.id)&1;\r\
+  \n                }\r\n            }\r\n        };\r\n\r\n        const getMove\
+  \ = () => {\r\n            let move = 0;\r\n            for (let row of curBoard.value)\
+  \ {\r\n                for (let cell of row) {\r\n                    move |= (cell.selected<<cell.id);\r\
+  \n                }\r\n            }\r\n            return move;\r\n        };\r\
+  \n\r\n        const selectGame = async (gameId) => {\r\n            let data = await\
+  \ submit({\r\n                func: \"selectGame\",\r\n                gameId: gameId\r\
+  \n            });\r\n\r\n            curGame.value = gameId;\r\n            curGameInfo.nRow\
+  \ = data.gameInfo.nRow;\r\n            curGameInfo.nCol = data.gameInfo.nCol;\r\n\
+  \            curGameInfo.isReverse = data.gameInfo.isReverse;\r\n            buildBoard();\r\
+  \n\r\n            header.value = gameInfo.value[gameId].title;\r\n            updateState(data.state);\r\
+  \n            addMessage(data.message);\r\n        };\r\n\r\n        const restartGame\
+  \ = async () => {\r\n            let data = await submit({\r\n                func:\
+  \ \"restartGame\",\r\n                gameId: curGame.value\r\n            });\r\
+  \n\r\n            updateState(data.state);\r\n            updateMove(0);\r\n   \
+  \         updateComMove(0);\r\n            addMessage(data.message);\r\n       \
+  \ };\r\n\r\n        const clearSelection = async () => {\r\n            updateMove(0);\r\
+  \n            addMessage(\"已清空选择\");\r\n        };\r\n\r\n        const suggestMove\
+  \ = async () => {\r\n            let data = await submit({\r\n                func:\
+  \ \"suggestMove\",\r\n                gameId: curGame.value,\r\n            });\r\
+  \n            if (data.move) {\r\n                updateMove(data.move);\r\n   \
+  \         }\r\n            addMessage(data.message);\r\n        };\r\n\r\n     \
+  \   const executeMove = async () => {\r\n            const move = getMove();\r\n\
+  \            let data = await submit({\r\n                func: \"executeMove\"\
+  ,\r\n                gameId: curGame.value,\r\n                move: move\r\n  \
+  \          });\r\n\r\n            if (data.valid) {\r\n                updateState(data.state);\r\
+  \n                updateMove(0);\r\n                if (data.won) {\r\n        \
+  \            updateComMove(0);\r\n                    gameInfo.value[curGame.value].extra\
+  \ = data.extra;\r\n                } else {\r\n                    updateComMove(data.comMove);\r\
+  \n                }\r\n            }\r\n            addMessage(data.message);\r\n\
+  \        };\r\n\r\n        const undoMove = async () => {\r\n            let data\
+  \ = await submit({\r\n                func: \"undoMove\",\r\n                gameId:\
+  \ curGame.value\r\n            });\r\n            updateState(data.state);\r\n \
+  \           updateMove(0);\r\n            updateComMove(0);\r\n            addMessage(data.message);\r\
+  \n        };\r\n\r\n        const clearMsgBox = async () => {\r\n            messages.length\
+  \ = 0;\r\n            msgId = 0;\r\n            addMessage(\"消息将显示在此处\");\r\n  \
+  \      };\r\n\r\n        onMounted(() => {\r\n            selectGameScreen();\r\n\
+  \            clearMsgBox();\r\n        });\r\n\r\n        return {\r\n         \
+  \   header,\r\n            curGame,\r\n            gameInfo,\r\n            curBoard,\r\
+  \n            message,\r\n            selectGameScreen,\r\n            selectGame,\r\
+  \n            restartGame,\r\n            clearSelection,\r\n            suggestMove,\r\
+  \n            executeMove,\r\n            undoMove,\r\n            clearMsgBox\r\
+  \n        };\r\n    }\r\n}\r\n"
+vue_template: "<template>\r\n    <div class=\"main-puzzle-content\">\r\n        <div><i>你收到一盒奇怪的游戏。关卡之间似乎没有任何联系，但是却又隐隐约约有一些共性。</i></div>\r\
+  \n        <div><img src=\"/ccbc13/images/CCBC-14/cb5f206b1256406b98e51766e3c308ff.webp\"\
+  \ style=\"width:300px;margin-top:10px;margin-bottom:30px\"/></div>\r\n        <div\
+  \ id=\"header\"><h1 v-text=\"header\"></h1></div>\r\n        <div v-if=\"curGame\
+  \ == -1\" id=\"select_game\" class=\"gamegrid-container\">\r\n            <table\
+  \ id=\"select_game_grid\"><tbody>\r\n                <tr v-for=\"game in gameInfo\"\
+  >\r\n                    <td :class=\"{game_won: game.won}\" @click=\"selectGame(game.id)\"\
+  >{{game.title + game.extra}}</td>\r\n                </tr>\r\n            </tbody></table>\r\
+  \n        </div>\r\n        <div v-if=\"curGame != -1\" class=\"gamegrid-container\"\
+  >\r\n            <div id=\"playground\">\r\n                <table id=\"game_grid\"\
+  ><tbody>\r\n                    <tr v-for=\"row in curBoard\">\r\n             \
+  \           <td v-for=\"cell in row\" :class=\"{cell_zero: !cell.one, cell_one:\
+  \ cell.one, cell_selected: cell.selected, cell_com_selected: cell.com_selected}\"\
+  \ @click=\"cell.selected = !cell.selected\"></td>\r\n                    </tr>\r\
+  \n                </tbody></table>\r\n            </div>\r\n            <div id=\"\
+  command\" v-if=\"curGame!=-1\">\r\n                <button class=\"btn btn-primary\"\
+  \ @click=\"selectGameScreen()\">返回</button>\r\n                <button class=\"\
+  btn btn-primary\" @click=\"restartGame()\">重新开始</button>\r\n                <button\
+  \ class=\"btn btn-primary\" @click=\"clearSelection()\">清空选择</button>\r\n      \
+  \          <button class=\"btn btn-primary\" @click=\"suggestMove()\">随机选择</button>\r\
+  \n                <button class=\"btn btn-primary\" @click=\"executeMove()\">行动</button>\r\
+  \n                <button class=\"btn btn-primary\" @click=\"undoMove()\">撤销</button>\r\
+  \n            </div>\r\n        </div>\r\n        <div id=\"message_box\" class=\"\
+  gamegrid-container\">\r\n            <div><button class=\"btn btn-primary\" @click=\"\
+  clearMsgBox()\">清空消息</button></div>\r\n            <textarea rows=\"20\" disabled\
+  \ v-text=\"message\" id=\"textarea\"></textarea>\r\n        </div>\r\n    </div>\r\
+  \n</template>\r\n\r\n<style>\r\n.main-puzzle-content {\r\n  display: flex;\r\n \
+  \ flex-direction: column;\r\n  align-items: center;\r\n}\r\n.main-puzzle-content\
+  \ .gamegrid-container {\r\n  display: flex;\r\n  flex-direction: column;\r\n  align-items:\
+  \ center;\r\n}\r\n#header {\r\n  text-align: center;\r\n}\r\n\r\n#select_game_grid\
+  \ {\r\n  table-layout: fixed;\r\n  width: 100%;\r\n  max-width: 500px;\r\n  height:\
+  \ 500px;\r\n  margin-top: 10px;\r\n  margin-bottom: 10px;\r\n}\r\n\r\n#select_game_grid\
+  \ td {\r\n  border: 3px solid #0046ff;\r\n  text-align: center;\r\n  cursor: pointer;\r\
+  \n}\r\n\r\n#select_game_grid .game_hidden {\r\n  visibility: hidden;\r\n}\r\n\r\n\
+  #select_game_grid td:hover {\r\n  background-color: #ff4c4f;\r\n}\r\n\r\n#select_game_grid\
+  \ .game_won {\r\n  background-color: darkgreen;\r\n}\r\n\r\n#game_grid {\r\n  table-layout:\
+  \ fixed;\r\n  margin-top: 10px;\r\n  margin-bottom: 10px;\r\n  border-collapse:\
+  \ separate;\r\n}\r\n\r\n#game_grid td {\r\n  border: 2px solid #0046ff;\r\n  width:\
+  \ 50px;\r\n  height: 50px;\r\n  text-align: center;\r\n  cursor: pointer;\r\n}\r\
+  \n\r\n#game_grid .cell_com_selected {\r\n  border: 4px solid orange;\r\n}\r\n\r\n\
+  #game_grid .cell_selected {\r\n  border: 4px solid #ff4c4f;\r\n}\r\n\r\n#game_grid\
+  \ .cell_zero {\r\n  background-color: white;\r\n}\r\n\r\n#game_grid .cell_one {\r\
+  \n  background-color: black;\r\n}\r\n\r\n#command {\r\n  text-align: center;\r\n\
+  }\r\n\r\n#message_box {\r\n  width: 100%;\r\n}\r\n\r\n.main-puzzle-content button\
+  \ {\r\n  margin: 3px;\r\n}\r\n\r\n.main-puzzle-content textarea {\r\n  border: 3px\
+  \ solid #0046ff;\r\n  background-color: gray;\r\n  margin: 3px;\r\n  color: white;\r\
+  \n  width: 100%;\r\n  max-width: 500px;\r\n}\r\n</style>"

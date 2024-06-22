@@ -1,0 +1,18 @@
+answer: INDIFFERENTLY
+content: []
+content-type: 0
+desc: Del
+extend-data: null
+links:
+- path: ccbc13/index
+  title: 索引页
+  type: index
+- path: ccbc13/pages/asteroid
+  title: 小行星
+  type: page
+problem-image: /ccbc13/images/asteroid/565f53e4bb7547ce84a066700d6a1c02.webp
+tips:
+- content: 图片是一个英文单词将中间部分删除后的结果
+  title: 我毫无思路
+title: ⭐️
+type: problem

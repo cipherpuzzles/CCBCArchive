@@ -1,0 +1,25 @@
+answer: CAVERN
+content:
+- "<div class=\"ccbcstylewrapper\">\n    <p id=\"flavortext\"><b>孩子们</b>看了<b>动画片</b>后，各自发展出了<b>各色</b>的兴趣爱好。你正思索着是哪部动画片时，周围突然响起了掌声：<b>babababa...</b></p>\n\
+  \    <img src=\"/ccbc13/images/asteroid/f10da51a9afe426faeea9a2a6882a3f3.webp\"\
+  \ style=\"width:100%\">\n    <!-- <style>\n        #flavortext b {\n           \
+  \ font-size: 130%;\n        }\n    </style> \n    \n    <pre style=\"font-size:\
+  \ 72px\">\n    ????\t????\n    ????\t???️?\n    ????\t????‍♀️\n    ????\t????\n\
+  \    ??️??\t??‍♂️??\n    </pre>-->\n</div>"
+content-type: 1
+desc: CVn
+extend-data: null
+links:
+- path: ccbc13/index
+  title: 索引页
+  type: index
+- path: ccbc13/pages/asteroid
+  title: 小行星
+  type: page
+tips:
+- content: 提示里说的是《巴巴爸爸》这部动画，找到不同颜色的巴巴孩子及他们的爱好，将题目里的格子涂成 emoji 对应的颜色。
+  title: 我毫无头绪
+- content: 把所有颜色分成红黄蓝三个部分，然后按顺序象形。(顺序是【左边的红、黄、蓝】+【右边的红、黄、蓝】。）
+  title: 该如何提取
+title: ⭐
+type: problem

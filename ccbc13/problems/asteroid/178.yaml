@@ -1,0 +1,34 @@
+answer: YEARS LATER
+content:
+- "<style>\n    .wordle {\n        border-spacing: 5px;\n        border-collapse:\
+  \ separate;\n        margin-right: 30px;\n    }\n    .wordle td {\n        color:\
+  \ white;\n        width: 50px;\n        height: 50px;\n        background-color:\
+  \ #777;\n        text-align: center;\n\n    }\n    .wordle td.yellow {\n       \
+  \ background-color: #cb5;\n    }\n    .wordle td.green {\n        background-color:\
+  \ #6a6;\n    }\n</style>\n<div class=\"ccbcstylewrapper\">\n<div class=\"d-flex\"\
+  >\n<table class=\"wordle\">\n<tr><td class=\"yellow\">S</td><td>M</td><td class=\"\
+  green\">A</td><td class=\"green\">R</td><td>T</td></tr>\n<tr><td>F</td><td>O</td><td>L</td><td>K</td><td\
+  \ class=\"green\">S</td></tr>\n<tr><td class=\"yellow\">E</td><td>N</td><td>J</td><td>O</td><td\
+  \ class=\"yellow\">Y</td></tr>\n<tr><td>W</td><td>O</td><td class=\"yellow\">R</td><td>D</td><td\
+  \ class=\"yellow\">Y</td></tr>\n<tr><td>C</td><td>L</td><td>U</td><td class=\"yellow\"\
+  >E</td><td class=\"green\">S</td></tr>\n</table>\n\n<table class=\"wordle\">\n<tr><td>S</td><td>M</td><td\
+  \ class=\"yellow\">A</td><td class=\"yellow\">R</td><td class=\"yellow\">T</td></tr>\n\
+  <tr><td>F</td><td>O</td><td class=\"yellow\">L</td><td>K</td><td>S</td></tr>\n<tr><td\
+  \ class=\"yellow\">E</td><td>N</td><td>J</td><td>O</td><td>Y</td></tr>\n<tr><td>W</td><td>O</td><td\
+  \ class=\"yellow\">R</td><td>D</td><td>Y</td></tr>\n<tr><td>C</td><td class=\"yellow\"\
+  >L</td><td>U</td><td class=\"green\">E</td><td>S</td></tr>\n</table>\n</div>\n</div>"
+content-type: 1
+desc: Ara
+extend-data: null
+links:
+- path: ccbc13/index
+  title: 索引页
+  type: index
+- path: ccbc13/pages/asteroid
+  title: 小行星
+  type: page
+tips:
+- content: 左右各有一个 5 字母的单词，每一行代表猜测的单词以及猜测结果。绿色表示字母正确位置也正确，黄色表示单词有这个字母但是位置不对，深灰色则表示单词里没有这个字母。
+  title: 我毫无头绪，不知道这些颜色什么意思
+title: ⭐
+type: problem

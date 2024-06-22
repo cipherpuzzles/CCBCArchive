@@ -1,0 +1,18 @@
+answer: JAGUAR
+content: []
+content-type: 0
+desc: Aur
+extend-data: null
+links:
+- path: ccbc13/index
+  title: 索引页
+  type: index
+- path: ccbc13/pages/asteroid
+  title: 小行星
+  type: page
+problem-image: /ccbc13/images/asteroid/a765dc9276864ef5aba3be029ce62278.webp
+tips:
+- content: CAR, CARD, PEARL, PEAR, JAM, GUARD
+  title: 题目里的图片分别对应什么单词？
+title: ⭐
+type: problem

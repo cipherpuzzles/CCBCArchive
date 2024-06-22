@@ -1,0 +1,168 @@
+answer: 在星空深处的柏拉图式相爱
+answer-analysis: '这道题有很多入手点，下面给出一个比较合理的推理过程。
+
+
+  首先 *Double Planetoid* 这幅画画了两个四面体的穿插，那么很有可能需要把两个区的答案合起来看。通过观察我们可以发现两边似乎有一些答案意思有对应，例如
+  C-13 的 `BREEZE`（紫色非中心面） 和 C-14 的 `WINDS`（绿色中心面），或者 C-13 的 `WATER`（黄色中心面） 和 C-14
+  的 `DROWN`（蓝色非中心面）。另外可以注意到的是，这种对应都是一边是中心面，另一边是非中心面。观察 Double Planetoid 这幅画，我们会看见一个四面体的角是从另一个四面体的某一中心面冒出来的。我们可以由此想到，一个四面体的某一个角的三面跟另一个四面题的某一个中心面有对应，这样我们可以判断两个四面体穿插的具体方向。
+
+
+  那么我们来看刚才说的 `BREEZE` 和 `WINDS` 的对应。`BREEZE` 这个角上的其它两面答案是 `VENTILATION` 和 `LANDSCAPE`，`VENTILATION`
+  的确跟 `WINDS` 有关可以帮我们确认这个思路，然而 `LANDSCAPE` 似乎没有关系。这时需要联想和观察。题目里有一个小提示就是数字都是汉字，所以可以猜想到这题过程和答案很有可能是中文。如果我们把这几个单词翻译成中文，就能立刻看出角上三个答案跟
+  `WINDS=风` 的关系：`BREEZE=微风`，`VENTILATION=通风`，`LANDSCAPE=风景`。也就是说，中心面的答案翻译是一个字，而与它对应的角上的三个非中心面的答案翻译都是两个字，且其中一个字与中心面的字相同。
+
+
+  我们把所有单词都翻译成中文，中心面都是一个字而非中心面都是两个字，就会看到我们的思路是对的，所有的角都能在另一个四面体上找到相配的中心面：
+
+
+  <style>
+
+  .ak td, .ak th {
+
+  padding: 5px 10px;
+
+  }
+
+  </style>
+
+
+
+  <table class="ak">
+
+  <tr><th>#</th><th>C-13 答案</th><th>翻译</th><th>#</th><th>C-14 答案</th><th>翻译</th></tr>
+
+  <tr><td>1</td><td>NOODLE</td><td>面</td><td>17</td><td>JOB INTERVIEWING</td><td>面试</td></tr>
+
+  <tr><td>2</td><td>LANDSCAPE</td><td>风景</td><td>18</td><td>LIVING EXPENSES</td><td>用度</td></tr>
+
+  <tr><td>3</td><td>UPPERBODY</td><td>上身</td><td>19</td><td>DROWN</td><td>溺水</td></tr>
+
+  <tr><td>4</td><td>LANDLINE</td><td>座机</td><td>20</td><td>DEEP DIVING</td><td>潜水</td></tr>
+
+  <tr><td>5</td><td>SOVIET</td><td>苏</td><td>21</td><td>SAILORS</td><td>水手</td></tr>
+
+  <tr><td>6</td><td>WATER</td><td>水</td><td>22</td><td>FRINGE</td><td>流苏</td></tr>
+
+  <tr><td>7</td><td>EXTENT</td><td>度</td><td>23</td><td>WINDS</td><td>风</td></tr>
+
+  <tr><td>8</td><td>CIRCUMCENTER</td><td>外心</td><td>24</td><td>PLANES</td><td>机</td></tr>
+
+  <tr><td>9</td><td>OUTSIDE FORCE</td><td>外力</td><td>25</td><td>REVIVE</td><td>复苏</td></tr>
+
+  <tr><td>10</td><td>VENTILATE</td><td>通风</td><td>26</td><td>LENGTH</td><td>长度</td></tr>
+
+  <tr><td>11</td><td>AIRPORTS</td><td>机场</td><td>27</td><td>PRECISION</td><td>精度</td></tr>
+
+  <tr><td>12</td><td>SPECULATING</td><td>投机</td><td>28</td><td>LATERAL</td><td>侧面</td></tr>
+
+  <tr><td>13</td><td>STAFF SERGEANT</td><td>上士</td><td>29</td><td>COMPLEXION</td><td>面色</td></tr>
+
+  <tr><td>14</td><td>DIPLOMACY</td><td>外交</td><td>30</td><td>ON</td><td>上</td></tr>
+
+  <tr><td>15</td><td>OILING</td><td>上油</td><td>31</td><td>EXTERNAL</td><td>外</td></tr>
+
+  <tr><td>16</td><td>BREEZE</td><td>微风</td><td>32</td><td>SODIUM CARBONATE</td><td>苏打</td></tr>
+
+  </table>
+
+  <br><br>
+
+
+  我们按照这个对应关系将两个四面体相交形成星八面体，此时我们在星球表面能看到 24 个非中心面，每个面的答案翻译是两个字，其中一个字对应中心面已经用过了，所以下面我们只需要看剩下来的那个字。根据题目里所说，我们找到灰蓝色面和黄色面相交的那一条棱为起点，也就是
+  `DEEP DIVING（潜）`和 `AIRPORTS（场）`之间，按照“右右左左右右左左……”的顺序，恰能遍历星八面体上所有“山谷”。途中每一步都可以看到左边一个字和右边的一个字，经过观察发现可以找到一个字先后跟两边的字都组成词语，且字的笔画数对应题目里给出的数字：
+
+
+  <table class="ak">
+
+  <tr><th>左侧字</th><th>组词字</th><th>右侧字</th></tr>
+
+  <tr><td>潜</td><td>在</td><td>场</td></tr>
+
+  <tr><td>流</td><td>星</td><td>座</td></tr>
+
+  <tr><td>长</td><td>空</td><td>投</td></tr>
+
+  <tr><td>精</td><td>深</td><td>交</td></tr>
+
+  <tr><td>用</td><td>处</td><td>身</td></tr>
+
+  <tr><td>打</td><td>的</td><td>士</td></tr>
+
+  <tr><td>侧</td><td>柏</td><td>油</td></tr>
+
+  <tr><td>色</td><td>拉</td><td>力</td></tr>
+
+  <tr><td>试</td><td>图</td><td>景</td></tr>
+
+  <tr><td>复</td><td>式</td><td>微</td></tr>
+
+  <tr><td>手</td><td>相</td><td>通</td></tr>
+
+  <tr><td>溺</td><td>爱</td><td>心</td></tr>
+
+  </table>
+
+
+  `在星空深处的柏拉图式相爱`就是本届 CCBC-1314 的最终答案。'
+content:
+- '<p>这两颗行星之间到底有什么样的关系？它们形成了一个行星系统，密不可分却又始终保持着彼此的距离，是在无言地诉说着什么故事？</p>
+
+
+  <p>为了搞清楚这一切，你从 <img src="/ccbc13/images/CCBC-1314/17850d53b3414247a0718aad28bf0270.webp"
+  style="width:55px"> 开始，按照右右左左右右左左……的顺序弯弯绕绕地漫游行星四周。路径崎岖，然而沿路风景从左往右看去，却给了你新的领悟。</p>
+
+  <p>这两颗行星存在的意义原来是……</p>
+
+
+  <p style="text-align: center"> 六
+
+  <br> 九
+
+  <br> 八
+
+  <br> 十一
+
+  <br> 五
+
+  <br> 八
+
+  <br> 九
+
+  <br> 八
+
+  <br> 八
+
+  <br> 六
+
+  <br> 九
+
+  <br> 十</p>'
+content-type: 1
+desc: FinalMeta
+extend-content:
+- <a class="btn btn-lg btn-primary" href="/article/finalend">前往 CCBC 1314 结局 →</a>
+extend-data: null
+links:
+- path: ccbc13/index
+  title: 索引页
+  type: index
+- path: ccbc13/pages/ccbc1314
+  title: CCBC-1314
+  type: page
+tips:
+- content: '将每个英文答案翻译成中文，所有的中心面的翻译应为一个字，所有的非中心面的翻译为两个字。翻译完了以后比较两个行星答案之间的关系，应该会发现一些规律。
+
+
+    P.S. 建议画展开图，标明每一面的答案，要是能做一个立体模型就更好了。'
+  title: 两颗行星要如何穿插起来
+- content: 最终答案为中文，数字是每一个字的笔画数。
+  title: 题目里的数字是什么意思
+- content: '两个四面体穿插起来后，结果是一个星形八面体（也就是一个八面体的中心，每个面上多了一个小正四面体）。
+
+
+    路径就是遍历这个正八面体的 12 条棱，可以假想自己站在棱上，左右两边各可以看见 C14 和 C13 的一个面。'
+  title: 能解释一下漫游行星四周的路径吗
+- content: 左右两边各有一个字来自C14/13的答案，你需要找到一个字，分别可以跟左右两边的字组合成词。
+  title: 最终怎么提取
+title: CCBC-1314
+type: problem

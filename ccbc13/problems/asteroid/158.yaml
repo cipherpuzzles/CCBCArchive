@@ -1,0 +1,20 @@
+answer: X CHROMOSOME
+content:
+- "<div class=\"ccbcstylewrapper\">\n    <!-- <div style=\"font-size: 32px; letter-spacing:\
+  \ 3px\"> -->\n    <div>\n    <p>♂ = ? Y\n    <br>♀ = ? ?</p>\n    <p>? = _ __________</p>\n\
+  \    </div>\n</div>"
+content-type: 1
+desc: Com
+extend-data: null
+links:
+- path: ccbc13/index
+  title: 索引页
+  type: index
+- path: ccbc13/pages/asteroid
+  title: 小行星
+  type: page
+tips:
+- content: 什么Y是男性有但女性没有的？
+  title: 我毫无头绪
+title: ⭐
+type: problem

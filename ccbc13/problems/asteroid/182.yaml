@@ -1,0 +1,40 @@
+answer: YES OR NO QUESTIONS
+content:
+- "<div class=\"ccbcstylewrapper\">\n    <style>\n        #puzzle_table td, #puzzle_table\
+  \ th {\n            padding: 5px 20px;\n            text-align: center;\n      \
+  \      border: 1px solid #999;\n        }\n        #puzzle_table th {\n        \
+  \    font-size: 20px;\n        }\n        #puzzle_table tr.underline td {\n    \
+  \        border-bottom: 2px solid #333;\n        }\n    </style>\n\n    <table id=\"\
+  puzzle_table\">\n    <tr><th>中心对称</th><th>上下对称</th><th>左右对称</th><th>一笔画</th><th>封闭空间</th><th>直线</th><th>化学元素</th><th>质数</th></tr>\n\
+  \    \n    <tr><td></td><td></td><td>✅</td><td></td><td></td><td>✅</td><td>✅</td><td></td></tr>\n\
+  \    <tr><td></td><td>✅</td><td></td><td></td><td></td><td>✅</td><td></td><td>✅</td></tr>\n\
+  \    <tr class=\"underline\"><td>✅</td><td></td><td></td><td>✅</td><td></td><td></td><td>✅</td><td>✅</td></tr>\n\
+  \    \n    <tr><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td></td><td>✅</td><td></td></tr>\n\
+  \    <tr class=\"underline\"><td></td><td></td><td></td><td>✅</td><td>✅</td><td></td><td></td><td></td></tr>\n\
+  \    \n    <tr><td>✅</td><td></td><td></td><td>✅</td><td></td><td>✅</td><td>✅</td><td></td></tr>\n\
+  \    <tr class=\"underline\"><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td></td><td>✅</td><td></td></tr>\n\
+  \    \n    <tr><td></td><td></td><td></td><td>✅</td><td>✅</td><td></td><td></td><td>✅</td></tr>\n\
+  \    <tr><td></td><td></td><td>✅</td><td>✅</td><td></td><td></td><td>✅</td><td></td></tr>\n\
+  \    <tr><td></td><td>✅</td><td></td><td></td><td></td><td>✅</td><td></td><td>✅</td></tr>\n\
+  \    <tr><td>✅</td><td></td><td></td><td>✅</td><td></td><td></td><td>✅</td><td>✅</td></tr>\n\
+  \    <tr><td></td><td></td><td>✅</td><td></td><td></td><td>✅</td><td></td><td></td></tr>\n\
+  \    <tr><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td></td><td>✅</td><td>✅</td><td></td></tr>\n\
+  \    <tr><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td></td><td>✅</td><td></td></tr>\n\
+  \    <tr><td>✅</td><td></td><td></td><td>✅</td><td></td><td>✅</td><td>✅</td><td></td></tr>\n\
+  \    <tr><td>✅</td><td></td><td></td><td>✅</td><td></td><td></td><td>✅</td><td>✅</td></tr>\n\
+  \    </table>\n</div>"
+content-type: 1
+desc: Equ
+extend-data: null
+links:
+- path: ccbc13/index
+  title: 索引页
+  type: index
+- path: ccbc13/pages/asteroid
+  title: 小行星
+  type: page
+tips:
+- content: 表格顶行是一些性质，其下每一行对应一个大写字母，如果这个字母有着该性质则对应的框会有对勾。性质【质数】代表该字母经过 A1Z26 变换后得到的数字是质数。将所有字母从上向下连起来。
+  title: 我毫无思路
+title: ⭐
+type: problem

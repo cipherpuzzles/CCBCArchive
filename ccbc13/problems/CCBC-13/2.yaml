@@ -1,0 +1,115 @@
+answer: LANDSCAPE
+answer-analysis: '每个音频使用一种方式朗诵一首诗词，此外每首诗词有一个或两个字被消音。前三首的被消音字组成**平水韵**。提取第4到12首的被消音字的平水韵，用
+  A1Z26 转为字母后得到 ```ANSWER IS LANDSCAPE```。答案即 ```LANDSCAPE```。
+
+
+  | 编号 | 朗诵方式 | 出处 | 被消音字 | 平水韵 | 提取 |
+
+  | --- | --- | --- | --- | --- | --- |
+
+  | 1 | 正常朗诵 | 王昌龄《芙蓉楼送辛渐》 | 平 | | |
+
+  | 2 | 无声调 | 唐珙《题龙阳县青草湖》 | 水 | | |
+
+  | 3 | 谷歌翻译 | 陶渊明《归园田居·其一》 | 韵 | | |
+
+  | 4 | 无声母 | 张继《枫桥夜泊》 | 眠 | 一先 | A |
+
+  | | | | 寒 | 十四寒 | N |
+
+  | 5 | 无韵母 | 鲁迅《自嘲》 | 闹 | 十九效 | S |
+
+  | | | | 冷 | 二十三梗 | W |
+
+  | 6 | 只有韵母 | 崔护《题都城南庄》 | 依 | 五微 | E |
+
+  | | | | 笑 | 十八啸 | R |
+
+  | 7 | 只有声母 | 白居易《钱唐湖春行》 | 停 | 九青 | I |
+
+  | | | | 早 | 十九皓 | S |
+
+  | 8 | 只有背景音乐 | 苏轼《水调歌头·明月几时有》 | 今 | 十二侵 | L |
+
+  | | | | 全 | 一先 | A |
+
+  | 9 | 吹气 | 杜甫《绝句》 | 万 | 十四愿 | N |
+
+  | | | | 里 | 四纸 | D |
+
+  | 10 | 只有声调（哼哼） | 白居易《暮江吟》 | 道 | 十九皓 | S |
+
+  | | | | 江 | 三江 | C |
+
+  | 11 | 只有声调（口哨）| 杜牧《山行》 | 枫 | 一东 | A |
+
+  | | | | 叶 | 十六叶 | P |
+
+  | 12 | 只有节奏（敲击）| 杜甫《茅屋为秋风所破歌》 | 飞 | 五微 | E |'
+content:
+- '<div>
+
+  <audio controls><source src="/ccbc13/images/CCBC-13/d326651a88454a7c8bae09d43eddc423.m4a"
+  type="audio/mp4"></audio><br>
+
+  <audio controls><source src="/ccbc13/images/CCBC-13/f3cbf0ebb2b34be2be1e652e6d6339a3.m4a"
+  type="audio/mp4"></audio><br>
+
+  <audio controls><source src="/ccbc13/images/CCBC-13/5cd4422ce9ff4348917980d15982c5b8.m4a"
+  type="audio/mp4"></audio>
+
+  </div>
+
+  <br>
+
+  <div>
+
+  <audio controls><source src="/ccbc13/images/CCBC-13/8349c1a9f61749fb8935e19a027886ab.m4a"
+  type="audio/mp4"></audio><br>
+
+  <audio controls><source src="/ccbc13/images/CCBC-13/01ffa66836af4e51ac6a1bd64931e71c.m4a"
+  type="audio/mp4"></audio><br>
+
+  <audio controls><source src="/ccbc13/images/CCBC-13/ff4617eb6bdb4435961ba3ef661c62c8.m4a"
+  type="audio/mp4"></audio><br>
+
+  <audio controls><source src="/ccbc13/images/CCBC-13/03ca841f353448f4b04c3b5bafbeedd8.m4a"
+  type="audio/mp4"></audio><br>
+
+  <audio controls><source src="/ccbc13/images/CCBC-13/9feb4e7ee29c473cb614c4e99f52450f.m4a"
+  type="audio/mp4"></audio><br>
+
+  <audio controls><source src="/ccbc13/images/CCBC-13/550e870835034120af7f75188f8c33fd.m4a"
+  type="audio/mp4"></audio><br>
+
+  <audio controls><source src="/ccbc13/images/CCBC-13/f7574a84acad4d8193b388a60b36f011.m4a"
+  type="audio/mp4"></audio><br>
+
+  <audio controls><source src="/ccbc13/images/CCBC-13/e2b6b046a3f34f7794be165bfe246813.m4a"
+  type="audio/mp4"></audio><br>
+
+  <audio controls><source src="/ccbc13/images/CCBC-13/1f27604490f6407cbd1515988b8a6cbd.m4a"
+  type="audio/mp4"></audio>
+
+  </div>
+
+  '
+content-type: 1
+desc: 风景
+extend-data: 4,1,2,2
+links:
+- path: ccbc13/index
+  title: 索引页
+  type: index
+- path: ccbc13/pages/ccbc13
+  title: CCBC-13
+  type: page
+tips:
+- content: 每个音频都是通过某种方式模糊化的*整首*诗词。所有的诗词应该都在国内的中小学阶段学习过。
+  title: 我毫无头绪
+- content: 把后九个音频中被屏蔽的字按照【前三个音频中被屏蔽的字】转成一个有数字的东西，再把数字转成字母。最终答案是九个字母。
+  title: 该如何提取
+- content: 王昌龄、唐珙、陶渊明、张继、鲁迅、崔护、白居易、苏轼、杜甫、白居易、杜牧、杜甫
+  title: 帮助鉴别这些音频的额外信息
+title: 诗词朗诵
+type: problem

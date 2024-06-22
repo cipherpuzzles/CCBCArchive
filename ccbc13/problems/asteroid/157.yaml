@@ -1,0 +1,18 @@
+answer: SNORE
+content: []
+content-type: 0
+desc: Nor
+extend-data: null
+links:
+- path: ccbc13/index
+  title: 索引页
+  type: index
+- path: ccbc13/pages/asteroid
+  title: 小行星
+  type: page
+problem-image: /ccbc13/images/asteroid/73854d434e164b7fb91a97f45c3a0813.webp
+tips:
+- content: 搜索一下中间的逻辑门（logic gate）符号，你需要用这个逻辑门把两个字母连起来。
+  title: 我毫无头绪
+title: ⭐
+type: problem

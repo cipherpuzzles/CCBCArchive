@@ -1,0 +1,18 @@
+answer: DEHYDRATION
+content: []
+content-type: 0
+desc: Hya
+extend-data: null
+links:
+- path: ccbc13/index
+  title: 索引页
+  type: index
+- path: ccbc13/pages/asteroid
+  title: 小行星
+  type: page
+problem-image: /ccbc13/images/asteroid/6ddff63cbaa54b188c59276fff835941.webp
+tips:
+- content: 本题使用电脑键盘上的数字键以及其对应的特殊符号
+  title: 我毫无思路
+title: ⭐
+type: problem

@@ -1,0 +1,20 @@
+answer: SCREEN
+content: []
+content-type: 0
+desc: Cen
+extend-data: null
+links:
+- path: ccbc13/index
+  title: 索引页
+  type: index
+- path: ccbc13/pages/asteroid
+  title: 小行星
+  type: page
+problem-image: /ccbc13/images/asteroid/ed40f8762e36417fb6689e7757b66a73.webp
+tips:
+- content: 每个图代表塔罗牌里的一张大阿卡纳牌
+  title: 我毫无头绪
+- content: TOWER, MOON, STAR, WORLD
+  title: 题目里的图片分别对应什么单词？
+title: ⭐
+type: problem

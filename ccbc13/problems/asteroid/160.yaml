@@ -1,0 +1,20 @@
+answer: BOURGEOISIE
+content:
+- "<div class=\"ccbcstylewrapper\">\n    <img src=\"/ccbc13/images/asteroid/5e8ef78753d743d38d68625c97b1c49c.webp\"\
+  \ style=\"width:100%\">\n</div>"
+content-type: 1
+desc: Ori
+extend-data: null
+links:
+- path: ccbc13/index
+  title: 索引页
+  type: index
+- path: ccbc13/pages/asteroid
+  title: 小行星
+  type: page
+problem-image: /ccbc13/images/asteroid/5e8ef78753d743d38d68625c97b1c49c.webp
+tips:
+- content: 如果两个相邻格子没有粗线阻挡，连接这两个格子的中心点。
+  title: 我毫无头绪
+title: ⭐️
+type: problem

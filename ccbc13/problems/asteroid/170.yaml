@@ -1,0 +1,18 @@
+answer: FREE STATE
+content: []
+content-type: 0
+desc: Ret
+extend-data: null
+links:
+- path: ccbc13/index
+  title: 索引页
+  type: index
+- path: ccbc13/pages/asteroid
+  title: 小行星
+  type: page
+problem-image: /ccbc13/images/asteroid/e24812975cff469fbfa6bc2b0907b454.webp
+tips:
+- content: 这是键盘的一块区域，请找到这片区域并按数字顺序得到两个英文单词。
+  title: 我毫无头绪
+title: ⭐
+type: problem

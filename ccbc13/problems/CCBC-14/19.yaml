@@ -1,0 +1,270 @@
+additional-answers:
+- answer: 背景background$*0019
+  extra: set bg 0 https://static.cipherpuzzles.com/static/images/d951a78f452441b58c46ea984c93e547.webp
+  message: '叠谜引擎说明：在附加信息中使用 set [id] [层数] [图片] 定义各层图片。
+
+    其中，id作为图片的索引，图片内容变化（比如版本变更）id必须变化，否则不会更新图片
+
+    层数数字越小，最终生成的图片中位于更低的层。
+
+    图片必须上传到本站系统中，使用透明底的webp格式（上传png自动转换）'
+- answer: 这层是最底部画着斜塔的层，应该没有对应答案
+  extra: set t-13 1 https://static.cipherpuzzles.com/static/images/7a2a1999072f427b922662561547c050.webp
+  message: 空
+- answer: 塔底
+  extra: set t-12 2 https://static.cipherpuzzles.com/static/images/bb4e0b08be4b4814a491416f5cca63b7.webp
+  message: 你抵达了塔底。如果一开始就直通塔底会如何？
+- answer: 中药
+  extra: set t-11 3 https://static.cipherpuzzles.com/static/images/9cc63afaff5f48b6b660af693a1e0fa6.webp
+  message: 你成功消去了一层楼
+- answer: MOBA
+  extra: set t-10 4 https://static.cipherpuzzles.com/static/images/eec4fa75c65e4cd691d47e7a951c3524.webp
+  message: 你成功消去了一层楼
+- answer: 北海公园
+  extra: set t-09 5 https://static.cipherpuzzles.com/static/images/b469c35fe1654715adb853bc6e27f4b9.webp
+  message: 你成功消去了一层楼
+- answer: 埃及
+  extra: set t-08 6 https://static.cipherpuzzles.com/static/images/fb1b48877fc448868ca3080c37888b98.webp
+  message: 你成功消去了一层楼
+- answer: '911'
+  extra: set t-07 7 https://static.cipherpuzzles.com/static/images/a22edc2cbc374048999e4d969f185ba2.webp
+  message: 你成功消去了一层楼
+- answer: RECURSION
+  extra: set t-06 8 https://static.cipherpuzzles.com/static/images/475ecfe51d5945a3a93f9b7485006eba.webp
+  message: 你成功消去了一层楼
+- answer: SAIL
+  extra: set t-05 9 https://static.cipherpuzzles.com/static/images/68958f241f5b4217ac0065aece863460.webp
+  message: 你成功消去了一层楼
+- answer: 越剧
+  extra: set t-04 10 https://static.cipherpuzzles.com/static/images/855c78b349684a9d9a7281a4fd50e96b.webp
+  message: 你成功消去了一层楼
+- answer: ' 大学'
+  extra: set t-03 11 https://static.cipherpuzzles.com/static/images/782ddc51207d4a0a9d4424b1d04fd640.webp
+  message: 你成功消去了一层楼
+- answer: CORONAPANDEMIC
+  extra: set t-02 12 https://static.cipherpuzzles.com/static/images/34f057564f5e42c18b06c6bbee992c91.webp
+  message: 你成功消去了一层楼
+- answer: 重置
+  extra: clear
+  message: 已重置
+- answer: DELTA
+  extra: ''
+  message: 这是其中一层的答案
+- answer: IVORY
+  extra: ''
+  message: 这是其中一层的答案
+- answer: PEARL
+  extra: ''
+  message: 这是其中一层的答案
+- answer: LIGHT
+  extra: ''
+  message: 这是其中一层的答案
+- answer: HANOI
+  extra: ''
+  message: 这是其中一层的答案
+- answer: TOWER
+  extra: ''
+  message: 这是其中一层的答案
+- answer: METAL
+  extra: ''
+  message: 这是其中一层的答案
+- answer: WHITE
+  extra: ''
+  message: 这是其中一层的答案
+- answer: KNIFE
+  extra: ''
+  message: 这是其中一层的答案
+- answer: LAYER
+  extra: ''
+  message: 这是其中一层的答案
+- answer: DIEINWATER
+  extra: ''
+  message: 这是最后的中间答案
+- answer: 十重塔
+  extra: set t-01-2 13 https://static.cipherpuzzles.com/static/images/b8228c0f604f44ca867beb1221e1cd08.webp
+  message: 你成功消去了一层楼
+- answer: 德尔塔
+  extra: ''
+  message: 这是十座塔之一。
+- answer: 象牙塔
+  extra: ''
+  message: 这是十座塔之一。
+- answer: 珍珠塔
+  extra: ''
+  message: 这是十座塔之一。
+- answer: 灯塔
+  extra: ''
+  message: 这是十座塔之一。
+- answer: 河内塔
+  extra: ''
+  message: 这是十座塔之一。
+- answer: 汉诺塔
+  extra: ''
+  message: 这是十座塔之一。
+- answer: 双子塔
+  extra: ''
+  message: 这是十座塔之一。
+- answer: 金字塔
+  extra: ''
+  message: 这是十座塔之一。
+- answer: 白塔
+  extra: ''
+  message: 这是十座塔之一。
+- answer: 刀塔
+  extra: ''
+  message: 这是十座塔之一。
+- answer: 千层塔
+  extra: ''
+  message: 这是十座塔之一。
+answer: DROWN
+answer-analysis: "<style>\n#answerkey tr:nth-child(even) td {\n    background-color:\
+  \ #444;\n}\n#answerkey th {\n    font-weight: bold;\n    vertical-align: middle;\n\
+  \    padding: 3px 5px;\n}\n#answerkey td {\n    vertical-align: middle;\n    padding:\
+  \ 3px 7px;\n    border: 1px solid #444;\n}\n</style>\n\n本小题先将10道重叠的题目解出，根据答案联想至十个以塔结尾的词，扣合题目“十重塔”，再通过重置看到每层题目中隐藏的提取，翻译成英文单词后按照背景取字母得到\
+  \ `DIE IN WATER` ，从而得到本题的最终答案 `DROWN` 。\n\n<table id=\"answerkey\">\n<thead><th>图片（可点击）</th><th>答案</th><th>长度/笔画</th><th>解题思路</th><th>塔</th><th>提取</th><th>中文</th><th>英文</th><th>提取字母</th></thead>\n\
+  <tr><td><a href=\"/ccbc13/images/CCBC-14/28339a43d6cc45848082bd3e7570ea8f.webp\"\
+  \ target=\"_blank\"><img src=\"/ccbc13/images/CCBC-14/28339a43d6cc45848082bd3e7570ea8f.webp\"\
+  \ width=\"300\" /></a></td><td>CORONAPANDEMIC</td><td>(6 8)</td><td>&, /, 1, 0 分别对应\
+  \ AND, OR, ON, OFF<br>上方给出了一些例子<br>ONION　PANDORA<br>ABANDON　FORUM<br>COFFEE　OFFICE<br></td><td><font\
+  \ color=yellow>德尔塔</font></td><td>○○○</td><td>德尔塔</td><td><font color=yellow>D</font>ELTA</td><td>D</td></tr>\n\
+  <tr><td><a href=\"/ccbc13/images/CCBC-14/eb4b3ad8f82a4a9e8caef1f0b0b11d32.webp\"\
+  \ target=\"_blank\"><img src=\"/ccbc13/images/CCBC-14/eb4b3ad8f82a4a9e8caef1f0b0b11d32.webp\"\
+  \ width=\"300\" /></a></td><td>大学</td><td>(三 八)</td><td>6,3,3,4分别对应小学、初中、高中、大学<br>9对应九年义务教育</td><td><font\
+  \ color=yellow>象牙</font>塔</td><td>○○×</td><td>象牙</td><td><font color=yellow>I</font>VORY</td><td>I</td></tr>\n\
+  <tr><td><a href=\"/ccbc13/images/CCBC-14/2d0715fa65ff451c9603622f8b68ec96.webp\"\
+  \ target=\"_blank\"><img src=\"/ccbc13/images/CCBC-14/2d0715fa65ff451c9603622f8b68ec96.webp\"\
+  \ width=\"300\" /></a></td><td>越剧</td><td>(十二 十)</td><td>补全缺失的四元组后组成了五大戏曲：京越黄梅评豫<br>第一行为四个直辖市简称<br>第二行为斧钺钩叉去偏旁<br>第三行为香港四大才子<br>第四行是花中四君子<br>第五行是四大洋的第二字<br>第六行是“大方无隅，大器免成，大音希声，大象无形”</td><td><font\
+  \ color=yellow>珍珠</font>塔</td><td>○○×</td><td>珍珠</td><td>P<font color=yellow>E</font>ARL</td><td>E</td></tr>\n\
+  <tr><td><a href=\"/ccbc13/images/CCBC-14/6c2ff040cf2c432cb0b79c348b15d1b5.webp\"\
+  \ target=\"_blank\"><img src=\"/ccbc13/images/CCBC-14/6c2ff040cf2c432cb0b79c348b15d1b5.webp\"\
+  \ width=\"300\" /></a></td><td>SAIL</td><td>(4)</td><td>剩下两个符号对应为PLAY和PAUSE</td><td><font\
+  \ color=yellow>灯</font>塔</td><td>○×</td><td>灯</td><td>L<font color=yellow>I</font>GHT</td><td>I</td></tr>\n\
+  <tr><td><a href=\"/ccbc13/images/CCBC-14/ddf10cb35bbe4d6db03a00c7ab95dcda.webp\"\
+  \ target=\"_blank\"><img src=\"/ccbc13/images/CCBC-14/ddf10cb35bbe4d6db03a00c7ab95dcda.webp\"\
+  \ width=\"300\" /></a></td><td>RECURSION</td><td>(9)</td><td>按照标注读字母</td><td><font\
+  \ color=yellow>河内</font>塔</td><td>○○×</td><td>河内</td><td>HA<font color=yellow>N</font>OI</td><td>N</td></tr>\n\
+  <tr><td><a href=\"/ccbc13/images/CCBC-14/a2a791db17bf4d918ffe36a96b3a8be9.webp\"\
+  \ target=\"_blank\"><img src=\"/ccbc13/images/CCBC-14/a2a791db17bf4d918ffe36a96b3a8be9.webp\"\
+  \ width=\"300\" /></a></td><td>911</td><td>(3)</td><td>只看虚线处</td><td>双子<font color=yellow>塔</font></td><td>××○</td><td>塔</td><td>TO<font\
+  \ color=yellow>W</font>ER</td><td>W</td></tr>\n<tr><td><a href=\"/ccbc13/images/CCBC-14/dcfdce3119754d98a0592a2a46a6b723.webp\"\
+  \ target=\"_blank\"><img src=\"/ccbc13/images/CCBC-14/dcfdce3119754d98a0592a2a46a6b723.webp\"\
+  \ width=\"300\" /></a></td><td>埃及</td><td>(十 三)</td><td>读音谐音<br>西游记，爱屋及乌，题西林壁，三位一体</td><td><font\
+  \ color=yellow>金</font>字塔</td><td>○××</td><td>金</td><td>MET<font color=yellow>A</font>L</td><td>A</td></tr>\n\
+  <tr><td><a href=\"/ccbc13/images/CCBC-14/7a2a50dbbc1b4b7dbe68da690e677b03.webp\"\
+  \ target=\"_blank\"><img src=\"/ccbc13/images/CCBC-14/7a2a50dbbc1b4b7dbe68da690e677b03.webp\"\
+  \ width=\"300\" /></a></td><td>北海公园</td><td>(五 十 四 七)</td><td>根据旁边路名确定对应位置</td><td><font\
+  \ color=yellow>白</font>塔</td><td>○×</td><td>白</td><td>WHI<font color=yellow>T</font>E</td><td>T</td></tr>\n\
+  <tr><td><a href=\"/ccbc13/images/CCBC-14/7027d59de9b845b19bf95dc7d683ff3c.webp\"\
+  \ target=\"_blank\"><img src=\"/ccbc13/images/CCBC-14/7027d59de9b845b19bf95dc7d683ff3c.webp\"\
+  \ width=\"300\" /></a></td><td>MOBA</td><td>(4)</td><td>翻译“竹”为BAMBOO后取字母</td><td><font\
+  \ color=yellow>刀</font>塔</td><td>○×</td><td>刀</td><td>KNIF<font color=yellow>E</font></td><td>E</td></tr>\n\
+  <tr><td><a href=\"/ccbc13/images/CCBC-14/6a27a14abe444573aca831153ffe7964.webp\"\
+  \ target=\"_blank\"><img src=\"/ccbc13/images/CCBC-14/6a27a14abe444573aca831153ffe7964.webp\"\
+  \ width=\"300\" /></a></td><td>中药</td><td>(四 九)</td><td>在前面均添加MEDI<br>MEDIA, MEDIUM,\
+  \ MEDICINE</td><td>千<font color=yellow>层</font>塔</td><td>×○×</td><td>层</td><td>LAYE<font\
+  \ color=yellow>R</font></td><td>R</td></tr>\n\n</table>"
+content:
+- '本题中的图片由多层重叠而成，每层是一个独立的谜题，拥有一个答案。
+
+
+  每一层都有一个框，你的任务是推测每层的内容，进而找出该层的框中是什么内容，并以此内容作为答案提交。
+
+
+  若你提交的答案确实是某一层的答案，则会触发系统的“共鸣”。图片中对应的层将会消去，你将看到此层消去后的其他未消去的层重叠而成的新图片。
+
+
+  在答案框提交“重置”以恢复初始状态（这不会消耗你的答题次数）
+
+
+  (3) · (4) · (4) · (6 8) · (9) · (三 八) · (十 三) · (十二 十) · (四 九) · (五 十 四 七)'
+content-type: 2
+desc: 溺水
+extend-data: 5,7,8,8
+links:
+- path: ccbc13/index
+  title: 索引页
+  type: index
+- path: ccbc13/pages/ccbc14
+  title: CCBC-14
+  type: page
+tips:
+- content: 请先输入初始图片的框里的文字，也就是【十重塔】。
+  title: 题目在哪里可以看到？
+- content: <a href="/ccbc13/images/CCBC-14/a2a791db17bf4d918ffe36a96b3a8be9.webp"
+    target="_blank"><img src="/ccbc13/images/CCBC-14/a2a791db17bf4d918ffe36a96b3a8be9.webp"
+    width="500" /></a>
+  title: (3)对应的题目
+- content: <a href="/ccbc13/images/CCBC-14/7027d59de9b845b19bf95dc7d683ff3c.webp"
+    target="_blank"><img src="/ccbc13/images/CCBC-14/7027d59de9b845b19bf95dc7d683ff3c.webp"
+    width="500" /></a>
+  title: (4)对应的题目（第一个字母在A~M中）
+- content: <a href="/ccbc13/images/CCBC-14/6c2ff040cf2c432cb0b79c348b15d1b5.webp"
+    target="_blank"><img src="/ccbc13/images/CCBC-14/6c2ff040cf2c432cb0b79c348b15d1b5.webp"
+    width="500" /></a>
+  title: (4)对应的题目（第一个字母在N~Z中）
+- content: <a href="/ccbc13/images/CCBC-14/28339a43d6cc45848082bd3e7570ea8f.webp"
+    target="_blank"><img src="/ccbc13/images/CCBC-14/28339a43d6cc45848082bd3e7570ea8f.webp"
+    width="500" /></a>
+  title: (6 8)对应的题目
+- content: <a href="/ccbc13/images/CCBC-14/ddf10cb35bbe4d6db03a00c7ab95dcda.webp"
+    target="_blank"><img src="/ccbc13/images/CCBC-14/ddf10cb35bbe4d6db03a00c7ab95dcda.webp"
+    width="500" /></a>
+  title: (9)对应的题目
+- content: <a href="/ccbc13/images/CCBC-14/eb4b3ad8f82a4a9e8caef1f0b0b11d32.webp"
+    target="_blank"><img src="/ccbc13/images/CCBC-14/eb4b3ad8f82a4a9e8caef1f0b0b11d32.webp"
+    width="500" /></a>
+  title: (三 八)对应的题目
+- content: <a href="/ccbc13/images/CCBC-14/dcfdce3119754d98a0592a2a46a6b723.webp"
+    target="_blank"><img src="/ccbc13/images/CCBC-14/dcfdce3119754d98a0592a2a46a6b723.webp"
+    width="500" /></a>
+  title: (十 三)对应的题目
+- content: <a href="/ccbc13/images/CCBC-14/2d0715fa65ff451c9603622f8b68ec96.webp"
+    target="_blank"><img src="/ccbc13/images/CCBC-14/2d0715fa65ff451c9603622f8b68ec96.webp"
+    width="500" /></a>
+  title: (十二 十)对应的题目
+- content: <a href="/ccbc13/images/CCBC-14/6a27a14abe444573aca831153ffe7964.webp"
+    target="_blank"><img src="/ccbc13/images/CCBC-14/6a27a14abe444573aca831153ffe7964.webp"
+    width="500" /></a>
+  title: (四 九)对应的题目
+- content: <a href="/ccbc13/images/CCBC-14/7a2a50dbbc1b4b7dbe68da690e677b03.webp"
+    target="_blank"><img src="/ccbc13/images/CCBC-14/7a2a50dbbc1b4b7dbe68da690e677b03.webp"
+    width="500" /></a>
+  title: (五 十 四 七)对应的题目
+- content: 不需要关注实线。
+  title: (3)对应题目的提示
+- content: 翻译成英文后按数字提取。
+  title: (4)对应题目的提示（第一个字母在A~M中）
+- content: 填入英文名后按数字提取。
+  title: (4)对应题目的提示（第一个字母在N~Z中）
+- content: 4种非字母可以分别对应成4个单词。
+  title: (6 8)对应题目的提示
+- content: 按照下方的指示读取上方。
+  title: (9)对应题目的提示
+- content: 下面四项对应了大部分中国人都熟知的几个阶段。（少数地区可能稍有不同）
+  title: (三 八)对应题目的提示
+- content: 考虑读音。
+  title: (十 三)对应题目的提示
+- content: 补全缺少的部分后提示对应事物。
+  title: (十二 十)对应题目的提示
+- content: 需要左侧补上相同的几个字母。
+  title: (四 九)对应题目的提示
+- content: 需要搜索所对应之处的名称。
+  title: (五 十 四 七)对应题目的提示
+- content: 消去的最后一层也是一个正常的图层，可以试着重置后换个顺序消去？
+  title: 做完了题到达了底部，但不知道要做什么？
+- content: 每个答案都和某个“塔”有关。
+  title: 每一层的答案有什么用？
+title: 十重塔
+type: problem
+vue_script: "const { ref, inject, onMounted } = Vue;\r\nexport default {\r\n    setup()\
+  \ {\r\n        const imageSrc = ref(\"\");\r\n\r\n        const api = inject('api');\r\
+  \n        const defaultApiErrorAction = inject('defaultApiErrorAction');\r\n\r\n\
+  \        const init = async () => {\r\n            let res = await api('/puzzlebackend2023/19/ten-story-tower-get-imagesrc',\
+  \ {});\r\n\r\n            let data = await res.json();\r\n            if (data.status\
+  \ !== 1) {\r\n                defaultApiErrorAction(data);\r\n                return;\r\
+  \n            }\r\n\r\n            imageSrc.value = data.path;\r\n        }\r\n\r\
+  \n        onMounted(() => {\r\n            init();\r\n        });\r\n\r\n      \
+  \  return {\r\n            imageSrc\r\n        };\r\n    }\r\n}"
+vue_template: "<template>\r\n    <div v-if=\"imageSrc\">\r\n        <img :src=\"imageSrc\"\
+  \ style=\"width: 100%;\" />\r\n    </div>\r\n    <div v-else>\r\n        图片加载中...\r\
+  \n    </div>\r\n</template>"

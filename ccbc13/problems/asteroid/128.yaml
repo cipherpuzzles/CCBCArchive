@@ -1,0 +1,21 @@
+answer: PUPPY
+content:
+- "<div class=\"ccbcstylewrapper\">\n    <p>以下每个字母代表一个数字：</p>\n    <!-- <div style=\"\
+  font-size:48px\"> -->\n    <div>\n        <p>PLAY + ODDS = OLD + GOLD</p>\n    \
+  \    <p>MAD + LADY = A * SOUL</p>\n        <p>SMALL + DOG = ?</p>\n    </div>\n\
+  </div>"
+content-type: 1
+desc: Pup
+extend-data: null
+links:
+- path: ccbc13/index
+  title: 索引页
+  type: index
+- path: ccbc13/pages/asteroid
+  title: 小行星
+  type: page
+tips:
+- content: P=2, D=7, L=5
+  title: 我不会解，能否给我一些数字的答案作为起点
+title: ⭐
+type: problem

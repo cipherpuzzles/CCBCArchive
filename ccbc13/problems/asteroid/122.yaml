@@ -1,0 +1,23 @@
+answer: SAND LARK
+content:
+- "<div class=\"ccbcstylewrapper\">\r\n<p><span style=\"font-size: 100px\">AND</span><span\
+  \ style=\"font-size: 50px\">ARK</span> = 地标</p>\r\n<p><span style=\"font-size: 25px\"\
+  >AND</span> <span style=\"font-size: 100px\">ARK</span> = ?</p>\r\n</div>"
+content-type: 1
+desc: And
+extend-data: null
+links:
+- path: ccbc13/index
+  title: 索引页
+  type: index
+- path: ccbc13/pages/asteroid
+  title: 小行星
+  type: page
+problem-image: /ccbc13/images/asteroid/49877a89779c42f581bbe0fb95e98426.webp
+tips:
+- content: 地标的英文是 LANDMARK，而小、中、大分别是 S, M, L。
+  title: 我毫无思路
+- content: 注意大号、中号、小号往往用L、M、S表示。
+  title: 字体的大小有什么用
+title: ⭐️
+type: problem

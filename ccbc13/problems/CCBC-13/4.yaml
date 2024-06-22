@@ -1,0 +1,230 @@
+additional-answers:
+- answer: 用
+  extra: ''
+  message: 这是本题的中间答案之一。
+- answer: 英
+  extra: ''
+  message: 这是本题的中间答案之一。
+- answer: 文
+  extra: ''
+  message: 这是本题的中间答案之一。
+- answer: 描
+  extra: ''
+  message: 这是本题的中间答案之一。
+- answer: 述
+  extra: ''
+  message: 这是本题的中间答案之一。
+- answer: 三十
+  extra: ''
+  message: 这是本题的中间答案之一。
+- answer: 用英文描述三十
+  extra: ''
+  message: <img src="/ccbc13/images/CCBC-13/b47179e3a0aa4d318c4dd27a9ea3a474.webp"
+    style="width:400px">
+- answer: 用英文描述三十#
+  extra: ''
+  message: <img src="/ccbc13/images/CCBC-13/b47179e3a0aa4d318c4dd27a9ea3a474.webp"
+    style="width:400px">
+- answer: （用英文描述三十#）
+  extra: ''
+  message: <img src="/ccbc13/images/CCBC-13/b47179e3a0aa4d318c4dd27a9ea3a474.webp"
+    style="width:400px">
+answer: LANDLINE
+answer-analysis: "<style>\n#answerkey tr:nth-child(even) td {\n    background-color:\
+  \ #444;\n}\n#answerkey th {\n    vertical-align: middle;\n    padding: 3px 10px;\n\
+  }\n#answerkey td {\n    border-style: solid none;\n    border-width: thin;\n   \
+  \ vertical-align: middle;\n    padding: 3px 10px;\n}\n</style>\n\n首先，本小题给出了“＃一”到“＃六十六”共66张卡，和“壹”到“陆”共6张小META卡。选手需要通过卡面推测6种不同的变换规则，将每张卡上的词还原出来，并分组对应至META卡右侧的笔画数和提取。\n\
+  \n---\n\n## 壹：汉字重组\n\n将汉字部件拆开后重组为词语。由`田与川`可以得到本组题答案为`用`。\n\n<table id = \"answerkey\"\
+  >\n<thead><th>编号</th><th>词语</th><th>笔画数</th><th>提取</th><th>笔画</th><th>提取字</th></thead>\n\
+  <tr><td>#38</td><td>脸蛋</td><td>（十一 十一）</td><td>【十三】</td><td>㇑</td><td rowspan=5>田</td></tr>\n\
+  <tr><td>#21</td><td>固定</td><td>（八 八）</td><td>【二】</td><td>㇕</td></tr>\n<tr><td>#60</td><td>一致</td><td>（一\
+  \ 十）</td><td>【一】</td><td>㇐</td></tr>\n<tr><td>#43</td><td>聂耳</td><td>（十 六）</td><td>【三】</td><td>㇑</td></tr>\n\
+  <tr><td>#40</td><td>棉花</td><td>（十二 七）</td><td>【八】</td><td>㇐</td></tr>\n<tr><td>#30</td><td>机器</td><td>（六\
+  \ 十六）</td><td>【一】</td><td>㇐</td><td rowspan=3>与</td></tr>\n<tr><td>#37</td><td>亏空</td><td>（三\
+  \ 八）</td><td>【三】</td><td>㇉</td></tr>\n<tr><td>#48</td><td>森林</td><td>（十二 八）</td><td>【九】</td><td>㇐</td></tr>\n\
+  <tr><td>#62</td><td>赢</td><td>（十七）</td><td>【七】</td><td>㇓</td><td rowspan=3>川</td></tr>\n\
+  <tr><td>#33</td><td>开端</td><td>（四 十四）</td><td>【四】</td><td>㇑</td></tr>\n<tr><td>#52</td><td>微信</td><td>（十三\
+  \ 九）</td><td>【六】</td><td>㇑</td></tr>\n</table>\n\n---\n\n## 贰：万花筒\n\n每个汉字被复制旋转重叠。由`卡后`观察背景可以得到本组题答案为`英`。\n\
+  \n<table id = \"answerkey\">\n<thead><th>编号</th><th>词语</th><th>笔画数</th><th>提取</th><th>笔画</th><th>提取字</th></thead>\n\
+  <tr><td>#19</td><td>高</td><td>（十）</td><td>【六】</td><td>㇑</td><td rowspan=5>卡</td></tr>\n\
+  <tr><td>#14</td><td>单</td><td>（八）</td><td>【五】</td><td>㇐</td></tr>\n<tr><td>#32</td><td>晶</td><td>（十二）</td><td>【七】</td><td>㇐</td></tr>\n\
+  <tr><td>#56</td><td>丫</td><td>（三）</td><td>【三】</td><td>㇑</td></tr>\n<tr><td>#2</td><td>半</td><td>（五）</td><td>【一】</td><td>㇔</td></tr>\n\
+  <tr><td>#66</td><td>众</td><td>（六）</td><td>【三】</td><td>㇓</td><td rowspan=6>后</td></tr>\n\
+  <tr><td>#4</td><td>匕</td><td>（二）</td><td>【一】</td><td>㇓</td></tr>\n<tr><td>#8</td><td>草</td><td>（九）</td><td>【八】</td><td>㇐</td></tr>\n\
+  <tr><td>#17</td><td>菲</td><td>（十一）</td><td>【八】</td><td>㇑</td></tr>\n<tr><td>#11</td><td>呈</td><td>（七）</td><td>【二】</td><td>㇕</td></tr>\n\
+  <tr><td>#24</td><td>互</td><td>（四）</td><td>【四】</td><td>㇐</td></tr>\n</table>\n\n\
+  ---\n\n## 叁：封闭区域\n\n每个汉字仅显示封闭区域。由`下三角`可得到本组题答案为`文`。\n\n<table id = \"answerkey\"\
+  >\n<thead><th>编号</th><th>词语</th><th>笔画数</th><th>提取</th><th>笔画</th><th>提取字</th></thead>\n\
+  <tr><td>#9</td><td>臣</td><td>（六）</td><td>【四】</td><td>㇐</td><td rowspan=3>下</td></tr>\n\
+  <tr><td>#1</td><td>凹凸</td><td>（五 五）</td><td>【三】</td><td>㇑</td></tr>\n<tr><td>#53</td><td>温暖</td><td>（十二\
+  \ 十三）</td><td>【二】</td><td>㇔</td></tr>\n<tr><td>#28</td><td>回路</td><td>（六 十三）</td><td>【六】</td><td>㇐</td><td\
+  \ rowspan=3>三</td></tr>\n<tr><td>#41</td><td>面</td><td>（九）</td><td>【九】</td><td>㇐</td></tr>\n\
+  <tr><td>#61</td><td>异口同声</td><td>（六 三 六 七）</td><td>【四】</td><td>㇐</td></tr>\n<tr><td>#23</td><td>哈佛</td><td>（九\
+  \ 七）</td><td>【四】</td><td>㇓</td><td rowspan=7>角</td></tr>\n<tr><td>#20</td><td>歌唱</td><td>（十四\
+  \ 十一）</td><td>【十二】</td><td>㇇</td></tr>\n<tr><td>#34</td><td>康熙</td><td>（十一 十四）</td><td>【三】</td><td>㇓</td></tr>\n\
+  <tr><td>#54</td><td>毋庸置疑</td><td>（四 十一 十三 十四）</td><td>【二】</td><td>㇆</td></tr>\n\
+  <tr><td>#46</td><td>曲高和寡</td><td>（六 十 八 十四）</td><td>【三】</td><td>㇐</td></tr>\n<tr><td>#12</td><td>矗立</td><td>（二十四\
+  \ 五）</td><td>【八】</td><td>㇐</td></tr>\n<tr><td>#25</td><td>黄色</td><td>（十一 六）</td><td>【五】</td><td>㇑</td></tr>\n\
+  </table>\n\n---\n\n## 肆：解码\n\n`1234567`分别对应汉字部件`扌十丨田木夂口`。由`1 横1 4`可得到本组题答案为`描`。\n\
+  \n<table id = \"answerkey\">\n<thead><th>编号</th><th>词语</th><th>笔画数</th><th>提取</th><th>笔画</th><th>提取字</th></thead>\n\
+  <tr><td>#7</td><td>操</td><td>（十六）</td><td>【七】</td><td>㇑</td><td rowspan=2>1</td></tr>\n\
+  <tr><td>#44</td><td>品味</td><td>（九 八）</td><td>【四】</td><td>㇑</td></tr>\n<tr><td>#13</td><td>串</td><td>（七）</td><td>【三】</td><td>㇐</td><td\
+  \ rowspan=2>横1</td></tr>\n<tr><td>#3</td><td>本格</td><td>（五 十）</td><td>【五】</td><td>㇐</td></tr>\n\
+  <tr><td>#27</td><td>回扣</td><td>（六 六）</td><td>【三】</td><td>㇑</td><td rowspan=4>4</td></tr>\n\
+  <tr><td>#58</td><td>一捆树苗</td><td>（一 十 九 八）</td><td>【一】</td><td>㇐</td></tr>\n<tr><td>#39</td><td>略</td><td>（十一）</td><td>【九】</td><td>㇑</td></tr>\n\
+  <tr><td>#36</td><td>枯叶</td><td>（九 五）</td><td>【六】</td><td>㇑</td></tr>\n</table>\n\
+  \n---\n\n## 伍：去七曜\n\n汉字中的`金木水火土日月`部分被去除。由`辶和丶`可得到本组题答案为`述`。\n\n<table id = \"answerkey\"\
+  >\n<thead><th>编号</th><th>词语</th><th>笔画数</th><th>提取</th><th>笔画</th><th>提取字</th></thead>\n\
+  <tr><td>#26</td><td>灰尘</td><td>（六 六）</td><td>【三】</td><td>㇔</td><td rowspan=3>辶</td></tr>\n\
+  <tr><td>#55</td><td>消极</td><td>（十 七）</td><td>【十六】</td><td>㇋</td></tr>\n<tr><td>#18</td><td>焚烧</td><td>（十二\
+  \ 十）</td><td>【十二】</td><td>㇏</td></tr>\n<tr><td>#51</td><td>水晶鞋</td><td>（四 十二 十五）</td><td>【三】</td><td>㇓</td><td\
+  \ rowspan=8>和</td></tr>\n<tr><td>#63</td><td>源泉</td><td>（十三 九）</td><td>【九】</td><td>㇐</td></tr>\n\
+  <tr><td>#22</td><td>桂林山水</td><td>（十 八 三 四）</td><td>【六】</td><td>㇑</td></tr>\n<tr><td>#57</td><td>烟锁池塘柳</td><td>（十\
+  \ 十二 六 十三 九）</td><td>【三】</td><td>㇓</td></tr>\n<tr><td>#45</td><td>泼脏水</td><td>（八\
+  \ 十 四）</td><td>【二】</td><td>㇔</td></tr>\n<tr><td>#47</td><td>日光灯</td><td>（四 六 六）</td><td>【一】</td><td>㇑</td></tr>\n\
+  <tr><td>#64</td><td>渣土</td><td>（十二 三）</td><td>【九】</td><td>㇕</td></tr>\n<tr><td>#42</td><td>明日复明日</td><td>（八\
+  \ 四 九 八 四）</td><td>【七】</td><td>㇐</td></tr>\n<tr><td>#49</td><td>深秋</td><td>（十一 九）</td><td>【二】</td><td>㇔</td><td\
+  \ rowspan=1>丶</td></tr>\n</table>\n\n---\n\n## 陆：去重\n\n汉字中的重复部分被成对消去。由`一和十`可得到本组题答案为`三十`。\n\
+  \n<table id = \"answerkey\">\n<thead><th>编号</th><th>词语</th><th>笔画数</th><th>提取</th><th>笔画</th><th>提取字</th></thead>\n\
+  <tr><td>#6</td><td>簸箕</td><td>（十九 十四）</td><td>【七】</td><td>㇐</td><td rowspan=1>一</td></tr>\n\
+  <tr><td>#50</td><td>爽</td><td>（十一）</td><td>【八】</td><td>㇓</td><td rowspan=8>和</td></tr>\n\
+  <tr><td>#35</td><td>孔孟</td><td>（四 八）</td><td>【七】</td><td>㇐</td></tr>\n<tr><td>#15</td><td>鳄鱼</td><td>（十七\
+  \ 八）</td><td>【六】</td><td>㇑</td></tr>\n<tr><td>#16</td><td>反叛</td><td>（四 九）</td><td>【二】</td><td>㇓</td></tr>\n\
+  <tr><td>#5</td><td>BIANGBIANG面</td><td>（四十二 四十二 九）</td><td>【一】</td><td>㇔</td></tr>\n\
+  <tr><td>#31</td><td>监临</td><td>（十 九）</td><td>【一】</td><td>㇑</td></tr>\n<tr><td>#65</td><td>咫尺</td><td>（九\
+  \ 四）</td><td>【六】</td><td>㇕</td></tr>\n<tr><td>#59</td><td>一心一意</td><td>（一 四 一 十三）</td><td>【一】</td><td>㇐</td></tr>\n\
+  <tr><td>#10</td><td>成双成对</td><td>（六 四 六 五）</td><td>【一】</td><td>㇐</td><td rowspan=2>十</td></tr>\n\
+  <tr><td>#29</td><td>会合</td><td>（六 六）</td><td>【十】</td><td>㇑</td></tr>\n</table>\n\
+  \n---\n\n## 终\n\n将小题答案连起来可得到`用英文描述三十＃`。将`＃十三`卡倒过来得到右下角为`三十＃`，卡内是两个L在E中，故最终答案为 `L\
+  \ AND L IN E` ，即 `LANDLINE` 。"
+content:
+- "<style>\n    #cards-wrapper {\n        background-color: #efefe5;\n        color:\
+  \ black;\n    }\n    #cards img {\n        width: 40%;\n        margin: 4%;\n  \
+  \  }\n    #cards {\n        background-image: url('/ccbc13/images/CCBC-13/ea9b514e30bb46fb8ce015f55e6494b3.webp');\n\
+  \        color: black;\n    }\n    #cards-six {\n        display: grid;\n      \
+  \  grid-template-columns: repeat(2, 50%);\n        grid-gap: 50px;\n        padding:\
+  \ 30px;\n    }\n    #cards-six img {\n        width: 100%;\n        margin: 0;\n\
+  \    }\n    .cards-enum {\n        display: grid;\n        grid-template-columns:\
+  \ repeat(2, auto);\n    }\n</style>\n<div id=\"cards-wrapper\">\n<div id=\"cards\"\
+  >\n<img src='/ccbc13/images/CCBC-13/b49414ba6abf4cb5badb176433393302.webp'>\n<img\
+  \ src='/ccbc13/images/CCBC-13/44c82ced9aa6400da44a87c8995685e3.webp'>\n<img src='/ccbc13/images/CCBC-13/dabef6c1e65744838ca3889088735276.webp'>\n\
+  <img src='/ccbc13/images/CCBC-13/b31b6170c59d4bdbbc858a1452871c65.webp'>\n<img src='/ccbc13/images/CCBC-13/9d162de73ff64774850bce1b713f1b75.webp'>\n\
+  <img src='/ccbc13/images/CCBC-13/9b7f07b7e14d424a9e47638d0bc7b60d.webp'>\n<img src='/ccbc13/images/CCBC-13/30dda68bc66d4643938b061b7cba89d7.webp'>\n\
+  <img src='/ccbc13/images/CCBC-13/beb1f8e831954a51bbd2b5fed0008229.webp'>\n<img src='/ccbc13/images/CCBC-13/0dacd07b063f4b18bea3cd726a0f3f66.webp'>\n\
+  <img src='/ccbc13/images/CCBC-13/028cd63efdda4e98801ef9aae0b4ed23.webp'>\n<img src='/ccbc13/images/CCBC-13/dd5b50e12d024416baf9ce49564dbb9b.webp'>\n\
+  <img src='/ccbc13/images/CCBC-13/406e93976f7c47ca9ba2b664310b8e87.webp'>\n<img src='/ccbc13/images/CCBC-13/1f3c1d90fdc04b94a86c005f0d7c0426.webp'>\n\
+  <img src='/ccbc13/images/CCBC-13/96ec1c68c3d8444ea21de190180514c7.webp'>\n<img src='/ccbc13/images/CCBC-13/fce7709944ea4485b73753ae6ef6e734.webp'>\n\
+  <img src='/ccbc13/images/CCBC-13/82efecd328bf4362b41bb76e671837a2.webp'>\n<img src='/ccbc13/images/CCBC-13/a7f11960f4a448078f442a334989f632.webp'>\n\
+  <img src='/ccbc13/images/CCBC-13/385e79497a78400daef242dba5fcd7fe.webp'>\n<img src='/ccbc13/images/CCBC-13/95af27c521a94ba3adc48a3b88910e62.webp'>\n\
+  <img src='/ccbc13/images/CCBC-13/53a5b7a9d5ac442e90613d748bc41f1c.webp'>\n<img src='/ccbc13/images/CCBC-13/d3cc6678f8c8467b9ac70eed791f8909.webp'>\n\
+  <img src='/ccbc13/images/CCBC-13/751578e1114f4f70827f26eaeeefe8b5.webp'>\n<img src='/ccbc13/images/CCBC-13/729d13262e5b400eb8089df1e1dbe82e.webp'>\n\
+  <img src='/ccbc13/images/CCBC-13/594920d95dbf418bbbd1cac60d92e883.webp'>\n<img src='/ccbc13/images/CCBC-13/4b9b1f17a203419285f5fa065a94ef5a.webp'>\n\
+  <img src='/ccbc13/images/CCBC-13/9f27d0a2ad83478cbe3faf3d2bb3cf40.webp'>\n<img src='/ccbc13/images/CCBC-13/d092683a84d84c58b74831a2b85a9ea4.webp'>\n\
+  <img src='/ccbc13/images/CCBC-13/7e722380eddd4d9d9385ca6f582dd126.webp'>\n<img src='/ccbc13/images/CCBC-13/67e3234d78684a28a4a9d043fdc8d70a.webp'>\n\
+  <img src='/ccbc13/images/CCBC-13/2490cd60b2fb45529ada41c815eb3460.webp'>\n<img src='/ccbc13/images/CCBC-13/b04868cf8ef2490fb491a1f97d0d6668.webp'>\n\
+  <img src='/ccbc13/images/CCBC-13/f1aed9ca540944b393733576f3076345.webp'>\n<img src='/ccbc13/images/CCBC-13/722ed2c81ecf4fa3a84dc934e1d78b95.webp'>\n\
+  <img src='/ccbc13/images/CCBC-13/cf65df544af2416fb9f92162a86c0dd3.webp'>\n<img src='/ccbc13/images/CCBC-13/df718c8715eb456bb1845527e1c7ea18.webp'>\n\
+  <img src='/ccbc13/images/CCBC-13/6e9db5729f2e4b5d8ad2f210fa103a83.webp'>\n<img src='/ccbc13/images/CCBC-13/3a967842c1f7483a99a5aa632074447c.webp'>\n\
+  <img src='/ccbc13/images/CCBC-13/899bf86e28174e60a2d250a0926d5ab5.webp'>\n<img src='/ccbc13/images/CCBC-13/cfc6591da4674a89a3e793b8a7e102a4.webp'>\n\
+  <img src='/ccbc13/images/CCBC-13/55b98984c3fe4b06beaec0c294cc2a66.webp'>\n<img src='/ccbc13/images/CCBC-13/5dd18bd51d0345a189f3a017e4c7ca12.webp'>\n\
+  <img src='/ccbc13/images/CCBC-13/4f5d3bb47c924c7fae3e027f05277c3b.webp'>\n<img src='/ccbc13/images/CCBC-13/f7142dd836ff4ce4ba38a2b7aa6e4554.webp'>\n\
+  <img src='/ccbc13/images/CCBC-13/220d51dce42c41a59007528fc9a4818d.webp'>\n<img src='/ccbc13/images/CCBC-13/93bea08c88f747ea89a0ccf30d67e05d.webp'>\n\
+  <img src='/ccbc13/images/CCBC-13/cb74141d130c477a8faf860059ac5142.webp'>\n<img src='/ccbc13/images/CCBC-13/41c9927ebce147c9a84c379d41b316e3.webp'>\n\
+  <img src='/ccbc13/images/CCBC-13/8fec534858074b61a67cbc25a8add80b.webp'>\n<img src='/ccbc13/images/CCBC-13/941d8fe3eff949d9967267e63f78e161.webp'>\n\
+  <img src='/ccbc13/images/CCBC-13/584662ed851344d09292566707b7a4ad.webp'>\n<img src='/ccbc13/images/CCBC-13/2d14c05e624e4c848775f4cf9afa696c.webp'>\n\
+  <img src='/ccbc13/images/CCBC-13/f3330462da2743a59f037d87a7ec010b.webp'>\n<img src='/ccbc13/images/CCBC-13/239d946f88bc4182bced6efc1d625407.webp'>\n\
+  <img src='/ccbc13/images/CCBC-13/c9e0fcb21ce04aa5a8d2ddef870f94e9.webp'>\n<img src='/ccbc13/images/CCBC-13/7443cb0501614f8d92486c178af30340.webp'>\n\
+  <img src='/ccbc13/images/CCBC-13/6299e1ddfdd24fcdb56790db337f2e36.webp'>\n<img src='/ccbc13/images/CCBC-13/007c83b6e01241fe85f73f9998e4d381.webp'>\n\
+  <img src='/ccbc13/images/CCBC-13/83b888632f1d4894bada4fc240a79f5d.webp'>\n<img src='/ccbc13/images/CCBC-13/9126cd26780e40db980003f486dbe433.webp'>\n\
+  <img src='/ccbc13/images/CCBC-13/d91f6951b3cf429f97540ceea60781c5.webp'>\n<img src='/ccbc13/images/CCBC-13/8f92d8ec2b8b48a6adfc1cdd861731c6.webp'>\n\
+  <img src='/ccbc13/images/CCBC-13/bbb0da8659a54e249d65ac4ab72ddd14.webp'>\n<img src='/ccbc13/images/CCBC-13/2683177adf1b450ba587f714592eb101.webp'>\n\
+  <img src='/ccbc13/images/CCBC-13/1cdb7485acbc4abd8e9ddb940616a259.webp'>\n<img src='/ccbc13/images/CCBC-13/b1ddcc51525e482fb31845d26bffbfef.webp'>\n\
+  <img src='/ccbc13/images/CCBC-13/350957f093c448c5918f82de17c6f6a9.webp'>\n</div>\n\
+  <hr>\n<div id=\"cards-six\">\n    <img src='/ccbc13/images/CCBC-13/e5a445f49ec74fe49719bd31b8895a93.webp'>\n\
+  \    <div class=\"cards-enum\">\n        <div>（五 三 三）→ （<span class=\"text-warning\"\
+  >五</span>）</div><div></div>\n        <hr><div></div>\n<div>（十一 十一）</div><div>【十三】</div>\n\
+  <div>（八 八）</div><div>【二】</div>\n<div>（一 十）</div><div>【一】</div>\n<div>（十 六）</div><div>【三】</div>\n\
+  <div>（十二 七）</div><div>【八】</div>\n<div></div><p></p>\n<div>（六 十六）</div><div>【一】</div>\n\
+  <div>（三 八）</div><div>【三】</div>\n<div>（十二 八）</div><div>【九】</div>\n<div></div><p></p>\n\
+  <div>（十七）</div><div>【七】</div>\n<div>（四 十四）</div><div>【四】</div>\n<div>（十三 九）</div><div>【六】</div>\n\
+  \    </div>\n    <img src='/ccbc13/images/CCBC-13/45cfde91dfa04c34bd1091895343b64e.webp'>\n\
+  \    <div class=\"cards-enum\">\n        <div>（五 六）→ （<span class=\"text-warning\"\
+  >八</span>）</div><div></div>\n        <hr><div></div>\n<div>（十）</div><div>【六】</div>\n\
+  <div>（八）</div><div>【五】</div>\n<div>（十二）</div><div>【七】</div>\n<div>（三）</div><div>【三】</div>\n\
+  <div>（五）</div><div>【一】</div>\n<div></div><p></p>\n<div>（六）</div><div>【三】</div>\n\
+  <div>（二）</div><div>【一】</div>\n<div>（九）</div><div>【八】</div>\n<div>（十一）</div><div>【八】</div>\n\
+  <div>（七）</div><div>【二】</div>\n<div>（四）</div><div>【四】</div>\n    </div>\n    <img\
+  \ src='/ccbc13/images/CCBC-13/bf48be15de294b90811b2a1c18109670.webp'>\n    <div\
+  \ class=\"cards-enum\">\n        <div>（三 三 七）→ （<span class=\"text-warning\">四</span>）</div><div></div>\n\
+  \        <hr><div></div>\n<div>（六）</div><div>【四】</div>\n<div>（五 五）</div><div>【三】</div>\n\
+  <div>（十二 十三）</div><div>【二】</div>\n<div></div><p></p>\n<div>（六 十三）</div><div>【六】</div>\n\
+  <div>（九）</div><div>【九】</div>\n<div>（六 三 六 七）</div><div>【四】</div>\n<div></div><p></p>\n\
+  <div>（九 七）</div><div>【四】</div>\n<div>（十四 十一）</div><div>【十二】</div>\n<div>（十一 十四）</div><div>【三】</div>\n\
+  <div>（四 十一 十三 十四）</div><div>【二】</div>\n<div>（六 十 八 十四）</div><div>【三】</div>\n<div>（二十四\
+  \ 五）</div><div>【八】</div>\n<div>（十一 六）</div><div>【五】</div>\n    </div>\n    <img\
+  \ src='/ccbc13/images/CCBC-13/32274a73ff704376beef2f07e9d0001a.webp'>\n    <div\
+  \ class=\"cards-enum\">\n        <div>（2 2 4）→ （<span class=\"text-warning\">十一</span>）</div><div></div>\n\
+  \        <hr><div></div>\n<div>（十六）</div><div>【七】</div>\n<div>（九 八）</div><div>【四】</div>\n\
+  <div></div><p></p>\n<div>（七）</div><div>【三】</div>\n<div>（五 十）</div><div>【五】</div>\n\
+  <div></div><p></p>\n<div>（六 六）</div><div>【三】</div>\n<div>（一 十 九 八）</div><div>【一】</div>\n\
+  <div>（十一）</div><div>【九】</div>\n<div>（九 五）</div><div>【六】</div>\n    </div>\n    <img\
+  \ src='/ccbc13/images/CCBC-13/83c64184831b4d76968b71b5a7114ba2.webp'>\n    <div\
+  \ class=\"cards-enum\">\n        <div>（三 八 一）→ （<span class=\"text-warning\">八</span>）</div><div></div>\n\
+  \        <hr><div></div>\n<div>（六 六）</div><div>【三】</div>\n<div>（十 七）</div><div>【十六】</div>\n\
+  <div>（十二 十）</div><div>【十二】</div>\n<div></div><p></p>\n<div>（四 十二 十五）</div><div>【三】</div>\n\
+  <div>（十三 九）</div><div>【九】</div>\n<div>（十 八 三 四）</div><div>【六】</div>\n<div>（十 十二\
+  \ 六 十三 九）</div><div>【三】</div>\n<div>（八 十 四）</div><div>【二】</div>\n<div>（四 六 六）</div><div>【一】</div>\n\
+  <div>（十二 三）</div><div>【九】</div>\n<div>（八 四 九 八 四）</div><div>【七】</div>\n<div></div><p></p>\n\
+  <div>（十一 九）</div><div>【二】</div>\n    </div>\n    <img src='/ccbc13/images/CCBC-13/51bdf2ae65f14f3ea827800254a95427.webp'>\n\
+  \    <div class=\"cards-enum\">\n        <div>（一 八 二）→ （<span class=\"text-warning\"\
+  >三 二</span>）</div><div></div>\n        <hr><div></div>\n<div>（十九 十四）</div><div>【七】</div>\n\
+  <div></div><p></p>\n<div>（十一）</div><div>【八】</div>\n<div>（四 八）</div><div>【七】</div>\n\
+  <div>（十七 八）</div><div>【六】</div>\n<div>（四 九）</div><div>【二】</div>\n<div>（四十二 四十二 九）</div><div>【一】</div>\n\
+  <div>（十 九）</div><div>【一】</div>\n<div>（九 四）</div><div>【六】</div>\n<div>（一 四 一 十三）</div><div>【一】</div>\n\
+  <div></div><p></p>\n<div>（六 四 六 五）</div><div>【一】</div>\n<div>（六 六）</div><div>【十】</div>\n\
+  \    </div>\n</div>\n<hr>\n<p style=\"font-size: 30px\">（<span class=\"text-warning\"\
+  >五 八 四 十一 八 三 二 #</span>） →（1 3 1 2 1）</p>\n<p>提示：上面这一串橙色答案全部解出来后，建议连着一起提交以获取帮助信息。</p>\n\
+  </div>"
+content-type: 1
+desc: 座机
+extend-data: 3,1,4,4
+links:
+- path: ccbc13/index
+  title: 索引页
+  type: index
+- path: ccbc13/pages/ccbc13
+  title: CCBC-13
+  type: page
+tips:
+- content: 66张卡分别对应6种变换规则，也分别对应最后6张卡右侧每行的提取。
+  title: 我毫无头绪
+- content: 将汉字部件打乱重组为词语。
+  title: 壹组是什么？
+- content: 每个字被旋转平移后形成如万花筒一般的效果。
+  title: 贰组是什么？
+- content: 给出了汉字的封闭区域。
+  title: 叁组是什么？
+- content: 汉字部件单表。
+  title: 肆组是什么？
+- content: 去除了“金木水火土日月”。
+  title: 伍组是什么？
+- content: 消去了相同的部分。
+  title: 陆组是什么？
+- content: 最后的CLUE指向了66张卡中的某一张卡，不过需要换个方向看。
+  title: 最后要看什么？
+- content: 圆括号（）里的汉字数字代表答案中每个字的笔画数，方括号【】里的汉字数字代表需要从答案中取第几画。把笔画连起来可以得到几个字（第肆组稍有些不同），作为下一步的提示。
+  title: 括号里的汉字数字怎么用？
+- content: 脸蛋、固定、一致、聂耳、棉花、机器、亏空、森林、赢、开端、微信
+  title: 壹组用到的答案有哪些？
+- content: 高、单、晶、丫、半、众、匕、草、菲、呈、互
+  title: 贰组用到的答案有哪些？
+- content: 臣、凹凸、温暖、回路、面、异口同声、哈佛、歌唱、康熙、毋庸置疑、曲高和寡、矗立、黄色
+  title: 叁组用到的答案有哪些？
+- content: 操、品味、串、本格、回扣、一捆树苗、略、枯叶
+  title: 肆组用到的答案有哪些？
+- content: 灰尘、消极、焚烧、水晶鞋、源泉、桂林山水、烟锁池塘柳、泼脏水、日光灯、渣土、明日复明日、深秋
+  title: 伍组用到的答案有哪些？
+- content: 簸箕、爽、孔孟、鳄鱼、反叛、BIANGBIANG面、监临、咫尺、一心一意、成双成对、会合
+  title: 陆组用到的答案有哪些？
+title: 提词卡
+type: problem

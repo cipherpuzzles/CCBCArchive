@@ -1,0 +1,30 @@
+answer: STINGRAY
+content: []
+content-type: 0
+desc: Sgr
+extend-data: null
+links:
+- path: ccbc13/index
+  title: 索引页
+  type: index
+- path: ccbc13/pages/asteroid
+  title: 小行星
+  type: page
+problem-image: /ccbc13/images/asteroid/8676c9d8e4dd4c109b50946e336f5437.webp
+tips:
+- content: 'MARRY
+
+    MILLS
+
+    SORRY
+
+    BULLS
+
+    FUSION
+
+    CHAIN'
+  title: 题目里的图片分别对应什么单词？
+- content: 一个单词可以通过凯撒固定位数变为另一个单词。
+  title: 我还是不懂箭头的机制
+title: ⭐
+type: problem

@@ -1,0 +1,29 @@
+answer: TELEVISION
+content:
+- '<div class="ccbcstylewrapper">
+
+  <p>点击图片以在网页上做题。</p>
+
+  <p><a target="_blank" href="https://puzz.cipherpuzzles.com/p.html?nonogram/10/11/7k111i113i12j12j111i111i7k212i7k2j1j21i2jaj31i111h31i111h31iaj"><img
+  src="/ccbc13/images/asteroid/05b7b7b040b6490b9aa0b1ca9db096a8.webp" style="width:500px"></a></p>
+
+  <!--<p><a target="_blank" href="https://puzz.cipherpuzzles.com/p.html?nonogram/10/11/7k111i113i12j12j111i111i7k212i7k2j1j21i2jaj31i111h31i111h31iaj"><img
+  src="/ccbc13/images/asteroid/9c7974f8f951458ba4d9ea2c7f9df2d2.webp" style="width:500px"></a></p>-->
+
+  </div>'
+content-type: 1
+desc: Leo
+extend-data: null
+links:
+- path: ccbc13/index
+  title: 索引页
+  type: index
+- path: ccbc13/pages/asteroid
+  title: 小行星
+  type: page
+problem-image: /ccbc13/images/asteroid/4564b00e74414ab5970b2e006ad600e2.webp
+tips:
+- content: 象形。最终答案是一个常见电器。
+  title: 该如何提取
+title: ⭐
+type: problem

@@ -1,0 +1,18 @@
+answer: BEIJING VS CAIRO
+content: []
+content-type: 0
+desc: Vir
+extend-data: null
+links:
+- path: ccbc13/index
+  title: 索引页
+  type: index
+- path: ccbc13/pages/asteroid
+  title: 小行星
+  type: page
+problem-image: /ccbc13/images/asteroid/8df213e820ab47afabb312936cdb308c.webp
+tips:
+- content: 本题是盲文
+  title: 我毫无思路
+title: ⭐
+type: problem
