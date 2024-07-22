@@ -1,0 +1,29 @@
+answer: GLITTERY
+answer-analysis: 每个小题中有重复的双字母，答案：GLITTERY。
+content:
+- CCBC9的旅程转眼就结束了，你踏上了返程的小船。
+content-type: 0
+desc: Meta F
+extend-content:
+- 你获得了一块F区的结构碎片
+extend-data: ''
+links:
+- path: ccbc9r/index
+  title: 索引页
+  type: index
+- path: ccbc9r/pages/f
+  title: 码头
+  type: page
+problem-image: /ccbc9r/images/F/3ef66f3c387f471892bd29eacf8bc52e.webp
+tips:
+- content: '这是一道元谜题(Meta)，你可能需要使用到之前这个区域内所有的小题标题、图片、答案或其他元素来完成这道题。
+
+
+    表格中的诗词每一句都有重复的双字'
+  title: 我毫无头绪
+- content: 通过诗词的提示，提取小题答案中重复的双字母
+  title: 该如何提取
+- content: Final Meta会帮你解开这个疑问
+  title: 我似乎已经回答正确了，但还有些疑问
+title: 成双成对
+type: problem

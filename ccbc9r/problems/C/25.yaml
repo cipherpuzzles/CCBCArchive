@@ -1,0 +1,31 @@
+answer: LISTENING
+answer-analysis: 解彩色Nonogram，将图进行RGB三色分解可得答案：LISTENING。
+content:
+- '刚从白色的房间走出来，就立刻进入了一个伸手不见五指的漆黑房间，等眼睛适应过来，你才看到了一些闪着荧光的彩色数字。
+
+
+  <img src="/ccbc9r/images/C/7d973e1da9e1410f84a2c8b3bb411e5a.webp" width="700">
+
+
+  <a href="https://static.cipherpuzzles.com/static/images/569dc257f684447dba39bb51ce205520.xlsx">点击下载文件</a>'
+content-type: 0
+desc: C5
+extend-data: ''
+links:
+- path: ccbc9r/index
+  title: 索引页
+  type: index
+- path: ccbc9r/pages/c
+  title: 鬼屋
+  type: page
+tips:
+- content: 这是一个Nonogram的变种，你仍需要按照Nonogram的规则，完成这道彩色迷题
+  title: 我毫无头绪
+- content: 如果你得到了正确的色块图结果，对这个图进行RGB三原色分解
+  title: 接下来该怎么办
+- content: 分解后的结果能看出反色的字母象形
+  title: 该如何对应
+- content: 按分解后得到的字母，按RGB颜色的顺序依次排列
+  title: 该如何排序
+title: C5-荧光数字
+type: problem

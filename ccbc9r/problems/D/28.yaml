@@ -1,0 +1,35 @@
+answer: IMPOVERISH
+answer-analysis: '将纸条沿中线左右对折平分线对折，从左到右、从上至下读取洞里漏出来的字母。
+
+
+  答案：IMPOVERISH。'
+content:
+- '从鬼屋出发继续前进，前面是一个巨大的旋转木马，“终于有点游乐园的样子了。”你不由得心想着。
+
+
+  走到旋转木马跟前，发现入口处的闸机紧闭着，似乎需要门票才能进入，而门票又去哪里找呢？
+
+
+  就在一筹莫展之际，你在草丛旁发现了一张打过孔的旧纸，似乎是一张用过的票。
+
+
+  <img src="/ccbc9r/images/D/dee8a1c86c164c6d899b3b4a94445334.webp" width="600">'
+content-type: 0
+desc: D1
+extend-data: ''
+links:
+- path: ccbc9r/index
+  title: 索引页
+  type: index
+- path: ccbc9r/pages/d
+  title: 旋转木马
+  type: page
+tips:
+- content: 首先你可以试着将这张旋转木马票对折
+  title: 我毫无头绪
+- content: 对折之后你可以从每一个洞里看到对面纸片上的字母，记录下每个洞所对应的字母
+  title: 该如何提取
+- content: 将旋转木马票重新展开，按照从左到右、从上到下的顺序依次排列之前每个洞所对应的字母
+  title: 该如何排序
+title: D1-旋转木马票
+type: problem

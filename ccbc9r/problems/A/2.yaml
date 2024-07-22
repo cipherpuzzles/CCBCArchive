@@ -1,0 +1,26 @@
+answer: COMPETITION
+answer-analysis: 将图中字母倒序，即可得到答案：COMPETITION。
+content:
+- '进入广场，首先映入眼帘的是一些小摊位。
+
+
+  “快看，是吹糖人！”
+
+
+  只见一个个用麦芽糖吹出来的字母，饱满透亮地排成了整齐的一行。'
+content-type: 0
+desc: A2
+extend-data: ''
+links:
+- path: ccbc9r/index
+  title: 索引页
+  type: index
+- path: ccbc9r/pages/a
+  title: 乐园广场
+  type: page
+problem-image: /ccbc9r/images/A/632925806d0442bbbf36cc0b2ccbc735.webp
+tips:
+- content: 这些糖人看起来都是字母的形状，只需要反过来读就可以啦
+  title: 我毫无头绪
+title: A2-吹糖人
+type: problem

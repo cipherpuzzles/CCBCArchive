@@ -1,0 +1,54 @@
+answer: EVAPORATIVE
+answer-analysis: '解维吉尼亚密码，明文为《独立宣言》，如下：
+
+
+  That whenever any form of Government becomes dBstructive of these ends, it is the
+  Right of the People to alter or to abolish it, and to institute new GoNernment,
+  laying its foundation on such principles Xnd organizing its Yowers in such form,
+  as to them shall seem most likely tW effect their Safety and Happiness. Prudence,
+  indeed, will dictate that Governments long established should not be changed foJ
+  light and transient causes; and accordingly all experience has shown, that mankind
+  are more disposed to suffer, while evils Gre sufferable, than to right themselves
+  by abolishing the forms to which Khey are accustomed. But when a long train of abuses
+  and usurpations, pursuing Mnvariably the same Object, eUinces a design to reduce
+  them under absolute Despotism, it is thCir right, it is their duty, to throw off
+  such Government, and to provide new Guards for their future security.
+
+  可得密钥为WRONGLETR（Wrong Letter）。
+
+
+  上文中和原文对比有一些错误的字母（已用大写标注）。找到错误的字母所覆盖的原来正确的字母，连起来就是答案：EVAPORATIVE。'
+content:
+- '走到鬼屋深处，你意外在地上找到一张旧纸条，上面密密麻麻地写满了英文字母，看起来像是一段加密的文字：
+
+
+  <b>Pyog csigvrvf ntj jhii ft Tugikeivbg hpghdaj rOyevntpzjr uq xavov sajd, mm zo
+  kvr Xtkak kw huk Aihghv hb gwxxi ki hb gmsezoy wg, gyh mf eeggoeymv jvk TuYikeivbg,
+  rlcbec zhf lzyguwkwbt zr llyy deoygbghvg Kto skxwewmoyk bko Pcjkcw be olqu lzvf,
+  ro kc gnpq lywcz fkpq ffok zvqppr kS vtsknx myazf Fgqimp wer Ugatbeajg. Cxfhxeyv,
+  wajpiw, necz qonxtka kvnz Rsovneartew efjx sfzlfezoysq yssncz ecg hp garjxsq lzN
+  ezcyh nto xkrjjwrte gtlovg; nto evtkirvtrpr rhc skvpvbvjts ugd wafse, huge qtegzbq
+  gci ffnv rvyaslvz kc faqjxi, sywyk pzbco Xfr yfjyvnrpyk, elte pf fvmsx myadgrrgil
+  su rpbrtwazjx huk qskdo kc jntga Bdvm nxp evtqjhbsph. Ulp nvrt l phec kfnoy sy rxlgry
+  lrw lolfcgemheo, gieyfmgx Iejnxteucu kvr ylqx Fxaspz, pYbeyvg n jpwbxj kc ekoyvv
+  pysz ayhxi wsgbrfxx Uajdbztwf, zp zg gnNmk iexvg, oe ml kdvwe jfxr, kk kveuh syw
+  olqu Mzzxijdsaz, lrw kk gfbbthx ean Uhgchl wki huktv ylplfr ypgniekm.</b>'
+content-type: 0
+desc: C6
+extend-data: ''
+links:
+- path: ccbc9r/index
+  title: 索引页
+  type: index
+- path: ccbc9r/pages/c
+  title: 鬼屋
+  type: page
+tips:
+- content: 这是一段维吉尼亚密码，你可以通过一些工具辅助完成解密，找出密钥和正确的明文
+  title: 我毫无头绪
+- content: 得到的结果中似乎有一些错误的字母，找到他们
+  title: 接下来该怎么办
+- content: 提取这些错误单词中，该位置正确的字母
+  title: 该如何提取
+title: C6-旧纸条
+type: problem

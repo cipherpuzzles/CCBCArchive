@@ -1,0 +1,40 @@
+answer: MANEUVERABILITY
+answer-analysis: '每种饮料代表了横向的两个点，一共四种饮料：牛奶、啤酒、雪碧、可乐，通过穷举可知饮料分别代表了○○、○●、●○、●●，替换后可得：
+
+
+  ●● ●○ ●● ●○ ●○ ●○ ●○ ●○ ●○ ●○ ○● ●○ ○● ○● ●●
+
+
+  ○○ ○○ ○● ○● ○○ ●○ ○● ●● ○○ ●○ ●○ ●○ ●○ ●● ○●
+
+
+  ●○ ○○ ●○ ○○ ●● ●● ○○ ●○ ○○ ○○ ○○ ●○ ○○ ●○ ●●
+
+
+  解盲文，答案：MANEUVERABILITY。'
+content:
+- 你越走越累，正当你想喝点什么的时候，一个自动售货机映入眼帘。
+content-type: 0
+desc: E2
+extend-data: ''
+links:
+- path: ccbc9r/index
+  title: 索引页
+  type: index
+- path: ccbc9r/pages/e
+  title: 摩天轮
+  type: page
+problem-image: /ccbc9r/images/E/539263c4e8424fdcbf53bcd9aa5be885.webp
+tips:
+- content: 这是一种盲文，每种饮料都代表了横向的两个点，试着通过盲文的规律找到替换的关系
+  title: 我毫无头绪
+- content: 牛奶代表了○○
+  title: 牛奶代表什么
+- content: 啤酒代表了○●
+  title: 啤酒代表什么
+- content: 雪碧代表了●○
+  title: 雪碧代表什么
+- content: 可乐代表了●●
+  title: 可乐代表什么
+title: E2-自动售货机
+type: problem

@@ -1,0 +1,53 @@
+type: page
+title: B - 美术馆
+content: 
+- |
+  这里是美术馆
+    
+
+links:
+  - 
+    title: CCBC9导览图
+    type: page
+    path: ccbc9r/pages/main
+  - 
+    title: B1-俄罗斯方块
+    type: problem
+    path: ccbc9r/problems/b/11
+  - 
+    title: B2-徽章陈列室
+    type: problem
+    path: ccbc9r/problems/b/12
+  - 
+    title: B3-动物剪影
+    type: problem
+    path: ccbc9r/problems/b/13
+  - 
+    title: B4-汉字墙
+    type: problem
+    path: ccbc9r/problems/b/14
+  - 
+    title: B5-小星星
+    type: problem
+    path: ccbc9r/problems/b/15
+  - 
+    title: B6-轻松一刻
+    type: problem
+    path: ccbc9r/problems/b/16
+  - 
+    title: B7-爆炸挑战
+    type: problem
+    path: ccbc9r/problems/b/17
+  - 
+    title: B8-像素画作
+    type: problem
+    path: ccbc9r/problems/b/18
+  - 
+    title: B9-时钟之谜
+    type: problem
+    path: ccbc9r/problems/b/19
+  - 
+    title: META 围棋迷局
+    type: problem
+    path: ccbc9r/problems/b/20
+

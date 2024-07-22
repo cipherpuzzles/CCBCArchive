@@ -1,0 +1,31 @@
+type: page
+title: D - 旋转木马
+content: 
+- |
+  这里是旋转木马
+    
+
+links:
+  - 
+    title: CCBC9导览图
+    type: page
+    path: ccbc9r/pages/main
+  - 
+    title: D1-旋转木马票
+    type: problem
+    path: ccbc9r/problems/d/28
+  - 
+    title: D2-杂乱的线条
+    type: problem
+    path: ccbc9r/problems/d/29
+  - 
+    title: D3-精美的旋转木马
+    type: problem
+    path: ccbc9r/problems/d/30
+  - 
+    title: META 散乱的按键
+    type: problem
+    path: ccbc9r/problems/d/31
+
+
+

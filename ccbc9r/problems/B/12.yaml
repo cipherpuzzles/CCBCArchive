@@ -1,0 +1,46 @@
+answer: CYCLONE
+answer-analysis: '题中都是国家国徽中图案的剪影，由左至右依次为：
+
+
+  Cambodia柬埔寨
+
+
+  Yemen也门
+
+
+  Canada加拿大
+
+
+  Lebanon黎巴嫩
+
+
+  Oman阿曼
+
+
+  Nicaragua尼加拉瓜
+
+
+  Ethiopia埃塞俄比亚
+
+
+  取首字母得到答案：CYCLONE。'
+content:
+- 走进美术馆的另一个展厅，你被墙上展示的各种精美绝伦的徽章所吸引。
+content-type: 0
+desc: B2
+extend-data: ''
+links:
+- path: ccbc9r/index
+  title: 索引页
+  type: index
+- path: ccbc9r/pages/b
+  title: 美术馆
+  type: page
+problem-image: /ccbc9r/images/B/af72fd9fae6e49b1a5dbcbd9c45046df.webp
+tips:
+- content: 这些徽章图案都是某个国家的国徽，试着把他们代表的国家都找出来
+  title: 我毫无头绪
+- content: 提取国家名字首字母即可
+  title: 该如何提取
+title: B2-徽章陈列室
+type: problem

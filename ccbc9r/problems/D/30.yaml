@@ -1,0 +1,25 @@
+answer: SQUELCH
+answer-analysis: 在图片中有隐藏起来的字母，从上至下顺序读取可得答案：SQUELCH。
+content:
+- '你终于成功地把机器发动了起来，挑了一匹看起来最顺眼的坐了上去。此刻你感到十分满足。
+
+
+  <img src="/ccbc9r/images/D/2e5e8667cec44aff85915a789663d622.webp" width="700">'
+content-type: 0
+desc: D3
+extend-data: ''
+links:
+- path: ccbc9r/index
+  title: 索引页
+  type: index
+- path: ccbc9r/pages/d
+  title: 旋转木马
+  type: page
+tips:
+- content: '图片中有隐藏起来的字母，仔细找找吧。
+
+
+    例如：在旋转木马屋顶上靠左的那块装饰板上，有第一个字母S'
+  title: 我毫无头绪
+title: D3-精美的旋转木马
+type: problem

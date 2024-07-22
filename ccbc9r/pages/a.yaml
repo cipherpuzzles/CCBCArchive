@@ -1,0 +1,53 @@
+type: page
+title: A - 乐园广场
+content: 
+- |
+  这里是乐园广场
+    
+
+links:
+  - 
+    title: CCBC9导览图
+    type: page
+    path: ccbc9r/pages/main
+  - 
+    title: A1-入园验证码
+    type: problem
+    path: ccbc9r/problems/a/1
+  - 
+    title: A2-吹糖人
+    type: problem
+    path: ccbc9r/problems/a/2
+  - 
+    title: A3-英文标牌
+    type: problem
+    path: ccbc9r/problems/a/3
+  - 
+    title: A4-打气球
+    type: problem
+    path: ccbc9r/problems/a/4
+  - 
+    title: A5-拼图游戏
+    type: problem
+    path: ccbc9r/problems/a/5
+  - 
+    title: A6-六角棋盘
+    type: problem
+    path: ccbc9r/problems/a/6
+  - 
+    title: A7-视力测试
+    type: problem
+    path: ccbc9r/problems/a/7
+  - 
+    title: A8-罗马地毯
+    type: problem
+    path: ccbc9r/problems/a/8
+  - 
+    title: A9-旧电脑的老故事
+    type: problem
+    path: ccbc9r/problems/a/9
+  - 
+    title: META 游园火车票
+    type: problem
+    path: ccbc9r/problems/a/10
+

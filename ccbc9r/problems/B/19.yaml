@@ -1,0 +1,23 @@
+answer: CAPITULATE
+answer-analysis: '对每组时间中的6个数码管数字全部进行异或操作。
+
+
+  答案：CAPITULATE。'
+content:
+- 在尽头的科技陈列区，你看到了一面巨大的时钟墙。不同的电子时钟显示着各种奇怪的时间，这些时间看起来似乎毫无规律，真的是这样吗？
+content-type: 0
+desc: B9
+extend-data: ''
+links:
+- path: ccbc9r/index
+  title: 索引页
+  type: index
+- path: ccbc9r/pages/b
+  title: 美术馆
+  type: page
+problem-image: /ccbc9r/images/B/00c46779bb3448908dce99fe1fac75e4.webp
+tips:
+- content: 将每组时间中6个数码管数字，全部进行异或操作
+  title: 我毫无头绪
+title: B9-时钟之谜
+type: problem

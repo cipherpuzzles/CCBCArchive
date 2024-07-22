@@ -1,0 +1,36 @@
+answer: BRITISH
+answer-analysis: '图中的棋盘对应了二层六角幻方，通过给出的数字可确定唯一二层六角幻方的唯一解。
+
+
+  棋子的颜色红与黑分别对应了摩斯的*和-，棋盘的颜色作为分隔，根据数字顺序转换所有的棋子，可以得到：-***/*-*/**/-/**/***/****。
+
+
+  答案：BRITISH。'
+content:
+- '你发现一个奇怪的棋盘，棋子上的数字都已经磨损地看不清了，只有数字1、2还清晰可见。
+
+
+  <img src="/ccbc9r/images/A/dee8baadadf5425cb0c7c48d6e2a02fb.webp" width="600">'
+content-type: 0
+desc: A6
+extend-data: ''
+links:
+- path: ccbc9r/index
+  title: 索引页
+  type: index
+- path: ccbc9r/pages/a
+  title: 乐园广场
+  type: page
+tips:
+- content: 试着给图中其他空着的棋子也标上数字，使每个方向的一排棋子和都是38
+  title: 我毫无头绪
+- content: 这是一种六角幻方，可以通过搜索得知，他具有唯一解（指不考虑对称和旋转），而题目已经给出了1和2的位置，这能限制了翻转和旋转给出唯一解
+  title: 我更无头绪了
+- content: 按填写顺序记录所有的红子或黑子。
+  title: 该如何提取
+- content: 每次棋盘颜色的变化可以看作为一次分隔
+  title: 棋盘的颜色有什么用
+- content: 将黑子看作长信号-，红子看作短信号*，用摩斯电码进行对照
+  title: 最后该如何对应
+title: A6-六角棋盘
+type: problem

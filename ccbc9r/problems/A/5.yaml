@@ -1,0 +1,22 @@
+answer: AUTHORITY
+answer-analysis: 首先拼图，拼完后发现是口袋妖怪中的未知图腾，对应未知图腾的字母表解得答案：AUTHORITY。
+content:
+- 一些拼图的碎片散乱在桌上，图案中似乎隐藏着什么未知的图腾符号。
+content-type: 0
+desc: A5
+extend-data: ''
+links:
+- path: ccbc9r/index
+  title: 索引页
+  type: index
+- path: ccbc9r/pages/a
+  title: 乐园广场
+  type: page
+problem-image: /ccbc9r/images/A/14febeecfda646798d74e909616d3c48.webp
+tips:
+- content: 首先你应该正确的完成这幅拼图，在Windows系统自带的画图工具中，有一个透明选择功能将很好的过滤掉背景色
+  title: 我毫无头绪
+- content: 这些图案是动漫作品《宝可梦》（曾用名《宠物小精灵》、《神奇宝贝》）中的未知图腾，通过搜索可以找到未知图腾字母表进行比对
+  title: 这些图案是什么
+title: A5-拼图游戏
+type: problem

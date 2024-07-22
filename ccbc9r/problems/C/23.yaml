@@ -1,0 +1,88 @@
+answer: DUMPISH
+answer-analysis: 按RGB通道分别取每个通道255色值的格子，按象形解猪圈密码，答案：DUMPISH。
+content:
+- "虽然说是鬼屋，但是整个房间一点恐怖的气息都没有，反而比起美术馆看起来更有艺术感。\n\n这个房间是由色彩斑斓的瓷砖拼贴而成的，看起来十分梦幻。\n\n<head>\n\
+  \    <title>Color Squares</title>\n    <style>\n        .container {\n         \
+  \   display: flex;\n            flex-wrap: wrap;\n            width: 752px; /* 64px\
+  \ * 11 + 40px (10 gaps of 4px) */\n        }\n        .square {\n            width:\
+  \ 64px;\n            height: 64px;\n            margin: 2px; /* 4px gap divided\
+  \ by 2 for each side */\n            border-radius: 8px; /* Set the border-radius\
+  \ to 8px to make it rounded */\n        }\n    </style>\n</head>\n<body>\n    <div\
+  \ class=\"container\">\n        <div class=\"square\" style=\"background-color:\
+  \ #FF63A6;\"></div>\n        <div class=\"square\" style=\"background-color: #FFFFA7;\"\
+  ></div>\n        <div class=\"square\" style=\"background-color: #FFFF5A;\"></div>\n\
+  \        <div class=\"square\" style=\"background-color: #87FF63;\"></div>\n   \
+  \     <div class=\"square\" style=\"background-color: #8565C6;\"></div>\n      \
+  \  <div class=\"square\" style=\"background-color: #5CFFB4;\"></div>\n        <div\
+  \ class=\"square\" style=\"background-color: #FFFF6D;\"></div>\n        <div class=\"\
+  square\" style=\"background-color: #7AFF24;\"></div>\n        <div class=\"square\"\
+  \ style=\"background-color: #FFA160;\"></div>\n        <div class=\"square\" style=\"\
+  background-color: #FF296E;\"></div>\n        <div class=\"square\" style=\"background-color:\
+  \ #FF5D33;\"></div>\n        <div class=\"square\" style=\"background-color: #6E64D7;\"\
+  ></div>\n        <div class=\"square\" style=\"background-color: #2D91BE;\"></div>\n\
+  \        <div class=\"square\" style=\"background-color: #FF2FC2;\"></div>\n   \
+  \     <div class=\"square\" style=\"background-color: #5DFFB9;\"></div>\n      \
+  \  <div class=\"square\" style=\"background-color: #A1C2D6;\"></div>\n        <div\
+  \ class=\"square\" style=\"background-color: #FFFF6F;\"></div>\n        <div class=\"\
+  square\" style=\"background-color: #D26F41;\"></div>\n        <div class=\"square\"\
+  \ style=\"background-color: #CD4DAE;\"></div>\n        <div class=\"square\" style=\"\
+  background-color: #CEB03F;\"></div>\n        <div class=\"square\" style=\"background-color:\
+  \ #73C23D;\"></div>\n        <div class=\"square\" style=\"background-color: #FF8845;\"\
+  ></div>\n        <div class=\"square\" style=\"background-color: #4FA6FF;\"></div>\n\
+  \        <div class=\"square\" style=\"background-color: #A7FFC6;\"></div>\n   \
+  \     <div class=\"square\" style=\"background-color: #FF507D;\"></div>\n      \
+  \  <div class=\"square\" style=\"background-color: #8BFF81;\"></div>\n        <div\
+  \ class=\"square\" style=\"background-color: #FF40FF;\"></div>\n        <div class=\"\
+  square\" style=\"background-color: #3FFFBA;\"></div>\n        <div class=\"square\"\
+  \ style=\"background-color: #53B887;\"></div>\n        <div class=\"square\" style=\"\
+  background-color: #39B6FF;\"></div>\n        <div class=\"square\" style=\"background-color:\
+  \ #FFBDFF;\"></div>\n        <div class=\"square\" style=\"background-color: #2C9FFF;\"\
+  ></div>\n        <div class=\"square\" style=\"background-color: #FF2CFF;\"></div>\n\
+  \        <div class=\"square\" style=\"background-color: #918797;\"></div>\n   \
+  \     <div class=\"square\" style=\"background-color: #B978FF;\"></div>\n      \
+  \  <div class=\"square\" style=\"background-color: #FF9E82;\"></div>\n        <div\
+  \ class=\"square\" style=\"background-color: #799CFF;\"></div>\n        <div class=\"\
+  square\" style=\"background-color: #C41F4E;\"></div>\n        <div class=\"square\"\
+  \ style=\"background-color: #FF9E6E;\"></div>\n        <div class=\"square\" style=\"\
+  background-color: #B3C871;\"></div>\n        <div class=\"square\" style=\"background-color:\
+  \ #91BBFF;\"></div>\n        <div class=\"square\" style=\"background-color: #50CB9A;\"\
+  ></div>\n        <div class=\"square\" style=\"background-color: #3A59B3;\"></div>\n\
+  \        <div class=\"square\" style=\"background-color: #FFC4FF;\"></div>\n   \
+  \     <div class=\"square\" style=\"background-color: #FF7B50;\"></div>\n      \
+  \  <div class=\"square\" style=\"background-color: #FF5588;\"></div>\n        <div\
+  \ class=\"square\" style=\"background-color: #FF8BFF;\"></div>\n        <div class=\"\
+  square\" style=\"background-color: #31C19E;\"></div>\n        <div class=\"square\"\
+  \ style=\"background-color: #2EB04C;\"></div>\n        <div class=\"square\" style=\"\
+  background-color: #C4418A;\"></div>\n        <div class=\"square\" style=\"background-color:\
+  \ #FF7B50;\"></div>\n        <div class=\"square\" style=\"background-color: #1A49FF;\"\
+  ></div>\n        <div class=\"square\" style=\"background-color: #FF556C;\"></div>\n\
+  \        <div class=\"square\" style=\"background-color: #FFBAB2;\"></div>\n   \
+  \     <div class=\"square\" style=\"background-color: #FF64FF;\"></div>\n    </div>\n\
+  </body>\n</html>"
+content-type: 0
+desc: C3
+extend-data: ''
+links:
+- path: ccbc9r/index
+  title: 索引页
+  type: index
+- path: ccbc9r/pages/c
+  title: 鬼屋
+  type: page
+tips:
+- content: 首先你应当提取所有颜色块的RGB信息
+  title: 我毫无头猪
+- content: 你只需要找到所有RGB分色值为255的格子，按颜色分别进行象形
+  title: 接下来我有点懵圈
+- content: '我毫无头  猪
+
+
+    接下来我有点懵  圈
+
+
+    你可以查找猪圈密码（猪笔密码）（Pigpen）的对照表来对应'
+  title: 该如何对应
+- content: 按照RGB即红绿蓝的顺序依次排列
+  title: 该如何排序
+title: C3-彩色瓷砖
+type: problem

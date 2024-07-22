@@ -1,0 +1,14 @@
+type: index
+title: CCBC 9R 存档站
+content: 
+  - |
+    CCBC 9R 的存档工作仍在进行中，但是所有的题目均已存档，请点击主页面按钮查看。
+links:
+  - 
+    title: 主页面
+    type: page
+    path: ccbc9r/pages/main
+  - 
+    title: 尾声
+    type: page
+    path: ccbc9r/pages/finalend

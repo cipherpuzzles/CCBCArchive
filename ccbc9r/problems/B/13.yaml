@@ -1,0 +1,44 @@
+answer: LEPRECHAUN
+answer-analysis: 图为宝可梦的剪影，分别为：大舌头/顽皮雷弹/钻角犀兽/蔓藤怪/顽皮雷弹/巨钳蟹/卡拉卡拉/引梦貘人/海刺龙/双弹瓦斯。将这些宝可梦的编号对照ASCII表，解得答案：LEPRECHAUN。
+content:
+- 这件作品看起来像是若干动物的剪影，这些都是谁呢？
+content-type: 0
+desc: B3
+extend-data: ''
+links:
+- path: ccbc9r/index
+  title: 索引页
+  type: index
+- path: ccbc9r/pages/b
+  title: 美术馆
+  type: page
+problem-image: /ccbc9r/images/B/edc12a68dfad45aeb24fffa81a09a48c.webp
+tips:
+- content: 这些黑影都是《宝可梦》中的宝可梦，试着找出他们吧
+  title: 我毫无头绪
+- content: 大舌头
+  title: 第一个是什么
+- content: 顽皮雷弹
+  title: 第二个是什么
+- content: 钻角犀兽
+  title: 第三个是什么
+- content: 藤蔓怪
+  title: 第四个是什么
+- content: 顽皮雷弹
+  title: 第五个是什么
+- content: 巨钳蟹
+  title: 第六个是什么
+- content: 卡拉卡拉
+  title: 第七个是什么
+- content: 引梦貘人
+  title: 第八个是什么
+- content: 海刺龙
+  title: 第九个是什么
+- content: 双弹瓦斯
+  title: 第十个是什么
+- content: 提取这些宝可梦的全国图鉴编号
+  title: 该如何提取
+- content: 可以查十进制ASCII表对应
+  title: 该如何对应
+title: B3-动物剪影
+type: problem

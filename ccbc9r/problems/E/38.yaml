@@ -1,0 +1,63 @@
+answer: PONYTAILS
+answer-analysis: '解答纵横谜题，填好后的答案为：
+
+
+  1. Cadence / 2. Melody / 3. Moon / 4. Yak / 5. Sparkle / 6. Bloom / 7. Rose / 8.
+  Heartstrings / 9. Stream
+
+
+  答案通过搜索可知均为小马宝莉动画系列中的角色名的一部分：
+
+
+  Princess Cadence / Octavia Melody / Nightmare Moon / Yona Yak / Twilight Sparkle
+  / Apple Bloom / Inky Rose / Lyra Heartstrings / Silver Stream
+
+
+  找到名称的另外一部分，取首字母可得答案：PONYTAILS。'
+content:
+- '你在书架的最深处找到一本魔法书，里面写着些奇奇怪怪的咒语和格子：
+
+
+  <b>
+
+  1. A chord sequence that ends a musical phrase<br>
+
+  2. A sequence of notes that is musically satisfying<br>
+
+  3. Dark side of the ?<br>
+
+  4. A long-haired animal<br>
+
+  5. Bright flashes of light<br>
+
+  6. The flower of a plant<br>
+
+  7. A type of fragrant flower<br>
+
+  8. Emotional or sentimental feelings<br>
+
+  9. A continuous flow of water<br>
+
+  </b>
+
+
+  <img src="/ccbc9r/images/E/612a70e889ea43d2968021b69c9a088c.webp" width="600">'
+content-type: 0
+desc: E7
+extend-data: ''
+links:
+- path: ccbc9r/index
+  title: 索引页
+  type: index
+- path: ccbc9r/pages/e
+  title: 摩天轮
+  type: page
+tips:
+- content: 你需要先完成这个纵横字谜
+  title: 我毫无头绪
+- content: 你可以尝试将你填出的单词里挑选几个，一块儿搜索，发现共同点
+  title: 我已经完成了第一步，接下来该怎么办
+- content: 提取角色名称另一部分的首字母
+  title: 我知道他们是什么了，该如何提取
+title: E7-友谊魔法
+type: problem

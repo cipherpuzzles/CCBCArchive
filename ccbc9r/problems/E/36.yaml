@@ -1,0 +1,30 @@
+answer: GROUNDBURST
+answer-analysis: '将图片右侧翻折到左侧，取拼合后的补集。
+
+
+  解猪圈密码，比如第一个图形，对应的形状是九宫格左下角的7形，对应字母G。
+
+
+  答案：GROUNDBURST。'
+content:
+- 在你翻看书的时候，一个叠起来的小纸条从里面掉了出来。似乎是被人当做书签放进去的。打开一看，里面画满了残缺的圆圈。
+content-type: 0
+desc: E5
+extend-data: ''
+links:
+- path: ccbc9r/index
+  title: 索引页
+  type: index
+- path: ccbc9r/pages/e
+  title: 摩天轮
+  type: page
+problem-image: /ccbc9r/images/E/7e2e0ac0e2f1459d858af86138f23a09.webp
+tips:
+- content: 首先你需要将右侧的图案翻折到左边。
+  title: 我毫无头猪
+- content: 你需要利用到拼合后图形的补集。
+  title: 接下来我有点懵圈
+- content: "我毫无头“猪”\n\t\n接下来我有点懵“圈”\n\n你可以查找猪圈密码（猪笔密码）（Pigpen）的对照表来对应。\n\n比如第一个图形，对应的形状是九宫格左下角的7形，对应字母G。\n"
+  title: 该如何对应
+title: E5-残缺的圆圈
+type: problem

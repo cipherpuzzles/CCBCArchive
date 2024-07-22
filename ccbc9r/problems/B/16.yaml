@@ -1,0 +1,25 @@
+answer: CONCATENATE
+answer-analysis: '互动题，选手的作答将整理后在赛后发布，敬请期待。
+
+
+  答案：CONCATENATE。'
+content:
+- 正当你走累了的时候，你突然发现了一间舒适的休息室。房间里有柔软的沙发和一些创作用得工具，这无疑激发起了你的创作欲望。
+content-type: 0
+desc: B6
+extend-data: ''
+links:
+- path: ccbc9r/index
+  title: 索引页
+  type: index
+- path: ccbc9r/pages/b
+  title: 美术馆
+  type: page
+problem-image: /ccbc9r/images/B/1b18dd725d244a0785ca6fefb38da335.webp
+tips:
+- content: 照做即可，耐心等待邮件回复，不要重复发邮件。
+  title: 我毫无头绪
+- content: 答案是CONCATENATE
+  title: 我没有得到回复
+title: B6-轻松一刻
+type: problem

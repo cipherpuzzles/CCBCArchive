@@ -1,0 +1,55 @@
+answer: GLARINGLY
+answer-analysis: '找出图片对照的奥特曼，根据胸前的数字取名字的字母：
+
+
+  Eighty 3
+
+
+  Ultraman 2
+
+
+  Jack 2
+
+
+  Astra 4
+
+
+  Tiga 2
+
+
+  Neos 1
+
+
+  Ginga 4
+
+
+  Leo 1
+
+
+  Zoffy 5
+
+
+  答案：GLARINGLY。'
+content:
+- '逛了一整天该准备回家了。前面是卖纪念品的小摊，你打算随便买点明信片回去。
+
+
+  “这张明信片看起来怎么那么眼熟？”'
+content-type: 0
+desc: F1
+extend-data: ''
+links:
+- path: ccbc9r/index
+  title: 索引页
+  type: index
+- path: ccbc9r/pages/f
+  title: 码头
+  type: page
+problem-image: /ccbc9r/images/F/fe074c41a8ef450b8e4dbfb2d855f2e9.webp
+tips:
+- content: 明信片上的图案其实都是奥特曼（Ultraman），请找到每一个奥特曼
+  title: 我毫无头绪
+- content: 根据胸前的能量灯数字提取名字中对应位置的字母
+  title: 该如何提取
+title: F1-明信片
+type: problem

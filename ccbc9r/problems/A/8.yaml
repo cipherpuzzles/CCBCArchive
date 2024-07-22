@@ -1,0 +1,25 @@
+answer: PRODUCTION
+answer-analysis: '竖向去掉重复的部分，只提取一行的符号，可以发现为罗马数字：XVI XVIII XV IV XXI III XX IX XV XIV。
+
+
+  对应字母表可以得到答案：PRODUCTION。'
+content:
+- 你走进了一个帐篷，帐篷里空空如也，只在地上铺着一块巨大的罗马式地毯，地毯上复杂的图案似乎隐藏着某种信息。
+content-type: 0
+desc: A8
+extend-data: ''
+links:
+- path: ccbc9r/index
+  title: 索引页
+  type: index
+- path: ccbc9r/pages/a
+  title: 乐园广场
+  type: page
+problem-image: /ccbc9r/images/A/c7c36c7c1fa34373bef61f0c60144236.webp
+tips:
+- content: 地毯的图案是上下连续循环的，所以可以试着将地毯切成一定高度的长条看看
+  title: 我毫无头绪
+- content: 如果只提取竖向一次循环的高度，可以发现他们都是罗马数字，按顺序对应字母表
+  title: 该如何对应
+title: A8-罗马地毯
+type: problem

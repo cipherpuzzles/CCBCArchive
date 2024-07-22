@@ -1,0 +1,94 @@
+answer: MISCEGENATION
+answer-analysis: '图中画的是Ubuntu的版本号名称，根据动物可推测分别为：
+
+
+  Maverick Meerkat（特立独行的猫鼬）
+
+
+  Intrepid Ibex（强悍的野山羊）
+
+
+  Saucy Salamander（俏皮的蝾螈）
+
+
+  Cosmic Cuttlefish（宇宙的墨鱼）
+
+
+  Edgy Eft（前卫的水蜥）
+
+
+  Gutsy Gibbon（胆大的长臂猿）
+
+
+  Eoan Ermine（黎明东方的白鼬）
+
+
+  Natty Narwhal（聪明的独角鲸）
+
+
+  Artful Aardvark（机灵的土豚）
+
+
+  Trusty Tahr（可靠的塔尔羊）
+
+
+  Impish Indri（顽皮的大狐猴）
+
+
+  Oneiric Ocelot（梦幻的豹猫）
+
+
+  Noble Numbat（高贵的食蚁兽）
+
+
+  取首字母，答案：MISCEGENATION。'
+content:
+- '游乐园比想象中还要平淡，就在你这样想着的时候，路边一个摆满画作的小摊位吸引了你的目光，只见里面尽是一些个性十足的动物的画像。
+
+
+  <img src="/ccbc9r/images/E/163493eb2a064e31a0f32a6ead6dee47.webp" width="240">
+
+  <img src="/ccbc9r/images/E/f4cd017ed5f94466ab926d6a2e014368.webp" width="240">
+
+  <img src="/ccbc9r/images/E/c1d4a4115a22402584a15bb2f0227156.webp" width="240">
+
+  <img src="/ccbc9r/images/E/500f4f59d0d74a00abfa5f7bf9e2eaa8.webp" width="240">
+
+  <img src="/ccbc9r/images/E/afa9566c1d04423d884942d8572c029f.webp" width="240">
+
+  <img src="/ccbc9r/images/E/48596d2637564cf982f684f1815550f8.webp" width="240">
+
+  <img src="/ccbc9r/images/E/ee698477dc5e44fbb6aef46e4c79c589.webp" width="240">
+
+  <img src="/ccbc9r/images/E/46da4cf4983c42379ef196727e4f99a5.webp" width="240">
+
+  <img src="/ccbc9r/images/E/724c29e45b8b49369528e4ed66e34788.webp" width="240">
+
+  <img src="/ccbc9r/images/E/20b26d4b20b941c3974f38efc9dc3acc.webp" width="240">
+
+  <img src="/ccbc9r/images/E/fa16fb2270584d7f90113a2fb3b56b0e.webp" width="240">
+
+  <img src="/ccbc9r/images/E/dc73ba1aa9e345fb9b01b5537ad2e629.webp" width="240">
+
+  <img src="/ccbc9r/images/E/3359baff98c14889b50376af34f7eea6.webp" width="240">'
+content-type: 0
+desc: E3
+extend-data: ''
+links:
+- path: ccbc9r/index
+  title: 索引页
+  type: index
+- path: ccbc9r/pages/e
+  title: 摩天轮
+  type: page
+tips:
+- content: 图片上都是什么动物，尝试猜猜他们的英文，进行搜索
+  title: 我毫无头绪
+- content: '这些动物看起来都很棒，他们需要一个合适的形容词
+
+    比如粉粉的熊猫，伟大的鹅'
+  title: 图中除了动物还有别的信息吗
+- content: 这些动物都在Ubuntu的版本号名称中出现过
+  title: 他们还有什么关键共同点
+title: E3-你画我猜
+type: problem

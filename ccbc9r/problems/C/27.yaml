@@ -1,0 +1,30 @@
+answer: CIPHER
+answer-analysis: 题图是Word中的居中符号，6题首字母为MIDDLE，取6道小题居中字母得到答案：CIPHER。
+content:
+- '不知不觉鬼屋就走完了，前面就是鬼屋的出口。
+
+
+  突然，一只蝙蝠从你头顶飞过吓了你一跳。'
+content-type: 0
+desc: Meta C
+extend-content:
+- 你获得了一块C区的结构碎片
+extend-data: ''
+links:
+- path: ccbc9r/index
+  title: 索引页
+  type: index
+- path: ccbc9r/pages/c
+  title: 鬼屋
+  type: page
+problem-image: /ccbc9r/images/C/20efe505c86142beacaf6edebdf506ea.webp
+tips:
+- content: '这是一道元谜题(Meta)，你可能需要使用到之前这个区域内所有的小题标题、图片、答案或其他元素来完成这道题。
+
+
+    首先，你可以试着将所有的小题按顺序填入黑色格子中，并观察首字母。'
+  title: 我毫无头绪
+- content: 所有小题答案的首字母和本题图片都提示了居中，取每个小题答案的中间字母
+  title: 该如何提取
+title: 鬼屋出口
+type: problem
