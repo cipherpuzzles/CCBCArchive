@@ -1,0 +1,37 @@
+answer: ARCHITECTURES
+answer-analysis: '找到各区Meta题图中隐藏的图形，按隐藏点从小到大的顺序依次在点上的位置填入字母。
+
+
+  <img src="/ccbc9r/images/FinalMeta/a8d05a031df546a8a3e1f4c04303349a.webp" width="800">
+
+
+  所有隐藏的图形可拼成一个正三角形，依次读取拼接点的字母可得到最终答案：ARCHITECTURES。'
+content:
+- '“还有这么多碎片用不上啊……”你盯着六张答案碎片和地图出了神。
+
+
+  “等一下！”你仿佛想起了什么，飞快地跳下船，向着乐园中间跑去。
+
+
+  <img src="/ccbc9r/images/FinalMeta/2c0b245d22f844b5a17dc1252faab8de.webp" width="800">'
+content-type: 0
+desc: Final Meta
+extend-data: ''
+links:
+- path: ccbc9r/index
+  title: 索引页
+  type: index
+tips:
+- content: '这是一道终极元谜题(Final Meta)，你可能需要使用到之前所有的题目标题、图片、答案或其他元素来完成这道题。
+
+
+    你需要想办法从之前的谜题中找到一些结构碎片，如果你曾在Meta F疑惑过，那么Meta F题面中未被使用过的部分就提示了其中一块结构碎片'
+  title: 我毫无头绪
+- content: 你需要将分区的Meta答案按从小到大的顺序或其他常用顺序依次填到这些位置上
+  title: 我找到了一些结构碎片，接下来怎么办
+- content: 所有隐藏的结构碎片可以拼成一个正三角形
+  title: 最后我需要怎么办
+- content: 依次读取拼接点的字母可得到最终答案
+  title: 该如何提取
+title: 游乐园的秘密
+type: problem

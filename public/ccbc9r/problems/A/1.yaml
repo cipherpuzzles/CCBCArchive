@@ -1,0 +1,29 @@
+answer: START
+answer-analysis: 按照图中提示文字选出所有的青蛙，将每个图片左侧对应的字母连起来即可得到答案。答案：START。
+content:
+- '“账号登录成功，欢迎来到CCBC9游乐园！”
+
+
+  电子屏幕传出了欢迎的电子音。然而不知道是不是故障了，画面变成了验证码的画面：
+
+
+  <img src="/ccbc9r/images/A/db5cfa52c8194d40984bf45bc8874ea1.webp" width="400">'
+content-type: 0
+desc: A1
+extend-data: ''
+links:
+- path: ccbc9r/index
+  title: 索引页
+  type: index
+- path: ccbc9r/pages/a
+  title: 乐园广场
+  type: page
+tips:
+- content: '你找到这些青蛙了吗？
+
+    他们分别在右上角，正上方，中间，正下方和右下角的图片中'
+  title: 我毫无头绪
+- content: 所有的图片中，都有一个英文字母，将有青蛙的格子中对应的字母连起来
+  title: 该如何提取
+title: A1-入园验证码
+type: problem

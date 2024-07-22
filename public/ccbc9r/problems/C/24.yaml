@@ -1,0 +1,20 @@
+answer: DYSTHYMIC
+answer-analysis: 图中符号为大写Wingdings字体。答案：DYSTHYMIC。
+content:
+- 也许是冷气开得比较足，你终于在鬼屋里感到了些许寒意。这个房间空空如也，只有悬挂着的巨型符号在随着冷气缓缓地晃荡着。
+content-type: 0
+desc: C4
+extend-data: ''
+links:
+- path: ccbc9r/index
+  title: 索引页
+  type: index
+- path: ccbc9r/pages/c
+  title: 鬼屋
+  type: page
+problem-image: /ccbc9r/images/C/7b2d185df9fe472b85efdd27e880f1b1.webp
+tips:
+- content: 这是wingdings字体，你可以通过搜索找到对照表
+  title: 我毫无头绪
+title: C4-空白房间
+type: problem

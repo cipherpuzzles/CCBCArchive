@@ -1,0 +1,28 @@
+answer: COSTERMONGER
+answer-analysis: '横向读取每个音的音高，将低音Do定为1，每升高一个音阶数字就加一。
+
+
+  依次读取所有音符（连音符号视为一个音符），可得：3 15 19 20 5 18 13 15 14 7 5 14，转换为字母可得答案：COSTERMONGER。'
+content:
+- '“接下来要玩些什么呢？就边走边看吧。”你一边这样想着，一边往回绕着走。
+
+
+  这时游乐园里响起了断断续续的音乐声，声音似乎没什么规律，你随手用手边的纸笔记录了下来。'
+content-type: 0
+desc: E1
+extend-data: ''
+links:
+- path: ccbc9r/index
+  title: 索引页
+  type: index
+- path: ccbc9r/pages/e
+  title: 摩天轮
+  type: page
+problem-image: /ccbc9r/images/E/105aced62a0c4e52bc66a82e39064068.webp
+tips:
+- content: 首先，你需要注意到曲谱中有高音谱号和低音谱号，按照定义找到每个音的音高
+  title: 我毫无头绪
+- content: 以低音Do为1，Re为2，依次读取所有音符的音高，每升高一个音阶，数字就相应+1，最后可按字母序对应
+  title: 该如何提取
+title: E1-简单的乐谱
+type: problem

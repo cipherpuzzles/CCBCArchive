@@ -1,0 +1,44 @@
+answer: EXCLOSURE
+answer-analysis: 'B区的小题的背景图，可以拼成一整个图：
+
+
+  B3 B8 B6
+
+
+  B1 B2 B7
+
+
+  B9 B5 B4
+
+
+  根据题目给出的洛书上的数字取对应位置的字母。如左上角B3答案为LEPRECHAUN，左上角洛书为2，则提出第2个字母E
+
+
+  所有小题提取出的字母，按九宫格左上角起，从上到下，从左到右，依次顺序排列得到答案：EXCLOSURE。'
+content:
+- 从美术馆走出来，你发现入口处多了一块围棋棋盘。棋盘上布满了黑白棋子，形成了一幅复杂的棋局。
+content-type: 0
+desc: Meta B
+extend-content:
+- 你获得了一块B区的结构碎片
+extend-data: ''
+links:
+- path: ccbc9r/index
+  title: 索引页
+  type: index
+- path: ccbc9r/pages/b
+  title: 美术馆
+  type: page
+problem-image: /ccbc9r/images/B/183ea2de2e3245f58a226c00428280f6.webp
+tips:
+- content: '这是一道元谜题(Meta)，你可能需要使用到之前这个区域内所有的小题标题、图片、答案或其他元素来完成这道题。
+
+
+    首先你应该试着把小题按背景拼成九宫格'
+  title: 我毫无头绪
+- content: 按照Meta图片中对应位置的棋子数，取小题答案中的相应位置的字母
+  title: 该如何提取
+- content: 按九宫格左上角起，从上到下，从左到右依次顺序排列就行
+  title: 该如何排序
+title: 围棋迷局
+type: problem

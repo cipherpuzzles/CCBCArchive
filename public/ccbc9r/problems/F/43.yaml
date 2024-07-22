@@ -1,0 +1,54 @@
+answer: CRYOSURGERY
+answer-analysis: '数出一下每个小矮人面前都有多少糖果，分别是什么颜色。 红色到紫色的糖果依次对应了原子外电子层K层至Q层，每个小矮人面前糖果从左到右依次如下：
+
+
+  1号：M13N1
+
+
+  2号：N9O2
+
+
+  3号：O14P2
+
+
+  4号：O21P9Q2
+
+
+  5号：P17Q2
+
+
+  6号：N30O8P2
+
+
+  7号：N9O2
+
+
+  这些表示了元素外圈不饱和的电子层的电子数，可以通过总外层电子数推出元素名称，依次为：Cr Y Os U Rg Er Y。
+
+
+  连起来就是答案：CRYOSURGERY。'
+content:
+- '你开始准备返程，一个小矮人打扮的工作人员不知从哪冒了出来，拉你走到一旁的小摊位前。
+
+
+  “感谢你即将完成全部的CCBC9之旅！”小矮人打扮的工作人员们齐声道：“这些糖果就留给你当作礼物吧，不成敬意还望收下。”'
+content-type: 0
+desc: F4
+extend-data: ''
+links:
+- path: ccbc9r/index
+  title: 索引页
+  type: index
+- path: ccbc9r/pages/f
+  title: 码头
+  type: page
+problem-image: /ccbc9r/images/F/405b3470686e43febe249cbd194dee17.webp
+tips:
+- content: 首先你需要数出一下每个小矮人面前都有多少糖果，分别是什么颜色。
+  title: 我毫无头绪
+- content: 红色到紫色的糖果依次对应了原子外电子层K层至Q层
+  title: 糖果的颜色是什么意思
+- content: 这些糖果的数量表示了元素外圈不饱和的电子层的电子数，可以通过总外层电子数推出元素名称
+  title: 该如何对应
+title: F4-临别赠礼
+type: problem

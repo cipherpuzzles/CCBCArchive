@@ -1,0 +1,39 @@
+answer: LATERITIC
+answer-analysis: '将小题答案按顺序在表中提取出来，每行连接相邻的答案字母。
+
+
+  将三个连在一起的视作*，五个连在一起的视作-，解摩斯电码。
+
+
+  答案：LATERITIC。'
+content:
+- '游玩了广场的所有游乐设施后，你感到意犹未尽，接下来要去的是位于乐园另一端的美术馆。
+
+
+  路途遥远，你打算乘坐免费的游园小火车，顺便欣赏沿途美景。
+
+
+  你接过工作人员递给你的火车票，陷入了深深的沉思。'
+content-type: 0
+desc: Meta A
+extend-content:
+- 你获得了一块A区的结构碎片
+extend-data: ''
+links:
+- path: ccbc9r/index
+  title: 索引页
+  type: index
+- path: ccbc9r/pages/a
+  title: 乐园广场
+  type: page
+problem-image: /ccbc9r/images/A/987c19bb7e134031a98ce29f42e1f396.webp
+tips:
+- content: '这是一道元谜题(Meta)，你可能需要使用到之前这个区域内所有的小题标题、图片、答案或其他元素来完成这道题。
+
+
+    首先你可以试着在表格中找到之前小题的答案，并把他们标注出来'
+  title: 我毫无头绪
+- content: 这些答案的字母有的三个连在一起，看作短信号*，有的五个连在一起，看作长信号-，可以对照摩斯电码表得到答案
+  title: 该如何对应
+title: 游园火车票
+type: problem

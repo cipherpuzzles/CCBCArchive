@@ -1,0 +1,46 @@
+type: page
+title: E - 摩天轮
+content: 
+- |
+  这里是摩天轮
+    
+
+links:
+  - 
+    title: CCBC9导览图
+    type: page
+    path: ccbc9r/pages/main
+  - 
+    title: E1-简单的乐谱
+    type: problem
+    path: ccbc9r/problems/e/32
+  - 
+    title: E2-自动售货机
+    type: problem
+    path: ccbc9r/problems/e/33
+  - 
+    title: E3-你画我猜
+    type: problem
+    path: ccbc9r/problems/e/34
+  - 
+    title: E4-动物马拉松
+    type: problem
+    path: ccbc9r/problems/e/35
+  - 
+    title: E5-残缺的圆圈
+    type: problem
+    path: ccbc9r/problems/e/36
+  - 
+    title: E6-火柴挂历
+    type: problem
+    path: ccbc9r/problems/e/37
+  - 
+    title: E7-友谊魔法
+    type: problem
+    path: ccbc9r/problems/e/38
+  - 
+    title: META 摩天轮
+    type: problem
+    path: ccbc9r/problems/e/39
+
+

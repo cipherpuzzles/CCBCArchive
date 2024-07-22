@@ -1,0 +1,32 @@
+answer: TRUSTEE
+answer-analysis: 题图由红色与黑色的座舱划分为了8个区域，分别将每个小题答案的字母在区域中进行，对没被标记到的区域进行旗语。7道小题的答案分别对应的旗语区域为：左上+上
+  左+右 左上+右上 左+右下 左上+上 下+右上 下+右上，解旗语可得答案：TRUSTEE。
+content:
+- '终于看到一个像样的游乐设施，你迫不及待地冲向摩天轮，座舱上的巨大英文字母吸引了你的注意。
+
+
+  <img src="/ccbc9r/images/E/5b38d0eb5852402dbab5727f9f874343.webp" width="600">'
+content-type: 0
+desc: Meta E
+extend-content:
+- 你获得了一块E区的结构碎片
+extend-data: ''
+links:
+- path: ccbc9r/index
+  title: 索引页
+  type: index
+- path: ccbc9r/pages/e
+  title: 摩天轮
+  type: page
+tips:
+- content: '这是一道元谜题(Meta)，你可能需要使用到之前这个区域内所有的小题标题、图片、答案或其他元素来完成这道题。
+
+
+    首先你需要注意到题目中的摩天轮有26个字母座舱，并通过红色和黑色划分成了8个区域。'
+  title: 我毫无头绪
+- content: 接下来你需要将每个小题的答案的字母分别对应到摩天轮座舱中，看看哪些区域被占用了，哪些区域还空着
+  title: 接下来该怎么办
+- content: 对每个小题没有标记到座舱区域按旗语进行对应。
+  title: 该如何对应
+title: 摩天轮
+type: problem

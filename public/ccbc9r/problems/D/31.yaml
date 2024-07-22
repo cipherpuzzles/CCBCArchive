@@ -1,0 +1,43 @@
+answer: WHIMSICAL
+answer-analysis: '三道小题答案的长度分别为10、9、7，对应了标准键盘三行字母的数量。
+
+
+  图片中的字母从上到下排列为TIRGAJVXZ，将该串字母在由小题答案构成的键盘中提取字母，可以得到：VIODLOEQS。
+
+
+  从第一行开始，数出得到的字母在键盘中位置数，如字母V是第23个字母，可以对应字母表得到W，以此类推得到最终答案：WHIMSICAL。'
+content:
+- '玩完旋转木马你的心情大好，正要走时，你在管理室的桌上发现了一些散乱的按键，显然是有人故意为之。
+
+
+  <img src="/ccbc9r/images/D/1bdb89116a5d433ab8389f09d0d7d0de.webp" width="500">'
+content-type: 0
+desc: Meta D
+extend-content:
+- 你获得了一块D区的结构碎片
+extend-data: ''
+links:
+- path: ccbc9r/index
+  title: 索引页
+  type: index
+- path: ccbc9r/pages/d
+  title: 旋转木马
+  type: page
+tips:
+- content: '这是一道元谜题(Meta)，你可能需要使用到之前这个区域内所有的小题标题、图片、答案或其他元素来完成这道题。
+
+
+    本区域中三道小题的答案长度分别为10、9、7，可以对应到标准键盘三行字母的数量。'
+  title: 我毫无头绪
+- content: '图片中的字母从上到下排列为TIRGAJVXZ，将该串字母在由小题答案构成的键盘中提取字母
+
+
+    例如第一个字母T，在标准键盘中的位置是第一排第5个，则对应impoverish中的第5个字母V。'
+  title: 该如何提取
+- content: '你需要再使用一次QWE键盘与ABC字母顺序的替换
+
+
+    例如第一个提取到的字母V，在QWE键盘序列中是第23个字母，则对应ABC字母顺序中的第23个字母W'
+  title: 我提取完了，但仍不是最终答案
+title: 散乱的按键
+type: problem

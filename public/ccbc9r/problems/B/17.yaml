@@ -1,0 +1,27 @@
+answer: BESMIRCH
+answer-analysis: '一种类似扫雷的游戏，每个数字代表包括自己在内，周围的九宫格内有几个地雷。
+
+
+  观察地雷的形状，对比盲文表可得到答案：BESMIRCH。'
+content:
+- 在这面墙上你看到了一块巨大的展示板，上面排列着许多数字按钮。如果按错一个按钮，就会发出逼真的爆炸音效，挑战失败。
+content-type: 0
+desc: B7
+extend-data: ''
+links:
+- path: ccbc9r/index
+  title: 索引页
+  type: index
+- path: ccbc9r/pages/b
+  title: 美术馆
+  type: page
+problem-image: /ccbc9r/images/B/6ff7a532d7444ac1b0d5840922c7876a.webp
+tips:
+- content: 这是一种扫雷游戏
+  title: 我毫无头绪
+- content: 这是Windows版扫雷游戏的一个小变种，每个数字代表了包括自己在内的周围九宫格内，有几个地雷
+  title: 这和我平时见到的不太一样
+- content: 观察地雷的形状，对比盲文表
+  title: 该如何对应
+title: B7-爆炸挑战
+type: problem

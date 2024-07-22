@@ -1,0 +1,31 @@
+answer: ROBUST
+answer-analysis: '音频内容是一首有走音的字母歌，取走音位置的字母，按照走音量排序。
+
+
+  答案：ROBUST。'
+content:
+- "还没走到下一个展区，你就听到了房间内传来了小星星的音乐，只是这音乐听起来似乎怪怪的。\n\n<audio controls>\n    <source src=\"\
+  https://static.cipherpuzzles.com/static/images/0cb40a9c52c54494aabe1cd059f288fc.mp3\"\
+  \ type=\"audio/mpeg\">\n</audio>\n\n"
+content-type: 0
+desc: B5
+extend-data: ''
+links:
+- path: ccbc9r/index
+  title: 索引页
+  type: index
+- path: ccbc9r/pages/b
+  title: 美术馆
+  type: page
+problem-image: /ccbc9r/images/B/7fe55df5b6174ef5944507ae515da1de.webp
+tips:
+- content: 这首歌即是小星星，同时也是学习ABC的字母歌曲
+  title: 我毫无头绪
+- content: 曲调中有一些走音的地方，提取走音位置在字母歌中所唱的字母
+  title: 该如何提取
+- content: 如果你找到了所有的走音点，按走音量可以连续排列
+  title: 该如何排序
+- content: BORSTU
+  title: 哪些字母走音了
+title: B5-小星星
+type: problem

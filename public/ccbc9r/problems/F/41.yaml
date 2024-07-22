@@ -1,0 +1,34 @@
+answer: WHITEBAIT
+answer-analysis: '此古筝曲目为《春江花月夜》，在古曲编谱时，通常是用中国古乐五个基本音阶，宫商角徵羽来进行的，如对应现代音调，则分别对应12356。
+
+
+  在本曲弹奏中对特定的音采用了摇指的手法【摇指（yáo zhǐ）是以拇指或食指作细密的左右快速摇动一根弦来演奏】
+
+
+  通过音频和题目中的曲谱对照来看,特殊处理的音依次两两一组62 23 25 55 16 12 11 25 55，以宫1商2角3徵4羽5组成5*5的棋盘表对应，可得到WHITEBAIT。'
+content:
+- "游乐园响起了散场的音乐，乐音悠扬，令你心驰神往。\n\n<audio controls>\n    <source src=\"/ccbc9r/images/F/6960ca5a22a74a6488c2a13cad6af7a1.m4a\"\
+  \ type=\"audio/mpeg\">\n</audio>\n<br>\n<img src=\"/ccbc9r/images/F/1b97eb98b0164dad9b0dab3e198e8562.webp\"\
+  \ width=\"800\">\n"
+content-type: 0
+desc: F2
+extend-data: ''
+links:
+- path: ccbc9r/index
+  title: 索引页
+  type: index
+- path: ccbc9r/pages/f
+  title: 码头
+  type: page
+tips:
+- content: 此古筝曲目为《春江花月夜》，你可以先试着找到一些类似的曲谱,也就可以就用题目中的曲谱对照来看
+  title: 我毫无头绪
+- content: '在本曲弹奏中对特定的音采用了摇指的演奏手法【摇指（yáo zhǐ）是以拇指或食指作细密的左右快速摇动一根弦来演奏】，你需要找到这些音，并记录音高
+
+
+    古曲并没有唯一确定的曲谱，但类似的曲谱都可以帮助你辨认音高。'
+  title: 该如何提取
+- content: 两两一组，以宫1商2角3徵4羽5组成5*5的棋盘表对应
+  title: 该如何对应
+title: F2-声乐测试
+type: problem

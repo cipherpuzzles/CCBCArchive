@@ -1,0 +1,37 @@
+answer: PREVIOUSLY
+answer-analysis: '图中的四排气球点位可以对应键盘上数字和字母的四排，即如下：
+
+
+  1234567890
+
+
+  QWERTYUIOP
+
+
+  ASDFGHJKL;
+
+
+  ZXCVBNM,./
+
+
+  将气球按照电阻色排序（黑棕红橙黄绿蓝紫灰白），取对应位置的字母可以得到答案：PREVIOUSLY。'
+content:
+- 摊位上摆放着几排五颜六色的气球，偶尔一阵微风吹过，气球们便在空中轻舞飞扬。
+content-type: 0
+desc: A4
+extend-data: ''
+links:
+- path: ccbc9r/index
+  title: 索引页
+  type: index
+- path: ccbc9r/pages/a
+  title: 乐园广场
+  type: page
+problem-image: /ccbc9r/images/A/59c3df4512194a169e8a4b7de40c5933.webp
+tips:
+- content: 这几排气球都有10个点位，似乎对应着电脑键盘上的布局
+  title: 我毫无头绪
+- content: 可以注意到10种不同颜色的气球，恰好都是是色环电阻用来标记数值的颜色
+  title: 该如何排序
+title: A4-打气球
+type: problem

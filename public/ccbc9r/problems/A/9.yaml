@@ -1,0 +1,76 @@
+answer: TRANSPORTS
+answer-analysis: '文本为微软系统自带的字体Webdings，可直接复制，转换为普通字体为：
+
+
+  DAPNVOVXXM, SAEKOVMKVN WU BVO EKVYJMSAXU, MKKVPNE M ORUMX WMXX TAKB BVO JMAOU QRNSRKBVO''E
+  BVXY. EBV VPDBMPKE KBV YOAPDV, WIK NAEMYYVMOE MK SANPAQBK, XVMZAPQ WVBAPN BVO QXMEE
+  EXAYYVO. KBV YOAPDV EVMODBVE JRO BVO, MPN TBVP KBV EXAYYVO JAKE DAPNVOVXXM''E JRRK,
+  KBVU JAPN VPNIOAPQ XRZV MPN BMYYAPVEE. KBV MPETVO AE KOMPEYROKE. KRQVKBVO, KBVU
+  RZVODRSV RWEKMDXVE MPN XAZV BMYYAXU VZVO MJKVO.
+
+
+  解单表替代，可得明文：
+
+
+  CINDERELLA, MISTREATED BY HER STEPFAMILY, ATTENDS A ROYAL BALL WITH HER FAIRY GODMOTHER''S
+  HELP. SHE ENCHANTS THE PRINCE, BUT DISAPPEARS AT MIDNIGHT, LEAVING BEHIND HER GLASS
+  SLIPPER. THE PRINCE SEARCHES FOR HER, AND WHEN THE SLIPPER FITS CINDERELLA''S FOOT,
+  THEY FIND ENDURING LOVE AND HAPPINESS. THE ANSWER IS TRANSPORTS. TOGETHER, THEY
+  OVERCOME OBSTACLES AND LIVE HAPPILY EVER AFTER.
+
+
+  对照表：
+
+
+  密文：ABCDEF--IJK-MNOPQRSTUVWXYZ
+
+
+  明文：IHQCSX--UFT-ADRNGOMWYEBLPV
+
+
+  根据明文中的THE ANSWER IS TRANSPORTS，可得答案：TRANSPORTS。'
+content:
+- '你来到一块老旧的电子显示屏前，这里本来应该播放着灰姑娘的动画，现在却上显示着一串图形符号，仿佛是死机了。
+
+  '
+- "<head>\r\n    <style>\r\n        .image-container {\r\n            position: relative;\r\
+  \n            display: inline-block;\r\n        }\r\n        .image-container img\
+  \ {\r\n            display: block;\r\n            pointer-events: none; /* Prevents\
+  \ the image from interfering with text selection */\r\n        }\r\n        .invisible-text\
+  \ {\r\n            position: absolute;\r\n            top: 11px; /* Adjust based\
+  \ on the text position on your image */\r\n            left: 32px; /* Adjust based\
+  \ on the text position on your image */\r\n            font-family: 'Webdings';\r\
+  \n            font-size: 24.3px; /* Adjust the font size as needed */\r\n      \
+  \      line-height: 1.2; /* Adjust the line height as needed */\r\n            color:\
+  \ transparent; /* Make the text invisible */\r\n            background-color: rgba(255,\
+  \ 255, 255, 0); /* Make the background transparent */\r\n            user-select:\
+  \ text; /* Ensure the text can be selected */\r\n        }\r\n    </style>\r\n</head>\r\
+  \n<body>\r\n    <div class=\"image-container\">\r\n        <img src=\"/ccbc9r/images/A/bedcfdace2914df39090f308e11f37fe.webp\"\
+  \ width=\"800\">\r\n        <div class=\"invisible-text\">DAPNVOVXXM, SAEKOVMKVN\
+  \ WU BVO<br>EKVYJMSAXU, MKKVPNE M ORUMX WMXX<br>TAKB BVO JMAOU QRNSRKBVO'E<br>BVXY.\
+  \ EBV VPDBMPKE KBV YOAPDV,<br>WIK NAEMYYVMOE MK SANPAQBK,<br>XVMZAPQ WVBAPN BVO\
+  \ QXMEE EXAYYVO.<br>\r\nKBV YOAPDV EVMODBVE JRO BVO, MPN<br>TBVP KBV EXAYYVO JAKE<br>DAPNVOVXXM'E\
+  \ JRRK, KBVU JAPN<br>VPNIOAPQ XRZV MPN BMYYAPVEE. KBV<br>MPETVO AE KOMPEYROKE. KRQVKBVO,<br>KBVU\
+  \ RZVODRSV RWEKMDXVE MPN XAZV<br>BMYYAXU VZVO MJKVO.</div>\r\n    </div>\r\n</body>\r\
+  \n"
+content-type: 1
+desc: A9
+extend-data: ''
+links:
+- path: ccbc9r/index
+  title: 索引页
+  type: index
+- path: ccbc9r/pages/a
+  title: 乐园广场
+  type: page
+tips:
+- content: 题目文字可以复制，尝试复制到其他位置再看。
+  title: 我毫无头绪
+- content: '对照表：
+
+    密文：ABCDEF--IJK-MNOPQRSTUVWXYZ
+
+    明文：IHQCSX--UFT-ADRNGOMWYEBLPV'
+  title: 我不想苦力
+title: A9-旧电脑的老故事
+type: problem

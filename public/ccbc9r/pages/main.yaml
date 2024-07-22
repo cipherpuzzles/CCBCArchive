@@ -1,0 +1,40 @@
+type: page
+title: CCBC9导览图
+content: 
+- |
+  <img src="/ccbc9r/images/map.png" alt="CCBC9导览图" style="width: 100%; height: auto;">
+    
+
+links:
+  - 
+    title: CCBC9R 索引页
+    type: index
+    path: ccbc9r/index
+  - 
+    title: 乐园广场
+    type: page
+    path: ccbc9r/pages/a
+  - 
+    title: 美术馆
+    type: page
+    path: ccbc9r/pages/b
+  - 
+    title: 鬼屋
+    type: page
+    path: ccbc9r/pages/c
+  - 
+    title: 旋转木马
+    type: page
+    path: ccbc9r/pages/d
+  - 
+    title: 摩天轮
+    type: page
+    path: ccbc9r/pages/e
+  - 
+    title: 码头
+    type: page
+    path: ccbc9r/pages/f
+  - 
+    title: Final Meta 游乐园的秘密
+    type: problem
+    path: ccbc9r/problems/FinalMeta/45

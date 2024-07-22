@@ -1,0 +1,30 @@
+answer: INITIATOR
+answer-analysis: 题目为Nonogram的变种，“天圆地方”提示将圆形数字从上至下移动到上方，方形数字从左到右移动到左侧。解开后象形字母得到答案：INITIATOR。
+content:
+- '进入鬼屋，你发现了一个的奇怪棋盘，棋盘上摆了一些圆形和方形的数字棋子，让你联想到了“天圆地方”的古意。
+
+
+  “看起来像是日本的什么棋。”
+
+
+  “将棋吗？但是又不是，真是奇怪。”
+
+
+  <img src="/ccbc9r/images/C/cfa0c9eeb524431d9818f52e71c97da8.webp" width="500">'
+content-type: 0
+desc: C2
+extend-data: ''
+links:
+- path: ccbc9r/index
+  title: 索引页
+  type: index
+- path: ccbc9r/pages/c
+  title: 鬼屋
+  type: page
+tips:
+- content: 这实际上是一个Nonogram(数图)的变种，但你需要找到数字标识的排列方法
+  title: 我毫无头绪
+- content: 根据天圆地方的暗示，将圆形数全部推到上方，而方形数字全部移动到侧面，按照Nonogram的规则进行推理。
+  title: 接下来该怎么办
+title: C2-日式棋局
+type: problem

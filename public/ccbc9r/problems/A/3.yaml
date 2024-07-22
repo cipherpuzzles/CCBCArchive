@@ -1,0 +1,25 @@
+answer: CIRCLE
+answer-analysis: 提取英文句子各个单词的首字母可得到答案：CIRCLE。
+content:
+- '你漫不经心地走着，看到了一个废弃的游乐设施，似乎已经多年未被使用了。
+
+
+  一个锈迹斑斑的标牌摆在前面，上面写着一串神秘的英文：
+
+
+  <b>Constant Innovation Requires Creative Leadership Efforts</b>'
+content-type: 0
+desc: A3
+extend-data: ''
+links:
+- path: ccbc9r/index
+  title: 索引页
+  type: index
+- path: ccbc9r/pages/a
+  title: 乐园广场
+  type: page
+tips:
+- content: 这串神秘的英文，似乎特意把首字母大写了，把他们连起来看看吧
+  title: 我毫无头绪
+title: A3-英文标牌
+type: problem

@@ -1,0 +1,30 @@
+answer: LOXODROME
+answer-analysis: '图片为拉伸过的字母，压缩图片宽高比即可看见字母，亦可通过小角度看屏幕的方式解读。
+
+
+  答案：LOXODROME。'
+content:
+- '门票并没有派上什么用场。四下看了看，一个人也没有，于是你从入口翻了进去，希望找到能够启动旋转木马的开关。
+
+
+  这时，一张贴在控制台旁边的海报吸引了你的注意力，交错的线条和圆形图案让人目眩神迷。
+
+
+  <img src="/ccbc9r/images/D/2b0f68bb695f4426af1a90ed9ca22441.webp" width="600">'
+content-type: 0
+desc: D2
+extend-data: ''
+links:
+- path: ccbc9r/index
+  title: 索引页
+  type: index
+- path: ccbc9r/pages/d
+  title: 旋转木马
+  type: page
+tips:
+- content: '如果你正在使用电脑浏览，试着调整一下图片宽高比，把图片压扁再看看
+
+    如果你正在使用手机或平板浏览，试着从充电口看看'
+  title: 我毫无头绪
+title: D2-杂乱的线条
+type: problem

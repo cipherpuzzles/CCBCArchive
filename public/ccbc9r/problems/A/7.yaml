@@ -1,0 +1,25 @@
+answer: GLOVER
+answer-analysis: '按照开口方向画出路径提取象形字母。
+
+
+  答案：GLOVER。'
+content:
+- 你在附近闲逛，看到射击的摊位边上贴了一个视力测试表，其中有些C被涂成了别的颜色。
+content-type: 0
+desc: A7
+extend-data: ''
+links:
+- path: ccbc9r/index
+  title: 索引页
+  type: index
+- path: ccbc9r/pages/a
+  title: 乐园广场
+  type: page
+problem-image: /ccbc9r/images/A/8315b6583e78481db241644ebb1fb257.webp
+tips:
+- content: 试着从红色的圆圈开始沿着开口方向行进，看看能走出什么路径
+  title: 我毫无头绪
+- content: 把走过的路线连起来，可以直接形成字母象形图案
+  title: 该怎么识别
+title: A7-视力测试
+type: problem

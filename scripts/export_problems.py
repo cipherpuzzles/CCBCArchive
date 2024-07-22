@@ -5,7 +5,7 @@ import pymysql
 import requests
 from mysql_const import MYSQL_CONST
 
-BASE_DIR = 'D:\MyWorks\ccbcarchive\ccbcarchive\public\ccbc13'
+BASE_DIR = 'D:\MyWorks\ccbcarchive\ccbcarchive\public\ccbc9r'
 
 def read_from_db(sql):
     # 连接数据库
@@ -75,7 +75,7 @@ def download_image(image_url, image_path):
     if not os.path.exists(image_path):
         os.makedirs(image_path)
     image_name = image_url.split('/')[-1]
-    local_url = "/ccbc13/images/%s/%s" % (image_path.split('\\')[-1], image_name)
+    local_url = "/ccbc9r/images/%s/%s" % (image_path.split('\\')[-1], image_name)
 
     local_path = os.path.join(image_path, image_name)
 
@@ -98,10 +98,13 @@ def get_download_images(content, image_path):
 
 def get_path_area(problem):
     path_area_dict = {
-        1: 'CCBC-13',
-        2: 'CCBC-14',
-        3: 'asteroid',
-        4: 'CCBC-1314',
+        1: 'A',
+        2: 'B',
+        3: 'C',
+        4: 'D',
+        5: 'E',
+        6: 'F',
+        7: 'FinalMeta',
     }
     path_area = path_area_dict[problem['pgid']]
     return path_area
@@ -182,15 +185,19 @@ def convert_problem(problem):
 
     # 插入链接
     content['links'] = []
-    content['links'].append({'title': '索引页', 'type': 'index', 'path': 'ccbc13/index'})
+    content['links'].append({'title': '索引页', 'type': 'index', 'path': 'ccbc9r/index'})
     if problem['pgid'] == 1:
-        content['links'].append({'title': 'CCBC-13', 'type': 'page', 'path': 'ccbc13/pages/ccbc13'})
+        content['links'].append({'title': '乐园广场', 'type': 'page', 'path': 'ccbc9r/pages/a'})
     elif problem['pgid'] == 2:
-        content['links'].append({'title': 'CCBC-14', 'type': 'page', 'path': 'ccbc13/pages/ccbc14'})
+        content['links'].append({'title': '美术馆', 'type': 'page', 'path': 'ccbc9r/pages/b'})
     elif problem['pgid'] == 3:
-        content['links'].append({'title': '小行星', 'type': 'page', 'path': 'ccbc13/pages/asteroid'})
+        content['links'].append({'title': '鬼屋', 'type': 'page', 'path': 'ccbc9r/pages/c'})
     elif problem['pgid'] == 4:
-        content['links'].append({'title': 'CCBC-1314', 'type': 'page', 'path': 'ccbc13/pages/ccbc1314'})
+        content['links'].append({'title': '旋转木马', 'type': 'page', 'path': 'ccbc9r/pages/d'})
+    elif problem['pgid'] == 5:
+        content['links'].append({'title': '摩天轮', 'type': 'page', 'path': 'ccbc9r/pages/e'})
+    elif problem['pgid'] == 6:
+        content['links'].append({'title': '码头', 'type': 'page', 'path': 'ccbc9r/pages/f'})
 
     return content
 

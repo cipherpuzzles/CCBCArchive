@@ -1,0 +1,25 @@
+answer: WEREWOLVES
+answer-analysis: 由上至下排列每个颜色的块，并将每个块从左到右按列转换为摩斯电码，一格为*，两格为-，最终答案：WEREWOLVES。
+content:
+- '乘坐游园小火车，你来到了B区的美术馆。
+
+
+  这里展示了许多艺术作品。天花板吊着的俄罗斯方块装置吸引了你的注意力，它们顺序排列，有着独特的美感。'
+content-type: 0
+desc: B1
+extend-data: ''
+links:
+- path: ccbc9r/index
+  title: 索引页
+  type: index
+- path: ccbc9r/pages/b
+  title: 美术馆
+  type: page
+problem-image: /ccbc9r/images/B/157a99a6123147d3baa7281171d28884.webp
+tips:
+- content: 注意，每一个奇怪的俄罗斯方块，都是由高度为一的小方块，或高度为二的小方块横向组合而成的。
+  title: 我毫无头绪
+- content: 这种只由两种元素构成的组合，可以尝试用摩斯电码对照查看
+  title: 该如何对应
+title: B1-俄罗斯方块
+type: problem

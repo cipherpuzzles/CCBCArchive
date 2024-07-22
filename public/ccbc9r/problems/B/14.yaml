@@ -1,0 +1,20 @@
+answer: LAGRANGE
+answer-analysis: 五笔输入法一级简码查表可得答案：LAGRANGE。
+content:
+- 在美术馆的一角，你看到了一面装饰独特的墙，上面写着一行看起来平平无奇的汉字，这些字之间似乎隐藏着什么信息呢？
+content-type: 0
+desc: B4
+extend-data: ''
+links:
+- path: ccbc9r/index
+  title: 索引页
+  type: index
+- path: ccbc9r/pages/b
+  title: 美术馆
+  type: page
+problem-image: /ccbc9r/images/B/4b67505328344bc1bd520c8a1f1b7ff8.webp
+tips:
+- content: 这些字都是五笔输入法的一级简码
+  title: 我毫无头绪
+title: B4-汉字墙
+type: problem
