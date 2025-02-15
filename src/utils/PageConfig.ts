@@ -2,7 +2,7 @@ import message, { reload } from './message';
 import { parse as parseYaml } from 'yaml';
 import { Router } from 'vue-router';
 
-type PageConfigType = "index" | "page" | "scoreboard" | "problem" | "announcements";
+type PageConfigType = "index" | "page" | "scoreboard" | "problem" | "announcements" | "backend_script" | "map"
 
 export interface PageConfigLink {
     title: string;
@@ -35,6 +35,7 @@ export interface PageConfig extends BaseConfig {
 }
 
 export interface ProblemConfig extends BaseConfig {
+    pid: number;
     type: "problem";
     'extend-content'?: string[];
     'problem-image'?: string;
@@ -50,6 +51,7 @@ export interface ProblemConfig extends BaseConfig {
 export interface AdditionalAnswer {
     answer: string;
     message: string;
+    extra: string;
 }
 
 export interface ProblemTips {
@@ -87,7 +89,21 @@ export interface Announcement {
     content: string;
 }
 
-export type YamlConfig = IndexConfig | PageConfig | ProblemConfig | ScoreboardConfig | AnnouncementsConfig;
+export interface BackendScriptConfig extends BaseConfig {
+    type: "backend_script";
+    script: string;
+    key: string;
+    psid: string;
+}
+
+export interface ProblemsMapConfig extends BaseConfig {
+    type: "map";
+    map: {
+        [key: number]: string;
+    }
+}
+
+export type YamlConfig = IndexConfig | PageConfig | ProblemConfig | ScoreboardConfig | AnnouncementsConfig | BackendScriptConfig | ProblemsMapConfig;
 
 export default async function GetPageConfig(configPath: string) {
     const configUrl = `/${configPath}.yaml`;

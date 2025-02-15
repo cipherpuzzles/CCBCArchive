@@ -1,0 +1,38 @@
+content: 
+- 科学的深入浅出 题目列表
+links:
+- path: ccbc15/pages/main
+  title: 返回索引页
+  type: page
+- path: ccbc15/problems/3/15
+  title: 镜中何物
+  type: problem
+- path: ccbc15/problems/3/16
+  title: 田字游戏
+  type: problem
+- path: ccbc15/problems/3/17
+  title: 吧唧吧唧
+  type: problem
+- path: ccbc15/problems/3/18
+  title: 错位文字
+  type: problem
+- path: ccbc15/problems/3/19
+  title: 什么是答案?
+  type: problem
+- path: ccbc15/problems/3/20
+  title: 北京人儿在纽约
+  type: problem
+- path: ccbc15/problems/3/21
+  title: 算算看吧
+  type: problem
+- path: ccbc15/problems/3/22
+  title: 火眼金晶
+  type: problem
+- path: ccbc15/problems/3/23
+  title: 似是故人来
+  type: problem
+- path: ccbc15/problems/3/24
+  title: 人类的群星闪耀时
+  type: problem
+title: 科学的深入浅出
+type: page

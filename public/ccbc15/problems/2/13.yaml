@@ -1,0 +1,79 @@
+answer: PARIS BAGUETTE
+answer-analysis: "首先完成填字游戏，发现深色位置填写的并不是全是相同汉字。\n\n根据 10 横 填写【恶魔之心】、8 纵 填写【可乘之机】，我们推断出\
+  \ 10 右下 为【恶魔机】，也即粉色格子中应当填写 emoji。\n\nEmoji 就是这一填字游戏的“共同语言”，它可以让相交的格子有自洽的填法，例如【三下五除二/V字仇杀队】的【二/V】填写【✌】。\n\
+  \n完成的填字游戏如下：\n\n<p align=\"center\">\n  <img src=\"/ccbc15/images/2/28cfcad91e44406ba25d9722a403672c.webp\"\
+  \ alt=\"填字\" width=\"45%\" />\n  <img src=\"/ccbc15/images/2/334e34c67cc54f76aaebf157118aaccd.webp\"\
+  \ alt=\"填emoji\" width=\"45%\" />\n</p>\n\n最后提取 ?? ? ? ，三个 emoji 可以读出【巴黎】【贝】【甜】，得到答案**PARIS\
+  \ BAGUETTE**"
+content:
+- '
+
+
+  <center>
+
+  <img src="/ccbc15/images/2/1baeb627687a4fc4bb07c7f78b344650.webp" width="800">
+
+  </center>
+
+
+
+  <a href="https://docs.qq.com/sheet/DR0hHdmlRVEVqSVpX?tab=BB08J2">腾讯文档</a>
+
+
+  '
+- "<table>\r\n    <tr class=\"header-row\">\r\n        <th class=\"col-number\">横</th>\r\
+  \n        <th class=\"col-clue\"></th>\r\n        <th class=\"col-number\">纵</th>\r\
+  \n        <th class=\"col-clue\"></th>\r\n    </tr>\r\n    <tr>\r\n        <td class=\"\
+  col-number\">3</td>\r\n        <td class=\"col-clue\">一首春节歌谣的第一句</td>\r\n      \
+  \  <td class=\"col-number\">1</td>\r\n        <td class=\"col-clue\">一则熟语的一部分，也是一条乘法口诀；它的倒数第二个字是所有单元格中最大的数。</td>\r\
+  \n    </tr>\r\n    <tr>\r\n        <td class=\"col-number\">6</td>\r\n        <td\
+  \ class=\"col-clue\">成语，用来比喻积少成多。前两个格填的内容相同。</td>\r\n        <td class=\"col-number\"\
+  >2</td>\r\n        <td class=\"col-clue\">馋得连口水都要滴下来</td>\r\n    </tr>\r\n    <tr>\r\
+  \n        <td class=\"col-number\">7</td>\r\n        <td class=\"col-clue\">一首和数学有关的《西江月》的最后一句</td>\r\
+  \n        <td class=\"col-number\">4</td>\r\n        <td class=\"col-clue\">我国的人口地理分界线</td>\r\
+  \n    </tr>\r\n    <tr>\r\n        <td class=\"col-number\">9</td>\r\n        <td\
+  \ class=\"col-clue\">一首知名宋词的题目</td>\r\n        <td class=\"col-number\">5</td>\r\
+  \n        <td class=\"col-clue\">成语，意为设想各种办法</td>\r\n    </tr>\r\n    <tr>\r\n \
+  \       <td class=\"col-number\">10</td>\r\n        <td class=\"col-clue\">原版泰拉瑞亚中的道具，可以增加饰品栏</td>\r\
+  \n        <td class=\"col-number\">8</td>\r\n        <td class=\"col-clue\">成语，指可以利用的时机</td>\r\
+  \n    </tr>\r\n    <tr>\r\n        <td class=\"col-number\">12</td>\r\n        <td\
+  \ class=\"col-clue\">“四人与我游”的下半句</td>\r\n        <td class=\"col-number\">9</td>\r\
+  \n        <td class=\"col-clue\">成语，描述呼吸急促，狼狈不堪</td>\r\n    </tr>\r\n    <tr>\r\n\
+  \        <td class=\"col-number\">15</td>\r\n        <td class=\"col-clue\">对行刑者的称呼</td>\r\
+  \n        <td class=\"col-number\">11</td>\r\n        <td class=\"col-clue\">成语，由两对反义词构成，形容复杂的感情纠葛</td>\r\
+  \n    </tr>\r\n    <tr>\r\n        <td class=\"col-number\">17</td>\r\n        <td\
+  \ class=\"col-clue\">一部于2005年上映的反乌托邦政治惊悚电影</td>\r\n        <td class=\"col-number\"\
+  >13</td>\r\n        <td class=\"col-clue\">这个成语包含三个数字，形容做事干脆利索</td>\r\n    </tr>\r\
+  \n    <tr>\r\n        <td class=\"col-number\"></td>\r\n        <td class=\"col-clue\"\
+  ></td>\r\n        <td class=\"col-number\">14</td>\r\n        <td class=\"col-clue\"\
+  >一种甜味食品，前两个字相同</td>\r\n    </tr>\r\n    <tr>\r\n        <td class=\"col-number\"\
+  ></td>\r\n        <td class=\"col-clue\"></td>\r\n        <td class=\"col-number\"\
+  >16</td>\r\n        <td class=\"col-clue\">一种常见的工具，纵-1的后两个字是它的两个种类</td>\r\n    </tr>\r\
+  \n</table>\r\n<div class=\"hint\">\r\n    <span class=\"bold-highlight\">右下</span>&nbsp;&nbsp;&nbsp;&nbsp;10&nbsp;&nbsp;&nbsp;&nbsp;粉色格里要填的东西（按拼音读）</div>\r\
+  \n\r\n<div style=\"height: 170px\"></div>\r\n<style>\r\n    table {\r\n        width:\
+  \ 100%;\r\n        table-layout: fixed;\r\n        border-collapse: collapse;\r\n\
+  \    }\r\n\r\n    th,\r\n    td {\r\n        padding: 4px;\r\n        text-align:\
+  \ left;\r\n        font-size: 14px;\r\n        border: none;\r\n    }\r\n\r\n  \
+  \  .header-row th {\r\n        font-size: 18px;\r\n        font-weight: bold;\r\n\
+  \        text-align: center;\r\n    }\r\n\r\n    .col-number {\r\n        width:\
+  \ 5%;\r\n    }\r\n\r\n    .col-clue {\r\n        width: 45%;\r\n    }\r\n\r\n  \
+  \  .hint {\r\n        text-align: center;\r\n        font-size: 14px;\r\n      \
+  \  padding-top: 10px;\r\n    }\r\n\r\n    .bold-highlight {\r\n        font-size:\
+  \ 18px;\r\n        font-weight: bold;\r\n    }\r\n</style>"
+content-type: 1
+desc: ''
+extend-data: ''
+links:
+- path: ccbc15/index
+  title: 索引页
+  type: index
+- path: ccbc15/pages/b
+  title: 与天才美少女的烹饪对决
+  type: page
+tips:
+- content: 这是一个特殊规则的 crossword ，正常的填法无法让粉色格子保持一致。解出右下方向的那条 clue 后就可以理解规则了。
+  title: 好像填不进去？
+- content: 三个粉色格会对应到四个汉字，注意这四个汉字都不出现在本crossword中。前两个字是一个5个字母的欧洲城市名。
+  title: 我卡在最后一步了
+title: 共同语言
+type: problem

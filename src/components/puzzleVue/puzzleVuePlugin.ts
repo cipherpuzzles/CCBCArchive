@@ -6,6 +6,7 @@ import sleep from '../../utils/sleep';
 import { globalBus } from '../../globalBus';
 import RoleBadge from '../roleBadge.vue';
 import extremeInput from './extremeInput.vue';
+import { puzzleBackend } from './puzzleBackend';
 
 const puzzleVuePlugin: Plugin = {
     install(app) {
@@ -16,6 +17,7 @@ const puzzleVuePlugin: Plugin = {
         app.provide('formatTimestamp', formatTimestamp);
         app.provide('markdownToHtml', markdownToHtml);
         app.provide('sleep', sleep);
+        app.provide('backend', puzzleBackend);
         app.provide('globalBus', globalBus);
         app.component('role-badge', RoleBadge);
         app.component('extreme-input', extremeInput);

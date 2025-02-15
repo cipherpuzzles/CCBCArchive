@@ -1,0 +1,28 @@
+content:
+- 服务器脚本 c15-finalend-getpart2 结局剧情的第二部分分支脚本。
+key: c15-finalend-getpart2
+psid: 3
+script: "function main(ctx, request) {\r\n    let rankResult = ctx.getRankAndWinner(ctx.gid);\r\
+  \n    let rank = rankResult.rank;\r\n    let teamName = ctx.getGroupName(ctx.gid);\r\
+  \n\r\n    let normal = `\r\n“顺便，恭喜你们完成比赛！” 一直没有戏份的NANO鼓起了掌。\r\n\r\n你们也十分开心，闲散解谜的大家拿出了奖状和奖杯，牛牛也把这次的周边给了你们。\r\
+  \n\r\n但七大呢？你们很疑惑，不过先不要想这事儿，毕竟后面还有采访等内容，你们也非常想和朋友炫耀一下你们的成绩。\r\n\r\n你们还有好多好多的计划……\r\
+  \n\r\n只是还没有想完，你们回头看到了七大。\r\n\r\n“想什么呢，${teamName}？你觉得我会偷偷在你们背后给你们一闷棍，把你们关在小黑屋里，然后让你们出下一届的CCBC吗？你们也不是冠军，不用想这么多的。”七大说。\r\
+  \n\r\n总之，你们完成了比赛！你们走出了教室。好奇心驱使着你们决定在幼儿园里先逛一逛，顺便看看这个原本的布景长什么样。\r\n\r\n直到，你们在角落里看见了一个紧锁的门，你们听见里面simplicissimus队员熟悉的惨叫声以及鞭子声，好像意识到了什么，快速地离开了幼儿园。\r\
+  \n\r\n<br><br>\r\n\r\n生活还在继续，未来的CCBC也会越来越好的。在比赛结束那天，七大开心的给大家进行赛事终结的时候，你们早早地打开了直播间。\r\
+  \n\r\n“总之，我们非常感谢大家的参与，感谢闲散解谜出题，也非常感谢simplicissimus对于CCBC的贡献！”\r\n\r\n就在这么一句话中，这一届CCBC就这么的画下了尾声。\r\
+  \n`;\r\n\r\n    let first = `\r\n“顺便，恭喜你们获得冠军！”一直没有戏份的NANO鼓起了掌。\r\n\r\n你们也十分开心，闲散解谜的大家拿出了奖状和奖杯，牛牛也把这次的周边给了你们。\r\
+  \n\r\n但七大呢？你们很疑惑，不过先不要想这事儿，毕竟后面还有采访等内容，你们也非常想和朋友炫耀一下你们的成绩。\r\n\r\n你们还有好多好多的计划……\r\
+  \n\r\n只是还没有想完，你们的后脑勺就挨了一记闷棍。\r\n\r\n<br><br>\r\n\r\n你们在一间暗室里醒来，四周暗不透光。你们上半身还能自由行动，但似乎下半身被绑在一个椅子上。椅子很重，你们抬不起来。\r\
+  \n\r\n“醒了？”七大的声音响起，同时，一束灯光也亮了起来，“闲散解谜那帮家伙，这次把CCBC搞的天翻地覆的，都怪小白狐要搞他那什么江湖解谜。为了CCBC的良性发展，我要保证你们能好好出题。这次的经历我想通了，CCBC不能就这么烂下去。”七大抬起头来——\r\
+  \n\r\n“怎么又是你们？你们还嫌上次占用两个编号为CCBC带来的灾难不够多吗？没关系，这次你们没有这个机会了！”七大举起了鞭子：“你们都给我在这里好好出题！不要整什么花里胡哨的东西！而且，这里包吃包住，这么好的事情哪里找啊？”\r\
+  \n\r\n你们这才意识到，这冠军可能确实不是那么好拿的。\r\n\r\n<br><br>\r\n\r\n生活还在继续，未来的CCBC也会越来越好的。在比赛结束那天，七大开心的给大家进行赛事总结的时候，你们还在小黑屋里，默默地出题，改题，验题。\r\
+  \n\r\n“总之，我们非常感谢大家的参与，感谢闲散解谜出题，也非常感谢simplicissimus对于CCBC的贡献！”\r\n\r\n就在这么一句话中，这一届CCBC就这么的画下了尾声。\r\
+  \n`;\r\n\r\n\r\n    if (rank == 1) {\r\n        return {\r\n            data: first,\r\
+  \n            rank: rank\r\n        };\r\n    } else {\r\n        return {\r\n \
+  \           data: normal,\r\n            rank: rank\r\n        }\r\n    }\r\n}\r\
+  \n\r\n//=======以下是JSON解析与调用脚本，一般不需要修改========\r\nfunction _jsonProcessHelper(ctx)\
+  \ {\r\n    let request = JSON.parse(ctx.request);\r\n    let resBody = main(ctx,\
+  \ request);\r\n    let resString = JSON.stringify(resBody);\r\n    ctx.response(resString);\r\
+  \n}\r\n\r\n_jsonProcessHelper(ctx);"
+title: 结局剧情的第二部分分支脚本。
+type: backend_script

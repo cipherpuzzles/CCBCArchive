@@ -1,0 +1,87 @@
+answer: AMENDMENT
+answer-analysis: "首先检索人物名字\n\n| **顺序** | **人物**              | **人名(罗马音或西文)**    \
+  \                 |\n|:------:|:-------------------:|:----------------------------------:|\n\
+  | 1      | 冬马和纱                | **T**ouma Kazusa                       |\n| 2 \
+  \     | 保登心爱                | **H**oto Kokoa                         |\n| 3    \
+  \  | 尤菲米娅                | **E**uphemia Li Britannia              |\n| 4      |\
+  \ 楪祈                  | **Y**uzuriha Inori                     |\n| 5      | Ruby\
+  \ Rose           | **R**uby Rose                          |\n| 6      | 爱德华·艾尔利克\
+  \            | **E**dward Elric                       |\n| 7      | 冬坂五百里      \
+  \         | **F**uyusaka Iori                      |\n| 8      | 瑞瑞            \
+  \      | **R**arity                             |\n| 9      | 奥尔加·伊兹卡          \
+  \   | **O**rga Itsuka                        |\n| 10     | 美树沙耶加               |\
+  \ **M**iki Sayaka                        |\n| 11     | 若叶                  | **W**akaba\
+  \                             |\n| 12     | 灰原哀                 | **H**aibara Ai\
+  \                         |\n| 13     | 十六夜咲夜               | **I**zoyai Sakuya\
+  \                      |\n| 14     | C.C.                | **C**.C.            \
+  \                   |\n| 15     | 原村和                 | **H**aramura Nodoka    \
+  \                |\n| 16     | 立华奏                 | **T**achibana Kanade      \
+  \             |\n| 17     | 优子                  | **Y**oko Littner             \
+  \          |\n| 18     | 帕瓦                  | **P**ower                       \
+  \       |\n| 19     | エマ                  | **E**mma                           \
+  \    |\n| 20     | 大户爱                 | **O**oto Ai                           \
+  \ |\n| 21     | 古手梨花                | **F**urude Rika                        |\n\
+  | 22     | 宫森葵                 | **M**iyamori Aoi                       |\n| 23\
+  \     | 爱德华·王·侯·皮皮鲁·提布鲁斯基4世 | **E**dward Wong Hau Pepelu Tivrusky IV |\n| 24   \
+  \  | 哆啦A梦                | **D**oraemon                           |\n| 25     |\
+  \ 碇真嗣                 | **I**kari Shinji                       |\n| 26     | 尤贝尔\
+  \                 | **Ü**bel                               |\n| 27     | 牧濑红莉栖 \
+  \              | **M**akise Kurisu                      |\n\n\n观察首字母得到：**THEY'RE\
+  \ FROM WHICH TYPE OF MEDIUM**，于是查询人物出自的作品(最早)属于 ACG（Anime / Comic / Game），即动画/漫画/游戏之中的哪一个\n\
+  \n| **人物(romaji)**                     | **出自作品**          | **作品是A/C/G ?**    \
+  \     |\n|:----------------------------------:|:-----------------:|:----------------------:|\n\
+  | Touma Kazusa                       | White Album 2     | Game                \
+  \   |\n| Hoto Kokoa                         | 请问您今天要来点兔子吗？      | Comic        \
+  \          |\n| Euphemia Li Britannia              | CODE GEASS 反叛的鲁路修 | Anime |\n\
+  | Yuzuriha Inori                     | 罪恶王冠              | Anime               \
+  \   |\n| Ruby Rose                          | RWBY              | Anime        \
+  \          |\n| Edward Elric                       | 钢之炼金术师            | Comic \
+  \                 |\n| Fuyusaka Iori                      | 十三机兵防卫圈           |\
+  \ Game                   |\n| Rarity                             | 小马宝莉：友谊是魔法  \
+  \      | Anime                  |\n| Orga Itsuka                        | 机动战士高达\
+  \ 铁血的奥尔芬斯    | Anime          |\n| Miki Sayaka                        | 魔法少女小圆 \
+  \           | Anime                  |\n| Wakaba                             | KEMURIKUSA\
+  \        | Anime                  |\n| Haibara Ai                         | 名侦探柯南\
+  \             | Comic                  |\n| Izoyai Sakuya                      |\
+  \ 东方Project         | Game                   |\n| C.C.                         \
+  \      | CODE GEASS 反叛的鲁路修 | Anime                  |\n| Haramura Nodoka       \
+  \             | 天才麻将少女            | Comic                  |\n| Tachibana Kanade\
+  \                   | Angel Beats！      | Anime                  |\n| Yoko Littner\
+  \                       | 天元突破红莲螺岩          | Anime                  |\n| Power\
+  \                              | 电锯人               | Comic                  |\n\
+  | Emma                               | 只狼：影逝二度           | Game                \
+  \   |\n| Ooto Ai                            | 奇蛋物语              | Anime        \
+  \          |\n| Furude Rika                        | 寒蝉鸣泣之时            | Game  \
+  \        |\n| Miyamori Aoi                       | 白箱                | Anime   \
+  \               |\n| Edward Wong Hau Pepelu Tivrusky IV | 星际牛仔              | Anime\
+  \                  |\n| Doraemon                           | 哆啦A梦              |\
+  \ Comic                  |\n| Ikari Shinji                       | 新世纪福音战士     \
+  \      | Anime                  |\n| Übel                               | 葬送的芙莉莲\
+  \            | Comic                  |\n| Makise Kurisu                      |\
+  \ 命运石之门             | Game |\n\n根据FT中提到的【DNA】，将ACG三个一组当作密码子，转换为对应的氨基酸字母，按题面进行 -\
+  \ 1 的移位后，得到答案 **AMENDMENT**. \n\n| 密码子 | 字母 | 额外的移位 | 字母 |\n|:-----:|:-----:|:-----:|:-----:|\n\
+  | GCA | A |  | **A** |\n| AAC | N | -1 | **M** |\n| GAA | E |  | **E** |\n| AAC\
+  \ | N |  | **N** |\n| GAC | D |  | **D** |\n| AAC | N | -1 | **M** |\n| GAG | E\
+  \ |  | **E** |\n| AAC | N |  | **N** |\n| ACG | T |  | **T** |"
+content:
+- 你来到了圣多明各，这里正在举行漫展。认出这些熟悉的角色，你DNA动了！
+content-type: 0
+desc: ''
+extend-content:
+- 你要离开之前，获得了一份旅游指南，你注意到其中一句话被圈了出来：“在街上，你能看到许多骑自行车的人。”
+extend-data: ''
+links:
+- path: ccbc15/index
+  title: 索引页
+  type: index
+- path: ccbc15/pages/d
+  title: 全球呼叫出题组
+  type: page
+problem-image: /ccbc15/images/4/8cc8fa733d324b13b5d96e0cac2defdb.webp
+tips:
+- content: 括号中的数字是二次元人物的名字长度，读这些人物的首字母。
+  title: 我毫无头绪
+- content: 你提取出的那句话的最后一个词在本题中分为三种情况，它们通常分别用三个字母表示。另外注意图片上的人物是三人一组的——再结合本文的背景描述，这些信息共同提示了要用哪种方式提取。
+  title: 该如何提取
+title: 老二次元
+type: problem

@@ -1,0 +1,122 @@
+answer: OSTEOTOMY
+answer-analysis: '这是一个黑箱+线下题。玩家需要用过线下移动位置来解锁像素，并获得描述答案的一句话。
+
+  本题使用到的技术：Geohash（精度为7）和OpenStreetMap
+
+
+  - 红色像素解锁规则：访问了一个未曾访问的geogrid
+
+
+  - 蓝色像素解锁规则：访问了一个未曾访问的geogrid且此时定位点在水域附近（包括江河湖海、湿地、水库等）
+
+
+  - 绿色像素解锁规则：访问了一个未曾访问的geogrid且此时定位点在植被附近（包括森林、草地、公园等）
+
+
+  以及就是信息是如何被隐藏到像素中的呢？观察像素的色码可以发现，出了某一个RGB颜色通道是FF，其他通道的值范围都在32~127范围内，也就是ASCII的可打印字体范围。所以，只需要将其通过ASCII转换成字符即可。
+
+
+  红色线索隐藏的信息：红、蓝、绿三种像素的解锁规则。
+
+
+  RED is everywhere BLUE is water related GREEN is vegetation GO!!
+
+
+  蓝、绿色线索隐藏的信息：描述答案的短句。
+
+
+  A surgical procedure that involves cutting and realigning bones to correct deformities,
+  relieve pain, or improve joint function.
+
+
+  答案是**OSTEOTOMY**
+
+  '
+content:
+- >
+  <span style="color: #999999">存档版说明：在CCBC 15进行期间，此页面的状态为全队共享。由于存档版限制，目前解锁状态只能在当前设备上显示。</span>
+- "<!-- <span style=\"color: red;\">说明：由于题目服务故障，本题暂时无法完成。请等待后续服务恢复公告。</span> -->\n\
+  \n你来到了吉隆坡。这个接近赤道的美丽城市，气温高得让人难以忍受。此时，这个城市正在举办定向大赛，你收到了一张大赛的刮刮乐卡片，上面写着——\n\n「赶快拿起手机，去探索周围的世界，揭开刮刮卡底下隐藏的秘密吧！」\n\
+  \n<div class=\"infom\">\n<p>隐私权限使用说明：本页面将请求您的高精确度定位权限。CCBC 承诺，本次获取的权限仅限本题目展示需要，网站不会存储您的位置信息。并在使用完成后从您的浏览器缓存以及网站服务器中删除这些敏感信息。您的这些敏感信息会始终加密保存和传输，并按我们的<a\
+  \ href=\"https://ccbc15.cipherpuzzles.com/info/privacypolicy\" target=\"_blank\"\
+  >隐私政策</a>受到保护。</p>\n<p>若您无法完成定位，请先确保您使用的设备搭载了 GPS 等定位系统。然后尝试关闭页面上所有其他 APP 提供的浮窗和气泡，刷新本页面再试一次。</p>\n\
+  </div>\n\n<style>\n.infom {\n    font-size: 12px;\n}\n</style>"
+content-type: 2
+desc: ''
+extend-content:
+- 你要离开之前，获得了一份旅游指南，你注意到其中一句话被圈了出来：“每个国民都应当有责任感。”
+extend-data: ''
+links:
+- path: ccbc15/index
+  title: 索引页
+  type: index
+- path: ccbc15/pages/d
+  title: 全球呼叫出题组
+  type: page
+tips:
+- content: 遵循题目的建议，拿起你的手机，登录 CCBC，打开本题，出去走走吧！
+  title: 我毫无头绪
+- content: 获取色块的 RGB 色码，每个色块除了数值是满的某个颜色通道之外，剩下两个通道的色码可以转换成字符。
+  title: 我点亮许多色块了，接下来该做什么
+- content: 第一行像素所隐藏的信息的含义是：每到达一个新的地方可以解锁新的像素；同时，无需满足其他条件即可解锁红色像素，靠近水可以解锁蓝色像素，靠近植被可以解锁绿色像素。
+  title: 我获得了第一行像素所隐藏的的信息，但理解不了
+- content: 好的，第一行解出的信息为：“RED is everywhere BLUE is water related GREEN is vegetation
+    GO!!”；第二行解出的信息为：“A surgical procedure that involves cutting and realigning bones
+    ”；第三行解出的信息为：“to correct deformities, relieve pain, or improve joint function.”
+  title: 我实在没有条件做这道题，请告诉我最终得到的信息吧
+title: 西提沃克刮刮乐
+type: problem
+vue_script: "const { ref, reactive, inject, onMounted, onBeforeUnmount } = Vue;\r\n\
+  \r\nexport default {\r\n    setup() {\r\n        const gridGroups = ref([\r\n  \
+  \          { color: Array(32).fill(\"#808080\") },\r\n            { color: Array(32).fill(\"\
+  #808080\") },\r\n            { color: Array(32).fill(\"#808080\") }\r\n        ]);\r\
+  \n\r\n        const tempMsg = ref(\"\");\r\n\r\n        const geoPosition = reactive({\r\
+  \n            loading: true,\r\n            longitude: null,\r\n            latitude:\
+  \ null,\r\n            timestamp: 0,\r\n        });\r\n\r\n        const geoPositionErr\
+  \ = {\r\n            code: null,\r\n            message: null\r\n        };\r\n\r\
+  \n        const backend = inject(\"backend\");\r\n        const formatTimestamp\
+  \ = inject(\"formatTimestamp\");\r\n        const processBackend = async () => {\r\
+  \n            const response = await backend(\"c15-geom\", {\r\n               \
+  \ type: \"query\"\r\n            });\r\n            console.log(response);\r\n \
+  \           if (response.status === \"ok\") {\r\n                const colors =\
+  \ response.color;\r\n                gridGroups.value = [\r\n                  \
+  \  { color: colors[0] },\r\n                    { color: colors[1] },\r\n      \
+  \              { color: colors[2] }\r\n                ];\r\n                if\
+  \ (response.temp_msg) {\r\n                    tempMsg.value = response.temp_msg;\r\
+  \n                }\r\n            }\r\n        }\r\n        const processSummit\
+  \ = async () => {\r\n            try {\r\n                const response = await\
+  \ backend(\"c15-geom\", {\r\n                    type: \"summit\",\r\n         \
+  \           latitude: geoPosition.latitude,\r\n                    longitude: geoPosition.longitude\r\
+  \n                });\r\n                console.log(response);\r\n            \
+  \    if (response.status === \"ok\") {\r\n                    const colors = response.color;\r\
+  \n                    gridGroups.value = [\r\n                        { color: colors[0]\
+  \ },\r\n                        { color: colors[1] },\r\n                      \
+  \  { color: colors[2] }\r\n                    ];\r\n                }\r\n     \
+  \       } catch (error) {\r\n                console.error(error);\r\n         \
+  \       tempMsg.value = \"Error: \" + error.message;\r\n            }\r\n      \
+  \  }\r\n\r\n        let watchId;\r\n\r\n        onMounted(() => {\r\n          \
+  \  processBackend();\r\n            watchId = navigator.geolocation.watchPosition((pos)\
+  \ => {\r\n                geoPosition.longitude = pos.coords.longitude;\r\n    \
+  \            geoPosition.latitude = pos.coords.latitude;\r\n                geoPosition.timestamp\
+  \ = pos.timestamp;\r\n                geoPosition.loading = false;\r\n         \
+  \       console.log(geoPosition);\r\n                processSummit();\r\n      \
+  \      }, (err) => {\r\n                geoPositionErr.code = err.code;\r\n    \
+  \            geoPositionErr.message = err.message;\r\n                geoPosition.loading\
+  \ = false;\r\n                console.log(geoPositionErr);\r\n            }, {\r\
+  \n                enableHighAccuracy: true,\r\n                timeout: 10000,\r\
+  \n                maximumAge: 0\r\n            });\r\n        });\r\n\r\n      \
+  \  onBeforeUnmount(() => {\r\n            navigator.geolocation.clearWatch(watchId);\r\
+  \n        });\r\n\r\n        return {\r\n            gridGroups,\r\n           \
+  \ geoPosition,\r\n            formatTimestamp,\r\n            tempMsg\r\n      \
+  \  }\r\n    }\r\n}"
+vue_template: "<template>\r\n    <div>\r\n      <div class=\"grids\">\r\n        <div\
+  \ v-for=\"grids in gridGroups\" class=\"grids-row\">\r\n          <div v-for=\"\
+  color in grids.color\" :style=\"{ backgroundColor: color }\">\r\n          </div>\r\
+  \n        </div>\r\n      </div>\r\n      <div v-if=\"geoPosition.loading\">\r\n\
+  \        定位中……\r\n      </div>\r\n      <div v-else-if=\"geoPosition.timestamp !==\
+  \ 0\">\r\n        定位成功！上次定位时间: {{ formatTimestamp(geoPosition.timestamp) }}\r\n\
+  \      </div>\r\n      <div v-else>\r\n        定位失败 :( 请检查所持设备的定位设置\r\n      </div>\r\
+  \n      <div>{{ tempMsg }}</div>\r\n    </div>\r\n</template>\r\n\r\n<style>\r\n\
+  .grids-row {\r\n    display: flex;\r\n    flex-wrap: wrap;\r\n    width: 1024px;\r\
+  \n}\r\n.grids-row > div {\r\n    height: 30px;\r\n    width: 30px;\r\n    border:\
+  \ 1px solid black;\r\n}\r\n</style>\r\n"

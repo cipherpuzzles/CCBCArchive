@@ -1,0 +1,29 @@
+answer: RAM
+answer-analysis: '<img src="
+
+  /ccbc15/images/6/2b52b8affe774614aa0b40fca0091832.webp " width="500" />
+
+
+  <img src="
+
+  /ccbc15/images/6/8a7fb18bf36b4c2c9a031e4b476d37c8.webp" width="500" />'
+content:
+- '色彩缤纷的沙砾散落在这里。
+
+  '
+content-type: 0
+desc: ''
+extend-data: ''
+links:
+- path: ccbc15/index
+  title: 索引页
+  type: index
+- path: ccbc15/pages/f
+  title: 我爱猫猫!
+  type: page
+problem-image: /ccbc15/images/6/73b3dcdaf5764e8185ff4388db88c1ef.webp
+tips:
+- content: 把所有钉子用线连起来！现在所有的沙砾都会位于一个单独的形状内了。然后RGB分解，给每个形状涂上颜色。
+  title: 我毫无头绪
+title: 一盘散沙
+type: problem

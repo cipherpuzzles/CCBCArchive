@@ -1,0 +1,39 @@
+content:
+- 服务器脚本 c15-d1 后端脚本示例
+key: c15-d1
+psid: 1
+script: "//在后端脚本中，可以使用全局变量 ctx\r\n//全局变量 ctx 的内容如下：\r\n// request: string; // 从前端调用时，前端传来的请求对象，内容为JSON字符串。请调用JSON.parse转换后使用。\r\
+  \n// uid: number; // 当前调用此后端脚本的用户 uid\r\n// gid: number; // 当前调用此后端脚本的组队 gid\r\n\
+  // getStatus(key: string) : string // 读取：当前用户的状态存储（注意状态信息是加密存储在每个浏览器上的，不同用户的不同进程都有不同的状态）\r\
+  \n// setStatus(key: string, value: string) // 写入：当前用户的状态存储\r\n// getProgress(pid:\
+  \ number, key: string) : string // 读取：当前组队的题目进度（组队题目进度是存在后端数据库中的，组队内部共享，每个题目有不同的状态）\r\
+  \n// setProgress(pid: number, key: string, value: string) // 写入：当前组队的题目进度\r\n//\
+  \ getPuzzleData(pid: number) : string // 获取题目的data片段（题目详情中<data></data>中的内容）\r\n\
+  // response(body: string) // 返回给前端的数据对象。内容为JSON字符串。必须调用JSON.stringify后传入。**必须**在此脚本中至少调用这个函数一次，即使你没什么需要返回的，也请调用一次\
+  \ ctx.response(\"{}\");\r\n\r\nconst PID = 76;\r\nconst LEVEL_ANSWER = [0, 100,\
+  \ 200, 300];\r\n\r\n\r\n//在这个函数中实现你的功能，ctx定义如顶部注释，request为已解析好的传入对象。\r\nfunction\
+  \ main(ctx, request) {\r\n    //你可以直接使用传入对象\r\n    if (!request.a) {\r\n       \
+  \ request.a = 0;\r\n    }\r\n\r\n    let extraData = \"\";\r\n    let isEnd = ctx.getProgress(PID,\
+  \ \"is_end\");\r\n    if (isEnd != \"1\") {\r\n        if (request.a == 600) {\r\
+  \n            isEnd = \"1\";\r\n            ctx.setProgress(PID, \"is_end\", \"\
+  1\");\r\n        }\r\n    }\r\n\r\n    if (isEnd == \"1\") {\r\n        //使用getPuzzleData方法获取你在题目编辑器中留下的后端专属内容。\r\
+  \n        extraData = ctx.getPuzzleData(PID);\r\n    }\r\n\r\n    //getStatus通常用来保存用户不能修改的状态。如果你正在创建一个游戏，比如当前关卡数什么的就可以存在这里。但是注意这个状态每个浏览器都会有一份全新的。\r\
+  \n    let currentLevel = ctx.getStatus(\"level\");\r\n    let level = 1;\r\n   \
+  \ if (currentLevel) {\r\n        level = parseInt(currentLevel);\r\n    }\r\n\r\n\
+  \    let result = \"\";\r\n    if (request.type === 1) {\r\n        level = 1;\r\
+  \n        ctx.setStatus(\"level\", \"1\");\r\n        result = \"已重置\";\r\n    }\
+  \ else {\r\n        let answer = LEVEL_ANSWER[level];\r\n        if (request.a ==\
+  \ answer) {\r\n            level++;\r\n            if (level > 3) {\r\n        \
+  \        result = \"恭喜通关：答案是 LEVEL 1 + LEVEL 2 + LEVEL 3\";\r\n                level\
+  \ = 3;\r\n            } else {\r\n                result = `恭喜进入 第${level}关`;\r\n\
+  \                ctx.setStatus(\"level\", level.toString());\r\n            }\r\n\
+  \        } else if (request.a > answer) {\r\n            result = \"+++\";\r\n \
+  \       } else {\r\n            result = \"---\"\r\n        }\r\n    }\r\n\r\n \
+  \   //将你需要返回给前端的对象return出去\r\n    return {\r\n        level: level,\r\n        test:\
+  \ \"你的输入: \" + request.a,\r\n        result: result,\r\n        user: `${ctx.gid}/${ctx.uid}`,\r\
+  \n        extra: extraData,\r\n    }\r\n}\r\n\r\n//=======以下是JSON解析与调用脚本，一般不需要修改========\r\
+  \nfunction _jsonProcessHelper(ctx) {\r\n    let request = JSON.parse(ctx.request);\r\
+  \n    let resBody = main(ctx, request);\r\n    let resString = JSON.stringify(resBody);\r\
+  \n    ctx.response(resString);\r\n}\r\n\r\n_jsonProcessHelper(ctx);"
+title: 后端脚本示例
+type: backend_script

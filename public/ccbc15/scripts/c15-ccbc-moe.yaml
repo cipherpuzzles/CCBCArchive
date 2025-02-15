@@ -1,0 +1,125 @@
+content:
+- 服务器脚本 c15-ccbc-moe CCBC MOE 的后端脚本
+key: c15-ccbc-moe
+psid: 4
+script: "// 提交频率限制在每个用户每一小时一次\r\nconst LIMIT = 60 * 60 * 1000;\r\n// const LIMIT =\
+  \ 1000;\r\n\r\n// 投票结果缓存时间\r\nconst CACHE_TIME = 1 * 60 * 1000;\r\n\r\nconst FINAL_RANK\
+  \ = [\r\n    [1, 2],\r\n    [2, 1],\r\n    [1, 2],\r\n    [1, 2, 3],\r\n    [2,\
+  \ 3, 1, 4],\r\n    [1, 2, 4, 5, 3],\r\n    [3, 1, 2, 4, 5],\r\n    [1, 4, 3, 5,\
+  \ 2],\r\n    [2, 1, 3, 4, 5],\r\n    [3, 4, 2, 5, 1],\r\n    [2, 3, 5, 4, 1],\r\n\
+  \    [1, 2, 6, 4, 5, 3, 7]\r\n]\r\n\r\nfunction initVotes() {\r\n    let votes =\
+  \ [];\r\n    for (let i = 0; i < FINAL_RANK.length; i++) {\r\n        // 先随机生成 1~26\
+  \ 内的不重复的数字\r\n        let arr = [];\r\n        while (arr.length < FINAL_RANK[i].length)\
+  \ {\r\n            let num = Math.floor(Math.random() * 26) + 1;\r\n           \
+  \ if (arr.indexOf(num) === -1) {\r\n                arr.push(num);\r\n         \
+  \   }\r\n        }\r\n        // 排序并加上排名\r\n        arr = arr.sort(function (a,\
+  \ b) {\r\n            return a - b;\r\n        });\r\n        arr = arr.map(function\
+  \ (x, i) {\r\n            return [i + 1, x];\r\n        });\r\n        // 按照预设的排名顺序排序\r\
+  \n        arr.sort(function (a, b) {\r\n            return FINAL_RANK[i].indexOf(a[0])\
+  \ - FINAL_RANK[i].indexOf(b[0]);\r\n        });\r\n        // 只保留数字\r\n        votes.push(arr.map(function\
+  \ (x) {\r\n            return x[1];\r\n        }));\r\n    }\r\n    return votes;\r\
+  \n}\r\n\r\nfunction query(ctx) {\r\n    // 获取当前时间\r\n    let now = Date.now();\r\
+  \n    // 检查缓存是否过期\r\n    let cache = ctx.getStorage(\"moeCache\");\r\n    // 如果为空，则初始化成一个空的字典\r\
+  \n    if (cache) {\r\n        cache = JSON.parse(cache);\r\n    }\r\n    if (!cache)\
+  \ {\r\n        cache = {};\r\n    }\r\n    // 如果当前还在缓存时间内，则返回缓存数据\r\n    if (cache.time\
+  \ && now - cache.time < CACHE_TIME) {\r\n        return {\r\n            status:\
+  \ \"ok\",\r\n            msg: \"查询成功\",\r\n            admin: ctx.uid === 164,\r\
+  \n            data: {\r\n                cached: true,\r\n                votes:\
+  \ cache.data\r\n            }\r\n        }\r\n    }\r\n\r\n    // 否则重新获取\r\n   \
+  \ let globalVotes = ctx.getStorage(\"moeGlobalVotes\");\r\n    if (globalVotes)\
+  \ {\r\n        globalVotes = JSON.parse(globalVotes);\r\n    }\r\n    if (!globalVotes)\
+  \ {\r\n        return {\r\n            status: \"error\",\r\n            msg: \"\
+  坏啦！后端查不到数据啦！请快快通过站内信联系管理员！\",\r\n        }\r\n    }\r\n    // 写入缓存\r\n    cache.time\
+  \ = now;\r\n    cache.data = globalVotes;\r\n    // 更新缓存\r\n    ctx.setStorage(\"\
+  moeCache\", JSON.stringify(cache));\r\n    // 最后返回投票数据\r\n    return {\r\n     \
+  \   status: \"ok\",\r\n        msg: \"查询成功\",\r\n        admin: ctx.gid === 1,\r\
+  \n        data: {\r\n            cached: false,\r\n            votes: globalVotes\r\
+  \n        }\r\n    }\r\n}\r\n\r\nfunction query_real(ctx) {\r\n    if (ctx.gid !==\
+  \ 1) {\r\n        return {\r\n            status: \"error\",\r\n            msg:\
+  \ \"对不起，你没有权限查看真实数据，因为你不是 Nano 的同党（察觉\"\r\n        }\r\n    }\r\n\r\n    let globalVotes\
+  \ = ctx.getStorage(\"moeGlobalVotes\");\r\n    if (globalVotes) {\r\n        globalVotes\
+  \ = JSON.parse(globalVotes);\r\n    }\r\n    if (!globalVotes) {\r\n        return\
+  \ {\r\n            status: \"error\",\r\n            msg: \"坏啦！后端查不到数据啦！请快快通过站内信联系管理员！\"\
+  ,\r\n        }\r\n    }\r\n    let fakeVotes = ctx.getStorage(\"moeFakeVotes\");\r\
+  \n    if (fakeVotes) {\r\n        fakeVotes = JSON.parse(fakeVotes);\r\n    }\r\n\
+  \    if (!fakeVotes) {\r\n        return {\r\n            status: \"error\",\r\n\
+  \            msg: \"坏啦！后端查不到数据啦！请快快通过站内信联系管理员！\",\r\n        }\r\n    }\r\n    //\
+  \ 相减，获得真实数据\r\n    for (let i = 0; i < FINAL_RANK.length; i++) {\r\n        for\
+  \ (let j = 0; j < FINAL_RANK[i].length; j++) {\r\n            globalVotes[i][j]\
+  \ -= fakeVotes[i][j];\r\n        }\r\n    }\r\n    return {\r\n        status: \"\
+  ok\",\r\n        msg: \"查询成功\",\r\n        data: {\r\n            votes: globalVotes\r\
+  \n        }\r\n    }\r\n}\r\n\r\nfunction reset(ctx) {\r\n    // 只允许 uid = 164 的人调用\r\
+  \n    if (ctx.uid !== 164) {\r\n        return {\r\n            status: \"error\"\
+  ,\r\n            msg: \"对不起，你没有权限重置本题，因为你不是 Nano（察觉\"\r\n        }\r\n    }\r\n\
+  \    let votes = initVotes();\r\n    ctx.setStorage(\"moeGlobalVotes\", JSON.stringify(votes));\r\
+  \n    ctx.setStorage(\"moeFakeVotes\", JSON.stringify(votes));\r\n    ctx.setStorage(\"\
+  moeCache\", JSON.stringify({}));\r\n    ctx.setStatus(\"moeSubTime\", \"\");\r\n\
+  \    return {\r\n        status: \"ok\",\r\n        msg: \"重置成功\"\r\n    }\r\n}\r\
+  \n\r\nfunction reset_cache(ctx) {\r\n    // 只允许 uid = 164 的人调用\r\n    if (ctx.uid\
+  \ !== 164) {\r\n        return {\r\n            status: \"error\",\r\n         \
+  \   msg: \"对不起，你没有权限重置本题，因为你不是 Nano（察觉\"\r\n        }\r\n    }\r\n    ctx.setStorage(\"\
+  moeCache\", JSON.stringify({}));\r\n    ctx.setStatus(\"moeSubTime\", \"\");\r\n\
+  \    return {\r\n        status: \"ok\",\r\n        msg: \"重置缓存成功\"\r\n    }\r\n\
+  }\r\n\r\nfunction submit(ctx, request) {\r\n    // 如果 request.vote 是空的，则响应\r\n \
+  \   if (!request.vote) {\r\n        return {\r\n            status: \"error\",\r\
+  \n            msg: \"请求格式不正确：vote 字段为空\"\r\n        }\r\n    }\r\n    // request.vote\
+  \ 的格式应该是 list[int]\r\n    let vote = request.vote;\r\n    if (!Array.isArray(vote)\
+  \ || vote.length !== FINAL_RANK.length) {\r\n        return {\r\n            status:\
+  \ \"error\",\r\n            msg: \"请求格式不正确：vote 不是数组或长度不匹配\"\r\n        }\r\n  \
+  \  }\r\n    for (let i = 0; i < FINAL_RANK.length; i++) {\r\n        if (typeof\
+  \ vote[i] !== 'number' || vote[i] < -1 || vote[i] >= FINAL_RANK[i].length) {\r\n\
+  \            return {\r\n                status: \"error\",\r\n                msg:\
+  \ `请求格式不正确：vote[${i}] 不是合法的数字`\r\n            }\r\n        }\r\n    }\r\n    //\
+  \ 全是 -1 也不行\r\n    if (vote.every(function (v) { return v === -1; })) {\r\n    \
+  \    return {\r\n            status: \"error\",\r\n            msg: \"无效投票：请至少选择一个选项\"\
+  \r\n        };\r\n    }\r\n    // 最后转成字符串\r\n    let vote_str = new Date().toLocaleString()\
+  \ + \":\" + vote.join(\",\").replace(/-1/g, \"x\");\r\n\r\n    // 获取当前时间\r\n   \
+  \ let now = Date.now();\r\n    // 做第一层检查，如果提交时间在冷却时间范围内，则返回无效\r\n    let subTime\
+  \ = ctx.getStatus(\"moeSubTime\");\r\n    if (subTime) {\r\n        let lastTime\
+  \ = parseInt(subTime);\r\n        if (now - lastTime < LIMIT) {\r\n            return\
+  \ {\r\n                status: \"error\",\r\n                msg: \"一小时以内只能投一次票哦，请稍后再试\"\
+  \r\n            }\r\n        }\r\n    }\r\n    // 获取全局保存的数据\r\n    let moeData =\
+  \ ctx.getStorage(`moeData_${ctx.uid}`);\r\n    // 如果为空，则初始化成一个空的字典\r\n    if (moeData)\
+  \ {\r\n        moeData = JSON.parse(moeData);\r\n    }\r\n    if (!moeData) {\r\n\
+  \        moeData = {};\r\n    }\r\n    // 如果当前用户的提交时间在冷却时间范围内，则返回无效\r\n    if (moeData.time\
+  \ && now - moeData.time < LIMIT) {\r\n        return {\r\n            status: \"\
+  error\",\r\n            msg: \"一小时以内只能投一次票哦，请稍后再试\"\r\n        }\r\n    }\r\n\r\n\
+  \    // 到这里应该说明提交有效，记录提交的答案\r\n    if (!moeData.votes) {\r\n        moeData.votes\
+  \ = [];\r\n    }\r\n    moeData.votes.push(vote_str);\r\n\r\n    // 更新提交时间\r\n \
+  \   ctx.setStatus(\"moeSubTime\", now.toString());\r\n    moeData.time = now;\r\n\
+  \    moeData = JSON.stringify(moeData);\r\n    ctx.setStorage(`moeData_${ctx.uid}`,\
+  \ moeData);\r\n\r\n    // 更新全局票数\r\n    let globalVotes = ctx.getStorage(\"moeGlobalVotes\"\
+  );\r\n    if (globalVotes) {\r\n        globalVotes = JSON.parse(globalVotes);\r\
+  \n    }\r\n    if (!globalVotes) {\r\n        return {\r\n            status: \"\
+  error\",\r\n            msg: \"坏啦！后端查不到数据啦！请快快通过站内信联系管理员！\",\r\n        }\r\n  \
+  \  }\r\n    for (let i = 0; i < FINAL_RANK.length; i++) {\r\n        if (vote[i]\
+  \ !== -1) {\r\n            globalVotes[i][vote[i]]++;\r\n        }\r\n    }\r\n\r\
+  \n    // 获取假票数量\r\n    let fakeVotes = ctx.getStorage(\"moeFakeVotes\");\r\n   \
+  \ if (fakeVotes) {\r\n        fakeVotes = JSON.parse(fakeVotes);\r\n    }\r\n  \
+  \  if (!fakeVotes) {\r\n        return {\r\n            status: \"error\",\r\n \
+  \           msg: \"坏啦！后端查不到数据啦！请快快通过站内信联系管理员！\",\r\n        }\r\n    }\r\n\r\n \
+  \   // 如果当然的 rank 与预设的不符合，则强行使用机器人账户做假票\r\n    for (let o = 0; o < FINAL_RANK.length;\
+  \ o++) {\r\n        // 从排名低的开始，如果有人票数比前面的高，则强行调整\r\n        let preVote = globalVotes[o][FINAL_RANK[o].indexOf(1)];\r\
+  \n        for (let i = 2; i <= FINAL_RANK[o].length; i++) {\r\n            let idx\
+  \ = FINAL_RANK[o].indexOf(i);\r\n            while (globalVotes[o][idx] <= preVote)\
+  \ {\r\n                // 每次随机增加 1~7\r\n                let inc = Math.floor(Math.random()\
+  \ * 7) + 1;\r\n                fakeVotes[o][idx] += inc;\r\n                globalVotes[o][idx]\
+  \ += inc;\r\n            }\r\n            preVote = globalVotes[o][idx];\r\n   \
+  \     }\r\n    }\r\n    ctx.setStorage(\"moeGlobalVotes\", JSON.stringify(globalVotes));\r\
+  \n    ctx.setStorage(\"moeFakeVotes\", JSON.stringify(fakeVotes));\r\n\r\n    return\
+  \ {\r\n        status: \"ok\",\r\n        msg: \"投票成功！感谢您的参与！\"\r\n    }\r\n}\r\n\
+  \r\nfunction main(ctx, request) {\r\n    if (!request.type) {\r\n        return\
+  \ {\r\n            status: \"error\",\r\n            msg: \"请求格式不正确：type 字段为空\"\r\
+  \n        }\r\n    }\r\n    if (request.type === \"query\") {\r\n        return\
+  \ query(ctx);\r\n    } else if (request.type === \"vote\") {\r\n        return submit(ctx,\
+  \ request);\r\n    } else if (request.type === \"reset\") {\r\n        return reset(ctx);\r\
+  \n    } else if (request.type === \"reset_cache\") {\r\n        return reset_cache(ctx);\r\
+  \n    } else if (request.type === \"query_real\") {\r\n        return query_real(ctx);\r\
+  \n    } else {\r\n        return {\r\n            status: \"error\",\r\n       \
+  \     msg: `请求格式不正确：未知的 type 值 ${request.type}`\r\n        }\r\n    }\r\n}\r\n\r\
+  \n// ======= 以下是 JSON 解析与调用脚本，一般不需要修改 ========\r\nfunction _jsonProcessHelper(ctx)\
+  \ {\r\n    let request = JSON.parse(ctx.request);\r\n    let resBody = main(ctx,\
+  \ request);\r\n    let resString = JSON.stringify(resBody);\r\n    ctx.response(resString);\r\
+  \n}\r\n\r\n_jsonProcessHelper(ctx);\r\n"
+title: CCBC MOE 的后端脚本
+type: backend_script

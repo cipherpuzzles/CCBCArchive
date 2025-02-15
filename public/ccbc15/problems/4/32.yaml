@@ -1,0 +1,80 @@
+answer: BRIEFCASE
+answer-analysis: '仔细观察页面会发现有一个3x3的像素格，每个色值对应一个字母或需要在0处按规律填写一个字母，得到答案**BRIEFCASE**
+
+
+  | **颜色代码** | **解释**              | **提取** |
+
+  |:--------:|:-------------------:|:------:|
+
+  | A0CDEF   | 0是填空例子教学            | B      |
+
+  | FEEDE0   | FEEDER              | R      |
+
+  | BE4053   | 元素Be=4 ?=53         | I      |
+
+  | 333EE0   | 镜像对称0填E             | E      |
+
+  | A12266   | A1Z26 6             | F      |
+
+  | 9ADD5B   | 9+5b=0x64=100=C(罗马) | C      |
+
+  | AACCEE   | ACE                 | A      |
+
+  | 115A5C   | ASCII码 115          | S      |
+
+  | 271828   | e                   | E      |
+
+  '
+content:
+- '你来到了巴西利亚。
+
+
+  仔细远望这座多彩的高原城市，你看到了——仔细看！你一定看得到的！
+
+  '
+- "<div class=\"colors\">\r\n    <div style=\"background-color: #A0CDEF;\"></div>\r\
+  \n    <div style=\"background-color: #FEEDE0;\"></div>\r\n    <div style=\"background-color:\
+  \ #BE4053;\"></div>\r\n    <div style=\"background-color: #333EE0;\"></div>\r\n\
+  \    <div style=\"background-color: #A12266;\"></div>\r\n    <div style=\"background-color:\
+  \ #9ADD5B;\"></div>\r\n    <div style=\"background-color: #AACCEE;\"></div>\r\n\
+  \    <div style=\"background-color: #115A5C;\"></div>\r\n    <div style=\"background-color:\
+  \ #271828;\"></div>\r\n</div>\r\n\r\n<style>\r\n.colors {\r\n    display: flex;\r\
+  \n    flex-wrap: wrap;\r\n    width: 3px;\r\n}\r\n.colors > div {\r\n    height:\
+  \ 1px;\r\n    width: 1px;\r\n}\r\n</style>"
+content-type: 1
+desc: ''
+extend-content:
+- 你要离开之前，获得了一份旅游指南，你注意到其中一句话被圈了出来：“雨季常带来强烈的洪水。”
+extend-data: ''
+links:
+- path: ccbc15/index
+  title: 索引页
+  type: index
+- path: ccbc15/pages/d
+  title: 全球呼叫出题组
+  type: page
+tips:
+- content: 仔细观察，或者F12查看页面，这个页面除了那句话以外还有别的东西。
+  title: 题在哪里
+- content: 获得它们的十六进制颜色编码，然后将它们作为小题解开，每个编码指向一个字母。
+  title: 我找到题了，但是我要做什么
+- content: 向0处填入一个字母，使序列拥有简单的规律。
+  title: 第1小题怎么做
+- content: 向0处填入一个字母，使之成为一个有意义的单词。
+  title: 第2小题怎么做
+- content: 该小题中的字母是一个元素，0处应当填入其后数字代表的元素符号。
+  title: 第3小题怎么做
+- content: 该小题的内容某种意义上左右镜像对称。
+  title: 第4小题怎么做
+- content: 该小题的前五个字符指向一种常见的加密方式，剩余字符是答案对应的编码。
+  title: 第5小题怎么做
+- content: 该小题的字母部分构成了一个有意义的单词，跟随它的指引计算，计算结果可以用一个字母表示。
+  title: 第6小题怎么做
+- content: 该小题可以直接读出一个单词，该单词直接对应某个字母。
+  title: 第7小题怎么做
+- content: 该小题后一半是一种编码方式的象形，前一半则是答案在这种编码方式下的编号。
+  title: 第8小题怎么做
+- content: 这是一个著名的常数。
+  title: 第9小题怎么做
+title: What9Colors
+type: problem

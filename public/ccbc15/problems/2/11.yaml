@@ -1,0 +1,33 @@
+answer: HOT WINGS
+answer-analysis: '图片中字母如下图所示：
+
+
+  ![字母图片](/ccbc15/images/2/210d1b320691419094938f9f546ff5b1.webp)
+
+
+  将字母写成盲文，得到图片，象形得到答案**HOT WINGS**
+
+
+  ![盲文图片](/ccbc15/images/2/33e3bbfc0cb340f7a56ae649cac62d75.webp)'
+content:
+- '啊，好像误入了小七的私人房间! 实在是**没眼**到处乱看，光看着墙上这些由小块瓷砖构成的可爱字母，就幸福得有点发晕哩~
+
+  '
+content-type: 0
+desc: ''
+extend-data: ''
+links:
+- path: ccbc15/index
+  title: 索引页
+  type: index
+- path: ccbc15/pages/b
+  title: 与天才美少女的烹饪对决
+  type: page
+problem-image: /ccbc15/images/2/db3186ee80ed440e9755ba44ab719fb3.webp
+tips:
+- content: 既然如此目眩神迷，要不要把所有字母转换成盲文试试呢？注意字母的旋转方向。
+  title: 我毫无头绪
+- content: 按照原字母的方向排列整齐，每组字母可以象形得到一个更大的字母。
+  title: 该如何提取
+title: 目眩神迷
+type: problem

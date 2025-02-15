@@ -1,0 +1,113 @@
+answer: 'BOOGIE WONDERLAND '
+answer-analysis: '[解析链接](https://docs.qq.com/sheet/DR3pvenN3dGR0cEF4?tab=h8mwjz)'
+content:
+- 只打字不玩耍，聪明杰克也变傻。
+content-type: 2
+desc: ''
+extend-data: 山与水
+links:
+- path: ccbc15/index
+  title: 索引页
+  type: index
+- path: ccbc15/pages/e
+  title: 爆吧大战
+  type: page
+tips:
+- content: 要按正确的指法打字哦！
+  title: 打字有什么要注意的吗？
+- content: 到最后，每个字母对都对应你的食指向两种方向的移动，这提示了要用哪种古典密码提取。
+  title: 该如何提取
+title: 打字游戏
+type: problem
+vue_script: "const { ref, inject, onMounted, onBeforeUnmount, nextTick } = Vue;\r\n\
+  \r\nexport default {\r\n    setup() {\r\n        const page = ref(0); //0-Main 1-Gameplay\
+  \ 2-Gameover 3-Win\r\n        const timing = ref(0);\r\n        let startTime;\r\
+  \n        let timer;\r\n        const backend = inject(\"backend\");\r\n\r\n   \
+  \     const prevLine = ref(\"\");\r\n        const currLine = ref(\"\");\r\n   \
+  \     const inputLine = ref(\"\");\r\n\r\n        const getInputCharColor = (i)\
+  \ => {\r\n            if (inputLine.value[i] == currLine.value[i]) {\r\n       \
+  \         return \"black\";\r\n            } else {\r\n                return \"\
+  red\";\r\n            } \r\n        }\r\n\r\n        const formatTime = (second)\
+  \ => {\r\n            let minutes = Math.floor(second / 60);\r\n            let\
+  \ seconds = second % 60;\r\n            return `${minutes.toString().padStart(2,\
+  \ '0')}:${seconds.toString().padStart(2, '0')}`;\r\n        }\r\n\r\n        const\
+  \ updateTiming = () => {\r\n            timing.value = 300 - Math.floor((Date.now()\
+  \ - startTime) / 1000);\r\n            if (timing.value <= 0) {\r\n            \
+  \    gameover();\r\n            }\r\n        }\r\n\r\n        const onKeydown =\
+  \ async (e) => {\r\n            if (page.value == 0) {\r\n                if (e.key\
+  \ == \"Enter\") {\r\n                    start();\r\n                }\r\n     \
+  \       } else if (page.value == 1) {\r\n                //playing\r\n         \
+  \       if (\"qwertyuiop[]asdfghjkl;'zxcvbnm,./QWERTYUIOP{}ASDFGHJKL:\\\"ZXCVBNM<>?!@#$%^&*()_+1234567890-=`~\"\
+  .includes(e.key)) {\r\n                    console.log(e.key);\r\n             \
+  \       let upperLetter = e.key.toUpperCase();\r\n                    inputLine.value\
+  \ += upperLetter;\r\n                } else if (e.key == \"Backspace\") {\r\n  \
+  \                  inputLine.value = inputLine.value.slice(0, -1);\r\n         \
+  \       } else if (e.key == \" \") {\r\n                    inputLine.value += \"\
+  \ \";\r\n                } else if (e.key == \"Enter\") {\r\n                  \
+  \  if (inputLine.value == currLine.value) {\r\n                        prevLine.value\
+  \ = currLine.value;\r\n                        let data = await backend(\"c15-typing-game\"\
+  , {\r\n                            type: 1,\r\n                            input:\
+  \ inputLine.value\r\n                        });\r\n\r\n                       \
+  \ if (data.page == 3) {\r\n                            page.value = 3;\r\n     \
+  \                   } else if (data.page != 1) {\r\n                           \
+  \ gameover();\r\n                        } else {\r\n                          \
+  \  currLine.value = data.text;\r\n                            inputLine.value =\
+  \ \"\";\r\n                        }\r\n                    }\r\n              \
+  \  } else {\r\n                    console.log(\"Invalid key\");\r\n           \
+  \     }\r\n            } else {\r\n                if (e.key == \"Enter\") {\r\n\
+  \                    page.value = 0;\r\n                }\r\n            }\r\n \
+  \       }\r\n\r\n        onMounted(() => {\r\n            window.addEventListener('keydown',\
+  \ onKeydown);\r\n        });\r\n\r\n        onBeforeUnmount(() => {\r\n        \
+  \    window.removeEventListener('keydown', onKeydown);\r\n            clearInterval(timer);\r\
+  \n        });\r\n\r\n        const start = async () => {\r\n            startTime\
+  \ = Date.now();\r\n            timing.value = 300;\r\n\r\n            let data =\
+  \ await backend(\"c15-typing-game\", {\r\n                type: 0\r\n          \
+  \  });\r\n\r\n            timer = setInterval(() => {\r\n                updateTiming();\r\
+  \n            }, 1000);\r\n\r\n            page.value = data.page;\r\n         \
+  \   prevLine.value = \"\";\r\n            currLine.value = data.text;\r\n      \
+  \      inputLine.value = \"\";\r\n        }\r\n\r\n        const gameover = () =>\
+  \ {\r\n            clearInterval(timer);\r\n            page.value = 2;\r\n    \
+  \    }\r\n\r\n        return {\r\n            page,\r\n            timing,\r\n \
+  \           formatTime,\r\n            prevLine,\r\n            currLine,\r\n  \
+  \          inputLine,\r\n            getInputCharColor\r\n        }\r\n    }\r\n\
+  }"
+vue_template: "<template>\r\n    <div class=\"gameplay-wrapper\">\r\n        <div\
+  \ class=\"gameplay-content\">\r\n            <div v-if=\"page == 0\" class=\"game-start-page\"\
+  >\r\n                <div class=\"game-title\">Typing Game</div>\r\n           \
+  \     <div class=\"game-start\"> > PRESS ENTER &lt; </div>\r\n            </div>\r\
+  \n            <div v-if=\"page == 1\" class=\"game-playing-page\">\r\n         \
+  \       <div class=\"game-timing\">{{ formatTime(timing) }}</div>\r\n          \
+  \      <div class=\"game-main\">\r\n                    <div class=\"game-left\"\
+  >\r\n                        <div>Previous line:</div>\r\n                     \
+  \   <div>Type this line:</div>\r\n                    </div>\r\n               \
+  \     <div class=\"game-right\">\r\n                        <div>{{prevLine}}</div>\r\
+  \n                        <div>{{currLine}}</div>\r\n                        <div>\r\
+  \n                            <span v-for=\"(char, index) in inputLine\" :style=\"\
+  {color: getInputCharColor(index)}\">{{char}}</span>\r\n                        \
+  \    <span class=\"currcursor\">&nbsp;</span>\r\n                        </div>\r\
+  \n                    </div>\r\n                </div>\r\n            </div>\r\n\
+  \            <div v-if=\"page == 2\" class=\"game-gameover-page\">\r\n         \
+  \       <div class=\"game-title\">Game Over</div>\r\n                <div class=\"\
+  game-start\"> > PRESS ENTER &lt; </div>\r\n            </div>\r\n            <div\
+  \ v-if=\"page == 3\" class=\"game-win-page\">\r\n                <div class=\"game-title\"\
+  >You Win!</div>\r\n                <div class=\"game-info\">The last line you typed\
+  \ was: {{prevLine}}</div>\r\n                <div class=\"game-start\"> > PRESS\
+  \ ENTER &lt; </div>\r\n            </div>\r\n        </div>\r\n        <div style=\"\
+  height: 170px\"></div>\r\n    </div>\r\n</template>\r\n\r\n<style>\r\n.gameplay-wrapper\
+  \ {\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-items: center;\r\
+  \n    user-select: none;\r\n}\r\n.gameplay-content {\r\n    background-color: aliceblue;\r\
+  \n    height: 62vh;\r\n    width: 65vw;\r\n    font-family: Consolas, monospace,\
+  \ monospace;\r\n    font-size: 22px;\r\n    color: black;\r\n}\r\n.game-start-page,.game-gameover-page,.game-win-page\
+  \ {\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-items: center;\r\
+  \n    justify-content: space-around;\r\n    height: 100%;\r\n}\r\n.game-title {\r\
+  \n    font-size: 60px;\r\n}\r\n\r\n.game-playing-page {\r\n    display: flex;\r\n\
+  \    flex-direction: column;\r\n    align-items: center;\r\n}\r\n.game-timing {\r\
+  \n    margin-top: 60px;\r\n}\r\n.game-main {\r\n    margin-top: 60px;\r\n    display:\
+  \ flex;\r\n    width: 100%;\r\n    unicode-bidi: isolate;\r\n    white-space: pre;\r\
+  \n}\r\n.game-left {\r\n    flex: 1;\r\n    text-align: right;\r\n    padding-right:\
+  \ 20px;\r\n}\r\n.game-right {\r\n    flex: 3;\r\n}\r\n\r\n.game-info {\r\n    unicode-bidi:\
+  \ isolate;\r\n    white-space: pre;\r\n}\r\n\r\n.game-left > div,.game-right > div\
+  \ {\r\n    height: 33px;\r\n}\r\n\r\n@keyframes cursorani {\r\n    0%, 100% {\r\n\
+  \        opacity: 1\r\n    }\r\n    50% {\r\n        opacity: 0\r\n    }\r\n}\r\n\
+  .currcursor {\r\n    border-bottom: 2px solid #8a8a8a;\r\n    animation: cursorani\
+  \ 1s infinite steps(1, start);\r\n}\r\n\r\n</style>"

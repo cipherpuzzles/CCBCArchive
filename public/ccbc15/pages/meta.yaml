@@ -1,0 +1,14 @@
+content: 
+- Meta 题目列表
+links:
+- path: ccbc15/pages/main
+  title: 返回索引页
+  type: page
+- path: ccbc15/problems/meta/71
+  title: 生死疲劳
+  type: problem
+- path: ccbc15/problems/meta/72
+  title: 世间万物八荒四野一时俱至
+  type: problem
+title: Meta
+type: page

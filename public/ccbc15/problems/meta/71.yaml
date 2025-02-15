@@ -1,0 +1,27 @@
+answer: BUILD THE GRID WALL
+answer-analysis: 暂无
+content:
+- '缓缓讲完后，七大说：“现在，只有用六个世界的能量激活水晶球，才能找到从六道中解脱的路。”
+
+
+  <img src="/ccbc15/images/meta/07affba3e4de47d8bdd422008bcaadc5.webp" width="300">
+
+
+  '
+- '<div style="height: 170px"></div>'
+content-type: 1
+desc: ''
+extend-content:
+- '墙？什么墙？
+
+  （新剧情已解锁）'
+extend-data: ''
+links:
+- path: ccbc15/index
+  title: 索引页
+  type: index
+tips:
+- content: 利用已经给出的字母，将六个meta的答案填入这个漩涡中！
+  title: 我毫无头绪
+title: 生死疲劳
+type: problem

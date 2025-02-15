@@ -1,0 +1,113 @@
+additional-answers:
+- answer: META SUCKS
+  extra: ''
+  message: 我解出了META SUCKS... 且不说小题，你这套模拟题的Meta出的也太烂了吧。难道你真以为写一串数字提取敷衍了事就能叫Metapuzzle了？明明这套小题里融合了各种古典密码：电码、盲文、旗语、猪圈、二进制，那......
+- answer: UNFORTUNATEDECAMERON
+  extra: ''
+  message: 正确
+- answer: FLAGFALLEFFECT
+  extra: ''
+  message: 正确
+- answer: WORLDCONTEXT
+  extra: ''
+  message: 正确
+- answer: NEUTRALITYPROGRAM
+  extra: ''
+  message: 正确
+- answer: EXPLOSIVELEGION
+  extra: ''
+  message: 正确
+- answer: STUDYABNORMALITIES
+  extra: ''
+  message: 正确
+- answer: STOKECONFLUXES
+  extra: ''
+  message: 正确
+- answer: SEEKINGKINGDOM
+  extra: ''
+  message: 正确
+- answer: FARMBASEMENT
+  extra: ''
+  message: 正确
+answer: BEE KILLER
+answer-analysis: '| **题目要素**       | **题目#1**   | **题目#2**                        |
+  **ENUM** | **答案**               | **INDEX** | **提取字母** | **密码#1** | **密码#2** | **棋盘**
+  | **提取字母** |
+
+  |:--------------:|:----------:|:-------------------------------:|:--------:|:--------------------:|:---------:|:--------:|:--------:|:--------:|:------:|:--------:|
+
+  | 七色数码管+周易爻辞     | C12 - 多彩座钟 | C11 - #12                       | (11 9)   | UNFORTUNATE
+  DECAMERON | 16        | M        | 电码       | 盲文       | 12     | B        |
+
+  | 骑士周游+中英双解      | C11 - #10  | C12 - 旧报纸                       | (8 6)    | FLAGFALL
+  EFFECT       | 9         | E        | 电码       | 二进制      | 15     | E        |
+
+  | 国旗+汉字性质        | C11 - #2   | C12 - 沾染墨水的清单                   | (5 7)    | WORLD
+  CONTEXT         | 9         | T        | 电码       | 二进制      | 15     | E        |
+
+  | 垃圾分类+ctf       | C12 - 灰红蓝绿 | C12 - welcome_to_ccbc_ctf (Web) | (10 7)   | NEUTRALITY
+  PROGRAM    | 6         | A        | 盲文       | 二进制      | 25     | K        |
+
+  | 点灯游戏+佩奇CW      | C12 - 灯泡矩阵 | C11 - #14                       | (9 6)    | EXPLOSIVE
+  LEGION      | 6         | S        | 盲文       | 猪圈       | 24     | I        |
+
+  | emoji双拼+midi音乐 | C12 - 时间线D | C12 - 乐队排练                      | (5 13)   | STUDY
+  ABNORMALITIES   | 3         | U        | 旗语       | 电码       | 31     | L        |
+
+  | 色数独+俄罗斯方块      | C11 - #1   | C10 - 居民区5                      | (5 9)    | STOKE
+  CONFLUXES       | 6         | C        | 旗语       | 电码       | 31     | L        |
+
+  | 蜂巢+洗牌          | C12 - 巨大蜂巢 | C12 - 魔术指南                      | (7 7)    | SEEKING
+  KINGDOM       | 4         | K        | 电码       | 二进制      | 15     | E        |
+
+  | POINTS         | C11 - 作案地点 | （无）                             | (4 8)    | FARM
+  BASEMENT         | 7         | S        | 猪圈       | 盲文       | 42     | R        |
+
+
+
+  得到答案**BEE KILLER**'
+content:
+- "这种比赛不就是拟合往年题吗，背一下典型例题和答案就可以了。你看看我出的这套CCBC15模拟题？\n\n1. 这道题的风味文本说题目是一座电子钟，但题面看起来只有霓虹色块。这些密文解读出来是一段古文，似乎是一篇占卜记录...<br>\n\
+  2. 这道题首先需要用国际象棋的马遍历一些方格，这样才能读出一段文字。但是题目还有隐藏的后半部分：如果用中国象棋而非国际象棋的话，会从这些格子里提取出一段不同的文字。<br>\n\
+  3. 题目是一张世界地图，其中有些国家的领土区域被标了颜色。明明已经提取出了一半答案，但是地图的下半部分被墨水遮盖了，没法继续解读。原来这里要通过猜规则来推理被墨水遮盖的内容啊。<br>\n\
+  4. 网页上的题面阵列完全是垃圾。我又打开控制台，发现那里还藏着新的线索。\t<br>\n5. 这题不就是点灯谜题吗，我直接启动自动解题... 怎么提取出了错误答案\"\
+  RED HERRING\"？哎呀，我真是太粗心了，简直比猪还笨——原来是游戏规则有所变化，上下左右四个方向的效果竟然彼此不同！<br>\n6. 这道题首先要把一些emoji配对，它们可以两两组合成复合emoji。配对成功后，网站上响起了一段劲爆的midi音乐——虽说编曲有些简陋，鼓组写的更是单调，但这段音乐应该也在传达某些信息吧。<br>\n\
+  7. 这是一道数独题，有一些格子还有绿色背景。解完数独对指定的数字求和，我提取出来了中间答案\"PLAYED TETRIS\"。原来这些绿色格其实是俄罗斯方块游戏的残局，接下来还要反推游戏过程。<br>\n\
+  8. 这个题目的形状... 让人想起了《最强大脑》里那个知名的迷宫。解决掉这部分之后，居然还有NPC让我推理扑克牌的洗牌方式... 这真的不是《最强大脑》吗？<br>\n\
+  9. 这道题的题面很简洁，只有一个英文单词POINTS。做起来也不困难，只要利用已知信息，先这样填写，再那样阅读就好了。\t\n\n\n- 答案长度(9 6)，可以是对炮兵的一种称呼。\t\
+  在Meta里要提取答案的第6个字母。\n- 答案长度(4 8)。押题卷里这道是往年原题，还需要我提示答案的内容么？\t在Meta里要提取答案的第7个字母。\n\
+  - 答案长度(8 6)；人们经常信誓旦旦地立下一个目标，最后却被打脸，答案描述的就是这种现象。\t在Meta里要提取答案的第9个字母。\n- 答案长度(10 7)；这个短语可以用来指代ChatGPT，毕竟它回答问题经常要折中一下，没什么主见。\t\
+  在Meta里要提取答案的第6个字母。\n- 答案长度(7 7)，这个答案非常有意思，两个词之间使用了顶真的手法。\t在Meta里要提取答案的第4个字母。\n-\
+  \ 答案长度(5 9)，是一个强有力的领导者能做到的事情。\t在Meta里要提取答案的第6个字母。\n- 答案长度(5 13)，对超自然现象有兴趣的人会干这种事。\t\
+  在Meta里要提取答案的第3个字母。\n- 答案长度(11 9)，听起来像是隔壁P&KU3的剧情延长了，最终还是Bad End。\t在Meta里要提取答案的第16个字母。\n\
+  - 答案长度(5 7)，可以是在国际化背景下思考问题的角度。\t在Meta里要提取答案的第9个字母。\n\n<div style=\"height: 170px\"\
+  ></div>\n"
+content-type: 0
+desc: ''
+extend-data: ''
+links:
+- path: ccbc15/index
+  title: 索引页
+  type: index
+- path: ccbc15/pages/g
+  title: 孬题杀死了出题明星
+  type: page
+tips:
+- content: '这些描述都是对CCBC往年题的拟合；每段话描述了1-2道CCBC10-12中的原题。
+
+
+    历史原题可以在这里找到：
+
+
+    [CCBC10](https://mp.weixin.qq.com/s/Pq2Qr9oYjeLMuLYgjl9xFw)
+
+
+    [CCBC11](https://archive.cipherpuzzles.com/index.html#/index?c=ccbc11/index)
+
+
+    [CCBC12](https://archive.cipherpuzzles.com/index.html#/index?c=ccbc12/index)'
+  title: 我毫无头绪
+- content: 设计Metapuzzle用到的古典密码是棋盘密码。
+  title: 我提交了中间答案，最后一句话是什么意思？
+title: 押题大师
+type: problem

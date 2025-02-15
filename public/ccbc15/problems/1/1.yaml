@@ -1,0 +1,46 @@
+answer: GUNDAM
+answer-analysis: '| 行数 | 加密方式 | 密文 | 原文 | 提取 |
+
+  | :---: | :---: | :---: | :---: | :---: |
+
+  | 1 | 盲文 | ⠑⠁⠛⠇⠑⠎ | eagles | G |
+
+  | 2 | 莫尔斯电码 | -/.-./..-/--/.-/-. | truman | U |
+
+  | 3 | 旗语 | <img src="/ccbc15/images/1/fa057893a7364ab9a181a4476a583862.webp" height="21">
+  | agency | N |
+
+  | 4 | 猪圈 | <img src="/ccbc15/images/1/2fe12be0fb4f4fc68a8f9ea89373f8ce.webp" height="21">
+  | defeat | D |
+
+  | 5 | 九键 | 22 63 22 23 21 81 | bobcat | A |
+
+  | 6 | ROT13 | z n a h n y | manual | M |
+
+
+  最终答案为 **GUNDAM**'
+content:
+- '既然来到了我们解谜幼儿园，那么首先你得先学学怎么使用各种密码吧！
+
+
+  <img src="/ccbc15/images/1/20db4bbe717c43c587358997411dce57.webp" width="400">
+
+
+  <div style="height: 170px"></div>'
+content-type: 0
+desc: ''
+extend-data: ''
+links:
+- path: ccbc15/index
+  title: 索引页
+  type: index
+- path: ccbc15/pages/a
+  title: 面试
+  type: page
+tips:
+- content: 你需要利用不同的密码破译这些内容！从上至下的加密类型分别是：盲文、摩斯、旗语、猪笔、手机九键、凯撒。你可以在网上搜索到这些密码对应的码表和使用方式。
+  title: 我毫无头绪
+- content: 你有注意到有一个特定的字母被标记了吗？从上到下按顺序念他们就可以得到答案哦。
+  title: 该如何提取
+title: 密码教学
+type: problem

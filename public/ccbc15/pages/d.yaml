@@ -1,0 +1,59 @@
+content: 
+- 全球呼叫出题组 题目列表
+links:
+- path: ccbc15/pages/main
+  title: 返回索引页
+  type: page
+- path: ccbc15/problems/4/25
+  title: 这题我糳过
+  type: problem
+- path: ccbc15/problems/4/26
+  title: 布达佩斯的即兴喜剧团
+  type: problem
+- path: ccbc15/problems/4/27
+  title: 歌剧院
+  type: problem
+- path: ccbc15/problems/4/28
+  title: CCBC 4^2
+  type: problem
+- path: ccbc15/problems/4/29
+  title: CCBC MOE
+  type: problem
+- path: ccbc15/problems/4/30
+  title: 老二次元
+  type: problem
+- path: ccbc15/problems/4/31
+  title: 西提沃克刮刮乐
+  type: problem
+- path: ccbc15/problems/4/32
+  title: What9Colors
+  type: problem
+- path: ccbc15/problems/4/33
+  title: 梵天千变咒
+  type: problem
+- path: ccbc15/problems/4/34
+  title: 海盗们的数学
+  type: problem
+- path: ccbc15/problems/4/35
+  title: 外推法
+  type: problem
+- path: ccbc15/problems/4/36
+  title: 君主战争
+  type: problem
+- path: ccbc15/problems/4/37
+  title: 缺一人可
+  type: problem
+- path: ccbc15/problems/4/73
+  title: 魔幻奇妙之旅
+  type: problem
+- path: ccbc15/problems/4/74
+  title: 断桥是否下过雪
+  type: problem
+- path: ccbc15/problems/4/75
+  title: 千万次的问
+  type: problem
+- path: ccbc15/problems/4/38
+  title: 飞起玉龙三百万
+  type: problem
+title: 全球呼叫出题组
+type: page

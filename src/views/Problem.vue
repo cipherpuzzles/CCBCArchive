@@ -147,6 +147,7 @@ import GetPageConfig from '../utils/PageConfig'
 import { marked } from 'marked'
 import LinkButton from '../components/LinkButton.vue'
 import { Collapse, Modal } from 'bootstrap';
+import gBus from '../globalBus';
 
 // Import components
 import LightGame from '../components/LightGame.vue';
@@ -184,9 +185,12 @@ const answerTypeClass = ref("alert-info");
 
 const extendContentHtml: Ref<string[]> = ref([]);
 let __vue_app__: Vue.App<Element> | undefined = undefined;
+let projectHome = "";
+let pid = 0;
 
 onMounted(async () => {
-    const confPath = route.query.c;
+    const confPath = route.query.c; //confPath like: "ccbc15/problems/1/2"
+    projectHome = confPath?.toString().split("/")[0] ?? "";
     console.log("Load conf:", confPath);
     if (!confPath) {
         message("danger", "无法加载页面数据");
@@ -206,6 +210,7 @@ function initConf(conf: YamlConfig) {
         message("danger", "页面配置错误");
         return;
     }
+    pid = conf.pid;
     title.value = conf.title;
     document.title = `${conf.title} - CCBC Archive`;
     pageHtml.value = conf.content.map(content => marked(content));
@@ -332,8 +337,57 @@ function checkAnswer() {
             if (userInput === additionalAnswer.answer.toLocaleLowerCase().replace(/\s+/g, "")) {
                 answerResult.value = "里程碑：" + additionalAnswer.message;
                 answerTypeClass.value = "alert-warning";
-                showAnswerResult.value = true;
-                return;
+
+                //如果有extra，则执行
+                if (additionalAnswer.extra) {
+                    //problemStatus的结构：{pid: {progress: {key: value}}}
+                    //命令： 
+                    // set key value
+                    // del key
+                    // clear
+                    let problemStatus = JSON.parse(localStorage.getItem(`puzzleBackendStatus-${projectHome}-problemStatus`) ?? "{}");
+
+                    let extraCommand = additionalAnswer.extra;
+                    let commands = extraCommand.split(" ");
+                    if (commands.length > 0) {
+                        let command = commands[0];
+                        if (command === "set") {
+                            if (commands.length > 2) {
+                                let key = commands[1];
+                                let value = commands[2];
+                                if (!problemStatus[pid]) {
+                                    problemStatus[pid] = {};
+                                }
+                                if (!problemStatus[pid].progress) {
+                                    problemStatus[pid].progress = {};
+                                }
+                                problemStatus[pid].progress[key] = value;
+                            }
+                        } else if (command === "del") {
+                            if (commands.length > 1) {
+                                let key = commands[1];
+                                if (problemStatus[pid] && problemStatus[pid].progress) {
+                                    delete problemStatus[pid].progress[key];
+                                }
+                            }
+                        } else if (command === "clear") {
+                            if (problemStatus[pid] && problemStatus[pid].progress) {
+                                problemStatus[pid].progress = {};
+                            }
+                        }
+                    }
+
+                    localStorage.setItem(`puzzleBackendStatus-${projectHome}-problemStatus`, JSON.stringify(problemStatus));
+                    gBus.emit("reload");
+                    gBus.emit("message", {
+                        type: "warning",
+                        message: additionalAnswer.message
+                    });
+                    return;
+                } else {
+                    showAnswerResult.value = true;
+                    return;
+                }
             }
         }
 

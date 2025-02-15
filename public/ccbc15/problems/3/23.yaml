@@ -1,0 +1,62 @@
+additional-answers:
+- answer: what zodiac
+  extra: ''
+  message: What zodiac……这是什么意思呢？
+answer: TIGER
+answer-analysis: "根据风味文本以及本区主题的提示，玩家需要回到一个非常相似的比赛 —— CCBC 12 中，重新回味当年的题目。 \n在CCBC\
+  \ 12 中，每一道题目都是由年份进行命名，玩家需要根据题目中历史事件指向的年份，以及对于题目的描述，提取出两个字母。\n\n## 康熙驾崩 - 1722 年\n\
+  \n[题目链接](https://archive.cipherpuzzles.com/index.html#/problem?c=ccbc12/problems/e/p1722)\n\
+  \n我们需要关注举行蜂巢的两个位置，在两个EET线索中间的线索是“WE”，其第一个字母是“W”.第二个字母则是与T相邻的区域（取象形字母）“O”\n\n![1](/ccbc15/images/3/a2d0fd86f0c249a9a30997fb085cdef9.webp)\n\
+  \n![2](/ccbc15/images/3/d210c0e5be4e4e9e85e42d1bb7fbfce2.webp)\n\n## 七月革命 - 1830年\n\
+  \n[题目链接](https://archive.cipherpuzzles.com/index.html#/problem?c=ccbc12/problems/e/p1830)\n\
+  \n在使用工具或是很好的眼神以及猜测能力下，我们可以估计到两串文字是“July Revolution”的重排。根据题目，我们可以使用两种不同的完美洗牌方式来洗出两串对应的字符串。根据题目的二进制规则，两个字符串分别可以转化为H和D。\n\
+  \n## 鲁比克发明魔方 - 1974年\n\n[题目链接](https://archive.cipherpuzzles.com/index.html#/problem?c=ccbc12/problems/e/p1974)\n\
+  \n本题指向了伤脑筋12块中的横条块，摆在对应位置上的的字母是A和I\n\n![3](/ccbc15/images/3/a3cebf7dc020421d930f80f4221ad4cc.webp)\n\
+  \n## 挑战者号爆炸 - 1986年\n\n[题目链接](https://archive.cipherpuzzles.com/index.html#/problem?c=ccbc12/problems/c/p1986)\n\
+  \n本题描述了吃豆人中，绿色提取结果的负形T和实际提取的结果，A。\n\n![4](/ccbc15/images/3/cea44ab7a75d4938a6d766b74ad9ed76.webp)\n\
+  \n其中两个黑线构成了T。 \n\n## 月球坠落危机 - 2058年\n\n[题目链接](https://archive.cipherpuzzles.com/index.html#/problem?c=ccbc12/problems/c/p1986)\n\
+  \n月球坠落危机出自《流浪地球》\n在本题中，第一个坐标代表年份，第二个坐标代表联赛（从上到下），第三个代表提取的字母。我们可以较为容易的得到Z和C。\n\n\
+  ![5](/ccbc15/images/3/8d540a1d69a7454897c4e30cc3632f82.webp)\n\n![6](/ccbc15/images/3/c85f870b11854e7fa156de687c2f00b2.webp)\n\
+  \n## 总结提取\n竖着读出答案， 我们可以得到【WHAT ZODIAC】。无论选择所有答案年份，还是CCBC12的年份，他们都是在虎年发生的，所以最终答案为**TIGER**。\n\
+  \n"
+content:
+- "<b>*讲时空循环，还有六个区的解谜竞赛活动，我怎么感觉我们的经历和瑶瑶想出的比赛这么像啊？不过，听听背景故事总没有坏处吧……*</b>\n\n\n康熙大帝驾崩了。当大臣们翻看他的遗嘱时，上面的奇怪暗语写到：“我的宝藏埋藏在了两个地方——一个是EET和EET之间第一个位置，一个是和T相邻的区域。”\n\
+  \n-------\n\n在推翻波旁王朝的庆功宴上，一位革命领袖写下了两行字：tuvrlniljeuooy, eyrojivolnuutl.\n\n-------\n\
+  \n鲁比克教授终于完成了他最伟大的那个玩具。他的笔记本旁放着这样的一条缎带。\n\n<div class=\"bigribbon\">\n<div></div><div></div><div></div><div></div><div></div>\n\
+  </div>\n\n-------\n\t\t\t\t\n挑战者号飞船即将爆炸，一位宇航员在生命中的最后时刻看着窗外。一道绿色的，诡异的光照来。绿色的光身边形成的黑暗，以及这道绿色的光本身，构成了一幅奇诡的画。\n\
+  \n-------\n\n由于黑客的干扰，月球在被推离地球的过程中偏离了轨道，转而撞向了地球。为了弥补这次失误,科学家们努力计算，得出了两个关键的坐标点：(8,3,8)，(5,1,1)\n\
+  \n<div style=\"height: 150px\"></div>\n"
+- "<style>\r\n.bigribbon {\r\n    display: flex;\r\n}\r\n.bigribbon > div {\r\n  \
+  \  width: 160px;\r\n    border-bottom: 1px solid #fff;\r\n    border-top: 1px solid\
+  \ #fff;\r\n    border-right: 1px solid #fff;\r\n    height: 38px;\r\n}\r\n.bigribbon\
+  \ > div:nth-child(1) {\r\n    border-left: 1px solid #fff;\r\n}\r\n.bigribbon >\
+  \ div:nth-child(2n) {\r\n    background-color: #de3c46;\r\n}\r\n</style>"
+content-type: 1
+desc: ''
+extend-data: ''
+links:
+- path: ccbc15/index
+  title: 索引页
+  type: index
+- path: ccbc15/pages/c
+  title: 科学的深入浅出
+  type: page
+tips:
+- content: 这些题目都来自于一个和这一届很像的比赛——如果你不知道是什么比赛的话，可以去看看剧情。
+  title: 我毫无头绪
+- content: 你只用关注历史事件发生的年份，你需要去找到类似比赛中，相应年份指向的题目内容。其中第五个“历史事件”发生在电影《流浪地球2》中。
+  title: 每个题目的历史事件是什么意思？
+- content: 你需要在此处分别找到夹在线索之间的字母，以及在盘面中象形出来的字母。
+  title: 第一个历史事件是什么意思？
+- content: 此处包含了一种将行为转化为加密方式的手段。你需要找到这两个字符串是怎么由行为转化而来的。这两个字符串原本相同，都是这个历史事件的名称。
+  title: 第二个历史事件是什么意思？
+- content: 此处只有一个图形和缎带的形状相同。读出对应位置的字母。
+  title: 第三个历史事件是什么意思？
+- content: 此处有一个地方被标记为绿色。你需要找到其对应的字母答案。另外，提取绿色时，它的负形（读镂空的部分）也是一个字母。
+  title: 第四个历史事件是什么意思？
+- content: 你需要在此处找到坐标对应的字母，坐标中的三个数字，分别代表了年份，类型和第几个字母。
+  title: 第五个历史事件是什么意思？
+- content: 每个题目的历史事件可以得到两个字母。按它们的年份排序后，先读第一个字母，再读第二个字母，可以得到一个问题。这个问题的答案就是本题答案。
+  title: 该如何提取
+title: 似是故人来
+type: problem

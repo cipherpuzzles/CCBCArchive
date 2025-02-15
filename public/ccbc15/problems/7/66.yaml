@@ -1,0 +1,69 @@
+additional-answers:
+- answer: lunch singer
+  extra: ''
+  message: 那这是谁呢？
+answer: BILLIE EILISH
+answer-analysis: '双名法，林奈发明的一种命名植物的方式。如果你注意到了这点，你会意识到风味文本中称呼他为‘’林教授"是有问题的，因为他姓林奈，而不姓林！
+
+
+  右边的图谜中指向了一位姓看起来像是中文名的外国名人。左侧的中国人和外国人看起来拥有同样的姓，也拥有类似的职业。
+
+
+  | **左侧人名** | **数字** | **提取结果** | **右侧人名** | **右侧姓**     | **看起来像中文的姓** |
+
+  |:--------:|:------:|:--------:|:--------:|:-----------:|:------------:|
+
+  | 马君武      | 8      | L        | EMMANUEL | MACRON      | 马克龙          |
+
+  | 莫言       | 2      | U        | GUY DE   | MAUPASSANT  | 莫泊桑          |
+
+  | 薛其坤      | 5      | N        | ERWIN    | SCHRODINGER | 薛定谔          |
+
+  | 卓凡       | 1      | C        | CHARLIE  | CHAPLIN     | 卓别林          |
+
+  | 杜衍       | 1      | H        | HARRY    | TRUMAN      | 杜鲁门          |
+
+  | 王小波      | 2      | S        | OSCAR    | WILDE       | 王尔德          |
+
+  | 李季伦      | 5      | I        | TROFIM   | LYSENKO     | 李森科          |
+
+  | 白景琦      | 6      | N        | NORMAN   | BETHUNE     | 白求恩          |
+
+  | 孟安明      | 1      | G        | GREGOR   | MENDEL      | 孟德尔          |
+
+  | 朱德       | 2      | E        | GEORGY   | ZHUKOV      | 朱可夫          |
+
+  | 叶向高      | 3      | R        | BORIS    | YELTSIN     | 叶利钦          |
+
+
+  将对应“姓名”连上后，我们利用数字，提取对应人物实际名字中的字母。得到最终提示 “Lunch” Singer。 Lunch这首歌的歌手是**Billie Ellish**
+
+
+
+  '
+content:
+- '“林教授的双名法真是好用，我只用关注这些人的名字就好了！”<br>
+
+  “林……林教授？”
+
+  '
+content-type: 0
+desc: ''
+extend-data: ''
+links:
+- path: ccbc15/index
+  title: 索引页
+  type: index
+- path: ccbc15/pages/g
+  title: 孬题杀死了出题明星
+  type: page
+problem-image: /ccbc15/images/meta/c49024c8c81047b5821cc8b4868cfc46.webp
+tips:
+- content: 双名法的发现者在风味文本里被称作“林教授”，本题中其他的人也能有类似的称呼。
+  title: 我毫无头绪
+- content: 找到左边这些人的名字，解开右边的图谜，右边每行都能得到两个字，然后将左右联系，具体而言，相联系的两个人具有相近的职业，和共同的“姓”。
+  title: 我应该做什么
+- content: 用人像边上的数字，提取与之联系的人名字的对应字母。
+  title: 该如何提取
+title: 双名法
+type: problem

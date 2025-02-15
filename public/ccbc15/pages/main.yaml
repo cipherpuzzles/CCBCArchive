@@ -1,0 +1,32 @@
+content: 
+- CCBC15 分区列表
+links:
+- path: ccbc15/index
+  title: 返回首页
+  type: index
+- path: ccbc15/pages/a
+  title: 面试
+  type: page
+- path: ccbc15/pages/b
+  title: 与天才美少女的烹饪对决
+  type: page
+- path: ccbc15/pages/c
+  title: 科学的深入浅出
+  type: page
+- path: ccbc15/pages/d
+  title: 全球呼叫出题组
+  type: page
+- path: ccbc15/pages/e
+  title: 爆吧大战
+  type: page
+- path: ccbc15/pages/f
+  title: 我爱猫猫!
+  type: page
+- path: ccbc15/pages/g
+  title: 孬题杀死了出题明星
+  type: page
+- path: ccbc15/pages/meta
+  title: Meta
+  type: page
+title: CCBC15 首页
+type: page

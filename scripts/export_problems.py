@@ -5,7 +5,7 @@ import pymysql
 import requests
 from mysql_const import MYSQL_CONST
 
-BASE_DIR = 'D:\MyWorks\ccbcarchive\ccbcarchive\public\ccbc9r'
+BASE_DIR = 'D:\MyWorks\ccbcarchive\ccbcarchive\public\ccbc15'
 
 def read_from_db(sql):
     # 连接数据库
@@ -75,7 +75,7 @@ def download_image(image_url, image_path):
     if not os.path.exists(image_path):
         os.makedirs(image_path)
     image_name = image_url.split('/')[-1]
-    local_url = "/ccbc9r/images/%s/%s" % (image_path.split('\\')[-1], image_name)
+    local_url = "/ccbc15/images/%s/%s" % (image_path.split('\\')[-1], image_name)
 
     local_path = os.path.join(image_path, image_name)
 
@@ -98,13 +98,15 @@ def get_download_images(content, image_path):
 
 def get_path_area(problem):
     path_area_dict = {
-        1: 'A',
-        2: 'B',
-        3: 'C',
-        4: 'D',
-        5: 'E',
-        6: 'F',
-        7: 'FinalMeta',
+        1: '1',
+        2: '2',
+        3: '3',
+        4: '4',
+        5: '5',
+        6: '6',
+        7: '7',
+        8: 'meta',
+        9: '4'
     }
     path_area = path_area_dict[problem['pgid']]
     return path_area
@@ -185,19 +187,21 @@ def convert_problem(problem):
 
     # 插入链接
     content['links'] = []
-    content['links'].append({'title': '索引页', 'type': 'index', 'path': 'ccbc9r/index'})
+    content['links'].append({'title': '索引页', 'type': 'index', 'path': 'ccbc15/index'})
     if problem['pgid'] == 1:
-        content['links'].append({'title': '乐园广场', 'type': 'page', 'path': 'ccbc9r/pages/a'})
+        content['links'].append({'title': '面试', 'type': 'page', 'path': 'ccbc15/pages/a'})
     elif problem['pgid'] == 2:
-        content['links'].append({'title': '美术馆', 'type': 'page', 'path': 'ccbc9r/pages/b'})
+        content['links'].append({'title': '与天才美少女的烹饪对决', 'type': 'page', 'path': 'ccbc15/pages/b'})
     elif problem['pgid'] == 3:
-        content['links'].append({'title': '鬼屋', 'type': 'page', 'path': 'ccbc9r/pages/c'})
+        content['links'].append({'title': '科学的深入浅出', 'type': 'page', 'path': 'ccbc15/pages/c'})
     elif problem['pgid'] == 4:
-        content['links'].append({'title': '旋转木马', 'type': 'page', 'path': 'ccbc9r/pages/d'})
+        content['links'].append({'title': '全球呼叫出题组', 'type': 'page', 'path': 'ccbc15/pages/d'})
     elif problem['pgid'] == 5:
-        content['links'].append({'title': '摩天轮', 'type': 'page', 'path': 'ccbc9r/pages/e'})
+        content['links'].append({'title': '爆吧大战', 'type': 'page', 'path': 'ccbc15/pages/e'})
     elif problem['pgid'] == 6:
-        content['links'].append({'title': '码头', 'type': 'page', 'path': 'ccbc9r/pages/f'})
+        content['links'].append({'title': '我爱猫猫!', 'type': 'page', 'path': 'ccbc15/pages/f'})
+    elif problem['pgid'] == 7:
+        content['links'].append({'title': '孬题杀死了出题明星', 'type': 'page', 'path': 'ccbc15/pages/g'})
 
     return content
 
@@ -207,6 +211,12 @@ def start():
     # 写入文件
     for row in data:
         problem = parse_problem(row)
+
+        # 跳过前70题
+        if problem['pid'] < 71:
+            continue
+
+
         print("Processing problem %s %s" % (problem['pid'], problem['title']))
         problem_doc = convert_problem(problem)
 
