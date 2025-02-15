@@ -1,0 +1,85 @@
+additional-answers:
+- answer: BAT
+  extra: ''
+  message: 你恢复了一种动物！
+- answer: ELEPHANT
+  extra: ''
+  message: 你恢复了一种动物！
+- answer: ARMADILLO
+  extra: ''
+  message: 你恢复了一种动物！
+- answer: RABBIT
+  extra: ''
+  message: 你恢复了一种动物！
+- answer: PIGEON
+  extra: ''
+  message: 你恢复了一种动物！
+- answer: ALPACA
+  extra: ''
+  message: 你恢复了一种动物！
+- answer: WOLF
+  extra: ''
+  message: 你恢复了一种动物！
+answer: BEAR PAW
+answer-analysis: '结合所提供的图纸（红色为山折，蓝色为谷折）、图纸上成块的颜色和线索长度，我们可以得到以下七种动物：
+
+
+  - Bat 蝙蝠
+
+  - Elephant 大象
+
+  - Armadillo 犰狳
+
+  - Rabbit 兔子
+
+  - Pigeon 鸽子
+
+  - Alpaca 羊驼
+
+  - Wolf 狼
+
+
+  按顺序提取首字母即可得到本题答案为**BEAR PAW**
+
+  '
+content:
+- '欢迎各位小朋友来到折纸动物园……怎么有熊孩子把动物拆开了啊！这下我只用油漆涂了一面颜色的事情不就暴露了吗？
+
+
+  [pdf文档](https://static.cipherpuzzles.com/static/images/f47a3aea93844d2fb14029b690c3241f.pdf)
+
+  '
+content-type: 0
+desc: ''
+extend-data: ''
+links:
+- path: ccbc15/index
+  title: 索引页
+  type: index
+- path: ccbc15/pages/g
+  title: 孬题杀死了出题明星
+  type: page
+problem-image: /ccbc15/images/meta/182e2d8701ee4b4d97663a13f94dc016.webp
+tips:
+- content: 每张图片都是一张折纸的CP（折痕图），将它们打印出来折一下。
+  title: 我毫无头绪
+- content: 找找对应动物的英文名称
+  title: 我知道这是什么，但是我不知道要找什么
+- content: 这种动物在一款知名方块沙盒游戏中有出现，不过似乎并没有多少人在意它
+  title: 我得到1了，但是它是什么？能给一些提示吗
+- content: 这种动物是某个国家的智慧之神
+  title: 我得到2了，但是它是什么？能给一些提示吗
+- content: 这种动物十年前是世界杯的吉祥物
+  title: 我得到3了，但是它是什么？能给一些提示吗
+- content: 这种动物在一款墨西哥跳豆为主角原型的游戏中有出现，事实上这张图片就是这款游戏中的某道题编辑得到的
+  title: 我得到4了，但是它是什么？能给一些提示吗
+- content: 这种动物似乎和视频创作者有很大的关系
+  title: 我得到5了，但是它是什么？能给一些提示吗
+- content: 这种动物并不是出现在知名方块沙盒游戏的那种，而是另一种
+  title: 我得到6了，但是它是什么？能给一些提示吗
+- content: 这种动物似乎正在呼唤同伴，不知道是不是人变的
+  title: 我得到7了，但是它是什么？能给一些提示吗
+- content: 将它们按照给出的顺序排列，注意动物开头的字母
+  title: 该如何提取
+title: 折纸动物园
+type: problem

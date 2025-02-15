@@ -1,0 +1,57 @@
+additional-answers:
+- answer: 西德文
+  extra: ''
+  message: 你得到了为出这题在宾馆拉了四个小时窗帘的传奇电报员 Nano 要传递的正确信息！请提交这个英国地名的英文名。
+answer: WEST DEVON
+answer-analysis: '<img src="/ccbc15/images/meta/7bee7e6bba184dd6bcb72c5a854e570a.webp"
+  width="800">
+
+
+  在22:00~02:00四个小时期间，这个房间一直在闪欸！
+
+
+  观察可发现是有规律的闪。以四分钟为间隔，有两种模式：
+
+  - 亮一分钟，暗三分钟：转换为morse的点
+
+  - 亮三分钟，暗一分钟：转换为morse的横
+
+
+  得到一个长度为60的morse串，五个五个为单位并通过数字morse读取可以获得一串数字：600717952429
+
+  由于是通过数字morse转换，可以猜测这可能是一种电码。
+
+
+  使用中文电码将6007 1795 2429转换成「西德文」，也就是答案**WEST DEVON**
+
+
+  PS：如果把信息转换成了01字符串，通过周期分析也可以发现五个五个划分的时候看起来最奇怪
+
+  '
+content:
+- "<a href=\"https://www.bilibili.com/video/BV1wya2eGEM2\" target=\"_blank\" class=\"\
+  plain-link\">一流的特工，往往只使用最朴素的方式传递信息。</a>\n\n<div class=\"infom\">\n<p>本题视频完全实拍，未经任何编辑</p>\n\
+  </div>\n\n<style>\n.plain-link {\n    color: inherit; /* 继承父元素的颜色 */\n    text-decoration:\
+  \ none; /* 去掉下划线 */\n}\n.plain-link:hover {\n    text-decoration: underline; /*\
+  \ 悬停时显示下划线，提示这是一个链接 */\n}\n.infom {\n    font-size: 12px;\n}\n</style>"
+content-type: 0
+desc: ''
+extend-data: ''
+links:
+- path: ccbc15/index
+  title: 索引页
+  type: index
+- path: ccbc15/pages/g
+  title: 孬题杀死了出题明星
+  type: page
+tips:
+- content: 大河捞针：关注会变化的元素，例如灯。
+  title: 请帮我缩减一下范围
+- content: 小溪捞针：你要找的东西既不在左边，也不是右上角移动很快的车流反光。
+  title: 请再帮我缩减一下范围
+- content: 锅里捞面：你要找的东西在最右边中间偏下的位置。
+  title: 请帮我锁定要找的东西
+- content: 你应该已经得到了一串编码，先将它变成数字、再通过汉字电码变成汉字。
+  title: 该如何提取
+title: 大海捞针
+type: problem

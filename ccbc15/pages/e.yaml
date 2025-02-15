@@ -1,0 +1,38 @@
+content: 
+- 爆吧大战 题目列表
+links:
+- path: ccbc15/pages/main
+  title: 返回索引页
+  type: page
+- path: ccbc15/problems/5/39
+  title: 3、12、81、108
+  type: problem
+- path: ccbc15/problems/5/40
+  title: 黑板报
+  type: problem
+- path: ccbc15/problems/5/41
+  title: 河海解谜
+  type: problem
+- path: ccbc15/problems/5/42
+  title: 蚌埠回旋
+  type: problem
+- path: ccbc15/problems/5/43
+  title: 幻境
+  type: problem
+- path: ccbc15/problems/5/44
+  title: 情迷麻理工
+  type: problem
+- path: ccbc15/problems/5/45
+  title: 闲散料理△
+  type: problem
+- path: ccbc15/problems/5/46
+  title: 60-00年代至尊劲爆金曲大合集
+  type: problem
+- path: ccbc15/problems/5/47
+  title: 打字游戏
+  type: problem
+- path: ccbc15/problems/5/48
+  title: 贴吧制造
+  type: problem
+title: 爆吧大战
+type: page

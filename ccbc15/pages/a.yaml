@@ -1,0 +1,29 @@
+content: 
+- 面试 题目列表
+links:
+- path: ccbc15/pages/main
+  title: 返回索引页
+  type: page
+- path: ccbc15/problems/1/1
+  title: 密码教学
+  type: problem
+- path: ccbc15/problems/1/2
+  title: 看图说话
+  type: problem
+- path: ccbc15/problems/1/3
+  title: 数学小能手
+  type: problem
+- path: ccbc15/problems/1/4
+  title: 词兜游戏
+  type: problem
+- path: ccbc15/problems/1/5
+  title: 积木登天塔
+  type: problem
+- path: ccbc15/problems/1/6
+  title: 后院探险
+  type: problem
+- path: ccbc15/problems/1/7
+  title: 拼接艺术
+  type: problem
+title: 面试
+type: page

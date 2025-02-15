@@ -1,0 +1,114 @@
+answer: HOUSES
+answer-analysis: '地图和房间内容如下：
+
+
+  |                         |                             |                 |             |                       |                                |
+
+  |:-----------------------:|:---------------------------:|:---------------:|:-----------:|:---------------------:|:------------------------------:|
+
+  | H 创可贴（OK绷）                   | O 圆形标识。上面画了一个斜杠             | R西藏的湖的明信片       |
+  R十字架        | O微软的游戏主机，但是盒子不见了      | R井字棋，不过你找不到圆形的棋子了              |
+
+  | I一罐一氧化氮                 | N半个杯子                       | D一些数字           | O去掉根的韭菜     |
+  O标识着绝对零度的温度计          | R一直在摇头的玩偶                      |
+
+  | M下面半边被截断的魏文帝画像          | E半个赛尔号的助手机器人                | D404三个数字        | I感叹号        |
+  U俄克拉何马州的明信片           | M春秋战国时期法家的著作                   |
+
+  | D一张模拟信号图，其中一个小圆球被特别的标记了 | E一个收音机，一直在播放“牙套妹，奈何美色……”    | C乘号             | O浙江卫视的光头主持人
+  | Y¬                    | S手，它的中指，无名指和小拇指都立了起来           |
+
+  | I王力宏在花田里的照片             | N两个放在一起的狼牙棒，每个上面都有三根钉子，朝向两旁 | T函数中的未知数        | E奥尼尔和科比的合照  |
+  N一面国旗，一半是黄，一半是橙，中间有条龙 | T挪威的国旗                         |
+
+  | P一台机器，似乎用来拍胸片的          | R第94号元素                     | I一幅字：“昨夜风疏雨骤……” | E写着“un”的单词卡
+  | S角膜塑形镜                | T地图，上面标记了一些国家：“卢旺达”，“马里”，‘’埃及” |
+
+
+  每个房间的物品可以对应一个表示对/错的意向
+
+
+  |    |    |   |    |    |    |
+
+  |:---:|:---:|:---:|:---:|:---:|:---:|
+
+  | OK | 禁  | X | +  | X  | X  |
+
+  | NO | 不  | No. | 非  | 0K | X  |
+
+  | 不  | no | x | !  | OK | 非  |
+
+  | 灯泡符号 | 错  | X | 非  | 非  | OK |
+
+  | 错  | 非  | x | OK |  不丹  | +  |
+
+  | X  | 钚  | 否 | un | OK | 非  |
+
+
+  提取表示正确意思房间的字母，得到答案**HOUSES**'
+content:
+- '最后，也是最难的一题，我们要考查你的动手能力。请注意有些东西是不能动的哦。
+
+  '
+content-type: 2
+desc: ''
+extend-data: ''
+links:
+- path: ccbc15/index
+  title: 索引页
+  type: index
+- path: ccbc15/pages/a
+  title: 面试
+  type: page
+tips:
+- content: '试着把整个后院都给探索一遍，把大致的形状和包括的内容记下来。 '
+  title: 我毫无头绪
+- content: 注意到有一些物品可以代表“OK”，有些是名称，有些是缩写，有些是字谜。每行（横向移动）仅有一个。
+  title: 该如何提取
+title: 后院探险
+type: problem
+vue_script: "const { ref, inject, onMounted, nextTick } = Vue;\r\n\r\nexport default\
+  \ {\r\n    setup() {\r\n        const userInput = ref(\"\");\r\n        const contents\
+  \ = ref([\r\n            {\r\n                type: \"system-response\",\r\n   \
+  \             content: \"<b>你现在在一个神奇的房间里，输入WASD向对应方向移动。</b>\"\r\n            }\r\
+  \n        ]);\r\n\r\n        const backend = inject(\"backend\");\r\n\r\n      \
+  \  const checkReply = async () => {\r\n            let inputValue = userInput.value;\r\
+  \n            userInput.value = \"\";\r\n            contents.value.push({\r\n \
+  \               type: \"user-response\",\r\n                content: inputValue\r\
+  \n            });\r\n            await processBackend(inputValue);\r\n        }\r\
+  \n\r\n        const processBackend = async (text) => {\r\n            let data;\r\
+  \n            if (text) {\r\n                data = await backend(\"c15-c15-6\"\
+  , {\r\n                    text\r\n                });\r\n            } else {\r\
+  \n                data = await backend(\"c15-c15-6\", {});\r\n            }\r\n\r\
+  \n            if (data.reply) {\r\n                contents.value.push({\r\n   \
+  \                 type: \"system-response\",\r\n                    content: data.reply\r\
+  \n                });\r\n            }\r\n            contents.value.push({\r\n\
+  \                type: \"system-response\",\r\n                content: data.roomResult\r\
+  \n            });\r\n\r\n            await scrollToBottom();\r\n        }\r\n\r\n\
+  \        const scrollToBottom = async () => {\r\n            await nextTick();\r\
+  \n            let container = document.querySelector(\".gameplay-scroll\");\r\n\
+  \            container.scrollTop = container.scrollHeight;\r\n        }\r\n\r\n\
+  \        onMounted(() => {\r\n            processBackend();\r\n        });\r\n\r\
+  \n        return {\r\n            userInput,\r\n            contents,\r\n      \
+  \      checkReply\r\n        }\r\n    }\r\n}"
+vue_template: "<template>\r\n    <div class=\"gameplay-wrapper\">\r\n        <div\
+  \ class=\"gameplay-scroll\">\r\n            <ul class=\"gameplay-content\">\r\n\
+  \                <li v-for=\"item in contents\" :class=\"item.type\" v-html=\"item.content\"\
+  ></li>\r\n            </ul>\r\n        </div>\r\n        <div class=\"instruction-field\"\
+  >\r\n            <form class=\"instruction-form\" @submit.prevent=\"checkReply\"\
+  >\r\n                <div class=\"el-input el-input-group el-input-group--append\"\
+  >\r\n                    <div class=\"el-input__wrapper\" tabindex=\"-1\">\r\n \
+  \                       <input type=\"text\" class=\"el-input__inner instruction-text\"\
+  \ placeholder=\"输入你的指令\" required v-model=\"userInput\">\r\n                   \
+  \ </div>\r\n                    <div class=\"el-input-group__append\">\r\n     \
+  \                   <button class=\"el-button instruction-submit\" type=\"submit\"\
+  >输入</button>\r\n                    </div>\r\n                </div>\r\n       \
+  \     </form>\r\n        </div>\r\n        <div style=\"height: 170px\"></div>\r\
+  \n    </div>\r\n</template>\r\n\r\n<style>\r\n.gameplay-wrapper {\r\n    display:\
+  \ flex;\r\n    flex-direction: column;\r\n    align-items: center;\r\n}\r\n\r\n\
+  .gameplay-scroll {\r\n    background-color: aliceblue;\r\n    height: 62vh;\r\n\
+  \    width: 65vw;\r\n    overflow: auto;\r\n}\r\n\r\n.gameplay-content li {\r\n\
+  \    width: 95%;\r\n    list-style-type: none;\r\n    margin: 10px auto;\r\n}\r\n\
+  \r\n.instruction-field {\r\n    margin-top: 10px;\r\n    width: 65vw;\r\n}\r\n\r\
+  \n.system-response{\r\n    color:black;\r\n}\r\n.user-response{\r\n    color: gray;\r\
+  \n    font-style: italic;\r\n}\r\n</style>\r\n"

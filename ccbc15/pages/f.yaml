@@ -1,0 +1,38 @@
+content: 
+- 我爱猫猫! 题目列表
+links:
+- path: ccbc15/pages/main
+  title: 返回索引页
+  type: page
+- path: ccbc15/problems/6/49
+  title: 哈基米哈基米哈基米哈基米哈基米哈基米哈基米哈基米哈基米哈基米哈基米哈基米哈基米哈基米哈基米哈基米哈基米哈基米哈基米哈基米哈基米哈基米哈基米哈基米哈基米哈基米头鹰
+  type: problem
+- path: ccbc15/problems/6/50
+  title: 一盘散沙
+  type: problem
+- path: ccbc15/problems/6/51
+  title: NO​​‌t‍‍‍h‍‌​i‍​​n​‌‍g is Everything
+  type: problem
+- path: ccbc15/problems/6/52
+  title: 薛定谔的猫
+  type: problem
+- path: ccbc15/problems/6/53
+  title: 狮头蝎尾
+  type: problem
+- path: ccbc15/problems/6/54
+  title: 单色唱片
+  type: problem
+- path: ccbc15/problems/6/55
+  title: 兜智者的游戏
+  type: problem
+- path: ccbc15/problems/6/56
+  title: 你是
+  type: problem
+- path: ccbc15/problems/6/57
+  title: 囚于？？？的七日谈
+  type: problem
+- path: ccbc15/problems/6/58
+  title: 我和我的动物朋友们
+  type: problem
+title: 我爱猫猫!
+type: page

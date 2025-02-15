@@ -1,0 +1,97 @@
+additional-answers:
+- answer: SOLVE THE WITNESS
+  extra: ''
+  message: 继续加油喵~
+answer: ROLLBACK
+answer-analysis: '[解析链接](https://docs.qq.com/sheet/DTnJ2U25BbUlvYnFa?tab=BB08J2)'
+content:
+- '<span style="color:red">更新说明：修复了使用wait n之后，再使用一个【r?】开头的命令时的程序异常退出。</span><br><br>
+
+
+  这次可终于把时空的空给补上了。
+
+
+  <a href="https://static.cipherpuzzles.com/static/images/e7fb2e94cc9642f7afd6145a3c3e10eb.exe"
+  target="_blank" download="adventure_game.exe">点击下载离线版游戏（需要在 Windows 环境下运行）</a>
+
+
+  <span style="color:red">更新说明：在线版的行为预期应该是与离线版保持一致，但如果在线版的行为与离线版有一定出入，请及时通过站内信报告给管理员</span><br><br>'
+content-type: 2
+desc: ''
+extend-data: 我要迪士尼
+links:
+- path: ccbc15/index
+  title: 索引页
+  type: index
+- path: ccbc15/pages/e
+  title: 爆吧大战
+  type: page
+tips:
+- content: 启动游戏，试试help指令查看可用的指令。部分指令后可以附加操作对象，例如"get mushroom"。
+  title: 我毫无头绪
+- content: 标题和迷宫中的一些现象，指向本题的主题是游戏时空幻境/Braid，本题一些规则和Braid相同。
+  title: 本题的主题是什么？
+- content: '破译的密码，提示你再用某方法解一遍此题。请注意一些本题的主题不存在、却又在本题中出现的元素：房间中地面上的几何图形、墙壁上的符号、和所谓“空间的终点”。
+
+    这之后，你需要以破译该密码相同的方法再解码一次。'
+  title: 我已经破译了密码，但如何提取？
+title: 幻境
+type: problem
+vue_script: "const { ref, inject, onMounted, nextTick } = Vue;\r\n\r\nexport default\
+  \ {\r\n    setup() {\r\n        const userInput = ref(\"\");\r\n        const contents\
+  \ = ref([]);\r\n\r\n        const backend = inject(\"backend\");\r\n\r\n       \
+  \ let isProcessing = false;\r\n\r\n        const checkReply = async () => {\r\n\
+  \            if (isProcessing) return;\r\n            isProcessing = true;\r\n\r\
+  \n            try {\r\n                let inputValue = userInput.value;\r\n   \
+  \             userInput.value = \"\";\r\n                contents.value.push({\r\
+  \n                    type: \"user-response\",\r\n                    content: `>\
+  \ ${inputValue}`\r\n                });\r\n                await processBackend(inputValue);\r\
+  \n            } finally {\r\n                isProcessing = false;\r\n         \
+  \   }\r\n        }\r\n\r\n        const processBackend = async (command) => {\r\n\
+  \            let data = await backend(\"c15-dreamland\", {\r\n                command\r\
+  \n            });\r\n\r\n            if (data.reply) {\r\n                for (let\
+  \ i = 0; i < data.reply.length; i++) {\r\n                    contents.value.push({\r\
+  \n                        type: \"system-response\",\r\n                       \
+  \ content: data.reply[i]\r\n                    });\r\n                }\r\n   \
+  \         }\r\n            for (let i = 0; i < data.current.length; i++) {\r\n \
+  \               contents.value.push({\r\n                    type: \"game-status\"\
+  ,\r\n                    content: data.current[i]\r\n                });\r\n   \
+  \         }\r\n\r\n            await scrollToBottom();\r\n        }\r\n\r\n    \
+  \    const processInit = async (command) => {\r\n            let data = await backend(\"\
+  c15-dreamland\", {\r\n                'type': 'init',\r\n            });\r\n\r\n\
+  \            if (data.reply) {\r\n                for (let i = 0; i < data.reply.length;\
+  \ i++) {\r\n                    contents.value.push({\r\n                      \
+  \  type: \"system-response\",\r\n                        content: data.reply[i]\r\
+  \n                    });\r\n                }\r\n            }\r\n            for\
+  \ (let i = 0; i < data.current.length; i++) {\r\n                contents.value.push({\r\
+  \n                    type: \"game-status\",\r\n                    content: data.current[i]\r\
+  \n                });\r\n            }\r\n\r\n            await scrollToBottom();\r\
+  \n        }\r\n\r\n        const scrollToBottom = async () => {\r\n            await\
+  \ nextTick();\r\n            let container = document.querySelector(\".gameplay-scroll\"\
+  );\r\n            container.scrollTop = container.scrollHeight;\r\n        }\r\n\
+  \r\n        onMounted(() => {\r\n            processInit();\r\n        });\r\n\r\
+  \n        return {\r\n            userInput,\r\n            contents,\r\n      \
+  \      checkReply,\r\n            processInit\r\n        }\r\n    }\r\n}"
+vue_template: "<template>\r\n    <div class=\"gameplay-wrapper\">\r\n        <div\
+  \ class=\"gameplay-scroll\">\r\n            <ul class=\"gameplay-content\">\r\n\
+  \                <li v-for=\"item in contents\" :class=\"item.type\" v-html=\"item.content\"\
+  ></li>\r\n            </ul>\r\n        </div>\r\n        <div class=\"instruction-field\"\
+  >\r\n            <form class=\"instruction-form\" @submit.prevent=\"checkReply\"\
+  >\r\n                <div class=\"el-input el-input-group el-input-group--append\"\
+  >\r\n                    <div class=\"el-input__wrapper\" tabindex=\"-1\">\r\n \
+  \                       <input type=\"text\" class=\"el-input__inner instruction-text\"\
+  \ placeholder=\"输入你的指令\" required\r\n                            v-model=\"userInput\"\
+  >\r\n                    </div>\r\n                    <div class=\"el-input-group__append\"\
+  >\r\n                        <button class=\"el-button instruction-submit\" type=\"\
+  submit\">输入</button>\r\n                    </div>\r\n                </div>\r\n\
+  \            </form>\r\n        </div>\r\n        <div style=\"height: 170px\"></div>\r\
+  \n    </div>\r\n</template>\r\n\r\n<style>\r\n    .gameplay-wrapper {\r\n      \
+  \  display: flex;\r\n        flex-direction: column;\r\n        align-items: center;\r\
+  \n    }\r\n\r\n    .gameplay-scroll {\r\n        background-color: aliceblue;\r\n\
+  \        height: 62vh;\r\n        width: 65vw;\r\n        overflow: auto;\r\n  \
+  \  }\r\n\r\n    .gameplay-content li {\r\n        width: 95%;\r\n        list-style-type:\
+  \ none;\r\n        margin: 10px auto;\r\n    }\r\n\r\n    .instruction-field {\r\
+  \n        margin-top: 10px;\r\n        width: 65vw;\r\n    }\r\n\r\n    .system-response\
+  \ {\r\n        color: black;\r\n    }\r\n\r\n    .game-status {\r\n        color:\
+  \ black;\r\n        font-weight: bold;\r\n    }\r\n\r\n    .user-response {\r\n\
+  \        color: gray;\r\n        font-style: italic;\r\n    }\r\n</style>"

@@ -1,0 +1,188 @@
+answer: DONT NUMBER JACK
+answer-analysis: '一开始的地方指新手区。在这个区中，每一题都可以被当做6个6*6大小的方阵。他们是用来拼成立方体的基本单位。
+
+
+  那么，我们该按照什么顺序来呢？在Meta-Meta生死疲劳中，我们将六个平行世界按照顺序链接了起来并进行了提取。这给了我们一个六道的顺序。
+
+
+  ……→天→饿鬼→人→畜生→阿修罗→地狱→天……
+
+
+  与此同时，每个平行时空拥有一个多出来的答案。我们会发现对应的题目和新手区中的题目在题型上正好一一对应，这样，我们就可以将新手区的方阵按顺序联系起来了
+
+
+  |   |   |   |   |   |   |
+
+  |:---:|:---:|:---:|:---:|:---:|:---:|
+
+  | M | G | A | E | N | B |
+
+  | A | E | U | A | A | O |
+
+  | R | R | T | R | R | A |
+
+  | T | M | U | W | R | R |
+
+  | I | A | M | A | O | D |
+
+  | N | N | N | X | W | S |
+
+  |   |   |   |   |   |   |
+
+  | E | A | G | L | E | S |
+
+  | T | R | U | M | A | N |
+
+  | A | G | E | N | C | Y |
+
+  | D | E | F | E | A | T |
+
+  | B | O | B | C | A | T |
+
+  | M | A | N | U | A | L |
+
+  |   |   |   |   |   |   |
+
+  | H | E | A | L | T | H |
+
+  | O | W | N | I | N | G |
+
+  | C | E | N | T | E | R |
+
+  | P | A | N | A | M | A |
+
+  | I | C | O | N | I | C |
+
+  | C | L | A | I | R | E |
+
+  |   |   |   |   |   |   |
+
+  | G | E | N | O | M | E |
+
+  | M | E | X | I | C | O |
+
+  | U | G | A | N | D | A |
+
+  | H | E | L | P | M | E |
+
+  | K | E | T | T | L | E |
+
+  | P | D | I | D | D | Y |
+
+  |   |   |   |   |   |   |
+
+  | H | O | R | R | O | R |
+
+  | I | N | D | O | O | R |
+
+  | M | E | D | I | U | M |
+
+  | D | E | C | O | Y | S |
+
+  | I | N | T | E | N | T |
+
+  | P | R | I | E | S | T |
+
+  |   |   |   |   |   |   |
+
+  | O | N | E | W | A | Y |
+
+  | C | O | O | K | E | D |
+
+  | M | O | N | T | H | S |
+
+  | O | R | A | N | G | E |
+
+  | N | O | O | D | L | E |
+
+  | D | O | L | L | A | R |
+
+
+  接下来，我们需要在立方体中进行单词搜寻。所有单词都存在在立体的方向上。对每一个方阵而言，从该方阵开始向下都能找到两个长度为6的英文单词，且他们能正好组成一组短语。
+
+
+  | **对应的道** | **搜寻结果**      | **对应答案**       |
+
+  |:--------:|:-------------:|:--------------:|
+
+  | 天        | ATOMIC WEAPON | NOLAN          |
+
+  | 饿鬼       | BIKINI BOTTOM | SECRET FORMULA |
+
+  | 人        | GORDON RAMSAY | RAW FILLET     |
+
+  | 畜生       | GEORGE ORWELL | PASTORAL       |
+
+  | 阿修罗      | RONALD REAGAN | ROLLBACK       |
+
+  | 地狱       | GRAMMY AWARDS | BILLIE ELLISH  |
+
+
+  把他们和多出来的答案一一对应后，我们会发现一个有趣的事情——每组答案都暗示了一个新的词汇，且这个新的词汇都和对应的平行世界的剧情，或是六道的主题相关！
+
+
+  | **对应的道** | **搜寻结果**      | **小题答案**       | **相关词语**              | **原因**                                         |
+
+  |----------|---------------|----------------|-----------------------|------------------------------------------------|
+
+  | 天        | ATOMIC WEAPON | NOLAN          | J. ROBERT OPPENHEIMER | 诺兰的电影中，有一部讲述了核武器研制者奥本海默。和天道主题一样，对应的是科学家。       |
+
+  | 饿鬼       | BIKINI BOTTOM | SECRET FORMULA | KRABBY PATTY          | 比基尼海滩中的秘密配方是蟹堡王。同时也是一种美食。                      |
+
+  | 人        | GORDON RAMSAY | RAW FILLET     | WELLINGTON            | 戈登拉姆齐使用菲力制作的名菜是惠灵顿牛排，是一个国家的首都——特别的，它在澳大利亚旁边。   |
+
+  | 畜生       | GEORGE ORWELL | PASTORAL       | ANIMAL FARM           | 乔治奥威尔的“田园”风格小说是《动物庄园》，也对应了畜生道的动物主题。            |
+
+  | 阿修罗      | RONALD REAGAN | ROLLBACK       | COLD WAR              | “推回”是里根在冷战期间实施的策略，其对应的“战争”为冷战。和爆吧一样，都是没有硝烟的战争。
+  |
+
+  | 地狱       | GRAMMY AWARDS | BILLIE ELLISH  | BAD GUY               | 比莉·艾利什的格莱美作品为Bad
+  Guy。也是地狱道的主题。                 |
+
+
+  将对应的相关词语填入黑格，按顺序提取字母后，得到答案**DONT NUMBER JACK.** 看来，引起时空涡流的原因就是因为有些人一次使用了两组编号！
+
+  '
+content:
+- '**七大缓缓地念出了最后的指引：**<br>
+
+  <br>请归一切初始<br>
+
+  <br>循水晶球指引<br>
+
+  <br>构建轮回之墙<br>
+
+  <br>沿第三个维度<br>
+
+  <br>寻找能量来源<br>
+
+  <br>用以修复答案<br>
+
+
+
+  <img src="/ccbc15/images/meta/9f23da99895d41cfb81dab9ca3d59992.webp" width="500">'
+- '<div style="height: 170px"></div>'
+content-type: 1
+desc: ''
+extend-content:
+- "<a type=\"button\" class=\"el-button el-button--primary el-button--large finalbutton\"\
+  \ href=\"/article/finalend\">前往结局 →</a>\n<style>\n.finalbutton {\n    text-decoration:\
+  \ none;\n}\n</style>"
+extend-data: ''
+links:
+- path: ccbc15/index
+  title: 索引页
+  type: index
+tips:
+- content: 这场比赛里的一切初始是哪里？那里有一些看起来符合题目图片的东西存在。
+  title: 请归一切初始？
+- content: 在《生死疲劳》中，水晶球看起来给了你一个有趣的顺序，但是这个顺序是对应六道，而不是对应“一切初始”的物品。你需要找到一个合适的顺序链接你拥有的资源。
+  title: 循水晶球指引？
+- content: 你有注意到你不贡献给元谜题的小题和“最初”的题目有什么关系吗？他们能帮你进一步构造出一面“墙”，注意，是轮回之墙。
+  title: 构建轮回之墙？
+- content: 构建墙后，从每一个平面，在新的“垂直”维度下，你分别可以找到2个英文单词。他们就是你的“能量来源”。
+  title: 沿第三个维度，寻找能量来源？
+- content: 现在，对于每个时空而言，你拥有了两个词组：一个来自于轮回之墙，一个来自于时空本身的错误能量。结合他们，你就能收获一个属于这个时空的词语：这个词语和这个时空的主题非常的契合。
+  title: 用以修复答案？
+title: 世间万物八荒四野一时俱至
+type: problem

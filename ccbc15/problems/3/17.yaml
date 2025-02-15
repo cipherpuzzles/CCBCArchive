@@ -1,0 +1,33 @@
+answer: MEDICINE
+answer-analysis: '观察可发现这些徽章的元素都来自广州大学城的大学校徽
+
+
+  <img src="/ccbc15/images/3/3579171c6c9a464b8fd7f2077c3df3d0.webp" width="500" />
+
+
+  根据校徽对应学校方位解双手旗语，得到答案**MEDICINE**'
+content:
+- '你来到一个位于岛中央的体育中心内，却感觉周围来来往往的都是一些大学生。中心内没有什么体育器械，却发现几对摆放好的...学生们喜欢叫它吧唧，对吧？
+
+
+  '
+content-type: 0
+desc: ''
+extend-data: ''
+links:
+- path: ccbc15/index
+  title: 索引页
+  type: index
+- path: ccbc15/pages/c
+  title: 科学的深入浅出
+  type: page
+problem-image: /ccbc15/images/3/f14968955baf46fba5f6d4eb7bbaf796.webp
+tips:
+- content: 这些吧唧都是国内不同高校校徽的一部分，你需要尝试找出它们对应的高校。
+  title: 我毫无头绪
+- content: 上一提示提到的东西，在地理位置上非常接近，希望这能帮助你很快找齐所有信息。
+  title: 我大概知道这些是什么，但有些也太难辨认了吧
+- content: 根据方位解双手旗语。
+  title: 该如何提取
+title: 吧唧吧唧
+type: problem

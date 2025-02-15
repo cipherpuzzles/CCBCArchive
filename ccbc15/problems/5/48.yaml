@@ -1,0 +1,143 @@
+answer: CAME A LOT
+answer-analysis: '本题的所有答案都是歌名。
+
+
+  | **答案**                            | **音乐人名称**           |
+
+  |:---------------------------------:|:-------------------:|
+
+  | AMERICAN IDIOT                    | Green Day           |
+
+  | BOOGIE WONDERLAND                 | Earth wind and fire |
+
+  | GOD SAVE THE QUEEN                | Sex Pistols         |
+
+  | NO SMOKE WITHOUT A FIRE           | Bad Company         |
+
+  | TWENTY FIRST CENTURY SCHIZOID MAN | King Crimson        |
+
+  | WHEREVER I MAY ROAM               | Metallica           |
+
+  | WHIP APPEAL                       | Baby Face           |
+
+  | WHO SHOT YA                       | Notorious B.I.G     |
+
+
+  根据题目中“替身”“奇妙冒险”““动漫一般”“能力”“败者食尘”等词的提示，结合这些音乐人的名称，我们可以将其联系到一部脍炙人口的动漫——《JoJo的奇妙冒险》系列。所有的音乐人都是这部动漫里的“替身”。
+
+
+  首先，我们先找到这些歌曲的歌手：
+
+
+  | **答案**                            | **歌手**              |
+
+  |:---------------------------------:|:-------------------:|
+
+  | AMERICAN IDIOT                    | Green Day           |
+
+  | BOOGIE WONDERLAND                 | Earth wind and fire |
+
+  | GOD SAVE THE QUEEN                | Sex Pistols         |
+
+  | NO SMOKE WITHOUT A FIRE           | Bad Company         |
+
+  | TWENTY FIRST CENTURY SCHIZOID MAN | King Crimson        |
+
+  | WHEREVER I MAY ROAM               | metallica           |
+
+  | WHIP APPEAL                       | Baby Face           |
+
+  | WHO SHOT YA                       | Notorious B.I.G     |
+
+
+  在《JoJo的奇妙冒险》中，每个“替身”都用雷达图呈现出来了他们的能力值。我们通过A1Z26的方式，可以把他们的能力值加起来，其中记为∞或是未知的则视为0。
+
+
+  | **答案**                            | **乐队/替身**           | | | | | | | **和** |
+
+  |:---------------------------------:|:-------------------:|:----:|:----:|:----:|:----:|:----:|:----:|:-----:|
+
+  | AMERICAN IDIOT                    | Green Day           | A    | C    | A    |
+  A    | E    | A    | 12    |
+
+  | BOOGIE WONDERLAND                 | Earth wind and fire | C    | C    | -    |
+  A    | C    | C    | 13    |
+
+  | GOD SAVE THE QUEEN                | Sex Pistols         | E    | C    | B    |
+  A    | A    | B    | 14    |
+
+  | NO SMOKE WITHOUT A FIRE           | Bad Company         | B    | B    | C    |
+  B    | C    | C    | 15    |
+
+  | TWENTY FIRST CENTURY SCHIZOID MAN | King Crimson        | A    | A    | E    |
+  E    | -    | -    | 12    |
+
+  | WHEREVER I MAY ROAM               | metallica           | C    | C    | C    |
+  A    | C    | C    | 16    |
+
+  | WHIP APPEAL                       | Baby Face           | A    | B    | A    |
+  A    | -    | -    | 5     |
+
+  | WHO SHOT YA                       | Notorious B.I.G     | A    | -    | -    |
+  -    | E    | A    | 7     |
+
+
+  另外，注意到每一题的发贴人用户名都可以对应《JoJo的奇妙冒险》中的前八个系列之一。我们因此可以将答案进行排序。将答案索引至原歌名，我们可以得到答案**CAME
+  A LOT**
+
+
+  | **系列名称** | **发帖人**  | **答案**                            | **索引** | **提取** |
+
+  |:--------:|:--------:|:---------------------------------:|:------:|:------:|
+
+  | 幻影之血     | 受伤的邪魅    | TWENTY FIRST CENTURY SCHIZOID MAN | 12     | C      |
+
+  | 战斗潮流     | 时尚军人     | WHIP APPEAL                       | 5      | A      |
+
+  | 星尘斗士     | 宇宙格斗家    | WHEREVER I MAY ROAM               | 16     | M      |
+
+  | 不灭钻石     | 永远的金伯利矿井 | GOD SAVE THE QUEEN                | 14     | E      |
+
+  | 黄金之风     | 钱的气息     | NO SMOKE WITHOUT A FIRE           | 15     | A      |
+
+  | 石之海      | 山与水      | BOOGIE WONDERLAND                 | 13     | L      |
+
+  | 飙马野郎     | 牛仔精神     | AMERICAN IDIOT                    | 12     | O      |
+
+  | 乔乔福音     | 圣歌       | WHO SHOT YA                       | 7      | T      |
+
+  '
+content:
+- 'COL向七大说到：“这些来爆吧的人太多了，开了好多小号，躲在里面的人次次发动**替身**攻击，但我们毫无对敌之法。难道COL COL的奇妙冒险就停止在这了吗？
+  ”
+
+
+  七大想了一会儿：“我试试直接去找官方。可我吧主的位置都被这帮人疯狂举报。这样，你先去研究一下那些爆吧者的**能力**有几斤几两，如果不清楚具体是多少，或者强的根本没法算，就先不管了，给我一个总数即可。总之，这样我们应该可以找到一些破局之法。”
+
+
+  七大该用什么理由证明自己的身份，并申请到贴吧官方的援助？'
+content-type: 0
+desc: ''
+extend-content:
+- '只要说自己来的很多就行嘛……来的多了，按年功序列也得是圆桌骑士吧。
+
+  （新剧情已解锁）'
+extend-data: 小白狐九月
+links:
+- path: ccbc15/index
+  title: 索引页
+  type: index
+- path: ccbc15/pages/e
+  title: 爆吧大战
+  type: page
+tips:
+- content: 搜索加粗部分，你会搜索到一部著名作品，寻找这部作品和你得到的小题答案之间的关系。另外，注意你所有的答案都有一个共同特点。
+  title: 我毫无头绪
+- content: 你的小题答案对应的东西应该会有一系列数值，按题面的指示将它们加和。将数字/字母相互转换的方法是 A=1, B=2, ... 然后用他们来提取歌名。
+  title: 该如何提取
+- content: 搜索你得到的作品的系列名，他们和每个发帖人名一一对应。按照系列创作顺序进行排序
+  title: 该如何排序
+- content: 你不看狐宝的剧情，狐宝不开心，所以找你要了9000话费买这条，现在听好了：每个分区都有1个小题的答案没有在本区meta中使用！
+  title: 我觉得小题答案和meta有点对不上，但是由于我剧情一个字都没有看，因此请告诉我是什么机制导致我有这种感觉
+title: 贴吧制造
+type: problem

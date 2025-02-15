@@ -1,0 +1,44 @@
+content: 
+- 孬题杀死了出题明星 题目列表
+links:
+- path: ccbc15/pages/main
+  title: 返回索引页
+  type: page
+- path: ccbc15/problems/7/59
+  title: 谁在一楼?
+  type: problem
+- path: ccbc15/problems/7/60
+  title: 乘数法
+  type: problem
+- path: ccbc15/problems/7/61
+  title: Bill, 你的人工智能助手
+  type: problem
+- path: ccbc15/problems/7/62
+  title: 重见云边云
+  type: problem
+- path: ccbc15/problems/7/63
+  title: 豆捞学园
+  type: problem
+- path: ccbc15/problems/7/64
+  title: 押题大师
+  type: problem
+- path: ccbc15/problems/7/65
+  title: 折纸动物园
+  type: problem
+- path: ccbc15/problems/7/66
+  title: 双名法
+  type: problem
+- path: ccbc15/problems/7/67
+  title: 对不起!
+  type: problem
+- path: ccbc15/problems/7/68
+  title: 遗失的解密卡
+  type: problem
+- path: ccbc15/problems/7/69
+  title: 大海捞针
+  type: problem
+- path: ccbc15/problems/7/70
+  title: 杀死那个闲散解谜
+  type: problem
+title: 孬题杀死了出题明星
+type: page

@@ -1,0 +1,11 @@
+type: index
+title: CCBC 15 存档站
+content: 
+  - |
+    CCBC 15 的存档工作仍在进行中，但是所有的题目均已存档，请点击主页面按钮查看。
+links:
+  - 
+    title: 主页面
+    type: page
+    path: ccbc15/pages/main
+

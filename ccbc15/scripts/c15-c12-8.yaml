@@ -1,0 +1,14 @@
+content:
+- 服务器脚本 c15-c12-8 2区火眼金晶里程碑变换图像逻辑
+key: c15-c12-8
+psid: 7
+script: "const PID = 22;\r\n\r\nasync function main(ctx, request) {\r\n    let dataStr =\
+  \ await ctx.getPuzzleData(PID);\r\n    let data = JSON.parse(dataStr);\r\n\r\n    let\
+  \ img = data.part1;\r\n    if (ctx.getProgress(PID, \"part2\") == \"unlocked\")\
+  \ {\r\n        img = data.part2\r\n    }\r\n\r\n    return {\r\n        img: img\r\
+  \n    }\r\n}\r\n\r\n//=======以下是JSON解析与调用脚本，一般不需要修改========\r\nasync function _jsonProcessHelper(ctx)\
+  \ {\r\n    let request = JSON.parse(ctx.request);\r\n    let resBody = await main(ctx,\
+  \ request);\r\n    let resString = JSON.stringify(resBody);\r\n    ctx.response(resString);\r\
+  \n}\r\n\r\nawait _jsonProcessHelper(ctx);"
+title: 2区火眼金晶里程碑变换图像逻辑
+type: backend_script

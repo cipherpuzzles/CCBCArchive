@@ -1,0 +1,123 @@
+answer: HEIMLICH MANEUVER
+answer-analysis: '解出字谜，发现在歌词明显指向的北京欢迎你中都出现了。在北京欢迎你中找到这些字的音，并按每行出现了宫商角徵羽的哪些音五位二进制，得到答案**HEIMLICH
+  MANEUVER**
+
+
+  | **字谜填词**          | **解析1**            | **解析2**            | **谜底：在原曲里找这些字的音**
+  | **宫(1)商(2)角(3)徵(5)羽(6)** | **提取** |
+
+  |:-----------------:|:------------------:|:------------------:|:-----------------:|:------------------------:|:------:|
+
+  | 我家方院方楼外   黄昏远山升起  | 方外方 = 回            | 黄昏远山 = 夕 + 山 = 岁   | 回2 岁2             |
+  01000                    | H      |
+
+  | 烟花足迹迈往何方   如人冲上云际 | 开幕式大脚印烟花往北走        | 人 + 云 = 会          | 北3 会35            |
+  00101                    | E      |
+
+  | 繁星化环用心更替   向此方飘逸  | 环 + 心 = 怀          | 梦幻五环是往上飘的          | 怀25 上5            |
+  01001                    | I      |
+
+  | 一笔印刷字穿起   姚明掣何旗   | 活字印刷表演 和 + 1笔 = 种  | 姚明挥中国国旗            | 种23 中5            |
+  01101                    | M      |
+
+  | 早上欢迎你   像黄河感动你    | 早上 = 日             | 像黄河 = 几            | 日2 几3             |
+  01100                    | L      |
+
+  | 呼唤同个梦想圆满需要你       | 口号“同一个世界，同一个梦想”    | -                  | 一25               |
+  01001                    | I      |
+
+  | 东海欢迎你   有热情能蒸干潮汐  | 东海 = 每             | 蒸干潮 = 朝            | 每5 朝4             |
+  00011                    | C      |
+
+  | 且看添上两笔成绩          | 看加两笔=着             | -                  | 着2                |
+  01000                    | H      |
+
+  | 我家大门客西来   炬火零点点起  | 门 + 西(左)客人 = 们     | 火 - 点点 = 人         | 们35 人2            |
+  01101                    | M      |
+
+  | 人人见你展露笑容   不言诠释默契 | 人人 + 关 = 笑         | 不言诠 = 全            | 关5 全5             |
+  00001                    | A      |
+
+  | 跨越水土火何壮丽   横穿中原里  | 水土火 气              | 横 + 中原 = 一 + 白 = 自 | 气23 自4            |
+  01110                    | N      |
+
+  | 汗水滋味埋心底   迈腿增元气   | 汗水滋味 = 咸，咸 + 心 = 感 | 迈腿 = 走，走 + 元 = 远   | 感3 远5             |
+  00101                    | E      |
+
+  | 四周欢迎你   像箭头指引你    | 四周 = 月             | 像箭头 = 个            | 月1 个35            |
+  10101                    | U      |
+
+  | 唱响相会北京齐聚等待你       | 主题曲《我和你》歌词“相会在北京”  |                    | 在134              |
+  10110                    | V      |
+
+  | 百方欢迎你   待圣火成炽烈回忆  | 百^2 = 万            | 待圣火成炽 = 只          | 万3 只5             |
+  00101                    | E      |
+
+  | 在首都尤能创奇迹          | 首都 + 尤 = 京 + 尤 = 就 | -                  | 就14               |
+  10010                    | R      |
+
+  '
+content:
+- '这些**碎片**，它们如今又回荡着**宫商角徵羽**的**哪些**组成的和声呢？
+
+
+  <center>
+
+  <font color=#BBBBBB>我家</font>方院方楼外&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;黄昏远山升起<br/>
+
+  <font color=#DDFFFF>烟花足迹迈往何方</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;如人冲上云际<br/>
+
+  <font color=#BBBBBB>繁星化</font>环用心更替&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color=#DDFFFF>向此方飘逸</font><br/>
+
+  一笔<font color=#DDFFFF>印刷字</font>穿起&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color=#DDFFFF>姚明掣何旗</font><br/>
+
+  早上<font color=#BBBBBB>欢迎你</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;像黄河<font color=#BBBBBB>感动你</font><br/>
+
+  <font color=#BBBBBB>呼唤</font><font color=#DDFFFF>同个梦想圆满需要你</font><br/>
+
+  东海<font color=#BBBBBB>欢迎你</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color=#BBBBBB>有热情能</font>蒸干潮<font
+  color=#BBBBBB>汐</font><br/>
+
+  <font color=#BBBBBB>且</font>看添上两笔<font color=#BBBBBB>成绩</font><br/>
+
+  <font color=#BBBBBB>我家大</font>门客西来&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color=#BBBBBB>炬</font>火零点点<font
+  color=#BBBBBB>起</font><br/>
+
+  人人见你展露笑<font color=#BBBBBB>容</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;不言诠<font
+  color=#BBBBBB>释默契</font><br/>
+
+  <font color=#BBBBBB>跨越</font>水土火何<font color=#BBBBBB>壮丽</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;横穿中原里<br/>
+
+  汗水滋味埋心底&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;迈腿增元<font color=#BBBBBB>气</font><br/>
+
+  四周<font color=#BBBBBB>欢迎你</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;像箭头<font color=#BBBBBB>指引你</font><br/>
+
+  <font color=#BBBBBB>唱响</font><font color=#DDFFFF>相会北京齐聚等待你</font><br/>
+
+  百方<font color=#BBBBBB>欢迎你</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;待圣火成炽<font color=#BBBBBB>烈回忆</font><br/>
+
+  <font color=#BBBBBB>在</font>首都尤<font color=#BBBBBB>能创奇迹</font><br/>
+
+  </center>'
+- '<div style="height: 170px"></div>'
+content-type: 1
+desc: ''
+extend-data: ''
+links:
+- path: ccbc15/index
+  title: 索引页
+  type: index
+- path: ccbc15/pages/g
+  title: 孬题杀死了出题明星
+  type: page
+tips:
+- content: 本题是字谜题，每个用空格隔开的分句含有1个字谜，注意字谜可能只是句子的一部分而非整个句子。
+  title: 我毫无头绪
+- content: 部分字谜并非纯粹的字谜，而是需要搜索和本题主题相关的信息以提取恰当的字。具体而言，这些字谜出现在了第2、3、4、6、14行。
+  title: 我知道要做什么了，但是有些题看起来不像常见的这类题型。
+- content: 注意本题的ft，以及正文中大量相关词汇，可以知道本题主题是《北京欢迎你》。你得到的每个答案应该都在其歌词中出现了，如果没有，请检查是否解对，你可以使用人工提示帮你检查和告知剩余答案。
+  title: 我解开了大部分的内容，但是它们看起来没有意义
+- content: 网络搜索曲谱，统计每一行的答案里在曲中出现了宫商角徵羽中的哪些，使用五位二进制提取。
+  title: 该如何提取
+title: 重见云边云
+type: problem

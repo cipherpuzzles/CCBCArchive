@@ -1,0 +1,69 @@
+additional-answers:
+- answer: THE ANSWER
+  extra: ''
+  message: 你解开了自制的解密卡，不过似乎完全没有得到答案啊。要不要多转几下试试？
+- answer: THE ANSWER IS THE NAME OF THE FAMOUS AMERICA
+  extra: ''
+  message: 你解开了一个谜题，得到了一句有意义的话……但是似乎缺了点什么？
+- answer: THE NAME OF THE FAMOUS AMERICA
+  extra: ''
+  message: 你解开了一个谜题，得到了一句有意义的话……但是似乎缺了点什么？
+- answer: N DRAMA TV SERIES CREATED BY RAAMLA MOHAMED
+  extra: ''
+  message: 你破解了遗失的解密卡，得到了一句有意义的话……的后半部分？
+- answer: NDRAMATVS
+  extra: ''
+  message: 你破解了遗失的解密卡，不过似乎没有得到什么答案啊。要不要多转几下试试？
+- answer: THE NAME OF THE FAMOUS AMERICAN DRAMA TV SERIES CREATED BY RAAMLA MOHAMED
+  extra: ''
+  message: 你得到了一句有意义的话，但是这是什么意思？
+- answer: THE ANSWER IS THE NAME OF THE FAMOUS AMERICAN DRAMA TV SERIES CREATED BY
+    RAAMLA MOHAMED
+  extra: ''
+  message: 你得到了一句有意义的话，但是这是什么意思？答案又是什么？
+answer: REASONABLE DOUBT
+answer-analysis: '[解析链接](https://docs.qq.com/doc/DUXF5dGlPaHpuTmtj)
+
+
+
+
+
+  '
+content:
+- '咦？我的自制小虎队解密卡被我放在哪里了？
+
+
+  哦找到了，在提示里……怎么还要花钱买的啊？
+
+
+  <center>
+
+  <img src="/ccbc15/images/meta/42da0346d18d4bd6b12238b203b0847d.webp" width="600">
+
+  </center>
+
+
+  <div style="height: 170px"></div>'
+content-type: 0
+desc: ''
+extend-data: ''
+links:
+- path: ccbc15/index
+  title: 索引页
+  type: index
+- path: ccbc15/pages/g
+  title: 孬题杀死了出题明星
+  type: page
+tips:
+- content: 你需要解答解密卡上的题目，并将答案对应到相应的谜题上进行提取。
+  title: 我毫无头绪
+- content: 你需要将某些格子涂黑。数字代表了周围九格中黑格子的数量。
+  title: 我不知道解密卡上的数字有什么用，你能告诉我吗
+- content: 这是一句话的前半部分，你需要推测丢失的解密卡到底能得到什么结果，并将两张卡的句子拼在一起。作为提示，第二张卡解出来的句子第一个字母是“N”。
+  title: 我得到了一句有意义的话，但我不知道这是什么意思
+- content: '![image](/ccbc15/images/meta/cdc109027552483b9e9f3fbd9e8a0e4a.webp)'
+  title: 我无法推测出遗失的解密卡上能得到什么结果，你能告诉我几个位置的数字吗？
+- content: '![image](/ccbc15/images/meta/3a6200c3a3ae4786acd2db7baf5b82c0.webp)'
+  title: 我无法推测出遗失的解密卡上能得到什么结果，你能帮我找一找这张卡吗
+title: 遗失的解密卡
+type: problem

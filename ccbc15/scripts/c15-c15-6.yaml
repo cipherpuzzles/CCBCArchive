@@ -1,0 +1,52 @@
+content:
+- 服务器脚本 c15-c15-6 新手区后院探险逻辑
+key: c15-c15-6
+psid: 5
+script: "const LETTER_ARRAY = [\r\n    ['H', 'O', 'R', 'R', 'O', 'R'],\r\n    ['I',\
+  \ 'N', 'D', 'O', 'O', 'R'],\r\n    ['M', 'E', 'D', 'I', 'U', 'M'],\r\n    ['D',\
+  \ 'E', 'C', 'O', 'Y', 'S'],\r\n    ['I', 'N', 'T', 'E', 'N', 'T'],\r\n    ['P',\
+  \ 'R', 'I', 'E', 'S', 'T']\r\n];\r\nconst ITEM_ARRAY = [\r\n    [\r\n        \"\
+  一枚创可贴\",\r\n        \"一张圆形标识。上面画了一个斜杠\",\r\n        \"西藏的湖的明信片\",\r\n        \"\
+  一个十字架\",\r\n        \"微软的游戏主机，但是盒子不见了\",\r\n        \"一幅井字棋，不过你找不到圆形的棋子了\"\r\n \
+  \   ],\r\n    [\r\n        \"一罐一氧化氮\",\r\n        \"半个杯子\",\r\n        \"一些数字\"\
+  ,\r\n        \"去掉根的韭菜\",\r\n        \"一个标识着绝对零度的温度计\",\r\n        \"一个一直在摇头的玩偶\"\
+  \r\n    ],\r\n    [\r\n        \"下面半边被截断的魏文帝画像\",\r\n        \"半个赛尔号的助手机器人\",\r\n\
+  \        \"404三个数字\",\r\n        \"一个感叹号\",\r\n        \"一张来自俄克拉何马州的明信片\",\r\n \
+  \       \"一本春秋战国时期法家的著作\"\r\n    ],\r\n    [\r\n        \"一张模拟信号图，其中一个小圆球被特别的标记了\"\
+  ,\r\n        \"一个收音机，一直在播放“牙套妹，奈何美色……”\",\r\n        \"一个乘号\",\r\n        \"江苏卫视的光头主持人\"\
+  ,\r\n        \"¬\",\r\n        \"一只手，它的中指，无名指和小拇指都立了起来\"\r\n    ],\r\n    [\r\n\
+  \        \"一张王力宏在花田里的照片\",\r\n        \"两个放在一起的狼牙棒，每个上面都有三根钉子，朝向两旁。\",\r\n     \
+  \   \"函数中的未知数\",\r\n        \"奥尼尔和科比的合照\",\r\n        \"一面国旗，一半是黄，一半是橙，中间有条龙。\"\
+  ,\r\n        \"挪威的国旗\"\r\n    ],\r\n    [\r\n        \"一台机器，似乎用来拍胸片的\",\r\n    \
+  \    \"第94号元素\",\r\n        \"一幅字：“昨夜风疏雨骤……”\",\r\n        \"一个写着“un”的单词卡\",\r\n\
+  \        \"一幅角膜塑形镜\",\r\n        \"一张地图，上面标记了一些国家：“卢旺达”，“马里”，‘’埃及”\"\r\n    ]\r\n\
+  ];\r\n\r\nfunction findPossibleDirection(pos) {\r\n    let answer = [];\r\n    if\
+  \ (pos.row > 0) {\r\n        answer.push(\"上\");\r\n    }\r\n    if (pos.row < 5)\
+  \ {\r\n        answer.push(\"下\");\r\n    }\r\n    if (pos.column > 0) {\r\n   \
+  \     answer.push(\"左\");\r\n    }\r\n    if (pos.column < 5) {\r\n        answer.push(\"\
+  右\");\r\n    }\r\n    return answer;\r\n}\r\n\r\nfunction findTheCorrectResponse(pos,\
+  \ text) {\r\n    let reply = \"\";\r\n    if (text.toLowerCase() == 'w' && pos.row\
+  \ > 0) {\r\n        reply = \"你往上移动了一个房间。<br>\";\r\n        pos.row -= 1;\r\n  \
+  \  } else if (text.toLowerCase() == 'a' && pos.column > 0) {\r\n        reply =\
+  \ \"你往左移动了一个房间。<br>\";\r\n        pos.column -= 1;\r\n    } else if (text.toLowerCase()\
+  \ == 's' && pos.row < 5) {\r\n        reply = \"你往下移动了一个房间。<br>\";\r\n        pos.row\
+  \ += 1;\r\n    } else if (text.toLowerCase() == 'd' && pos.column < 5) {\r\n   \
+  \     reply = \"你往右移动了一个房间。<br>\";\r\n        pos.column += 1;\r\n    } else {\r\
+  \n        reply = \"你不知道自己在干什么，原地晕乎乎的。\";\r\n    }\r\n\r\n    return reply;\r\n\
+  }\r\n\r\nfunction findRoomResult(pos) {\r\n    let scene = `你在房间的墙上看见了一个大大的\"${LETTER_ARRAY[pos.row][pos.column]}\"\
+  字母。\\n\r\n    你还在房间里看到了${ITEM_ARRAY[pos.row][pos.column]}。<br>`;\r\n    let direction\
+  \  = `你可以往${findPossibleDirection(pos).join(\"，\")}方移动。`;\r\n    return scene +\
+  \ direction;\r\n}\r\n\r\nfunction main(ctx, request) {\r\n    let currentPosString\
+  \ = ctx.getStatus(\"pos\");\r\n    let currentPos = {\r\n        row: 0,\r\n   \
+  \     column: 0\r\n    };\r\n    if (currentPosString) {\r\n        currentPos =\
+  \ JSON.parse(currentPosString);\r\n    }\r\n    \r\n    let reply = \"\";\r\n  \
+  \  if (request.text) {\r\n        reply = findTheCorrectResponse(currentPos, request.text);\r\
+  \n    }\r\n    let roomResult = findRoomResult(currentPos);\r\n\r\n    //回写pos\r\
+  \n    ctx.setStatus(\"pos\", JSON.stringify(currentPos));\r\n\r\n    return {\r\n\
+  \        roomResult: roomResult,\r\n        reply: reply\r\n    };\r\n}\r\n\r\n\
+  //=======以下是JSON解析与调用脚本，一般不需要修改========\r\nfunction _jsonProcessHelper(ctx) {\r\n\
+  \    let request = JSON.parse(ctx.request);\r\n    let resBody = main(ctx, request);\r\
+  \n    let resString = JSON.stringify(resBody);\r\n    ctx.response(resString);\r\
+  \n}\r\n\r\n_jsonProcessHelper(ctx);"
+title: 新手区后院探险逻辑
+type: backend_script

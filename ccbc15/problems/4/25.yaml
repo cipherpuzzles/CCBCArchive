@@ -1,0 +1,30 @@
+answer: FACTORING
+answer-analysis: '<img src="/ccbc15/images/4/cccdac8f27e64e7bb0fd4cd7b34ed49e.webp"
+  width="800" />
+
+  '
+content:
+- '你来到了巴黎。城市里一片涂鸦吸引了你的注意，你走上前去发现——
+
+
+  整面墙被写上了一个大大的“糳”，以及其他一些不明所以的文字'
+content-type: 0
+desc: ''
+extend-content:
+- 你要离开之前，获得了一份旅游指南，你注意到其中一句话被圈了出来：“这里的气候大会曾谈论过海平面上升的威胁。”
+extend-data: ''
+links:
+- path: ccbc15/index
+  title: 索引页
+  type: index
+- path: ccbc15/pages/d
+  title: 全球呼叫出题组
+  type: page
+problem-image: /ccbc15/images/4/d05d61bcf8b444fa80bea14ec400d2f1.webp
+tips:
+- content: 把每个字的笔画顺序写出来，再和“糳”字的笔画顺序比对一下，会发现他们笔画顺序都包含在“糳”的笔画顺序中并且有唯一的序列。
+  title: 我毫无头绪
+- content: 提取加粗笔画在上一步中的顺序，转字母。
+  title: 该如何提取
+title: 这题我糳过
+type: problem

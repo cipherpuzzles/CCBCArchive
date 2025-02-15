@@ -1,0 +1,55 @@
+answer: DELUXE
+answer-analysis: '第二个位置字母相同的单词/短语有且只有四个，其中最后一个字母相同的有且只有三个，所以确定第2行为【MEXICO】
+
+
+  又因为【GENOME】和【HELPME】的倒数第二个字母相同，所以第5行一定是【KETTLE】，且答案中一定含有字母L
+
+
+  因为答案中一定有字母L，【HELPME】中的L必然为绿色或黄色，从而确定第4行为【HELPME】，第1行为【GENOME】
+
+
+  继续推理白色位置，根据第4行【HELPME】可知，答案中一定不含字母P，所以【PDIDDY】一定不是第3行，而是第6行，【UGANDA】为第3行
+
+
+  可推出正确答案为【?EL??E】且剩余字母为DUX，在答案是英文的限制下，得到答案**DELUXE**
+
+
+
+
+
+
+
+
+
+
+
+  '
+content:
+- '我们会用<a href="https://cloud.tencent.com/developer/article/1947423" target="_blank">词兜游戏</a>来考查你的英文词汇量，请你来试一试吧！
+
+
+  <center>
+
+  <img src="/ccbc15/images/1/9f2a525e25cc4282880bfac66b23ab48.webp"  width="500">
+
+  </center>
+
+
+  <div style="height: 170px"></div>'
+content-type: 0
+desc: ''
+extend-data: ''
+links:
+- path: ccbc15/index
+  title: 索引页
+  type: index
+- path: ccbc15/pages/a
+  title: 面试
+  type: page
+tips:
+- content: 你需要根据题面提供的词兜游戏规则，猜出目标单词是什么。
+  title: 我毫无头绪
+- content: 直接提交目标单词即可，你可以使用工具推荐中的一些工具帮助你猜出合适的单词。
+  title: 该如何提取
+title: 词兜游戏
+type: problem

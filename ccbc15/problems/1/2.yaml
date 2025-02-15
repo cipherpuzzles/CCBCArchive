@@ -1,0 +1,36 @@
+answer: EDMOND
+answer-analysis: 图片从左到右，依次对应 onEway cookeD Months Orange Noodle Dollar，提取答案为**EDMOND**
+content:
+- '这一关考验你的图片阅读能力。请把图片中的东西念出来。注意单复数哟！
+
+
+  <center>
+
+  <img src="/ccbc15/images/1/d1c475db6c3d43c7928b106d2a25710a.webp">
+
+  </center>
+
+  '
+content-type: 0
+desc: ''
+extend-data: ''
+links:
+- path: ccbc15/index
+  title: 索引页
+  type: index
+- path: ccbc15/pages/a
+  title: 面试
+  type: page
+tips:
+- content: 你应该辨别图片上面的事物，并写出它们对应的英文单词。
+  title: 我毫无头绪
+- content: '这些图画的分别是：
+
+    “单行道”、“熟”、“月份（复数）”、“橘子”、“面条”、“美元”
+
+    他们分别对应一个6字母的英文单词。'
+  title: 有些我实在不知道是什么
+- content: 注意你单词的长度，你有注意到涂色部分大概占图片的几分之几吗？选择对应位置的字母。
+  title: 该如何提取
+title: 看图说话
+type: problem

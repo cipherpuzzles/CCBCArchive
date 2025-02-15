@@ -1,0 +1,39 @@
+answer: LYNX
+answer-analysis: '题目描述似乎要让我们画某些东西。结合动物名称和希腊字母，可以注意到这些动物都是星座的名称，而希腊字母是这些星座中恒星的拜尔命名法（Bayer
+  designation）。
+
+
+  因此，每行给出了我们三颗恒星的位置。结合题目图中的等号，我们需要按照首尾相接的方式连接这些恒星。
+
+
+  每个星座给出了三个点的相对位置：狮子座对应第 1, 2, 3 个点，天蝎座对应第 2, 3, 4 个点... 最终画出一条带有 8 个点的折线：
+
+
+  ![狮头蝎尾](/ccbc15/images/6/18a93785bc034ed7ad9f5dd8c1969ab7.webp)
+
+
+  既然题目的主题是星座，我们可以识别出画出的这条折线是星空中的 天猫座（**LYNX**）。'
+content:
+- '从狮头描到鸽尾，画出的又是哪种动物呢？
+
+  '
+content-type: 0
+desc: ''
+extend-data: ''
+links:
+- path: ccbc15/index
+  title: 索引页
+  type: index
+- path: ccbc15/pages/f
+  title: 我爱猫猫!
+  type: page
+problem-image: /ccbc15/images/6/252021d79a9b4b1f987a7537fbe497a8.webp
+tips:
+- content: 题目图中的几个动物都是星座的名称，希腊字母是恒星的拜耳命名法（Bayer designation）。
+  title: 我毫无头绪
+- content: 每种动物会给你三个点的相对位置：第一个动物对应第1,2,3个点，第二个动物对应第2,3,4个点... 你最终会画出一条带有8个点的折线。
+  title: 要做什么？
+- content: 回想本题的背景，尝试辨认画出的东西（你应该画出了一条有8个点的折线）。
+  title: 最后一步是什么？
+title: 狮头蝎尾
+type: problem

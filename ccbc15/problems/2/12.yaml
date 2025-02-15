@@ -1,0 +1,116 @@
+additional-answers:
+- answer: 苦艾酒
+  extra: ''
+  message: 回答正确！但是答案是英文。
+answer: VERMOUTH
+answer-analysis: '我毫无头绪是预设提示常见的标题之一，查看提示页发现有一个免费的【提示0】：不，你很有头绪！当你发现并打开这条免费提示时，就走在了正确的道路上——其他的提示会不同程度提示你这道题的答案，越昂贵的提示关联程度越高，你可以尝试用最少的消耗来获得这道题的答案。祝你好运！
+
+
+  提示内容如下：
+
+
+  |      |      |
+
+  |------|------|
+
+  | 提示1  | 绿色   |
+
+  | 提示2  | 黑色   |
+
+  | 提示3  | 欧洲   |
+
+  | 提示4  | 日本   |
+
+  | 提示5  | 年长   |
+
+  | 提示6  | 年轻   |
+
+  | 提示7  | 饮品   |
+
+  | 提示8  | 反派   |
+
+  | 提示9  | 侦探   |
+
+  | 提示10 | 演员   |
+
+  | 提示11 | 烈性   |
+
+  | 提示12 | 缪斯   |
+
+  | 提示13 | 动漫   |
+
+  | 提示14 | 嘴巴   |
+
+  | 提示15 | 茴香   |
+
+  | 提示16 | 易容   |
+
+  | 提示17 | VER  |
+
+  | 提示18 | 艹艹   |
+
+  | 提示19 | kaj  |
+
+  | 提示20 | 贝尔摩德 |
+
+
+  最终可推理出答案为**VERMOUTH**
+
+  '
+content:
+- 你毫无头绪！
+content-type: 0
+desc: ''
+extend-data: ''
+links:
+- path: ccbc15/index
+  title: 索引页
+  type: index
+- path: ccbc15/pages/b
+  title: 与天才美少女的烹饪对决
+  type: page
+tips:
+- content: 不，你很有头绪！当你发现并打开这条免费提示时，就走在了正确的道路上——其他提示的内容会不同程度提示你这道题的答案（8个字母的英文单词或三个中文汉字），越昂贵的提示关联程度越高，你可以尝试用最少的消耗来获得答案。祝你好运！
+  title: 我毫无头绪
+- content: 绿色
+  title: 提示1
+- content: 黑色
+  title: 提示2
+- content: 欧洲
+  title: 提示3
+- content: 日本
+  title: 提示4
+- content: 年长
+  title: 提示5
+- content: 年轻
+  title: 提示6
+- content: 饮品
+  title: 提示7
+- content: 反派
+  title: 提示8
+- content: 缪斯
+  title: 提示9
+- content: 烈性
+  title: 提示10
+- content: 演员
+  title: 提示11
+- content: 侦探
+  title: 提示12
+- content: 动漫
+  title: 提示13
+- content: 嘴巴
+  title: 提示14
+- content: 茴香
+  title: 提示15
+- content: 易容
+  title: 提示16
+- content: VER
+  title: 提示17
+- content: 艹艹
+  title: 提示18
+- content: kaj
+  title: 提示19
+- content: 贝尔摩德
+  title: 提示20
+title: 毫无头绪
+type: problem

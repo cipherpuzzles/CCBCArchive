@@ -1,0 +1,169 @@
+answer: PLENTIFUL
+answer-analysis: '本题为mangled clues，但是在得到答案时，你要对语义使用mangle操作。
+
+
+  ### DINEANE WHICH CELLN DIVIDE USCOSTROLLABLY (3/9)
+
+
+  DISEASE WHICH CELLS DIVIDE UNCONTROLLABLY CANCER CAPRICORN P
+
+
+  词汇mangle规则：NS互换
+
+
+  语义mangle规则：北回归线Tropic of Cancer，南回归线Tropic of Capricorn
+
+
+
+  ### RASANATANG SAAND (2/4)
+
+
+  RESONATING SOUND ECHO ALFA L
+
+
+  词汇mangle规则：所有元音换成A
+
+
+  语义mangle规则：ECHO-E在北约字母表里换成ALFA-A
+
+
+  ### INSGONTS SINN SPSYGNLASSSN RESCINPE (6/6)
+
+
+  INGOTS IN SPYGLASS RECIPE+SN COPPER BRONZE E
+
+
+  词汇mangle规则：每隔两个字母交替加入SN
+
+
+  语义mangle规则：向COPPER里加入Sn(锡)得到青铜BRONZE
+
+
+  ### RANSPAREN ASTELES DORLES NIVERSA OLVEN (6/6)
+
+
+  TRANSPARENT TASTELESS ODORLESS UNIVERSAL SOLVENT WATER OXYGEN N
+
+
+  词汇mangle规则：去掉两端字母
+
+
+  语义mangle规则：去掉水分子两端的氢原子得到氧OXYGEN
+
+
+  ### COGINDE NAGINME OGINF ACTGINRESS VINEGINYARD (4/7)
+
+
+  CODE NAME OF ACTRESS VINEYARD VERMOUTH MARTINI T
+
+
+  词汇mangle规则：中间插入GIN
+
+
+  语义mangle规则：VERMOUTH和GIN调制鸡尾酒得到MARTINI
+
+
+  ### LARGE ANIMAL VIPER MANED REPRESENTING OR CAT BAPHOMET PYTHON (3/7)
+
+
+  LARGE ANIMAL VIPER MANED REPRESENTING OR CAT BAPHOMET PYTHON
+
+
+  LION GOAT SNAKE CHIMERA I
+
+
+  词汇mangle规则：三条描述交替混在一起
+
+
+  语义mangle规则：三种动物混在一起得到CHIMERA
+
+
+  ### ROVIE UROTAGONIST NN F KAKE WEALITY XHOW (1/4)
+
+
+  MOVIE PROTAGONIST IN A FAKE REALITY SHOW TRUMAN FORD F
+
+
+  词汇mangle规则：首字母凯撒+5
+
+
+  语义mangle规则：TRUMAN美国总统位移+5得到FORD
+
+
+  ### AALLDDEENN IINN SSTTAARRWWAARRSS (2/4)
+
+
+  ALDEN IN STARWARS SOLO DUET U
+
+
+  词汇mangle规则：每个字母翻倍
+
+
+  语义mangle规则：SOLO独奏翻倍得到二重奏DUET
+
+
+  ### CMTGC CMANAC CGENERATIONC CCARDC CTYPEC (3/6)
+
+
+  MTG MANA GENERATION CARD TYPE LAND ISLAND L
+
+
+  词汇mangle规则：每个词被C包围
+
+
+  语义mangle规则：LAND被SEA包围得到ISLAND
+
+
+
+  按括号内数字提取得到答案**PLENTIFUL**'
+content:
+- '你来到了加德满都。还没踏入城市你就看到了神秘的寺庙海报——
+
+
+  “它的力量甚至可以影响现实！”
+
+
+  '
+- "<p>DINEANEWHICHCELLNDIVIDEUSCOSTROLLABLY (3/9)<br>\r\nRASANATANGSAAND (2/4)<br>\r\
+  \nINSGONTSSINNSPSYGNLASSSNRESCINPE (6/6)<br>\r\nRANSPARENASTELESDORLESNIVERSAOLVEN\
+  \ (6/6)<br>\r\nCOGINDENAGINMEOGINFACTGINRESSVINEGINYARD (4/7)<br>\r\nLARGEANIMALVIPERMANEDREPRESENTINGORCATBAPHOMETPYTHON\
+  \ (3/7)<br>\r\nROVIEUROTAGONISTNNFKAKEWEALITYXHOW (1/4)<br>\r\nAALLDDEENNIINNSSTTAARRWWAARRSS\
+  \ (2/4)<br>\r\nCMTGCCMANACCGENERATIONCCCARDCCTYPEC (3/6)</p>\r\n\r\n<div style=\"\
+  height: 170px\"></div>"
+content-type: 1
+desc: ''
+extend-content:
+- 你要离开之前，获得了一份旅游指南，你注意到其中一句话被圈了出来：“这里的建筑就像迷宫一样！”
+extend-data: ''
+links:
+- path: ccbc15/index
+  title: 索引页
+  type: index
+- path: ccbc15/pages/d
+  title: 全球呼叫出题组
+  type: page
+tips:
+- content: 本题主题为Mangled Clues。原先的描述产生了一系列的通用的变化（例如删除首字母等），你需要找到这个变化，推理出原先的提示，找到答案，然后对答案也施展同样的变化。
+  title: 这题是什么意思？
+- content: 在本题中，你需要的不是对答案的单词、而是对答案代表的事物本身应用该变化。
+  title: 我大概知道题目什么意思了，但是该怎么得到每小题的答案？
+- content: 本行的变化是：N和S对调。中间答案长度为6。
+  title: 第一行(DINE...)该怎么做
+- content: 本行的变化是：所有元音变成A。中间答案长度为4。
+  title: 第二行(RASA...)该怎么做
+- content: 本行的变化是：每2个字母均匀插入SN。中间答案长度为6。
+  title: 第三行(INSG...)该怎么做
+- content: 本行的变化是：每个单词去掉首尾。中间答案长度为5。
+  title: 第四行(RANS...)该怎么做
+- content: 本行的变化是：每个单词中间插入GIN。中间答案长度为8，本题含有Anime元素。
+  title: 第五行(COGI...)该怎么做
+- content: 本行的变化是：三条不同的正常clues混合在了一起。中间答案长度为4 4 5。
+  title: 第六行(LARG...)该怎么做
+- content: 本行的变化是：每个单词首字母凯撒位移+5。中间答案长度为6。
+  title: 第七行(ROVI...)该怎么做
+- content: 本行的变化是：翻倍。中间答案长度为4。
+  title: 第八行(AALL...)该怎么做
+- content: 本行的变化是：每个单词两边加上C。中间答案长度为4。
+  title: 第九行(CMTG...)该怎么做
+title: 梵天千变咒
+type: problem

@@ -1,0 +1,106 @@
+additional-answers:
+- answer: 'true'
+  extra: ''
+  message: 不是TRUE，而是另一个词！
+- answer: TURE
+  extra: ''
+  message: '#define ture true'
+answer: REAL
+answer-analysis: '标题和风味文本都指向和引用自一首歌曲《答案》
+
+
+  3个表格中的A、B均可对应歌词中对应的两个词语
+
+
+  - Ex.1：味道——引力
+
+  - Ex.2：美酒——咖啡
+
+  - Ex.3：平淡——撕心裂肺
+
+
+  以此类推，Q部分右侧的均为侦探小说，对应歌词中的【可疑】，所以左侧对应词为【真实】
+
+
+  翻译为英文得到答案**REAL**
+
+  '
+content:
+- '有个简单的问题，什么是答案呢？
+
+
+  ## Ex. 1
+
+
+  |A|B
+
+  |----|----
+
+  |酸辣|相互作用
+
+  |椒麻|摩擦
+
+  |荔枝|电磁
+
+
+  ## Ex. 2
+
+
+  |A|B
+
+  |----|----
+
+  |尊尼获加|摩卡
+
+  |人头马|阿拉比卡
+
+  |茅台|澳白
+
+
+  ## Ex. 3
+
+
+  |A|B
+
+  |----|----
+
+  |《世界上的另一个我》|《要死就一定要死在你手里》
+
+  |淮扬菜|癌症
+
+  |日常番|轰轰烈烈的爱情
+
+
+  # Q
+
+
+  |A|B
+
+  |----|----
+
+  |????|《尼罗河上的惨案》
+
+  ||《血字的研究》
+
+  ||《无证之罪》
+
+  '
+- "<div style=\"height: 170px\"></div>\r\n\r\n<style>\r\n.pz-content table td, .pz-content\
+  \ table th{\r\n    border: 1px solid #fff;\r\n    width: 289px;\r\n}\r\n</style>"
+content-type: 1
+desc: ''
+extend-data: ''
+links:
+- path: ccbc15/index
+  title: 索引页
+  type: index
+- path: ccbc15/pages/c
+  title: 科学的深入浅出
+  type: page
+tips:
+- content: 搜索一下“有个简单的问题，什么是答案呢？”，可能会有所发现。
+  title: 我毫无头绪
+- content: 仔细观察上一条提示得到的东西，会发现正确与错误的部分可以分别对应其中的一部分。那么根据对应关系，？？？？处对应着什么呢？答案是4个字母。
+  title: 该如何提取
+title: 什么是答案?
+type: problem

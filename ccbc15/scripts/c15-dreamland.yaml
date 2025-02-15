@@ -1,0 +1,502 @@
+content:
+- 服务器脚本 c15-dreamland 幻境后端代码
+key: c15-dreamland
+psid: 9
+script: "const roomBriefTable = [\r\n    [\"\", \"\", \"\", \"\", \"\", \"\", \"\"\
+  ],\r\n    [\"\",\r\n        \"跳下这个深坑 (the pit) 时，你感觉到一阵刺痛 (a tingling)。\",\r\n \
+  \       \"地上好像有什么……\",\r\n        \"地上好像有什么……\",\r\n        \"\",\r\n        \"\
+  这个房间有一门很明显的绿色加农炮 (cannon)，炮口朝西。你很好奇！\",\r\n        \"\"],\r\n    [\"\",\r\n    \
+  \    \"\",\r\n        \"\",\r\n        \"墙上好像有什么……\",\r\n        \"\",\r\n     \
+  \   \"这个房间有个深坑 (pit)。\",\r\n        \"\"],\r\n    [\"\",\r\n        \"\",\r\n  \
+  \      \"\",\r\n        \"\",\r\n        \"有面墙好像不太对劲……\",\r\n        \"这个房间的地面渗出强烈的白光。你被照得睁不开眼。\"\
+  ,\r\n        \"\"],\r\n    [\"\", \"\", \"\", \"\", \"\", \"\", \"\"],\r\n    [\"\
+  \", \"\", \"\", \"\", \"\", \"\", \"\"],\r\n    [\"\", \"\", \"\", \"\", \"\", \"\
+  \", \"\"],\r\n];\r\n\r\nconst roomDetailTable = [\r\n    [\"\", \"\", \"\", \"\"\
+  , \"\", \"\", \"\"],\r\n    [\"\",\r\n        \"一旦跌入她脚下的土地 (the ground beneath her\
+  \ feet)，你是否觉得无可挽回 (irreversible)？\",\r\n        \"你发现这个房间东北角的地面上画着一个巨大 1/4 圆，圆心就在房间的东北角。\"\
+  ,\r\n        \"你发现这个房间西北角的地面上画着一个巨大 1/4 圆，圆心就在房间的西北角。\",\r\n        \"\",\r\n  \
+  \      \"你发现这个房间中有一门绿色的加农炮 (cannon)，这门加农炮朝向西方。由于后坐力，东侧的墙已经有了裂痕。\",\r\n        \"\
+  \"],\r\n    [\"\",\r\n        \"\",\r\n        \"\",\r\n        \"你发现这个房间的墙上挂着一株大喷菇的字迹：\\\
+  n    「时于一切的东南角开始，空在此处的东南角结束。」\",\r\n        \"\",\r\n        \"这个房间有个深坑 (pit)。你觉得跳下去\
+  \ (jump into) 绝对是个坏主意。\",\r\n        \"\"],\r\n    [\"\",\r\n        \"\",\r\n \
+  \       \"\",\r\n        \"\",\r\n        \"你发现这个房间东侧的墙壁是双层墙，墙上还有一个实心的六边形记号。这个六边形记号有一组水平的对边。\"\
+  ,\r\n        \"你惊讶地发现自己变绿了。\",\r\n        \"\"],\r\n    [\"\",\r\n        \"\",\r\
+  \n        \"\",\r\n        \"\",\r\n        \"\",\r\n        \"这里是你起始的房间。这个房间北侧的墙似乎是后来砌的，本不属于这个房间。\"\
+  ,\r\n        \"\"],\r\n    [\"\", \"\", \"\", \"\", \"\", \"\", \"\"],\r\n    [\"\
+  \", \"\", \"\", \"\", \"\", \"\", \"\"],\r\n];\r\n\r\nconst pieceTable = [\r\n \
+  \   \"\",\r\n    \"红色的拼图，上面有三个正方形房间的鸟瞰图：\\n  第一个房间倾斜了 45°，而且缺失了东北方、西北方的两面墙；\\n \
+  \ 第二个房间缺失了东方的一面墙，而且其中有一个拼图；\\n  第三个房间缺失了东方、北方的两面墙，而且其中有一个拼图。\",\r\n    \"橙色的拼图，上面有三个正方形房间的鸟瞰图：\\\
+  n  第一个房间倾斜了 45°，而且缺失了东南方、西南方的两面墙；\\n  第二个房间的四面墙都完好；\\n  第三个房间倾斜了 45°，而且缺失了西南方、西北方的两面墙。\"\
+  ,\r\n    \"黄色的拼图，上面有三个正方形房间的鸟瞰图：\\n  第一个房间缺失了南方的一面墙；\\n  第二个房间的四面墙都完好；\\n  第三个房间倾斜了\
+  \ 45°，缺失了东北方、西北方的两面墙，而且其中有一个拼图。\",\r\n    \"青色的拼图，上面有三个正方形房间的鸟瞰图：\\n  第一个房间缺失了东方、南方的两面墙；\\\
+  n  第二个房间倾斜了 45°，而且缺失了西南方、西北方的两面墙；\\n  第三个房间的四面墙都完好，而且其中有一个拼图。\",\r\n    \"蓝色的拼图，上面有三个正方形房间的鸟瞰图：\\\
+  n  第一个房间的四面墙都完好；\\n  第二个房间倾斜了 45°，而且缺失了东北方、西北方的两面墙；\\n  第三个房间倾斜了 45°，而且缺失了东北方、西北方的两面墙。\"\
+  ,\r\n];\r\n\r\nconst northWalls = [\r\n    [1, 1], [1, 2], [1, 3], [1, 4], [1, 5],\r\
+  \n    [2, 1], [2, 2], [2, 3], [2, 5],\r\n    [3, 1],\r\n    [4, 2], [4, 4], [4,\
+  \ 5],\r\n    [5, 3], [5, 5],\r\n];\r\n\r\nconst southWalls = [\r\n    [1, 1], [1,\
+  \ 2], [1, 3], [1, 5],\r\n    [2, 1],\r\n    [3, 2], [3, 4], [3, 5],\r\n    [4, 3],\
+  \ [4, 5],\r\n    [5, 4],\r\n];\r\n\r\nconst westWalls = [\r\n    [1, 1], [1, 2],\r\
+  \n    [2, 1], [2, 3],\r\n    [3, 2], [3, 4], [3, 5],\r\n    [4, 3],\r\n    [5, 4],\
+  \ [5, 5],\r\n];\r\n\r\nconst eastWalls = [\r\n    [1, 1], [1, 5],\r\n    [2, 2],\
+  \ [2, 5],\r\n    [3, 1], [3, 3], [3, 4], [3, 5],\r\n    [4, 2], [4, 5],\r\n    [5,\
+  \ 3], [5, 4],\r\n];\r\n\r\nclass Coord {\r\n    constructor(row, col) {\r\n    \
+  \    this.row = row;\r\n        this.col = col;\r\n    }\r\n\r\n    equals(other)\
+  \ {\r\n        return this.row === other.row && this.col === other.col;\r\n    }\r\
+  \n}\r\n\r\nclass Player {\r\n    constructor() {\r\n        this.coord = new Coord(4,\
+  \ 5);\r\n        this.isTakingKey1 = false;\r\n        this.isTakingKey2 = false;\r\
+  \n        this.piecesTaking = [0, 0, 0, 0, 0, 0];\r\n    }\r\n}\r\nPlayer.lastTimeGreen\
+  \ = 0;\r\nPlayer.isTakingGreenKey = false;\r\n\r\nclass Room {\r\n    constructor()\
+  \ {\r\n        this.coord = null;\r\n        this.brief = \"\";\r\n        this.detail\
+  \ = \"\";\r\n        this.wallNorth = false;\r\n        this.wallSouth = false;\r\
+  \n        this.wallWest = false;\r\n        this.wallEast = false;\r\n        this.pieceId\
+  \ = null;\r\n        this.doorWest = false;\r\n        this.doorEast = false;\r\n\
+  \        this.doorNorth = false;\r\n        this.doorSouth = false;\r\n    }\r\n\
+  }\r\n\r\nclass State {\r\n    constructor() {\r\n        this.rooms = this.initRooms();\r\
+  \n        this.key1Coord = new Coord(5, 4);\r\n        this.key2Coord = new Coord(1,\
+  \ 5);\r\n        this.clock = 0;\r\n        this.player = new Player();\r\n    }\r\
+  \n\r\n    initRooms() {\r\n        const rooms = Array.from({ length: 7 }, function\
+  \ () {\r\n            return Array.from({ length: 7 }, function () {\r\n       \
+  \         return new Room();\r\n            });\r\n        });\r\n\r\n        for\
+  \ (let i = 1; i <= 5; i++) {\r\n            for (let j = 1; j <= 5; j++) {\r\n \
+  \               const room = rooms[i][j];\r\n                room.coord = new Coord(i,\
+  \ j);\r\n                room.brief = roomBriefTable[i][j];\r\n                room.detail\
+  \ = roomDetailTable[i][j];\r\n                room.wallNorth = room.wallSouth =\
+  \ room.wallWest = room.wallEast = false;\r\n            }\r\n        }\r\n\r\n \
+  \       eastWalls.forEach(function (position) {\r\n            rooms[position[0]][position[1]].wallEast\
+  \ = true;\r\n        });\r\n\r\n        westWalls.forEach(function (position) {\r\
+  \n            rooms[position[0]][position[1]].wallWest = true;\r\n        });\r\n\
+  \r\n        southWalls.forEach(function (position) {\r\n            rooms[position[0]][position[1]].wallSouth\
+  \ = true;\r\n        });\r\n\r\n        northWalls.forEach(function (position) {\r\
+  \n            rooms[position[0]][position[1]].wallNorth = true;\r\n        });\r\
+  \n\r\n        rooms[4][3].pieceId = 1;\r\n        rooms[3][2].pieceId = 2;\r\n \
+  \       rooms[1][2].pieceId = 3;\r\n        rooms[2][1].pieceId = 4;\r\n       \
+  \ rooms[3][4].pieceId = 5;\r\n\r\n        rooms[4][4].doorWest = true; rooms[4][3].doorEast\
+  \ = true;\r\n        rooms[3][3].doorWest = true; rooms[3][2].doorEast = true;\r\
+  \n        rooms[2][2].doorWest = true; rooms[2][1].doorEast = true;\r\n        //\
+  \ rooms[3][2].doorNorth = true; rooms[2][2].doorSouth = true; // it's green\r\n\r\
+  \n        return rooms;\r\n    }\r\n\r\n    roomAt(coord) {\r\n        return this.rooms[coord.row][coord.col];\r\
+  \n    }\r\n\r\n    currentRoom() {\r\n        return this.roomAt(this.player.coord);\r\
+  \n    }\r\n\r\n    possibleMoves(coord) {\r\n        const room = this.rooms[coord.row][coord.col];\r\
+  \n        const dirs = [];\r\n        let res = \"\";\r\n\r\n        if (!room.wallEast\
+  \ && !room.doorEast) dirs.push(\"东\");\r\n        if (!room.wallWest && !room.doorWest)\
+  \ dirs.push(\"西\");\r\n        if (!room.wallSouth && !room.doorSouth) {\r\n   \
+  \         if (coord.equals(new Coord(2, 2))) {\r\n                if (State.greenDoorOpen)\
+  \ dirs.push(\"南\");\r\n            } else {\r\n                dirs.push(\"南\");\r\
+  \n            }\r\n        }\r\n        if (!room.wallNorth && !room.doorNorth)\
+  \ {\r\n            if (coord.equals(new Coord(3, 2))) {\r\n                if (State.greenDoorOpen)\
+  \ dirs.push(\"北\");\r\n            } else {\r\n                dirs.push(\"北\");\r\
+  \n            }\r\n        }\r\n        if (dirs.length === 0) {\r\n           \
+  \ res += \"这里是死路。\";\r\n        } else {\r\n            res += \"你可以向\" + dirs.join(\"\
+  、\") + \"方向走。\";\r\n        }\r\n        return res;\r\n    }\r\n\r\n    doorsInfo(coord)\
+  \ {\r\n        const doors = [];\r\n        let msg = \"\";\r\n        const room\
+  \ = this.rooms[coord.row][coord.col];\r\n\r\n        if (room.doorEast) doors.push(\"\
+  东方\");\r\n        if (room.doorWest) doors.push(\"西方\");\r\n        if (room.doorSouth)\
+  \ doors.push(\"南方\");\r\n        if (room.doorNorth) doors.push(\"北方\");\r\n\r\n\
+  \        if (doors.length > 0) {\r\n            msg += \"这个房间的\" + doors.join(\"\
+  、\") + (doors.length > 1 ? \"各\" : \"\") + \"有一扇上锁的门。\";\r\n        }\r\n\r\n  \
+  \      if (coord.equals(new Coord(2, 2)) && !State.greenDoorOpen) {\r\n        \
+  \    msg += \"这个房间的南方有一扇上锁的绿色的门。\";\r\n        } else if (coord.equals(new Coord(3,\
+  \ 2)) && !State.greenDoorOpen) {\r\n            msg += \"这个房间的北方有一扇上锁的绿色的门。\";\r\
+  \n        }\r\n\r\n        if (msg.length > 0) {\r\n            msg += '\\n';\r\n\
+  \        }\r\n\r\n        return msg;\r\n    }\r\n\r\n    roomBrief(coord) {\r\n\
+  \        const room = this.rooms[coord.row][coord.col];\r\n        let brief = room.brief;\r\
+  \n\r\n        if (brief.length === 0) {\r\n            brief = \"这是一个普通的房间。\";\r\
+  \n        }\r\n\r\n        return brief + this.doorsInfo(coord) + this.possibleMoves(coord);\r\
+  \n    }\r\n\r\n    roomDetail(coord) {\r\n        const room = this.rooms[coord.row][coord.col];\r\
+  \n        let detail = room.detail;\r\n\r\n        if (room.pieceId > 0) {\r\n \
+  \           detail += \"这个房间有一个拼图 (piece)。\";\r\n        }\r\n\r\n        const\
+  \ keyCount = (this.key1Coord.equals(coord) ? 1 : 0) + (this.key2Coord.equals(coord)\
+  \ ? 1 : 0);\r\n        if (keyCount > 0) {\r\n            if (!this.player.coord.equals(new\
+  \ Coord(1, 5))) {\r\n                detail += \"这个房间有\" + (keyCount === 1 ? \"\
+  一\" : \"两\") + \"把钥匙 (key)。\";\r\n            }\r\n        }\r\n\r\n        if (State.greenKeyCoord.equals(coord))\
+  \ {\r\n            detail += \"这个房间有一把绿色钥匙 (green_key)。\";\r\n        }\r\n\r\n\
+  \        return detail + this.doorsInfo(coord) + this.possibleMoves(coord);\r\n\
+  \    }\r\n\r\n    stringify() {\r\n        this.roomsInfo = Array.from({ length:\
+  \ 5 }, function () {\r\n            return Array.from({ length: 5 }, function ()\
+  \ {\r\n                return {};\r\n            });\r\n        });\r\n        for\
+  \ (let i = 1; i <= 5; i++) {\r\n            for (let j = 1; j <= 5; j++) {\r\n \
+  \               let room = this.rooms[i][j];\r\n                this.roomsInfo[i-1][j-1].wN\
+  \ = room.wallNorth\r\n                this.roomsInfo[i-1][j-1].wS = room.wallSouth\r\
+  \n                this.roomsInfo[i-1][j-1].wW = room.wallWest\r\n              \
+  \  this.roomsInfo[i-1][j-1].wE = room.wallEast\r\n                this.roomsInfo[i-1][j-1].pId\
+  \ = room.pieceId\r\n                this.roomsInfo[i-1][j-1].dW = room.doorWest\r\
+  \n                this.roomsInfo[i-1][j-1].dE = room.doorEast\r\n              \
+  \  this.roomsInfo[i-1][j-1].dN = room.doorNorth\r\n                this.roomsInfo[i-1][j-1].dS\
+  \ = room.doorSouth\r\n            }\r\n        }\r\n        return JSON.stringify(this,\
+  \ function (key, value) {\r\n            if (key === 'rooms') {\r\n            \
+  \    return undefined;\r\n            }\r\n            return value;\r\n       \
+  \ });\r\n    }\r\n\r\n    static reviver(key, value) {\r\n        if (key === '')\
+  \ {\r\n            let state = new State();\r\n            state.key1Coord = new\
+  \ Coord(value.key1Coord.row, value.key1Coord.col);\r\n            state.key2Coord\
+  \ = new Coord(value.key2Coord.row, value.key2Coord.col);\r\n            state.clock\
+  \ = value.clock;\r\n            state.player = new Player();\r\n            state.player.coord\
+  \ = new Coord(value.player.coord.row, value.player.coord.col);\r\n            state.player.isTakingKey1\
+  \ = value.player.isTakingKey1;\r\n            state.player.isTakingKey2 = value.player.isTakingKey2;\r\
+  \n            state.player.piecesTaking = value.player.piecesTaking;\r\n       \
+  \     for (let i = 1; i <= 5; i++) {\r\n                for (let j = 1; j <= 5;\
+  \ j++) {\r\n                    let room = state.rooms[i][j];\r\n              \
+  \      room.wallNorth = value.roomsInfo[i-1][j-1].wN;\r\n                    room.wallSouth\
+  \ = value.roomsInfo[i-1][j-1].wS;\r\n                    room.wallWest = value.roomsInfo[i-1][j-1].wW;\r\
+  \n                    room.wallEast = value.roomsInfo[i-1][j-1].wE;\r\n        \
+  \            room.pieceId = value.roomsInfo[i-1][j-1].pId;\r\n                 \
+  \   room.doorWest = value.roomsInfo[i-1][j-1].dW;\r\n                    room.doorEast\
+  \ = value.roomsInfo[i-1][j-1].dE;\r\n                    room.doorNorth = value.roomsInfo[i-1][j-1].dN;\r\
+  \n                    room.doorSouth = value.roomsInfo[i-1][j-1].dS;\r\n       \
+  \         }\r\n            }\r\n            return state;\r\n        }\r\n     \
+  \   return value;\r\n    }\r\n\r\n    static parse(jsonString) {\r\n        return\
+  \ JSON.parse(jsonString, State.reviver);\r\n    }\r\n}\r\nState.greenKeyCoord =\
+  \ new Coord(1, 1);\r\nState.greenDoorOpen = false;\r\nState.greenClock = 0;\r\n\r\
+  \nclass Info {\r\n    constructor() {\r\n        this.isTracingFatal = false;\r\n\
+  \        this.needIntroduce = true;\r\n        this.isTracingEvent = true;\r\n \
+  \       this.moveWest = false;\r\n        this.moveEast = false;\r\n        this.moveNorth\
+  \ = false;\r\n        this.moveSouth = false;\r\n        this.moveWait = false;\r\
+  \n        this.isDead = false;\r\n    }\r\n\r\n    stringify() {\r\n        this.Player_lastTimeGreen\
+  \ = Player.lastTimeGreen;\r\n        this.Player_isTakingGreenKey = Player.isTakingGreenKey;\r\
+  \n        this.State_greenKeyCoord = State.greenKeyCoord;\r\n        this.State_greenDoorOpen\
+  \ = State.greenDoorOpen;\r\n        this.State_greenClock = State.greenClock;\r\n\
+  \        return JSON.stringify(this);\r\n    }\r\n\r\n    static reviver(key, value)\
+  \ {\r\n        if (key === '') {\r\n            let info = new Info();\r\n     \
+  \       info.isTracingFatal = value.isTracingFatal;\r\n            info.needIntroduce\
+  \ = value.needIntroduce;\r\n            info.isTracingEvent = value.isTracingEvent;\r\
+  \n            info.moveWest = value.moveWest;\r\n            info.moveEast = value.moveEast;\r\
+  \n            info.moveNorth = value.moveNorth;\r\n            info.moveSouth =\
+  \ value.moveSouth;\r\n            info.moveWait = value.moveWait;\r\n          \
+  \  info.isDead = value.isDead;\r\n            Player.lastTimeGreen = value.Player_lastTimeGreen;\r\
+  \n            Player.isTakingGreenKey = value.Player_isTakingGreenKey;\r\n     \
+  \       State.greenKeyCoord = new Coord(value.State_greenKeyCoord.row, value.State_greenKeyCoord.col);\r\
+  \n            State.greenDoorOpen = value.State_greenDoorOpen;\r\n            State.greenClock\
+  \ = value.State_greenClock;\r\n            return info;\r\n        }\r\n       \
+  \ return value;\r\n    }\r\n\r\n    static parse(jsonString) {\r\n        return\
+  \ JSON.parse(jsonString, Info.reviver);\r\n    }\r\n}\r\n\r\n\r\nfunction currentMsg(now,\
+  \ info) {\r\n    let output = [];\r\n\r\n    if (now.player.coord.equals(new Coord(3,\
+  \ 5))) {\r\n        Player.lastTimeGreen = now.clock;\r\n    }\r\n\r\n    if (info.isDead)\
+  \ {\r\n        output.push(\"你死了。使用 \\\"rewind\\\" 可以倒流时间。\");\r\n    }\r\n    if\
+  \ (!info.isDead && info.isTracingFatal) {\r\n        if (State.greenClock % 3 ===\
+  \ 1) {\r\n            if (info.moveWait && (now.player.coord.equals(new Coord(1,\
+  \ 2)) || now.player.coord.equals(new Coord(1, 3)))) {\r\n                info.isDead\
+  \ = true;\r\n            } else if (info.moveEast && (now.player.coord.equals(new\
+  \ Coord(1, 3)) || now.player.coord.equals(new Coord(1, 4)))) {\r\n             \
+  \   info.isDead = true;\r\n            } else if (info.moveWest && now.player.coord.equals(new\
+  \ Coord(1, 2))) {\r\n                info.isDead = true;\r\n            } else if\
+  \ (info.moveSouth && now.player.coord.equals(new Coord(2, 4))) {\r\n           \
+  \     info.isDead = true;\r\n            }\r\n        } else if (State.greenClock\
+  \ % 3 === 2) {\r\n            if (info.moveWait && (now.player.coord.equals(new\
+  \ Coord(1, 3)) || now.player.coord.equals(new Coord(1, 4)))) {\r\n             \
+  \   info.isDead = true;\r\n            } else if (info.moveEast && (now.player.coord.equals(new\
+  \ Coord(1, 3)) || now.player.coord.equals(new Coord(1, 4)) || now.player.coord.equals(new\
+  \ Coord(1, 5)))) {\r\n                info.isDead = true;\r\n            } else\
+  \ if (info.moveWest && now.player.coord.equals(new Coord(1, 3))) {\r\n         \
+  \       info.isDead = true;\r\n            }\r\n        } else if (State.greenClock\
+  \ % 3 === 0) {\r\n            if (info.moveWait && (now.player.coord.equals(new\
+  \ Coord(1, 2)) || now.player.coord.equals(new Coord(1, 4)))) {\r\n             \
+  \   info.isDead = true;\r\n            } else if (info.moveEast && (now.player.coord.equals(new\
+  \ Coord(1, 3)) || now.player.coord.equals(new Coord(1, 4)) || now.player.coord.equals(new\
+  \ Coord(1, 5)))) {\r\n                info.isDead = true;\r\n            } else\
+  \ if (info.moveWest && now.player.coord.equals(new Coord(1, 4))) {\r\n         \
+  \       info.isDead = true;\r\n            } else if (info.moveNorth && now.player.coord.equals(new\
+  \ Coord(1, 4))) {\r\n                info.isDead = true;\r\n            }\r\n  \
+  \      }\r\n        if (info.isDead) {\r\n            output.push(\"你被一枚向西飞行的炮弹击中。一瞬间，时间像是暂停\
+  \ (pause) 了一刻。你死了。\");\r\n            output.push(\"使用 \\\"rewind\\\" 可以倒流时间。\"\
+  );\r\n            State.greenClock += 1;\r\n        }\r\n        info.isTracingFatal\
+  \ = false;\r\n    }\r\n\r\n    if (!info.isDead && info.needIntroduce) {\r\n   \
+  \     output.push(now.roomBrief(now.player.coord));\r\n        info.needIntroduce\
+  \ = false;\r\n    }\r\n\r\n    if (!info.isDead && info.isTracingEvent) {\r\n  \
+  \      if (now.clock >= 5 && !(now.rooms[2][4].wallSouth && now.rooms[3][4].wallNorth))\
+  \ {\r\n            if (info.moveWait) {\r\n                output.push(\"在等待的这段时间中，\"\
+  );\r\n            }\r\n            if (now.player.coord.equals(new Coord(2, 4)))\
+  \ {\r\n                output.push(\"你看到这个房间南边的墙壁重重落在地面上，传来一声巨大的闷响。\");\r\n    \
+  \        } else if (now.player.coord.equals(new Coord(3, 4))) {\r\n            \
+  \    output.push(\"你看到这个房间北边的墙壁重重落在地面上，传来一声巨大的闷响。\");\r\n            } else if (now.player.coord.equals(new\
+  \ Coord(2, 3)) || now.player.coord.equals(new Coord(3, 3)) || now.player.coord.equals(new\
+  \ Coord(2, 5)) || now.player.coord.equals(new Coord(3, 5))) {\r\n              \
+  \  output.push(\"你听到近处的某处传来一声巨大的闷响，像是什么非常厚而沉的东西重重落在地面上的声音。\");\r\n            }\
+  \ else {\r\n                output.push(\"你听到远处的某处传来一声巨大的闷响，似乎是什么非常沉的东西重重落在地面上的声音。\"\
+  );\r\n            }\r\n            now.rooms[2][4].wallSouth = true;\r\n       \
+  \     now.rooms[3][4].wallNorth = true;\r\n        }\r\n        info.isTracingEvent\
+  \ = false;\r\n    }\r\n    return output;\r\n}\r\n\r\nfunction main(ctx, request)\
+  \ {\r\n    if (request.type == \"init\") {\r\n        let now = new State();\r\n\
+  \        let info = new Info();\r\n        let current = currentMsg(now, info);\r\
+  \n        ctx.setStatus(\"dreamlandState\", now.stringify());\r\n        ctx.setStatus(\"\
+  dreamlandStateHistory\", JSON.stringify([]));\r\n        ctx.setStatus(\"dreamlandInfo\"\
+  , info.stringify());\r\n        return {\r\n            'status': 'ok',\r\n    \
+  \        'current': current\r\n        };\r\n    }\r\n\r\n    let now = ctx.getStatus(\"\
+  dreamlandState\")\r\n    if (!now) {\r\n        now = new State();\r\n    } else\
+  \ {\r\n        now = State.parse(now);\r\n    }\r\n\r\n    let history = ctx.getStatus(\"\
+  dreamlandStateHistory\");\r\n    if (!history) {\r\n        history = [];\r\n  \
+  \  } else {\r\n        history = JSON.parse(history);\r\n        // 对每个元素进行一次 State.parse\r\
+  \n        history = history.map(State.parse);\r\n    }\r\n\r\n    let info = ctx.getStatus(\"\
+  dreamlandInfo\");\r\n    if (!info) {\r\n        info = new Info();\r\n    } else\
+  \ {\r\n        info = Info.parse(info);\r\n    }\r\n\r\n    let command = request.command.split('\
+  \ ');\r\n    if (command.length == 0) {\r\n        return {\r\n            'status':\
+  \ 'ok',\r\n            'current': currentMsg(now, info)\r\n        };\r\n    }\r\
+  \n    let action = command[0];\r\n\r\n    if (action === \"\") {\r\n        return\
+  \ {\r\n            'status': 'ok',\r\n            'current': currentMsg(now, info)\r\
+  \n        };\r\n    }\r\n\r\n    if (info.isDead && action !== \"rewind\" && action\
+  \ !== \"rw\" && action !== \"pause\") {\r\n        return {\r\n            'status':\
+  \ 'ok',\r\n            'current': currentMsg(now, info)\r\n        };\r\n    }\r\
+  \n\r\n    const lookActions = new Set([\"look\", \"l\", \"examine\", \"x\", \"search\"\
+  , \"check\", \"inspect\"]);\r\n    const moveActions = new Set([\"north\", \"n\"\
+  , \"south\", \"s\", \"west\", \"w\", \"east\", \"e\", \"go\", \"move\", \"walk\"\
+  , \"run\"]);\r\n    const directions = new Set([\"north\", \"n\", \"south\", \"\
+  s\", \"west\", \"w\", \"east\", \"e\"]);\r\n    const getActions = new Set([\"get\"\
+  , \"take\", \"pick\", \"grab\", \"obtain\", \"acquire\"]);\r\n    const dropActions\
+  \ = new Set([\"drop\", \"discard\", \"throw\"]);\r\n    const useActions = new Set([\"\
+  use\", \"open\", \"unlock\"]);\r\n    const invActions = new Set([\"inventory\"\
+  , \"inv\", \"i\", \"bag\", \"backpack\", \"items\", \"stuff\"]);\r\n\r\n    let\
+  \ output = [];\r\n\r\n    function run() {\r\n        if (action === \"help\") {\r\
+  \n            output.push(\"你可以使用这些指令：\");\r\n            output.push(\"  查看：look,\
+  \ examine, search, check, inspect\");\r\n            output.push(\"  移动：north, south,\
+  \ west, east, go, move\");\r\n            output.push(\"  拿取：get, take, grab, obtain,\
+  \ acquire\");\r\n            output.push(\"  放下：drop, discard, throw\");\r\n   \
+  \         output.push(\"  使用：use\");\r\n            output.push(\"  背包：inventory,\
+  \ backpack, items\");\r\n            output.push(\"  等待：wait\");\r\n           \
+  \ output.push(\"……以及，一些可能未列出的其它指令 ;)\");\r\n        } else if (lookActions.has(action))\
+  \ {\r\n            if (command.length === 1) {\r\n                output.push(now.roomDetail(now.player.coord));\r\
+  \n            } else if (command.length === 2) {\r\n                let target =\
+  \ command[1];\r\n                if (target === \"room\") {\r\n                \
+  \    output.push(now.roomDetail(now.player.coord));\r\n                } else if\
+  \ ([\"puzzle_piece\", \"piece\", \"puzzlepiece\", \"jigsaw\"].includes(target))\
+  \ {\r\n                    let pieceId = now.currentRoom().pieceId;\r\n        \
+  \            if (pieceId > 0) {\r\n                        output.push(\"这个房间有一个\"\
+  \ + pieceTable[pieceId]);\r\n                    } else {\r\n                  \
+  \      output.push(\"别乱看（\");\r\n                    }\r\n                } else\
+  \ if (target === \"cannon\" && now.player.coord.equals(new Coord(1, 5))) {\r\n \
+  \                   if (State.greenClock % 3 === 0) {\r\n                      \
+  \  let cannonOutput = \"这门绿色的加农炮没什么动静。\";\r\n                        if (now.key1Coord.equals(new\
+  \ Coord(1, 5)) || now.key2Coord.equals(new Coord(1, 5))) {\r\n                 \
+  \           cannonOutput += \"你发现炮口竟然有一把钥匙！\";\r\n                        }\r\n\
+  \                        output.push(cannonOutput);\r\n                    } else\
+  \ if (State.greenClock % 3 === 1) {\r\n                        let cannonOutput\
+  \ = \"这门绿色的加农炮\";\r\n                        if (now.key1Coord.equals(new Coord(1,\
+  \ 5)) || now.key2Coord.equals(new Coord(1, 5))) {\r\n                          \
+  \  cannonOutput += \"的炮口有一把钥匙。但加农炮\";\r\n                        }\r\n         \
+  \               cannonOutput += \"好像刚刚开火过，炮口非常烫。你不禁后退一步。\";\r\n                \
+  \        output.push(cannonOutput);\r\n                    } else if (State.greenClock\
+  \ % 3 === 2) {\r\n                        let cannonOutput = \"这门绿色的加农炮\";\r\n \
+  \                       if (now.key1Coord.equals(new Coord(1, 5)) || now.key2Coord.equals(new\
+  \ Coord(1, 5))) {\r\n                            cannonOutput += \"的炮口有一把钥匙。但加农炮\"\
+  ;\r\n                        }\r\n                        cannonOutput += \"看起来很危险，像是马上就要开火了。你不禁后退一步。\"\
+  ;\r\n                        output.push(cannonOutput);\r\n                    }\r\
+  \n                } else if ([\"pit\", \"hole\"].includes(target)) {\r\n       \
+  \             if (now.player.coord.equals(new Coord(2, 5))) {\r\n              \
+  \          output.push(\"这个深坑挺深的，虽然不会摔断腿，但一定爬不出来。你觉得跳下去 (jump into) 绝对是个坏主意。\");\r\
+  \n                    } else {\r\n                        output.push(\"别乱看（\");\r\
+  \n                    }\r\n                } else {\r\n                    output.push(\"\
+  别乱看（\");\r\n                }\r\n            }\r\n        } else if (moveActions.has(action))\
+  \ {\r\n            let direction;\r\n            if (command.length === 1 && directions.has(action))\
+  \ {\r\n                direction = action;\r\n            } else if (command.length\
+  \ === 2 && !directions.has(action) && directions.has(command[1])) {\r\n        \
+  \        direction = command[1];\r\n            } else if (command.length === 1)\
+  \ {\r\n                output.push(\"要往哪个方向走？\");\r\n                return;\r\n\
+  \            } else {\r\n                output.push(\"只能 \\\"\" + action + \" <方向>\\\
+  \" 或仅使用 \\\"<方向>\\\"。\");\r\n                return;\r\n            }\r\n      \
+  \      if (direction === \"\") {\r\n                return;\r\n            }\r\n\
+  \r\n            let direcName;\r\n            let ok = false;\r\n            let\
+  \ drow, dcol;\r\n            if (direction === \"north\" || direction === \"n\"\
+  ) {\r\n                direcName = \"北\";\r\n                drow = -1;\r\n    \
+  \            dcol = 0;\r\n                ok = !now.currentRoom().wallNorth && !now.currentRoom().doorNorth;\r\
+  \n                if (ok && now.player.coord.equals(new Coord(3, 2)) && !State.greenDoorOpen)\
+  \ {\r\n                    ok = false;\r\n                }\r\n            } else\
+  \ if (direction === \"south\" || direction === \"s\") {\r\n                direcName\
+  \ = \"南\";\r\n                drow = 1;\r\n                dcol = 0;\r\n       \
+  \         ok = !now.currentRoom().wallSouth && !now.currentRoom().doorSouth;\r\n\
+  \                if (ok && now.player.coord.equals(new Coord(2, 2)) && !State.greenDoorOpen)\
+  \ {\r\n                    ok = false;\r\n                }\r\n            } else\
+  \ if (direction === \"west\" || direction === \"w\") {\r\n                direcName\
+  \ = \"西\";\r\n                drow = 0;\r\n                dcol = -1;\r\n      \
+  \          ok = !now.currentRoom().wallWest && !now.currentRoom().doorWest;\r\n\
+  \            } else if (direction === \"east\" || direction === \"e\") {\r\n   \
+  \             direcName = \"东\";\r\n                drow = 0;\r\n              \
+  \  dcol = 1;\r\n                ok = !now.currentRoom().wallEast && !now.currentRoom().doorEast;\r\
+  \n            }\r\n            if (ok) {\r\n                history.push(State.parse(now.stringify()));\r\
+  \n                now.player.coord.row += drow;\r\n                now.player.coord.col\
+  \ += dcol;\r\n                output.push(\"你向\" + direcName + \"走去。\");\r\n   \
+  \             info.moveWait = false;\r\n                info.moveEast = dcol > 0;\r\
+  \n                info.moveWest = dcol < 0;\r\n                info.moveSouth =\
+  \ drow > 0;\r\n                info.moveNorth = drow < 0;\r\n                now.clock\
+  \ += 1;\r\n                State.greenClock += 1;\r\n                info.needIntroduce\
+  \ = true;\r\n                info.isTracingFatal = info.isTracingEvent = true;\r\
+  \n            } else {\r\n                output.push(\"不能向\" + direcName + \"走。\"\
+  );\r\n            }\r\n        } else if (getActions.has(action)) {\r\n        \
+  \    if (command.length === 1) {\r\n                output.push(\"你要拿什么？\");\r\n\
+  \            } else if (command.length === 2) {\r\n                let item = command[1];\r\
+  \n                if (item === \"key\") {\r\n                    if (now.player.coord.equals(new\
+  \ Coord(1, 5))) {\r\n                        if (State.greenClock % 3 !== 0) {\r\
+  \n                            output.push(\"这里没有 key。\");\r\n                  \
+  \          return;\r\n                        }\r\n                    }\r\n   \
+  \                 if (now.key1Coord.equals(now.player.coord)) {\r\n            \
+  \            output.push(\"你拿到了一把钥匙 (key)。\");\r\n                        now.key1Coord\
+  \ = new Coord(0, 0);\r\n                        now.player.isTakingKey1 = true;\r\
+  \n                    } else if (now.key2Coord.equals(now.player.coord)) {\r\n \
+  \                       output.push(\"你拿到了一把钥匙 (key)。\");\r\n                  \
+  \      now.key2Coord = new Coord(0, 0);\r\n                        now.player.isTakingKey2\
+  \ = true;\r\n                    } else {\r\n                        output.push(\"\
+  这里没有 key。\");\r\n                    }\r\n                } else if (item === \"\
+  green_key\" || item === \"greenkey\") {\r\n                    if (State.greenKeyCoord.equals(now.player.coord))\
+  \ {\r\n                        output.push(\"你拿到了绿色钥匙 (green_key)。\");\r\n     \
+  \                   State.greenKeyCoord = new Coord(0, 0);\r\n                 \
+  \       Player.isTakingGreenKey = true;\r\n                    } else {\r\n    \
+  \                    output.push(\"这里没有 green_key。\");\r\n                    }\r\
+  \n                } else if ([\"piece\", \"puzzle_piece\", \"puzzlepiece\", \"jigsaw\"\
+  ].includes(item)) {\r\n                    let pieceId = now.currentRoom().pieceId;\r\
+  \n                    if (pieceId < 1) {\r\n                        output.push(\"\
+  这里没有 \" + item + \"。\");\r\n                    } else {\r\n                   \
+  \     output.push(\"你拿到了拼图 (piece)。\");\r\n                        now.currentRoom().pieceId\
+  \ = 0;\r\n                        now.player.piecesTaking[pieceId] = 1;\r\n    \
+  \                }\r\n                } else if (item === \"cannon\" && now.player.coord.equals(new\
+  \ Coord(1, 5))) {\r\n                    output.push(\"你不能拿那个\");\r\n          \
+  \      } else if ([\"pit\", \"hole\"].includes(item) && now.player.coord.equals(new\
+  \ Coord(2, 5))) {\r\n                    output.push(\"你不能拿那个\");\r\n          \
+  \      } else {\r\n                    output.push(\"这里没有 \" + item + \"。\");\r\n\
+  \                }\r\n            } else {\r\n                output.push(\"只能 \\\
+  \"\" + action + \" <东西>\\\"\");\r\n            }\r\n        } else if (dropActions.has(action))\
+  \ {\r\n            output.push(\"这个命令没有实现喵~\");\r\n        } else if (useActions.has(action))\
+  \ {\r\n            let useName = action === \"use\" ? \"用\" : \"打开\";\r\n      \
+  \      if (command.length === 1) {\r\n                output.push(\"你要\" + useName\
+  \ + \"什么？\");\r\n            } else if (command.length === 2) {\r\n            \
+  \    let item = command[1];\r\n                if (action === \"use\" && [\"key\"\
+  , \"green_key\", \"greenkey\"].includes(item)) {\r\n                    let itemName\
+  \ = item === \"key\" ? \"钥匙\" : item === \"green_key\" || item === \"greenkey\"\
+  \ ? \"绿色钥匙\" : item;\r\n                    let isKey = item === \"key\" || item\
+  \ === \"green_key\" || item === \"greenkey\";\r\n                    let willUseKey\
+  \ = item === \"key\" && (now.player.isTakingKey1 || now.player.isTakingKey2);\r\n\
+  \                    let willUseGreenKey = (item === \"green_key\" || item === \"\
+  greenkey\") && Player.isTakingGreenKey;\r\n                    if (!isKey || (!willUseKey\
+  \ && !willUseGreenKey)) {\r\n                        output.push(\"你没有 \" + itemName\
+  \ + \"。\");\r\n                        return;\r\n                    }\r\n\r\n\
+  \                    let cur = now.currentRoom();\r\n                    if (cur.doorEast)\
+  \ {\r\n                        output.push(\"你用\" + itemName + \"打开了东边的门。\");\r\n\
+  \                        cur.doorEast = false;\r\n                        now.rooms[cur.coord.row][cur.coord.col\
+  \ + 1].doorWest = false;\r\n                    } else if (cur.doorWest) {\r\n \
+  \                       output.push(\"你用\" + itemName + \"打开了西边的门。\");\r\n     \
+  \                   cur.doorWest = false;\r\n                        now.rooms[cur.coord.row][cur.coord.col\
+  \ - 1].doorEast = false;\r\n                    } else if (cur.doorNorth) {\r\n\
+  \                        output.push(\"你用\" + itemName + \"打开了北边的门。\");\r\n    \
+  \                    cur.doorNorth = false;\r\n                        now.rooms[cur.coord.row\
+  \ - 1][cur.coord.col].doorSouth = false;\r\n                    } else if (cur.doorSouth)\
+  \ {\r\n                        output.push(\"你用\" + itemName + \"打开了南边的门。\");\r\n\
+  \                        cur.doorSouth = false;\r\n                        now.rooms[cur.coord.row\
+  \ + 1][cur.coord.col].doorNorth = false;\r\n                    } else if (cur.coord.equals(new\
+  \ Coord(2, 2)) && !State.greenDoorOpen) {\r\n                        output.push(\"\
+  你用\" + itemName + \"打开了南边绿色的门。\");\r\n                        State.greenDoorOpen\
+  \ = true;\r\n                    } else if (cur.coord.equals(new Coord(3, 2)) &&\
+  \ !State.greenDoorOpen) {\r\n                        output.push(\"你用\" + itemName\
+  \ + \"打开了北边绿色的门。\");\r\n                        State.greenDoorOpen = true;\r\n\
+  \                    } else {\r\n                        output.push(\"这里没有要开的门。\"\
+  );\r\n                        return;\r\n                    }\r\n             \
+  \       if (item === \"key\") {\r\n                        if (now.player.isTakingKey1)\
+  \ {\r\n                            now.player.isTakingKey1 = false;\r\n        \
+  \                } else {\r\n                            now.player.isTakingKey2\
+  \ = false;\r\n                        }\r\n                    } else if (item ===\
+  \ \"green_key\" || item === \"greenkey\") {\r\n                        Player.isTakingGreenKey\
+  \ = false;\r\n                    }\r\n                } else if (action !== \"\
+  use\" && [\"door\", \"green_door\"].includes(item)) {\r\n                    output.push(\"\
+  这个命令没有实现喵~ 请用 \\\"use <物品>\\\"\");\r\n                } else {\r\n             \
+  \       output.push(\"你不能用 \" + item + \"。\");\r\n                }\r\n        \
+  \    } else {\r\n                if (action === \"use\") {\r\n                 \
+  \   output.push(\"只能 \\\" use <物品>\\\"\");\r\n                } else {\r\n     \
+  \               output.push(\"这个命令没有实现喵~ 请用 \\\"use <物品>\\\"\");\r\n           \
+  \     }\r\n            }\r\n        } else if (invActions.has(action)) {\r\n   \
+  \         output.push(\"你有：\");\r\n            let pieceCnt = now.player.piecesTaking.reduce(function\
+  \ (a, b) {\r\n                return a + b;\r\n            }, 0);\r\n          \
+  \  if (!now.player.isTakingKey1 && !now.player.isTakingKey2 && !Player.isTakingGreenKey\
+  \ && pieceCnt === 0) {\r\n                output.push(\"    你咋啥也没有啊\");\r\n    \
+  \        } else {\r\n                if (now.player.isTakingKey1 || now.player.isTakingKey2\
+  \ || Player.isTakingGreenKey) {\r\n                    output.push(\"    \");\r\n\
+  \                }\r\n                if (now.player.isTakingKey1) {\r\n       \
+  \             output.push(\"钥匙 (key)  \");\r\n                }\r\n            \
+  \    if (now.player.isTakingKey2) {\r\n                    output.push(\"钥匙 (key)\
+  \  \");\r\n                }\r\n                if (Player.isTakingGreenKey) {\r\
+  \n                    output.push(\"绿色钥匙 (green_key)  \");\r\n                }\r\
+  \n                if (now.player.isTakingKey1 || now.player.isTakingKey2 || Player.isTakingGreenKey)\
+  \ {\r\n                    output.push(\"\");\r\n                }\r\n         \
+  \       for (let i = 1; i <= 5; i++) {\r\n                    if (now.player.piecesTaking[i])\
+  \ {\r\n                        output.push(\"一个\" + pieceTable[i]);\r\n        \
+  \            }\r\n                }\r\n            }\r\n        } else if (action\
+  \ === \"wait\") {\r\n            let lapse = 0;\r\n            if (command.length\
+  \ === 1) {\r\n                lapse = 1;\r\n            } else if (command.length\
+  \ === 2) {\r\n                lapse = parseInt(command[1]);\r\n                if\
+  \ (isNaN(lapse)) {\r\n                    output.push(\"等待的时长应该是整数\");\r\n     \
+  \               return;\r\n                }\r\n                if (lapse <= 0 ||\
+  \ lapse > 20) {\r\n                    output.push(\"等待的时长应该在 1~20 之间\");\r\n  \
+  \                  return;\r\n                }\r\n            } else {\r\n    \
+  \            output.push(\"只能 \\\"wait\\\" 或 \\\"wait <时长>\\\"\");\r\n         \
+  \       return;\r\n            }\r\n            if (lapse <= 0 || lapse > 20) {\r\
+  \n                throw new Error(\"Assertion failed: lapse should be greater than\
+  \ 0 and less than or equal to 20\");\r\n            }\r\n            output.push(\"\
+  原地等待了 \" + lapse + \" 个单位时长。\");\r\n            info.moveWait = true;\r\n      \
+  \      info.moveEast = info.moveWest = info.moveSouth = info.moveNorth = false;\r\
+  \n            info.isTracingFatal = info.isTracingEvent = true;\r\n            for\
+  \ (let i = 0; i < lapse; i++)\r\n                history.push(State.parse(now.stringify()));\r\
+  \n            now.clock += lapse;\r\n            State.greenClock += lapse;\r\n\
+  \        } else if (action === \"rewind\" || action === \"rw\") {\r\n          \
+  \  let lapse = 0;\r\n            if (command.length === 1) {\r\n               \
+  \ if (now.clock === 0) {\r\n                    output.push(\"已经是最早的时刻了。\");\r\n\
+  \                    return;\r\n                }\r\n                lapse = 1;\r\
+  \n            } else if (command.length === 2) {\r\n                lapse = parseInt(command[1]);\r\
+  \n                if (isNaN(lapse)) {\r\n                    output.push(\"倒流的时长应该是整数\"\
+  );\r\n                    return;\r\n                }\r\n                if (now.clock\
+  \ === 0) {\r\n                    output.push(\"已经是最早的时刻了。\");\r\n             \
+  \       return;\r\n                }\r\n                if (lapse <= 0 || lapse\
+  \ > now.clock) {\r\n                    output.push(\"倒流的时长应该在 1~\" + now.clock\
+  \ + \" 之间\");\r\n                    if (lapse === 0) {\r\n                    \
+  \    output.push(\"如果你想暂停时间，可以使用 \\\"pause\\\"\");\r\n                    }\r\n\
+  \                    return;\r\n                }\r\n            } else {\r\n  \
+  \              output.push(\"只能 \\\"rewind\\\" 或 \\\"rewind <时长>\\\"\");\r\n   \
+  \             return;\r\n            }\r\n            if (lapse <= 0 || lapse >\
+  \ now.clock) {\r\n                throw new Error(\"Assertion failed: lapse should\
+  \ be greater than 0 and less than or equal to now.clock\");\r\n            }\r\n\
+  \            output.push(\"倒流了 \" + lapse + \" 个单位时长。\");\r\n\r\n            let\
+  \ targetClock = now.clock - lapse;\r\n            if (targetClock < Player.lastTimeGreen)\
+  \ {\r\n                let savedPlayer = now.clock === Player.lastTimeGreen ? now.player\
+  \ : history[Player.lastTimeGreen].player;\r\n                history[targetClock].player\
+  \ = savedPlayer;\r\n                if (savedPlayer.isTakingKey1) {\r\n        \
+  \            history[targetClock].key1Coord = new Coord(0, 0);\r\n             \
+  \   }\r\n                if (savedPlayer.isTakingKey2) {\r\n                   \
+  \ history[targetClock].key2Coord = new Coord(0, 0);\r\n                }\r\n   \
+  \         }\r\n            info.isDead = false;\r\n            State.greenClock\
+  \ += lapse;\r\n            info.isTracingEvent = true;\r\n            now = history[targetClock];\r\
+  \n            history.length = targetClock;\r\n            info.needIntroduce =\
+  \ true;\r\n        } else if (action === \"pause\") {\r\n            let lapse =\
+  \ 0;\r\n            if (command.length === 1) {\r\n                lapse = 1;\r\n\
+  \            } else if (command.length === 2) {\r\n                lapse = parseInt(command[1]);\r\
+  \n                if (isNaN(lapse)) {\r\n                    output.push(\"暂停的时长应该是整数\"\
+  );\r\n                    return;\r\n                }\r\n                if (lapse\
+  \ <= 0 || lapse > 20) {\r\n                    output.push(\"暂停的时长应该在 1~20 之间\"\
+  );\r\n                    return;\r\n                }\r\n            } else {\r\
+  \n                output.push(\"只能 \\\"pause\\\" 或 \\\"pause <时长>\\\"\");\r\n  \
+  \              return;\r\n            }\r\n            if (lapse <= 0 || lapse >\
+  \ 20) {\r\n                throw new Error(\"Assertion failed: lapse should be greater\
+  \ than 0 and less than or equal to 20\");\r\n            }\r\n            output.push(\"\
+  暂停了 \" + lapse + \" 个单位时长。\");\r\n            State.greenClock += lapse;\r\n   \
+  \     } else if ([\"jump\", \"descend\"].includes(action)) {\r\n            if (command.length\
+  \ === 2 && command[1] === \"into\") {\r\n                output.push(\"你要跳到哪里？\"\
+  );\r\n                return;\r\n            } else if (command.length === 3 &&\
+  \ command[1] === \"into\") {\r\n                let target = command[2];\r\n   \
+  \             if ([\"hole\", \"pit\"].includes(target)) {\r\n                  \
+  \  if (now.player.coord.equals(new Coord(2, 5))) {\r\n                        output.push(\"\
+  你跳进了洞里。\");\r\n                        history.push(State.parse(now.stringify()));\r\
+  \n                        now.player.coord = new Coord(1, 1);\r\n              \
+  \          info.needIntroduce = true;\r\n                    } else {\r\n      \
+  \                  output.push(\"这里没有 hole。\");\r\n                    }\r\n   \
+  \             } else if (now.player.coord.equals(new Coord(1, 5)) && target ===\
+  \ \"cannon\") {\r\n                    output.push(\"从常识上考虑，你最终还是放弃了跳进加农炮的打算。\"\
+  );\r\n                } else {\r\n                    output.push(\"这里没有 \" + target\
+  \ + \"。\");\r\n                }\r\n            } else {\r\n                output.push(\"\
+  只能 \\\"jump into <位置>\\\"\");\r\n            }\r\n        } else {\r\n         \
+  \   output.push(\"不认识这个命令喵~\");\r\n        }\r\n    }\r\n\r\n    run();\r\n    let\
+  \ current = currentMsg(now, info);\r\n\r\n    ctx.setStatus(\"dreamlandState\",\
+  \ now.stringify());\r\n    ctx.setStatus(\"dreamlandStateHistory\", JSON.stringify(history.map(function\
+  \ (state) {\r\n        return state.stringify()\r\n    })));\r\n    ctx.setStatus(\"\
+  dreamlandInfo\", info.stringify());\r\n\r\n    if (ctx.uid == 164) {\r\n       \
+  \ return {\r\n            'status': 'ok',\r\n            'reply': output,\r\n  \
+  \          'current': current,\r\n            'debug': {\r\n                now_str:\
+  \ now.stringify(),\r\n                now,\r\n                info_str: info.stringify(),\r\
+  \n                info,\r\n            }\r\n        };\r\n    }\r\n    \r\n    return\
+  \ {\r\n        'status': 'ok',\r\n        'reply': output,\r\n        'current':\
+  \ current,\r\n    };\r\n}\r\n\r\n//======= 以下是 JSON 解析与调用脚本，一般不需要修改 ========\r\n\
+  \r\nfunction _jsonProcessHelper(ctx) {\r\n    let request = JSON.parse(ctx.request);\r\
+  \n    let resBody = main(ctx, request);\r\n    let resString = JSON.stringify(resBody);\r\
+  \n    ctx.response(resString);\r\n}\r\n\r\n_jsonProcessHelper(ctx);\r\n"
+title: 幻境后端代码
+type: backend_script

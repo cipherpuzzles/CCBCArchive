@@ -1,0 +1,42 @@
+content:
+- 服务器脚本 c15-typing-game 打字游戏后端
+key: c15-typing-game
+psid: 6
+script: "const LINES = [\"ALL WORK AND NO PLAY MAKES JACK A DULL BOY\",\r\n    \"\
+  ALL WORK AND NO PLAY MAKES JACK A DULL BOUV\",\r\n    \"ALL WORK AND NO PLAY MAKES\
+  \ JACK A DULL NBUV\",\r\n    \"ALL WORK AND NO PLAY MAKES JACK A DU NVNB UV\",\r\
+  \n    \"ALL WORK AND NO PLAY MAKES JACK A NTNV NBUV\",\r\n    \"ALL WORK AND NO\
+  \ PLAY MAKES JAC GHNT NVNB UV\",\r\n    \"ALL WORK AND NO PLAY MAKES J TMGH NT NV\
+  \ NBUV\",\r\n    \"ALL WORK AND NO PLAY MAKE RMTM GHNT NV NBUV\",\r\n    \"ALL WORK\
+  \ AND NO PLAY MAB NRM TM GH NT NV NB UV\",\r\n    \"ALL WORK AND NO PLAY HYBN RM\
+  \ TM GHNT NV NB UV\",\r\n    \"ALL WORK AND NOP LTG HYBN RM TM GHNT NVNB UV\",\r\
+  \n    \"ALL WORK AND NO/T GHY BNRM TMGH NTNV NB UV\",\r\n    \"ALL WORK AND TM /\
+  \ TG HYBN RMTM GH NT NVNB UV\",\r\n    \"ALL WORK AYN TM / TG HY BNRM TM GHNT NV\
+  \ NB UV\",\r\n    \"ALL WORB MY NTM / TG HYBN RMTM GH NTNV NB UV\",\r\n    \"ALL\
+  \ WHY BMYN TM / TG HYBN RM TM GH NTNV NB UV\",\r\n    \"AL HYHY BM YN TM / TG HY\
+  \ BN RM TM GH NT NV NB UV\",\r\n    \"HV HY HY BM YN TM / TG HY BN RM TM GH NT NV\
+  \ NB UV\"\r\n];\r\n\r\n\r\nfunction main(ctx, request) {\r\n    if (request.type\
+  \ == 0) {\r\n        //启动\r\n        let status = {\r\n            line: 0,\r\n\
+  \            start: Date.now()\r\n        };\r\n        ctx.setStatus(\"c\", JSON.stringify(status));\r\
+  \n\r\n        return {\r\n            page: 1,\r\n            text: LINES[status.line]\r\
+  \n        };\r\n    } else if (request.type == 1) {\r\n        let status = JSON.parse(ctx.getStatus(\"\
+  c\"));\r\n        let remain = 300 - Math.floor((Date.now() - status.start) / 1000);\r\
+  \n        if (remain <= 0) { //时间到\r\n            status.line = 0;\r\n         \
+  \   ctx.setStatus(\"c\", JSON.stringify(status));\r\n            return {\r\n  \
+  \              page: 2,\r\n                text: \"\"\r\n            }\r\n     \
+  \   } else {\r\n            if (request.input == LINES[status.line]) {\r\n     \
+  \           status.line += 1;\r\n                if (status.line >= LINES.length)\
+  \ {\r\n                    //win\r\n                    return {\r\n           \
+  \             page: 3,\r\n                        text: \"\"\r\n               \
+  \     }\r\n                } else {\r\n                    ctx.setStatus(\"c\",\
+  \ JSON.stringify(status));\r\n                    return {\r\n                 \
+  \       page: 1,\r\n                        text: LINES[status.line]\r\n       \
+  \             }\r\n                }\r\n            } else { //这不应该发生\r\n      \
+  \          return {\r\n                    page: 2,\r\n                    text:\
+  \ \"\"\r\n                }\r\n            }\r\n        }\r\n        \r\n    }\r\
+  \n}\r\n\r\n//=======以下是JSON解析与调用脚本，一般不需要修改========\r\nfunction _jsonProcessHelper(ctx)\
+  \ {\r\n    let request = JSON.parse(ctx.request);\r\n    let resBody = main(ctx,\
+  \ request);\r\n    let resString = JSON.stringify(resBody);\r\n    ctx.response(resString);\r\
+  \n}\r\n\r\n_jsonProcessHelper(ctx);"
+title: 打字游戏后端
+type: backend_script

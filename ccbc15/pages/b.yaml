@@ -1,0 +1,29 @@
+content: 
+- 与天才美少女的烹饪对决 题目列表
+links:
+- path: ccbc15/pages/main
+  title: 返回索引页
+  type: page
+- path: ccbc15/problems/2/8
+  title: 幸运饼干
+  type: problem
+- path: ccbc15/problems/2/9
+  title: 真正的魔法!
+  type: problem
+- path: ccbc15/problems/2/10
+  title: 装饰彩旗
+  type: problem
+- path: ccbc15/problems/2/11
+  title: 目眩神迷
+  type: problem
+- path: ccbc15/problems/2/12
+  title: 毫无头绪
+  type: problem
+- path: ccbc15/problems/2/13
+  title: 共同语言
+  type: problem
+- path: ccbc15/problems/2/14
+  title: 魔力小姐的烹饪和歌唱课
+  type: problem
+title: 与天才美少女的烹饪对决
+type: page

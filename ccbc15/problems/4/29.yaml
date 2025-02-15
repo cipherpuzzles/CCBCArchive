@@ -1,0 +1,249 @@
+answer: ANGELFISH
+answer-analysis: '本题其实是一道德州扑克题。
+
+
+  注意到题面中很多地方都和德扑有关：
+
+
+  1. 题目描述中的「筹码」和「all in」
+
+  2. 左边都是五个字，右边都是两个字，和五张公共牌+若干手牌相对应
+
+  3. 字体的颜色是黑色和红色，和扑克的花色相对应
+
+
+  我们首先要将「字」转换成「扑克」。注意到红色字的发音都是二四声，黑色都是一三声，且声调数量为4正好对应上花色总数，同时所有字的笔画数都不超过13。因此，可以将每个字都转换成一张扑克，声调转换成花色，笔画数转换成扑克点数。
+
+
+  前三组是没有〇的，选项得票数的大小关系也满足手牌的大小关系，可以进一步确定是德州扑克。
+
+
+  后续几组都是有〇的，但可以发现选项票数的大小关系一直没有发生变化（是的为了维持这个大小关系，官方后台一直在控票刷假票，控票也是真实萌战的一环）那么可以用手牌的大小关系来反推公共牌中〇所表示的缺失的扑克大小，然后再使用扑克次序（黑桃一黑桃二……红心一红心二……）将扑克转换成字母。
+
+
+  最后，每组所展示的选项顺序也是有意义的。计算其康托展开的排名后可以发现每一组的康托展开排名都是1~9的平方数，使用这个对提取的字母进行排序，得到最后的答案**ANGELFISH**
+
+
+  | **组别** | **选项**               | **公共牌**         | **手牌一** | **手牌二** | **手牌三**
+  | **手牌四** | **手牌五** | **手牌六** | **手牌七** | **缺失的公共牌** | **代表字母** | **大小关系** | **康托展开**
+  | **答案次序** |
+
+  |:------:|:--------------------:|:---------------:|:-----------:|:-----------:|:-----------:|:-----------:|:-----------:|:-----------:|:-----------:|:--:|:--:|:--:|:--------:|:--:|
+
+  | 青〇恋物语  | 雪乃 结衣 一色             | ♠️8 ♦️T ♦️8 ♣️9 | ♣️J ♣️2 | ♥️9 ♠️6 | ♠️A ♦️6
+  |         |         |         |         | A          | A        | 123      | 1        |
+  1        |
+
+  | 〇等分新娘  | 三玖 二乃 一花 五月 四葉       | ♣️Q ♠️4 ♠️K ♥️T | ♠️3 ♣️7 | ♦️2 ♣️2 | ♠️A ♠️7
+  | ♣️4 ♦️4 | ♦️5 ♦️Q |         |         | A          | N        | 12453    | 4        |
+  2        |
+
+  | 孤独摇滚〇  | 妙脆 一里 贝斯 郁代          | ♠️8 ♥️9 ♥️K ♣️K | ♦️7 ♦️T | ♠️A ♣️7 | ♦️4 ♠️Q
+  | ♦️8 ♦️5 |         |         |         | 7          | G        | 2314     | 9        |
+  3        |
+
+  | 闲散解谜〇  | 五肉 喷菇 皮巨 可乐 小狐       | ♥️7 ♣️Q ♣️K ♥️J | ♣️4 ♦️6 | ♠️Q ♠️J | ♥️5 ♦️4
+  | ♣️5 ♦️5 | ♣️3 ♥️8 |         |         | 5          | E        | 14352    | 16       |
+  4        |
+
+  | 节奏型〇戏  | 玩蛇 中二 太鼓 喵斯 音击       | ♥️5 ♦️9 ♥️9 ♦️6 | ♥️8 ♥️J | ♠️4 ♦️2 | ♦️4 ♣️K
+  | ♠️J ♠️Q | ♠️9 ♠️5 |         |         | Q          | L        | 21345    | 25       |
+  5        |
+
+  | 〇一线城市  | 理塘 广州 北京 深圳 上海       | ♠️A ♦️8 ♥️9 ♦️5 | ♣️J ♥️K | ♣️3 ♠️6 | ♣️5 ♠️8
+  | ♠️J ♦️6 | ♦️3 ♣️T |         |         | 6          | F        | 23541    | 36       |
+  6        |
+
+  | 虚拟区主〇  | 泠鸢 七海 羽衣 阿萨 绊爱       | ♠️J ♣️7 ♠️4 ♣️5 | ♥️8 ♠️8 | ♠️2 ♣️T | ♣️6 ♠️6
+  | ♠️7 ♦️J | ♦️8 ♦️T |         |         | 9          | I        | 31245    | 49       |
+  7        |
+
+  | 多边〇几何  | 正方 三角 圆圈 六芒 五星       | ♠️6 ♠️5 ♣️2 ♥️7 | ♦️5 ♠️4 | ♠️3 ♣️7 | ♥️T ♠️J
+  | ♦️4 ♥️6 | ♣️4 ♠️9 |         |         | 6          | S        | 34251    | 64       |
+  8        |
+
+  | 传统〇密码  | 九键 零一 替换 培根 盲文 康托 栅栏 | ♥️6 ♣️9 ♦️J ♣️8 | ♣️2 ♦️K | ♥️K ♠️A | ♦️Q ♦️T
+  | ♥️J ♠️T | ♥️8 ♥️4 | ♠️J ♠️6 | ♦️9 ♥️9 | 8          | H        | 1264537  | 81       |
+  9        |
+
+
+
+  '
+content:
+- "你来到了渥太华，这里正在举办投票活动，你凑了上去——\n\n“欢迎来到 CCBC Moe 人气大赏！你觉得谁更萌更可爱呢？快拿上筹码，all in 给你支持的\
+  \ TA 吧！”\n\n<div class=\"infom\">\n<p>投票说明：您可在每个赛区中挑选一位支持对象投票。如果赛区中没有您支持的对象，您也可以忽略此赛区。选择完成后点击最下方的\
+  \ VOTE 按钮投上你宝贵的一票吧！</p>\n<p>每人每小时仅能投 1 票。投票结果将定时刷新并显示在投票页面上。</p>\n</div>\n\n<style>\n\
+  .infom {\n    font-size: 12px;\n}\n</style>\n\n<br>\n\n<span style=\"color: red\"\
+  >\n组委会公告：\n\n经过雪菜党的努力，小木曾雪菜获得的票数终于多过了冬马和纱，完成了反超；同时经组委会调查，「含气型汽水」作为分组名称不利于当下萌战间复杂的竞争关系，于是组委会决定将该分组的名字改为「含汽型饮料」，特此公告。\n\
+  </span>"
+content-type: 2
+desc: ''
+extend-content:
+- 你要离开之前，获得了一份旅游指南，你注意到其中一句话被圈了出来：“欢迎你来珍珠街逛一逛！”
+extend-data: ''
+links:
+- path: ccbc15/index
+  title: 索引页
+  type: index
+- path: ccbc15/pages/d
+  title: 全球呼叫出题组
+  type: page
+tips:
+- content: '注意到题目表述中的「筹码」「all in」以及每个主题和选项的字数，左边主题都是五个字，右边选项都是两个字。
+
+    现实中有什么「事物」和这些都是有关系的呢？'
+  title: 我毫无头绪
+- content: 将汉字转换成扑克牌。注意到汉字的笔画数都在某个范围内，且汉字的某种属性一共有四种。
+  title: 我应该做什么
+- content: 注意到许多主题名字都有一个〇，这代表了一张被隐藏的公共牌，你可以通过手牌的大小关系确定这张公共牌的点数，这个点数是唯一的。注意红色的要+13！
+  title: 如何提取答案
+- content: 每个主题的大小关系可以视作一个康托展开，将其转换为数字后从小到大排序即可。
+  title: 如何排序答案
+title: CCBC MOE
+type: problem
+vue_script: "const { ref, reactive, onMounted, inject } = Vue;\r\n\r\nexport default\
+  \ {\r\n  setup() {\r\n    const voteGroups = ref([\r\n      {\r\n        left: {\
+  \ name: '白色相册二', raw: '<r>白色相册二</r>' },\r\n        right: [\r\n          { img:\
+  \ '/ccbc15/images/4/7d0a9253d04c4fa39dbb3972048dc5e6.webp', name: '冬马', raw: '冬马',\
+  \ votes: 1 },\r\n          { img: '/ccbc15/images/4/d132701ac10946c4933d095c389d5bc2.webp',\
+  \ name: '雪菜', raw: '雪<r>菜</r>', votes: 2 },\r\n        ],\r\n      },\r\n      {\r\
+  \n        left: { name: '含汽型饮料', raw: '<r>含汽型</r>饮<r>料</r>' },\r\n        right:\
+  \ [\r\n          { img: '/ccbc15/images/4/96648d8da0ff4c9f8fbc50c5582c015c.webp',\
+  \ name: '百事', raw: '百<r>事</r>', votes: 2 },\r\n          { img: '/ccbc15/images/4/c51c6f994b5d45baba4046b89d606d73.webp',\
+  \ name: '可口', raw: '可口', votes: 1 },\r\n        ],\r\n      },\r\n      {\r\n  \
+  \      left: { name: '知名汉堡店', raw: '知<r>名汉</r>堡<r>店</r>' },\r\n        right: [\r\
+  \n          { img: '/ccbc15/images/4/ac91062b8c6747218cba7f8be1ee6351.webp', name:\
+  \ '麦门', raw: '<r>麦门</r>', votes: 1 },\r\n          { img: '/ccbc15/images/4/dc0f167837994154945e0861bf834ac5.webp',\
+  \ name: '上校', raw: '<r>上校</r>', votes: 2 },\r\n        ],\r\n      },\r\n      {\r\
+  \n        left: { name: '青〇恋物语', raw: '青〇<r>恋物</r>语' },\r\n        right: [\r\n\
+  \          { img: '/ccbc15/images/4/2b3c09ee19d34544aa3daae650ce109c.webp', name:\
+  \ '雪乃', raw: '雪乃', votes: 1 },\r\n          { img: '/ccbc15/images/4/3c17bc2c9b5d44f3854838f8243cf8df.webp',\
+  \ name: '结衣', raw: '<r>结</r>衣', votes: 2 },\r\n          { img: '/ccbc15/images/4/af513487f4d54677a3494ffb6ecf30d5.webp',\
+  \ name: '一色', raw: '一<r>色</r>', votes: 3 },\r\n        ],\r\n      },\r\n      {\r\
+  \n        left: { name: '孤独摇滚〇', raw: '孤<r>独摇</r>滚〇' },\r\n        right: [\r\n\
+  \          { img: '/ccbc15/images/4/667b62cc498246bd8a89f981746cdb66.webp', name:\
+  \ '妙脆', raw: '<r>妙脆</r>', votes: 2 },\r\n          { img: '/ccbc15/images/4/b266778b37ef4ed5b6c826c922164d73.webp',\
+  \ name: '一里', raw: '一里', votes: 3 },\r\n          { img: '/ccbc15/images/4/df6b6abbed7b4abc9c2ee8752e9c1576.webp',\
+  \ name: '贝斯', raw: '<r>贝</r>斯', votes: 1 },\r\n          { img: '/ccbc15/images/4/d43269ffc51149ab8d83cbfe4735f408.webp',\
+  \ name: '郁代', raw: '<r>郁代</r>', votes: 4 },\r\n        ],\r\n      },\r\n      {\r\
+  \n        left: { name: '〇等分新娘', raw: '<r>〇</r>等分新<r>娘</r>' },\r\n        right:\
+  \ [\r\n          { img: '/ccbc15/images/4/6eaf665a067d4600a9d0bc8ba713df15.webp',\
+  \ name: '三玖', raw: '三玖', votes: 1 },\r\n          { img: '/ccbc15/images/4/9da1ce2ceb294d39970b7a8e5c017ec3.webp',\
+  \ name: '二乃', raw: '<r>二</r>乃', votes: 2 },\r\n          { img: '/ccbc15/images/4/527685ea63a140c598cae5a9e2d8492b.webp',\
+  \ name: '一花', raw: '一花', votes: 4 },\r\n          { img: '/ccbc15/images/4/a846624642fc4ea19512a2c816bbc91e.webp',\
+  \ name: '五月', raw: '五<r>月</r>', votes: 5 },\r\n          { img: '/ccbc15/images/4/9264c72768de45829c84bd42e24ae0b8.webp',\
+  \ name: '四葉', raw: '<r>四葉</r>', votes: 3 },\r\n        ],\r\n      },\r\n      {\r\
+  \n        left: { name: '虚拟区主〇', raw: '虚拟区主〇' },\r\n        right: [\r\n       \
+  \   { img: '/ccbc15/images/4/edb58160ecaa490ca997b7cc2d696f36.webp', name: '泠鸢',\
+  \ raw: '<r>泠</r>鸢', votes: 3 },\r\n          { img: '/ccbc15/images/4/bc18b3fbde824f53b630096bd0b9a96d.webp',\
+  \ name: '七海', raw: '七海', votes: 1 },\r\n          { img: '/ccbc15/images/4/fa8f53cc10934bd99cd35c5262aa786e.webp',\
+  \ name: '羽衣', raw: '羽衣', votes: 2 },\r\n          { img: '/ccbc15/images/4/858599c3238a4a09868af62bd08e07ac.webp',\
+  \ name: '阿萨', raw: '阿<r>萨</r>', votes: 4 },\r\n          { img: '/ccbc15/images/4/939ed86a2d054fb38c03a3689cfd1cab.webp',\
+  \ name: '绊爱', raw: '<r>绊爱</r>', votes: 5 },\r\n        ],\r\n      },\r\n      {\r\
+  \n        left: { name: '闲散解谜〇', raw: '<r>闲</r>散解<r>谜</r>〇' },\r\n        right:\
+  \ [\r\n          { img: '/ccbc15/images/4/28a4b36731754a7fb2921492d2a306aa.webp',\
+  \ name: '五肉', raw: '五<r>肉</r>', votes: 1 },\r\n          { img: '/ccbc15/images/4/f97883cbffb24dbbb51f47281ac3ed4e.webp',\
+  \ name: '喷菇', raw: '喷菇', votes: 4 },\r\n          { img: '/ccbc15/images/4/3e8da04aee804226a2bc7eff0ab604c6.webp',\
+  \ name: '皮巨', raw: '<r>皮巨</r>', votes: 3 },\r\n          { img: '/ccbc15/images/4/9f2f2e56b49849af9151e0bac7f8e7ab.webp',\
+  \ name: '可乐', raw: '可<r>乐</r>', votes: 5 },\r\n          { img: '/ccbc15/images/4/6b12dc5fe18a4296b9eaf6b2103124d5.webp',\
+  \ name: '小狐', raw: '小<r>狐</r>', votes: 2 },\r\n        ],\r\n      },\r\n      {\r\
+  \n        left: { name: '节奏型〇戏', raw: '<r>节奏型</r>〇<r>戏</r>' },\r\n        right:\
+  \ [\r\n          { img: '/ccbc15/images/4/3f3faf8c963d45bb8e55cb5166507572.webp',\
+  \ name: '玩蛇', raw: '<r>玩蛇</r>', votes: 2 },\r\n          { img: '/ccbc15/images/4/0ecd9362da364981b118810ab4ec6ce7.webp',\
+  \ name: '中二', raw: '中<r>二</r>', votes: 1 },\r\n          { img: '/ccbc15/images/4/4414a72c80ae4b999f6102f8aae951da.webp',\
+  \ name: '太鼓', raw: '<r>太</r>鼓', votes: 3 },\r\n          { img: '/ccbc15/images/4/7de9637612ec4314b850870df2228324.webp',\
+  \ name: '喵斯', raw: '喵斯', votes: 4 },\r\n          { img: '/ccbc15/images/4/1d1ba81811e04a01b8db581bad4b0be7.webp',\
+  \ name: '音击', raw: '音击', votes: 5 },\r\n        ],\r\n      },\r\n      {\r\n  \
+  \      left: { name: '多边〇几何', raw: '多边<r>〇</r>几<r>何</r>' },\r\n        right: [\r\
+  \n          { img: '/ccbc15/images/4/d52de0c818fd4551b30af2438fb2834f.webp', name:\
+  \ '正方', raw: '<r>正</r>方', votes: 3 },\r\n          { img: '/ccbc15/images/4/093b456dd18e429cb76c3f079e2eb87d.webp',\
+  \ name: '三角', raw: '三角', votes: 4 },\r\n          { img: '/ccbc15/images/4/d3fffa6dc9214e4796c5e1ec294ffd10.webp',\
+  \ name: '圆圈', raw: '<r>圆</r>圈', votes: 2 },\r\n          { img: '/ccbc15/images/4/75193e24401e4e7eae87e09cd4b1025d.webp',\
+  \ name: '六芒', raw: '<r>六芒</r>', votes: 5 },\r\n          { img: '/ccbc15/images/4/c4701d64934d4883952e07664abf1a4c.webp',\
+  \ name: '五星', raw: '五星', votes: 1 },\r\n        ],\r\n      },\r\n      {\r\n  \
+  \      left: { name: '〇一线城市', raw: '〇一<r>线城市</r>' },\r\n        right: [\r\n   \
+  \       { img: '/ccbc15/images/4/5f86d983b98648d191329e833c02d0db.webp', name: '理塘',\
+  \ raw: '理<r>塘</r>', votes: 2 },\r\n          { img: '/ccbc15/images/4/356f3d1c379c4c8cad26fe2f7ba4e77d.webp',\
+  \ name: '广州', raw: '广州', votes: 3 },\r\n          { img: '/ccbc15/images/4/f3776d33cade48c1983158eac9c0f5cf.webp',\
+  \ name: '北京', raw: '北京', votes: 5 },\r\n          { img: '/ccbc15/images/4/9c65d37fa1b449b786e1324fdc2f6184.webp',\
+  \ name: '深圳', raw: '深<r>圳</r>', votes: 4 },\r\n          { img: '/ccbc15/images/4/157b57236bb04e93b2cdef7b5de650de.webp',\
+  \ name: '上海', raw: '<r>上</r>海', votes: 1 },\r\n        ],\r\n      },\r\n      {\r\
+  \n        left: { name: '传统〇密码', raw: '<r>传</r>统〇<r>密</r>码' },\r\n        right:\
+  \ [\r\n          { img: '/ccbc15/images/4/b6dc22feea01431aad97a255ee8310c3.webp',\
+  \ name: '九键', raw: '九<r>键</r>', votes: 1 },\r\n          { img: '/ccbc15/images/4/94a2823893e44485932714b623901a73.webp',\
+  \ name: '零一', raw: '<r>零</r>一', votes: 2 },\r\n          { img: '/ccbc15/images/4/91e6275dab3e4bcfbf7c8cc738cef85b.webp',\
+  \ name: '替换', raw: '<r>替换</r>', votes: 6 },\r\n          { img: '/ccbc15/images/4/2ca5b071bd6345c7bde7a13a8e421003.webp',\
+  \ name: '培根', raw: '<r>培</r>根', votes: 4 },\r\n          { img: '/ccbc15/images/4/6a7aff9a958049599a17cca9e5a12072.webp',\
+  \ name: '盲文', raw: '<r>盲文</r>', votes: 5 },\r\n          { img: '/ccbc15/images/4/2231514dbc5b4699944d8841de99b042.webp',\
+  \ name: '康托', raw: '康托', votes: 3 },\r\n          { img: '/ccbc15/images/4/082ba0b0db34487abe7ea2848ed9d1ee.webp',\
+  \ name: '栅栏', raw: '<r>栅栏</r>', votes: 7 },\r\n        ],\r\n      },\r\n    ]);\r\
+  \n\r\n    const backend = inject(\"backend\");\r\n    const selectedItems = reactive({});\r\
+  \n\r\n    const selectItem = (groupIndex, itemIndex) => {\r\n      if (selectedItems[groupIndex]\
+  \ === itemIndex) {\r\n        // If the same item is clicked again, deselect it\r\
+  \n        delete selectedItems[groupIndex];\r\n      } else {\r\n        selectedItems[groupIndex]\
+  \ = itemIndex;\r\n      }\r\n    };\r\n\r\n    const isSelected = (groupIndex, itemIndex)\
+  \ => {\r\n      return selectedItems[groupIndex] === itemIndex;\r\n    };\r\n\r\n\
+  \    const submitVote = async () => {\r\n      // Create an array with all groups,\
+  \ defaulting to -1 for non-selected groups\r\n      const vote = voteGroups.value.map((_,\
+  \ groupIndex) => {\r\n        return selectedItems[groupIndex] !== undefined ? selectedItems[groupIndex]\
+  \ : -1;\r\n      });\r\n\r\n      console.log(vote);\r\n\r\n      // Check if at\
+  \ least one vote is cast\r\n      if (!vote.some((item) => item !== -1)) {\r\n \
+  \       alert(\"请至少选择一个选项\");\r\n        return;\r\n      }\r\n\r\n      try {\r\
+  \n        const response = await backend(\"c15-ccbc-moe\", { type: \"vote\", vote\
+  \ });\r\n        if (response.status === \"ok\") {\r\n          alert(response.msg);\r\
+  \n          await fetchVotes(); // Refresh votes after submission\r\n        } else\
+  \ {\r\n          alert(response.msg);\r\n        }\r\n      } catch (error) {\r\n\
+  \        console.error(\"Error submitting vote:\", error);\r\n      }\r\n    };\r\
+  \n\r\n    const showHiddenButton = ref(false);\r\n\r\n    const fetchVotes = async\
+  \ () => {\r\n      try {\r\n        const response = await backend(\"c15-ccbc-moe\"\
+  , { type: \"query\" });\r\n        if (response.status === \"ok\") {\r\n       \
+  \   const votes = response.data.votes;\r\n          voteGroups.value.forEach((group,\
+  \ groupIndex) => {\r\n            group.right.forEach((item, itemIndex) => {\r\n\
+  \              item.votes = votes[groupIndex][itemIndex];\r\n            });\r\n\
+  \          });\r\n          if (response.admin === true) {\r\n            showHiddenButton.value\
+  \ = true;\r\n          }\r\n        } else {\r\n          alert(response.msg);\r\
+  \n        }\r\n      } catch (error) {\r\n        console.error(\"Error fetching\
+  \ votes:\", error);\r\n      }\r\n    };\r\n\r\n    const realResult = ref(false);\r\
+  \n\r\n    const showRealResult = async () => {\r\n      try {\r\n        const response\
+  \ = await backend(\"c15-ccbc-moe\", { type: \"query_real\" });\r\n        if (response.status\
+  \ === \"ok\") {\r\n          const votes = response.data.votes;\r\n          voteGroups.value.forEach((group,\
+  \ groupIndex) => {\r\n            group.right.forEach((item, itemIndex) => {\r\n\
+  \              item.votes = votes[groupIndex][itemIndex];\r\n            });\r\n\
+  \          });\r\n          realResult.value = true;\r\n        } else {\r\n   \
+  \       alert(response.msg);\r\n        }\r\n      } catch (error) {\r\n       \
+  \ console.error(\"Error fetching votes:\", error);\r\n      }\r\n    };\r\n\r\n\
+  \    onMounted(() => {\r\n      fetchVotes();\r\n    });\r\n\r\n    return {\r\n\
+  \      selectedItems,\r\n      selectItem,\r\n      isSelected,\r\n      submitVote,\r\
+  \n      voteGroups,\r\n      showHiddenButton,\r\n      realResult,\r\n      showRealResult,\r\
+  \n    };\r\n  },\r\n};"
+vue_template: "<template>\r\n  <div id=\"moe-main\">\r\n    <div v-for=\"(group, index)\
+  \ in voteGroups\" :key=\"index\" class=\"vote-group\">\r\n      <div class=\"left-part\"\
+  >\r\n        <div class=\"left-content item-name\" v-html=\"group.left.raw\"></div>\r\
+  \n      </div>\r\n      <div class=\"right-part\">\r\n        <div v-for=\"(item,\
+  \ idx) in group.right\" :key=\"idx\" class=\"right-item\">\r\n          <img :src=\"\
+  item.img\" style=\"width: 100px; height: 100px;\" />\r\n          <div class=\"\
+  item-name\" v-html=\"item.raw\"></div>\r\n          <div>{{ realResult ? '真实得票'\
+  \ : '得票' }}：{{ item.votes }}</div>\r\n          <button class=\"el-button el-button--primary\"\
+  \ :class=\"{ selected: isSelected(index, idx) }\"\r\n            @click=\"selectItem(index,\
+  \ idx)\">\r\n            SELECT\r\n          </button>\r\n        </div>\r\n   \
+  \   </div>\r\n    </div>\r\n    <div class=\"btn-container\">\r\n      <button class=\"\
+  el-button el-button--primary func-button\" @click=\"submitVote\">VOTE</button>\r\
+  \n      <button v-if=\"showHiddenButton\" class=\"el-button el-button--primary func-button\"\
+  \ @click=\"showRealResult\">\r\n      REAL RESULT\r\n    </button>\r\n    </div>\r\
+  \n  </div>\r\n</template>\r\n\r\n<style>\r\n  #moe-main {\r\n    /* text-align:\
+  \ center; */\r\n    display:flex;\r\n    flex-direction: column;\r\n  }\r\n\r\n\
+  \  .vote-group {\r\n    display: flex;\r\n    justify-content: left;\r\n    /* justify-content:\
+  \ center; */\r\n    margin-bottom: 20px;\r\n  }\r\n\r\n  .left-part {\r\n    min-width:\
+  \ 100px;\r\n    display: flex;\r\n    align-items: center;\r\n    margin-right:\
+  \ 20px;\r\n    /* flex: 1; */\r\n  }\r\n\r\n  .left-content {\r\n    display: flex;\r\
+  \n    align-items: center;\r\n    justify-content: center;\r\n    height: 100%;\r\
+  \n  }\r\n\r\n  .right-part {\r\n    display: flex;\r\n    flex: 3\r\n  }\r\n\r\n\
+  \  .right-item {\r\n    margin: 0 10px;\r\n    text-align: center;\r\n  }\r\n\r\n\
+  \  .el-button.selected {\r\n    background-color: #42b983;\r\n    color: white;\r\
+  \n  }\r\n\r\n  .func-button {\r\n    margin-top: 20px;\r\n    margin-bottom: 20px;\r\
+  \n    text-align: center;\r\n  }\r\n\r\n  .item-name {\r\n    /* 文字加粗 */\r\n   \
+  \ font-weight: bold;\r\n    text-shadow:\r\n      -.5px -.5px 0 #b3b3b3,\r\n   \
+  \   /* 左上 */\r\n      .5px -.5px 0 #b3b3b3,\r\n      /* 右上 */\r\n      -.5px .5px\
+  \ 0 #b3b3b3,\r\n      /* 左下 */\r\n      .5px .5px 0 #b3b3b3;\r\n    /* 右下 */\r\n\
+  \  }\r\n\r\n  r {\r\n    /* 设置成红色字体 */\r\n    color: red;\r\n  }\r\n\r\n  .btn-container\
+  \ {\r\n    text-align: center;\r\n  }\r\n</style>"
