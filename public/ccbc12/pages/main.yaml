@@ -1,984 +1,916 @@
 type: page
 title: 时光机 - CCBC 12
-content: 
-  - |
-    <div class="container-lg">
-        <div class="row main-area-line">
-            <div class="col">
-                <div class="ratio ratio-bg main-meta-area">
-                    <div class="main-area-container">
-                        <div class="meta-hot-area">
-                            <Transition name="screwleave">
-                                <div class="meta-screw screw-1" @click="metaScrewButton(0)" v-if="showMetaScrew[0] === 1"></div>
-                            </Transition>
-                            <Transition name="screwleave">
-                                <div class="meta-screw screw-2" @click="metaScrewButton(1)" v-if="showMetaScrew[1] === 1"></div>
-                            </Transition>
-                            <Transition name="screwleave">
-                                <div class="meta-screw screw-3" @click="metaScrewButton(2)" v-if="showMetaScrew[2] === 1"></div>
-                            </Transition>
-                            <Transition name="screwleave">
-                                <div class="meta-screw screw-4" @click="metaScrewButton(3)" v-if="showMetaScrew[3] === 1"></div>
-                            </Transition>
-                            <Transition name="screwleave">
-                                <div class="meta-screw screw-5" @click="metaScrewButton(4)" v-if="showMetaScrew[4] === 1"></div>
-                            </Transition>
-                            <Transition name="screwleave">
-                                <div class="meta-screw screw-6" @click="metaScrewButton(5)" v-if="showMetaScrew[5] === 1"></div>
-                            </Transition>
-                            <Transition name="screwleave">
-                                <div class="meta-screw screw-7" @click="metaScrewButton(6)" v-if="showMetaScrew[6] === 1"></div>
-                            </Transition>
-                            <Transition name="screwleave">
-                                <div class="meta-screw screw-8" @click="metaScrewButton(7)" v-if="showMetaScrew[7] === 1"></div>
-                            </Transition>
-                            <Transition name="paneldelay">
-                                <div class="meta-back-arrow-button" @click="metaRecover"></div>
-                            </Transition>
-                            <Transition name="paneldelay">
-                                <div class="meta-puzzle-button" onclick="goLink('mm')"></div>
-                            </Transition>
-                        </div>
-                        <div class="main-area-header">
-                            <div class="left-header-bar">
-                                <button class="left-header-button button-group-start" @click="showTipsContent" data-bs-toggle="tooltip" data-bs-placement="bottom" title="阅读说明信件">
-                                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#FFFFFF"><path d="M0 0h24v24H0z" fill="none"/><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-2h2v2zm2.07-7.75l-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H8c0-2.21 1.79-4 4-4s4 1.79 4 4c0 .88-.36 1.68-.93 2.25z"/></svg>
-                                </button>
-                                <button class="left-header-button button-group-middle" @click="showExplorerdYearHistory" data-bs-toggle="tooltip" data-bs-placement="bottom" title="显示已探测年份列表">
-                                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="currentColor">
-                                        <path d="M0 0h24v24H0z" fill="none"/>
-                                        <path d="M13 3c-4.97 0-9 4.03-9 9H1l3.89 3.89.07.14L9 12H6c0-3.87 3.13-7 7-7s7 3.13 7 7-3.13 7-7 7c-1.93 0-3.68-.79-4.94-2.06l-1.42 1.42C8.27 19.99 10.51 21 13 21c4.97 0 9-4.03 9-9s-4.03-9-9-9zm-1 5v5l4.28 2.54.72-1.21-3.5-2.08V8H12z"/>
-                                    </svg>
-                                </button>
-                                <button class="left-header-button button-group-end" @click="showPuzzleStat" data-bs-toggle="tooltip" data-bs-placement="bottom" title="查看平行世界时间线">
-                                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="currentColor">
-                                        <path d="M0 0h24v24H0z" fill="none"/><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/>
-                                    </svg>
-                                </button>
+content:
+    - |
+        <div class="container-lg">
+            <div class="row main-area-line">
+                <div class="col">
+                    <div class="ratio ratio-bg main-meta-area">
+                        <div class="main-area-container">
+                            <div class="meta-hot-area">
+                                <Transition name="screwleave">
+                                    <div class="meta-screw screw-1" @click="metaScrewButton(0)" v-if="showMetaScrew[0] === 1"></div>
+                                </Transition>
+                                <Transition name="screwleave">
+                                    <div class="meta-screw screw-2" @click="metaScrewButton(1)" v-if="showMetaScrew[1] === 1"></div>
+                                </Transition>
+                                <Transition name="screwleave">
+                                    <div class="meta-screw screw-3" @click="metaScrewButton(2)" v-if="showMetaScrew[2] === 1"></div>
+                                </Transition>
+                                <Transition name="screwleave">
+                                    <div class="meta-screw screw-4" @click="metaScrewButton(3)" v-if="showMetaScrew[3] === 1"></div>
+                                </Transition>
+                                <Transition name="screwleave">
+                                    <div class="meta-screw screw-5" @click="metaScrewButton(4)" v-if="showMetaScrew[4] === 1"></div>
+                                </Transition>
+                                <Transition name="screwleave">
+                                    <div class="meta-screw screw-6" @click="metaScrewButton(5)" v-if="showMetaScrew[5] === 1"></div>
+                                </Transition>
+                                <Transition name="screwleave">
+                                    <div class="meta-screw screw-7" @click="metaScrewButton(6)" v-if="showMetaScrew[6] === 1"></div>
+                                </Transition>
+                                <Transition name="screwleave">
+                                    <div class="meta-screw screw-8" @click="metaScrewButton(7)" v-if="showMetaScrew[7] === 1"></div>
+                                </Transition>
+                                <Transition name="paneldelay">
+                                    <div class="meta-back-arrow-button" @click="metaRecover"></div>
+                                </Transition>
+                                <Transition name="paneldelay">
+                                    <div class="meta-puzzle-button" onclick="goLink('mm')"></div>
+                                </Transition>
                             </div>
-                            <div class="year-explorer-bar" @click="sendYearProbe">
-                                <div class="dropdown">
-                                    <input class="year-explorer-input" data-bs-toggle="dropdown" value="2022"/>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="javascript:;" @click="explorerYear = year">2022</a></li>
-                                        <li><a class="dropdown-item" href="javascript:;" @click="explorerYear = year">2023</a></li>
-                                        <li><a class="dropdown-item" href="javascript:;" @click="explorerYear = year">2024</a></li>
-                                        <li><a class="dropdown-item" href="javascript:;" @click="explorerYear = year">2025</a></li>
-                                        <li><a class="dropdown-item" href="javascript:;" @click="explorerYear = year">2026</a></li>
-                                        <li><a class="dropdown-item" href="javascript:;" @click="explorerYear = year">2027</a></li>
-                                        <li><a class="dropdown-item" href="javascript:;" @click="explorerYear = year">2028</a></li>
-                                        <li><a class="dropdown-item" href="javascript:;" @click="explorerYear = year">2029</a></li>
-                                    </ul>
+                            <div class="main-area-header">
+                                <div class="left-header-bar">
+                                    <button class="left-header-button button-group-start" @click="showTipsContent" data-bs-toggle="tooltip" data-bs-placement="bottom" title="阅读说明信件">
+                                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#FFFFFF"><path d="M0 0h24v24H0z" fill="none"/><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-2h2v2zm2.07-7.75l-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H8c0-2.21 1.79-4 4-4s4 1.79 4 4c0 .88-.36 1.68-.93 2.25z"/></svg>
+                                    </button>
+                                    <button class="left-header-button button-group-middle" @click="showExplorerdYearHistory" data-bs-toggle="tooltip" data-bs-placement="bottom" title="显示已探测年份列表">
+                                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="currentColor">
+                                            <path d="M0 0h24v24H0z" fill="none"/>
+                                            <path d="M13 3c-4.97 0-9 4.03-9 9H1l3.89 3.89.07.14L9 12H6c0-3.87 3.13-7 7-7s7 3.13 7 7-3.13 7-7 7c-1.93 0-3.68-.79-4.94-2.06l-1.42 1.42C8.27 19.99 10.51 21 13 21c4.97 0 9-4.03 9-9s-4.03-9-9-9zm-1 5v5l4.28 2.54.72-1.21-3.5-2.08V8H12z"/>
+                                        </svg>
+                                    </button>
+                                    <button class="left-header-button button-group-end" @click="showPuzzleStat" data-bs-toggle="tooltip" data-bs-placement="bottom" title="查看平行世界时间线">
+                                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="currentColor">
+                                            <path d="M0 0h24v24H0z" fill="none"/><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/>
+                                        </svg>
+                                    </button>
                                 </div>
-                            </div>
-                            <div class="power-point-bar" data-bs-toggle="tooltip" data-bs-placement="bottom" title="当前能量增速：0/min">
-                                <div class="power-point-number">8888888</div>
-                            </div>
-                        </div>
-                        <div class="main-area-zone-list">
-                            <div class="main-area-zone zone-activated">
-                                <div class="puzzle-zone-top">
-                                    <h5>时间线A</h5>
-                                    <div class="puzzle-button puzzle-button-finished" onclick="goLink('p1709')">1709</div>
-                                    <div class="puzzle-button puzzle-button-finished" onclick="goLink('p1727')">1727</div>
-                                    <div class="puzzle-button puzzle-button-finished" onclick="goLink('p1760')">1760</div>
-                                    <div class="puzzle-button puzzle-button-finished" onclick="goLink('p1780')">1780</div>
-                                    <div class="puzzle-button puzzle-button-finished" onclick="goLink('p1791')">1791</div>
-                                    <div class="puzzle-button puzzle-button-finished" onclick="goLink('p1796')">1796</div>
-                                    <div class="puzzle-button puzzle-button-finished" onclick="goLink('p1853')">1853</div>
-                                    <div class="puzzle-button puzzle-button-finished" onclick="goLink('p1947')">1947</div>
-                                    <div class="puzzle-button puzzle-button-finished" onclick="goLink('p2024')">2024</div>
-                                    <div class="puzzle-button puzzle-button-finished" onclick="goLink('p2085')">2085</div>
+                                <div class="year-explorer-bar" @click="sendYearProbe">
+                                    <div class="dropdown">
+                                        <input class="year-explorer-input" data-bs-toggle="dropdown" value="2022"/>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="javascript:;" @click="explorerYear = year">2022</a></li>
+                                            <li><a class="dropdown-item" href="javascript:;" @click="explorerYear = year">2023</a></li>
+                                            <li><a class="dropdown-item" href="javascript:;" @click="explorerYear = year">2024</a></li>
+                                            <li><a class="dropdown-item" href="javascript:;" @click="explorerYear = year">2025</a></li>
+                                            <li><a class="dropdown-item" href="javascript:;" @click="explorerYear = year">2026</a></li>
+                                            <li><a class="dropdown-item" href="javascript:;" @click="explorerYear = year">2027</a></li>
+                                            <li><a class="dropdown-item" href="javascript:;" @click="explorerYear = year">2028</a></li>
+                                            <li><a class="dropdown-item" href="javascript:;" @click="explorerYear = year">2029</a></li>
+                                        </ul>
+                                    </div>
                                 </div>
-                                <div class="puzzle-zone-meta">
-                                    <div class="puzzle-button puzzle-meta-finished" onclick="goLink('ma')">终结点A</div>
+                                <div class="power-point-bar" data-bs-toggle="tooltip" data-bs-placement="bottom" title="当前能量增速：0/min">
+                                    <div class="power-point-number">8888888</div>
                                 </div>
                             </div>
-                            <div class="main-area-zone zone-activated">
-                                <div class="puzzle-zone-top">
-                                    <h5>时间线B</h5>
-                                    <div class="puzzle-button puzzle-button-finished" onclick="goLink('p1747')">1747</div>
-                                    <div class="puzzle-button puzzle-button-finished" onclick="goLink('p1834')">1834</div>
-                                    <div class="puzzle-button puzzle-button-finished" onclick="goLink('p1942')">1942</div>
-                                    <div class="puzzle-button puzzle-button-finished" onclick="goLink('p1982')">1982</div>
-                                    <div class="puzzle-button puzzle-button-finished" onclick="goLink('p1989')">1989</div>
-                                    <div class="puzzle-button puzzle-button-finished" onclick="goLink('p2001')">2001</div>
-                                    <div class="puzzle-button puzzle-button-finished" onclick="goLink('p2016')">2016</div>
-                                    <div class="puzzle-button puzzle-button-finished" onclick="goLink('p2058')">2058</div>
-                                    <div class="puzzle-button puzzle-button-finished" onclick="goLink('p2063')">2063</div>
+                            <div class="main-area-zone-list">
+                                <div class="main-area-zone zone-activated">
+                                    <div class="puzzle-zone-top">
+                                        <h5>时间线A</h5>
+                                        <div class="puzzle-button puzzle-button-finished" onclick="goLink('p1709')">1709</div>
+                                        <div class="puzzle-button puzzle-button-finished" onclick="goLink('p1727')">1727</div>
+                                        <div class="puzzle-button puzzle-button-finished" onclick="goLink('p1760')">1760</div>
+                                        <div class="puzzle-button puzzle-button-finished" onclick="goLink('p1780')">1780</div>
+                                        <div class="puzzle-button puzzle-button-finished" onclick="goLink('p1791')">1791</div>
+                                        <div class="puzzle-button puzzle-button-finished" onclick="goLink('p1796')">1796</div>
+                                        <div class="puzzle-button puzzle-button-finished" onclick="goLink('p1853')">1853</div>
+                                        <div class="puzzle-button puzzle-button-finished" onclick="goLink('p1947')">1947</div>
+                                        <div class="puzzle-button puzzle-button-finished" onclick="goLink('p2024')">2024</div>
+                                        <div class="puzzle-button puzzle-button-finished" onclick="goLink('p2085')">2085</div>
+                                    </div>
+                                    <div class="puzzle-zone-meta">
+                                        <div class="puzzle-button puzzle-meta-finished" onclick="goLink('ma')">终结点A</div>
+                                    </div>
                                 </div>
-                                <div class="puzzle-zone-meta">
-                                    <div class="puzzle-button puzzle-meta-finished" onclick="goLink('mb')">终结点B</div>
+                                <div class="main-area-zone zone-activated">
+                                    <div class="puzzle-zone-top">
+                                        <h5>时间线B</h5>
+                                        <div class="puzzle-button puzzle-button-finished" onclick="goLink('p1747')">1747</div>
+                                        <div class="puzzle-button puzzle-button-finished" onclick="goLink('p1834')">1834</div>
+                                        <div class="puzzle-button puzzle-button-finished" onclick="goLink('p1942')">1942</div>
+                                        <div class="puzzle-button puzzle-button-finished" onclick="goLink('p1982')">1982</div>
+                                        <div class="puzzle-button puzzle-button-finished" onclick="goLink('p1989')">1989</div>
+                                        <div class="puzzle-button puzzle-button-finished" onclick="goLink('p2001')">2001</div>
+                                        <div class="puzzle-button puzzle-button-finished" onclick="goLink('p2016')">2016</div>
+                                        <div class="puzzle-button puzzle-button-finished" onclick="goLink('p2058')">2058</div>
+                                        <div class="puzzle-button puzzle-button-finished" onclick="goLink('p2063')">2063</div>
+                                    </div>
+                                    <div class="puzzle-zone-meta">
+                                        <div class="puzzle-button puzzle-meta-finished" onclick="goLink('mb')">终结点B</div>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="main-area-zone zone-activated">
-                                <div class="puzzle-zone-top">
-                                    <h5>时间线C</h5>
-                                    <div class="puzzle-button puzzle-button-finished" onclick="goLink('p1738')">1738</div>
-                                    <div class="puzzle-button puzzle-button-finished" onclick="goLink('p1764')">1764</div>
-                                    <div class="puzzle-button puzzle-button-finished" onclick="goLink('p1799')">1799</div>
-                                    <div class="puzzle-button puzzle-button-finished" onclick="goLink('p1865')">1865</div>
-                                    <div class="puzzle-button puzzle-button-finished" onclick="goLink('p1893')">1893</div>
-                                    <div class="puzzle-button puzzle-button-finished" onclick="goLink('p1909')">1909</div>
-                                    <div class="puzzle-button puzzle-button-finished" onclick="goLink('p1921')">1921</div>
-                                    <div class="puzzle-button puzzle-button-finished" onclick="goLink('p1957')">1957</div>
-                                    <div class="puzzle-button puzzle-button-finished" onclick="goLink('p1984')">1984</div>
-                                    <div class="puzzle-button puzzle-button-finished" onclick="goLink('p1986')">1986</div>
-                                    <div class="puzzle-button puzzle-button-finished" onclick="goLink('p2005')">2005</div>
-                                    <div class="puzzle-button puzzle-button-finished" onclick="goLink('p2068')">2068</div>
+                                <div class="main-area-zone zone-activated">
+                                    <div class="puzzle-zone-top">
+                                        <h5>时间线C</h5>
+                                        <div class="puzzle-button puzzle-button-finished" onclick="goLink('p1738')">1738</div>
+                                        <div class="puzzle-button puzzle-button-finished" onclick="goLink('p1764')">1764</div>
+                                        <div class="puzzle-button puzzle-button-finished" onclick="goLink('p1799')">1799</div>
+                                        <div class="puzzle-button puzzle-button-finished" onclick="goLink('p1865')">1865</div>
+                                        <div class="puzzle-button puzzle-button-finished" onclick="goLink('p1893')">1893</div>
+                                        <div class="puzzle-button puzzle-button-finished" onclick="goLink('p1909')">1909</div>
+                                        <div class="puzzle-button puzzle-button-finished" onclick="goLink('p1921')">1921</div>
+                                        <div class="puzzle-button puzzle-button-finished" onclick="goLink('p1957')">1957</div>
+                                        <div class="puzzle-button puzzle-button-finished" onclick="goLink('p1984')">1984</div>
+                                        <div class="puzzle-button puzzle-button-finished" onclick="goLink('p1986')">1986</div>
+                                        <div class="puzzle-button puzzle-button-finished" onclick="goLink('p2005')">2005</div>
+                                        <div class="puzzle-button puzzle-button-finished" onclick="goLink('p2068')">2068</div>
+                                    </div>
+                                    <div class="puzzle-zone-meta">
+                                        <div class="puzzle-button puzzle-meta-finished" onclick="goLink('mc')">终结点C</div>
+                                    </div>
                                 </div>
-                                <div class="puzzle-zone-meta">
-                                    <div class="puzzle-button puzzle-meta-finished" onclick="goLink('mc')">终结点C</div>
+                                <div class="main-area-zone zone-activated">
+                                    <div class="puzzle-zone-top">
+                                        <h5>时间线D</h5>
+                                        <div class="puzzle-button puzzle-button-finished" onclick="goLink('p1715')">1715</div>
+                                        <div class="puzzle-button puzzle-button-finished" onclick="goLink('p1750')">1750</div>
+                                        <div class="puzzle-button puzzle-button-finished" onclick="goLink('p1814')">1814</div>
+                                        <div class="puzzle-button puzzle-button-finished" onclick="goLink('p1868')">1868</div>
+                                        <div class="puzzle-button puzzle-button-finished" onclick="goLink('p1939')">1939</div>
+                                        <div class="puzzle-button puzzle-button-finished" onclick="goLink('p1963')">1963</div>
+                                        <div class="puzzle-button puzzle-button-finished" onclick="goLink('p2012')">2012</div>
+                                        <div class="puzzle-button puzzle-button-finished" onclick="goLink('p2088')">2088</div>
+                                    </div>
+                                    <div class="puzzle-zone-meta">
+                                        <div class="puzzle-button puzzle-meta-finished" onclick="goLink('md')">终结点D</div>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="main-area-zone zone-activated">
-                                <div class="puzzle-zone-top">
-                                    <h5>时间线D</h5>
-                                    <div class="puzzle-button puzzle-button-finished" onclick="goLink('p1715')">1715</div>
-                                    <div class="puzzle-button puzzle-button-finished" onclick="goLink('p1750')">1750</div>
-                                    <div class="puzzle-button puzzle-button-finished" onclick="goLink('p1814')">1814</div>
-                                    <div class="puzzle-button puzzle-button-finished" onclick="goLink('p1868')">1868</div>
-                                    <div class="puzzle-button puzzle-button-finished" onclick="goLink('p1939')">1939</div>
-                                    <div class="puzzle-button puzzle-button-finished" onclick="goLink('p1963')">1963</div>
-                                    <div class="puzzle-button puzzle-button-finished" onclick="goLink('p2012')">2012</div>
-                                    <div class="puzzle-button puzzle-button-finished" onclick="goLink('p2088')">2088</div>
+                                <div class="main-area-zone zone-activated">
+                                    <div class="puzzle-zone-top">
+                                        <h5>时间线E</h5>
+                                        <div class="puzzle-button puzzle-button-finished" onclick="goLink('p1722')">1722</div>
+                                        <div class="puzzle-button puzzle-button-finished" onclick="goLink('p1753')">1753</div>
+                                        <div class="puzzle-button puzzle-button-finished" onclick="goLink('p1830')">1830</div>
+                                        <div class="puzzle-button puzzle-button-finished" onclick="goLink('p1899')">1899</div>
+                                        <div class="puzzle-button puzzle-button-finished" onclick="goLink('p1917')">1917</div>
+                                        <div class="puzzle-button puzzle-button-finished" onclick="goLink('p1974')">1974</div>
+                                        <div class="puzzle-button puzzle-button-finished" onclick="goLink('p1992')">1992</div>
+                                        <div class="puzzle-button puzzle-button-finished" onclick="goLink('p2021')">2021</div>
+                                        <div class="puzzle-button puzzle-button-finished" onclick="goLink('p2051')">2051</div>
+                                        <div class="puzzle-button puzzle-button-finished" onclick="goLink('p2066')">2066</div>
+                                    </div>
+                                    <div class="puzzle-zone-meta">
+                                        <div class="puzzle-button puzzle-meta-finished" onclick="goLink('me')">终结点E</div>
+                                    </div>
                                 </div>
-                                <div class="puzzle-zone-meta">
-                                    <div class="puzzle-button puzzle-meta-finished" onclick="goLink('md')">终结点D</div>
-                                </div>
-                            </div>
-                            <div class="main-area-zone zone-activated">
-                                <div class="puzzle-zone-top">
-                                    <h5>时间线E</h5>
-                                    <div class="puzzle-button puzzle-button-finished" onclick="goLink('p1722')">1722</div>
-                                    <div class="puzzle-button puzzle-button-finished" onclick="goLink('p1753')">1753</div>
-                                    <div class="puzzle-button puzzle-button-finished" onclick="goLink('p1830')">1830</div>
-                                    <div class="puzzle-button puzzle-button-finished" onclick="goLink('p1899')">1899</div>
-                                    <div class="puzzle-button puzzle-button-finished" onclick="goLink('p1917')">1917</div>
-                                    <div class="puzzle-button puzzle-button-finished" onclick="goLink('p1974')">1974</div>
-                                    <div class="puzzle-button puzzle-button-finished" onclick="goLink('p1992')">1992</div>
-                                    <div class="puzzle-button puzzle-button-finished" onclick="goLink('p2021')">2021</div>
-                                    <div class="puzzle-button puzzle-button-finished" onclick="goLink('p2051')">2051</div>
-                                    <div class="puzzle-button puzzle-button-finished" onclick="goLink('p2066')">2066</div>
-                                </div>
-                                <div class="puzzle-zone-meta">
-                                    <div class="puzzle-button puzzle-meta-finished" onclick="goLink('me')">终结点E</div>
-                                </div>
-                            </div>
-                            <div class="main-area-zone zone-activated">
-                                <div class="puzzle-zone-top">
-                                    <h5>时间线F</h5>
-                                    <div class="puzzle-button puzzle-button-finished" onclick="goLink('p1726')">1726</div>
-                                    <div class="puzzle-button puzzle-button-finished" onclick="goLink('p1771')">1771</div>
-                                    <div class="puzzle-button puzzle-button-finished" onclick="goLink('p1817')">1817</div>
-                                    <div class="puzzle-button puzzle-button-finished" onclick="goLink('p1876')">1876</div>
-                                    <div class="puzzle-button puzzle-button-finished" onclick="goLink('p1912')">1912</div>
-                                    <div class="puzzle-button puzzle-button-finished" onclick="goLink('p1915')">1915</div>
-                                    <div class="puzzle-button puzzle-button-finished" onclick="goLink('p1923')">1923</div>
-                                    <div class="puzzle-button puzzle-button-finished" onclick="goLink('p1995')">1995</div>
-                                    <div class="puzzle-button puzzle-button-finished" onclick="goLink('p2018')">2018</div>
-                                    <div class="puzzle-button puzzle-button-finished" onclick="goLink('p2030')">2030</div>
-                                    <div class="puzzle-button puzzle-button-finished" onclick="goLink('p2040')">2040</div>
-                                </div>
-                                <div class="puzzle-zone-meta">
-                                    <div class="puzzle-button puzzle-meta-finished" onclick="goLink('mf')">终结点F</div>
+                                <div class="main-area-zone zone-activated">
+                                    <div class="puzzle-zone-top">
+                                        <h5>时间线F</h5>
+                                        <div class="puzzle-button puzzle-button-finished" onclick="goLink('p1726')">1726</div>
+                                        <div class="puzzle-button puzzle-button-finished" onclick="goLink('p1771')">1771</div>
+                                        <div class="puzzle-button puzzle-button-finished" onclick="goLink('p1817')">1817</div>
+                                        <div class="puzzle-button puzzle-button-finished" onclick="goLink('p1876')">1876</div>
+                                        <div class="puzzle-button puzzle-button-finished" onclick="goLink('p1912')">1912</div>
+                                        <div class="puzzle-button puzzle-button-finished" onclick="goLink('p1915')">1915</div>
+                                        <div class="puzzle-button puzzle-button-finished" onclick="goLink('p1923')">1923</div>
+                                        <div class="puzzle-button puzzle-button-finished" onclick="goLink('p1995')">1995</div>
+                                        <div class="puzzle-button puzzle-button-finished" onclick="goLink('p2018')">2018</div>
+                                        <div class="puzzle-button puzzle-button-finished" onclick="goLink('p2030')">2030</div>
+                                        <div class="puzzle-button puzzle-button-finished" onclick="goLink('p2040')">2040</div>
+                                    </div>
+                                    <div class="puzzle-zone-meta">
+                                        <div class="puzzle-button puzzle-meta-finished" onclick="goLink('mf')">终结点F</div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="row screen-warning-info">
-            <p>注意：当前屏幕宽度不足，部分操作可能无法完成！切换至更宽的屏幕以获得完整的体验。</p>
-        </div>
-        <!--操作提示对话框-->
-        <div class="modal fade" id="readTipsDialog" tabindex="-1" role="dialog" aria-labelledby="readTips" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-fullscreen-md-down modal-lg">
-                <div class="modal-content text-light bg-dark">
-                    <div class="modal-header bg-info">
-                        <h4 class="modal-title" id="readTips" style="color: black;">阅读信件</h4>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body" v-html="readTipsContent"></div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">关闭</button>
-                    </div>
-                </div>
+            <div class="row screen-warning-info">
+                <p>注意：当前屏幕宽度不足，部分操作可能无法完成！切换至更宽的屏幕以获得完整的体验。</p>
             </div>
-        </div>
-        <!--探测结果对话框-->
-        <div class="modal fade" id="probeResultDialog" tabindex="-1" role="dialog" aria-labelledby="probeResult" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-fullscreen-md-down modal-lg">
-                <div class="modal-content text-light bg-dark">
-                    <div class="modal-header bg-info">
-                        <h4 class="modal-title" id="probeResult" style="color: black;">探测结果</h4>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <div v-if="yearProbeMessage" class="alert alert-secondary" role="alert">{{yearProbeMessage}}</div>
-                        <div v-if="yearProbeResult" v-html="yearProbeResult"></div>
-                        <div v-else style="color: #999999; text-align: center;">什么都没探测到</div>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">关闭</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!--探测年份列表对话框-->
-        <div class="modal fade" id="probedYearListDialog" tabindex="-1" role="dialog" aria-labelledby="probedList" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-fullscreen-md-down modal-lg">
-                <div class="modal-content text-light bg-dark">
-                    <div class="modal-header bg-info">
-                        <h4 class="modal-title" id="probedList" style="color: black;">已探测的年份</h4>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <div>此处列出所有已探测的年份，包括主动探测和自动探测。存在时间奇点的年份使用浅灰色底色标出。</div>
-                        <div class="probed-year-list-wrapper">
-                            <div v-for="probedYear in probedYearList" :key="'es=' + probedYear.year" class="probed-year-item" :class="[probedYear.is_puzzle ? 'probed-year-puzzle' : '']">{{probedYear.year}}</div>
+            <!--操作提示对话框-->
+            <div class="modal fade" id="readTipsDialog" tabindex="-1" role="dialog" aria-labelledby="readTips" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-fullscreen-md-down modal-lg">
+                    <div class="modal-content text-light bg-dark">
+                        <div class="modal-header bg-info">
+                            <h4 class="modal-title" id="readTips" style="color: black;">阅读信件</h4>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body" v-html="readTipsContent"></div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">关闭</button>
                         </div>
                     </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">关闭</button>
+                </div>
+            </div>
+            <!--探测结果对话框-->
+            <div class="modal fade" id="probeResultDialog" tabindex="-1" role="dialog" aria-labelledby="probeResult" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-fullscreen-md-down modal-lg">
+                    <div class="modal-content text-light bg-dark">
+                        <div class="modal-header bg-info">
+                            <h4 class="modal-title" id="probeResult" style="color: black;">探测结果</h4>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div v-if="yearProbeMessage" class="alert alert-secondary" role="alert">{{yearProbeMessage}}</div>
+                            <div v-if="yearProbeResult" v-html="yearProbeResult"></div>
+                            <div v-else style="color: #999999; text-align: center;">什么都没探测到</div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">关闭</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--探测年份列表对话框-->
+            <div class="modal fade" id="probedYearListDialog" tabindex="-1" role="dialog" aria-labelledby="probedList" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-fullscreen-md-down modal-lg">
+                    <div class="modal-content text-light bg-dark">
+                        <div class="modal-header bg-info">
+                            <h4 class="modal-title" id="probedList" style="color: black;">已探测的年份</h4>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div>此处列出所有已探测的年份，包括主动探测和自动探测。存在时间奇点的年份使用浅灰色底色标出。</div>
+                            <div class="probed-year-list-wrapper">
+                                <div v-for="probedYear in probedYearList" :key="'es=' + probedYear.year" class="probed-year-item" :class="[probedYear.is_puzzle ? 'probed-year-puzzle' : '']">{{probedYear.year}}</div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">关闭</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--平行世界信息对话框-->
+            <div class="modal fade" id="puzzleBoardDialog" tabindex="-1" role="dialog" aria-labelledby="puzzleBoard" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-fullscreen-md-down modal-xl">
+                    <div class="modal-content text-light bg-dark">
+                        <div class="modal-header bg-info">
+                            <h4 class="modal-title" id="puzzleBoard" style="color: black;">平行世界时间线</h4>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <h3>其他平行世界的时间奇点情况</h3>
+                            <div>更新时间： {{ formatTimestamp(puzzleBoardCacheTime)}} （每分钟更新一次）</div>
+                            <div class="mt-2">
+                                <span>选择排序方式：</span>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="puzzleBoardQueryType" id="fcPbQType0" value="0" v-model="puzzleBoardQueryType">
+                                    <label class="form-check-label" for="fcPbQType0">按首次通过时间</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="puzzleBoardQueryType" id="fcPbQType1" value="1" v-model="puzzleBoardQueryType">
+                                    <label class="form-check-label" for="fcPbQType1">按总通过次数</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="puzzleBoardQueryType" id="fcPbQType2" value="2" v-model="puzzleBoardQueryType">
+                                    <label class="form-check-label" for="fcPbQType2">按LIKE数量</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="puzzleBoardQueryType" id="fcPbQType3" value="3" v-model="puzzleBoardQueryType">
+                                    <label class="form-check-label" for="fcPbQType3">按DISLIKE数量</label>
+                                </div>
+                            </div>
+                            <div class="mt-2">
+                                <table class="table table-dark table-hover">
+                                    <colgroup>
+                                        <col width="80px">
+                                        <col>
+                                        <col>
+                                        <col>
+                                        <col>
+                                        <col>
+                                        <col>
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">序号</th>
+                                            <th scope="col">时间奇点</th>
+                                            <th scope="col">首次通过的平行世界</th>
+                                            <th scope="col">首次通过时间</th>
+                                            <th scope="col">总通过次数</th>
+                                            <th scope="col">LIKE</th>
+                                            <th scope="col">DISLIKE</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr v-for="(p, idx) in puzzleBoardResultList">
+                                            <th scope="row">{{ idx + 1 }}</th>
+                                            <td>{{ p.title}}</td>
+                                            <td>{{ p.first_solve_group_name }}</td>
+                                            <td>{{ formatTimestamp(p.first_solve_time) }}</td>
+                                            <td>{{ p.solved_group_count }}</td>
+                                            <td>{{ p.like_count }}</td>
+                                            <td>{{ p.dislike_count }}</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">关闭</button>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!--平行世界信息对话框-->
-        <div class="modal fade" id="puzzleBoardDialog" tabindex="-1" role="dialog" aria-labelledby="puzzleBoard" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-fullscreen-md-down modal-xl">
-                <div class="modal-content text-light bg-dark">
-                    <div class="modal-header bg-info">
-                        <h4 class="modal-title" id="puzzleBoard" style="color: black;">平行世界时间线</h4>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <h3>其他平行世界的时间奇点情况</h3>
-                        <div>更新时间： {{ formatTimestamp(puzzleBoardCacheTime)}} （每分钟更新一次）</div>
-                        <div class="mt-2">
-                            <span>选择排序方式：</span>
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="puzzleBoardQueryType" id="fcPbQType0" value="0" v-model="puzzleBoardQueryType">
-                                <label class="form-check-label" for="fcPbQType0">按首次通过时间</label>
-                            </div>
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="puzzleBoardQueryType" id="fcPbQType1" value="1" v-model="puzzleBoardQueryType">
-                                <label class="form-check-label" for="fcPbQType1">按总通过次数</label>
-                            </div>
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="puzzleBoardQueryType" id="fcPbQType2" value="2" v-model="puzzleBoardQueryType">
-                                <label class="form-check-label" for="fcPbQType2">按LIKE数量</label>
-                            </div>
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="puzzleBoardQueryType" id="fcPbQType3" value="3" v-model="puzzleBoardQueryType">
-                                <label class="form-check-label" for="fcPbQType3">按DISLIKE数量</label>
-                            </div>
-                        </div>
-                        <div class="mt-2">
-                            <table class="table table-dark table-hover">
-                                <colgroup>
-                                    <col width="80px">
-                                    <col>
-                                    <col>
-                                    <col>
-                                    <col>
-                                    <col>
-                                    <col>
-                                </colgroup>
-                                <thead>
-                                    <tr>
-                                        <th scope="col">序号</th>
-                                        <th scope="col">时间奇点</th>
-                                        <th scope="col">首次通过的平行世界</th>
-                                        <th scope="col">首次通过时间</th>
-                                        <th scope="col">总通过次数</th>
-                                        <th scope="col">LIKE</th>
-                                        <th scope="col">DISLIKE</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr v-for="(p, idx) in puzzleBoardResultList">
-                                        <th scope="row">{{ idx + 1 }}</th>
-                                        <td>{{ p.title}}</td>
-                                        <td>{{ p.first_solve_group_name }}</td>
-                                        <td>{{ formatTimestamp(p.first_solve_time) }}</td>
-                                        <td>{{ p.solved_group_count }}</td>
-                                        <td>{{ p.like_count }}</td>
-                                        <td>{{ p.dislike_count }}</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">关闭</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
 content-css: |
-  .main-area-line {
-      margin-top: 65px;
-  }
-  .col {
-      padding-left: 0 !important;
-      padding-right: 0 !important;
-  }
-  .main-area {
-      background-image: url('/ccbc12/assets/frame/bg.png');
-      background-size: 1297px 768px;
-  }
-  .main-meta-area {
-      background-image: url('/ccbc12/assets/frame/bg_meta.png');
-      background-size: 1297px 768px;
-  }
-  .ratio-bg {
-      --bs-aspect-ratio: calc(768 / 1297 * 100%);
-  }
-  .main-area-container .main-area-header {
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-end;
-      height: 115px;
-      padding-left: 151px;
-      padding-right: 151px;
-  }
-  .main-area-container .main-area-header .year-explorer-bar {
-      background-image: url('/ccbc12/assets/frame/year_input.svg');
-      height: 66px;
-      width: 202px;
-      transition: all 0.15s ease-in-out;
-      cursor: pointer;
-  }
-  .main-area-container .main-area-header .year-explorer-bar:hover {
-    filter: brightness(1.1);
-  }
-  .main-area-container .main-area-header .year-explorer-bar:active {
-    filter: brightness(0.9);
-  }
-  .main-area-container .main-area-header .year-explorer-bar .year-explorer-input {
-      border: 0;
-      font-weight: bold;
-      font-size: 24px;
-      line-height: 35px;
-      background: transparent;
-      width: 88px;
-      height: 35px;
-      margin-top: 14px;
-      margin-left: 58px;
-      text-align: center;
-  }
-  .main-area-container .main-area-header .year-explorer-bar .dropdown-menu {
-      width: 92px;
-      min-width: auto !important;
-      height: 450px;
-      overflow-y: auto;
-  }
-  .main-area-container .main-area-header .power-point-bar {
-      background-image: url('/ccbc12/assets/frame/energy_points.svg');
-      height: 41px;
-      width: 129px;
-  }
-  .main-area-container .main-area-header .power-point-bar .power-point-number{
-      color: black;
-      font-weight: bold;
-      text-align: right;
-      padding-right: 3px;
-      line-height: 28px;
-      margin-right: 9px;
-      margin-top: 5px;
-      margin-left: 34px;
-      margin-bottom: 5px;
-  }
-  .main-area-container .main-area-header .left-header-bar{
-      display: flex;
-      width: 129px;
-  }
-  .main-area-container .main-area-header .left-header-bar .left-header-button {
-      border: 2px #000000 solid;
-      background-color: #3f3f3f;
-      height: 40px;
-      width: 40px;
-      color: white;
-      padding: 0;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      transition: all 0.15s ease-in-out;
-  }
-  .main-area-container .main-area-header .left-header-bar .left-header-button:hover {
+    .main-area-line {
+        margin-top: 65px;
+    }
+    .col {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+    .main-area {
+        background-image: url('/ccbc12/assets/frame/bg.png');
+        background-size: 1297px 768px;
+    }
+    .main-meta-area {
+        background-image: url('/ccbc12/assets/frame/bg_meta.png');
+        background-size: 1297px 768px;
+    }
+    .ratio-bg {
+        --bs-aspect-ratio: calc(768 / 1297 * 100%);
+    }
+    .main-area-container .main-area-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        height: 115px;
+        padding-left: 151px;
+        padding-right: 151px;
+    }
+    .main-area-container .main-area-header .year-explorer-bar {
+        background-image: url('/ccbc12/assets/frame/year_input.svg');
+        height: 66px;
+        width: 202px;
+        transition: all 0.15s ease-in-out;
+        cursor: pointer;
+    }
+    .main-area-container .main-area-header .year-explorer-bar:hover {
       filter: brightness(1.1);
-  }
-  .main-area-container .main-area-header .left-header-bar .left-header-button:active {
+    }
+    .main-area-container .main-area-header .year-explorer-bar:active {
       filter: brightness(0.9);
-  }
-  .main-area-container .main-area-header .left-header-bar .button-group-start {
-      border-top-left-radius: 5px;
-      border-bottom-left-radius: 5px;
-      border-right: 1px rgb(86,86,86) solid;
-  }
-  .main-area-container .main-area-header .left-header-bar .button-group-middle {
-      border-right: 1px rgb(86,86,86) solid;
-  }
-  .main-area-container .main-area-header .left-header-bar .button-group-end {
-      border-top-right-radius: 5px;
-      border-bottom-right-radius: 5px;
-  }
-  .main-area-container .main-area-zone-list {
-      display: flex;
-      justify-content: space-between;
-      margin-top: 35px;
-      padding-left: 135px;
-      padding-right: 135px;
-  }
-  .main-area-container .main-area-zone-list .main-area-zone {
-      width: 157px;
-      height: 541px;
-      transition: all 0.2s ease-in-out;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      align-items: center;
-      padding-top: 20px;
-      padding-bottom: 20px;
-  }
-  .main-area-container .main-area-zone-list .zone-activated {
-      background-image: url('/ccbc12/assets/frame/bg_area_activated.svg');
-  }
-  .main-area-container .main-area-zone-list .zone-inactive {
-      background-image: url('/ccbc12/assets/frame/bg_area_inactive.svg');
-  }
-  .main-area-container .main-area-zone-list .puzzle-zone-top {
-      text-align: center;
-  }
-  .main-area-container .main-area-zone-list .puzzle-zone-top h5 {
-      font-size: 16px;
-      font-weight: bold;
-  }
-  .main-area-container .main-area-zone-list .puzzle-zone-meta {
-      text-align: center;
-  }
-  .main-area-container .main-area-zone-list .puzzle-button {
-      width: 123px;
-      height: 33px;
-      transition: all 0.15s ease-in-out;
-      cursor: pointer;
-      color: black;
-      font-weight: bold;
-      font-size: 16px;
-      line-height: 33px;
-  }
-  .main-area-container .main-area-zone-list .puzzle-button:hover {
-      filter: brightness(1.1);
-  }
-  .main-area-container .main-area-zone-list .puzzle-button:active {
-      filter: brightness(0.9);
-  }
-  .main-area-container .main-area-zone-list .puzzle-button + .puzzle-button{
-      margin-top: 2px;
-  }
-  .main-area-container .main-area-zone-list .puzzle-button-inactive {
-      color: #343434;
-      background-image: url('/ccbc12/assets/frame/button_inactive.svg');
-  }
-  .main-area-container .main-area-zone-list .puzzle-button-activated {
-      background-image: url('/ccbc12/assets/frame/button_activated.svg');
-  }
-  .main-area-container .main-area-zone-list .puzzle-button-finished {
-      background-image: url('/ccbc12/assets/frame/button_finished.svg');
-  }
-  .main-area-container .main-area-zone-list .puzzle-meta-activated {
-      color: white;
-      -webkit-text-stroke: 1px rgba(0, 0, 0, 0.486);
-      background-image: url('/ccbc12/assets/frame/button_meta.svg');
-  }
-  .main-area-container .main-area-zone-list .puzzle-meta-finished {
-      color: white;
-      -webkit-text-stroke: 1px rgba(0, 0, 0, 0.486);
-      background-image: url('/ccbc12/assets/frame/button_meta_finished.svg');
-  }
-  .screen-warning-info {
-      margin-top: 60px;
-      font-size: 26px;
-      display: none;
-  }
-  .probed-year-list-wrapper {
-      display: flex;
-      flex-wrap: wrap;
-  }
-  .probed-year-list-wrapper .probed-year-item {
-      height: 60px;
-      width: 150px;
-      text-align: center;
-      font-weight: bold;
-      line-height: 60px;
-  }
-  .probed-year-list-wrapper .probed-year-puzzle {
-      background-color: #afafaf;
-      color: black;
-  }
-  .meta-hot-area {
-      position: absolute;
-  }
-  .meta-hot-area .meta-screw {
-      position: absolute;
-      height: 10px;
-      width: 10px;
-      background-image: url('/ccbc12/assets/frame/screw.png');
-      background-size: 10px 10px;
-  }
-  .meta-hot-area .meta-back-arrow-button {
-      background-image: url('/ccbc12/assets/frame/backbutton.png');
-      position: absolute;
-      height: 38px;
-      width: 30px;
-      left: 14px;
-      top: 360px;
-      cursor: pointer;
-      transition: all 0.15s ease-in-out;
-  }
-  .meta-hot-area .meta-back-arrow-button:hover {
-      filter: brightness(0.6)
-  }
-  .meta-hot-area .meta-back-arrow-button:active {
-      filter: brightness(0.1);
-  }
-  .meta-hot-area .meta-puzzle-button {
-      position: absolute;
-      width: 64px;
-      height: 190px;
-      top: 325px;
-      left: 1187px;
-      cursor: pointer;
-  }
-  .meta-hot-area .meta-puzzle-button:hover {
-      box-shadow: 0 0 10px #962426;
-  }
-  .meta-hot-area .meta-puzzle-button:active {
-      box-shadow: 0 0 10px #561516;
-  }
-  .meta-hot-area .screw-1 {
-      left: 119px;
-      top: 24px;
-  }
-  .meta-hot-area .screw-2 {
-      left: 39px;
-      top: 114px;
-  }
-  .meta-hot-area .screw-3 {
-      left: 1167px;
-      top: 24px;
-  }
-  .meta-hot-area .screw-4 {
-      left: 1247px;
-      top: 114px;
-  }
-  .meta-hot-area .screw-5 {
-      left: 39px;
-      top: 633px;
-  }
-  .meta-hot-area .screw-6 {
-      left: 119px;
-      top: 724px;
-  }
-  .meta-hot-area .screw-7 {
-      left: 1247px;
-      top: 633px;
-  }
-  .meta-hot-area .screw-8 {
-      left: 1167px;
-      top: 724px;
-  }
-  .screwleave-leave-active {
-      animation: screw-leave 1s linear;
-  }
-  .screwleave-enter-active {
-      animation: screw-enter 1s linear;
-  }
-  .paneldelay-enter-active {
-      animation: panel-enter 2s linear;
-  }
-  //rotate 360deg and fade out
-  @keyframes screw-leave {
-      0% {
-          transform: rotate(0deg);
-          opacity: 1;
-      }
-      50% {
-          transform: rotate(-360deg);
-          opacity: 1;
-      }
-      100% {
-          transform: rotate(-720deg);
-          opacity: 0;
-      }
-  }
-  @keyframes screw-enter {
-      0% {
-          transform: rotate(0deg);
-          opacity: 0;
-      }
-      50% {
-          transform: rotate(360deg);
-          opacity: 1;
-      }
-      100% {
-          transform: rotate(720deg);
-          opacity: 1;
-      }
-  }
-  @keyframes panel-enter {
-      0% {
-          opacity: 0;
-      }
-      50% {
-          opacity: 0;
-      }
-      100% {
-          opacity: 1;
-      }
-  }
+    }
+    .main-area-container .main-area-header .year-explorer-bar .year-explorer-input {
+        border: 0;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 35px;
+        background: transparent;
+        width: 88px;
+        height: 35px;
+        margin-top: 14px;
+        margin-left: 58px;
+        text-align: center;
+    }
+    .main-area-container .main-area-header .year-explorer-bar .dropdown-menu {
+        width: 92px;
+        min-width: auto !important;
+        height: 450px;
+        overflow-y: auto;
+    }
+    .main-area-container .main-area-header .power-point-bar {
+        background-image: url('/ccbc12/assets/frame/energy_points.svg');
+        height: 41px;
+        width: 129px;
+    }
+    .main-area-container .main-area-header .power-point-bar .power-point-number{
+        color: black;
+        font-weight: bold;
+        text-align: right;
+        padding-right: 3px;
+        line-height: 28px;
+        margin-right: 9px;
+        margin-top: 5px;
+        margin-left: 34px;
+        margin-bottom: 5px;
+    }
+    .main-area-container .main-area-header .left-header-bar{
+        display: flex;
+        width: 129px;
+    }
+    .main-area-container .main-area-header .left-header-bar .left-header-button {
+        border: 2px #000000 solid;
+        background-color: #3f3f3f;
+        height: 40px;
+        width: 40px;
+        color: white;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all 0.15s ease-in-out;
+    }
+    .main-area-container .main-area-header .left-header-bar .left-header-button:hover {
+        filter: brightness(1.1);
+    }
+    .main-area-container .main-area-header .left-header-bar .left-header-button:active {
+        filter: brightness(0.9);
+    }
+    .main-area-container .main-area-header .left-header-bar .button-group-start {
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        border-right: 1px rgb(86,86,86) solid;
+    }
+    .main-area-container .main-area-header .left-header-bar .button-group-middle {
+        border-right: 1px rgb(86,86,86) solid;
+    }
+    .main-area-container .main-area-header .left-header-bar .button-group-end {
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+    .main-area-container .main-area-zone-list {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 35px;
+        padding-left: 135px;
+        padding-right: 135px;
+    }
+    .main-area-container .main-area-zone-list .main-area-zone {
+        width: 157px;
+        height: 541px;
+        transition: all 0.2s ease-in-out;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .main-area-container .main-area-zone-list .zone-activated {
+        background-image: url('/ccbc12/assets/frame/bg_area_activated.svg');
+    }
+    .main-area-container .main-area-zone-list .zone-inactive {
+        background-image: url('/ccbc12/assets/frame/bg_area_inactive.svg');
+    }
+    .main-area-container .main-area-zone-list .puzzle-zone-top {
+        text-align: center;
+    }
+    .main-area-container .main-area-zone-list .puzzle-zone-top h5 {
+        font-size: 16px;
+        font-weight: bold;
+    }
+    .main-area-container .main-area-zone-list .puzzle-zone-meta {
+        text-align: center;
+    }
+    .main-area-container .main-area-zone-list .puzzle-button {
+        width: 123px;
+        height: 33px;
+        transition: all 0.15s ease-in-out;
+        cursor: pointer;
+        color: black;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 33px;
+    }
+    .main-area-container .main-area-zone-list .puzzle-button:hover {
+        filter: brightness(1.1);
+    }
+    .main-area-container .main-area-zone-list .puzzle-button:active {
+        filter: brightness(0.9);
+    }
+    .main-area-container .main-area-zone-list .puzzle-button + .puzzle-button{
+        margin-top: 2px;
+    }
+    .main-area-container .main-area-zone-list .puzzle-button-inactive {
+        color: #343434;
+        background-image: url('/ccbc12/assets/frame/button_inactive.svg');
+    }
+    .main-area-container .main-area-zone-list .puzzle-button-activated {
+        background-image: url('/ccbc12/assets/frame/button_activated.svg');
+    }
+    .main-area-container .main-area-zone-list .puzzle-button-finished {
+        background-image: url('/ccbc12/assets/frame/button_finished.svg');
+    }
+    .main-area-container .main-area-zone-list .puzzle-meta-activated {
+        color: white;
+        -webkit-text-stroke: 1px rgba(0, 0, 0, 0.486);
+        background-image: url('/ccbc12/assets/frame/button_meta.svg');
+    }
+    .main-area-container .main-area-zone-list .puzzle-meta-finished {
+        color: white;
+        -webkit-text-stroke: 1px rgba(0, 0, 0, 0.486);
+        background-image: url('/ccbc12/assets/frame/button_meta_finished.svg');
+    }
+    .screen-warning-info {
+        margin-top: 60px;
+        font-size: 26px;
+        display: none;
+    }
+    .probed-year-list-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .probed-year-list-wrapper .probed-year-item {
+        height: 60px;
+        width: 150px;
+        text-align: center;
+        font-weight: bold;
+        line-height: 60px;
+    }
+    .probed-year-list-wrapper .probed-year-puzzle {
+        background-color: #afafaf;
+        color: black;
+    }
+    .meta-hot-area {
+        position: absolute;
+    }
+    .meta-hot-area .meta-screw {
+        position: absolute;
+        height: 10px;
+        width: 10px;
+        background-image: url('/ccbc12/assets/frame/screw.png');
+        background-size: 10px 10px;
+    }
+    .meta-hot-area .meta-back-arrow-button {
+        background-image: url('/ccbc12/assets/frame/backbutton.png');
+        position: absolute;
+        height: 38px;
+        width: 30px;
+        left: 14px;
+        top: 360px;
+        cursor: pointer;
+        transition: all 0.15s ease-in-out;
+    }
+    .meta-hot-area .meta-back-arrow-button:hover {
+        filter: brightness(0.6)
+    }
+    .meta-hot-area .meta-back-arrow-button:active {
+        filter: brightness(0.1);
+    }
+    .meta-hot-area .meta-puzzle-button {
+        position: absolute;
+        width: 64px;
+        height: 190px;
+        top: 325px;
+        left: 1187px;
+        cursor: pointer;
+    }
+    .meta-hot-area .meta-puzzle-button:hover {
+        box-shadow: 0 0 10px #962426;
+    }
+    .meta-hot-area .meta-puzzle-button:active {
+        box-shadow: 0 0 10px #561516;
+    }
+    .meta-hot-area .screw-1 {
+        left: 119px;
+        top: 24px;
+    }
+    .meta-hot-area .screw-2 {
+        left: 39px;
+        top: 114px;
+    }
+    .meta-hot-area .screw-3 {
+        left: 1167px;
+        top: 24px;
+    }
+    .meta-hot-area .screw-4 {
+        left: 1247px;
+        top: 114px;
+    }
+    .meta-hot-area .screw-5 {
+        left: 39px;
+        top: 633px;
+    }
+    .meta-hot-area .screw-6 {
+        left: 119px;
+        top: 724px;
+    }
+    .meta-hot-area .screw-7 {
+        left: 1247px;
+        top: 633px;
+    }
+    .meta-hot-area .screw-8 {
+        left: 1167px;
+        top: 724px;
+    }
+    .screwleave-leave-active {
+        animation: screw-leave 1s linear;
+    }
+    .screwleave-enter-active {
+        animation: screw-enter 1s linear;
+    }
+    .paneldelay-enter-active {
+        animation: panel-enter 2s linear;
+    }
+    //rotate 360deg and fade out
+    @keyframes screw-leave {
+        0% {
+            transform: rotate(0deg);
+            opacity: 1;
+        }
+        50% {
+            transform: rotate(-360deg);
+            opacity: 1;
+        }
+        100% {
+            transform: rotate(-720deg);
+            opacity: 0;
+        }
+    }
+    @keyframes screw-enter {
+        0% {
+            transform: rotate(0deg);
+            opacity: 0;
+        }
+        50% {
+            transform: rotate(360deg);
+            opacity: 1;
+        }
+        100% {
+            transform: rotate(720deg);
+            opacity: 1;
+        }
+    }
+    @keyframes panel-enter {
+        0% {
+            opacity: 0;
+        }
+        50% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
 
 links:
-  - 
-    title: CCBC12 索引页
-    type: index
-    path: ccbc12/index
-  -
-    title: 1709
-    type: problem
-    path: ccbc12/problems/a/p1709
-    id: p1709
-  -
-    title: 1727
-    type: problem
-    path: ccbc12/problems/a/p1727
-    id: p1727
-  -
-    title: 1760
-    type: problem
-    path: ccbc12/problems/a/p1760
-    id: p1760
-  -
-    title: 1780
-    type: problem
-    path: ccbc12/problems/a/p1780
-    id: p1780
-  -
-    title: 1791
-    type: problem
-    path: ccbc12/problems/a/p1791
-    id: p1791
-  -
-    title: 1796
-    type: problem
-    path: ccbc12/problems/a/p1796
-    id: p1796
-  -
-    title: 1853
-    type: problem
-    path: ccbc12/problems/a/p1853
-    id: p1853
-  -
-    title: 1947
-    type: problem
-    path: ccbc12/problems/a/p1947
-    id: p1947
-  -
-    title: 2024
-    type: problem
-    path: ccbc12/problems/a/p2024
-    id: p2024
-  -
-    title: 2085
-    type: problem
-    path: ccbc12/problems/a/p2085
-    id: p2085
-  -
-    title: 1747
-    type: problem
-    path: ccbc12/problems/b/p1747
-    id: p1747
-  -
-    title: 1834
-    type: problem
-    path: ccbc12/problems/b/p1834
-    id: p1834
-  -
-    title: 1942
-    type: problem
-    path: ccbc12/problems/b/p1942
-    id: p1942
-  -
-    title: 1982
-    type: problem
-    path: ccbc12/problems/b/p1982
-    id: p1982
-  -
-    title: 1989
-    type: problem
-    path: ccbc12/problems/b/p1989
-    id: p1989
-  -
-    title: 2001
-    type: problem
-    path: ccbc12/problems/b/p2001
-    id: p2001
-  -
-    title: 2016
-    type: problem
-    path: ccbc12/problems/b/p2016
-    id: p2016
-  -
-    title: 2058
-    type: problem
-    path: ccbc12/problems/b/p2058
-    id: p2058
-  -
-    title: 2063
-    type: problem
-    path: ccbc12/problems/b/p2063
-    id: p2063
-  -
-    title: 1738
-    type: problem
-    path: ccbc12/problems/c/p1738
-    id: p1738
-  -
-    title: 1764
-    type: problem
-    path: ccbc12/problems/c/p1764
-    id: p1764
-  -
-    title: 1799
-    type: problem
-    path: ccbc12/problems/c/p1799
-    id: p1799
-  -
-    title: 1865
-    type: problem
-    path: ccbc12/problems/c/p1865
-    id: p1865
-  -
-    title: 1893
-    type: problem
-    path: ccbc12/problems/c/p1893
-    id: p1893
-  -
-    title: 1909
-    type: problem
-    path: ccbc12/problems/c/p1909
-    id: p1909
-  -
-    title: 1921
-    type: problem
-    path: ccbc12/problems/c/p1921
-    id: p1921
-  -
-    title: 1957
-    type: problem
-    path: ccbc12/problems/c/p1957
-    id: p1957
-  -
-    title: 1984
-    type: problem
-    path: ccbc12/problems/c/p1984
-    id: p1984
-  -
-    title: 1986
-    type: problem
-    path: ccbc12/problems/c/p1986
-    id: p1986
-  -
-    title: 2005
-    type: problem
-    path: ccbc12/problems/c/p2005
-    id: p2005
-  -
-    title: 2068
-    type: problem
-    path: ccbc12/problems/c/p2068
-    id: p2068
-  -
-    title: 1715
-    type: problem
-    path: ccbc12/problems/d/p1715
-    id: p1715
-  -
-    title: 1750
-    type: problem
-    path: ccbc12/problems/d/p1750
-    id: p1750
-  -
-    title: 1814
-    type: problem
-    path: ccbc12/problems/d/p1814
-    id: p1814
-  -
-    title: 1868
-    type: problem
-    path: ccbc12/problems/d/p1868
-    id: p1868
-  -
-    title: 1939
-    type: problem
-    path: ccbc12/problems/d/p1939
-    id: p1939
-  -
-    title: 1963
-    type: problem
-    path: ccbc12/problems/d/p1963
-    id: p1963
-  -
-    title: 2012
-    type: problem
-    path: ccbc12/problems/d/p2012
-    id: p2012
-  -
-    title: 2088
-    type: problem
-    path: ccbc12/problems/d/p2088
-    id: p2088
-  -
-    title: 1722
-    type: problem
-    path: ccbc12/problems/e/p1722
-    id: p1722
-  -
-    title: 1753
-    type: problem
-    path: ccbc12/problems/e/p1753
-    id: p1753
-  -
-    title: 1830
-    type: problem
-    path: ccbc12/problems/e/p1830
-    id: p1830
-  -
-    title: 1899
-    type: problem
-    path: ccbc12/problems/e/p1899
-    id: p1899
-  -
-    title: 1917
-    type: problem
-    path: ccbc12/problems/e/p1917
-    id: p1917
-  -
-    title: 1974
-    type: problem
-    path: ccbc12/problems/e/p1974
-    id: p1974
-  -
-    title: 1992
-    type: problem
-    path: ccbc12/problems/e/p1992
-    id: p1992
-  -
-    title: 2021
-    type: problem
-    path: ccbc12/problems/e/p2021
-    id: p2021
-  -
-    title: 2051
-    type: problem
-    path: ccbc12/problems/e/p2051
-    id: p2051
-  -
-    title: 2066
-    type: problem
-    path: ccbc12/problems/e/p2066
-    id: p2066
-  -
-    title: 1726
-    type: problem
-    path: ccbc12/problems/f/p1726
-    id: p1726
-  -
-    title: 1771
-    type: problem
-    path: ccbc12/problems/f/p1771
-    id: p1771
-  -
-    title: 1817
-    type: problem
-    path: ccbc12/problems/f/p1817
-    id: p1817
-  -
-    title: 1876
-    type: problem
-    path: ccbc12/problems/f/p1876
-    id: p1876
-  -
-    title: 1912
-    type: problem
-    path: ccbc12/problems/f/p1912
-    id: p1912
-  -
-    title: 1915
-    type: problem
-    path: ccbc12/problems/f/p1915
-    id: p1915
-  -
-    title: 1923
-    type: problem
-    path: ccbc12/problems/f/p1923
-    id: p1923
-  -
-    title: 1995
-    type: problem
-    path: ccbc12/problems/f/p1995
-    id: p1995
-  -
-    title: 2018
-    type: problem
-    path: ccbc12/problems/f/p2018
-    id: p2018
-  -
-    title: 2030
-    type: problem
-    path: ccbc12/problems/f/p2030
-    id: p2030
-  -
-    title: 2040
-    type: problem
-    path: ccbc12/problems/f/p2040
-    id: p2040
-  -
-    title: 终结点A
-    type: problem
-    path: ccbc12/problems/a/metaa
-    id: ma
-  -
-    title: 终结点B
-    type: problem
-    path: ccbc12/problems/b/metab
-    id: mb
-  -
-    title: 终结点C
-    type: problem
-    path: ccbc12/problems/c/metac
-    id: mc
-  -
-    title: 终结点D
-    type: problem
-    path: ccbc12/problems/d/metad
-    id: md
-  -
-    title: 终结点E
-    type: problem
-    path: ccbc12/problems/e/metae
-    id: me
-  -
-    title: 终结点F
-    type: problem
-    path: ccbc12/problems/f/metaf
-    id: mf
-  -
-    title: CORE
-    type: problem
-    path: ccbc12/problems/mm
-    id: mm
+    - title: CCBC12 索引页
+      type: index
+      path: ccbc12/index
+    - title: 奇怪的瓶子(1709)
+      type: problem
+      path: ccbc12/problems/a/p1709
+      id: p1709
+    - title: 丢失的瓷砖(1727)
+      type: problem
+      path: ccbc12/problems/a/p1727
+      id: p1727
+    - title: 植物大战僵尸(1760)
+      type: problem
+      path: ccbc12/problems/a/p1760
+      id: p1760
+    - title: 咖啡店(1780)
+      type: problem
+      path: ccbc12/problems/a/p1780
+      id: p1780
+    - title: 多彩座钟(1791)
+      type: problem
+      path: ccbc12/problems/a/p1791
+      id: p1791
+    - title: 春联(1796)
+      type: problem
+      path: ccbc12/problems/a/p1796
+      id: p1796
+    - title: welcome_to_ccbc_ctf(1853)
+      type: problem
+      path: ccbc12/problems/a/p1853
+      id: p1853
+    - title: 书法(1947)
+      type: problem
+      path: ccbc12/problems/a/p1947
+      id: p1947
+    - title: 微信截图(2024)
+      type: problem
+      path: ccbc12/problems/a/p2024
+      id: p2024
+    - title: I Wanna(2085)
+      type: problem
+      path: ccbc12/problems/a/p2085
+      id: p2085
+    - title: 十二字真言(1747)
+      type: problem
+      path: ccbc12/problems/b/p1747
+      id: p1747
+    - title: 绝密文件(1834)
+      type: problem
+      path: ccbc12/problems/b/p1834
+      id: p1834
+    - title: 玄幻小说(1942)
+      type: problem
+      path: ccbc12/problems/b/p1942
+      id: p1942
+    - title: 乐队排练(1982)
+      type: problem
+      path: ccbc12/problems/b/p1982
+      id: p1982
+    - title: 破碎的海报(1989)
+      type: problem
+      path: ccbc12/problems/b/p1989
+      id: p1989
+    - title: 黑色方碑(2001)
+      type: problem
+      path: ccbc12/problems/b/p2001
+      id: p2001
+    - title: 幻灯片(2016)
+      type: problem
+      path: ccbc12/problems/b/p2016
+      id: p2016
+    - title: 徽章收纳盒(2058)
+      type: problem
+      path: ccbc12/problems/b/p2058
+      id: p2058
+    - title: 蜿蜒曲线(2063)
+      type: problem
+      path: ccbc12/problems/b/p2063
+      id: p2063
+    - title: 剪影(1738)
+      type: problem
+      path: ccbc12/problems/c/p1738
+      id: p1738
+    - title: 祖玛(1764)
+      type: problem
+      path: ccbc12/problems/c/p1764
+      id: p1764
+    - title: 棋盘一角(1799)
+      type: problem
+      path: ccbc12/problems/c/p1799
+      id: p1799
+    - title: 节目单(1865)
+      type: problem
+      path: ccbc12/problems/c/p1865
+      id: p1865
+    - title: 红色便签纸(1893)
+      type: problem
+      path: ccbc12/problems/c/p1893
+      id: p1893
+    - title: 楔形文字(1909)
+      type: problem
+      path: ccbc12/problems/c/p1909
+      id: p1909
+    - title: A/I(1921)
+      type: problem
+      path: ccbc12/problems/c/p1921
+      id: p1921
+    - title: 舞蹈MV(1957)
+      type: problem
+      path: ccbc12/problems/c/p1957
+      id: p1957
+    - title: 霓虹显示屏(1984)
+      type: problem
+      path: ccbc12/problems/c/p1984
+      id: p1984
+    - title: 吃豆人(1986)
+      type: problem
+      path: ccbc12/problems/c/p1986
+      id: p1986
+    - title: 数字与字(2005)
+      type: problem
+      path: ccbc12/problems/c/p2005
+      id: p2005
+    - title: 残缺纸张(2068)
+      type: problem
+      path: ccbc12/problems/c/p2068
+      id: p2068
+    - title: 活字印刷版(1715)
+      type: problem
+      path: ccbc12/problems/d/p1715
+      id: p1715
+    - title: 蘑菇图鉴(1750)
+      type: problem
+      path: ccbc12/problems/d/p1750
+      id: p1750
+    - title: Bits(1814)
+      type: problem
+      path: ccbc12/problems/d/p1814
+      id: p1814
+    - title: 灰红蓝绿(1868)
+      type: problem
+      path: ccbc12/problems/d/p1868
+      id: p1868
+    - title: 五年高考四年模拟(1939)
+      type: problem
+      path: ccbc12/problems/d/p1939
+      id: p1939
+    - title: 星际战舰(1963)
+      type: problem
+      path: ccbc12/problems/d/p1963
+      id: p1963
+    - title: 经典游戏(2012)
+      type: problem
+      path: ccbc12/problems/d/p2012
+      id: p2012
+    - title: 绳串(2088)
+      type: problem
+      path: ccbc12/problems/d/p2088
+      id: p2088
+    - title: 巨型蜂巢(1722)
+      type: problem
+      path: ccbc12/problems/e/p1722
+      id: p1722
+    - title: 新·三字经(1753)
+      type: problem
+      path: ccbc12/problems/e/p1753
+      id: p1753
+    - title: 魔术指南(1830)
+      type: problem
+      path: ccbc12/problems/e/p1830
+      id: p1830
+    - title: 函数(1899)
+      type: problem
+      path: ccbc12/problems/e/p1899
+      id: p1899
+    - title: 几何(1917)
+      type: problem
+      path: ccbc12/problems/e/p1917
+      id: p1917
+    - title: 积木(1974)
+      type: problem
+      path: ccbc12/problems/e/p1974
+      id: p1974
+    - title: 十四行诗(1992)
+      type: problem
+      path: ccbc12/problems/e/p1992
+      id: p1992
+    - title: 神秘活动(2021)
+      type: problem
+      path: ccbc12/problems/e/p2021
+      id: p2021
+    - title: 二维生物(2051)
+      type: problem
+      path: ccbc12/problems/e/p2051
+      id: p2051
+    - title: 糳糳糳糳糳...(2066)
+      type: problem
+      path: ccbc12/problems/e/p2066
+      id: p2066
+    - title: 旧报纸(1726)
+      type: problem
+      path: ccbc12/problems/f/p1726
+      id: p1726
+    - title: 消失的文字(1771)
+      type: problem
+      path: ccbc12/problems/f/p1771
+      id: p1771
+    - title: 彩虹旗(1817)
+      type: problem
+      path: ccbc12/problems/f/p1817
+      id: p1817
+    - title: 灯泡矩阵(1876)
+      type: problem
+      path: ccbc12/problems/f/p1876
+      id: p1876
+    - title: 车票(1912)
+      type: problem
+      path: ccbc12/problems/f/p1912
+      id: p1912
+    - title: 奇文异字(1915)
+      type: problem
+      path: ccbc12/problems/f/p1915
+      id: p1915
+    - title: 二年级课本(1923)
+      type: problem
+      path: ccbc12/problems/f/p1923
+      id: p1923
+    - title: 沾染墨水的清单(1995)
+      type: problem
+      path: ccbc12/problems/f/p1995
+      id: p1995
+    - title: 音乐CD(2018)
+      type: problem
+      path: ccbc12/problems/f/p2018
+      id: p2018
+    - title: 虚拟现实(2030)
+      type: problem
+      path: ccbc12/problems/f/p2030
+      id: p2030
+    - title: 硅基生物计算器(2040)
+      type: problem
+      path: ccbc12/problems/f/p2040
+      id: p2040
+    - title: 终结点A
+      type: problem
+      path: ccbc12/problems/a/metaa
+      id: ma
+    - title: 终结点B
+      type: problem
+      path: ccbc12/problems/b/metab
+      id: mb
+    - title: 终结点C
+      type: problem
+      path: ccbc12/problems/c/metac
+      id: mc
+    - title: 终结点D
+      type: problem
+      path: ccbc12/problems/d/metad
+      id: md
+    - title: 终结点E
+      type: problem
+      path: ccbc12/problems/e/metae
+      id: me
+    - title: 终结点F
+      type: problem
+      path: ccbc12/problems/f/metaf
+      id: mf
+    - title: CORE
+      type: problem
+      path: ccbc12/problems/mm
+      id: mm
