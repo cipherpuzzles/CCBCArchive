@@ -1,7 +1,10 @@
 answer: THE LUFTWAFFE
 content:
-- "<div class=\"ccbcstylewrapper\">\n    <p>这一只动作敏捷的棕色皮毛的小狐狸纵身跳起来高高越过这一只睡懒觉的大黄狗。</p>\n\
-  \n    <p style=\"font-size: 50px\">“这一只 睡作小这毛懒小小只”</p>\n</div>"
+- |
+  <div class="ccbcstylewrapper">
+    <p>这一只动作敏捷的棕色皮毛的小狐狸纵身跳起来高高越过这一只睡懒觉的大黄狗。</p>
+    <p style="font-size: 50px">“这一只 睡作小这毛懒小小只”</p>
+  </div>
 content-type: 1
 desc: Tel
 extend-data: null

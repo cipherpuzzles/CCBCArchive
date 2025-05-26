@@ -1,16 +1,5 @@
 answer: EASTER
-content:
-- "<div class=\"ccbcstylewrapper\">\n    <style>\n        #star td {\n           \
-  \ width: 50px;\n            height: 50px;\n            text-align: center;\n   \
-  \         font-size: 36px;\n        }\n        .h {\n            background-color:\
-  \ #9c9;\n        }\n    </style>\n    <table id=\"star\">\n    <tr><td>?</td><td>?</td><td>?</td><td></td><td>?</td><td\
-  \ class='h'>?</td><td>?</td><td>?</td><td></td><td></td><td></td><td></td><td></td></tr>\n\
-  \    <tr><td>?</td><td class='h'>?</td><td>?</td><td>?</td><td>?</td><td>?</td><td>?</td><td>?</td><td>?</td><td></td><td></td><td></td><td></td></tr>\n\
-  \    <tr><td>?</td><td>?</td><td>?</td><td>?</td><td>-</td><td class='h'>?</td><td>?</td><td>?</td><td>?</td><td>?</td><td>?</td><td>?</td><td>?</td></tr>\n\
-  \    <tr><td>?</td><td>?</td><td>?</td><td>?</td><td>?</td><td class='h'>?</td><td>?</td><td>?</td><td>?</td><td></td><td></td><td></td><td></td></tr>\n\
-  \    <tr><td>?</td><td>?</td><td>?</td><td>?</td><td>?</td><td>?</td><td class='h'>?</td><td>?</td><td>?</td><td></td><td></td><td></td><td></td></tr>\n\
-  \    <tr><td>?</td><td>?</td><td class='h'>?</td><td>?</td><td>?</td><td>?</td><td>?</td><td>?</td><td>?</td><td></td><td></td><td></td><td></td></tr>\n\
-  \    </table>\n</div>"
+content: []
 content-type: 0
 desc: Ser
 extend-data: null

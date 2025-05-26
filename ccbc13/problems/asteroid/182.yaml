@@ -1,28 +1,39 @@
 answer: YES OR NO QUESTIONS
 content:
-- "<div class=\"ccbcstylewrapper\">\n    <style>\n        #puzzle_table td, #puzzle_table\
-  \ th {\n            padding: 5px 20px;\n            text-align: center;\n      \
-  \      border: 1px solid #999;\n        }\n        #puzzle_table th {\n        \
-  \    font-size: 20px;\n        }\n        #puzzle_table tr.underline td {\n    \
-  \        border-bottom: 2px solid #333;\n        }\n    </style>\n\n    <table id=\"\
-  puzzle_table\">\n    <tr><th>中心对称</th><th>上下对称</th><th>左右对称</th><th>一笔画</th><th>封闭空间</th><th>直线</th><th>化学元素</th><th>质数</th></tr>\n\
-  \    \n    <tr><td></td><td></td><td>✅</td><td></td><td></td><td>✅</td><td>✅</td><td></td></tr>\n\
-  \    <tr><td></td><td>✅</td><td></td><td></td><td></td><td>✅</td><td></td><td>✅</td></tr>\n\
-  \    <tr class=\"underline\"><td>✅</td><td></td><td></td><td>✅</td><td></td><td></td><td>✅</td><td>✅</td></tr>\n\
-  \    \n    <tr><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td></td><td>✅</td><td></td></tr>\n\
-  \    <tr class=\"underline\"><td></td><td></td><td></td><td>✅</td><td>✅</td><td></td><td></td><td></td></tr>\n\
-  \    \n    <tr><td>✅</td><td></td><td></td><td>✅</td><td></td><td>✅</td><td>✅</td><td></td></tr>\n\
-  \    <tr class=\"underline\"><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td></td><td>✅</td><td></td></tr>\n\
-  \    \n    <tr><td></td><td></td><td></td><td>✅</td><td>✅</td><td></td><td></td><td>✅</td></tr>\n\
-  \    <tr><td></td><td></td><td>✅</td><td>✅</td><td></td><td></td><td>✅</td><td></td></tr>\n\
-  \    <tr><td></td><td>✅</td><td></td><td></td><td></td><td>✅</td><td></td><td>✅</td></tr>\n\
-  \    <tr><td>✅</td><td></td><td></td><td>✅</td><td></td><td></td><td>✅</td><td>✅</td></tr>\n\
-  \    <tr><td></td><td></td><td>✅</td><td></td><td></td><td>✅</td><td></td><td></td></tr>\n\
-  \    <tr><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td></td><td>✅</td><td>✅</td><td></td></tr>\n\
-  \    <tr><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td></td><td>✅</td><td></td></tr>\n\
-  \    <tr><td>✅</td><td></td><td></td><td>✅</td><td></td><td>✅</td><td>✅</td><td></td></tr>\n\
-  \    <tr><td>✅</td><td></td><td></td><td>✅</td><td></td><td></td><td>✅</td><td>✅</td></tr>\n\
-  \    </table>\n</div>"
+- |
+  <div class="ccbcstylewrapper">
+    <table id="puzzle_table">
+      <tr><th>中心对称</th><th>上下对称</th><th>左右对称</th><th>一笔画</th><th>封闭空间</th><th>直线</th><th>化学元素</th><th>质数</th></tr>
+      <tr><td></td><td></td><td>✅</td><td></td><td></td><td>✅</td><td>✅</td><td></td></tr>
+      <tr><td></td><td>✅</td><td></td><td></td><td></td><td>✅</td><td></td><td>✅</td></tr>
+      <tr class="underline"><td>✅</td><td></td><td></td><td>✅</td><td></td><td></td><td>✅</td><td>✅</td></tr>
+      <tr><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td></td><td>✅</td><td></td></tr>
+      <tr class="underline"><td></td><td></td><td></td><td>✅</td><td>✅</td><td></td><td></td><td></td></tr>
+      <tr><td>✅</td><td></td><td></td><td>✅</td><td></td><td>✅</td><td>✅</td><td></td></tr>
+      <tr class="underline"><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td></td><td>✅</td><td></td></tr>
+      <tr><td></td><td></td><td></td><td>✅</td><td>✅</td><td></td><td></td><td>✅</td></tr>
+      <tr><td></td><td></td><td>✅</td><td>✅</td><td></td><td></td><td>✅</td><td></td></tr>
+      <tr><td></td><td>✅</td><td></td><td></td><td></td><td>✅</td><td></td><td>✅</td></tr>
+      <tr><td>✅</td><td></td><td></td><td>✅</td><td></td><td></td><td>✅</td><td>✅</td></tr>
+      <tr><td></td><td></td><td>✅</td><td></td><td></td><td>✅</td><td></td><td></td></tr>
+      <tr><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td></td><td>✅</td><td>✅</td><td></td></tr>
+      <tr><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td></td><td>✅</td><td></td></tr>
+      <tr><td>✅</td><td></td><td></td><td>✅</td><td></td><td>✅</td><td>✅</td><td></td></tr>
+      <tr><td>✅</td><td></td><td></td><td>✅</td><td></td><td></td><td>✅</td><td>✅</td></tr>
+    </table>
+  </div>
+content-css: |
+  #puzzle_table td, #puzzle_table th {
+    padding: 5px 20px;
+    text-align: center;  
+    border: 1px solid #999;
+  }
+  #puzzle_table th {  
+    font-size: 20px;
+  }
+  #puzzle_table tr.underline td {
+    border-bottom: 2px solid #333;
+  }
 content-type: 1
 desc: Equ
 extend-data: null

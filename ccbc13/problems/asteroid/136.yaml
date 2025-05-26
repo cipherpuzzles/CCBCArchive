@@ -1,13 +1,5 @@
 answer: MICE
-content:
-- "<div class=\"ccbcstylewrapper\">\n    <style>\n        .a {\n            color:\
-  \ red;\n        }\n        .b {\n            color: blue;\n        }\n    </style>\n\
-  \    <div style=\"font-size: 48px\">\n        <p><span class=\"a\">1</span><span\
-  \ class=\"b\">5</span> → ?</p>\n        <p><span class=\"b\">4</span><span class=\"\
-  a\">6</span><span class=\"b\">5</span> → ?</p>\n        <p><span class=\"b\">7</span><span\
-  \ class=\"a\">2</span><span class=\"b\">6</span><span class=\"b\">2</span> → ?</p>\n\
-  \        <p><span class=\"a\">3</span><span class=\"b\">1</span><span class=\"b\"\
-  >3</span> → ？</p>\n    </div>\n</div>"
+content: []
 content-type: 0
 desc: Mic
 extend-data: null

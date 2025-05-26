@@ -1,90 +1,58 @@
 answer: FIRST CENTURY
 content:
-- "<style>\n    table.crossword td {\n        width: 40px;\n        height: 40px;\n\
-  \        font-size: 25px;\n        border-collapse: collapse;\n        text-align:\
-  \ center;\n    }\n    table.crossword td.grid-white {\n        background-color:\
-  \ white;\n        border: 1px solid;\n    }\n</style>\n<div class=\"ccbcstylewrapper\"\
-  >\n    <a href=\"https://docs.qq.com/sheet/DVk1GS1V2eUdUdk9R?tab=BB08J2\" target=\"\
-  _blank\" style=\"font-size: 20px;\">腾讯文档</a>\n    <div class=\"d-flex\">\n     \
-  \   <table class=\"crossword\">\n        \n<tr><td ></td><td ></td><td class = 'grid-white'>Q</td><td\
-  \ ></td><td ></td><td ></td><td ></td><td ></td><td ></td><td ></td><td ></td><td\
-  \ ></td><td ></td><td ></td><td ></td><td ></td><td ></td><td ></td><td ></td><td\
-  \ ></td></tr>\n<tr><td ></td><td ></td><td class = 'grid-white'>U</td><td ></td><td\
-  \ ></td><td ></td><td ></td><td ></td><td ></td><td ></td><td ></td><td ></td><td\
-  \ ></td><td ></td><td ></td><td ></td><td ></td><td ></td><td ></td><td ></td></tr>\n\
-  <tr><td ></td><td ></td><td class = 'grid-white'>A</td><td ></td><td ></td><td ></td><td\
-  \ ></td><td class = 'grid-white'></td><td ></td><td ></td><td class = 'grid-white'></td><td\
-  \ ></td><td ></td><td ></td><td ></td><td ></td><td ></td><td ></td><td ></td><td\
-  \ ></td></tr>\n<tr><td class = 'grid-white'>D</td><td class = 'grid-white'>I</td><td\
-  \ class = 'grid-white'>R</td><td class = 'grid-white'>E</td><td class = 'grid-white'>C</td><td\
-  \ class = 'grid-white'>T</td><td class = 'grid-white'>I</td><td class = 'grid-white'>O</td><td\
-  \ class = 'grid-white'>N</td><td ></td><td class = 'grid-white'></td><td ></td><td\
-  \ ></td><td ></td><td ></td><td ></td><td ></td><td ></td><td ></td><td ></td></tr>\n\
-  <tr><td ></td><td ></td><td class = 'grid-white'>K</td><td ></td><td ></td><td ></td><td\
-  \ ></td><td class = 'grid-white'></td><td ></td><td ></td><td class = 'grid-white'></td><td\
-  \ ></td><td ></td><td ></td><td ></td><td ></td><td ></td><td ></td><td ></td><td\
-  \ ></td></tr>\n<tr><td ></td><td ></td><td ></td><td ></td><td ></td><td ></td><td\
-  \ ></td><td class = 'grid-white'></td><td ></td><td ></td><td class = 'grid-white'>➊</td><td\
-  \ class = 'grid-white'></td><td class = 'grid-white'></td><td class = 'grid-white'>⑨</td><td\
-  \ ></td><td ></td><td ></td><td ></td><td ></td><td ></td></tr>\n<tr><td ></td><td\
-  \ ></td><td ></td><td ></td><td ></td><td ></td><td class = 'grid-white'>①</td><td\
-  \ class = 'grid-white'>➋</td><td class = 'grid-white'></td><td class = 'grid-white'></td><td\
-  \ class = 'grid-white'>⑤</td><td ></td><td ></td><td ></td><td ></td><td ></td><td\
-  \ ></td><td ></td><td ></td><td ></td></tr>\n<tr><td ></td><td ></td><td ></td><td\
-  \ ></td><td ></td><td ></td><td class = 'grid-white'></td><td ></td><td ></td><td\
-  \ ></td><td class = 'grid-white'></td><td ></td><td ></td><td ></td><td ></td><td\
-  \ ></td><td ></td><td ></td><td ></td><td ></td></tr>\n<tr><td ></td><td ></td><td\
-  \ ></td><td ></td><td class = 'grid-white'></td><td class = 'grid-white'></td><td\
-  \ class = 'grid-white'>➌</td><td class = 'grid-white'></td><td class = 'grid-white'></td><td\
-  \ class = 'grid-white'></td><td class = 'grid-white'></td><td class = 'grid-white'></td><td\
-  \ class = 'grid-white'></td><td class = 'grid-white'>③</td><td class = 'grid-white'>⑩</td><td\
-  \ class = 'grid-white'></td><td class = 'grid-white'></td><td class = 'grid-white'></td><td\
-  \ class = 'grid-white'></td><td ></td></tr>\n<tr><td ></td><td ></td><td ></td><td\
-  \ ></td><td ></td><td ></td><td class = 'grid-white'></td><td ></td><td class =\
-  \ 'grid-white'></td><td ></td><td class = 'grid-white'></td><td ></td><td ></td><td\
-  \ ></td><td ></td><td ></td><td class = 'grid-white'></td><td ></td><td ></td><td\
-  \ ></td></tr>\n<tr><td ></td><td ></td><td ></td><td ></td><td ></td><td ></td><td\
-  \ ></td><td ></td><td class = 'grid-white'>⑦</td><td ></td><td ></td><td ></td><td\
-  \ ></td><td class = 'grid-white'></td><td ></td><td ></td><td class = 'grid-white'></td><td\
-  \ ></td><td ></td><td ></td></tr>\n<tr><td ></td><td ></td><td ></td><td ></td><td\
-  \ ></td><td ></td><td ></td><td ></td><td class = 'grid-white'></td><td ></td><td\
-  \ ></td><td ></td><td ></td><td class = 'grid-white'></td><td ></td><td ></td><td\
-  \ class = 'grid-white'></td><td ></td><td ></td><td ></td></tr>\n<tr><td ></td><td\
-  \ ></td><td ></td><td ></td><td ></td><td ></td><td ></td><td ></td><td class =\
-  \ 'grid-white'></td><td ></td><td ></td><td ></td><td ></td><td class = 'grid-white'>➍</td><td\
-  \ class = 'grid-white'></td><td class = 'grid-white'></td><td class = 'grid-white'></td><td\
-  \ class = 'grid-white'></td><td class = 'grid-white'>④</td><td class = 'grid-white'></td></tr>\n\
-  <tr><td ></td><td ></td><td ></td><td ></td><td ></td><td ></td><td ></td><td ></td><td\
-  \ class = 'grid-white'></td><td ></td><td ></td><td ></td><td ></td><td class =\
-  \ 'grid-white'></td><td ></td><td ></td><td class = 'grid-white'></td><td ></td><td\
-  \ ></td><td ></td></tr>\n<tr><td ></td><td ></td><td ></td><td ></td><td ></td><td\
-  \ ></td><td ></td><td ></td><td class = 'grid-white'>②</td><td ></td><td ></td><td\
-  \ class = 'grid-white'></td><td class = 'grid-white'></td><td class = 'grid-white'></td><td\
-  \ class = 'grid-white'>⑧</td><td class = 'grid-white'></td><td class = 'grid-white'>➎</td><td\
-  \ ></td><td ></td><td ></td></tr>\n<tr><td ></td><td ></td><td ></td><td ></td><td\
-  \ ></td><td ></td><td ></td><td ></td><td class = 'grid-white'></td><td ></td><td\
-  \ ></td><td ></td><td ></td><td class = 'grid-white'>⑥</td><td ></td><td ></td><td\
-  \ ></td><td ></td><td ></td><td ></td></tr>\n<tr><td ></td><td ></td><td ></td><td\
-  \ ></td><td ></td><td ></td><td ></td><td ></td><td class = 'grid-white'>➏</td><td\
-  \ class = 'grid-white'></td><td class = 'grid-white'>⑪</td><td class = 'grid-white'></td><td\
-  \ ></td><td class = 'grid-white'></td><td ></td><td ></td><td ></td><td ></td><td\
-  \ ></td><td ></td></tr>\n<tr><td ></td><td ></td><td ></td><td ></td><td ></td><td\
-  \ ></td><td ></td><td ></td><td class = 'grid-white'></td><td ></td><td ></td><td\
-  \ ></td><td ></td><td class = 'grid-white'></td><td ></td><td class = 'grid-white'></td><td\
-  \ ></td><td ></td><td ></td><td ></td></tr>\n<tr><td ></td><td ></td><td ></td><td\
-  \ ></td><td ></td><td ></td><td ></td><td ></td><td ></td><td ></td><td ></td><td\
-  \ ></td><td ></td><td class = 'grid-white'></td><td ></td><td class = 'grid-white'></td><td\
-  \ ></td><td ></td><td ></td><td ></td></tr>\n<tr><td ></td><td ></td><td ></td><td\
-  \ ></td><td ></td><td ></td><td ></td><td ></td><td ></td><td ></td><td class =\
-  \ 'grid-white'></td><td class = 'grid-white'></td><td class = 'grid-white'></td><td\
-  \ class = 'grid-white'></td><td class = 'grid-white'></td><td class = 'grid-white'>➐</td><td\
-  \ class = 'grid-white'>⑫</td><td ></td><td ></td><td ></td></tr>\n<tr><td ></td><td\
-  \ ></td><td ></td><td ></td><td ></td><td ></td><td ></td><td ></td><td ></td><td\
-  \ ></td><td ></td><td ></td><td ></td><td ></td><td ></td><td class = 'grid-white'></td><td\
-  \ ></td><td ></td><td ></td><td ></td></tr>\n\n\n        </table>\n        <p style=\"\
-  margin-left: 30px\">?\tUP\n<br>➊\tDIAMOND\n<br>➋\tORANGE\n<br>➌\tBASS\n<br>➍\tCANCER\n\
-  <br>➎\tMERCURY\n<br>➏\tQUEEN\n<br>➐\tTURKEY\n        </p>\n    </div>\n    <p style=\"\
-  text-align: center; margin-top: 30px;\">①②③④⑤ ⑥⑦⑧⑨⑩⑪⑫</p>\n</div>"
+- |
+  <div class="ccbcstylewrapper">
+    <a href="https://docs.qq.com/sheet/DVk1GS1V2eUdUdk9R?tab=BB08J2" target="_blank" style="font-size: 20px;">腾讯文档</a>
+    <div class="d-flex">
+      <table class="crossword">
+        <tr><td></td><td></td><td class='grid-white'>Q</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td></td><td></td><td class='grid-white'>U</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td></td><td></td><td class='grid-white'>A</td><td></td><td></td><td></td><td></td><td class='grid-white'></td><td></td><td></td><td class='grid-white'></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td class='grid-white'>D</td><td class='grid-white'>I</td><td class='grid-white'>R</td><td class='grid-white'>E</td><td class='grid-white'>C</td><td class='grid-white'>T</td><td class='grid-white'>I</td><td class='grid-white'>O</td><td class='grid-white'>N</td><td></td><td class='grid-white'></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td></td><td></td><td class='grid-white'>K</td><td></td><td></td><td></td><td></td><td class='grid-white'></td><td></td><td></td><td class='grid-white'></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td class='grid-white'></td><td></td><td></td><td class='grid-white'>➊</td><td class='grid-white'></td><td class='grid-white'></td><td class='grid-white'>⑨</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td></td><td></td><td></td><td></td><td></td><td></td><td class='grid-white'>①</td><td class='grid-white'>➋</td><td class='grid-white'></td><td class='grid-white'></td><td class='grid-white'>⑤</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td></td><td></td><td></td><td></td><td></td><td></td><td class='grid-white'></td><td></td><td></td><td></td><td class='grid-white'></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td></td><td></td><td></td><td></td><td class='grid-white'></td><td class='grid-white'></td><td class='grid-white'>➌</td><td class='grid-white'></td><td class='grid-white'></td><td class='grid-white'></td><td class='grid-white'></td><td class='grid-white'></td><td class='grid-white'></td><td class='grid-white'>③</td><td class='grid-white'>⑩</td><td class='grid-white'></td><td class='grid-white'></td><td class='grid-white'></td><td class='grid-white'></td><td></td></tr>
+        <tr><td></td><td></td><td></td><td></td><td></td><td></td><td class='grid-white'></td><td></td><td class='grid-white'></td><td></td><td class='grid-white'></td><td></td><td></td><td></td><td></td><td></td><td class='grid-white'></td><td></td><td></td><td></td></tr>
+        <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td class='grid-white'>⑦</td><td></td><td></td><td></td><td></td><td class='grid-white'></td><td></td><td></td><td class='grid-white'></td><td></td><td></td><td></td></tr>
+        <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td class='grid-white'></td><td></td><td></td><td></td><td></td><td class='grid-white'></td><td></td><td></td><td class='grid-white'></td><td></td><td></td><td></td></tr>
+        <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td class='grid-white'></td><td></td><td></td><td></td><td></td><td class='grid-white'>➍</td><td class='grid-white'></td><td class='grid-white'></td><td class='grid-white'></td><td class='grid-white'></td><td class='grid-white'>④</td><td class='grid-white'></td></tr>
+        <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td class='grid-white'></td><td></td><td></td><td></td><td></td><td class='grid-white'></td><td></td><td></td><td class='grid-white'></td><td></td><td></td><td></td></tr>
+        <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td class='grid-white'>②</td><td></td><td></td><td class='grid-white'></td><td class='grid-white'></td><td class='grid-white'></td><td class='grid-white'>⑧</td><td class='grid-white'></td><td class='grid-white'>➎</td><td></td><td></td><td></td></tr>
+        <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td class='grid-white'></td><td></td><td></td><td></td><td></td><td class='grid-white'>⑥</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td class='grid-white'>➏</td><td class='grid-white'></td><td class='grid-white'>⑪</td><td class='grid-white'></td><td></td><td class='grid-white'></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td class='grid-white'></td><td></td><td></td><td></td><td></td><td class='grid-white'></td><td></td><td class='grid-white'></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td class='grid-white'></td><td></td><td class='grid-white'></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td class='grid-white'></td><td class='grid-white'></td><td class='grid-white'></td><td class='grid-white'></td><td class='grid-white'></td><td class='grid-white'>➐</td><td class='grid-white'>⑫</td><td></td><td></td><td></td></tr>
+        <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td class='grid-white'></td><td></td><td></td><td></td><td></td></tr>
+      </table>
+      <p style="margin-left: 30px">?	UP
+        <br>➊	DIAMOND
+        <br>➋	ORANGE
+        <br>➌	BASS
+        <br>➍	CANCER
+          <br>➎	MERCURY
+        <br>➏	QUEEN
+        <br>➐	TURKEY
+      </p>
+    </div>
+    <p style="text-align: center; font-size: 30px; margin-top: 30px;">①②③④⑤ ⑥⑦⑧⑨⑩⑪⑫</p>
+  </div>
+content-css: |
+  table.crossword td {
+    width: 40px;
+    height: 40px;
+    font-size: 25px;
+    border-collapse: collapse;
+    text-align: center;
+    background-color: #efefe5;
+  }
+  table.crossword td.grid-white {
+    background-color: white;
+    border: 1px solid black;
+    color: black;
+  }
 content-type: 1
 desc: Sct
 extend-data: null
