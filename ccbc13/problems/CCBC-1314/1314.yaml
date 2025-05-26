@@ -143,9 +143,9 @@ extend-content:
 - <a class="btn btn-lg btn-primary" href="/article/finalend">前往 CCBC 1314 结局 →</a>
 extend-data: null
 links:
-- path: ccbc13/index
+- path: ccbc13/pages/main
   title: 索引页
-  type: index
+  type: page
 tips:
 - content: '将每个英文答案翻译成中文，所有的中心面的翻译应为一个字，所有的非中心面的翻译为两个字。翻译完了以后比较两个行星答案之间的关系，应该会发现一些规律。
 
