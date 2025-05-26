@@ -1,9 +1,6 @@
 answer: SAND LARK
-content:
-- "<div class=\"ccbcstylewrapper\">\r\n<p><span style=\"font-size: 100px\">AND</span><span\
-  \ style=\"font-size: 50px\">ARK</span> = 地标</p>\r\n<p><span style=\"font-size: 25px\"\
-  >AND</span> <span style=\"font-size: 100px\">ARK</span> = ?</p>\r\n</div>"
-content-type: 1
+content: []
+content-type: 0
 desc: And
 extend-data: null
 links:
