@@ -1,25 +1,86 @@
 answer: DOWNWARD
 content:
-- "<div class=\"ccbcstylewrapper\">\n    <style>\n        .mytable1, .mytable2 {\n\
-  \            border-collapse: collapse;\n            margin: 10px;\n           \
-  \ position: absolute;\n        }\n        .mytable2 {\n            border: 3px solid\
-  \ #888;\n            left: 30px;\n            top: 30px;\n            transform:\
-  \ rotate(10deg);\n        }\n        .mytable1 td {\n            border: 1px solid\
-  \ #888;\n        }\n        .mytable1 td, .mytable2 td {\n            width: 50px;\n\
-  \            height: 50px;\n\n            text-align: center;\n            font-size:\
-  \ 32px;\n        }\n        .mytable2 td:not(.black) {\n            background-color:\
-  \ rgba(0, 0, 0, 0.8);\n        }\n    </style>\n    <div style=\"position: relative;height:\
-  \ 250px\">\n    <table class=\"mytable1\">\n        <tr>\n        <td>E</td>\n \
-  \       <td>D</td>\n        <td>G</td>\n        <td>E</td>\n        </tr>\n    \
-  \    <tr>\n        <td>G</td>\n        <td>N</td>\n        <td>A</td>\n        <td>W</td>\n\
-  \        </tr>\n        <tr>\n        <td>R</td>\n        <td>O</td>\n        <td>D</td>\n\
-  \        <td>E</td>\n        </tr>\n        <tr>\n        <td>H</td>\n        <td>A</td>\n\
-  \        <td>W</td>\n        <td>K</td>\n        </tr>\n    </table>\n\n    <table\
-  \ class=\"mytable2\">\n        <tr>\n    <td></td>\n    <td class=\"black\"></td>\n\
-  \    <td></td>\n    <td></td>\n    </tr>\n    <tr>\n    <td></td>\n    <td></td>\n\
-  \    <td></td>\n    <td></td>\n    </tr>\n    <tr>\n    <td></td>\n    <td class=\"\
-  black\"></td>\n    <td></td>\n    <td></td>\n    </tr>\n    <tr>\n    <td></td>\n\
-  \    <td></td>\n    <td></td>\n    <td></td>\n    </tr></table>\n    </div>\n</div>"
+- |
+  <div class="ccbcstylewrapper">
+    <div style="position: relative;height: 250px">
+      <table class="mytable1">
+        <tr>
+          <td>E</td>
+          <td>D</td>
+          <td>G</td>
+          <td>E</td>
+        </tr>
+        <tr>
+          <td>G</td>
+          <td>N</td>
+          <td>A</td>
+          <td>W</td>
+        </tr>
+        <tr>
+          <td>R</td>
+          <td>O</td>
+          <td>D</td>
+          <td>E</td>
+        </tr>
+        <tr>
+          <td>H</td>
+          <td>A</td>
+          <td>W</td>
+          <td>K</td>
+        </tr>
+      </table>
+      <table class="mytable2">
+        <tr>
+          <td></td>
+          <td class="black"></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td class="black"></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+      </table>
+    </div>
+  </div>
+content-css: |
+  .mytable1, .mytable2 {
+    border-collapse: collapse;
+    margin: 10px;
+    position: absolute;
+  }
+  .mytable2 {
+    border: 3px solid #888;
+    left: 30px;
+    top: 30px;
+    transform: rotate(10deg);
+  }
+  .mytable1 td {
+    border: 1px solid #888;
+  }
+  .mytable1 td, .mytable2 td {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    font-size: 32px;
+  }
+  .mytable2 td:not(.black) {
+      background-color: rgba(0, 0, 0, 0.8);
+  }
 content-type: 1
 desc: Dor
 extend-data: null
