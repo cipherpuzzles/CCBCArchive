@@ -5,7 +5,7 @@ links:
   title: 返回索引页
   type: page
 - path: ccbc13/problems/CCBC-14/17
-  title: 无字天书（暂缺）
+  title: 无字天书
   type: problem
 - path: ccbc13/problems/CCBC-14/18
   title: 神奇宝贝在哪里
@@ -20,7 +20,7 @@ links:
   title: 六角花园
   type: problem
 - path: ccbc13/problems/CCBC-14/22
-  title: 元宇宙（暂缺）
+  title: 元宇宙
   type: problem
 - path: ccbc13/problems/CCBC-14/23
   title: 三维国
@@ -38,7 +38,7 @@ links:
   title: 爬格子
   type: problem
 - path: ccbc13/problems/CCBC-14/28
-  title: 燃烧吧！小宇宙（暂缺）
+  title: 燃烧吧！小宇宙
   type: problem
 - path: ccbc13/problems/CCBC-14/29
   title: 何日君再来
