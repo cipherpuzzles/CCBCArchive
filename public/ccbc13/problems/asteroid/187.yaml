@@ -2,7 +2,7 @@ answer: FIRST CENTURY
 content:
 - |
   <div class="ccbcstylewrapper">
-    <a href="https://docs.qq.com/sheet/DVk1GS1V2eUdUdk9R?tab=BB08J2" target="_blank" style="font-size: 20px;">腾讯文档</a>
+    <p><a href="https://docs.qq.com/sheet/DVk1GS1V2eUdUdk9R?tab=BB08J2" target="_blank" style="font-size: 20px;">腾讯文档</a></p>
     <div class="d-flex">
       <table class="crossword">
         <tr><td></td><td></td><td class='grid-white'>Q</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
@@ -40,13 +40,18 @@ content:
     <p style="text-align: center; font-size: 30px; margin-top: 30px;">①②③④⑤ ⑥⑦⑧⑨⑩⑪⑫</p>
   </div>
 content-css: |
+  .ccbcstylewrapper {
+    background-color: #efefe5;
+    color: black;
+    padding: 30px;
+    font-size: 20px;
+  }
   table.crossword td {
     width: 40px;
     height: 40px;
     font-size: 25px;
     border-collapse: collapse;
     text-align: center;
-    background-color: #efefe5;
   }
   table.crossword td.grid-white {
     background-color: white;

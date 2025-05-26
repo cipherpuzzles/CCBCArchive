@@ -4,21 +4,39 @@ additional-answers:
   message: 步骤正确，继续推进。
 answer: KING HENRY VIII
 content:
-- "<style>\n    #board {\n        border-collapse: collapse;\n        float: left;\n\
-  \    }\n    #board td {\n        text-align: center;\n        width: 70px;\n   \
-  \     height: 70px;\n        border: 1px solid black;\n    }\n</style>\n<div class=\"\
-  ccbcstylewrapper\" style=\"position: relative;\">\n    <span style=\"color:red;font-size:\
-  \ 50px;position: absolute; left: 250px\">♕</span>\n    <table id=\"board\">\n  \
-  \      <tr><td>I</span><td>N</span><td>W</span><td>R</span><td>P</span><td>S</span></tr>\n\
-  \        <tr><td>E</span><td>O</span><td>H</span><td>D</span><td>S</span><td>E</span></tr>\n\
-  \        <tr><td>L</span><td>M</span><td>C</span><td>A</span><td>A</span><td>S</span></tr>\n\
-  \        <tr><td>G</span><td>D</span><td>R</span><td>H</span><td>X</span><td>U</span></tr>\n\
-  \        <tr><td>N</span><td>H</span><td>A</span><td>O</span><td>I</span><td>U</span></tr>\n\
-  \        <tr><td>E</span><td>S</span><td>P</span><td>H</span><td>S</span><td>O</span></tr>\n\
-  \    </table>\n    <span style=\"color:red;font-size: 50px;padding-left:30px;\"\
-  >♕♕♕♕♕</span>\n    <p style=\"clear: both;padding-top: 30px\">将剩下的皇后放入棋盘，皇后之间不得互相攻击。</p>\n\
-  \    <p>(4 5 4)</p>\n    使用手机查看可能导致题目显示错位，可点击<a href=\"/ccbc13/images/asteroid/191afbb46ff346bcb7285ac7a6b065ae.webp\"\
-  \ target=\"_blank\">此处看图片</a>。\n</div>"
+- |
+  <div class="ccbcstylewrapper" style="position: relative;">
+    <span style="color:red;font-size: 50px;position: absolute; left: 250px">♕</span>
+    <table id="board">
+      <tr><td>I</span><td>N</span><td>W</span><td>R</span><td>P</span><td>S</span></tr>
+        <tr><td>E</span><td>O</span><td>H</span><td>D</span><td>S</span><td>E</span></tr>
+        <tr><td>L</span><td>M</span><td>C</span><td>A</span><td>A</span><td>S</span></tr>
+        <tr><td>G</span><td>D</span><td>R</span><td>H</span><td>X</span><td>U</span></tr>
+        <tr><td>N</span><td>H</span><td>A</span><td>O</span><td>I</span><td>U</span></tr>
+        <tr><td>E</span><td>S</span><td>P</span><td>H</span><td>S</span><td>O</span></tr>
+    </table>
+    <span style="color:red;font-size: 50px;padding-left:30px;"  >♕♕♕♕♕</span>
+    <p style="clear: both;padding-top: 30px">将剩下的皇后放入棋盘，皇后之间不得互相攻击。</p>
+    <p>(4 5 4)</p>
+    使用手机查看可能导致题目显示错位，可点击<a href="/ccbc13/images/asteroid/191afbb46ff346bcb7285ac7a6b065ae.webp" target="_blank">此处看图片</a>。
+  </div>
+content-css: |
+  .ccbcstylewrapper {
+    background-color: #efefe5;
+    color: black;
+    padding: 30px;
+    font-size: 20px;
+  }
+  #board {
+    border-collapse: collapse;
+    float: left;
+  }
+  #board td {
+    text-align: center;
+    width: 70px;
+    height: 70px;
+    border: 1px solid black;
+  }
 content-type: 1
 desc: Hyi
 extend-data: null
