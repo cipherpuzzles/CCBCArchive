@@ -127,7 +127,7 @@ vue_template: "<template>\r\n    <div>\r\n        <p>上一次比赛已经是一
   /ccbc13/images/CCBC-13/4a58eacc2b8e478d8e304f2b6ab77b90.webp\" style=\"width: 300px\"\
   >\r\n            <p class=\"text-warning\">(2) 3 3</p>\r\n        </div>\r\n   \
   \     <div v-if=\"nowShowPage == 4\">\r\n            <p style=\"font-size:48px\"\
-  >??️??☹️?✋??</p>\r\n            <p class=\"text-warning\">(9)</p>\r\n        </div>\r\
+  >👌🏳️👌💧☹️👈✋👆👇</p>\r\n            <p class=\"text-warning\">(9)</p>\r\n        </div>\r\
   \n        <div v-if=\"nowShowPage == 5\">\r\n            <img style=\"width:100%\"\
   \ src=\"/ccbc13/images/CCBC-13/1d57485fc0614564875da4fdbd677f01.webp\">\r\n    \
   \        <p class=\"text-warning\">(8)</p>\r\n        </div>\r\n        <div v-if=\"\
