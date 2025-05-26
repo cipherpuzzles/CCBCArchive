@@ -1,38 +1,88 @@
 answer: PLAYERS
 content:
-- "<div class=\"ccbcstylewrapper\">\n    <style>\n        .board, .grid {\n      \
-  \      margin: 20px 20px 20px 0;\n            float: left;\n            position:\
-  \ absolute;\n            display: grid;\n\n        }\n        .board div, .grid\
-  \ div {\n            text-align: center;\n            width: 50px;\n           \
-  \ height: 50px;\n            font-size: 32px;\n        }\n        .grid {\n    \
-  \        grid-template-columns: repeat(6, 50px);\n        }\n        .board {\n\
-  \            left: 25px;\n            top: 25px;\n            grid-template-columns:\
-  \ repeat(5, 50px);\n        }\n        .grid div {\n            border: 1px solid\
-  \ #aaa;\n        }\n        .grid div:nth-child(-n+6) {\n            border-top:\
-  \ 0px;\n        }\n        .grid div:nth-child(6n+1) {\n            border-left:\
-  \ 0px;\n        }\n        .grid div:nth-last-child(-n+6) {\n            border-bottom:\
-  \ 0px;\n        }\n        .grid div:nth-child(6n) {\n            border-right:\
-  \ 0px;\n        }\n    </style>\n    \n    <div style=\"position: relative; height:\
-  \ 400px; width: 400px; float: left\">\n        <div class=\"grid\">\n        <div></div><div></div><div></div><div></div><div></div><div></div>\n\
-  \        <div></div><div></div><div></div><div></div><div></div><div></div>\n  \
-  \      <div></div><div></div><div></div><div></div><div></div><div></div>\n    \
-  \    <div></div><div></div><div></div><div></div><div></div><div></div>\n      \
-  \  <div></div><div></div><div></div><div></div><div></div><div></div>\n        <div></div><div></div><div></div><div></div><div></div><div></div>\n\
-  \        </div>\n        <div class=\"board\"><div>⭐</div><div>?</div><div>⭐</div><div>?</div><div>⭐</div>\n\
-  \        <div>?</div><div>?</div><div>?</div><div>?</div><div>?</div>\n        <div>⭐</div><div>⚪</div><div>⚫</div><div>?</div><div>⭐</div>\n\
-  \        <div>?</div><div>?</div><div>?</div><div>?</div><div>?</div>\n        <div>⭐</div><div>?</div><div>⭐</div><div>?</div><div>⭐</div>\n\
-  \        </div>\n    </div>\n    <div style=\"position: relative; height: 400px;\
-  \ width: 400px; left: 400px;\">\n        <div class=\"grid\">\n        <div></div><div></div><div></div><div></div><div></div><div></div>\n\
-  \        <div></div><div></div><div></div><div></div><div></div><div></div>\n  \
-  \      <div></div><div></div><div></div><div></div><div></div><div></div>\n    \
-  \    <div></div><div></div><div></div><div></div><div></div><div></div>\n      \
-  \  <div></div><div></div><div></div><div></div><div></div><div></div>\n        <div></div><div></div><div></div><div></div><div></div><div></div>\n\
-  \        </div>\n        <div class=\"board\">\n        <div>⭐</div><div>?</div><div>⭐</div><div>?</div><div>⭐</div>\n\
-  \        <div>?</div><div>?</div><div>?</div><div>⚪</div><div>?</div>\n        <div>⭐</div><div>?</div><div>⚫</div><div>?</div><div>⭐</div>\n\
-  \        <div>?</div><div>?</div><div>?</div><div>?</div><div>?</div>\n        <div>⭐</div><div>?</div><div>⭐</div><div>?</div><div>⭐</div>\n\
-  \        </div>\n    </div>\n\n    <p style=\"clear:both\">\n        一弯瑞月照西州，<br>\n\
-  \        寒星幽，<br>\n        疏光流。<br>\n        雾起岚生、散暑洗新秋。<br>\n        夜静长闻雷隐隐，<br>\n\
-  \        斜瀑里，<br>\n        银雨稠。\n    </p>\n</div>"
+  - |
+    <div class="ccbcstylewrapper">
+      <div style="position: relative; height: 400px; width: 400px; float: left">
+        <div class="grid">
+          <div></div><div></div><div></div><div></div><div></div><div></div>
+          <div></div><div></div><div></div><div></div><div></div><div></div>
+          <div></div><div></div><div></div><div></div><div></div><div></div>
+          <div></div><div></div><div></div><div></div><div></div><div></div>
+          <div></div><div></div><div></div><div></div><div></div><div></div>
+          <div></div><div></div><div></div><div></div><div></div><div></div>
+        </div>
+        <div class="board">
+          <div>⭐</div><div>🌙</div><div>⭐</div><div>🌙</div><div>⭐</div>
+          <div>🌙</div><div>🌙</div><div>🌙</div><div>🌙</div><div>🌙</div>
+          <div>⭐</div><div>⚪</div><div>⚫</div><div>🌙</div><div>⭐</div>
+          <div>🌙</div><div>🌙</div><div>🌙</div><div>🌙</div><div>🌙</div>
+          <div>⭐</div><div>🌙</div><div>⭐</div><div>🌙</div><div>⭐</div>
+        </div>
+      </div>
+      <div style="position: relative; height: 400px; width: 400px; left: 400px;">
+          <div class="grid">
+            <div></div><div></div><div></div><div></div><div></div><div></div>
+            <div></div><div></div><div></div><div></div><div></div><div></div>
+            <div></div><div></div><div></div><div></div><div></div><div></div>
+            <div></div><div></div><div></div><div></div><div></div><div></div>
+            <div></div><div></div><div></div><div></div><div></div><div></div>
+            <div></div><div></div><div></div><div></div><div></div><div></div>
+          </div>
+          <div class="board">
+            <div>⭐</div><div>🌙</div><div>⭐</div><div>🌙</div><div>⭐</div>
+            <div>🌙</div><div>🌙</div><div>🌙</div><div>⚪</div><div>🌙</div>
+            <div>⭐</div><div>🌙</div><div>⚫</div><div>🌙</div><div>⭐</div>
+            <div>🌙</div><div>🌙</div><div>🌙</div><div>🌙</div><div>🌙</div>
+            <div>⭐</div><div>🌙</div><div>⭐</div><div>🌙</div><div>⭐</div>
+          </div>
+      </div>
+
+      <p style="clear:both">
+          一弯瑞月照西州，<br>
+          寒星幽，<br>
+          疏光流。<br>
+          雾起岚生、散暑洗新秋。<br>
+          夜静长闻雷隐隐，<br>
+          斜瀑里，<br>
+          银雨稠。
+      </p>
+    </div>
+content-css: |
+  .board, .grid {
+    margin: 20px 20px 20px 0;
+    float: left;
+    position: absolute;
+    display: grid;
+  }
+  .board div, .grid div {
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    font-size: 32px;
+  }
+  .grid {
+    grid-template-columns: repeat(6, 50px);
+  }
+  .board {
+    left: 25px;
+    top: 25px;
+    grid-template-columns: repeat(5, 50px);
+  }
+  .grid div {
+    border: 1px solid #aaa;
+  }
+  .grid div:nth-child(-n+6) {
+    border-top: 0px;
+  }
+  .grid div:nth-child(6n+1) {
+      border-left: 0px;
+  }
+  .grid div:nth-last-child(-n+6) {
+    border-bottom: 0px;
+  }
+  .grid div:nth-child(6n) {
+    border-right: 0px;
+  }
 content-type: 1
 desc: Lyr
 extend-data: null

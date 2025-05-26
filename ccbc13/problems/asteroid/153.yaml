@@ -1,13 +1,22 @@
 answer: HOLY TRINITY
 content:
-- "<div class=\"ccbcstylewrapper\">\n    <table>\n    <tr><td style=\"width: 200px\"\
-  >Hermione</td><td>Ron </td></tr>\n    <tr><td>Acute</td><td>Right</td></tr>\n  \
-  \  <tr><td>Solid</td><td>Gas</td></tr>\n    <tr><td>Day</td><td>Month</td></tr>\n\
-  \    <tr><td style=\"height:30px\"></td><td></td></tr>\n    <tr><td>Today</td><td>Yesterday</td></tr>\n\
-  \    <tr><td>Paper</td><td>Scissors</td></tr>\n    <tr><td>Ego</td><td>Superego</td></tr>\n\
-  \    <tr><td>Scroll</td><td>Caps</td></tr>\n    <tr><td>Bold</td><td>Underline</td></tr>\n\
-  \    <tr><td>Tac</td><td>Toe</td></tr>\n    <tr><td>Cyan</td><td>Magenta</td></tr>\n\
-  \    </table>\n</div>"
+- |
+  <div class="ccbcstylewrapper">
+    <table>
+      <tr><td style="width: 200px">Hermione</td><td>Ron</td></tr>
+      <tr><td>Acute</td><td>Right</td></tr>
+      <tr><td>Solid</td><td>Gas</td></tr>
+      <tr><td>Day</td><td>Month</td></tr>
+      <tr><td style="height:30px"></td><td></td></tr>
+      <tr><td>Today</td><td>Yesterday</td></tr>
+      <tr><td>Paper</td><td>Scissors</td></tr>
+      <tr><td>Ego</td><td>Superego</td></tr>
+      <tr><td>Scroll</td><td>Caps</td></tr>
+      <tr><td>Bold</td><td>Underline</td></tr>
+      <tr><td>Tac</td><td>Toe</td></tr>
+      <tr><td>Cyan</td><td>Magenta</td></tr>
+    </table>
+  </div>
 content-type: 1
 desc: Lyn
 extend-data: null
