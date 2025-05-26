@@ -1,10 +1,6 @@
 answer: ATLAS ROCKET
 content:
-- "<style>\n    #mytable {\n        border-collapse: collapse;\n        border: 3px\
-  \ solid;\n    }\n    #mytable tr:nth-child(2) td {\n        border-bottom: 2px solid;\n\
-  \    }\n    #mytable td {\n        width: 30px;\n        height: 25px;\n       \
-  \ border-radius: 10px;\n    }\n    #mytable td.yblack {\n        background-color:\
-  \ black;\n    }\n</style>\n<div class=\"ccbcstylewrapper\">\n    <table id=\"mytable\"\
+- "<div class=\"ccbcstylewrapper\">\n    <table id=\"mytable\"\
   >\n        <tr><td class='yblack'></td><td class='yblack'></td><td class='yblack'></td><td\
   \ class='yblack'></td><td class='yblack'></td><td class='yblack'></td><td class='yblack'></td><td\
   \ class='yblack'></td><td class='yblack'></td><td></td><td class='yblack'></td><td\
@@ -43,6 +39,23 @@ content:
   \ class='yblack'></td><td class='yblack'></td><td class='yblack'></td><td class='yblack'></td><td\
   \ class='yblack'></td><td class='yblack'></td><td class='yblack'></td><td class='yblack'></td><td\
   \ class='yblack'></td><td class='yblack'></td></tr>\n    </table>\n</div>"
+content-css: |
+  #mytable {
+    border-collapse: collapse;
+    border: 3px solid;
+    background-color: #efefe5;
+  }
+  #mytable tr:nth-child(2) td {
+    border-bottom: 2px solid;
+  }
+  #mytable td {
+    width: 30px;
+    height: 25px; 
+    border-radius: 10px;
+  }
+  #mytable td.yblack {
+    background-color: black;
+  }
 content-type: 1
 desc: Oct
 extend-data: null
