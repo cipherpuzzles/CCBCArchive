@@ -1,0 +1,59 @@
+content: 
+- CCBC-14 题目列表
+links:
+- path: ccbc13/pages/main
+  title: 返回索引页
+  type: page
+- path: ccbc13/problems/CCBC-14/17
+  title: 无字天书（暂缺）
+  type: problem
+- path: ccbc13/problems/CCBC-14/18
+  title: 神奇宝贝在哪里
+  type: problem
+- path: ccbc13/problems/CCBC-14/19
+  title: 十重塔（暂缺）
+  type: problem
+- path: ccbc13/problems/CCBC-14/20
+  title: 奇怪的游戏（暂缺）
+  type: problem
+- path: ccbc13/problems/CCBC-14/21
+  title: 六角花园
+  type: problem
+- path: ccbc13/problems/CCBC-14/22
+  title: 元宇宙（暂缺）
+  type: problem
+- path: ccbc13/problems/CCBC-14/23
+  title: 三维国
+  type: problem
+- path: ccbc13/problems/CCBC-14/24
+  title: 五彩斑斓的黑白
+  type: problem
+- path: ccbc13/problems/CCBC-14/25
+  title: 花卉培育
+  type: problem
+- path: ccbc13/problems/CCBC-14/26
+  title: 星穹铁道
+  type: problem
+- path: ccbc13/problems/CCBC-14/27
+  title: 爬格子
+  type: problem
+- path: ccbc13/problems/CCBC-14/28
+  title: 燃烧吧！小宇宙（暂缺）
+  type: problem
+- path: ccbc13/problems/CCBC-14/29
+  title: 何日君再来
+  type: problem
+- path: ccbc13/problems/CCBC-14/30
+  title: 梅开二度
+  type: problem
+- path: ccbc13/problems/CCBC-14/31
+  title: 大蜜蜂（暂缺）
+  type: problem
+- path: ccbc13/problems/CCBC-14/32
+  title: 邮票传情
+  type: problem
+- path: ccbc13/problems/CCBC-14/13417492
+  title: Meta：Morphosis III
+  type: problem
+title: CCBC-14
+type: page
