@@ -47,156 +47,505 @@ tips:
   title: 一共有多少小题？
 title: 单选题
 type: problem
-vue_script: "const { ref, inject, onMounted } = Vue;\r\n\r\nexport default {\r\n \
-  \   setup() {\r\n        const api = inject(\"api\");\r\n        const defaultApiErrorAction\
-  \ = inject(\"defaultApiErrorAction\");\r\n        const markdownToHtml = inject(\"\
-  markdownToHtml\");\r\n        const globalBus = inject(\"globalBus\");\r\n\r\n \
-  \       const pages = ref([]);\r\n        const currentPage = ref(1);\r\n      \
-  \  const answer = ref(\"\");\r\n\r\n        onMounted(() => {\r\n            loadPagesFromBackendApi();\r\
-  \n        });\r\n\r\n        const loadPagesFromBackendApi = async () => {\r\n \
-  \           const apiPath = \"/puzzlebackend2023/15/multiplechoice-get-content\"\
-  ;\r\n            let res = await api(apiPath, {});\r\n            let data = await\
-  \ res.json();\r\n\r\n            if (data.status !== 1) {\r\n                defaultApiErrorAction(data);\r\
-  \n                return;\r\n            }\r\n\r\n            let newPages = [];\r\
-  \n            for (let p of data.pages) {\r\n                let html = markdownToHtml(p.html);\r\
-  \n                newPages.push({\r\n                    index: p.index,\r\n   \
-  \                 html: html\r\n                });\r\n            }\r\n       \
-  \     pages.value = newPages;\r\n        }\r\n\r\n        const getPageHtml = (pageIndex)\
-  \ => {\r\n            let idx = pages.value.findIndex(i => i.index == pageIndex);\r\
-  \n            if (idx == -1) return \"\";\r\n\r\n            return pages.value[idx].html;\r\
-  \n        }\r\n\r\n        const checkAnswer = async (pageIndex) => {\r\n      \
-  \      const apiPath = \"/puzzlebackend2023/15/multiplechoice-check-answer\";\r\n\
-  \            let res = await api(apiPath, {\r\n                index: pageIndex,\r\
-  \n                answer: answer.value\r\n            });\r\n            let data\
-  \ = await res.json();\r\n\r\n            if (data.status !== 1) {\r\n          \
-  \      defaultApiErrorAction(data);\r\n                return;\r\n            }\r\
-  \n\r\n            if (data.answer_status == 1) {\r\n                globalBus.emit(\"\
-  message\", {\r\n                    message: \"回答正确\",\r\n                    type:\
-  \ \"success\"\r\n                });\r\n\r\n                await loadPagesFromBackendApi();\r\
-  \n                let lastPage = pages.value.reduce((i, c) => i.index > c ? i.index\
-  \ : c);\r\n                currentPage.value = lastPage.index;\r\n            }\
-  \ else if (data.answer_status == 3){\r\n                globalBus.emit(\"message\"\
-  , {\r\n                    message: \"您的回答提交过快，请稍后再试。\",\r\n                   \
-  \ type: \"info\"\r\n                });\r\n            } else {\r\n            \
-  \    globalBus.emit(\"show-error\", \"回答错误\");\r\n            }\r\n        }\r\n\
-  \r\n        return {\r\n            pages,\r\n            currentPage,\r\n     \
-  \       getPageHtml,\r\n            answer,\r\n            checkAnswer\r\n     \
-  \   }\r\n    }\r\n}"
-vue_template: "<template>\r\n    <div>\r\n        <button class=\"btn\" :class=\"\
-  {'btn-primary': currentPage == p.index, 'btn-secondary': currentPage != p.index}\"\
-  \ type=\"button\" v-for=\"p in pages\" @click=\"currentPage = p.index\">{{ p.index\
-  \ }}</button>\r\n    </div>\r\n    <div>\r\n        <div class=\"question\" v-html=\"\
-  getPageHtml(currentPage)\"></div>\r\n    </div>\r\n    <div>\r\n        <p>回答问题：</p>\r\
-  \n        <form class=\"d-flex\" @submit.prevent=\"checkAnswer(currentPage)\">\r\
-  \n            <input class=\"form-control me-1 bg-light text-black answer-input\"\
-  \ type=\"number\" v-model=\"answer\" placeholder=\"填入正确答案的序号\">\r\n            <button\
-  \ class=\"btn btn-primary\" type=\"submit\">提交</button>\r\n        </form>\r\n \
-  \   </div>\r\n</template>\r\n\r\n<style>\r\n.question {\r\n    margin-top: 20px;\r\
-  \n}\r\n.answer-input {\r\n    width: 200px;\r\n}\r\n\r\n.grid {\r\ndisplay: flex;\r\
-  \nflex-wrap: wrap;\r\ngap: 10px;\r\n}\r\n.logo {\r\ndisplay: grid;\r\ngrid-template-columns:\
-  \ auto auto;\r\n}\r\n.logo div {\r\nwidth: 50px;\r\nheight: 50px;\r\n}\r\n\r\n</style>\r\
-  \n\r\n<data>\r\n    <!--请注意，只有在data数据块里的内容才不会被发到前端去。除此之外所有的内容都将发送到前端。-->\r\n   \
-  \ <page index=\"1\" answer=\"4\">\r\n<pre>一年四季的正确排序是：\r\n    \r\n1. 春冬夏秋\r\n2. 春冬秋夏\r\
-  \n3. 春夏冬秋\r\n4. 春夏秋冬\r\n5. 春秋冬夏\r\n6. 春秋夏冬\r\n7. 冬春夏秋\r\n8. 冬春秋夏\r\n9. 冬夏春秋\r\n\
-  10. 冬夏秋春\r\n11. 冬秋春夏\r\n12. 冬秋夏春\r\n13. 夏春冬秋\r\n14. 夏春秋冬\r\n15. 夏冬春秋\r\n16. 夏冬秋春\r\
-  \n17. 夏秋春冬\r\n18. 夏秋冬春\r\n19. 秋春冬夏\r\n20. 秋春夏冬\r\n21. 秋冬春夏\r\n22. 秋冬夏春\r\n23. 秋夏春冬\r\
-  \n24. 秋夏冬春</pre>\r\n    </page>\r\n    <page index=\"2\" answer=\"18\">\r\n\r\n\
-  <div class='grid'>\r\n\r\n<div class='griditem'>\r\n1\r\n<div class='logo'>\r\n\
-  <div style='background-color:#ffbb00'></div>\r\n<div style='background-color:#00a1f1'></div>\r\
-  \n<div style='background-color:#f65314'></div>\r\n<div style='background-color:#7cbb00'></div>\r\
-  \n</div>\r\n</div>\r\n<div class='griditem'>\r\n2\r\n<div class='logo'>\r\n<div\
-  \ style='background-color:#ffbb00'></div>\r\n<div style='background-color:#00a1f1'></div>\r\
-  \n<div style='background-color:#7cbb00'></div>\r\n<div style='background-color:#f65314'></div>\r\
-  \n</div>\r\n</div>\r\n<div class='griditem'>\r\n3\r\n<div class='logo'>\r\n<div\
-  \ style='background-color:#ffbb00'></div>\r\n<div style='background-color:#f65314'></div>\r\
-  \n<div style='background-color:#00a1f1'></div>\r\n<div style='background-color:#7cbb00'></div>\r\
-  \n</div>\r\n</div>\r\n<div class='griditem'>\r\n4\r\n<div class='logo'>\r\n<div\
-  \ style='background-color:#ffbb00'></div>\r\n<div style='background-color:#f65314'></div>\r\
-  \n<div style='background-color:#7cbb00'></div>\r\n<div style='background-color:#00a1f1'></div>\r\
-  \n</div>\r\n</div>\r\n<div class='griditem'>\r\n5\r\n<div class='logo'>\r\n<div\
-  \ style='background-color:#ffbb00'></div>\r\n<div style='background-color:#7cbb00'></div>\r\
-  \n<div style='background-color:#00a1f1'></div>\r\n<div style='background-color:#f65314'></div>\r\
-  \n</div>\r\n</div>\r\n<div class='griditem'>\r\n6\r\n<div class='logo'>\r\n<div\
-  \ style='background-color:#ffbb00'></div>\r\n<div style='background-color:#7cbb00'></div>\r\
-  \n<div style='background-color:#f65314'></div>\r\n<div style='background-color:#00a1f1'></div>\r\
-  \n</div>\r\n</div>\r\n<div class='griditem'>\r\n7\r\n<div class='logo'>\r\n<div\
-  \ style='background-color:#00a1f1'></div>\r\n<div style='background-color:#ffbb00'></div>\r\
-  \n<div style='background-color:#f65314'></div>\r\n<div style='background-color:#7cbb00'></div>\r\
-  \n</div>\r\n</div>\r\n<div class='griditem'>\r\n8\r\n<div class='logo'>\r\n<div\
-  \ style='background-color:#00a1f1'></div>\r\n<div style='background-color:#ffbb00'></div>\r\
-  \n<div style='background-color:#7cbb00'></div>\r\n<div style='background-color:#f65314'></div>\r\
-  \n</div>\r\n</div>\r\n<div class='griditem'>\r\n9\r\n<div class='logo'>\r\n<div\
-  \ style='background-color:#00a1f1'></div>\r\n<div style='background-color:#f65314'></div>\r\
-  \n<div style='background-color:#ffbb00'></div>\r\n<div style='background-color:#7cbb00'></div>\r\
-  \n</div>\r\n</div>\r\n<div class='griditem'>\r\n10\r\n<div class='logo'>\r\n<div\
-  \ style='background-color:#00a1f1'></div>\r\n<div style='background-color:#f65314'></div>\r\
-  \n<div style='background-color:#7cbb00'></div>\r\n<div style='background-color:#ffbb00'></div>\r\
-  \n</div>\r\n</div>\r\n<div class='griditem'>\r\n11\r\n<div class='logo'>\r\n<div\
-  \ style='background-color:#00a1f1'></div>\r\n<div style='background-color:#7cbb00'></div>\r\
-  \n<div style='background-color:#ffbb00'></div>\r\n<div style='background-color:#f65314'></div>\r\
-  \n</div>\r\n</div>\r\n<div class='griditem'>\r\n12\r\n<div class='logo'>\r\n<div\
-  \ style='background-color:#00a1f1'></div>\r\n<div style='background-color:#7cbb00'></div>\r\
-  \n<div style='background-color:#f65314'></div>\r\n<div style='background-color:#ffbb00'></div>\r\
-  \n</div>\r\n</div>\r\n<div class='griditem'>\r\n13\r\n<div class='logo'>\r\n<div\
-  \ style='background-color:#f65314'></div>\r\n<div style='background-color:#ffbb00'></div>\r\
-  \n<div style='background-color:#00a1f1'></div>\r\n<div style='background-color:#7cbb00'></div>\r\
-  \n</div>\r\n</div>\r\n<div class='griditem'>\r\n14\r\n<div class='logo'>\r\n<div\
-  \ style='background-color:#f65314'></div>\r\n<div style='background-color:#ffbb00'></div>\r\
-  \n<div style='background-color:#7cbb00'></div>\r\n<div style='background-color:#00a1f1'></div>\r\
-  \n</div>\r\n</div>\r\n<div class='griditem'>\r\n15\r\n<div class='logo'>\r\n<div\
-  \ style='background-color:#f65314'></div>\r\n<div style='background-color:#00a1f1'></div>\r\
-  \n<div style='background-color:#ffbb00'></div>\r\n<div style='background-color:#7cbb00'></div>\r\
-  \n</div>\r\n</div>\r\n<div class='griditem'>\r\n16\r\n<div class='logo'>\r\n<div\
-  \ style='background-color:#f65314'></div>\r\n<div style='background-color:#00a1f1'></div>\r\
-  \n<div style='background-color:#7cbb00'></div>\r\n<div style='background-color:#ffbb00'></div>\r\
-  \n</div>\r\n</div>\r\n<div class='griditem'>\r\n17\r\n<div class='logo'>\r\n<div\
-  \ style='background-color:#f65314'></div>\r\n<div style='background-color:#7cbb00'></div>\r\
-  \n<div style='background-color:#ffbb00'></div>\r\n<div style='background-color:#00a1f1'></div>\r\
-  \n</div>\r\n</div>\r\n<div class='griditem'>\r\n18\r\n<div class='logo'>\r\n<div\
-  \ style='background-color:#f65314'></div>\r\n<div style='background-color:#7cbb00'></div>\r\
-  \n<div style='background-color:#00a1f1'></div>\r\n<div style='background-color:#ffbb00'></div>\r\
-  \n</div>\r\n</div>\r\n<div class='griditem'>\r\n19\r\n<div class='logo'>\r\n<div\
-  \ style='background-color:#7cbb00'></div>\r\n<div style='background-color:#ffbb00'></div>\r\
-  \n<div style='background-color:#00a1f1'></div>\r\n<div style='background-color:#f65314'></div>\r\
-  \n</div>\r\n</div>\r\n<div class='griditem'>\r\n20\r\n<div class='logo'>\r\n<div\
-  \ style='background-color:#7cbb00'></div>\r\n<div style='background-color:#ffbb00'></div>\r\
-  \n<div style='background-color:#f65314'></div>\r\n<div style='background-color:#00a1f1'></div>\r\
-  \n</div>\r\n</div>\r\n<div class='griditem'>\r\n21\r\n<div class='logo'>\r\n<div\
-  \ style='background-color:#7cbb00'></div>\r\n<div style='background-color:#00a1f1'></div>\r\
-  \n<div style='background-color:#ffbb00'></div>\r\n<div style='background-color:#f65314'></div>\r\
-  \n</div>\r\n</div>\r\n<div class='griditem'>\r\n22\r\n<div class='logo'>\r\n<div\
-  \ style='background-color:#7cbb00'></div>\r\n<div style='background-color:#00a1f1'></div>\r\
-  \n<div style='background-color:#f65314'></div>\r\n<div style='background-color:#ffbb00'></div>\r\
-  \n</div>\r\n</div>\r\n<div class='griditem'>\r\n23\r\n<div class='logo'>\r\n<div\
-  \ style='background-color:#7cbb00'></div>\r\n<div style='background-color:#f65314'></div>\r\
-  \n<div style='background-color:#ffbb00'></div>\r\n<div style='background-color:#00a1f1'></div>\r\
-  \n</div>\r\n</div>\r\n<div class='griditem'>\r\n24\r\n<div class='logo'>\r\n<div\
-  \ style='background-color:#7cbb00'></div>\r\n<div style='background-color:#f65314'></div>\r\
-  \n<div style='background-color:#00a1f1'></div>\r\n<div style='background-color:#ffbb00'></div>\r\
-  \n</div>\r\n</div>\r\n\r\n\r\n</div>\r\n    </page>\r\n    <page index=\"3\" answer=\"\
-  15\">\r\n以下是质数的选项是：\r\n1. 4859\r\n2. 4895\r\n3. 4589\r\n\r\n...\r\n    </page>\r\
-  \n    <page index=\"4\" answer=\"11\">\r\n从少到多的正确排序是：\r\n1. ruò, yòu, zhuó, shuāng\r\
-  \n\r\n...\r\n    </page>\r\n    <page index=\"5\" answer=\"24\">\r\n满足 1 _ 2  _\
-  \ 3 _ 4 _ 5 = 2.5 的四则运算是：\r\n1. +、-、×、÷\r\n\r\n...\r\n    </page>\r\n    <page index=\"\
-  6\" answer=\"3\">\r\nFrom the shortest to the longest:\r\n1. 罪, 刺, 唱, 绳\r\n\r\n\
-  ...\r\n    </page>\r\n    <page index=\"7\" answer=\"715\">\r\n答案是：\r\n1. WERSNA\r\
-  \n\r\n...\r\n    </page>\r\n    <page index=\"8\" answer=\"2\">\r\n\r\n<img src=\"\
-  /ccbc13/images/CCBC-13/346f784aecbf4b6393a99240380b765d.webp\" style=\"width:500px\"\
-  \ />\r\n\r\n<p><span style=\"color:green\">F</span><span style=\"color:red\">R</span><span\
-  \ style=\"color:white\">U</span><span style=\"color:blue\">B</span><span style=\"\
-  color:orange\">L</span><span style=\"color:yellow\">D</span></p>\r\n\r\n还原这个魔方的正确公式是：\r\
-  \n1. BLRU\r\n\r\n...\r\n    </page>\r\n    <page index=\"9\" answer=\"9\">\r\n1.\
-  \ 分离, 友情, 无常, 忘却\r\n\r\n...\r\n    </page>\r\n    <page index=\"10\" answer=\"25\"\
-  >\r\n\r\n<div>\r\n    1. <span style=\"color:yellow\">O</span><span style=\"color:blue\"\
-  >O</span><span style=\"color:black\">O</span><span style=\"color:green\">O</span><span\
-  \ style=\"color:red\">O</span>\r\n</div>\r\n\r\n...\r\n    </page>\r\n    <page\
-  \ index=\"11\" answer=\"5\">\r\n1. 西湖, 三峡, 桂林, 泰山\r\n\r\n...\r\n    </page>\r\n\
-  \    <page index=\"12\" answer=\"7\">\r\n1. 巴西, 南非, 俄罗斯, 卡塔尔\r\n\r\n...\r\n    </page>\r\
-  \n    <page index=\"13\" answer=\"11\">\r\n1. 小熊座β, 天琴座α, 小熊座α, 天龙座α\r\n\r\n...\r\
-  \n    </page>\r\n    <page index=\"14\" answer=\"24\">\r\n1. 光, 庆, 隆, 正\r\n\r\n\
-  ...\r\n    </page>\r\n    <page index=\"15\" answer=\"4\">\r\n1. <img src=\"/ccbc13/images/CCBC-13/7bac7b79715645bbae8ab0a050d7dc60.webp\"\
-  \ style=\"width:320px\" />\r\n\r\n...\r\n    </page>\r\n    <page index=\"16\" answer=\"\
-  19\">\r\n1. 每个数字如果多于两位则两两分组、转换成英文字母、凯撒、找到每小题的正确答案序号\r\n\r\n...\r\n    </page>\r\n\
-  \    <page index=\"17\" answer=\"3\">\r\n1. Center, Boundary, Cosmic, Cartography\r\
-  \n\r\n...\r\n    </page>\r\n    <page index=\"18\" answer=\"251922192417\">\r\n\
-  1. 天客眠休照婵人圆影桂自娟在何使蟾\r\n\r\n...\r\n    </page>\r\n</data>"
+vue_script: |
+  const { ref, inject, onMounted } = Vue;
+
+  export default {
+      setup() {
+          const api = inject("api");
+          const defaultApiErrorAction = inject("defaultApiErrorAction");
+          const markdownToHtml = inject("markdownToHtml");
+          const globalBus = inject("globalBus");
+
+          const pages = ref([]);
+          const currentPage = ref(1);
+          const answer = ref("");
+
+          onMounted(() => {
+              const parser = new DOMParser();
+
+
+              const pageData = `
+                <data>
+    <page index="1" answer="4">
+  <pre>一年四季的正确排序是：
+      
+  1. 春冬夏秋
+  2. 春冬秋夏
+  3. 春夏冬秋
+  4. 春夏秋冬
+  5. 春秋冬夏
+  6. 春秋夏冬
+  7. 冬春夏秋
+  8. 冬春秋夏
+  9. 冬夏春秋
+  10. 冬夏秋春
+  11. 冬秋春夏
+  12. 冬秋夏春
+  13. 夏春冬秋
+  14. 夏春秋冬
+  15. 夏冬春秋
+  16. 夏冬秋春
+  17. 夏秋春冬
+  18. 夏秋冬春
+  19. 秋春冬夏
+  20. 秋春夏冬
+  21. 秋冬春夏
+  22. 秋冬夏春
+  23. 秋夏春冬
+  24. 秋夏冬春</pre>
+      </page>
+      <page index="2" answer="18">
+
+    <div class='grid'>
+
+  <div class='griditem'>
+  1
+  <div class='logo'>
+    <div style='background-color:#ffbb00'></div>
+  <div style='background-color:#00a1f1'></div>
+  <div style='background-color:#f65314'></div>
+  <div style='background-color:#7cbb00'></div>
+  </div>
+  </div>
+  <div class='griditem'>
+  2
+  <div class='logo'>
+  <div style='background-color:#ffbb00'></div>
+  <div style='background-color:#00a1f1'></div>
+  <div style='background-color:#7cbb00'></div>
+  <div style='background-color:#f65314'></div>
+  </div>
+  </div>
+  <div class='griditem'>
+  3
+  <div class='logo'>
+  <div style='background-color:#ffbb00'></div>
+  <div style='background-color:#f65314'></div>
+  <div style='background-color:#00a1f1'></div>
+  <div style='background-color:#7cbb00'></div>
+  </div>
+  </div>
+  <div class='griditem'>
+  4
+  <div class='logo'>
+  <div style='background-color:#ffbb00'></div>
+  <div style='background-color:#f65314'></div>
+  <div style='background-color:#7cbb00'></div>
+  <div style='background-color:#00a1f1'></div>
+  </div>
+  </div>
+  <div class='griditem'>
+  5
+  <div class='logo'>
+  <div style='background-color:#ffbb00'></div>
+  <div style='background-color:#7cbb00'></div>
+  <div style='background-color:#00a1f1'></div>
+  <div style='background-color:#f65314'></div>
+  </div>
+  </div>
+  <div class='griditem'>
+  6
+  <div class='logo'>
+  <div style='background-color:#ffbb00'></div>
+  <div style='background-color:#7cbb00'></div>
+  <div style='background-color:#f65314'></div>
+  <div style='background-color:#00a1f1'></div>
+  </div>
+  </div>
+  <div class='griditem'>
+  7
+  <div class='logo'>
+  <div style='background-color:#00a1f1'></div>
+  <div style='background-color:#ffbb00'></div>
+  <div style='background-color:#f65314'></div>
+  <div style='background-color:#7cbb00'></div>
+  </div>
+  </div>
+  <div class='griditem'>
+  8
+  <div class='logo'>
+  <div style='background-color:#00a1f1'></div>
+  <div style='background-color:#ffbb00'></div>
+  <div style='background-color:#7cbb00'></div>
+  <div style='background-color:#f65314'></div>
+  </div>
+  </div>
+  <div class='griditem'>
+  9
+  <div class='logo'>
+  <div style='background-color:#00a1f1'></div>
+  <div style='background-color:#f65314'></div>
+  <div style='background-color:#ffbb00'></div>
+  <div style='background-color:#7cbb00'></div>
+  </div>
+  </div>
+  <div class='griditem'>
+  10
+  <div class='logo'>
+  <div style='background-color:#00a1f1'></div>
+  <div style='background-color:#f65314'></div>
+  <div style='background-color:#7cbb00'></div>
+  <div style='background-color:#ffbb00'></div>
+  </div>
+  </div>
+  <div class='griditem'>
+  11
+  <div class='logo'>
+  <div style='background-color:#00a1f1'></div>
+  <div style='background-color:#7cbb00'></div>
+  <div style='background-color:#ffbb00'></div>
+  <div style='background-color:#f65314'></div>
+  </div>
+  </div>
+  <div class='griditem'>
+  12
+  <div class='logo'>
+  <div style='background-color:#00a1f1'></div>
+  <div style='background-color:#7cbb00'></div>
+  <div style='background-color:#f65314'></div>
+  <div style='background-color:#ffbb00'></div>
+  </div>
+  </div>
+  <div class='griditem'>
+  13
+  <div class='logo'>
+  <div style='background-color:#f65314'></div>
+  <div style='background-color:#ffbb00'></div>
+  <div style='background-color:#00a1f1'></div>
+  <div style='background-color:#7cbb00'></div>
+  </div>
+  </div>
+  <div class='griditem'>
+  14
+  <div class='logo'>
+  <div style='background-color:#f65314'></div>
+  <div style='background-color:#ffbb00'></div>
+  <div style='background-color:#7cbb00'></div>
+  <div style='background-color:#00a1f1'></div>
+  </div>
+  </div>
+  <div class='griditem'>
+  15
+  <div class='logo'>
+  <div style='background-color:#f65314'></div>
+  <div style='background-color:#00a1f1'></div>
+  <div style='background-color:#ffbb00'></div>
+  <div style='background-color:#7cbb00'></div>
+  </div>
+  </div>
+  <div class='griditem'>
+  16
+  <div class='logo'>
+  <div style='background-color:#f65314'></div>
+  <div style='background-color:#00a1f1'></div>
+  <div style='background-color:#7cbb00'></div>
+  <div style='background-color:#ffbb00'></div>
+  </div>
+  </div>
+  <div class='griditem'>
+  17
+  <div class='logo'>
+  <div style='background-color:#f65314'></div>
+  <div style='background-color:#7cbb00'></div>
+  <div style='background-color:#ffbb00'></div>
+  <div style='background-color:#00a1f1'></div>
+  </div>
+  </div>
+  <div class='griditem'>
+  18
+  <div class='logo'>
+  <div style='background-color:#f65314'></div>
+  <div style='background-color:#7cbb00'></div>
+  <div style='background-color:#00a1f1'></div>
+  <div style='background-color:#ffbb00'></div>
+  </div>
+  </div>
+  <div class='griditem'>
+  19
+  <div class='logo'>
+  <div style='background-color:#7cbb00'></div>
+  <div style='background-color:#ffbb00'></div>
+  <div style='background-color:#00a1f1'></div>
+  <div style='background-color:#f65314'></div>
+  </div>
+  </div>
+  <div class='griditem'>
+  20
+  <div class='logo'>
+  <div style='background-color:#7cbb00'></div>
+  <div style='background-color:#ffbb00'></div>
+  <div style='background-color:#f65314'></div>
+  <div style='background-color:#00a1f1'></div>
+  </div>
+  </div>
+  <div class='griditem'>
+  21
+  <div class='logo'>
+  <div style='background-color:#7cbb00'></div>
+  <div style='background-color:#00a1f1'></div>
+  <div style='background-color:#ffbb00'></div>
+  <div style='background-color:#f65314'></div>
+  </div>
+  </div>
+  <div class='griditem'>
+  22
+  <div class='logo'>
+  <div style='background-color:#7cbb00'></div>
+  <div style='background-color:#00a1f1'></div>
+  <div style='background-color:#f65314'></div>
+  <div style='background-color:#ffbb00'></div>
+  </div>
+  </div>
+  <div class='griditem'>
+  23
+  <div class='logo'>
+  <div style='background-color:#7cbb00'></div>
+  <div style='background-color:#f65314'></div>
+  <div style='background-color:#ffbb00'></div>
+  <div style='background-color:#00a1f1'></div>
+  </div>
+  </div>
+  <div class='griditem'>
+  24
+  <div class='logo'>
+  <div style='background-color:#7cbb00'></div>
+  <div style='background-color:#f65314'></div>
+  <div style='background-color:#00a1f1'></div>
+  <div style='background-color:#ffbb00'></div>
+  </div>
+  </div>
+
+
+  </div>
+      </page>
+      <page index="3" answer="  15">
+  以下是质数的选项是：
+  1. 4859
+  2. 4895
+  3. 4589
+
+  ...
+      </page>
+      <page index="4" answer="11">
+  从少到多的正确排序是：
+    ruò, yòu, zhuó, shuāng
+
+  ...
+      </page>
+      <page index="5" answer="24">
+  满足 1 _ 2  _ 3 _ 4 _ 5 = 2.5 的四则运算是：
+  1. +、-、×、÷
+
+  ...
+      </page>
+      <page index="  6" answer="3">
+  From the shortest to the longest:
+  1. 罪, 刺, 唱, 绳
+
+    ...
+      </page>
+      <page index="7" answer="715">
+  答案是：
+    WERSNA
+
+  ...
+      </page>
+      <page index="8" answer="2">
+
+  <img src="  /ccbc13/images/CCBC-13/346f784aecbf4b6393a99240380b765d.webp" style="width:500px" />
+
+  <p><span style="color:green">F</span><span style="color:red">R</span><span style="color:white">U</span><span style="color:blue">B</span><span style="  color:orange">L</span><span style="color:yellow">D</span></p>
+
+    这个魔方的正确公式是：
+  1. BLRU
+
+  ...
+      </page>
+      <page index="9" answer="9">
+  1. 分离, 友情, 无常, 忘却
+
+  ...
+      </page>
+      <page index="10" answer="25"  >
+
+  <div>
+      1. <span style="color:yellow">O</span><span style="color:blue"  >O</span><span style="color:black">O</span><span style="color:green">O</span><span style="color:red">O</span>
+  </div>
+
+  ...
+      </page>
+      <page index="11" answer="5">
+  1. 西湖, 三峡, 桂林, 泰山
+
+  ...
+      </page>
+      <page index="12" answer="7">
+  1. 巴西, 南非, 俄罗斯, 卡塔尔
+
+  ...
+      </page>
+      <page index="13" answer="11">
+  1. 小熊座β, 天琴座α, 小熊座α, 天龙座α
+
+    .
+      </page>
+      <page index="14" answer="24">
+  1. 光, 庆, 隆, 正
+
+    ...
+      </page>
+      <page index="15" answer="4">
+  1. <img src="/ccbc13/images/CCBC-13/7bac7b79715645bbae8ab0a050d7dc60.webp" style="width:320px" />
+
+  ...
+      </page>
+      <page index="16" answer="  19">
+  1. 每个数字如果多于两位则两两分组、转换成英文字母、凯撒、找到每小题的正确答案序号
+
+  ...
+      </page>
+      <page index="17" answer="3">
+    Center, Boundary, Cosmic, Cartography
+
+  ...
+      </page>
+      <page index="18" answer="251922192417">
+    1. 天客眠休照婵人圆影桂自娟在何使蟾
+
+  ...
+      </page>
+  </data>`;
+
+              parser.parseFromString(pageData, "text/html"
+              ).querySelectorAll("page").forEach(p => {
+                  pages.value.push({
+                      index: parseInt(p.getAttribute("index")),
+                      html: markdownToHtml(p.innerHTML)
+                  });
+              });
+          });
+
+          const getPageHtml = (pageIndex) => {
+              let idx = pages.value.findIndex(i => i.index == pageIndex);
+              if (idx == -1) return "";
+
+              return pages.value[idx].html;
+          }
+
+          const mockBackendAnswerCheck = (pageIndex, answer) => {
+            switch(pageIndex) {
+                case 1:
+                    return answer == "4";
+                case 2:
+                    return answer == "18";
+                case 3:
+                    return answer == "15";
+                case 4:
+                    return answer == "11";
+                case 5:
+                    return answer == "24";
+                case 6:
+                    return answer == "3";
+                case 7:
+                    return answer == "715";
+                case 8:
+                    return answer == "2";
+                case 9:
+                    return answer == "9";
+                case 10:
+                    return answer == "25";
+                case 11:
+                    return answer == "5";
+                case 12:
+                    return answer == "7";
+                case 13:
+                    return answer == "11";
+                case 14:
+                    return answer == "24";
+                case 15:
+                    return answer == "4";
+                case 16:
+                    return answer == "19";
+                case 17:
+                    return answer == "3";
+                case 18:
+                    return answer == "251922192417";
+            }
+            return false;
+          }
+
+          const lastPageIndex = ref(1);
+          const feedback = ref("");
+          const checkAnswer = (pageIndex) => {
+              let answer_status = mockBackendAnswerCheck(pageIndex, answer.value);
+
+              if (answer_status) {
+                  globalBus.emit("  message", {
+                      message: "回答正确",
+                      type: "success"
+                  });
+                  lastPageIndex.value = Math.max(lastPageIndex.value, pageIndex + 1);
+                  currentPage.value = pageIndex + 1;
+                  answer.value = "";
+                  feedback.value = "";
+              } else {
+                  feedback.value = "回答错误";
+                  answer.value = "";
+              }
+          }
+    
+          return {
+              pages,
+              feedback,
+              lastPageIndex,
+              currentPage,
+              getPageHtml,
+              answer,
+              checkAnswer
+          }
+      }
+  }
+vue_template: |
+  <template>
+    <div>
+        <button class="btn" :class="{'btn-primary': currentPage == p.index, 'btn-secondary': currentPage != p.index}" type="button" v-for="p in pages.slice(0, lastPageIndex)" @click="currentPage = p.index">{{ p.index }}</button>
+    </div>
+    <div>
+        <div class="question" v-html="getPageHtml(currentPage)"></div>
+    </div>
+    <div>
+        <p>回答问题：</p>
+        <form class="d-flex" @submit.prevent="checkAnswer(currentPage)">
+            <input class="form-control me-1 bg-light text-black answer-input" type="number" v-model="answer" placeholder="填入正确答案的序号">
+            <button class="btn btn-primary" type="submit">提交</button>
+        </form>
+        <div class="errorDiv">{{feedback}}</div>
+    </div>
+  </template>
+
+  <style>
+    .errorDiv {
+      color: red;
+      margin-top: 10px;
+    }
+    .question {
+      margin-top: 20px;
+    }
+    .answer-input {
+      width: 200px;
+    }
+    .grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .logo {
+      display: grid;
+      grid-template-columns: auto auto;
+    }
+    .logo div {
+      width: 50px;
+      height: 50px;
+    }
+  </style>
