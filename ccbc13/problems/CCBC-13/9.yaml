@@ -240,32 +240,7 @@ vue_script: "const { ref, reactive, inject, onMounted, onBeforeUnmount } = Vue;\
   \ = \"spaceroute\";\r\n        const ySync = inject(\"ysync\");\r\n\r\n        //页面上使用的数据源\r\
   \n        const src = ref(sourceData);\r\n        const d = reactive({\r\n     \
   \       text: [...new Array(sourceData.length + 1)].map(i => \"\"),\r\n        \
-  \    aware: []\r\n        });\r\n        \r\n        //初始化同步\r\n        const yDoc\
-  \ = ySync.yDoc;\r\n        const yMap = yDoc.getMap(PUZZLE_KEY);\r\n\r\n       \
-  \ //同步yMap中已有数据到页面中\r\n        for (let k = 0; k < d.text.length; k++) {\r\n   \
-  \         let yMapKey = `t-${k}`;\r\n            if (yMap.has(yMapKey)) {\r\n  \
-  \              d.text[k] = yMap.get(yMapKey);\r\n            }\r\n        }\r\n\r\
-  \n        onMounted(() => {\r\n            ySync.registerAwarenessFunc(PUZZLE_KEY,\
-  \ (aware) => {\r\n                d.aware = aware;\r\n            });\r\n      \
-  \  });\r\n\r\n        onBeforeUnmount(() => {\r\n            ySync.removeAwarenessState(PUZZLE_KEY);\r\
-  \n            ySync.unregisterAwarenessFunc(PUZZLE_KEY);\r\n        })\r\n     \
-  \   \r\n        //监听yMap修改并同步数据\r\n        yMap.observe((event, trans) => {\r\n\
-  \            if (event.keysChanged) {\r\n                event.keysChanged.forEach((key)\
-  \ => {\r\n                    let value = yMap.get(key);\r\n                   \
-  \ let k = parseInt(key.split('-')[1]);\r\n                    if (value === undefined)\
-  \ value = '';\r\n                    d.text[k] = value;\r\n                });\r\
-  \n            }\r\n        });\r\n\r\n        //将本页中的更新同步给ySync\r\n        const\
-  \ updateInput = (event, key) => {\r\n            if (event?.target?.value !== undefined)\
-  \ {\r\n                let content = event.target.value;\r\n                yMap.set(key,\
-  \ content);\r\n            }\r\n        }\r\n\r\n        const getAwareBorderColor\
-  \ = (i) => {\r\n            for (let ai in d.aware) {\r\n                let awareItem\
-  \ = d.aware[ai];\r\n                if (awareItem.i == i) {\r\n                \
-  \    return awareItem.color;\r\n                }\r\n            }\r\n         \
-  \   return \"\";\r\n        }\r\n\r\n        const setCursor = (i) => {\r\n    \
-  \        //id, name, color已被预定义，不能使用\r\n            ySync.setAwarenessState(PUZZLE_KEY,\
-  \ {\r\n                i\r\n            });\r\n        }\r\n\r\n        const unsetCursor\
-  \ = () => {\r\n            ySync.removeAwarenessState(PUZZLE_KEY);\r\n        }\r\
-  \n\r\n        const mouseStatus = reactive({\r\n            isMouseDown: false,\r\
+  \    aware: []\r\n        });\r\n\r\n        const mouseStatus = reactive({\r\n            isMouseDown: false,\r\
   \n            startX: 0,\r\n            startY: 0\r\n        });\r\n        const\
   \ fullscreen = ref(false);\r\n\r\n        const startDrag = (e) => {\r\n       \
   \     mouseStatus.isMouseDown = true;\r\n            mouseStatus.startX = e.offsetX;\r\
@@ -277,8 +252,7 @@ vue_script: "const { ref, reactive, inject, onMounted, onBeforeUnmount } = Vue;\
   \               bgBoxEl.scrollLeft -= offsetX;\r\n            }\r\n        }\r\n\
   \        const endDrag = (e) => {\r\n            mouseStatus.isMouseDown = false;\r\
   \n        }\r\n\r\n        return {\r\n            src,\r\n            d,\r\n  \
-  \          updateInput,\r\n            getAwareBorderColor,\r\n            setCursor,\r\
-  \n            unsetCursor,\r\n            fullscreen,\r\n            startDrag,\r\
+  \                      fullscreen,\r\n            startDrag,\r\
   \n            dragMove,\r\n            endDrag\r\n        }\r\n    }\r\n}"
 vue_template: "<template>\r\n    <button type=\"button\" class=\"btn btn-outline-secondary\
   \ fullscreen-btn\" @click=\"fullscreen = true\"></button>\r\n    <button type=\"\
@@ -289,8 +263,7 @@ vue_template: "<template>\r\n    <button type=\"button\" class=\"btn btn-outline
   >\r\n            <extreme-input v-for=\"w in src\" :key=\"'t-' + w.i\" :data-id=\"\
   w.i\"\r\n                class=\"bs\" :style=\"{top: w.y + 'px', left: w.x + 'px'}\"\
   \ \r\n                v-model=\"d.text[w.i]\" :wordLength=\"w.w\" :highlightIndex=\"\
-  w.h\" :focus=\"getAwareBorderColor(w.i)\"\r\n                @input=\"(e) => updateInput(e,\
-  \ 't-' + w.i)\" @focusin=\"setCursor(w.i)\" @focusout=\"unsetCursor()\"></extreme-input>\r\
+  w.h\" :focus=\"void(0)\"\r\n ></extreme-input>\r\
   \n        </div>\r\n    </div>\r\n</template>\r\n\r\n<style>\r\n.fullscreen-btn\
   \ {\r\n    background-image: url(\"/ccbc13/images/CCBC-13/94676b8caec74a77976a567f7277b8b7.webp\"\
   );\r\n    width: 66px;\r\n    height: 26px;\r\n    background-size: contain;\r\n\
