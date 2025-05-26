@@ -83,11 +83,7 @@ answer-analysis: '首先填词部份答案如下：
   最后根据 A-1、A-21、A-29 给出的提取方式：EVERY THIRD CORNER，我们从第一个拐弯处 P 开始，每三个拐弯就提取一次字母（上图亮黄色字母），得到答案
   ``PRECISION``。'
 content:
-- "<style>\r\n.cw { border-collapse: collapse; }\r\n.cw td { background-color: white;\
-  \ color: black; text-align: center; height:30px; width:30px; padding:0; border:\
-  \ 1px solid black;}\r\n.cw td.black { background-color: black;}\r\n.cw td.noborder\
-  \ { border: 0; width: 8px; height: 8px; background-color: black; }\r\n</style>\r\
-  \n<p><a href=\"https://docs.qq.com/sheet/DVkpMYW54aWVSYUdr?tab=BB08J2\" target=\"\
+- "<p><a href=\"https://docs.qq.com/sheet/DVkpMYW54aWVSYUdr?tab=BB08J2\" target=\"\
   _blank\">腾讯文档</a></p>\r\n<table cellpadding='0' cellspacing='0' class='cw'><tr><td\
   \ class='noborder'></td><td>1</td><td></td><td>2</td><td></td><td>3</td><td class='black'></td><td>4</td><td\
   \ class='black'></td><td>5</td><td></td><td>6</td><td></td><td>7</td><td></td><td>8</td><td\
@@ -133,7 +129,7 @@ content:
   \ class='noborder'></td><td class='noborder'></td><td class='noborder'></td><td\
   \ class='noborder'></td><td class='noborder'></td><td class='noborder'></td><td\
   \ class='noborder'></td><td class='noborder'></td><td class='noborder'></td><td\
-  \ class='noborder'></td><td class='noborder'></td><td class='noborder'></td></tr>\r\
+  \ class='noborder'></td></tr>\r\
   \n</table>\r\n\r\n<table style='margin-top:30px'><tr><th>Across</th><td style='width:\
   \ 400px'></td><th>Down</th><td></td></tr>\r\n<tr><td>1</td><td>本题提取（第一部分）</td><td>1</td><td>在C++里往vector里插入新的元素</td></tr>\r\
   \n<tr><td>5</td><td>27A-边形</td><td>2</td><td>背景演员</td></tr>\r\n<tr><td>9</td><td>铀的主要矿藏来源</td><td>3</td><td>像弹弓的形状（hyph.）</td></tr>\r\
@@ -149,6 +145,28 @@ content:
   \n<tr><td>？</td><td>混合</td><td>？</td><td>罗马数字7</td></tr>\r\n<tr><td>？</td><td>斧子</td><td>？</td><td>Windows上文本的扩展名</td></tr>\r\
   \n<tr><td>？</td><td>提供能量的分子</td><td>？</td><td>它的</td></tr>\r\n<tr><td>？</td><td>第一个女人</td><td>？</td><td>Windows上视频的扩展名</td></tr>\r\
   \n<tr><td>？</td><td>锥子</td><td>？</td><td>敬畏</td></tr>\r\n</table>"
+content-css: |
+  .cw {
+    border-collapse: collapse;
+  }
+  .cw td {
+    background-color: white;
+    color: black;
+    text-align: center;
+    height: 30px;
+    width: 30px;
+    padding: 0;
+    border: 1px solid black;
+  }
+  .cw td.black {
+    background-color: black;
+  }
+  .cw td.noborder {
+    border: 0;
+    width: 8px;
+    height: 8px;
+    background-color: black;
+  }
 content-type: 1
 desc: 精度
 extend-data: 7,6,8,8
