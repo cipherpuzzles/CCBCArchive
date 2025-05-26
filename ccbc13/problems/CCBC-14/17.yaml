@@ -304,35 +304,9 @@ vue_script: "const { ref, reactive, inject, onMounted, onBeforeUnmount } = Vue;\
   \ => {\r\n            let key = `${x}-${y}`;\r\n            if (sourceData.cwword[key])\
   \ {\r\n                return sourceData.cwword[key];\r\n            }\r\n\r\n \
   \           return null;\r\n        }\r\n        const article = ref(sourceData.article.map(a\
-  \ => a.map(ai => { return {type: ai[0], value: ai[1]}; })))\r\n\r\n        //初始化同步\r\
-  \n        const yDoc = ySync.yDoc;\r\n        const yMap = yDoc.getMap(PUZZLE_KEY);\r\
-  \n\r\n        //同步yMap中已有数据到页面中\r\n        for (let k = 0; k < d.text.length; k++)\
-  \ {\r\n            let yMapKey = `text-${k}`;\r\n            if (yMap.has(yMapKey))\
-  \ {\r\n                d.text[k] = yMap.get(yMapKey);\r\n            }\r\n     \
-  \   }\r\n\r\n        onMounted(() => {\r\n            ySync.registerAwarenessFunc(PUZZLE_KEY,\
-  \ (aware) => {\r\n                d.aware = aware;\r\n            });\r\n      \
-  \  });\r\n\r\n        onBeforeUnmount(() => {\r\n            ySync.removeAwarenessState(PUZZLE_KEY);\r\
-  \n            ySync.unregisterAwarenessFunc(PUZZLE_KEY);\r\n        })\r\n     \
-  \   \r\n        //监听yMap修改并同步数据\r\n        yMap.observe((event, trans) => {\r\n\
-  \            if (event.keysChanged) {\r\n                event.keysChanged.forEach((key)\
-  \ => {\r\n                    let value = yMap.get(key);\r\n                   \
-  \ let k = parseInt(key.split('-')[1]);\r\n                    if (value === undefined)\
-  \ value = '';\r\n                    d.text[k] = value;\r\n                });\r\
-  \n            }\r\n        });\r\n\r\n        //将本页中的更新同步给ySync\r\n        const\
-  \ updateInput = (event, key) => {\r\n            if (event?.target?.value !== undefined)\
-  \ {\r\n                let content = event.target.value;\r\n                yMap.set(key,\
-  \ content);\r\n            }\r\n        }\r\n\r\n        const getAwareBorderColor\
-  \ = (type, pi, ci) => {\r\n            for (let ai in d.aware) {\r\n           \
-  \     let awareItem = d.aware[ai];\r\n                if (awareItem.type == type\
-  \ && awareItem.pi == pi && awareItem.ci == ci) {\r\n                    return awareItem.color;\r\
-  \n                }\r\n            }\r\n            return null;\r\n        }\r\n\
-  \r\n        const setCursor = (type, pi, ci) => {\r\n            ySync.setAwarenessState(PUZZLE_KEY,\
-  \ {\r\n                type,\r\n                pi,\r\n                ci,\r\n \
-  \           });\r\n        }\r\n\r\n        const unsetCursor = () => {\r\n    \
-  \        ySync.removeAwarenessState(PUZZLE_KEY);\r\n        }\r\n\r\n        return\
+  \ => a.map(ai => { return {type: ai[0], value: ai[1]}; })))\r\n\r\n        return\
   \ {\r\n            d,\r\n            wall,\r\n            getCwWords,\r\n      \
-  \      article,\r\n            updateInput,\r\n            getAwareBorderColor,\r\
-  \n            setCursor,\r\n            unsetCursor\r\n        };\r\n    }\r\n}"
+  \      article,\r\n        };\r\n    }\r\n}"
 vue_template: "<template>\r\n    <div>\r\n        <div><a href=\"https://docs.qq.com/sheet/DVktJdFBOUnJxZHJ0?tab=BB08J2\"\
   \ target=\"_blank\">腾讯文档</a></div>\r\n        <div class=\"crossword-table-container\"\
   >\r\n            <table class=\"cw-table\">\r\n                <tr v-for=\"(row,\
@@ -341,23 +315,10 @@ vue_template: "<template>\r\n    <div>\r\n        <div><a href=\"https://docs.qq
   \   <div class=\"cw-inner\" v-if=\"getCwWords(rowIndex, colIndex) !== null\">\r\n\
   \                            <div class=\"leftupper\">\r\n                     \
   \               <input v-for=\"(char, ci) in getCwWords(rowIndex, colIndex).a\"\
-  \ maxlength=\"1\" v-model=\"d.text[char]\" class=\"cw-input\"\r\n              \
-  \                          :class=\"{'cw-focus': getAwareBorderColor(2, rowIndex\
-  \ * row.length + colIndex, ci) !== null}\"\r\n                                 \
-  \       :style=\"{outlineColor: getAwareBorderColor(2, rowIndex * row.length + colIndex,\
-  \ ci)}\"\r\n                                        @input=\"(e) => updateInput(e,\
-  \ 'text-' + char)\" @focus=\"setCursor(2, rowIndex * row.length + colIndex, ci)\"\
-  \ @blur=\"unsetCursor()\"\r\n                                    >\r\n         \
+  \ maxlength=\"1\" v-model=\"d.text[char]\" class=\"cw-input\">\r\n         \
   \                   </div>\r\n                            <div class=\"main\">\r\
   \n                                    <input v-for=\"(char, ci) in getCwWords(rowIndex,\
-  \ colIndex).b\" maxlength=\"1\" v-model=\"d.text[char]\" class=\"cw-input\"\r\n\
-  \                                        :class=\"{'cw-focus': getAwareBorderColor(3,\
-  \ rowIndex * row.length + colIndex, ci) !== null}\"\r\n                        \
-  \                :style=\"{outlineColor: getAwareBorderColor(3, rowIndex * row.length\
-  \ + colIndex, ci)}\"\r\n                                        @input=\"(e) =>\
-  \ updateInput(e, 'text-' + char)\" @focus=\"setCursor(3, rowIndex * row.length +\
-  \ colIndex, ci)\" @blur=\"unsetCursor()\"\r\n                                  \
-  \  >\r\n                            </div>\r\n                        </div>\r\n\
+  \ colIndex).b\" maxlength=\"1\" v-model=\"d.text[char]\" class=\"cw-input\">\r\n                            </div>\r\n                        </div>\r\n\
   \                    </td>\r\n                </tr>\r\n            </table>\r\n\
   \        </div>\r\n        <div class=\"article-container\">\r\n            <div\
   \ class=\"para\" v-for=\"(paraline, pi) in article\">\r\n                <div class=\"\
@@ -365,11 +326,7 @@ vue_template: "<template>\r\n    <div>\r\n        <div><a href=\"https://docs.qq
   \ === 0\">{{ char.value }}</span>\r\n                    <input v-else maxlength=\"\
   1\" v-model=\"d.text[char.value]\" class=\"artinput syncti\"\r\n               \
   \         :class=\"{'ai-full': char.type === 1, 'ai-half': char.type === 2, 'ai-sup':\
-  \ char.type === 3, 'ai-sub': char.type === 4, 'ai-focus': getAwareBorderColor(1,\
-  \ pi, ci) !== null}\"\r\n                        :style=\"{outlineColor: getAwareBorderColor(1,\
-  \ pi, ci)}\" \r\n                        @input=\"(e) => updateInput(e, 'text-'\
-  \ + char.value)\" @focus=\"setCursor(1, pi, ci)\" @blur=\"unsetCursor()\"\r\n  \
-  \                  >\r\n                </div>\r\n            </div>\r\n       \
+  \ char.type === 3, 'ai-sub': char.type === 4}\">\r\n                </div>\r\n            </div>\r\n       \
   \ </div>\r\n    </div>\r\n\r\n\r\n\r\n</template>\r\n\r\n<style>\r\n.cw-inner {\r\
   \n    height: 50px;\r\n}\r\n.cw-inner .leftupper {\r\n    width: 50px;\r\n    height:\
   \ 16px;\r\n    line-height: 14px;\r\n}\r\n.cw-inner .main {\r\n    width: 50px;\r\

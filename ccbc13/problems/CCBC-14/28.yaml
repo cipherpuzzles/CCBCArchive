@@ -187,16 +187,7 @@ vue_script: "const { ref, reactive, computed, inject } = Vue; //由于网页中�
   \n\r\n                return {a: a, b: b};\r\n            }).filter(sfd => sfd.b\
   \ && sfd.b.length > 0);\r\n            tempd.sort((a, b) => { if (a.a > b.a) return\
   \ 1; else if (a.a < b.a) return -1; else return 0;});\r\n\r\n            return\
-  \ tempd;\r\n        });\r\n\r\n        //初始化同步\r\n        const yDoc = ySync.yDoc;\r\
-  \n        const yMap = yDoc.getMap(PUZZLE_KEY);\r\n\r\n        //同步yMap中已有数据到页面中\r\
-  \n        for (let k = 0; k < d.text.length; k++) {\r\n            let yMapKey =\
-  \ `t-${k}`;\r\n            if (yMap.has(yMapKey)) {\r\n                d.text[k]\
-  \ = yMap.get(yMapKey);\r\n            }\r\n        }\r\n\r\n        //监听yMap修改并同步数据\r\
-  \n        yMap.observe((event, trans) => {\r\n            if (event.keysChanged)\
-  \ {\r\n                event.keysChanged.forEach((key) => {\r\n                \
-  \    let value = yMap.get(key);\r\n                    let k = parseInt(key.split('-')[1]);\r\
-  \n                    if (value === undefined) value = '';\r\n                 \
-  \   d.text[k] = value;\r\n                });\r\n            }\r\n        });\r\n\
+  \ tempd;\r\n        });\r\n\
   \r\n        const getBottleImg = (isActive) => {\r\n            if (isActive) return\
   \ \"/ccbc13/images/CCBC-14/915201a818d44a9ba03f973fa10a4951.webp\";\r\n        \
   \    else return \"/ccbc13/images/CCBC-14/79e895edf13647d1bda53dc65725de93.webp\"\
@@ -276,9 +267,7 @@ vue_template: "<template>\r\n<p>据说当年为了帮助青铜五小强提升实
   getBottleImg(nowShowPage == 10)\"></div>\r\n    <div @click=\"nowShowPage = 11\"\
   ><img id=\"bottle11\" :src=\"getBottleImg(nowShowPage == 11)\"></div>\r\n    <div\
   \ @click=\"nowShowPage = 12\"><img id=\"bottle12\" :src=\"getBottleImg(nowShowPage\
-  \ == 12)\"></div>\r\n  </div>\r\n</div> \r\n  <div class=\"answerarea\">\r\n   \
-  \ <p>本题可能用到以下答案中的其中一部分：</p>\r\n    <div class=\"answerarea-p\">\r\n    <p v-for=\"\
-  word in data\">{{word.a}}: {{word.b}}</p>\r\n    </div>\r\n  </div> \r\n</template>\r\
+  \ == 12)\"></div>\r\n  </div>\r\n</div> \r\n  <p class='answerarea'>归档说明：本题是一道 meta-matching 题，用到的小题答案来自参赛者在宇宙航线内填入的88个答案中的一部分。</p> \r\n</template>\r\
   \n\r\n<style>\r\n#bags div {\r\nwidth: 70px;\r\nfloat:left;\r\ncursor:pointer;\r\
   \n}\r\n#content {\r\nwidth: 100%;\r\ntransform: rotate(-5deg);\r\n}\r\n#content\
   \ table:not(.minicw) {\r\nwidth: 100%;\r\n}\r\n#content table td:nth-child(1) {\r\
