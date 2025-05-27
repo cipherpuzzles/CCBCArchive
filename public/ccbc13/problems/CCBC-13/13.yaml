@@ -68,31 +68,430 @@ tips:
   title: 该如何爆猜（提取）
 title: 凑词爆猜
 type: problem
-vue_script: "const { ref, inject, onMounted } = Vue;\r\nexport default {\r\n    setup()\
-  \ {\r\n        const inputArea = ref(\"\");\r\n        const mainHtml = ref(\"\"\
-  );\r\n        const isHidden = ref(false);\r\n\r\n        const api = inject('api');\r\
-  \n        const defaultApiErrorAction = inject('defaultApiErrorAction');\r\n\r\n\
-  \        const submit = async (skip) => {\r\n            let res = await api('/spfunc/makeyourownpuzzlehunt/13',\
-  \ {\r\n                input: inputArea.value,\r\n                skip: skip\r\n\
-  \            }, \"sp\"); //第三个参数设置为sp时调用node后端\r\n\r\n            let data = await\
-  \ res.json();\r\n            if (data.status !== 1) {\r\n                defaultApiErrorAction(data);\r\
-  \n                return;\r\n            }\r\n\r\n            if (data.data) {\r\
-  \n                mainHtml.value = data.data.content;\r\n                if (data.data.all_success)\
-  \ isHidden.value = true;\r\n            }\r\n        }\r\n\r\n        onMounted(()\
-  \ => {\r\n            submit(true);\r\n        });\r\n\r\n        return {\r\n \
-  \           inputArea,\r\n            mainHtml,\r\n            isHidden,\r\n   \
-  \         submit\r\n        };\r\n    }\r\n}"
-vue_template: "<template>\r\n    <div class=\"main-puzzle-content\">\r\n        <div\
-  \ v-html=\"mainHtml\"></div>\r\n    <div v-if=\"!isHidden\">\r\n        <p>请在以下文本框里输入每个小题的答案，每一行对应一个小题。例如，第一行是第一题的答案。</p>\r\
-  \n        <textarea class=\"input-area mt-3\" id=\"textarea\" cols=\"40\" rows=\"\
-  13\" v-model=\"inputArea\"></textarea>\r\n        <div>\r\n            <button class=\"\
-  btn btn-primary\" @click=\"submit(false)\">提交</button>\r\n        </div>\r\n   \
-  \ </div>\r\n    </div>\r\n</template>\r\n\r\n<style>\r\n.input-area {\r\n    resize:\
-  \ none;\r\n    white-space: nowrap;\r\n    overflow: auto;\r\n    font-family: var(--bs-font-monospace);\r\
-  \n}\r\n\r\n.check_yes {\r\n    color: lime;\r\n}\r\n\r\n.check_no {\r\n    color:\
-  \ red;\r\n}\r\n\r\n#final_answer_box {\r\n    border-style: solid;\r\n    font-size:\
-  \ 36px;\r\n    display: flex;\r\n    justify-content: center;\r\n    align-items:\
-  \ center;\r\n}\r\n\r\n#final_answer_box code {\r\n    line-height: 60px;\r\n   \
-  \ word-break: break-all;\r\n}\r\n\r\n.main-puzzle-content p {\r\n    margin-top:\
-  \ 50px;\r\n}\r\n\r\n.main-puzzle-content code {\r\n    font-size: inherit !important;\r\
-  \n    color: inherit !important;\r\n}\r\n</style>"
+vue_script: |
+  const { ref, inject, onMounted } = Vue;
+  export default {
+    setup() {
+      const inputArea = ref("");
+      const mainHtml = ref(""  );
+      const isHidden = ref(false);
+
+      word_set = null;
+      const init = async () => {
+        let dataResponse = await fetch('/ccbc13/problems/CCBC-13/scowl.json')
+        let word_list = await dataResponse.json();
+        word_set = new Set(word_list);
+      }
+      init()
+
+      function stol(s) {
+          return s.match(/[^ ]+/g) || [];
+      }
+
+      function standardize(s, remove_ws) {
+          let t = s.trim().toUpperCase();
+          if (remove_ws) {
+              t = stol(t).join("");
+          } else {
+              t = stol(t).join(" ");
+          }
+          return t;
+      }
+
+      function check_base1(ans) {
+          return ans.length >= 13;
+      }
+
+      function check_base2(ans) {
+          function check_base2_internal(s) {
+              const t = standardize(s, true);
+              if (t.length < 1 || t.length > 20) return false;
+              for (let i = 0; i < t.length; i++) {
+                  if (!('A' <= t[i] && t[i] <= 'Z')) return false;
+              }
+              return true;
+          }
+          const n = Math.min(13, ans.length);
+          for (let i = 0; i < n; i++) {
+              if (!check_base2_internal(ans[i])) return false;
+          }
+          return true;
+      }
+
+      function check_base3(ans) {
+          const n = Math.min(13, ans.length);
+          for (let i = 0; i < n; i++) {
+              const a = stol(ans[i]);
+              for (let t of a) {
+                  if (!word_set.has(t)) return false;
+              }
+          }
+          return true;
+      }
+
+      function check_meta1(ans) {
+          function extract_meta1_internal(s) {
+              const t = standardize(s, true);
+              let n = t.length;
+              const ret = [];
+              for (let i = 1; i < n - 1; i++) {
+                  if (t[i - 1] == t[i + 1]) ret.push(t[i]);
+              }
+              if (ret.length != 1) return null;
+              return ret[0];
+          }
+          let ret = [];
+          for (let i in [0, 1, 2, 3, 4]) {
+              let e = extract_meta1_internal(ans[i]);
+              if (e == null) return false;
+              ret.push(e);
+          }
+          return ret.toSorted().join("") == "MIDST".split("").toSorted().join("");
+      }
+
+      function check_meta2(ans) {
+          function extract_meta2_internal(s) {
+              const t = standardize(s, true);
+              let n = t.length;
+              const ret = [];
+              for (let i = 0; i < n - 1; i++) {
+                  if (t[i] == t[i + 1]) ret.push(t[i]);
+              }
+              if (ret.length != 1) return null;
+              return ret[0];
+          }
+          let ret = [];
+          for (let i of [5, 6, 7, 8]) {
+              let e = extract_meta2_internal(ans[i]);
+              if (e == null) return false;
+              ret.push(e);
+          }
+          return ret.toSorted().join("") == "REDO".split("").toSorted().join("");
+      }
+
+      const ascii_uppercase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+
+      function check_meta3(ans) {
+          function extract_meta3_internal(s) {
+              const t = standardize(s, true);
+              const ret = [];
+              for (let c of ascii_uppercase) {
+                  let cnt = t.split(c).length - 1;
+                  if (cnt >= 4) ret.push(c);
+              }
+              if (ret.length != 1) return null;
+              return ret[0];
+          }
+          let ret = [];
+          for (let i of [9, 10, 11, 12]) {
+              let e = extract_meta3_internal(ans[i]);
+              if (e == null) return false;
+              ret.push(e);
+          }
+          return ret.toSorted().join("") == "ALOT".split("").toSorted().join("");
+      }
+
+      function check_metaA(ans) {
+          function extract_metaA_internal(a) {
+              if (a.length != 2) return null;
+              let s = a[0];
+              let t = a[1];
+              if (s.length != t.length) return false;
+              const n = s.length;
+              if (t.includes("O")) {
+                  let u = t;
+                  t = s;
+                  s = u;
+              }
+              if (t.includes("O")) {
+                  return false;
+              }
+              let ret = [];
+              for (let i = 0; i < n; i++) {
+                  if (s[i] == "O") ret.push(t[i]);
+              }
+              if (ret.length != 1) return null;
+              return ret[0];
+          }
+          let dict = {};
+          for (let i = 5; i <= 9; i++) {
+              dict[i] = [];
+          }
+          const used = [ans[0], ans[3], ans[6], ans[9], ans[12]];
+          for (let s of used) {
+              const a = stol(standardize(s, false));
+              for (let t of a) {
+                  const m = t.length;
+                  if (m < 5 || m > 9) return false;
+                  dict[m].push(t);
+              }
+          }
+          let ret = [];
+          for (let i = 5; i <= 9; i++) {
+              let e = extract_metaA_internal(dict[i]);
+              if (e == null) return false;
+              ret.push(e);
+          }
+          return ret.join("") == "BLANK";
+      }
+
+      function check_metaB(ans) {
+          function extract_direction(s) {
+              let ret = [];
+              for (let c of s) {
+                  if ("NEWS".includes(c)) ret.push(c);
+              }
+              const dir = ret.toSorted().join("");
+              const dirs = { "SW": 1, "S": 2, "ES": 3, "W": 4, "E": 6, "NW": 7, "N": 8, "EN": 9 };
+              if (dir in dirs) return dirs[dir];
+              return null;
+          }
+          function extract_metaB_internal(s) {
+              const a = stol(standardize(s, false));
+              if (a.length != 2) return null;
+              let ret = [];
+              for (let t of a) {
+                  const dir = extract_direction(t);
+                  if (dir == null) return null;
+                  ret.push(dir);
+              }
+              if (ret.length != 2) return null;
+              const e = ret[0] * 10 + ret[1];
+              let dict = {};
+              dict["N"] = [13, 31];
+              dict["E"] = [29, 92];
+              dict["W"] = [69, 96];
+              dict["S"] = [34, 43];
+              for (let c of "NEWS") {
+                  if (dict[c].includes(e)) return c;
+              }
+              return null;
+          }
+          let ret = [];
+          for (let i of [1, 4, 7, 10]) {
+              let e = extract_metaB_internal(ans[i]);
+              if (e == null) return false;
+              ret.push(e);
+          }
+          return ret.toSorted().join("") == "NEWS".split("").toSorted().join("");
+      }
+
+      function check_metaC(ans) {
+          function extract_metaC_internal(s) {
+              let dict = {};
+              dict["F"] = ["UUU", "UUC"];
+              dict["L"] = ["UUA", "UUG", "CUU", "CUC", "CUA", "CUG"];
+              dict["I"] = ["AUU", "AUC", "AUA"];
+              dict["E"] = ["GAA", "GAG"];
+              let ret = [];
+              for (let c of s) {
+                  if ("ACGU".includes(c)) ret.push(c);
+              }
+              let t = ret.join("");
+              if (t.length != 3) return false;
+              for (let c of "FILE") {
+                  if (dict[c].includes(t)) return c;
+              }
+              return false;
+          }
+          let ret = [];
+          for (let i of [2, 5, 8, 11]) {
+              let e = extract_metaC_internal(ans[i]);
+              if (e == null) return false;
+              ret.push(e);
+          }
+          return ret.toSorted().join("") == "LIFE".split("").toSorted().join("");
+      }
+
+      function check_final_pre(ans) {
+          let fst_set = new Set();
+          let cnt = 0;
+          for (let i = 0; i < 13; i++) {
+              const a = stol(standardize(ans[i], false));
+              for (let t of a) {
+                  cnt += 1;
+                  fst_set.add(t[0]);
+              }
+          }
+          if (cnt != 26 || fst_set.size != 26) return false;
+          return true;
+      }
+
+      function check_final(ans) {
+          let dict = {};
+          for (let i = 0; i < 13; i++) {
+              const a = stol(standardize(ans[i], false));
+              for (let t of a) {
+                  if (t[0] in dict) return false;
+                  dict[t[0]] = t;
+              }
+          }
+          const final_ans = "FINALANSWERISSTAFFSERGEANT";
+          let ret = [];
+          for (let i = 0; i < 26; i++) {
+              const c = ascii_uppercase[i];
+              if (!(c in dict)) return false;
+              if (dict[c].includes(final_ans[i])) ret.push(final_ans[i]);
+              else ret.push("?");
+          }
+          return ret.join("");
+      }
+
+      function MYOPHSpFuncInternal(input, skip) {
+          const ans = input.split("\n").map(x => standardize(x, false));
+          let vbase1 = null, vbase2 = null, vbase3 = null, vbase_all = false;
+          if (!skip) {
+              vbase1 = check_base1(ans);
+              vbase2 = check_base2(ans);
+              vbase3 = check_base3(ans);
+              if (vbase1 && vbase2 && vbase3) vbase_all = true;
+          }
+          let vmeta1 = null, vmeta2 = null, vmeta3 = null, vmeta_num_all = false;
+          if (vbase_all) {
+              vmeta1 = check_meta1(ans);
+              vmeta2 = check_meta2(ans);
+              vmeta3 = check_meta3(ans);
+              if (vmeta1 && vmeta2 && vmeta3) vmeta_num_all = true;
+          }
+          let vmetaA = null, vmetaB = null, vmetaC = null, vmeta_let_all = false;
+          if (vmeta_num_all) {
+              vmetaA = check_metaA(ans);
+              vmetaB = check_metaB(ans);
+              vmetaC = check_metaC(ans);
+              if (vmetaA && vmetaB && vmetaC) vmeta_let_all = true;
+          }
+          let vfinal_pre = null, vfinal_main = null, vfinal_all = false;
+          if (vmeta_let_all) {
+              vfinal_pre = check_final_pre(ans);
+              vfinal_main = check_final(ans);
+              if (vfinal_pre && !vfinal_main.includes("?")) vfinal_all = true;
+          }
+
+          let contents = [];
+
+          contents.push("<p>你正在制作一套解谜寻宝（Puzzle Hunt）比赛。你和出题组的其他成员们设计了一套无比华丽的主题，保证让参赛者们目瞪口呆。而凑小题答案的重任就交给了你。</p>");
+
+          const syes = "<span class=\"check_yes\">[YES]</span> ";
+          const sno = "<span class=\"check_no\">[NO]</span> ";
+          // base
+          const sbase1 = vbase1 ? syes : ((vbase1 != null) ? sno : "");
+          const sbase2 = vbase2 ? syes : ((vbase2 != null) ? sno : "");
+          const sbase3 = vbase3 ? syes : ((vbase3 != null) ? sno : "");
+          contents.push("<li>" + sbase1 + "这是一个历史悠久的比赛系列的第13届，因此理所应当的有13个小题。</li>");
+          contents.push("<li>" + sbase2 + "每个小题答案应当是用空格分开的一个或多个英文单词。这些答案可以包含英文字母和空格，但不能包含其他字符。每个答案在去除空格后长度不能超过20。</li>");
+          contents.push("<li>" + sbase3 + "你决定小题答案的单词不应该过于生僻。例如 <code>CURRENT GHOST BAMBOO</code> 是一个合法的答案，而 <code>ORME SHOE</code> 则不是。你有一个<a href=\"https://static.cipherpuzzles.com/static/images/b08086b053de4903a46d7840b7691516.txt\">字典</a>，其中包含了所有你认为合法的单词。</li>");
+          // meta_num
+          const smeta1 = vmeta1 ? syes : ((vmeta1 != null) ? sno : "");
+          const smeta2 = vmeta2 ? syes : ((vmeta2 != null) ? sno : "");
+          const smeta3 = vmeta3 ? syes : ((vmeta3 != null) ? sno : "");
+          contents.push("<p>这13个小题被分为三个区。1到5为一区，6到9为二区，10到13为三区。</p>");
+          contents.push("<li>" + smeta1 + "一区的元谜题（Meta）要求该区每个答案（在去除空格后）都包含唯一的长度为3的子串，满足该子串的第一个字母和第三个字母相同。将这些子串的第二个字母重新排列后应当得到答案 <code>MIDST</code>。</li>");
+          contents.push("<li>" + smeta2 + "二区的元谜题要求该区每个答案（在去除空格后）都包含唯一的长度为2的子串，满足该子串的两个字母相同。将这些字母重新排列后应当得到答案 <code>REDO</code>。</li>");
+          contents.push("<li>" + smeta3 + "三区的元谜题要求该区每个答案都包含唯一的出现至少四次的字母。将这些字母重新排列后应当得到答案 <code>A LOT</code>。</li>");
+          // if (!vmeta_num_all) {
+          //     contents.push("<p>那么，开始凑答案吧！</p>");
+          // }
+          // meta_let
+          if (vmeta_num_all) {
+              const smetaA = vmetaA ? syes : ((vmetaA != null) ? sno : "");
+              const smetaB = vmetaB ? syes : ((vmetaB != null) ? sno : "");
+              const smetaC = vmetaC ? syes : ((vmetaC != null) ? sno : "");
+              contents.push("<p>凑完之后，你觉得有一些意犹未尽。正巧，你的队友们提出了更多的元谜题思路。<br>这13个小题按照其编号模3的结果，又被分成三个区。编号模3余1的小题组成A区，模3余2的小题组成B区，模3余0的小题组成C区。</p>");
+              contents.push("<li>" + smetaA + "A区的元谜题要求这些小题答案总共由10个单词组成，在这10个单词中，需要恰好有两个长度为5，两个长度为6，……，两个长度为9。对于长度相同的两个单词，需要其中一个恰好包含一个字母O，另一个不包含字母O。提取出O对应位置的字母，并按来源的单词长度从小到大排列后，应当得到答案 <code>BLANK</code>。注意本题不允许重新排列字母。</li>");
+              contents.push("<li>" + smetaB + "B区的元谜题要求每个答案都由两个单词组成。每个单词应当包含一个或两个 <code>ENSW</code> 中的字符（不允许重复出现），并且在重排后得到八个方向 <code> E, N, S, W, NE, NW, SE, SW </code> 中的一个。将每个答案的两个方向组合之后，应当能够通过旗语翻译得到一个字母。将这些字母重新排列后应当得到答案 <code>NEWS</code>。</li>");
+              contents.push("<li>" + smetaC + "C区的元谜题要求每个答案中都包含恰好三个 <code>ACGU</code> 中的字母（允许重复出现，重复出现算多次）。按顺序取出这三个字母，然后使用RNA密码子翻译，应当能够得到一个字母。将这些字母重新排列后应当得到答案 <code>LIFE</code>。</li>");
+          }
+          // final_pre
+          if (vmeta_let_all) {
+              const sfinal_pre = vfinal_pre ? syes : ((vfinal_pre != null) ? sno : "");
+              contents.push("<p>你轻松地满足了任务。正当你欣赏自己的作品时，突然发现忘了考虑最终元谜题（Final Meta）。</p>");
+              contents.push("<li>" + sfinal_pre + "最终元谜题的机制要求这些小题中总共包含恰好26个单词，且这些单词的首字母分别是A、B、……、Z（无需按照顺序）。</li>");
+          }
+          // final
+          if (vfinal_pre) {
+              const sfinal_main = vfinal_all ? "class=\"check_yes\"" : "class=\"check_no\"";
+              contents.push("<p>经过一些调整，你终于满足了要求。最终元谜题的答案是什么呢？</p>");
+              contents.push("<li>最终元谜题仅使用小题答案，不使用之前6个元谜题的答案。你检查了一遍最终元谜题的提取，得到了如下信息。</li><br>")
+              contents.push("<span id=\"final_answer_box\"" + sfinal_main + "><code>" + vfinal_main + "</code></span>");
+              if (vfinal_all) {
+                  contents.push("<p>太惊人了！你竟然连这都凑出来了！请提交最终答案。</p>");
+              } else {
+                  contents.push("<p>似乎有一些单词并不包含想要的字母。要不试着修改一下？</p>");
+              }
+          }
+          return { content: contents.join("\n"), all_success: vfinal_all };
+      }
+
+      const api = inject('api');
+
+      const submit = (skip) => {
+        let data = MYOPHSpFuncInternal(inputArea.value, skip);
+
+        mainHtml.value = data.content;
+        if (data.all_success) isHidden.value = true;
+      }
+
+      onMounted(() => {
+        submit(true);
+      });
+
+      return {
+        inputArea,
+        mainHtml,
+        isHidden,
+        submit
+    };
+    }
+  }
+vue_template: |
+  <template>
+    <div class="main-puzzle-content">
+      <div v-html="mainHtml"></div>
+      <div v-if="!isHidden">
+        <p>请在以下文本框里输入每个小题的答案，每一行对应一个小题。例如，第一行是第一题的答案。</p>
+        <textarea class="input-area mt-3" id="textarea" cols="40" rows="  13" v-model="inputArea"></textarea>
+        <div>
+            <button class="  btn btn-primary" @click="submit(false)">提交</button>
+        </div>
+      </div>
+    </div>
+  </template>
+
+  <style>
+  .input-area {
+    resize: none;
+    white-space: nowrap;
+    overflow: auto;
+    font-family: var(--bs-font-monospace);
+  }
+
+  .check_yes {
+    color: lime;
+  }
+
+  .check_no {
+    color: red;
+  }
+
+  #final_answer_box {
+    border-style: solid;
+    font-size: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #final_answer_box code {
+    line-height: 60px;
+    word-break: break-all;
+  }
+
+  .main-puzzle-content p {
+    margin-top: 50px;
+  }
+
+  .main-puzzle-content code {
+    font-size: inherit !important;
+    color: inherit !important;
+  }
+  </style>
