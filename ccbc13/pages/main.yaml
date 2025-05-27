@@ -4,11 +4,17 @@ links:
 - path: ccbc13/index
   title: 返回首页
   type: index
+- path: ccbc13/pages/prologue
+  title: 序章
+  type: page
 - path: ccbc13/pages/asteroid
   title: 小行星区
   type: page
 - path: ccbc13/pages/ccbc13
   title: CCBC-13
+  type: page
+- path: ccbc13/pages/interlude
+  title: 间章
   type: page
 - path: ccbc13/pages/ccbc14
   title: CCBC-14
@@ -16,5 +22,8 @@ links:
 - path: ccbc13/problems/CCBC-1314/1314
   title: CCBC-1314
   type: problem
+- path: ccbc13/pages/finalend
+  title: 结局 of everything
+  type: page
 title: CCBC13 首页
 type: page
