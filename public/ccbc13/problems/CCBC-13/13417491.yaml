@@ -115,15 +115,19 @@ content:
 content-type: 1
 desc: Meta 1
 extend-content:
-- <a class="btn btn-lg btn-primary" href="/article/ccbc13end">前往 CCBC 13 结局 →</a>
+- <span class="btn btn-lg btn-primary" onclick="goLink('end')">前往 CCBC-13 结局 →</span>
 extend-data: null
 links:
 - path: ccbc13/index
   title: 索引页
   type: index
 - path: ccbc13/pages/ccbc13
-  title: CCBC-13
+  title: CCBC 13
   type: page
+- path: ccbc13/pages/ccbc13end
+  title: CCBC-13 结局
+  type: page
+  id: end
 tips:
 - content: '四个面的中心首字母分别指示了一个方向，需要将其它三个角的答案向那个方向填入，形成三个逆时针的环。
 

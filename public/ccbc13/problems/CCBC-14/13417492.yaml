@@ -79,7 +79,7 @@ content:
 content-type: 0
 desc: Meta 2
 extend-content:
-- <a class="btn btn-lg btn-primary" href="/article/ccbc14end">前往 CCBC 14 结局 →</a>
+- <span class="btn btn-lg btn-primary" onclick="goLink('end')">前往 CCBC 14 结局 →</span>
 extend-data: null
 links:
 - path: ccbc13/index
@@ -88,6 +88,10 @@ links:
 - path: ccbc13/pages/ccbc14
   title: CCBC-14
   type: page
+- path: ccbc13/pages/ccbc14end
+  title: CCBC-14 结局
+  type: page
+  id: end
 tips:
 - content: '这个 meta 的标题指向了一幅名叫 Metamorphosis III 的画，画里很多元素都出现在了小题里，按照从画的左端（题目里已经给出“爬格子”在开始）开始到右端（“无字天书”）排序。
 
