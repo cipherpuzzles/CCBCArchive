@@ -1,0 +1,51 @@
+type: problem
+title: ANOTHER
+desc: 首届CCBC ANOTHER (2008-08-08 08:41)
+content-type: 0
+content:
+- |
+  ```
+  一切无常世象，
+  无非是个比方。
+  人生欠缺灵感，
+  在此得以补偿。
+  财富耀眼明亮，
+  地位令人神往。
+  生命圣洁美好，
+  自由助人远航。
+  智慧启迪想像，
+  信仰指引方向。
+  爱情至高无上，
+  我等向上、向上
+  ```
+extend-data: ''
+
+links:
+  - title: CCBC 1 存档首页
+    type: index
+    path: ccbc1/index
+  - title: 题目索引
+    type: page
+    path: ccbc1/pages/main
+
+tips:
+answer: |
+  Olympic
+answer-analysis: |
+
+  ```
+  6 财富  Catch your ...
+  4 地位  Its your ...
+  2 生命  I guess ...
+  3 自由  Oh my ...
+  7 智慧  You are clever ...
+  5 信仰  Let your ...
+  1 爱情  Oh I ...
+  ```
+
+  所有题目答案首字母，按照爱情(O)、信仰(L)、智慧(Y)、自由(M)、生命(P)、地位(I)、财富(C)顺序排列，
+  即得出 `Olympic` 字样
+
+  ----
+  
+  编者注：自由(M)、生命(P) 两题的首字母对不上答案，过程存疑。

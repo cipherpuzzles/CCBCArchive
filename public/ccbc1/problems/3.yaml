@@ -1,0 +1,37 @@
+type: problem
+title: 第三题 自由篇
+desc: 首届CCBC 第三题 自由篇 (2008-08-02 23:01)
+content-type: 0
+content:
+- |
+  T是P市妇孺皆知的一名怪盗的代号。他作案无数却从未被警察捉到过。
+  之所以称其为怪盗，是因为此人来无影去无踪，并且每次作案前都会向警察局发一封匿名信。
+  这些信都是由密码文写成的，警察局虽然调用了密码破解组来破解，但仍一无所获。
+
+  昨日，警察局又收到了一封来自T的信，警察局局长布里兹是你的好朋友，他迫于市长及舆论的重压，
+  终于向身为侦探的你正式求助了。你自然不能放过这个一展身手的大好机会了。
+
+  T信见图：
+
+  ![](ccbc1/images/3.jpg)
+extend-data: ''
+
+links:
+  - title: CCBC 1 存档首页
+    type: index
+    path: ccbc1/index
+  - title: 题目索引
+    type: page
+    path: ccbc1/pages/main
+
+tips:
+answer: |
+  Oh my dear Police, I wish you can break this code out in this time. Do not make me boring again. I want to steal the biggest jewel in Mr. D's house at nine p.m. Oct. tenth. Do your best this time, will you? Yours Te.
+additional-answers:
+  - message: 无标点版本。
+    answer: Oh my dear Police I wish you can break this code out in this time Do not make me boring again I want to steal the biggest jewel in Mr Ds house at nine pm Oct tenth Do your best this time will you Yours Te
+answer-analysis: |
+  加密方法：图像+单表替换,眼睛、脑袋、身子各代表一个字母，以眼睛、脑袋、身子的顺序排列。
+
+  答案：
+  Oh my dear Police, I wish you can break this code out in this time. Do not make me boring again. I want to steal the biggest jewel in Mr. D's house at nine p.m. Oct. tenth. Do your best this time, will you? Yours Te.

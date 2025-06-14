@@ -1,0 +1,31 @@
+type: problem
+title: 第五题 信仰篇
+desc: 首届CCBC 第五题 信仰篇 (2008-08-04 23:27)
+content-type: 0
+content:
+- |
+  你是一名战地密码破译员。最近，我方截获了一封来自敌方的密码电报，战争的胜败，取决于你的手中！
+
+  ```txt
+  15222907 02120609 0426090918120908 2522 0922262302 211209 2118201907181320. 02271206 081912061523 252282201813 26070726241628181320 0719180830 132718201907 0428192213 1402 2426052615290902 04181515 262407 1813 24121324220907 04180719 02120629. 071922 09221813211209243028222914221307 1808 1213 071922 042602, 261323 0719222702 04181515 26093009180522 071214120909122704 26133023 260707262416 1213 07291922 22260807.
+  ```
+extend-data: ''
+
+links:
+  - title: CCBC 1 存档首页
+    type: index
+    path: ccbc1/index
+  - title: 题目索引
+    type: page
+    path: ccbc1/pages/main
+
+tips:
+answer: |
+  Let your warriors be ready for fighting. You should begin attacking this night when my cavalry will act in concert with you. The reinforcement is on the way, and they will arrive tomorrow and attack on the east.
+answer-analysis: |
+  加密方法：  
+  用26-01代替A-Z，  
+  超过26的数字无意义。
+
+  答案：
+  Let your warriors be ready for fighting. You should begin attacking this night when my cavalry will act in concert with you. The reinforcement is on the way, and they will arrive tomorrow and attack on the east.
