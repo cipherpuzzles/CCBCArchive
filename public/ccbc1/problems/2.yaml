@@ -39,33 +39,24 @@ links:
 
 tips:
 answer: |
-  TZZEBJOGOWOG
+  TZZEBJOGOWPG
+additional-answers:
+  - message: 官方解。倒数第二个字母有误。
+    answer: TZZEBJOGOWOG
 answer-analysis: |
   加密方法：逆时针螺旋状排列，横向读取。
 
   例子：
   ```
-  GH……
-  FAB
-  EDC
+  ....
+  EDC.
+  FABK
+  GHIJ
   ```
+  
+  ## 解密
 
-  题目：
-  ```
-  pehtretupmocy
-  arofebuoydlom
-  serettelsihtn
-  sitahtekiltii
-  whhtppandggys
-  oaeweseuinnrn
-  rdkhdsigkiiro
-  dhieoiwashdei
-  iidnrsometatt
-  sdnyouarereea
-  teappermustbm
-  zdallhisinfor
-  zebjogowpg
-  ```
+  将题目尽可能排列为方阵，然后从中心逆时针读取：
 
   ```
   dzmbtsumreppa
@@ -83,8 +74,34 @@ answer-analysis: |
   zebjogowpg
   ```
 
+  ![逆时针排列的题目](ccbc1/images/ans/21.png)
+
+  将得到的序列再次排列为方阵，再从中心逆时针读取。
+
+  ```
+  pehtretupmocy
+  arofebuoydlom
+  serettelsihtn
+  sitahtekiltii
+  whhtppandggys
+  oaeweseuinnrn
+  rdkhdsigkiiro
+  dhieoiwashdei
+  iidnrsometatt
+  sdnyouarereea
+  teappermustbm
+  zdallhisinfor
+  zebjogowpg
+  ```
+
+  ![](ccbc1/images/ans/22.png)
+
   答案：  
-  I guess I was kidnapped or something like that when you are reading this letter. The kidnapper must be Terry I told you before. I had hided all his informations in my computer. The password is TZZEBJOGOWOG. 
+  I guess I was kidnapped or something like that when you are reading this letter. The kidnapper must be Terry I told you before. I had hided all his informations in my computer. The password is TZZEBJOGOWPG. 
 
   评析：
   好吧，我承认这题的方法很变态，本来一层就已经很BT了，还被我加了两次……我有罪……
+
+  ----
+  
+  编者注：官方解“逆时针螺旋”例子有误，已更正。增加了解密过程的图示。
