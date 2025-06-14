@@ -25,8 +25,11 @@ links:
 tips:
 answer: |
   It's your next target. His name is Fernando Delgado. Three gangsters have been injured by polices so they are in hospital now. Of course the police is observing them anytime. Your target is one of them and he plans to tell something to the police. Our client don't like this.
+additional-answers:
+  - message: 无标点版本。
+    answer: Its your next target His name is Fernando Delgado Three gangsters have been injured by polices so they are in hospital now Of course the police is observing them anytime Your target is one of them and he plans to tell something to the police Our client dont like this
 answer-analysis: |
-  加密方法：八位一组，排序4638127
+  加密方法：分组置换，八位一组，排序 4638127
 
   答案：
   It's your next target. His name is Fernando Delgado. Three gangsters have been injured by polices so they are in hospital now. Of course the police is observing them anytime. Your target is one of them and he plans to tell something to the police. Our client don't like this.
