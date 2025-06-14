@@ -1,0 +1,90 @@
+type: problem
+title: 第二题 生命篇
+desc: 首届CCBC 第二题 生命篇 (2008-08-01 23:41)
+content-type: 0
+content:
+- |
+  马丁教授是你多年的好友，他一直在研究秘密情报的解读工作。
+  这一天，你收到他的短信息，短信上赫然写着“SOS”三个字母。
+  联想到最近扬言要绑架教授的组织，你深感不妙，便火速来到了教授家。
+
+  到了教授家门口，你发现门锁被破坏了，门虚掩着。
+  冲进房内，屋内一片狼籍，教授的手机被扔在地上。很显然，教授被人绑架了。
+
+  回忆起教授昨天邮寄给你的剪报，你知道，秘密一定就隐藏在报纸中。
+
+  能救教授的只有你了。
+  
+  剪报见图
+
+  ![](ccbc1/images/2.jpg)
+
+  图中文本
+
+  dzmbtsumreppaahsawioeihdoeldsygg  
+  dnapprtleohisletttiahiatforayehieiiene  
+  rthcrhkesiwsbepeoewgrideiutupmsiie  
+  nnstoydlomisrfreahtekiltdaosuinnrnr  
+  dkhurometattsdnyozebjogowpg  
+
+extend-data: ''
+
+links:
+  - title: CCBC 1 存档首页
+    type: index
+    path: ccbc1/index
+  - title: 题目索引
+    type: page
+    path: ccbc1/pages/main
+
+tips:
+answer: |
+  TZZEBJOGOWOG
+answer-analysis: |
+  加密方法：逆时针螺旋状排列，横向读取。
+
+  例子：
+  ```
+  GH……
+  FAB
+  EDC
+  ```
+
+  题目：
+  ```
+  pehtretupmocy
+  arofebuoydlom
+  serettelsihtn
+  sitahtekiltii
+  whhtppandggys
+  oaeweseuinnrn
+  rdkhdsigkiiro
+  dhieoiwashdei
+  iidnrsometatt
+  sdnyouarereea
+  teappermustbm
+  zdallhisinfor
+  zebjogowpg
+  ```
+
+  ```
+  dzmbtsumreppa
+  ahsawioeihdoe
+  ldsyggdnapprt
+  leohisletttia
+  hiatforayehie
+  iienerthcrhke
+  siwsbepeoewgr
+  ideiutupmsiie
+  nnstoydlomisr
+  freahtekiltda
+  osuinnrnrdkhu
+  rometattsdnyo
+  zebjogowpg
+  ```
+
+  答案：  
+  I guess I was kidnapped or something like that when you are reading this letter. The kidnapper must be Terry I told you before. I had hided all his informations in my computer. The password is TZZEBJOGOWOG. 
+
+  评析：
+  好吧，我承认这题的方法很变态，本来一层就已经很BT了，还被我加了两次……我有罪……

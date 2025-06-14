@@ -1,0 +1,61 @@
+type: problem
+title: 第一题 爱情篇
+desc: 首届CCBC 第一题 爱情篇 (2008-07-31 23:44)
+content-type: 0
+content:
+- |
+  你和你的青梅竹马女朋友同是一所大学研究英语的大学生。毕业前夕，你得知她要出国深造。
+  她行将远行，却未和你说只言片语，只留给你一封短信。
+  信是什么意思呢？还有一星期飞机就要起航了，为了幸福和爱，一定要解出来！
+
+  信件全文如下：
+  ```txt
+  KCDLQAONUGOZLYDLTLBKQCUTLWKVXLQOCDANKQLKQODGAQNCUACKVOODRLBKQUVLMLGDQADRQAOAUBLVUAUEVLALGOIKVBKQNKRLOKCUTLURLUYWDOCRLKGAUOQVQUBUABKQQLADVLQAKRLOCDGMDWUGOOKOLYYBKQOCLGQKGORDAADONUYYRLWCLGBKQUVLVLUQDGMCLVLALLBUAKKG
+  ```
+extend-data: ''
+
+links:
+  - title: CCBC 1 存档首页
+    type: index
+    path: ccbc1/index
+  - title: 题目索引
+    type: page
+    path: ccbc1/pages/main
+
+tips:
+answer: |
+  oh i eust cant believe you have workeu this coue out in such a short time you are genius i must say er as a present for you come to have a meal with me on saturuay as you uesireu something i want to tell you then uont miss it call me when you are reauing here see ya soon
+answer-analysis: |
+  加密方法：单表替换
+
+  ```
+  a b c d e f g h i j k l m n o p q r s t u v w x y z
+  u z n j l i m c d l x y r g k e h v a o q t w p b f
+  ```
+
+  解密方法：  
+  频率分析，很容易得出L对应的是e。即使没有the，th出现的频率也是相当之高的，我们可以先找出两个字母反复出现的组合。  
+  出现频率比较高的有UA、OC、CD  
+  但是其中只有OC和字母e有组合，我们姑且可以认定OC就是th  
+  接下来就靠毅力了。  
+  文章结尾处：……VLALLBUAKKG  
+  很自然地联想到AKKG是soon，  
+  那么AKG就分别是son了，代入验证一下，基本符合文字规律  
+  文章结尾处：……Ve see BU soon，see什么soon呢？如果你的口语知识丰富的话，就会联想到外国人常说的see ya soon，所以BU就是ya。  
+  ……IoVyoQNoRet……解出Q是u  
+  ……DnMDWanttot……解出W是w  
+  ……when you aVeVeauDnMheVe……解出V是r，  
+  以下继续代入解就行了，步骤省略。  
+
+  答案：  
+  Oh，I just can't believe you have worked this code out in such a short time! You are genius, I must say. Er... As a present for you. Come to have a meal with me on Saturday, as you desired. Something I want to tell you then. Don't miss it. Call me when you are reading here. See ya soon.
+
+  评析：  
+  但是本题变态之处就在于，解出字母e后没有反复出现的the（出完题才发现）。导致一般的思路就此终结了。所以我们只能另辟旁路。  
+  特别说明：由于本人的严重失误，导致字母d和字母u同时用q加密了……大家忽略这道题吧- -
+
+  ----
+
+  编者注: 实际按上表解出
+
+  oh i eust cant believe you have workeu this coue out in such a short time you are genius i must say er as a present for you come to have a meal with me on saturuay as you uesireu something i want to tell you then uont miss it call me when you are reauing here see ya soon.

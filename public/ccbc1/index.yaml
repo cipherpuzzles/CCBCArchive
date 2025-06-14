@@ -1,0 +1,50 @@
+type: index
+title: CCBC 1 存档站
+content: 
+  - |
+    这里是 CCBC 1 的静态存档。
+
+    ## 简介
+
+    CCBC 1 从2008年7月31日晚24时整开始，到2008年8月7日晚24时结束，共7天。
+
+    * 冠军：[Scning_][tieba-Scning_]  
+      计分：10+1+0+1+10+10+0 = 33
+
+    * 亚军：[小露ルキァ][tieba-小露ルキァ]  
+      计分：2+0+0+1+0+5+0 = 8
+
+    * 季军：[刨地小五郎][tieba-刨地小五郎]  
+      计分：3+1+0+1+1+0+0 = 6
+
+    [tieba-Scning_]: https://tieba.baidu.com/home/main?un=Scning_&id=tb.1.7586ed88.X15r1V0koHTqnTCwwRDTsg
+    [tieba-小露ルキァ]: https://tieba.baidu.com/home/main?un=%E5%B0%8F%E9%9C%B2%E3%83%AB%E3%82%AD%E3%82%A1&id=tb.1.d5b82e32.vIKT8rm1JEb0mqDb8qrYZg
+    [tieba-刨地小五郎]: https://tieba.baidu.com/home/main?un=%E5%88%A8%E5%9C%B0%E5%B0%8F%E4%BA%94%E9%83%8E&id=tb.1.1997fac2.zwy2G9ydUU-CZO9TNk2dCA
+
+    -----------
+
+    ## 存档版使用说明
+
+    你可以点击<a href="javascript:;" onclick="goLink('main')" class="btn btn-primary">题目索引</a>按钮开始回顾 CCBC 1 中的全部题目。
+    也可以使用下面的导航按钮在不同题目之间跳转。任何一个页面都将会有一个按钮来回到本页。
+
+    在题目页，右下角将显示悬浮工具条。
+    你可以尝试自己解决问题，然后可以点击“输入答案”按钮，验证一下答案是否正确。
+    点击“显示提示”按钮，你可能会看到一条或多条提示，点击右边的“显示”按钮查看提示的内容。
+
+    在比赛时，CCBC 1没有任何此类预置提示。
+
+    如果对题目毫无头绪或者就是想看看题目的解法，也可以直接点击“答案解析”按钮，将会直接显示本题的解析。
+    看了解析再去做一遍题目也许会有新感受。
+
+links:
+  - title: 题目索引
+    type: page
+    path: ccbc1/pages/main
+    id: main
+  # - title: 排行榜
+  #   type: scoreboard
+  #   path: ccbc1/scoreboard
+  - title: 贴吧帖子汇总
+    type: page
+    path: ccbc1/pages/archive

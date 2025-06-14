@@ -1,0 +1,32 @@
+type: problem
+title: 第七题 智慧篇
+desc: 首届CCBC 第七题 智慧篇 (2008-08-07 09:59)
+content-type: 0
+content:
+- |
+  你是一名闻名于网络的白客，近日有一黑客向你挑衅，说你绝对解不出他设置的密题。你，能解出来吗？
+
+  密题见图
+
+  ![](ccbc1/images/7.bmp)
+extend-data: ''
+
+links:
+  - title: CCBC 1 存档首页
+    type: index
+    path: ccbc1/index
+  - title: 题目索引
+    type: page
+    path: ccbc1/pages/main
+
+tips:
+answer: |
+  You are clever than I think. You can do it better and you will make great success.
+answer-analysis: |
+  加密方法：
+  用PS取色，得出颜色坐标（是白色的用255减）。(255+-0,255+-字母,255+-方向)
+
+  (无意义,字母,1234代表上下左右)
+
+  答案：
+  You are clever than I think. You can do it better and you will make great success.

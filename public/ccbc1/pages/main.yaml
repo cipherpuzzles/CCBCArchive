@@ -1,0 +1,32 @@
+type: page
+title: CCBC1 题目索引
+content: 
+  - 7道题+1附加题。
+links:
+  - title: CCBC 1 存档首页
+    type: index
+    path: ccbc1/index
+  - title: 爱情篇
+    type: problem
+    path: ccbc1/problems/1
+  - title: 生命篇
+    type: problem
+    path: ccbc1/problems/2
+  - title: 自由篇
+    type: problem
+    path: ccbc1/problems/3
+  - title: 地位篇
+    type: problem
+    path: ccbc1/problems/4
+  - title: 信仰篇
+    type: problem
+    path: ccbc1/problems/5
+  - title: 财富篇
+    type: problem
+    path: ccbc1/problems/6
+  - title: 智慧篇
+    type: problem
+    path: ccbc1/problems/7
+  - title: ANOTHER
+    type: problem
+    path: ccbc1/problems/8

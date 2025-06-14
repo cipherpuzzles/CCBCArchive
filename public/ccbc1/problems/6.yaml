@@ -1,0 +1,30 @@
+type: problem
+title: 第六题 财富篇
+desc: 首届CCBC 第六题 财富篇 (2008-08-05 23:36)
+content-type: 0
+content:
+- |
+  你是一名考古学家，同时对密码也颇有研究。一日，你正在家中翻看报纸，一则信息引起了你的注意，
+
+  信息如下：
+  ```txt
+  ☆○★☆＾●↓△□→□◆○◇↓ 〓★□◆○§△□◆§○▲↓↓→▲※○§§◎↑★＾◆←◎§＾↓￣§＾↓§★◆※◎↑★＾◆→◆＼◎※§§◆○★★№◆↑★●↓↑◆→◆▲□◆◆§ ○↑→★＾◎□★◆◆↑◇◎↑△★◆§↑↓□★＾◆○§★○→←●↑↓□★＾◇○◎↑←□○↑☆＾§◆＼◆↑★＾※◎◇←◆○§★§◎→◆§＾↓↓★〓 □↓◇★＾◆※◆〓★◆●◆↓〓★＾◆→◆○★＾§＾◆○→○←◆◆※◎↑◆〓□↓◇★＾◆★□◆◆★＾□↓△▲＾★＾◆§＾↓★〓◎〓★●〓 ◆◆★↓△★ 
+  ```
+extend-data: ''
+
+links:
+  - title: CCBC 1 存档首页
+    type: index
+    path: ccbc1/index
+  - title: 题目索引
+    type: page
+    path: ccbc1/pages/main
+
+tips:
+answer: |
+  Catch your dream of treasures: A good glass in the bishop's hostel in the devil's seat twenty-one degrees and thirteen minutes northeast and by north main branch seventh limb east side shoot from the left eye of the death's head a bee line from the tree through the shot fifty feet out.
+answer-analysis: |
+  加密方法：文本来自《金甲虫》，单表替换，解法精品区里找。
+
+  答案：
+  Catch your dream of treasures: A good glass in the bishop's hostel in the devil's seat twenty-one degrees and thirteen minutes northeast and by north main branch seventh limb east side shoot from the left eye of the death's head a bee line from the tree through the shot fifty feet out.
