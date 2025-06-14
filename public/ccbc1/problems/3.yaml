@@ -26,6 +26,12 @@ links:
 
 tips:
 answer: |
-  
+  Oh my dear Police, I wish you can break this code out in this time. Do not make me boring again. I want to steal the biggest jewel in Mr. D's house at nine p.m. Oct. tenth. Do your best this time, will you? Yours Te.
+additional-answers:
+  - message: 无标点版本。
+    answer: Oh my dear Police I wish you can break this code out in this time Do not make me boring again I want to steal the biggest jewel in Mr Ds house at nine pm Oct tenth Do your best this time will you Yours Te
 answer-analysis: |
-  官方解已遗失（原答案帖子第3楼）
+  加密方法：图像+单表替换,眼睛、脑袋、身子各代表一个字母，以眼睛、脑袋、身子的顺序排列。
+
+  答案：
+  Oh my dear Police, I wish you can break this code out in this time. Do not make me boring again. I want to steal the biggest jewel in Mr. D's house at nine p.m. Oct. tenth. Do your best this time, will you? Yours Te.
