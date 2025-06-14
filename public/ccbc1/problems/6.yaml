@@ -23,8 +23,16 @@ links:
 tips:
 answer: |
   Catch your dream of treasures: A good glass in the bishop's hostel in the devil's seat twenty-one degrees and thirteen minutes northeast and by north main branch seventh limb east side shoot from the left eye of the death's head a bee line from the tree through the shot fifty feet out.
+additional-answers:
+  - message: 无标点版本。
+    answer: Catch your dream of treasures A good glass in the bishops hostel in the devils seat twenty-one degrees and thirteen minutes northeast and by north main branch seventh limb east side shoot from the left eye of the deaths head a bee line from the tree through the shot fifty feet out
 answer-analysis: |
-  加密方法：文本来自《金甲虫》，单表替换，解法精品区里找。
+  加密方法：特殊符号+单表替换，文本来自《金甲虫》，单表替换。
+
+  ```
+  a b c d e f g h i j k l m n o p q r s t u v w x y z
+  * H * G C L D B M N O F P * E R S T U A I V W * Y *
+  ```
 
   答案：
   Catch your dream of treasures: A good glass in the bishop's hostel in the devil's seat twenty-one degrees and thirteen minutes northeast and by north main branch seventh limb east side shoot from the left eye of the death's head a bee line from the tree through the shot fifty feet out.
