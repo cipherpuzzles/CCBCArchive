@@ -36,7 +36,7 @@ answer-analysis: '双名法，林奈发明的一种命名植物的方式。如�
   | 叶向高      | 3      | R        | BORIS    | YELTSIN     | 叶利钦          |
 
 
-  将对应“姓名”连上后，我们利用数字，提取对应人物实际名字中的字母。得到最终提示 “Lunch” Singer。 Lunch这首歌的歌手是**Billie Ellish**
+  将对应“姓名”连上后，我们利用数字，提取对应人物实际名字中的字母。得到最终提示 “Lunch” Singer。 Lunch这首歌的歌手是**Billie Eilish**
 
 
 

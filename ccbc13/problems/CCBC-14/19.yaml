@@ -173,10 +173,10 @@ content:
   若你提交的答案确实是某一层的答案，则会触发系统的“共鸣”。图片中对应的层将会消去，你将看到此层消去后的其他未消去的层重叠而成的新图片。
 
 
-  在答案框提交“重置”以恢复初始状态（这不会消耗你的答题次数）
-
-
-  (3) · (4) · (4) · (6 8) · (9) · (三 八) · (十 三) · (十二 十) · (四 九) · (五 十 四 七)'
+  (3) · (4) · (4) · (6 8) · (9) · (三 八) · (十 三) · (十二 十) · (四 九) · (五 十 四 七)
+  
+  
+  > 存档版说明：在正式比赛中，选手需要在答案框提交对应的答案，触发系统的“里程碑”来更新图片。由于存档版不支持这一功能，所以请在图片下方的输入框中输入答案。'
 content-type: 2
 desc: 溺水
 extend-data: 5,7,8,8
@@ -256,15 +256,139 @@ tips:
   title: 每一层的答案有什么用？
 title: 十重塔
 type: problem
-vue_script: "const { ref, inject, onMounted } = Vue;\r\nexport default {\r\n    setup()\
-  \ {\r\n        const imageSrc = ref(\"\");\r\n\r\n        const api = inject('api');\r\
-  \n        const defaultApiErrorAction = inject('defaultApiErrorAction');\r\n\r\n\
-  \        const init = async () => {\r\n            let res = await api('/puzzlebackend2023/19/ten-story-tower-get-imagesrc',\
-  \ {});\r\n\r\n            let data = await res.json();\r\n            if (data.status\
-  \ !== 1) {\r\n                defaultApiErrorAction(data);\r\n                return;\r\
-  \n            }\r\n\r\n            imageSrc.value = data.path;\r\n        }\r\n\r\
-  \n        onMounted(() => {\r\n            init();\r\n        });\r\n\r\n      \
-  \  return {\r\n            imageSrc\r\n        };\r\n    }\r\n}"
-vue_template: "<template>\r\n    <div v-if=\"imageSrc\">\r\n        <img :src=\"imageSrc\"\
-  \ style=\"width: 100%;\" />\r\n    </div>\r\n    <div v-else>\r\n        图片加载中...\r\
-  \n    </div>\r\n</template>"
+vue_template: |
+  <!-- TenfoldTowerRemake Puzzle -->
+  <template>
+
+    <div class="puzzle-container">
+      <div class="canvas-container">
+        <canvas 
+          ref="gameCanvas" 
+          width="1320" 
+          height="806"
+          @click="handleCanvasClick"
+        ></canvas>
+      </div>
+      
+      <div class="input-container">
+        <input 
+          v-model="userAnswer" 
+          @keyup.enter="submitAnswer"
+          placeholder="请输入答案..."
+          class="answer-input"
+        />
+        <button @click="submitAnswer" class="submit-btn">提交答案</button>
+        <button @click="resetGame" class="reset-btn">重置</button>
+      </div>
+      
+      <div v-if="message" class="message" :class="messageClass">
+        {{ message }}
+      </div>
+    </div>
+
+  </template>
+
+  <style>
+
+  .puzzle-container {
+    background-color: black;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+
+  .canvas-container {
+    margin-bottom: 20px;
+    border: 2px solid #333;
+  }
+
+  canvas {
+    display: block;
+    background-color: transparent;
+  }
+
+  .input-container {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+
+  .answer-input {
+    padding: 10px 15px;
+    font-size: 16px;
+    border: 2px solid #333;
+    border-radius: 5px;
+    background-color: #222;
+    color: white;
+    width: 300px;
+  }
+
+  .answer-input:focus {
+    outline: none;
+    border-color: #555;
+  }
+
+  .submit-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: 2px solid #333;
+    border-radius: 5px;
+    background-color: #444;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .submit-btn:hover {
+    background-color: #555;
+  }
+
+  .reset-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: 2px solid #333;
+    border-radius: 5px;
+    background-color: #6a4444;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .reset-btn:hover {
+    background-color: #7a5555;
+  }
+
+  .message {
+    padding: 15px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: center;
+    max-width: 600px;
+  }
+
+  .message.success {
+    background-color: #2d5a2d;
+    color: #90ee90;
+    border: 1px solid #4a7c4a;
+  }
+
+  .message.info {
+    background-color: #2d4a5a;
+    color: #87ceeb;
+    border: 1px solid #4a6a7c;
+  }
+
+  .message.error {
+    background-color: #5a2d2d;
+    color: #ffb3b3;
+    border: 1px solid #7c4a4a;
+  }
+
+  </style>
+
+vue_script: |
+  var __vue_puzzle_component__=function(e){"use strict";const t=[{src:"bg.webp",text:"这层是背景层，应该没有对应答案",info:""},{src:"t-13.webp",text:"这层是最底部画着斜塔的层，应该没有对应答案",info:""},{src:"t-12.webp",text:"塔底",info:"你抵达了塔底。如果一开始就直通塔底会如何？"},{src:"t-11.webp",text:"中药",info:"你成功消去了一层楼"},{src:"t-10.webp",text:"MOBA",info:"你成功消去了一层楼"},{src:"t-09.webp",text:"北海公园",info:"你成功消去了一层楼"},{src:"t-08.webp",text:"埃及",info:"你成功消去了一层楼"},{src:"t-07.webp",text:"911",info:"你成功消去了一层楼"},{src:"t-06.webp",text:"RECURSION",info:"你成功消去了一层楼"},{src:"t-05.webp",text:"SAIL",info:"你成功消去了一层楼"},{src:"t-04.webp",text:"越剧",info:"你成功消去了一层楼"},{src:"t-03.webp",text:"大学",info:"你成功消去了一层楼"},{src:"t-02.webp",text:"CORONAPANDEMIC",info:"你成功消去了一层楼"},{src:"t-01.webp",text:"十重塔",info:"欢迎来到十重塔"}],r=["德尔塔","象牙塔","珍珠塔","灯塔","河内塔","汉诺塔","双子塔","金字塔","白塔","刀塔","千层塔"],s=["DELTA","IVORY","PEARL","LIGHT","HANOI","TOWER","METAL","WHITE","KNIFE","LAYER"],a=["DIEINWATER"];return{setup(){const o=e.ref(null),n=e.ref(""),c=e.ref(""),i=e.ref(""),u=e.ref([]),l=e.ref([]),f=()=>{l.value=Array(t.length).fill(!0)},p=()=>{if(!o.value||0===u.value.length)return;const e=o.value.getContext("2d");e.clearRect(0,0,1320,806),t.forEach(((t,r)=>{l.value[r]&&u.value[r]&&e.drawImage(u.value[r],0,0,1320,806)}))},v=(e,t)=>{c.value=e,i.value=t,setTimeout((()=>{c.value="",i.value=""}),5e3)};return e.onMounted((async()=>{f(),await e.nextTick(),await(async()=>{const e=t.map(((e,t)=>new Promise(((r,s)=>{const a=new Image;a.onload=()=>r({img:a,index:t}),a.onerror=s,a.src="/ccbc13/images/CCBC-14/tower/"+e.src}))));try{(await Promise.all(e)).forEach((({img:e,index:t})=>{u.value[t]=e})),p()}catch(r){console.error("图片加载失败:",r),v("图片加载失败","error")}})()})),{gameCanvas:o,userAnswer:n,message:c,messageClass:i,submitAnswer:()=>{if(!n.value.trim())return void v("请输入答案","error");const e=n.value.replace(/\s+/g,"").toUpperCase();if("DROWN"===e)return v("恭喜你通关十重塔！","success"),void(n.value="");if(r.some((t=>t.replace(/\s+/g,"").toUpperCase()===e)))return v("这是十座塔之一","info"),void(n.value="");if(s.some((t=>t.replace(/\s+/g,"").toUpperCase()===e)))return v("这是其中一层的答案","info"),void(n.value="");if(a.some((t=>t.replace(/\s+/g,"").toUpperCase()===e)))return v("这是最后的中间答案","info"),void(n.value="");let o=!1;t.forEach(((t,r)=>{t.text.replace(/\s+/g,"").toUpperCase()===e&&(o=!0,l.value[r]?(l.value[r]=!1,v(t.info,"success"),p()):v("这层已经不存在了","info"))})),o||v("答案错误，请重试","error"),n.value=""},resetGame:()=>{f(),p(),n.value="",v("游戏已重置，所有图层已恢复","success")},handleCanvasClick:e=>{}}}}}(Vue);
+  export default __vue_puzzle_component__;
