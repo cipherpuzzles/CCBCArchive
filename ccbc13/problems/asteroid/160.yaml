@@ -1,8 +1,6 @@
 answer: BOURGEOISIE
-content:
-- "<div class=\"ccbcstylewrapper\">\n    <img src=\"/ccbc13/images/asteroid/5e8ef78753d743d38d68625c97b1c49c.webp\"\
-  \ style=\"width:100%\">\n</div>"
-content-type: 1
+content: []
+content-type: 0
 desc: Ori
 extend-data: null
 links:
