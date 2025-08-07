@@ -1,0 +1,35 @@
+type: problem
+title: 第四题 地位篇
+desc: 首届CCBC 第四题 地位篇 (2008-08-03 23:33)
+content-type: 0
+content:
+- |
+  你，杀手。
+
+  信来了，解读它，实行它。
+
+  密信全文如下：
+  ```txt
+  ousintryarteexgtnaitehmsrnfinsaelgdddoaeeehoatgrersnhgsteeeaivnbedunyjbrcelpsosiyahoetresphitniowonaclfoetroeuhscelpsoiirvsonbiemahgytneyomtriueetrtsaigfteoenhohenmlapdotsalnetetolishmthtnpgeoeoiorlucnticoldekelnhttizzzizszz
+  ```
+extend-data: ''
+
+links:
+  - title: CCBC 1 存档首页
+    type: index
+    path: ccbc1/index
+  - title: 题目索引
+    type: page
+    path: ccbc1/pages/main
+
+tips:
+answer: |
+  It's your next target. His name is Fernando Delgado. Three gangsters have been injured by polices so they are in hospital now. Of course the police is observing them anytime. Your target is one of them and he plans to tell something to the police. Our client don't like this.
+additional-answers:
+  - message: 无标点版本。
+    answer: Its your next target His name is Fernando Delgado Three gangsters have been injured by polices so they are in hospital now Of course the police is observing them anytime Your target is one of them and he plans to tell something to the police Our client dont like this
+answer-analysis: |
+  加密方法：分组置换，八位一组，排序 4638127
+
+  答案：
+  It's your next target. His name is Fernando Delgado. Three gangsters have been injured by polices so they are in hospital now. Of course the police is observing them anytime. Your target is one of them and he plans to tell something to the police. Our client don't like this.
