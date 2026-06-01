@@ -146,7 +146,7 @@ tips:
   title: 每个游戏的规则是什么？
 title: 奇怪的游戏
 type: problem
-vue_script: "const { ref, inject, onMounted } = Vue;\r\nexport default {\r\n    setup()\
+vue_script: "const { ref, onMounted } = Vue;\r\nexport default {\r\n    setup()\
   \ {\r\n        const numGames = 10;\r\n        const header = ref(\"\");\r\n\r\n\
   \        const curGame = ref(-1);\r\n\r\n        const gameInfo = ref([]);\r\n \
   \       for (let i = 0; i < numGames; i++) {\r\n            const info = {\r\n \
@@ -163,12 +163,12 @@ vue_script: "const { ref, inject, onMounted } = Vue;\r\nexport default {\r\n    
   \    if ((typeof msgs) == \"string\") {\r\n                addSingleMessage(msgs);\r\
   \n            } else {\r\n                for (let msg of msgs) {\r\n          \
   \          addSingleMessage(msg);\r\n                }\r\n            }\r\n    \
-  \    }\r\n\r\n        const api = inject('api');\r\n        const defaultApiErrorAction\
-  \ = inject('defaultApiErrorAction');\r\n\r\n        const submit = async (query)\
-  \ => {\r\n            let res = await api('/spfunc/impartialgame/20', query, \"\
-  sp\"); //第三个参数设置为sp时调用node后端\r\n\r\n            let data = await res.json();\r\n\
-  \            if (data.status !== 1) {\r\n                defaultApiErrorAction(data);\r\
-  \n                return;\r\n            }\r\n\r\n            return data.data;\r\
+  \    }\r\n\r\n        const archiveApiModule = import(\"/ccbc13/scripts/CCBC-14/impartialGame20Api.js\"\
+  );\r\n\r\n        const submit = async (query) => {\r\n            const { archiveApi\
+  \ } = await archiveApiModule;\r\n            let res = await archiveApi('/spfunc/impartialgame/20',\
+  \ query);\r\n\r\n            let data = await res.json();\r\n            if (data.status\
+  \ !== 1) {\r\n                console.error(\"archive api error\", data);\r\n \
+  \               return;\r\n            }\r\n\r\n            return data.data;\r\
   \n        };\r\n\r\n        const selectGameScreen = async () => {\r\n         \
   \   let data = await submit({\r\n                func: \"getWonStatus\"\r\n    \
   \        });\r\n            curGame.value = -1;\r\n\r\n            let wons = data.wons;\r\
